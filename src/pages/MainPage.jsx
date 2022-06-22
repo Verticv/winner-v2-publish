@@ -32,11 +32,6 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 					<NoticeBanner />
 				</div>
 			</div>
-
-			{/* <div style={{height:'497px'}} className="flex-shrink-0 z-20 flex items-end pb-10px justify-center">
-				<NoticeBanner />
-			</div> */}
-
 				
 			<div className="flex flex-col items-start limit:items-center h-full">
 				<div style={{marginTop:'21px'}}>
