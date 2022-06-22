@@ -55,17 +55,17 @@ const Carousel = () => {
 	)
 
 	const sliderControl = isLeft => (
-			<button
-					type="button"
-					onClick={isLeft ? previousImage : nextImage}
-					className={`${arrowStyle} ${isLeft ? 'left-10px' : 'right-10px'}`}
-			>
-					{isLeft ? leftArrow : rightArrow}
-			</button>
+		<button
+			type="button"
+			onClick={isLeft ? previousImage : nextImage}
+			className={`${arrowStyle} ${isLeft ? 'left-10px' : 'right-10px'}`}
+		>
+			{isLeft ? leftArrow : rightArrow}
+		</button>
 	);
 
 	const positionIndicator = (
-		<div style={{marginBottom:'72px'}} className="absolute z-10 w-full flex justify-center bottom-0 space-x-3px">
+		<div style={{marginBottom:'65px'}} className="absolute z-10 w-full flex justify-center bottom-0 space-x-3px">
 			{images.map((img, i) => (
 				<button key={i} className="w-14px h-14px bg-black rounded-full p-2px" onClick={() => setCurrentImage(i)}>
 					{currentImage === i && (
@@ -84,7 +84,7 @@ const Carousel = () => {
 					onMouseLeave={() => setHover(false)} 
 					key={i} 
 					src={images[i]} 
-					className={`${currentImage === i ? "opacity-100" : "opacity-0"} ${img === visual2 && "absolute top-0"} w-full  object-contain transition duration-300`} alt={"banner_images"} 
+					className={`${currentImage === i ? "opacity-100" : "opacity-0"} ${img === visual2 && "absolute top-0"} w-full h-full object-cover transition duration-300`} alt={"banner_images"} 
 				/>
 			))}
 		</>
@@ -110,14 +110,14 @@ const Carousel = () => {
 	);
 
 	return (
-			<div className="flex w-default limit1920:w-1920 limit:w-full flex-shrink-0">
-					<div className="relative w-full limit1920:h-500px h-full flex items-center">
-							{sliderControl(true)}
-							{imagesDisplay}
-							{sliderControl()}
-							{positionIndicator}
-					</div>
+		<div className="flex w-default limit1920:w-1920 limit:w-full flex-shrink-0">
+			<div style={{height:'497px'}} className="relative w-full flex items-center">
+				{sliderControl(true)}
+				{imagesDisplay}
+				{sliderControl()}
+				{positionIndicator}
 			</div>
+		</div>
 	)
 }
 

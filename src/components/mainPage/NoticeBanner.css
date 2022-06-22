@@ -1,12 +1,12 @@
 #banner {
-    animation: banneranimation 40s infinite;
+    animation: banneranimation 30s infinite;
     animation-timing-function: linear;
     position: relative;
 }
 
 @keyframes banneranimation {
     0% {
-        left: 1920px;
+        left: 1200px;
     }
     100% {
         left: -500px;

@@ -17,7 +17,7 @@ import NavbarHover from '../hovers/NavbarHover'
 import SignupPopup from '../popups/SignupPopup'
 import { useHistory } from 'react-router-dom'
 
-import TopLogo from '../../images/TopLogo.png'
+import TopLogo from '../../images/top_logo.png'
 
 
 const Navbar = ({ isAuthenticated, setAuth }) => {
@@ -151,7 +151,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
     return (
 			<div className="w-full z-50">
 
-				<div style={{height:'104px'}} className="bg-black">
+				<div style={{height:'104px'}} className="bg-black bg-opacity-75">
 					<div style={{height:'59px', paddingTop:'17px'}} className="block justify-center relative">
 						<img style={{margin:'auto'}} className="cursor-pointer object-none" src={TopLogo} alt="logo" onClick={() => history.push('/')} />
 
@@ -162,7 +162,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 						</div>
 						
 					</div>
-					<div style={{height:'45px', borderBottomWidth:'1px', borderBottomColor:'#414141'}} className="relative flex justify-between px-10px bg-black flex-row flex-shrink-0">
+					<div style={{height:'45px', borderBottomWidth:'1px', borderBottomColor:'#414141'}} className="relative flex justify-between px-10px flex-row flex-shrink-0">
 						<div className="flex items-center flex-shrink-0">
 							<TabsList items={tabsArray} />
 						</div>
