@@ -1,3 +1,4 @@
+import LiveCasino from 'components/mainPage/LiveCasino'
 import NoticeBanner from 'components/mainPage/NoticeBanner'
 import SlotGame from 'components/mainPage/SlotGame'
 import Tabs from 'components/mainPage/Tabs'
@@ -48,10 +49,17 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 					<SubComp text="라이브카지노" />
 				</div>
 
+				<div style={{marginTop:'7px'}}>
+					<LiveCasino />
+				</div>
 
-				 <div>
-						<Footer2 />
-						<Footer />
+				<div style={{marginTop:'27px'}}>
+					<SubComp text="스포츠" />
+				</div>
+
+				<div>
+					<Footer2 />
+					<Footer />
 				</div>
 
 			</div>
