@@ -1,11 +1,12 @@
 import LiveCasino from 'components/mainPage/LiveCasino'
 import NoticeBanner from 'components/mainPage/NoticeBanner'
+import Other from 'components/mainPage/Other'
 import SlotGame from 'components/mainPage/SlotGame'
+import Sports from 'components/mainPage/Sports'
 import Tabs from 'components/mainPage/Tabs'
 import React from 'react'
 import Carousel from '../components/mainPage/Carousel'
 import Footer from '../components/mainPage/Footer'
-import Footer2 from '../components/mainPage/Footer2'
 import Navbar from '../components/mainPage/Navbar'
 import Subtitle from '../images/subtitle.png'
 
@@ -57,8 +58,20 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 					<SubComp text="스포츠" />
 				</div>
 
+				<div style={{marginTop:'27px'}}>
+					<Sports />
+				</div>
+
+				<div style={{marginTop:'24px'}}>
+					<SubComp text="기타게임" />
+				</div>
+
+				<div style={{marginTop:'30px', marginBottom:'92px'}}>
+					<Other />
+				</div>
+
+
 				<div>
-					<Footer2 />
 					<Footer />
 				</div>
 

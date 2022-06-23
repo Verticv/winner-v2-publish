@@ -336,6 +336,7 @@ module.exports = {
         gray: {
           text: '#393e41',
           subNavbar: '#616161',
+          r828282: '#828282',
           r8f8f8f: '#8f8f8f',
           d2d2d2: '#d2d2d2',
           ececec: '#ececec',
