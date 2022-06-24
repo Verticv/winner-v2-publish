@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import visual2 from '../../images/carousel/visual3.png'
 import visual3 from '../../images/carousel/visual3.png'
-import LeftArrow from '../../images/arrows/left_arrow.png'
-import RightArrow from '../../images/arrows/right_arrow.png'
+import LeftArrow from '../../images/arrows/gold_arrow_left.png'
+import RightArrow from '../../images/arrows/gold_arrow_right.png'
 
 const images = [visual3,visual2]
 // images must be an array of urls , if using Next JS this could something like
@@ -39,26 +39,27 @@ const Carousel = () => {
 	};
 
 	// Tailwind styles. Most importantly notice position absolute, this will sit relative to the carousel's outer div.
-	const arrowStyle = "absolute text-white z-10 bg-black h-64px w-64px rounded-sm opacity-50 flex items-center justify-center hover:opacity-75"
+	const arrowStyle = "absolute z-10 hover:opacity-75"
 
 	// Let's create dynamic buttons. It can be either left or right. Using
 	// isLeft boolean we can determine which side we'll be rendering our button
 	// as well as change its position and content.
 
 	const leftArrow = (
-			<img className="h-34px w-16px object-contain opacity-50" src={LeftArrow} alt="arrow"/>
+			<img className="object-none" src={LeftArrow} alt="arrow"/>
 
 	)
 
 	const rightArrow = (
-			<img className="h-34px w-16px object-contain opacity-50" src={RightArrow} alt="arrow"/>
+			<img className="object-none" src={RightArrow} alt="arrow"/>
 	)
 
 	const sliderControl = isLeft => (
 		<button
 			type="button"
 			onClick={isLeft ? previousImage : nextImage}
-			className={`${arrowStyle} ${isLeft ? 'left-10px' : 'right-10px'}`}
+			style={{marginBottom:'-105px'}}
+			className={`${arrowStyle} ${isLeft ? 'left-20px' : 'right-20px'}`}
 		>
 			{isLeft ? leftArrow : rightArrow}
 		</button>

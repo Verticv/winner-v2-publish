@@ -5,6 +5,11 @@ import Team2 from '../../images/team_icon2.png'
 import Sports1 from '../../images/sports1.png'
 import Sports2 from '../../images/sports2.png'
 import Sports3 from '../../images/sports3.png'
+import Sports1Hl from '../../images/sports1_hl.png'
+import Sports2Hl from '../../images/sports2_hl.png'
+import Sports3Hl from '../../images/sports3_hl.png'
+import ArrowLeft from '../../images/arrows/sports_arrow_left.png'
+import ArrowRight from '../../images/arrows/sports_arrow_right.png'
 
 const Sports = () => {
 
@@ -19,7 +24,7 @@ const Sports = () => {
 
   const Card = () => {
     return (
-      <div style={{width:'313px', height:'170px', borderRadius:'4px', borderWidth:'1px', borderColor:'#151514', backgroundColor:'#3e3e3e'}} className="flex">
+      <div style={{width:'313px', height:'170px', borderRadius:'4px', borderWidth:'1px', borderColor:'#151514', backgroundColor:'#3e3e3e'}} className="flex flex-shrink-0">
         <div style={{width:'63px', borderColor:'#151514'}} className="border-r pt-px flex-shrink-0">
           <div style={{backgroundColor:'#302f2e', background:'linear-gradient(to bottom, #302f2e, #252423)'}} className="w-full h-full rounded-tl-4px rounded-bl-3px flex flex-col items-center">
             <div style={{width:'42px', height:'42px', marginTop:'54px', backgroundColor:'#1f1f1f'}} className="rounded-full flex items-center justify-center">
@@ -75,7 +80,7 @@ const Sports = () => {
     const [isHover, setHover] = useState(false)
     return (
       <div style={{height:'207px', width: '411px'}} className="flex items-end relative" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-        <img src={img} alt="" className='object-none' />
+        <img src={isHover ? imgHover : img} alt="" className='object-none' />
         <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-18px right-18px p-px hover:opacity-90'>
           <div style={{borderRadius:'2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
             <p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
@@ -88,17 +93,19 @@ const Sports = () => {
 
   return (
     <div style={{width:'1260px'}}>
-      <div className="flex space-x-3px">
+      <div className="flex space-x-3px items-center relative">
+        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer hover:opacity-90" alt=""/>
         <Card />
         <Card />
         <Card />
         <Card />
+        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer hover:opacity-90" alt=""/>
       </div>
 
       <div className='mt-11px space-x-19px flex'>
-        <Card1 img={Sports1} text="라이브베팅" />
-        <Card1 img={Sports2} text="조합베팅" />
-        <Card1 img={Sports3} text="스페셜베팅" />
+        <Card1 img={Sports1} text="라이브베팅" imgHover={Sports1Hl} />
+        <Card1 img={Sports2} text="조합베팅" imgHover={Sports2Hl} />
+        <Card1 img={Sports3} text="스페셜베팅" imgHover={Sports3Hl} />
       </div>
     </div>
   )
