@@ -3,7 +3,6 @@ import React from 'react'
 import CloseIcon from '../../images/popups/close.png'
 import Step1 from '../../images/popups/step1.png'
 import Step2 from '../../images/popups/step2.png'
-import './Scrollbars.css'
 
 const CouponGiftPopup = ({setPopupOpen}) => {
     return (
