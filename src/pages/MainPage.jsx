@@ -4,6 +4,7 @@ import Other from 'components/mainPage/Other'
 import SlotGame from 'components/mainPage/SlotGame'
 import Sports from 'components/mainPage/Sports'
 import Tabs from 'components/mainPage/Tabs'
+import QuickMenu from 'components/QuickMenu'
 import React from 'react'
 import Carousel from '../components/mainPage/Carousel'
 import Footer from '../components/mainPage/Footer'
@@ -26,23 +27,9 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 			</div>
 
 			<div style={{width:'1496px', height:'calc(100vh - 497px)'}} className='fixed bottom-0 z-20 flex justify-end'>
-				<div style={{height:'553px', width:'86px'}} className={'flex-shrink-0 z-10 -mt-30px'}>
-					<div style={{height:'553px', width:'86px'}} className='flex flex-col items-center'>
-						<div style={{height:'487px', borderColor:'#4f4a41', borderWidth:'2px', boxShadow:"0 4px 5px #00000050"}} className="w-full bg-black rounded-full">
-							<div className='w-full h-full bg-black border border-black rounded-full overflow-hidden'>
-								<div style={{height:'53px', background: "linear-gradient(to bottom, #a67c52, #7f5f3f)",}} className="w-full flex flex-col items-center text-black font-spoqaMedium tracking-tighter text-14px">
-									<p className='h-14px mt-11px'>QUICK</p>
-									<p className='h-14px mt-2px'>MENU</p>
-								</div>
-							</div>
-						</div>
-
-						<div style={{height:'56px', width:'56px',borderColor:'#4f4a41', borderWidth:'2px', boxShadow:"0 4px 5px #00000050"}} className="w-full mt-10px bg-black rounded-full"></div>
-					</div>
-				</div>
+				<QuickMenu />
 			</div>
 
-			
 			<div className="w-screen flex flex-col z-10">
 				<div className="absolute top-0 flex justify-start limit:justify-center items-center w-screen">
 					<Carousel />
@@ -89,6 +76,7 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 					<Other />
 				</div>
 			</div>
+
 			<Footer />
 
 		</div>

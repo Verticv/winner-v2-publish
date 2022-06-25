@@ -54,29 +54,28 @@ const Footer = ({fullWidth = false}) => {
 
 	return (
 		<div style={{height:'313px', backgroundColor:'#252525'}}  className={`flex flex-col items-center flex-shrink-0 ${fullWidth ? "w-1836px limit1836:w-screen" : "w-1300 limit:w-screen"}`}>
-			<div style={{height:'221px', paddingTop:'32px'}} className="flex w-default flex-shrink-0">
-					
-					<div style={{width:'221px', height:'158px'}} className="flex-shrink-0">
-						<p className="font-spoqa text-14px h-14px tracking-tigther text-white mb-23px">마이페이지</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">베팅내역</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">쿠폰관리</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">포인트</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther text-gray-r828282 hover:text-gray-300 cursor-pointer">회원정보</p>
-					</div>
+			<div style={{height:'221px', paddingTop:'32px'}} className="flex w-default flex-shrink-0">	
+				<div style={{width:'221px', height:'158px'}} className="flex-shrink-0">
+					<p className="font-spoqa text-14px h-14px tracking-tigther text-white mb-23px">마이페이지</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">베팅내역</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">쿠폰관리</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">포인트</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther text-gray-r828282 hover:text-gray-300 cursor-pointer">회원정보</p>
+				</div>
 
-					<div style={{width:'221px', height:'158px'}} className="flex-shrink-0">
-						<p className="font-spoqa text-14px h-14px tracking-tigther text-white mb-23px">고객센터</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">문의하기</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">공지사항</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">자주묻는질문</p>
-						<p className="font-spoqa text-14px h-14px tracking-tigther text-gray-r828282 hover:text-gray-300 cursor-pointer">베팅규정</p>
-					</div>
-					
-					<div className='w-full flex flex-col items-end'>
-						<FirstRow />
-						<SecondRow />
-						<ThirdRow />
-					</div>
+				<div style={{width:'221px', height:'158px'}} className="flex-shrink-0">
+					<p className="font-spoqa text-14px h-14px tracking-tigther text-white mb-23px">고객센터</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">문의하기</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">공지사항</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">자주묻는질문</p>
+					<p className="font-spoqa text-14px h-14px tracking-tigther text-gray-r828282 hover:text-gray-300 cursor-pointer">베팅규정</p>
+				</div>
+				
+				<div className='w-full flex flex-col items-end'>
+					<FirstRow />
+					<SecondRow />
+					<ThirdRow />
+				</div>
 			</div>
 			<div style={{backgroundColor:'#383838'}} className='h-px w-default flex-shrink-0' />
 
