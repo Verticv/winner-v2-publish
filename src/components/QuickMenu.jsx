@@ -8,7 +8,7 @@ import Quick6 from '../images/quick6.png'
 
 const QuickMenu = () => {
   return (
-    <div style={{height:'553px', width:'86px'}} className={'flex-shrink-0 z-10 -mt-30px'}>
+    <div style={{height:'553px', width:'86px'}} className={'flex-shrink-0 z-10 -mt-85px'}>
       <div style={{height:'553px', width:'86px'}} className='flex flex-col items-center'>
         <div style={{height:'487px', borderColor:'#4f4a41', borderWidth:'2px', boxShadow:"0 4px 5px #00000050"}} className="w-full bg-black rounded-full">
           <div className='w-full h-full bg-black border border-black rounded-full overflow-hidden flex flex-col items-center'>
