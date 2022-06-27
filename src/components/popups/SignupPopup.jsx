@@ -17,7 +17,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	const [selectedBank, setSelectedBank] = useState("은행선택")
 	const [isDropdownOpen, setDropdownOpen] = useState(true)
 
-	const dropDownCellClass = "flex w-170px h-40px py-4px bg-white items-center hover:bg-blue-lightGradLight px-10px"
+	const dropDownCellClass = "flex w-170px h-40px py-4px items-center hover:bg-white hover:bg-opacity-10 px-10px"
 
 	const Title = ({text}) => (
 		<div style={{height:'44px', backgroundColor:'#272726', borderRadius:'5px'}} className="w-140px space-y-2 flex-shrink-0 flex items-center">
@@ -27,14 +27,15 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 
 	const carrierButton = (
 		<div style={{height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="flex w-170px group cursor-pointer">
-			<input  className="w-0 text-16px"/>
+			<input className="w-0 text-16px"/>
 			<div
 				onFocus={() => setSelectedInput(4)}
 				onBlur={(e) => setSelectedInput(false)}
-				className="flex w-full text-gray-r393e41 font-spoqaMedium text-16px outline-none h-full justify-between items-center tracking-minus05" 
+				className="flex w-full font-spoqaMedium text-16px outline-none h-full justify-between items-center group"
+				style={{color:'#c8c8c8'}} 
 			>
-				<label className="ml-10px group-hover:text-black cursor-pointer">{selectedCarrier}</label>
-				<img className="w-16px h-10px object-none mr-20px" src={DownArrowIcon} alt="arrow" /> 
+				<label className="ml-10px cursor-pointer group-hover:text-gray-100">{selectedCarrier}</label>
+				<img className="object-none mr-14px" src={DownArrowIcon} alt="arrow" /> 
 			</div>
 		</div>
 	)
@@ -54,7 +55,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 
 	const carrierDropdown = (
-		<div className="flex flex-col items-center justify-center w-170px py-10px bg-white rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px">
+		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-10px bg-white rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-5px">
 			<button className={dropDownCellClass} onClick={() => {
 				setSelectedCarrier("SKT")
 				setDropdownOpen(false)
@@ -347,42 +348,47 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 								{carrierDropdown}
 							</DropDownControls>
 						</div>
-						<div className={`${selectedInput === 5 ? "space-y-7px" : "space-y-8px"} w-full `}>
+
+						<div style={{width:'360px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
-								className="w-full text-gray-r393e41 font-spoqaMedium text-16px outline-none placeholder-gray-bebebe ml-10px"
+								style={{width:'360px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
+								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282" 
 								placeholder="휴대폰번호(숫자만 입력)"
 								onFocus={(e) => {
 									e.target.placeholder = ""
 									setSelectedInput(5)
-								}} 
+								}}
 								onBlur={(e) => {
 									e.target.placeholder = "휴대폰번호(숫자만 입력)"
 									setSelectedInput(false)
 								}}
 							/>
-							<div className={`${selectedInput === 5 ?"bg-blue-r1ca7ec h-2px" : "bg-gray-bebebe h-px"} w-full`} />
+							<div style={{backgroundColor: selectedInput === 5 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
 				</div>
 					{/* BREAK */}
-					<div className="flex space-x-10px w-full mt-22px">
-							<Title text="추천인 아이디" />
-							<div className={`${selectedInput === 6 ? "space-y-7px" : "space-y-8px"} w-full `}>
-									<input 
-											className="w-full text-gray-r393e41 font-spoqaMedium text-16px outline-none placeholder-gray-bebebe ml-10px" 
-											placeholder="가입코드"
-											onFocus={(e) => {
-													e.target.placeholder = ""
-													setSelectedInput(6)
-											}} 
-											onBlur={(e) => {
-													e.target.placeholder = "가입코드"
-													setSelectedInput(false)
-											}}
-									/>
-									<div className={`${selectedInput === 6 ? "bg-blue-r1ca7ec h-2px" : "bg-gray-bebebe h-px"} w-full`} />
-							</div>
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+					<div className="flex space-x-10px w-full">
+						<Title text="추천인 아이디" />
+						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+							<input 
+								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
+								className="w-full font-spoqaMedium text-16px outline-none px-10px" 
+								placeholder="가입코드"
+								onFocus={(e) => {
+										e.target.placeholder = ""
+										setSelectedInput(6)
+								}} 
+								onBlur={(e) => {
+										e.target.placeholder = "가입코드"
+										setSelectedInput(false)
+								}}
+							/>
+							<div style={{backgroundColor: selectedInput === 6 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
+						</div>
 					</div>
+				</div>
 					{/* BREAK */}
 					<div className="w-full flex flex-col mt-22px">
 							<div className="flex flex-col space-y-4">
