@@ -454,7 +454,8 @@ module.exports = {
         },
         brown: {
           r351a1e: '#351a1e',
-          r381d1e: '#381d1e'
+          r381d1e: '#381d1e',
+          r3d3934: '#3d3934'
         },
         submenu: {
           r8b5f5a: '#8b5f5a',
