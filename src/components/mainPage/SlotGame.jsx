@@ -58,11 +58,18 @@ const SlotGame = () => {
         </div>
 
         <div style={{height:'82px', backgroundColor:'#262422', borderRadius:'5px'}} className="w-full flex overflow-hidden overflow-hidden relative">
-          <CardType2 icon={Slot1} game="Titan Thunder Wrath example" />
-          <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
-          <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
-          <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
-          <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+          <div id="slotgame" className='flex w-full'>
+            <CardType2 icon={Slot1} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot1} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+          </div>
+          
 
           <div style={{width:'40px',height:'82px', background:'linear-gradient(to right, #26242220, #262422)'}} className='absolute right-0'></div>
         </div>

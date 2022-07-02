@@ -5,61 +5,57 @@ import img2 from '../../images/signedUp/signed_up_2.png'
 import img3 from '../../images/signedUp/signed_up_3.png'
 
 const SignedUpPopup = ({setToLogin}) => {
-    return (
-        <div className="relative w-840px h-680px bg-white rounded-xl shadow-xl shadow-popup">
-            <div className="absolute w-840px -mt-79px flex justify-center">
-                <div className="flex items-center justify-center h-158px w-158px rounded-full">
-                    <img src={SignedUpIcon} alt="login_icon"/>
-                </div>
-            </div>
-            {/* BREAK */}
-            <div className="w-full h-full flex flex-col items-center px-24 pt-112px">
-                {/* BREAK */}
-                <div className="flex flex-col items-center justify-center">
-                    <label className="text-30px text-gray-r393e41 font-spoqaBold">가입 신청이 완료 되었습니다.</label>
-                    <div className="flex text-gray-r393e41 font-spoqaMedium text-30px space-x-2 -mt-4px">
-                        <label>관리자</label>
-                        <label className="text-blue-r1ca7ec font-spoqaBold">승인 대기중</label>
-                        <label>입니다.</label>
-                    </div>
-                </div>
-                {/* BREAK */}
-                <div className="text-gray-r393e41 text-20px font-spoqaMedium flex flex-col items-center justify-center pt-26px tracking-tighter	">
-                    <span>관리자 승인 후 로그인 하시면 정상적으로 서비스 이용이 가능합니다.</span>
-                    <span className="-mt-6px">당사 사이트는 깨끗하고 안전한 운영을 자랑합니다. </span>
-                </div>
-                {/* BREAK */}
-                <div className="relative flex h-138px w-614px mt-55px mb-59px">
-                    <div className="w-194px h-138px flex-shrink-0">
-                        <img className="mt-9px ml-52px" src={img1} alt=""/>
-                        <div className="w-156px text-center mt-23px -space-y-3px -ml-4px">
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight">회원님의 모든 데이터는</div>
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight leading-tight ml-3px">암호화되어 안전하게 </div>
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight leading-tight pt-2px ml-3px">보관됩니다.</div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center w-240px h-138px flex-shrink-0 border-r border-l border-gray-ececec">
-                        <img className="mt-10px ml-px" src={img2} alt=""/>
-                        <div className="w-156px text-center mt-23px -space-y-3px -ml-4px">
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight ml-2px">아이디/비밀번호를</div>
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight leading-tight ml-3px">분실되지 않도록 보안에 </div>
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight leading-tight pt-2px ml-3px">신경 써 주세요.</div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-end w-194px h-138px">
-                        <img className="mt-7px mr-40px" src={img3} alt=""/>
-                        <div className="w-130px text-center mt-23px -space-y-3px -mr-4px">
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight ml-2px">회원 탈퇴 후</div>
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight leading-tight ml-3px">회원님의 정보는 </div>
-                            <div className="text-gray-r667177 font-spoqaMedium text-16px tracking-tight leading-tight pt-2px ml-3px">완전히 삭제됩니다.</div>
-                        </div>
-                    </div>
-                </div>
-                {/* BREAK */}
-                <button className="w-480px h-74px rounded-md bg-gradient-to-r from-blue-gradLight to-blue-gradDark text-27px font-spoqaMedium text-white hover:opacity-75" onClick={() => setToLogin(true)}>로그인</button>
-            </div>
-        </div>
-    )
+	return (
+		<div style={{height:'630px', width:'770px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
+			<div style={{marginTop:'-64px'}} className="absolute w-full flex justify-center">
+				<img src={SignedUpIcon} alt="login_icon"/>
+			</div>
+
+
+			<label style={{marginTop:'105px', color:'#ad9e8c', letterSpacing:'-0.005em'}} className="text-30px h-30px flex items-center font-spoqaBold">가입 신청이 완료 되었습니다.</label>
+			<label style={{color:'#c8c8c8', letterSpacing:'-0.005em'}} className="flex font-spoqaMedium text-30px h-30px flex items-center mt-13px">관리자 <label style={{color:'#1ca7ec'}} className="font-spoqaBold pl-4px">승인 대기중</label> 입니다.</label>
+				
+			<div style={{marginTop:'42px', color:'#c8c8c8'}} className="text-20px font-spoqaMedium flex flex-col items-center justify-center tracking-tighter">
+				<span style={{height:'20px'}} className="flex items-center">관리자 승인 후 로그인 하시면 정상적으로 서비스 이용이 가능합니다.</span>
+				<span style={{height:'20px'}} className="flex items-center mt-5px">깨끗하고 안전한 운영을 자랑합니다. </span>
+			</div>
+
+			{/* BREAK */}
+			<div style={{marginTop:'51px'}} className="flex space-x-5px">
+				<div style={{height:'190px', width:'234px', backgroundColor:'#272726', borderRadius:'5px'}} className="flex flex-col items-center justify-between">
+					<img className="mt-32px" src={img1} alt=""/>
+					<div style={{color:'#c8c8c8'}} className="mb-30px flex flex-col items-center">
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center">회원님의 모든 데이터는</div>
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center mt-3px">암호화되어 안전하게 </div>
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center mt-3px">보관됩니다.</div>
+					</div>
+				</div>
+				<div style={{height:'190px', width:'234px', backgroundColor:'#272726', borderRadius:'5px'}} className="flex flex-col items-center justify-between">
+					<img style={{marginTop:'31px'}} src={img2} alt=""/>
+					<div style={{color:'#c8c8c8'}} className="mb-30px flex flex-col items-center">
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center">아이디/비밀번호를</div>
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center mt-3px">분실되지 않도록 보안에</div>
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center mt-3px">신경 써 주세요.</div>
+					</div>
+				</div>
+				<div style={{height:'190px', width:'234px', backgroundColor:'#272726', borderRadius:'5px'}} className="flex flex-col items-center justify-between">
+					<img className="mt-30px" src={img3} alt=""/>
+					<div style={{color:'#c8c8c8'}} className="mb-30px flex flex-col items-center">
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center">회원 탈퇴 후</div>
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center mt-3px">회원님의 정보는</div>
+							<div className="font-spoqaMedium text-16px tracking-tight h-16px flex items-center mt-3px">완전히 삭제됩니다.</div>
+					</div>
+				</div>
+			</div>
+			<button 
+				style={{width:'390px', height:'58px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd', boxShadow:'0px 3px 4px #00000040'}} 
+				className="mt-30px flex items-center justify-center text-20px tracking-tighter font-spoqaMedium shadow-lg pt-px hover:opacity-90"
+				onClick={() => setToLogin(true)}
+			>
+				로그인
+			</button>
+		</div>
+	)
 }
 
 export default SignedUpPopup

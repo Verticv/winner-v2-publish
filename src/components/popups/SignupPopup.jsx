@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SignupIcon from '../../images/popups/sign_up_icon.png'
-import KakaoLogo from '../../images/footer/kakao.png'
-import TelegramLogo from '../../images/footer/telegram.png'
+import KakaoLogo from '../../images/kakao.png'
+import TelegramLogo from '../../images/telegram.png'
 import SignedUpPopup from './SignedUpPopup'
 import LoginPopup from './LoginPopup'
 import CloseIcon from '../../images/popups/close_icon.png'
@@ -41,21 +41,23 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 
 	const bankButton = (
-		<div className="flex w-170px group cursor-pointer">
-			<input  className="w-0 text-16px"/>
+
+		<div style={{height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="flex w-170px group cursor-pointer">
+			<input className="w-0 text-16px"/>
 			<div
 				onFocus={() => setSelectedInput(4)}
 				onBlur={(e) => setSelectedInput(false)}
-				className="flex w-full text-gray-r393e41 font-spoqaMedium text-16px outline-none h-full justify-between items-center tracking-minus05" 
+				className="flex w-full font-spoqaMedium text-16px outline-none h-full justify-between items-center group"
+				style={{color:'#c8c8c8'}} 
 			>
-				<label className="ml-10px group-hover:text-black cursor-pointer">{selectedBank}</label>
-				<img className="w-16px h-10px object-none mr-20px" src={DownArrowIcon} alt="arrow" /> 
+				<label className="ml-10px cursor-pointer group-hover:text-gray-100">{selectedBank}</label>
+				<img className="object-none mr-14px" src={DownArrowIcon} alt="arrow" /> 
 			</div>
 		</div>
 	)
 
 	const carrierDropdown = (
-		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-10px bg-white rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-5px">
+		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-10px rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-5px">
 			<button className={dropDownCellClass} onClick={() => {
 				setSelectedCarrier("SKT")
 				setDropdownOpen(false)
@@ -78,7 +80,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 
 	const bankDropdown = (
-		<div className="flex flex-col w-170px h-170px py-10px bg-white rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px overflow-y-scroll overflow-x-hidden">
+		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}}  className="flex flex-col w-170px h-170px py-10px rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px overflow-y-scroll overflow-x-hidden">
 			<button className={dropDownCellClass} onClick={() => {
 				setSelectedBank("KEB하나은행")
 				setDropdownOpen(false)
@@ -367,14 +369,14 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 						</div>
 					</div>
 				</div>
-					{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+				{/* BREAK */}
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-22px">
 					<div className="flex space-x-10px w-full">
 						<Title text="추천인 아이디" />
 						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
-								className="w-full font-spoqaMedium text-16px outline-none px-10px" 
+								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282" 
 								placeholder="가입코드"
 								onFocus={(e) => {
 										e.target.placeholder = ""
@@ -389,72 +391,77 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 						</div>
 					</div>
 				</div>
-					{/* BREAK */}
-					<div className="w-full flex flex-col mt-22px">
-							<div className="flex flex-col space-y-4">
-									<div className="flex space-x-10px w-full">
-											<Title text="계좌번호" />
-											<div className="w-170px flex-shrink-0 space-y-9px">
-													<DropDownControls buttonChild={bankButton} isDropdownOpen={isDropdownOpen} setDropdownOpen={setDropdownOpen} >
-															{bankDropdown}
-													</DropDownControls>
-													<div className={`${selectedInput === 7 ? "bg-blue-r1ca7ec h-2px" : "bg-gray-bebebe h-px"} w-full`} />
-											</div>
-											<div className={`${selectedInput === 8 ? "space-y-7px" : "space-y-8px"} w-full `}>
-													<input 
-															className="w-full text-gray-r393e41 font-spoqaMedium text-16px outline-none placeholder-gray-bebebe ml-10px" 
-															placeholder="예금주"
-															onFocus={(e) => {
-																	e.target.placeholder = ""
-																	setSelectedInput(8)
-															}} 
-															onBlur={(e) => {
-																	e.target.placeholder = "예금주"
-																	setSelectedInput(false)
-															}}
-													/>
-													<div className={`${selectedInput === 8 ? "bg-blue-r1ca7ec h-2px" : "bg-gray-bebebe h-px"} w-full`} />
-											</div>
-									</div>
-									<div className="w-full space-y-2 pl-150px pt-1">
-											<input 
-													className="w-full text-gray-r393e41 font-spoqaMedium text-16px outline-none placeholder-gray-bebebe ml-10px" 
-													placeholder="계좌번호 (숫자만 입력)"
-													onFocus={(e) => {
-															e.target.placeholder = ""
-															setSelectedInput(9)
-													}} 
-													onBlur={(e) => {
-															e.target.placeholder = "계좌번호 (숫자만 입력)"
-															setSelectedInput(false)
-													}}
-											/>
-											<div className={`${selectedInput === 9 ? "bg-blue-r1ca7ec h-2px" : "bg-gray-bebebe h-px"} w-full`} />
-									</div>
-							</div>
+				{/* BREAK */}
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-12px">
+					<div className="flex space-x-10px w-full">
+						<Title text="계좌번호" />
+						<div className="w-170px flex-shrink-0 space-y-9px">
+							<DropDownControls buttonChild={bankButton} isDropdownOpen={isDropdownOpen} setDropdownOpen={setDropdownOpen} >
+								{bankDropdown}
+							</DropDownControls>
+						</div>
+
+						<div style={{width:'360px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+							<input 
+								style={{width:'360px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
+								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282" 
+								placeholder="예금주"
+								onFocus={(e) => {
+									e.target.placeholder = ""
+									setSelectedInput(8)
+								}}
+								onBlur={(e) => {
+									e.target.placeholder = "예금주"
+									setSelectedInput(false)
+								}}
+							/>
+							<div style={{backgroundColor: selectedInput === 8 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
+						</div>
 					</div>
+				</div>
+				{/* BREAK */}
+				<div style={{width:'690px'}} className="w-full flex justify-end mt-12px">
+					<div style={{width:'540px'}} className="flex">
+						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+							<input 
+								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
+								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282" 
+								placeholder="계좌번호 (숫자만 입력)"
+								onFocus={(e) => {
+										e.target.placeholder = ""
+										setSelectedInput(9)
+									}} 
+								onBlur={(e) => {
+										e.target.placeholder = "가입코드"
+										setSelectedInput(false)
+								}}
+							/>
+							<div style={{backgroundColor: selectedInput === 9 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
+						</div>
+					</div>
+				</div>
 			</div>
 			{/* BREAK */}
-			<div className="w-full px-75px flex flex-col items-center">
-					<div className="h-84px flex items-center">
-							<button 
-									className="w-275px h-64px rounded-xl bg-gradient-to-r from-blue-gradLight to-blue-gradDark text-20px font-spoqa pt-px text-white hover:opacity-75" 
-									onClick={() => setSignedUp(true)}
-							>
-									회원가입
-							</button>
+			<div className="w-full flex flex-col items-center mt-20px">
+				<button 
+					style={{width:'390px', height:'58px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd', boxShadow:'0px 3px 4px #00000040'}} 
+					className="flex items-center justify-center text-20px tracking-tighter font-spoqaMedium shadow-lg pt-px hover:opacity-90"
+					onClick={() => setSignedUp(true)}
+				>
+					회원가입
+				</button>
+
+				<div style={{width:'270px'}} className="flex justify-between items-center mt-35px">
+					<div className="flex items-center space-x-10px">
+						<img className="object-none" src={KakaoLogo} alt="kakao-icon" />
+						<span style={{color:'#828282'}} className="font-spoqaMedium text-16px">test1234</span>
 					</div>
-					<div className="border-b w-full border-gray-bebebe" />
-					<div className="flex h-80px justify-center items-center">
-							<div className="flex items-center space-x-2px pr-10px">
-									<img className="object-none" src={KakaoLogo} alt="kakao-icon" />
-									<span className="text-brown-r351a1e font-roboto text-18px mb-6px tracking-wide">test1234</span>
-							</div>
-							<div className="flex items-center space-x-2px">
-									<img className="object-none" src={TelegramLogo} alt="kakao-icon" />
-									<span className="text-blue-r2aa1d5 font-roboto text-18px mb-6px tracking-wide">test1234</span>
-							</div>
+					<div className="flex items-center space-x-10px">
+						<img className="object-none" src={TelegramLogo} alt="kakao-icon" />
+						<span style={{color:'#828282'}} className="font-spoqaMedium text-16px">test1234</span>
 					</div>
+				</div>
+
 			</div>
 	</div>
 	)

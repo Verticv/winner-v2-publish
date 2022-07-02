@@ -5,7 +5,7 @@ import SlotGame from 'components/mainPage/SlotGame'
 import Sports from 'components/mainPage/Sports'
 import Tabs from 'components/mainPage/Tabs'
 import QuickMenu from 'components/QuickMenu'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from '../components/mainPage/Carousel'
 import Footer from '../components/mainPage/Footer'
 import Navbar from '../components/mainPage/Navbar'
@@ -19,6 +19,20 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 			<h3 style={{color:'#ad9e8c', fontSize:'24px'}} className="font-spoqaBold absolute">{text}</h3>
 		</div>
 	)
+
+	const [scrollPosition, setScrollPosition] = useState(0);
+	const handleScroll = () => {
+			const position = window.pageYOffset;
+			setScrollPosition(position);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	return (			
 		<div style={{backgroundColor:'#1e1e1e'}} className="w-full relative flex flex-col justify-center items-center overflow-x-hidden">
 			
@@ -26,7 +40,7 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 				<Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
 			</div>
 
-			<div style={{width:'1496px', height:'calc(100vh - 497px)'}} className='fixed bottom-0 z-20 flex justify-end'>
+			<div style={{width:'1496px', height:'calc(100vh - 497px)'}} className={`${scrollPosition > 497 ? "top-200px" : "bottom-0"} fixed z-20 flex justify-end`}>
 				<QuickMenu />
 			</div>
 

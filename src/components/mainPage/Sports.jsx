@@ -13,6 +13,91 @@ import ArrowRight from '../../images/arrows/sports_arrow_right.png'
 
 const Sports = () => {
 
+  const [index, setIndex] = useState(0)
+
+  const DATA = [
+    {
+      icon1: Ball,
+      icon2: Team1,
+      icon3: Team2,
+      text1: '축구',
+      text2: 'UEFA Champions League1',
+      text3: '리버풀',
+      text4: '비야레알',
+      time: '05/25 15:45'
+    },
+    {
+      icon1: Ball,
+      icon2: Team1,
+      icon3: Team2,
+      text1: '축구',
+      text2: 'UEFA Champions League2',
+      text3: '리버풀',
+      text4: '비야레알',
+      time: '05/25 15:45'
+    },
+    {
+      icon1: Ball,
+      icon2: Team1,
+      icon3: Team2,
+      text1: '축구',
+      text2: 'UEFA Champions League4',
+      text3: '리버풀',
+      text4: '비야레알',
+      time: '05/25 15:45'
+    },
+    {
+      icon1: Ball,
+      icon2: Team2,
+      icon3: Team1,
+      text1: '축구',
+      text2: 'UEFA Champions League3',
+      text3: '비야레알',
+      text5: '리버풀',
+      time: '05/25 15:45'
+    },
+    {
+      icon1: Ball,
+      icon2: Team1,
+      icon3: Team2,
+      text1: '축구',
+      text2: 'UEFA Champions League5',
+      text3: '리버풀',
+      text4: '비야레알',
+      time: '05/25 15:45'
+    },
+    {
+      icon1: Ball,
+      icon2: Team1,
+      icon3: Team2,
+      text1: '축구',
+      text2: 'UEFA Champions League6',
+      text3: '리버풀',
+      text4: '비야레알',
+      time: '05/25 15:45'
+    },
+    {
+      icon1: Ball,
+      icon2: Team1,
+      icon3: Team2,
+      text1: '축구',
+      text2: 'UEFA Champions League7',
+      text3: '리버풀',
+      text4: '비야레알',
+      time: '05/25 15:45'
+    },
+    {
+      icon1: Ball,
+      icon2: Team1,
+      icon3: Team2,
+      text1: '축구',
+      text2: 'UEFA Champions League8',
+      text3: '리버풀',
+      text4: '비야레알',
+      time: '05/25 15:45'
+    },
+  ]
+
   const Button = ({top,bottom}) => (
     <button className='hover:opacity-75' style={{height:'37px', width:'74px', borderRadius:'2px', background:'linear-gradient(to bottom, #4f4a41, #302d29)', padding:'1px', boxShadow:"0 2px 6px #00000090"}}>
       <div className='w-full h-full flex flex-col items-center justify-center' style={{borderRadius:'2px', backgroundColor:'#252525'}}>
@@ -22,44 +107,53 @@ const Sports = () => {
     </button>
   )
 
-  const Card = () => {
+  const Card = ({
+    icon1 = Ball,
+    icon2 = Team1,
+    icon3 = Team2,
+    text1 = '축구',
+    text2 = 'UEFA Champions League',
+    text3 = '리버풀',
+    text4 = '비야레알',
+    time = '05/25 15:45'
+  }) => {
     return (
       <div style={{width:'313px', height:'170px', borderRadius:'4px', borderWidth:'1px', borderColor:'#151514', backgroundColor:'#3e3e3e'}} className="flex flex-shrink-0">
         <div style={{width:'63px', borderColor:'#151514'}} className="border-r pt-px flex-shrink-0">
           <div style={{backgroundColor:'#302f2e', background:'linear-gradient(to bottom, #302f2e, #252423)'}} className="w-full h-full rounded-tl-4px rounded-bl-3px flex flex-col items-center">
             <div style={{width:'42px', height:'42px', marginTop:'54px', backgroundColor:'#1f1f1f'}} className="rounded-full flex items-center justify-center">
-              <img src={Ball} alt="" className='object-none' />
+              <img src={icon1} alt="" className='object-none' />
             </div>
-            <p style={{color:'#8e8780'}} className="text-14px font-spoqa tracking-tighter">축구</p>
+            <p style={{color:'#8e8780'}} className="text-14px font-spoqa tracking-tighter">{text1}</p>
           </div>
         </div>
 
         <div className="pt-px w-full h-full">
           <div style={{backgroundColor:'#242424', background:'linear-gradient(to bottom, #252525, #1f1e1e)'}} className="w-full h-full rounded-tr-4px flex flex-col items-center">
-            <p style={{color:'#645e58'}} className="tracking-tighter text-14px font-spoqaMedium flex h-14px items-center mt-10px">UEFA Champions League</p>
+            <p style={{color:'#645e58'}} className="tracking-tighter text-14px font-spoqaMedium flex h-14px items-center mt-10px">{text2}</p>
 
             <div style={{height:'74px', width:'220px'}} className="w-full mt-10px flex justify-between">
               <div style={{width:'58px'}} className="h-full flex flex-col items-center flex-shrink-0">
                 <div style={{width:'58px', height:'58px', backgroundColor:'#292929'}} className="rounded-full flex-shrink-0 p-3px flex items-center justify-center">
                   <div className='w-full h-full rounded-full flex items-center justify-center flex-shrink-0' style={{backgroundColor:'#1f1f1f'}}>
-                    <img src={Team1} alt="" />
+                    <img src={icon2} alt="" />
                   </div>
                 </div>
-                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px">리버풀</p>
+                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px">{text3}</p>
               </div>
 
               <div style={{color:'#948d81'}} className='w-full flex flex-col items-center font-spoqa'>
-                <p style={{fontSize:'12px'}} className="h-12px flex items-center mt-14px">05/25 15:45</p>
+                <p style={{fontSize:'12px'}} className="h-12px flex items-center mt-14px">{time}</p>
                 <p style={{}} className="font-spoqaBold text-18px h-18px flex items-center mt-2px">VS</p>
               </div>
 
               <div style={{width:'58px'}} className="h-full flex flex-col items-center flex-shrink-0">
                 <div style={{width:'58px', height:'58px', backgroundColor:'#292929'}} className="rounded-full flex-shrink-0 p-3px flex items-center justify-center">
                   <div className='w-full h-full rounded-full flex items-center justify-center flex-shrink-0' style={{backgroundColor:'#1f1f1f'}}>
-                    <img src={Team2} alt="" />
+                    <img src={icon3} alt="" />
                   </div>
                 </div>
-                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px">비야레알</p>
+                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px">{text4}</p>
               </div>
             </div>
 
@@ -94,12 +188,20 @@ const Sports = () => {
   return (
     <div style={{width:'1260px'}}>
       <div className="flex space-x-3px items-center relative">
-        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer hover:opacity-90" alt=""/>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer hover:opacity-90" alt=""/>
+        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer hover:opacity-90" alt="" onClick={() => index > 0 && setIndex(index-1)}/>
+        {DATA.splice(index, 4).map(item => (
+          <Card
+            icon1 = {item.icon1}
+            icon2 = {item.icon2}
+            icon3 = {item.icon3}
+            text1 = {item.text1}
+            text2 = {item.text2}
+            text3 = {item.text3}
+            text4 = {item.text4}
+            time = {item.time}
+          />
+        ))}
+        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer hover:opacity-90" alt="" onClick={() =>  index < DATA.length && setIndex(index+1)}/>
       </div>
 
       <div className='mt-11px space-x-19px flex'>

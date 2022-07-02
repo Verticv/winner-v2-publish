@@ -12,3 +12,18 @@
         left: -500px;
     }
 }
+
+#slotgame {
+    animation: slide 60s infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1500px, 0, 0); /* The image width */
+    }
+  }
