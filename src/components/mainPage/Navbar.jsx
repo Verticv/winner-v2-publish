@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
 import Koreaflag from '../../images/korea_flag.png'
 import UKflag from '../../images/uk_flag.png'
+import LogoutIcon from '../../images/logout.png'
 import DropDownControls from '../dropdowns/DropDownControls'
 import CountryDropDown from '../dropdowns/CountryDropDown'
 import PopupControls from '../popups/PopupControls'
 import LoginPopup from '../popups/LoginPopup'
-import WalletDropDown from '../dropdowns/WalletDropDown'
-import ProfileDropDown from '../dropdowns/ProfileDropDown'
-import PersonIcon from '../../images/person_icon.png'
-import ArrowUp from '../../images/arrows/arrow_up.png'
-import ArrowUpWhite from '../../images/arrows/arrow_up_white.png'
-import ArrowDown from '../../images/arrows/arrow_down.png'
-import ArrowDownWhite from '../../images/arrows/arrow_down_white.png'
-import InboxIcon from '../../images/inbox_icon.png'
+import Nav1 from '../../images/navBar/1.png'
+import Nav2 from '../../images/navBar/2.png'
+import Nav3 from '../../images/navBar/3.png'
+import Nav4 from '../../images/navBar/4.png'
+import Nav5 from '../../images/navBar/5.png'
 import NavbarHover from '../hovers/NavbarHover'
 import SignupPopup from '../popups/SignupPopup'
 import { useHistory } from 'react-router-dom'
@@ -27,8 +25,6 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	const [selectedTab, setSelectedTab] = useState()
 	const [hoveredTab, setHoveredTab] = useState()
 	const [country, setCountry] = useState("KR")
-	const [isProfileOpen, setProfileOpen] = useState()
-	const [isWalletOpen, setWalletOpen] = useState()
 	const [isCountryOpen, setCountryOpen] = useState()
 	const [isPopupOpen, setPopupOpen] = useState(true)
 
@@ -73,16 +69,6 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 			</button>
 		));
 	}
-	
-	const DropdownArrow = ({isOpen, isWhite}) => (
-			<>
-			{isWhite ? (
-				<img src={isOpen ? ArrowUpWhite : ArrowDownWhite} alt="arrow" />
-			) : (
-				<img src={isOpen ? ArrowUp : ArrowDown} alt="arrow" />
-			)}
-			</>
-	)
 
 	const CountryButton = (
 		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-7px hover:opacity-75 text-12px text-yellow-ad9e8c cursor-pointer">
@@ -90,29 +76,6 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 			<label className="font-spoqaBold cursor-pointer">{country}</label>
 			<label className="font-spoqaBold cursor-pointer">{' >'}</label>
 		</div>
-	)
-
-	const WalletButton = (
-			<div className="flex items-center space-x-10px h-40px flex-shrink-0">
-					<div className="flex limit1600:flex-col limit1600:-space-y-6px limit1600:space-x-0 space-y-0 space-x-4px items-end  group">
-							<div className="">
-									<label className="text-blue-r2087f0 cursor-pointer font-spoqaMedium mr-3px group-hover:text-blue-700">₩</label>
-									<label className="text-blue-r2087f0 cursor-pointer font-roboto group-hover:text-blue-700">100,000</label>
-									<label className="text-blue-r2087f0 cursor-pointer font-spoqaMedium group-hover:text-blue-700">원</label>
-							</div>
-							<label className="text-orange-ff7e00 cursor-pointer font-roboto group-hover:text-yellow-700">12,500 P</label>
-					</div>
-					<DropdownArrow isOpen={isWalletOpen}/>
-			</div>
-	)
-	
-	const profileButton = (
-			<div className="flex-shrink-0 flex items-center justify-center space-x-10px  hover:opacity-75">
-					<div className="relative flex items-center justify-center limit1600:h-40px limit1600:w-40px w-30px h-30px rounded-full bg-gradient-to-br from-blue-gradLight to-blue-gradDark shadow-plain2">
-							<img className="mt-2px ml-2px limit1600:object-none object-contain  limit1600:h-40px limit1600:w-40px w-20px h-20px" src={PersonIcon} alt="person" />
-					</div>
-					<DropdownArrow isOpen={isProfileOpen}/>
-			</div>  
 	)
 
 	const LoginButton = (
@@ -133,16 +96,43 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		</button>
 	)
 
-	const InboxButton = (
-			<button 
-					onClick={() => history.push("/mypage/inbox")} 
-					className="flex-shrink-0 relative flex items-center justify-center text-white rounded-full bg-gradient-to-br from-blue-gradLight to-blue-gradDark shadow-plain2 hover:opacity-75 limit1600:h-40px limit1600:w-40px w-30px h-30px"
-			>
-					<img className="ml-2px mt-2px limit1600:object-none object-contain  limit1600:h-40px limit1600:w-40px w-20px h-20px" src={InboxIcon} alt="inbox_icon" />
-					<div className="absolute flex items-center justify-center w-20px h-20px bg-red-notification top-0 right-0 -mr-6px -mt-3px rounded-full shadow-plain6">
-							<label className="text-12px font-roboto mt-2px ml-px">1</label>
-					</div>
+	const LoggedInComponent = () => (
+		<div className='space-x-5px flex'>
+			<button className='flex items-center h-12px'>
+				<img src={Nav1} alt="" className='mr-3px object-none'/>
+				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+					Lv3마이프로틴화이팅님
+				</p>
 			</button>
+			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
+			<button className='flex items-center h-12px'>
+				<img src={Nav2} alt="" className='mr-3px object-none'/>
+				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+					10,000,000원
+				</p>
+			</button>
+			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
+			<button className='flex items-center h-12px'>
+				<img src={Nav3} alt="" className='mr-3px object-none'/>
+				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+					12,500P
+				</p>
+			</button>
+			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
+			<button className='flex items-center h-12px'>
+				<img src={Nav4} alt="" className='mr-3px object-none'/>
+				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+					쪽지 2
+				</p>
+			</button>
+			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
+			<button className='flex items-center h-12px'>
+				<img src={Nav5} alt="" className='mr-3px object-none'/>
+				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+					쿠폰 3
+				</p>
+			</button>
+		</div>
 	)
 
 	return (
@@ -153,12 +143,29 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 					<div style={{height:'59px', paddingTop:'17px'}} className="block justify-center relative">
 						<img style={{margin:'auto'}} className="cursor-pointer object-none" src={TopLogo} alt="logo" onClick={() => history.push('/')} />
 
-						<div className='absolute right-0 bottom-0'>
-							<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
-								<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
-							</DropDownControls>
-						</div>
-						
+						{isAuthenticated ? (
+							<div className='absolute right-0 bottom-0 flex items-center -mb-3px'>
+								<button 
+									style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd'}} 
+									className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 hover:opacity-90 mr-5px"
+								>
+									총판페이지
+								</button>
+								<div style={{backgroundColor:'#36322c'}} className='w-px h-12px -mr-2px' />
+								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
+									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
+								</DropDownControls>
+								<div style={{backgroundColor:'#36322c'}} className='w-px h-12px -ml-2px' />
+								<img src={LogoutIcon} alt="" className='object-none ml-11px mr-4px cursor-pointer' />
+							</div>
+						) : (
+							<div className='absolute right-0 bottom-0'>
+								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
+									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
+								</DropDownControls>
+							</div>
+						)}
+	
 					</div>
 					<div style={{height:'44px'}} className="relative flex justify-between flex-row flex-shrink-0">
 						<div className="flex items-center flex-shrink-0 -ml-13px">
@@ -167,23 +174,9 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 						
 						<div className="flex justify-end">
 							{isAuthenticated ? (
-									<div className="flex space-x-20px items-center flex-shrink-0 limit1600:mt-0 mt-8px">
-											{/* BREAK */} 
-											<DropDownControls buttonChild={profileButton} onClick={() => setProfileOpen(!isProfileOpen)} onClose={() => setProfileOpen(false)}>
-													<div className="mt-4"><ProfileDropDown setAuth={setAuth}/></div>
-											</DropDownControls>
-											{/* BREAK */}
-											<DropDownControls buttonChild={WalletButton} onClick={() => setWalletOpen(!isWalletOpen)} onClose={() => setWalletOpen(false)}>
-													<div className="mt-4"><WalletDropDown /></div>
-											</DropDownControls>
-											{/* BREAK */}
-											{InboxButton}
-											{/* BREAK */}
-											<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)}>
-													<div className="mt-4"><CountryDropDown setCountry={setCountry} country={country} /></div>
-											</DropDownControls>
-									</div>
-
+								<div className="mt-16px mr-5px">
+									<LoggedInComponent />
+								</div>
 							) : (
 								<div className="flex space-x-10px flex-shrink-0 mt-8px">
 									<PopupControls buttonChild={LoginButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
