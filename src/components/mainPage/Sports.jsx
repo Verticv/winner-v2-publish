@@ -21,7 +21,7 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League1',
+      text2: 'UEFA Champions League',
       text3: '리버풀',
       text4: '비야레알',
       time: '05/25 15:45'
@@ -31,9 +31,9 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League2',
-      text3: '리버풀',
-      text4: '비야레알',
+      text2: 'Premier League',
+      text3: '멘체스터유나이티드',
+      text4: '토트넘',
       time: '05/25 15:45'
     },
     {
@@ -41,7 +41,7 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League4',
+      text2: 'UEFA Champions League',
       text3: '리버풀',
       text4: '비야레알',
       time: '05/25 15:45'
@@ -51,9 +51,9 @@ const Sports = () => {
       icon2: Team2,
       icon3: Team1,
       text1: '축구',
-      text2: 'UEFA Champions League3',
-      text3: '비야레알',
-      text5: '리버풀',
+      text2: 'UEFA Champions League',
+      text3: '리버풀',
+      text5: '비야레알',
       time: '05/25 15:45'
     },
     {
@@ -61,7 +61,7 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League5',
+      text2: 'UEFA Champions League',
       text3: '리버풀',
       text4: '비야레알',
       time: '05/25 15:45'
@@ -71,7 +71,7 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League6',
+      text2: 'UEFA Champions League',
       text3: '리버풀',
       text4: '비야레알',
       time: '05/25 15:45'
@@ -81,7 +81,7 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League7',
+      text2: 'UEFA Champions League',
       text3: '리버풀',
       text4: '비야레알',
       time: '05/25 15:45'
@@ -91,7 +91,7 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League8',
+      text2: 'UEFA Champions League',
       text3: '리버풀',
       text4: '비야레알',
       time: '05/25 15:45'
@@ -139,7 +139,9 @@ const Sports = () => {
                     <img src={icon2} alt="" />
                   </div>
                 </div>
-                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px">{text3}</p>
+                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px w-83px text-center">
+                  {text3.length > 6 ? `${text3.slice(0,6)}...` : text3}
+                </p>
               </div>
 
               <div style={{color:'#948d81'}} className='w-full flex flex-col items-center font-spoqa'>
@@ -153,7 +155,9 @@ const Sports = () => {
                     <img src={icon3} alt="" />
                   </div>
                 </div>
-                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px">{text4}</p>
+                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px w-80px text-center">
+                  {text4.length > 6 ? `${text3.slice(0,6)}...` : text4}
+                </p>
               </div>
             </div>
 
@@ -173,7 +177,7 @@ const Sports = () => {
   const Card1 = ({img, imgHover,text}) => {
     const [isHover, setHover] = useState(false)
     return (
-      <div style={{height:'207px', width: '411px'}} className="flex items-end relative" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+      <div style={{height:'207px', width: '411px'}} className="flex items-end relative cursor-pointer" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <img src={isHover ? imgHover : img} alt="" className='object-none' />
         <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-18px right-18px p-px hover:opacity-90'>
           <div style={{borderRadius:'2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>

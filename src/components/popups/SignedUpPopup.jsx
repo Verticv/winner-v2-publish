@@ -48,7 +48,7 @@ const SignedUpPopup = ({setToLogin}) => {
 				</div>
 			</div>
 			<button 
-				style={{width:'390px', height:'58px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd', boxShadow:'0px 3px 4px #00000040'}} 
+				style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 1px #00000070", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
 				className="mt-30px flex items-center justify-center text-20px tracking-tighter font-spoqaMedium shadow-lg pt-px hover:opacity-90"
 				onClick={() => setToLogin(true)}
 			>

@@ -112,7 +112,7 @@ const Carousel = () => {
 
 	return (
 		<div className="flex w-default limit1920:w-1920 limit:w-full flex-shrink-0">
-			<div style={{height:'497px'}} className="relative w-full flex items-center">
+			<div style={{height:'491px'}} className="relative w-full flex items-center">
 				{sliderControl(true)}
 				{imagesDisplay}
 				{sliderControl()}

@@ -40,12 +40,12 @@ const SlotGame = () => {
   )
 
   return (
-    <div style={{width:'1260px' ,height: '327px'}}>
-      <div style={{height:'17px'}} className="flex w-full justify-end items-center">
-        <button style={{color:'#ad9e8c', fontSize:'14px'}} className="font-spoqa hover:opacity-75">더보기</button>
+    <div style={{width:'1260px' , height: '327px'}}>
+      <div style={{height:'20px'}} className="flex w-full justify-end items-center">
+        <button style={{color:'#ad9e8c', fontSize:'14px'}} className="font-spoqa hover:opacity-75 h-14px flex items-center pb-4px">더보기</button>
       </div>
 
-      <div style={{marginTop:'4px', height:'306px'}} className="flex flex-col justify-between">
+      <div style={{height:'306px'}} className="flex flex-col justify-between">
         <div className="flex items-start">
           <img src={SlotJackpot} alt="" className='object-none mr-7px' />
           <div className='flex space-x-2px'>

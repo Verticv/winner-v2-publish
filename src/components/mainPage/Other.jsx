@@ -30,7 +30,7 @@ const Other = () => {
   }
 
   return (
-    <div className='flex space-x-20px'>
+    <div className='flex space-x-10px'>
       <Card img={Menu1} text={"e-스포츠"} imgHover={Menu1Hl}/>
       <Card img={Menu2} text={"미니게임"} imgHover={Menu2Hl} />
       <Card img={Menu3} text={"키론가상게임"} imgHover={Menu3Hl} />

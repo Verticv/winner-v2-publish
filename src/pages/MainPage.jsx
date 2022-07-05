@@ -9,14 +9,16 @@ import React, { useEffect, useState } from 'react'
 import Carousel from '../components/mainPage/Carousel'
 import Footer from '../components/mainPage/Footer'
 import Navbar from '../components/mainPage/Navbar'
-import Subtitle from '../images/subtitle.png'
+import SubtitleLeft from '../images/subtitle_left.png'
+import SubtitleRight from '../images/subtitle_right.png'
 
 const MainPage = ({isAuthenticated, setAuthenticated}) => {
 
 	const SubComp = ({text}) => (
-		<div className='relative flex justify-center h-22px items-center'>
-			<img src={Subtitle} className="object-none flex-shrink-0" alt="" />
-			<h3 style={{color:'#ad9e8c', fontSize:'24px'}} className="font-spoqaBold absolute">{text}</h3>
+		<div className='flex justify-center h-22px items-center space-x-29px'>
+			<img src={SubtitleLeft} className="object-none flex-shrink-0 mt-3px" alt="" />
+			<h3 style={{color:'#ad9e8c', fontSize:'24px'}} className="font-spoqaBold h-22px flex items-center">{text}</h3>
+			<img src={SubtitleRight} className="object-none flex-shrink-0 mt-3px" alt="" />
 		</div>
 	)
 
@@ -49,18 +51,18 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 					<Carousel />
 				</div>
 
-				<div style={{marginTop:'452px'}} className="flex-shrink-0 z-30 flex items-end justify-center">
+				<div style={{marginTop:'446px'}} className="flex-shrink-0 z-30 flex items-end justify-center">
 					<NoticeBanner />
 				</div>
 			</div>
 			
 			<div className="flex flex-col items-start limit:items-center h-full relative z-30">	
 
-				<div style={{marginTop:'21px'}}>
+				<div style={{marginTop:'31px'}}>
 					<Tabs />
 				</div>
 
-				<div style={{marginTop:'22px'}}>
+				<div style={{marginTop:'19px'}}>
 					<SubComp text="슬롯게임" />
 				</div>
 

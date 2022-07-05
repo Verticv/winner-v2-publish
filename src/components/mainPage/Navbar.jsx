@@ -53,6 +53,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		return items.map(item => (
 			<button 
 				key={item.id} 
+				style={{color: selectedTab === item.id ? "#fcd6a8" : "#ad9e8c"}}
 				className={selectedTab === item.id ? selectedTabClass : tabClass} 
 				onClick={() => {
 					setSelectedTab(item.id)
@@ -68,7 +69,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 				}}
 			>
 				<span className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
-				<div className={selectedTab === item.id ? selectedLineClass : lineClass}></div>
+				<div style={{backgroundColor: selectedTab === item.id ? "#fcd6a8" : ""}} className={selectedTab === item.id ? selectedLineClass : lineClass}></div>
 			</button>
 		));
 	}
@@ -84,7 +85,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	)
 
 	const CountryButton = (
-		<div style={{height:'22px'}} className="flex items-center px-7px hover:opacity-75 text-12px text-yellow-ad9e8c cursor-pointer">
+		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-7px hover:opacity-75 text-12px text-yellow-ad9e8c cursor-pointer">
 			<img className="object-none mr-7px" src={country === "KR" ? Koreaflag : UKflag} alt="flag"></img>
 			<label className="font-spoqaBold cursor-pointer">{country}</label>
 			<label className="font-spoqaBold cursor-pointer">{' >'}</label>
@@ -116,7 +117,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 
 	const LoginButton = (
 		<button 
-			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090'}} 
+			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd'}} 
 			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:opacity-90"
 		>
 			로그인
@@ -125,7 +126,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 
 	const SignupButton = (
 		<button 
-			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090'}} 
+			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd'}} 
 			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:opacity-90"
 		>
 			회원가입
@@ -145,7 +146,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	)
 
 	return (
-		<div style={{borderBottomWidth:'1px', borderBottomColor:'#414141'}} className='w-full z-50 bg-black bg-opacity-75 flex flex-col items-start limit1920:items-center'>
+		<div style={{borderBottomWidth:'1px', borderBottomColor:'#414141'}} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit1920:items-center'>
 			<div style={{width:'1260px'}} className="z-50">
 
 				<div style={{height:'104px'}} className="">

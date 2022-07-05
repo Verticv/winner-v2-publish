@@ -507,7 +507,10 @@ module.exports = {
       letterSpacing: {
         digital: '.04em',
         minus05: '-.005em'
-       }
+      },
+      backgroundOpacity: {
+        '85': '0.85',
+      }
     },
   },
   variants: {

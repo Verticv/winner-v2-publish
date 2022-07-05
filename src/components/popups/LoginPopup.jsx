@@ -29,7 +29,7 @@ const LoginPopup = ({setAuth, setPopupOpen}) => {
 				<img src={Username} alt="" className="ml-19px" />
 				<input
 					style={{color:'#948d81', backgroundColor:'#191817', borderRadius:'4px'}}
-					className="text-20px outline-none font-spoqa w-full h-full pl-18px placeholder-gray-r948d81" 
+					className="text-20px outline-none font-spoqa w-full h-full pl-18px placeholder-gray-r948d81 pt-3px" 
 					placeholder={"아이디"}
 					onFocus={(e) => e.target.placeholder = ""} 
 					onBlur={(e) => e.target.placeholder = "아이디"}
@@ -40,7 +40,7 @@ const LoginPopup = ({setAuth, setPopupOpen}) => {
 				<img src={Password} alt="" className="ml-21px" />
 				<input
 					style={{color:'#948d81', backgroundColor:'#191817', borderRadius:'4px'}}
-					className="text-20px outline-none font-spoqa w-full h-full pl-19px placeholder-gray-r948d81" 
+					className="text-20px outline-none font-spoqa w-full h-full pl-19px placeholder-gray-r948d81 pt-3px" 
 					placeholder={"비밀번호"}
 					onFocus={(e) => e.target.placeholder = ""} 
 					onBlur={(e) => e.target.placeholder = "비밀번호"}
@@ -48,7 +48,7 @@ const LoginPopup = ({setAuth, setPopupOpen}) => {
 			</div>
 			
 			<button
-				style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 2px #00000090", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
+				style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 1px #00000070", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
 				className="text-20px tracking-tighter font-spoqaMedium text-white hover:opacity-75 mt-40px flex-shrink-0"
 				onClick={() => setAuth(true)}
 			>

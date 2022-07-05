@@ -31,7 +31,7 @@ const CountryDropDown = ({setCountry, country}) => {
 				}
 			>
 				<img src={item.icon} alt="flag"></img>
-				<label className="font-spoqaBold cursor-pointer text-12px text-yellow-ad9e8c cursor-pointer ml-10px">{item.text}</label>    
+				<label style={{color:'#ffdfbd'}} className="font-spoqaBold cursor-pointer text-12px text-yellow-ad9e8c cursor-pointer ml-10px">{item.text}</label>    
 			</button>
 		));
 	}
