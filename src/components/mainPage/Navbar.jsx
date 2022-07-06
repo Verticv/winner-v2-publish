@@ -191,7 +191,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 					</div>
 				</div>
 			</div>
-			<div className='bg-white w-screen'>
+			<div className='bg-black bg-opacity-85 w-screen -mt-px'>
 				<NavbarHover selection={hoveredTab} setHoveredTab={setHoveredTab} setSelectedTab={setSelectedTab}/>
 			</div>
 
