@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ArrowDown from '../../images/myPage/leftMenu/arr_down.png'
-import ArrowUp from '../../images/myPage/leftMenu/arr_up.png'
+import ArrowUp from '../../images/myPage/leftMenu/arr_down_v2.png'
 import { useHistory } from 'react-router-dom'
 import PopupControls from '../popups/PopupControls'
 import ReauthenticatePopup from 'components/popups/ReauthenticatePopup'
@@ -45,111 +45,112 @@ const LeftMenu = ({
         setMouseHover("")
     }
       
-    const EditProfileButton = ({path, text, icon, iconHighlight, selectedTab}) => (
+  const EditProfileButton = ({ path, text, icon, iconHighlight, selectedTab }) => (
+    <div className='flex w-full items-center pt-6px pr-6px pl-6px flex-col'>
         <button 
             className={`${
                 pathname.includes(path)
-                ? "bg-gradient-to-br from-blue-gradLight to-blue-gradDark shadow-plain2" 
-                : "bg-white"
-            } flex w-full items-center p-5px h-53px rounded-full group hover:bg-gray-f2f2f2`} 
+                ? "bg-gradient-to-b from-golden-gradLight to-golden-gradDark shadow-link" 
+                : ""
+            } flex w-full items-center h-48px rounded-4px`} 
             onClick={() => {
                 buttonPressed(path)
                 setPopupOpen(true)
             }}
         >
             <div 
-                className={`${
-                    (pathname.includes(path)) && "shadow-plain9"
-                } h-42px w-42px bg-white rounded-full flex items-center justify-center flex-shrink-0`} 
+                className={`
+               w-50px flex items-center justify-center flex-shrink-0`} 
             >
                 <img 
-                    className="h-42px w-42px bg-white rounded-full flex items-center justify-center" 
+                    className="rounded-full flex items-center justify-center" 
                     src={(pathname.includes(path)) ? iconHighlight : icon} 
                     alt="icon" />
             </div>
-            <div className="w-full flex mx-14px justify-between items-center">                
-                <label className={`${(pathname.includes(path)) ? "text-white group-hover:text-white" : "text-gray-r8c8c8c group-hover:text-gray-r454545"} font-spoqaMedium text-16px cursor-pointer tracking-tight`}>{text}</label>
-            </div>
+            <div className="w-full flex mr-18px ml-8px justify-between items-center">
+              <div className="flex items-center">              
+                <label className={`${(pathname.includes(path)) ? "text-gray-activeText" : "text-gray-ccc2b6"} font-spoqaMedium text-16px cursor-pointer tracking-tight`}>{text}</label>
+              </div>
+          </div>
         </button>
+    </div>
     )
 
     function MenuList({ items }) {
-        
-        return items.map(item => (
 
+        return items.map(item => (
             <div key={item.id}>
-                {item.text === "회원정보수정" ? (
-                    <PopupControls 
-                        buttonChild={(
-                            <EditProfileButton 
-                                path={item.path} 
-                                text={item.text} 
-                                icon={item.icon} 
-                                iconHighlight={item.iconHighlight} 
-                                selectedTab={selectedTab}
-                            />
-                        ) }
-                        isPopupOpen={isPopupOpen} 
-                        setPopupOpen={setPopupOpen}
-                    >
-                        <ReauthenticatePopup setPopupOpen={setPopupOpen} setSelectedTab={setSelectedTab}/>
-                    </PopupControls>  
+            {item.text === "회원정보수정" ? (
+                <PopupControls 
+                    buttonChild={(
+                        <EditProfileButton 
+                            path={item.path} 
+                            text={item.text} 
+                            icon={item.icon} 
+                            iconHighlight={item.iconHighlight} 
+                            selectedTab={selectedTab}
+                        />
+                    ) }
+                    isPopupOpen={isPopupOpen} 
+                    setPopupOpen={setPopupOpen}
+                >
+                    <ReauthenticatePopup setPopupOpen={setPopupOpen} setSelectedTab={setSelectedTab}/>
+                </PopupControls>              
                 ) : (
-                    <div>
-                        <button 
-                            className={`${
-                                pathname.includes(item.mainPath)
-                                ? "bg-gradient-to-br from-blue-gradLight to-blue-gradDark shadow-plain2" 
-                                : "bg-white"
-                            } flex w-full items-center p-5px h-53px rounded-full hover:bg-gray-f2f2f2`} 
-                            onClick={(e) => buttonPressed(item.text, item.path)}
-                            onMouseEnter={() => mouseHover(item.path)}
-                            onMouseLeave={() => mouseLeave(item.path)}
-                        >
-                            <div 
-                                className={`${
-                                    pathname.includes(item.mainPath) && "shadow-plain9"
-                                } h-42px w-42px bg-white rounded-full flex items-center justify-center flex-shrink-0`} 
+                    <div className='flex w-full items-center pt-6px pr-6px pl-6px flex-col'>
+                      <button 
+                        className={`${
+                          pathname.includes(item.mainPath)
+                          ? "bg-gradient-to-b from-golden-gradLight to-golden-gradDark shadow-link" 
+                          : ""
+                        } flex w-full items-center h-48px rounded-4px`} 
+                    // style={{background:'linear-gradient(0deg, rgba(130,97,64,1) 0%, rgba(165,122,83,1) 96%, rgba(163,124,85,1) 98%)'}}
+                        onClick={(e) => buttonPressed(item.text, item.path)}
+                        onMouseEnter={() => mouseHover(item.path)}
+                        onMouseLeave={() => mouseLeave(item.path)}
+                      >
+                        <div>
+                          <div 
+                            className={`w-50px flex items-center justify-center flex-shrink-0`} 
+                          >
+                            <img 
+                              className="flex items-center justify-center" 
+                              src={pathname.includes(item.mainPath) ? item.iconHighlight : item.icon} 
+                                alt="icon" />
+                          </div>
+                        </div>
+                        <div className="w-full flex mr-18px ml-8px justify-between items-center">
+                          <div className="flex items-center">
+                            <label
+                              className={`${
+                                  pathname.includes(item.mainPath)
+                                  ? "text-golden-highLight" 
+                                  : "text-golden-ccc2b6"
+                              } font-spoqaMedium text-16px cursor-pointer tracking-tight`}
                             >
-                                <img 
-                                    className="h-42px w-42px bg-white rounded-full flex items-center justify-center" 
-                                    src={pathname.includes(item.mainPath) ? item.iconHighlight : item.icon} 
-                                    alt="icon" />
-                            </div>
-                            <div className="w-full flex mx-14px justify-between items-center">
-                                <div className="flex items-center">
-                                    <label
-                                        className={`${
-                                            pathname.includes(item.mainPath)
-                                            ? "text-white" 
-                                            : isMouseHover === item.path
-                                            ? "text-gray-r454545"
-                                            : "text-gray-r8c8c8c"
-                                        } font-spoqaMedium text-16px cursor-pointer tracking-tight`}
-                                    >
-                                        {item.text}
-                                    </label>
-                                    {item.inboxCount && (
-                                        <div style={{backgroundColor:"#ed2f59"}} className="ml-10px h-17px w-17px rounded-xl text-white flex items-center justify-center text-12px font-roboto pt-px pr-px">
-                                            {item.inboxCount}
-                                        </div>
-                                    )}
-                                    </div>
-                                    {item.sub1 && (
-                                        <img 
-                                            className={isExpanded === item.path + "closed" && "transform rotate-180"} 
-                                            src={
-                                                isExpanded === item.path + "closed"
-                                                ? ArrowUp 
-                                                : pathname.includes(item.mainPath)
-                                                ? ArrowUp 
-                                                : ArrowDown
-                                            } 
-                                            alt="" 
-                                        />
-                                    )}
-                            </div>
-                        </button>
+                              {item.text}
+                            </label>
+                            {item.inboxCount && (
+                              <div style={{backgroundColor:"#e9441d"}} className="ml-10px h-17px w-17px rounded-4px text-white flex items-center justify-center text-12px font-roboto pt-px pr-px">
+                                {item.inboxCount}
+                              </div>
+                            )}
+                          </div>
+                          {item.sub1 && (
+                            <img 
+                                className={isExpanded === item.path + "closed" && "transform rotate-180"} 
+                                src={
+                                    isExpanded === item.path + "closed"
+                                    ? ArrowUp 
+                                    : pathname.includes(item.mainPath)
+                                    ? ArrowUp 
+                                    : ArrowDown
+                                } 
+                                alt="" 
+                            />
+                            )}
+                        </div>
+                      </button>
                             
                         <div className={`${
                             pathname.includes(item.mainPath) 
@@ -157,7 +158,7 @@ const LeftMenu = ({
                             && isExpanded !== item.path2 + "closed"
                             && isExpanded !== item.path3 + "closed" 
                             ? "" : "hidden"
-                            } font-spoqaMedium text-16px cursor-pointer tracking-tight mt-px`} 
+                            }  w-full font-spoqaMedium text-16px cursor-pointer tracking-tight mt-px`} 
                         >
                             {item.sub1 && (
                                 <button 
@@ -170,8 +171,8 @@ const LeftMenu = ({
                                         || pathname === item.path_2 || pathname === item.path_3 
                                         || pathname === item.path_4 || pathname === item.path_5 
                                         || pathname === item.path_6 || pathname === item.path_7 || pathname === item.path_8 
-                                        ? "bg-blue-d0e8ff text-gray-r454545" 
-                                        : "bg-gray-f9f9f9 text-gray-r8c8c8c"
+                                        ? " text-gray-r454545" 
+                                        : " text-gray-r8c8c8c"
                                     } flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
                                         {item.sub1}
                                 </button>
@@ -185,9 +186,9 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path2 || pathname === item.path2_1 || pathname === item.path2_2 || pathname === item.path2_3
-                                        ? "bg-blue-d0e8ff text-gray-r454545" 
-                                        : "bg-gray-f9f9f9 text-gray-r8c8c8c"
-                                    } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full bg-gray-f9f9f9 pl-60px hover:text-gray-r454545`}>
+                                        ? " text-gray-r454545" 
+                                        : " text-gray-r8c8c8c"
+                                    } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
                                         {item.sub2}
                                 </button>
                             )}
@@ -200,9 +201,9 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path3 || pathname === item.path3_1
-                                        ? "bg-blue-d0e8ff text-gray-r454545" 
-                                        : "bg-gray-f9f9f9 text-gray-r8c8c8c"
-                                    } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-45px w-full bg-gray-f9f9f9 pl-60px hover:text-gray-r454545`}>
+                                        ? " text-gray-r454545" 
+                                        : " text-gray-r8c8c8c"
+                                    } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
                                         {item.sub3}
                                 </button>
                             )}
@@ -215,26 +216,28 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path4
-                                        ? "bg-blue-d0e8ff text-gray-r454545" 
-                                        : "bg-gray-f9f9f9 text-gray-r8c8c8c"
-                                    } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full bg-gray-f9f9f9 pl-60px hover:text-gray-r454545`}>
+                                        ? " text-gray-r454545" 
+                                        : " text-gray-r8c8c8c"
+                                    } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
                                         {item.sub4}
                                 </button>
                             )}
                         </div>
 
                     </div>
-                )}
+               )} 
                 
             </div>
         ));
     }
 
-    return (
-        <div className="w-200px bg-white shadow-subNavbar rounded-26px p-4px space-y-px mb-180px">
-            <MenuList items={array} />
-        </div>
-    )
+  return (
+    <div className="w-200px rounded-6px mb-180px p-px shadow-navbar overflow-hidden" style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0 ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}>
+      <div className="rounded-6px bg-gray-323232 overflow-hidden">
+        <MenuList items={array} />
+      </div>
+    </div>
+  )
 }
 
 export default LeftMenu

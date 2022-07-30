@@ -12,75 +12,49 @@ const HorizontalMenu = ({
     const [isHover, setHover] = useState(null)
 
     function TabsList({ items }) {
-        return items.map(item => (
-            <button 
-                key={item.id} 
-                style={{
-                    background: "linear-gradient(to bottom, #dddddd, #bcbcbc)",
-                    borderRadius:"10px",
-                }}
-                className={`${
-                    pathname === item.path
-                    ? "bg-blue-r58baf7" 
-                    : "bg-white hover:bg-blue-d3f3fe"
-                } overflow-hidden h-80px w-full flex items-end p-px`} 
-                onClick={() => {
-                    history.push(item.path)
-                    setSelectedTab(item.id)
-                    if (setSelectedSubTab !== null) {
-                        setSelectedSubTab(0)
-                    }
-                }}
-                onMouseOver={() => setHover(item.id)}
-                onMouseLeave={() => setHover(null)}
-            >
-                <div 
-                    style={{
-                        height:"78px", 
-                        width:"100%", 
-                        borderRadius:"9px",
-                    }} 
-                    className={`flex w-full justify-end items-end bg-white ${
-                        pathname === item.path
-                        ? "bg-blue-r58baf7" 
-                        : "bg-white hover:bg-blue-d3f3fe"
-                    }`}
-                >
-                    <div 
-                        style={{
-                            background: pathname === item.path
-                            ? "linear-gradient(to bottom, #2087f0, #1873cf)"
-                            : isHover === item.id 
-                            ? "linear-gradient(to bottom, #b9dcff, #d2f6ff)"
-                            : "linear-gradient(to bottom, #c4d6e6, #e8f3fd 26%, #ffffff)",
-                            borderBottomLeftRadius:"9px",
-                            borderBottomRightRadius:"9px",
-                            borderTopLeftRadius:"8px",
-                            borderTopRightRadius: "8px",
-                            borderColor: pathname === item.path ? "#1a73ce" : "#d6dfe8",
-                            boxShadow:'rgb(0 0 0 / 30%) 7px 0px 2px -7px inset, rgb(0 0 0 / 30%) -7px 0px 2px -7px inset, rgb(0 0 0 / 30%) 0px -7px 2px -7px inset'
-                        }}
-                        className={`mt-3px h-75px w-full rounded-b-lg rounded-t-md flex flex-col items-center`}
-                    >
-                        <img className="mt-8px ml-2px object-none" src={item.icon} alt="" />
-                        <span 
-                            className={`${
-                                pathname === item.path
-                                ? "text-white"
-                                : "text-gray-r616161" 
-                            } text-14px font-spoqaMedium tracking-tight -mt-4px`}
-                        >{item.text}</span>
-                    </div>
-                </div>
-            </button>
+      return items.map(item => (
+        <button
+          key={item.id}
+          style={{
+            background:'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
+            boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5) ',
+          }}
+          className={`${
+              pathname === item.path
+              ? "flex-shrink" 
+              : ""
+          } relative overflow-hidden h-78px w-full flex items-end rounded-4px`} 
+          onClick={() => {
+              history.push(item.path)
+              setSelectedTab(item.id)
+              if (setSelectedSubTab !== null) {
+                  setSelectedSubTab(0)
+              }
+            }}
+            onMouseOver={() => setHover(item.id)}
+            onMouseLeave={() => setHover(null)}>
+          <div style={{
+              background: 'linear-gradient( to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)',
+            }}
+            className='w-full flex h-75px absolute top-0 p-px rounded-4px'>
+            <div style={{
+                background: 'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)',
+                }} className='w-full rounded-4px flex flex-col justify-between items-center pb-5px'>
+              <img className="mt-11px object-none" src={item.icon} alt="" />
+              <span className='text-14px font-spoqaMedium tracking-tight  text-golden-ccc2b6'>{item.text}</span>
+            </div>
+          </div>
+        </button>
         ));
     }
 
     return (
-        <div className="flex w-full h-80px space-x-px">
+        <div className="flex justify-between w-full h-78px space-x-3px pl-4px pr-4px">
             <TabsList items={itemsArray} />
         </div>
     )
 }
 
 export default HorizontalMenu
+
+

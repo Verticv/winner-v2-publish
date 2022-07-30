@@ -8,8 +8,8 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
 
         const detailButton = (
             <button 
-                style={{height:"29px", width: "73px", backgroundColor:"#e9441d"}} 
-                className="rounded-full text-white font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75"
+                style={{height:"29px", width: "73px",background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}} 
+                className="rounded-4px text-white font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75 flex-shrink-0"
             >
                 상세보기
             </button>
@@ -22,8 +22,12 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
             setCheckedState(updatedCheckedState);
         }; 
 
-        return items.map(item => (
-            <tr  className="bg-gray-fefefe font-spoqa text-14px tracking-tight text-gray-r585858 h-56px w-full border-b border-gray-dddddd">
+        return items.map((item,index) => (
+            <tr className={`${
+                index%2==0
+                  ? "bg-dark-323232" 
+                  : "bg-dark-2e2e2e"
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}>
                 <td style={{width: "92px"}} className="text-center pt-7px">
                     <input
                         type="checkbox"
@@ -48,8 +52,8 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
     }
 
     return (
-        <table style={{borderRadius: "1em"}} className="shadow-subNavbar overflow-hidden">
-            <thead className="bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd">
+        <table className="rounded-4px shadow-subNavbar overflow-hidden">
+            <thead className=" font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td style={{width: "92px"}} className="text-center">선택</td>
                     <td style={{width: "74px"}} className="text-center">베팅번호</td>

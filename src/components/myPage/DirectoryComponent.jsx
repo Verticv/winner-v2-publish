@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
-import HomeIcon from '../../images/myPage/home_icon.png'
+import HomeIcon from '../../images/myPage/home_icon_v2.png'
 import RightArrow from '../../images/myPage/right_arrow.png'
 
 const DirectoryComponent = ({
@@ -53,28 +53,28 @@ const DirectoryComponent = ({
     }
 
     return (
-        <div className="flex items-center h-22px w-default my-20px space-x-10px">
-            <img className="object-none cursor-pointer" src={HomeIcon} alt="" onClick={() => history.push("/")} />
-            <img className="object-none cursor-none" src={RightArrow} alt=""/>
+        <div className="flex items-center h-20px w-default my-20px space-x-10px">
+            <img className="object-none cursor-pointer ml-2px mb-3px" src={HomeIcon} alt="" onClick={() => history.push("/")} />
+            <img className="object-none cursor-none mb-2px" src={RightArrow} alt=""/>
             <span 
                 className={`${
                     !branch2 
-                        ? "font-spoqaBold text-gray-r393e41" 
-                        : "font-spoqaMedium text-gray-r7c7c7c"
-                }  text-13px tracking-tight cursor-pointer`}
+                        ? "font-spoqaBold" 
+                        : "font-spoqaMedium"
+                }  text-13px tracking-tight cursor-pointer text-gray-929292`}
                 onClick={() => {branch1Clicked(branch1)}}
             >
                 {branch1}
             </span>
             {branch2 && (
                 <>
-                    <img className="object-none" src={RightArrow} alt="" />
-                    <span 
+                    <img className="object-none mb-3px" src={RightArrow} alt="" />
+                    <span style={{marginLeft:'8px'}}
                         className={`${
                             !branch3 
-                            ? "font-spoqaBold text-gray-r393e41" 
-                            : "font-spoqaMedium text-gray-r7c7c7c"
-                            } text-13px tracking-tight cursor-pointer`}
+                            ? "font-spoqaBold" 
+                            : "font-spoqaMedium"
+                            } text-13px tracking-tight cursor-pointer text-gray-929292`}
                         onClick={() => branch2Clicked(mainPath)}
                         >
                             {branch2}

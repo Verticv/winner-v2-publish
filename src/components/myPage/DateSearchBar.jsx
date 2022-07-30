@@ -38,9 +38,9 @@ const DateSearchBar = ({
     const dropDownCellClass = "flex w-full h-30px py-2px bg-white items-center hover:bg-blue-lightGradLight px-10px"
 
     const gameResultButton = (
-        <div className="flex items-center justify-between bg-white placeholder-gray-r8c8c8c outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c hover:text-gray-r585858" >
-            <p className="mt-px">{selectedCarrier}</p>
-            <img src={ArrowDownGray} alt="" />
+        <div className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight  hover:text-gray-r585858 border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" >
+          <p className="mt-px">{selectedCarrier}</p>
+          <img src={ArrowDownGray} alt="" />
         </div>
     )
 
@@ -57,7 +57,7 @@ const DateSearchBar = ({
 
 
     const searchDropdown = (
-        <div style={{height:"249px"}} className="mt-4px flex flex-col items-center justify-center w-138px overflow-hidden bg-white rounded-md border border-gray-dddddd text-gray-r8c8c8c font-spoqaMedium text-14px tracking-tight">
+        <div style={{height:"249px"}} className="mt-4px flex flex-col items-center justify-center w-138px overflow-hidden rounded-md border  font-spoqaMedium text-14px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a">
             <div style={{width:"134px"}} className="pt-4px mt-2px h-full overflow-y-scroll overflow-x-hidden">
                 <DropdownCells items={LeagueExampleArray} />
             </div>
@@ -75,18 +75,19 @@ const DateSearchBar = ({
     )
 
 
+
     return (
-        <div className="h-63px w-full bg-gray-f9f9f9 mt-20px rounded-2xl border border-gray-dddddd flex items-center justify-center space-x-10px">
+      <div className="h-65px w-full  mt-20px  flex items-center justify-center space-x-10px rounded-4px bg-gray-2e2e2e">
                 
                 {isLeagueSearch === true && (
                     <div className="space-x-5px">
                         <input 
                             placeholder="리그선택"
-                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c" 
+                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" 
                         />
                         <input
                             placeholder="팀명검색" 
-                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c" />
+                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
                     </div>
                 )}
 
@@ -95,14 +96,15 @@ const DateSearchBar = ({
                         <div className="pt-px">{InboxSearch}</div>
                         <input
                             placeholder="팀명검색" 
-                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c" />
+                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight  border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
                     </div>
                 )}
 
                 <div className="flex space-x-10px items-center w-304px h-full">
                     <div className="relative">
-                        <DatePicker 
-                            className="pt-px mt-px flex-shrink-0 outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c focus:ml-10px"
+                  <DatePicker 
+                            
+                            className="pt-px mt-px flex-shrink-0 outline-none w-138px h-42px rounded-md bg-dark-1a1a1a border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px"
                             locale="ko" 
                             selected={startDate} 
                             onChange={(date) => setStartDate(date)}
@@ -111,10 +113,10 @@ const DateSearchBar = ({
                         />
                         <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-14px mr-10px" />
                     </div>
-                    <span className="font-spoqaMedium text-14px text-gray-r454545 mt-px">~</span>
+                    <span className="font-spoqaMedium text-14px text-gray-8e8780 mt-px">~</span>
                     <div className="relative">
                         <DatePicker 
-                            className="pt-px mt-px flex-shrink-0 outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c" 
+                            className="pt-px mt-px flex-shrink-0 outline-none bg-dark-1a1a1a w-138px h-42px rounded-md border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6" 
                             locale="ko"
                             selected={endDate} 
                             onChange={(date) => setEndDate(date)}
@@ -125,42 +127,42 @@ const DateSearchBar = ({
                     </div>
                 </div>
                 <div className="flex h-full space-x-6px items-center">
-                    <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-blue-r004b8a hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px rounded-4px border border-blue-r2a699c bg-gradient-to-b from-blue-r004b8a via-blue-r003d70 to-blue-r012d53 cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">오늘</span>
+                    <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
+                        <div className="flex items-center justify-center h-40px w-73px rounded-4px  cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }} >오늘</span>
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-blue-r2068b2 hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-blue-r3975ae bg-gradient-to-b from-blue-r125a9e via-blue-r0e508d to-blue-r0b447a cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">1주일</span>
+                    <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
+                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }}>1주일</span>
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-blue-r286fce hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-blue-r538dcf bg-gradient-to-b from-blue-r3176c5 via-blue-r286bb7 to-blue-r1c5ca5 cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">15일</span>
+                    <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
+                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }}>15일</span>
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-blue-r286fce hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-blue-r70a8f5 bg-gradient-to-b from-blue-r5497f4 via-blue-r4985d8 to-blue-r3d71b8 cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">1개월</span>
+                    <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
+                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px cursor-pointer "style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px"  style={{ color: '#ffdfbd' }}>1개월</span>
                         </div>
                     </div>
 
                     {has3MonthSearch && (
                         <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-blue-r177cce hover:opacity-75">
                             <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-blue-r62b3f7 bg-gradient-to-b from-blue-r5497f4 via-blue-r3a93dd to-blue-r3d71b8 cursor-pointer">
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">3개월</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px"> 3개월</span>
                             </div>
                         </div>
                     )}
 
                     {!hasIdSearch ? (
-                        <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-gray-r171a1d hover:opacity-75">
-                            <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">검색</span>
+                        <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75" style={{background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}}>
+                            <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer">
+                <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }}>검색</span>
                             </div>
                         </div>
                     ) : (

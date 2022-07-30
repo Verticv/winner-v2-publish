@@ -8,8 +8,8 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
 
         const detailButton = (
             <button 
-                style={{height:"29px", width: "73px", backgroundColor:"#e9441d"}} 
-                className="rounded-full text-white font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75 flex-shrink-0"
+                style={{height:"29px", width: "73px",background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}} 
+                className="rounded-4px text-white font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75 flex-shrink-0"
             >
                 상세보기
             </button>
@@ -22,8 +22,12 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
             setCheckedState(updatedCheckedState);
         }; 
 
-        return items.map(item => (
-            <div className="flex bg-gray-fefefe items-center font-spoqa text-14px tracking-tight text-gray-r585858 h-56px w-full border-b border-gray-dddddd flex-shrink-0">
+        return items.map((item,index) => (
+            <div className={`${
+                 index%2==0
+                  ? "bg-dark-323232" 
+                  : "bg-dark-2e2e2e"
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full  flex items-center border-b border-dark-252525`}>
                 <div style={{width: "51px"}} className="ml-20px text-center flex justify-center items-center">
                     <input
                         type="checkbox"
@@ -50,8 +54,8 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
     }
 
     return (
-        <div style={{borderRadius: "1em"}} className="shadow-subNavbar overflow-hidden w-full">
-            <div style={{height:"56px"}} className="flex items-center bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd flex-shrink-0 pt-px">
+        <div className="shadow-subNavbar rounded-4px overflow-hidden">
+            <div style={{height:"56px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
                 <div style={{width: "51px"}} className="ml-20px text-center">선택</div>
                 <div style={{width: "86px"}} className="text-center">베팅번호</div>
                 <div style={{width: "111px"}} className="text-center">베팅시간</div>

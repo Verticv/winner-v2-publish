@@ -79,7 +79,7 @@ module.exports = {
         '75px': '75px',
         '76px': '76px',
         '77px': '77px',
-        '78px': '75px',
+        '78px': '78px',
         '79px': '79px',
         '80px': '80px',
         '81px': '81px',
@@ -262,6 +262,8 @@ module.exports = {
         subNavbar: '0 0px 6px 0 rgba(0, 0, 0, 0.2)',
         popup: '0 6px 10px 4px rgba(0, 0, 0, 0.3)',
         glow: '0 0 3px 2px rgba(0, 0, 0, 0.1)',
+        navbar: '0 0px 7px 0 rgba(0,0,0,0.4)',
+        link: '0px 2px 5px 0px rgba(0, 0, 0, 0.6)'
       },
       screens: {
         'limit': '1261px',
@@ -332,10 +334,18 @@ module.exports = {
           r3a93dd: '#3a93dd',
           r26303a: '#26303a',
           r4c6782: '#4c6782',
-          r40566c: '#40566c'
+          r40566c: '#40566c',
+          '3d4a8d': '#3d4a8d',
+          '528ccd': '#528ccd',
+          '396084': '#396084',
+          '88d9e8':'#88d9e8'
+
         },
         gray: {
+          gradLight:'rgb(127,95,63) 0%',
+          gradDark:'rgb(166,124,82) 100%',
           text: '#393e41',
+          activeText:'#ffdfbd',
           subNavbar: '#616161',
           r948d81: '#948d81',
           r828282: '#828282',
@@ -401,7 +411,20 @@ module.exports = {
           r45484c: '#45484c',
           r9c9c9c: '#9c9c9c',
           d8dfea: '#d8dfea',
-          f2f2f2: '#f2f2f2'
+          f2f2f2: '#f2f2f2',
+          929292: '#929292',
+          ccc2b6: '#ccc2b6',
+          '404040': '#404040',
+          '2b2b2a': '#2b2b2a',
+          c8c8c8: '#c8c8c8',
+          '473b35': '#473b35',
+          '2a2a2a': '#2a2a2a',
+          '323232': '#323232',
+          '323231': '#323231',
+          '545452': '#545452',
+          '2e2e2e': '#2e2e2e',
+          '8e8780': '#8e8780',
+          '1e1e1e':'#1e1e1e'
         },
         red: {
           notification: '#ed2f59',
@@ -468,6 +491,19 @@ module.exports = {
           r5a608b: '#5a608b',
           r87409b: '#87409b',
           r9e5959: '#9e5959'
+        },
+        dark: {
+          '1a1a1a': '#1a1a1a',
+          '252525': '#252525',
+          '323232': '#323232',
+          '2e2e2e':'#2e2e2e',
+        },
+        golden: {
+          gradLight: '#a67c52',
+          gradDark: '#7f5f3f',
+          ccc2b6: '#ccc2b6',
+          highLight: '#ffdfbd',
+          
         }
       },
       fontFamily: {
@@ -503,6 +539,7 @@ module.exports = {
       borderRadius: {
         '3px': '3px',
         '4px': '4px',
+        '6px': '6px',
         '20px': '20px',
         '26px': '26px'
       },

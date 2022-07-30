@@ -1,5 +1,7 @@
 import React from 'react'
 
+import TitleIcon from '../../images/title-icon.png'
+
 const MyPageTitle = ({
     title, 
     couponCount = null,
@@ -11,8 +13,9 @@ const MyPageTitle = ({
     return (
         <div className="flex h-21px w-full justify-between">
             <div className="flex h-21px w-full">
-                <div className="w-8px h-20px bg-gradient-to-b from-blue-gradLight to-blue-gradDark rounded-3px mt-px"/>
-                <label className="font-spoqaMedium text-22px text-gray-r585858 ml-4px -mt-5px">{title}</label>
+                {/* <div className="w-8px h-20px bg-gradient-to-b from-blue-gradLight to-blue-gradDark rounded-3px mt-px" /> */}
+                <img className="z-10 object-none" src={TitleIcon} alt="" />
+                <label className="font-spoqaMedium text-22px ml-7px -mt-5px" style={{color:'#89806f'}}>{title}</label>
                 {couponCount && (
                     <>
                         <div className="ml-20px h-21px flex items-center space-x-20px">
