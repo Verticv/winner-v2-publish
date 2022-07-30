@@ -125,6 +125,8 @@ const LeftMenu = ({
                               className={`${
                                   pathname.includes(item.mainPath)
                                   ? "text-golden-highLight" 
+                                  : isMouseHover === item.path
+                                  ? 'text-golden-ccc2b6'
                                   : "text-golden-ccc2b6"
                               } font-spoqaMedium text-16px cursor-pointer tracking-tight`}
                             >

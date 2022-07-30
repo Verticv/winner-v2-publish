@@ -24,7 +24,7 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
 
         return items.map((item,index) => (
             <tr className={`${
-                index%2==0
+                index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}>

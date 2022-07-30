@@ -50,7 +50,7 @@ const BetHistory = () => {
             
              <div className="relative w-full mt-20px">
                 <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab}/>
-                {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8) && (
+                {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8 && selectedTab !== 9) && (
                   <div style={{marginLeft: `${selectedTab * 104 + 47}px`}} className={`absolute bottom-0 w-20px -mb-10px overflow-hidden inline-block `}>
                     <div style={{
                       background:'#323231'

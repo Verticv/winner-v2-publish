@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const SubHorizontalMenu = ({
     itemsArray, 
@@ -6,7 +6,7 @@ const SubHorizontalMenu = ({
     setState
 }) => {
 
-    const [isHover, setHover] = useState(null)
+    //const [isHover, setHover] = useState(null)
 
     function TabsList({ items }) {
         return items.map(item => (
@@ -21,8 +21,8 @@ const SubHorizontalMenu = ({
                   : ""
               } overflow-hidden h-80px w-full rounded-4px flex justify-end border border-gray-2a2a2a relative`} 
               onClick={() => setState(item.id)}
-              onMouseOver={() => setHover(item.id)}
-              onMouseLeave={() => setHover(null)}
+              // onMouseOver={() => setHover(item.id)}
+              // onMouseLeave={() => setHover(null)}
           >
             <div style={{
                 background: 'linear-gradient( to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)'

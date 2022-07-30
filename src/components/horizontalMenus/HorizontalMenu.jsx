@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router';
 
 const HorizontalMenu = ({
@@ -9,7 +9,7 @@ const HorizontalMenu = ({
 
     const history = useHistory();
     const pathname = window.location.pathname
-    const [isHover, setHover] = useState(null)
+   // const [isHover, setHover] = useState(null)
 
     function TabsList({ items }) {
       return items.map(item => (
@@ -31,8 +31,9 @@ const HorizontalMenu = ({
                   setSelectedSubTab(0)
               }
             }}
-            onMouseOver={() => setHover(item.id)}
-            onMouseLeave={() => setHover(null)}>
+            // onMouseOver={() => setHover(item.id)}
+            // onMouseLeave={() => setHover(null)}
+        >
           <div style={{
               background: 'linear-gradient( to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)',
             }}

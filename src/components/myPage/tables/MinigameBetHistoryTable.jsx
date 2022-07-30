@@ -24,7 +24,7 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
 
         return items.map((item,index) => (
             <div className={`${
-                 index%2==0
+                 index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full  flex items-center border-b border-dark-252525`}>
