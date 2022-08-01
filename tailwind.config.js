@@ -263,7 +263,8 @@ module.exports = {
         popup: '0 6px 10px 4px rgba(0, 0, 0, 0.3)',
         glow: '0 0 3px 2px rgba(0, 0, 0, 0.1)',
         navbar: '0 0px 7px 0 rgba(0,0,0,0.4)',
-        link: '0px 2px 5px 0px rgba(0, 0, 0, 0.6)'
+        link: '0px 2px 5px 0px rgba(0, 0, 0, 0.6)',
+        btn: '0px 2px 5px 0px rgba(0, 0, 0, 0.5)'
       },
       screens: {
         'limit': '1261px',
@@ -338,7 +339,9 @@ module.exports = {
           '3d4a8d': '#3d4a8d',
           '528ccd': '#528ccd',
           '396084': '#396084',
-          '88d9e8':'#88d9e8'
+          '88d9e8': '#88d9e8',
+          '4c98ff': '#4c98ff',
+          'd6f3ff':'#d6f3ff'
 
         },
         gray: {
@@ -448,7 +451,13 @@ module.exports = {
           e2314f: '#e2314f',
           cf1348: '#cf1348',
           ff426a: '#ff426a',
-          ef325f: '#ef325f'
+          ef325f: '#ef325f',
+          '4b0923': '#4b0923',
+          e88895: '#e88895',
+          e06446: '#e06446',
+          '96341d': '#96341d',
+          'ffd2d2': '#ffd2d2',
+          'e65454':'#e65454'
         },
         orange: {
           ff7e00: '#ff7e00',

@@ -32,37 +32,35 @@ const SportsBetHistory = ({checkedState, setCheckedState , showSub = true, attac
                 <div className="mt-40px h-36px w-full flex items-center justify-between">
                     <div className="flex space-x-2px">
                         <button 
-                            style={{borderRadius:"4px"}}
-                            className="flex items-center justify-center w-90px h-36px rounded-md bg-gray-r171a1d hover:opacity-75"
+                            style={{background:'linear-gradient(to bottom, rgba(232,184,136,1) 0%, rgba(75,59,9,1) 98%)'}}
+                            className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link"
                             onClick={() => AllSelectButtonPressed()}
                         >
                             <div 
                                 style={{
-                                    background: "linear-gradient(to bottom, #555555, #333333)",
-                                    borderRadius: "3px"
+                                  background: "linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)",
                                 }}
-                                className="flex items-center justify-center h-34px w-88px rounded-4px border border-gray-r737579 cursor-pointer"
+                                className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                             >
                                 <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">{isAllSelected ? "선택해제" : "전체선택"}</span>
                             </div>
                         </button>
                         <button 
-                            style={{borderRadius:"4px"}}
-                            className="flex items-center justify-center w-90px h-36px rounded-md bg-red-cb4343 hover:opacity-75"
+                             style={{background:'linear-gradient(to bottom, rgba(232,136,149,1) 0%, rgba(75,9,35,1) 98%)'}}
+                            className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link"
                         >
                             <div 
-                                style={{
-                                    background: "linear-gradient(to bottom, #f03a50, #cf254d)",
-                                    borderRadius: "3px"
-                                }}
-                                className="flex items-center justify-center h-34px w-88px rounded-4px border border-red-f36576 cursor-pointer"
+                              style={{
+                                background: "linear-gradient(180deg, rgba(224,101,70,1) 0%, rgba(221,98,69,1) 6%, rgba(152,53,30,1) 97%, rgba(152,52,28,1) 100%)"
+                              }}
+                                className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                             >
                                 <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">선택삭제</span>
                             </div>
                         </button>
                     </div>
-                    <button className="flex items-center justify-center w-159px h-36px rounded-4px bg-blue-r0070d9 hover:opacity-75">
-                        <div className="flex items-center justify-center h-34px w-157px rounded-4px border border-blue-r3ba3fc bg-gradient-to-b from-blue-r1491fc via-blue-r0e84ed to-blue-r0675db cursor-pointer">
+                    <button className="flex items-center justify-center w-159px h-36px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:opacity-75 shadow-link">
+                        <div className="flex items-center justify-center h-34px w-157px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
                             <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">게시판에 내역올리기</span>
                         </div>
                     </button>
