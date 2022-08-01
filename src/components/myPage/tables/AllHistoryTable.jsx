@@ -53,7 +53,7 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
 
     return (
         <table className="rounded-4px shadow-subNavbar overflow-hidden">
-            <thead className=" font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
+            <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td style={{width: "92px"}} className="text-center">선택</td>
                     <td style={{width: "74px"}} className="text-center">베팅번호</td>
