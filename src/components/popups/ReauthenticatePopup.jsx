@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import CloseIcon from '../../images/popups/close_icon.png'
-import LoginIcon from '../../images/popups/reauth.png'
+import LoginIcon from '../../images/popups/login_icon.png'
+import Username from '../../images/popups/username.png'
+import Password from '../../images/popups/password.png'
 
 const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
     
@@ -9,11 +11,11 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
     const [selectedInput, setSelectedInput] = useState()
 
     return (
-        <div className="relative w-630px h-513px bg-white rounded-xl shadow-popup">
-            <button className="absolute top-0 right-0 mt-21px mr-21px cursor-pointer z-20" onClick={()=> setPopupOpen(false)}>
+        <div style={{height:'526px', width:'450px', backgroundColor:'#323231', borderRadius:'10px', borderWidth:'1px', borderColor:'#1f1f1e'}} className="relative shadow-popup flex flex-col items-center">
+            <button className="absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:opacity-75" onClick={()=> setPopupOpen(false)}>
                 <img src={CloseIcon} alt="close_icon" />
             </button>
-            <div className="absolute w-630px -mt-79px flex justify-center">
+            <div style={{marginTop:'-64px'}} className="absolute w-630px -mt-79px flex justify-center">
                 <div className="flex items-center justify-center h-158px w-158px">
                     <img src={LoginIcon} alt="login_icon"/>
                 </div>
@@ -23,16 +25,19 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
 
                 <div className="flex flex-col items-center justify-center font-spoqaMedium text-20px space-y-5px">
                     <div className="flex items-center h-19px">
-                        <span className="text-blue-r0056a6 font-spoqaBold">louie3</span>
-                        <span>님의 회원정보를 수정합니다.</span>
+                        <span className="text-golden-aa9264 font-spoqaBold">louie3</span>
+                        <span className='text-gray-c8c8c8'>님의 회원정보를 수정합니다.</span>
                     </div>
-                    <div className="flex items-center h-19px">비밀번호를 다시 입력해 주세요.</div>
+
+                    <div className="flex items-center h-19px text-gray-c8c8c8">비밀번호를 다시 입력해 주세요.</div>
                 </div>
 
-                <div className="w-480px">
-                    <div 
-                        className="w-full h-12 text-25px text-center outline-none font-spoqaMedium tracking-tight placeholder-gray-bebebe pb-10px tracking-mimus05" 
-                        onFocus={(e) => {
+                  <div style={{width:'390px', height:'64px', backgroundColor:'#191817', borderRadius:'4px', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)'}} className="flex items-center flex-shrink-0 mt-48px py-4px">
+                    <img src={Username} alt="" className="ml-19px" />
+                    <div
+                      style={{color:'#948d81', backgroundColor:'#191817', lineHeight:'1.15'}}
+                      className="flex items-center text-20px outline-none font-spoqa w-full h-full pl-18px placeholder-gray-r948d81 pt-3px rounded-4px" 
+                     onFocus={(e) => {
                             e.target.placeholder = ""
                             setSelectedInput(0)
                         }} 
@@ -40,13 +45,15 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
                             e.target.placeholder = "아이디"
                             setSelectedInput(false)
                         }}
-                    >louie3</div>
-                    <div className={`${selectedInput === 0 ? "bg-blue-r1ca7ec h-2px -mb-px" : "bg-gray-bebebe h-px"} w-full`} />
+            >louie3</div>
+             <div className={`${selectedInput === 0 ? "bg-blue-r1ca7ec h-2px -mb-px" : "bg-gray-bebebe h-px"} w-full`} />
                 </div>
-                <div className="w-480px">
-                    <input 
-                        className="w-full h-12 text-25px text-center outline-none font-spoqaMedium tracking-tight placeholder-gray-bebebe pb-10px tracking-mimus05" 
-                        placeholder={"비밀번호"} 
+                <div style={{width:'390px', height:'64px', backgroundColor:'#191817', borderRadius:'4px', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)'}} className="flex items-center flex-shrink-0 mt-20px py-4px">
+                  <img src={Password} alt="" className="ml-21px" />
+                  <input
+                    style={{color:'#948d81', backgroundColor:'#191817', borderRadius:'4px'}}
+                    className="text-20px outline-none font-spoqa w-full h-full pl-19px placeholder-gray-r948d81 pt-3px" 
+                    placeholder={"비밀번호"} 
                         type="password"
                         onFocus={(e) => {
                             e.target.placeholder = ""
@@ -56,12 +63,11 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
                             e.target.placeholder = "비밀번호"
                             setSelectedInput(false)
                         }}
-                    />
-                    <div className={`${selectedInput === 1 ? "bg-blue-r1ca7ec h-2px -mb-px" : "bg-gray-bebebe h-px"} w-full`} />
+                  />
                 </div>
-                <div className="w-480px">
                     <button 
-                        className="w-full h-74px rounded-md bg-gradient-to-r from-blue-gradLight to-blue-gradDark text-xl text-27px font-spoqaMedium text-white hover:opacity-75"
+                        style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 1px #00000070", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
+				                className="text-20px tracking-tighter font-spoqaMedium text-white hover:opacity-75 mt-40px flex-shrink-0"
                         onClick={() => {
                             history.push("/mypage/edit-info")
                             setSelectedTab("/mypage/edit-info")
@@ -69,7 +75,6 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
                     >
                         확인
                     </button>
-                </div>
             </div>
         </div>
     )

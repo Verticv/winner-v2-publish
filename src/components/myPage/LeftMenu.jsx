@@ -46,7 +46,7 @@ const LeftMenu = ({
     }
       
   const EditProfileButton = ({ path, text, icon, iconHighlight, selectedTab }) => (
-    <div className='flex w-full items-center pt-6px pr-6px pl-6px flex-col'>
+    <div className='flex w-full items-center  p-6px flex-col'>
         <button 
             className={`${
                 pathname.includes(path)

@@ -9,7 +9,7 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
         const detailButton = (
             <button 
                 style={{height:"29px", width: "73px",background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}} 
-                className="rounded-4px text-white font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75 flex-shrink-0"
+                className="rounded-4px text-golden-highLight font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75 flex-shrink-0"
             >
                 상세보기
             </button>
@@ -52,7 +52,7 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
     }
 
     return (
-        <table className="rounded-4px shadow-subNavbar overflow-hidden">
+        <table className="rounded-4px shadow-navbar overflow-hidden">
             <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td style={{width: "92px"}} className="text-center">선택</td>

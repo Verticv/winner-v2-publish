@@ -129,32 +129,32 @@ const DateSearchBar = ({
                 <div className="flex h-full space-x-6px items-center">
                     <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
                         <div className="flex items-center justify-center h-40px w-73px rounded-4px  cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
-                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }} >오늘</span>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px text-golden-highLight" >오늘</span>
                         </div>
                     </div>
 
                     <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
-                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }}>1주일</span>
+                        <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px text-golden-highLight">1주일</span>
                         </div>
                     </div>
 
                     <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
-                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }}>15일</span>
+                        <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer" style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px text-golden-highLight">15일</span>
                         </div>
                     </div>
 
                     <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px cursor-pointer "style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
-                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px"  style={{ color: '#ffdfbd' }}>1개월</span>
+                        <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer "style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px  pt-px text-golden-highLight" >1개월</span>
                         </div>
                     </div>
 
                     {has3MonthSearch && (
-                        <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-blue-r177cce hover:opacity-75">
-                            <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-blue-r62b3f7 bg-gradient-to-b from-blue-r5497f4 via-blue-r3a93dd to-blue-r3d71b8 cursor-pointer">
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px"> 3개월</span>
+                        <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
+                            <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer "style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                                <span className="font-spoqaMedium tracking-tight text-14px pt-px text-golden-highLight"> 3개월</span>
                             </div>
                         </div>
                     )}
@@ -162,13 +162,13 @@ const DateSearchBar = ({
                     {!hasIdSearch ? (
                         <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75" style={{background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}}>
                             <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer">
-                <span className="font-spoqaMedium tracking-tight text-14px  pt-px" style={{ color: '#ffdfbd' }}>검색</span>
+                              <span className="font-spoqaMedium tracking-tight text-14px  pt-px text-golden-highLight">검색</span>
                             </div>
                         </div>
                     ) : (
-                        <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-blue-r177cce hover:opacity-75">
-                            <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-blue-r62b3f7 bg-gradient-to-b from-blue-r5497f4 via-blue-r3a93dd to-blue-r3d71b8 cursor-pointer">
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">3개월</span>
+                        <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
+                            <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer "style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px">3개월</span>
                             </div>
                         </div>
                     )}
@@ -196,7 +196,7 @@ const DateSearchBar = ({
                                     background: "linear-gradient(to bottom, #585b5e, #303337)",
                                     borderRadius: "3px"
                                 }} 
-                                className="flex items-center justify-center bg-black rounded-4px border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r585b5e to-gray-r303337 cursor-pointer"
+                                className="flex items-center justify-center rounded-4px border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r585b5e to-gray-r303337 cursor-pointer"
                             >
                                 <span className="font-spoqaMedium tracking-tight text-14px text-white">검색</span>
                             </div>

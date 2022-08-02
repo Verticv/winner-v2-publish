@@ -96,13 +96,16 @@ const CouponRequestTable = () => {
     ]
 
     function Cells({ items }) {
-        return items.map(item => (
+        return items.map((item,index) => (
             <tr 
-                style={{backgroundColor: item.id % 2 === 0 ? "#fefefe" : "#f8f9fb", WebkitTextStroke:"0.2px"}} 
-                className="font-spoqa text-14px tracking-tight text-gray-r454545 h-56px w-full border-b border-gray-dddddd"
+                className={`${
+                index%2===0
+                  ? "bg-dark-323232" 
+                  : "bg-dark-2e2e2e"
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}
             >
                 <td style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center">{item.name}</td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e9441d font-robotoRegular pr-20px">{item.amount}</td>
+                <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e65454 font-robotoRegular pr-20px">{item.amount}</td>
                 <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center">{item.username}</td>
                 <td 
                     style={{
@@ -126,8 +129,8 @@ const CouponRequestTable = () => {
     }
 
     return (
-        <table style={{borderRadius: "1em"}} className="shadow-subNavbar overflow-hidden">
-            <thead className="bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd">
+        <table className="rounded-4px shadow-navbar overflow-hidden">
+            <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td style={{width: "371px"}} className="w-292px text-center">쿠폰명</td>
                     <td style={{width: "163px"}} className="w-119px text-center">쿠폰금액</td>

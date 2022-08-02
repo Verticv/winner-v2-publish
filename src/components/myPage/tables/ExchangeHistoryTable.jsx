@@ -24,7 +24,7 @@ const ExchangeHistoryTable = ({
     }; 
 
     return (
-        <table className="rounded-4px shadow-subNavbar overflow-hidden">
+        <table className="rounded-4px shadow-navbar overflow-hidden">
             <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-dark-252525 bg-dark-2e2e2e">
                 <tr>
                     <td className="w-132px text-center pl-3px">선택</td>

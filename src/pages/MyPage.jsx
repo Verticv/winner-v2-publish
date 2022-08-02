@@ -93,7 +93,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
     return (
         <div className="relative flex flex-col justify-center limit:overflow-x-hidden">
 
-          <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
+          <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
           
                 {/* <NoticeBanner /> */}
                 <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />

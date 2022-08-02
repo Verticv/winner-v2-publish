@@ -96,21 +96,25 @@ const CouponUsageTable = () => {
     ]
 
     const UseButton = () => (
-        <button className="w-73px h-29px bg-red-e9441d rounded-full flex justify-center items-center hover:opacity-75">
-            <span className="text-white text-14px font-spoqaMedium tracking-tight pt-2px">사용하기</span>
+        <button style={{height:"29px", width: "73px",background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}} 
+                className="rounded-4px text-golden-highLight font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75 flex-shrink-0">
+            <span className="">사용하기</span>
         </button>
     )
 
     function Cells({ items }) {
-        return items.map(item => (
+        return items.map((item,index) => (
             <tr 
-                style={{backgroundColor: item.id % 2 === 0 ? "#fefefe" : "#f8f9fb"}} 
-                className="font-spoqa text-14px tracking-tight text-gray-r454545 h-56px w-full border-b border-gray-dddddd"
+               className={`${
+                index%2===0
+                  ? "bg-dark-323232" 
+                  : "bg-dark-2e2e2e"
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}
             >
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-313px text-center">{item.name}</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-172px text-right text-red-e9441d pr-20px font-robotoRegular">{item.amount}</td>
+                    <td style={{WebkitTextStroke:"0.2px"}} className="w-172px text-right text-red-e65454 pr-20px font-robotoRegular">{item.amount}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-111px text-center">{item.username}</td>
-                    <td style={{color: "#ff1237", WebkitTextStroke:"0.2px"}} className="w-108px text-center">{item.status}</td>
+                    <td style={{WebkitTextStroke:"0.2px"}} className="w-108px text-center  text-red-e65454">{item.status}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-122px text-center font-robotoRegular">{item.date}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-111px text-center font-robotoRegular">{item.expireDate}</td>
                     <td className="w-103px pl-13px"><UseButton /></td>
@@ -120,8 +124,8 @@ const CouponUsageTable = () => {
     
 
     return (
-        <table style={{borderRadius: "1em"}} className="shadow-subNavbar overflow-hidden">
-            <thead className="bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd">
+        <table className="rounded-4px shadow-navbar overflow-hidden">
+            <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td className="w-313px text-center">쿠폰명</td>
                     <td className="w-172px text-center">쿠폰금액</td>

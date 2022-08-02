@@ -116,11 +116,13 @@ const WinLoseTable = ({
     }; 
 
     function Cells({ items }) {
-        return items.map(item => (
+        return items.map((item,index) => (
             <tr 
-                style={{backgroundColor: item.id % 2 === 0 ? "#fefefe" : "#f8f9fb"}} 
-                className="font-spoqa text-14px tracking-tight text-gray-r585858 h-56px w-full border-b border-gray-dddddd"
-            >
+                className={`${
+                index%2===0
+                  ? "bg-dark-323232" 
+                  : "bg-dark-2e2e2e"
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}>
                 <td style={{WebkitTextStroke:"0.2px"}} className="w-100px font-robotoRegular h-56px text-center flex items-center justify-center pt-3px"><RadioButton id={item.id}/></td>
                 <td style={{WebkitTextStroke:"0.2px"}} className="w-64px h-56px text-center font-robotoRegular pt-2px">{item.number}</td>
                 <td style={{WebkitTextStroke:"0.2px"}} className="w-176px h-56px text-center font-robotoRegular pt-2px">{item.startDate}</td>
@@ -138,9 +140,9 @@ const WinLoseTable = ({
     }
 
     return (
-        <div style={{borderRadius: "1em"}} className="shadow-subNavbar overflow-hidden">
-            <table >
-                <thead className="bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd">
+        <div className="rounded-4px shadow-navbar overflow-hidden">
+            <table>
+                <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-dark-252525 bg-dark-2e2e2e ">
                     <tr>
                         <td className="w-100px text-center pt-2px">선택</td>
                         <td className="w-64px text-center pt-2px">번호</td>
@@ -155,8 +157,8 @@ const WinLoseTable = ({
                     <Cells items={ExampleArray} />
                 </tbody>
             </table>
-            <div className="flex bg-gray-fefefe font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px">
-                <div className="w-full bg-gray-dee6ef h-56px flex items-center justify-center font-spoqaMedium text-16px tracking-tight border-r border-gray-dddddd">합계</div>
+            <div className="flex bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px">
+                <div className="w-full bg-gray-414141 h-56px flex items-center justify-center font-spoqaMedium text-16px tracking-tight text-gray-ccc2b6 border-r border-dark-252525">합계</div>
                 <div className="w-full h-56px text-center flex items-center justify-center font-roboto tracking-tight text-red-500 text-16px">+120,718</div>
             </div>
         </div>

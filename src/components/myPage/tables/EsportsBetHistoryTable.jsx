@@ -3,7 +3,7 @@ import React from 'react'
 const EsportsBetHistoryTable = () => {
 
     return (
-        <div className="shadow-subNavbar rounded-4px overflow-hidden">
+        <div className="shadow-navbar rounded-4px overflow-hidden">
             <div style={{height:"57px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
                 <div style={{width: "92px"}} className="text-center">선택</div>
                 <div style={{width: "74px"}} className="text-center">베팅번호</div>
