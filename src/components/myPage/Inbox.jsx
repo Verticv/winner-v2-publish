@@ -134,9 +134,9 @@ const Inbox = () => {
     )
 
     const dropdownButton = (
-        <div className="flex w-120px h-42px bg-white rounded-md border border-gray-dddddd group ">
+        <div className="flex w-120px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 group ">
             <input  className="w-0 text-16px"/>
-            <div className="flex w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" >
+            <div className="flex w-full text-gray-ccc2b6 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" >
                 <label className="ml-14px cursor-pointer group-hover:text-black">{selectedCarrier}</label>
                 <img className="w-10px h-6px object-contain mr-10px" src={DownArrowIcon} alt="arrow" /> 
             </div>
@@ -144,7 +144,7 @@ const Inbox = () => {
     )
     
     const InboxSearch = (
-        <div className="h-64px w-full bg-gray-f9f9f9 rounded-2xl border border-gray-dddddd flex items-center justify-center space-x-10px">
+        <div className="h-64px w-full bg-gray-2e2e2e rounded-4px flex items-center justify-center space-x-10px">
             <DropDownControls 
                 buttonChild={dropdownButton} 
                 isDropdownOpen={isDropdownOpen} 
@@ -153,13 +153,15 @@ const Inbox = () => {
                 {searchDropdown}
             </DropDownControls>
 
-            <div className="flex w-381px h-42px bg-white rounded-md border border-gray-dddddd">
+            <div className="flex w-381px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 overflow-hidden">
                 <input 
-                    className="pl-11px rounded-md placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight"
+                    className="pl-11px  placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a"
                     placeholder="검색어를 입력해 주세요"
                 />
-                <button className="flex items-center justify-center w-42px h-42px rounded-md bg-gradient-to-b from-gray-r555555 via-gray-r555555 to-gray-r333333 -mt-px -mr-px flex-shrink-0  hover:opacity-75">
-                    <img src={SearchIcon} alt=""/>
+                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  hover:opacity-75 p-px">
+                  <div className="flex items-center justify-center w-full  h-40px rounded-4px bg-gradient-to-b from-gray-e6b786  to-gray-80603f">
+                    <img src={SearchIcon} alt="" />
+                  </div>
                 </button>
             </div>
         </div>
@@ -175,21 +177,30 @@ const Inbox = () => {
             <div className="mt-20px h-36px w-full flex items-center justify-between">
                 <div className="flex space-x-2px">
                     <button 
-                        className="flex items-center justify-center w-90px h-36px rounded-4px bg-gray-r171a1d hover:opacity-75"
+                        style={{background:'linear-gradient(to bottom, rgba(232,184,136,1) 0%, rgba(75,59,9,1) 98%)'}}
+                            className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link"
                         onClick={() => AllSelectButtonPressed()}
                     >
-                        <div className="flex items-center justify-center h-34px w-88px rounded-4px border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
+                        <div style={{
+                          background: "linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)",
+                          }}
+                        className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer">
                             <span className="font-spoqaMedium tracking-tight text-14px text-white">{isAllSelected ? "선택해제" : "전체선택"}</span>
                         </div>
                     </button>
-                    <button className="flex items-center justify-center w-90px h-36px rounded-4px bg-red-cb4343 hover:opacity-75">
-                        <div className="flex items-center justify-center h-34px w-88px rounded-4px border border-red-f36576 bg-gradient-to-b from-red-f03a50 via-red-e2314f to-red-cf254d cursor-pointer">
+                    <button style={{background:'linear-gradient(to bottom, rgba(232,136,149,1) 0%, rgba(75,9,35,1) 98%)'}}
+                            className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link">
+                        <div style={{
+                                  background: "linear-gradient(180deg, rgba(224,101,70,1) 0%, rgba(221,98,69,1) 6%, rgba(152,53,30,1) 97%, rgba(152,52,28,1) 100%)",
+                               
+                                }}
+                                className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer">
                             <span className="font-spoqaMedium tracking-tight text-14px text-white">선택삭제</span>
                         </div>
                     </button>
                 </div>
-                <button className="flex items-center justify-center h-36px w-114px rounded-4px bg-blue-r0070d9 hover:opacity-75">
-                    <div className="flex items-center justify-center h-34px w-112px bg-black rounded-4px border border-blue-r3ba3fc bg-gradient-to-b from-blue-r1491fc via-blue-r0e84ed to-blue-r0675db cursor-pointer">
+                <button className="flex items-center justify-center w-159px h-36px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:opacity-75 shadow-link">
+                    <div className="flex items-center justify-center h-34px w-157px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
                         <span className="font-spoqaMedium tracking-tight text-14px text-white">전체읽음처리</span>
                     </div>
                 </button>
