@@ -91,7 +91,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
     const [selectedSubTab, setSelectedSubTab] = useState(location.pathname)
     console.log('selectedTab',selectedTab,selectedSubTab)
     return (
-        <div className="relative flex flex-col justify-center limit:overflow-x-hidden">
+        <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
 
           <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
           
@@ -100,7 +100,8 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
             </div>
 
 
-            <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full bg-gray-1e1e1e">
+        <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full ">
+         
                 <Route path="/mypage/bet-history">
                     <DirectoryComponent 
                         setSelectedTab={setSelectedTab}

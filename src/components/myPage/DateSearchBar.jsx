@@ -153,7 +153,7 @@ const DateSearchBar = ({
 
                     {has3MonthSearch && (
                         <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
-                            <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer "style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer " style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
                                 <span className="font-spoqaMedium tracking-tight text-14px pt-px text-golden-highLight"> 3개월</span>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ const DateSearchBar = ({
                         </div>
                     ) : (
                         <div className="flex items-center justify-center h-42px w-75px rounded-4px  hover:opacity-75">
-                            <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer "style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
+                            <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer " style={{background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)'}}>
                                 <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px">3개월</span>
                             </div>
                         </div>
@@ -178,7 +178,7 @@ const DateSearchBar = ({
                 {hasIdSearch && (
                     <div className="flex space-x-5px">
                         <input 
-                            className="w-138px h-42px rounded-4px border border-gray-dddddd bg-white outline-none text-15px font-spoqaMedium tracking-tight text-gray-r8c8c8c px-10px" 
+                            className="w-138px h-42px rounded-4px border outline-none text-15px font-spoqaMedium tracking-tight px-10px border-gray-404040 text-gray-828282 bg-dark-1a1a1a" 
                             placeholder="아이디" 
                         />
                         <div 
@@ -186,19 +186,20 @@ const DateSearchBar = ({
                                 width:"75px",
                                 height:"42px",
                                 borderRadius: "4px",
+                                background: 'linear-gradient(0deg, rgb(128, 96, 62) 0%, rgb(129, 96, 64) 5%, rgb(165, 124, 82) 97%)'
                             }} 
-                            className="flex items-center justify-center rounded-4px bg-gray-r171a1d hover:opacity-75"
+                            className="flex items-center justify-center rounded-4px  hover:opacity-75"
                         >
                             <div 
                                 style={{
                                     width:"73px", 
                                     height:"40px",
-                                    background: "linear-gradient(to bottom, #585b5e, #303337)",
-                                    borderRadius: "3px"
+                                    // background: "linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)",
+                                    borderRadius: "4px"
                                 }} 
-                                className="flex items-center justify-center rounded-4px border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r585b5e to-gray-r303337 cursor-pointer"
+                                className="flex items-center justify-center rounded-4px  cursor-pointer"
                             >
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white">검색</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight">검색</span>
                             </div>
                         </div>
                     </div>
