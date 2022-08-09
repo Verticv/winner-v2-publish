@@ -1,28 +1,27 @@
 
   
 input[type=checkbox] {
-    border: 1px solid #dddddd;
+    border: 1px solid #1e1e1e;
     border-radius: 4px;
-    background-color: white;
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
     cursor: pointer;
-    background: white center center;
+    background: #1e1e1e center center;
 }
   
 input[type=checkbox]:checked {
-  background: transparent url(https://i.imgur.com/jcEenus.png) no-repeat center center
+  background: #1e1e1e url(../../images/check_on.png) no-repeat center center
 }
 
 input[type=checkbox]:hover:checked {
-  background: transparent url(https://i.imgur.com/jcEenus.png) no-repeat center center
+  background: #1e1e1e url(../../images/check_on.png) no-repeat center center
 
 }
 
-input[type="checkbox"]:hover  {
+/* input[type="checkbox"]:hover  {
   background: transparent url(https://i.imgur.com/O17y09P.png) no-repeat center center
-}
+} */
 
   
 input[type=radio]:checked {

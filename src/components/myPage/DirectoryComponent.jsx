@@ -54,8 +54,8 @@ const DirectoryComponent = ({
 
     return (
         <div className="flex items-center h-20px w-default my-20px space-x-10px">
-            <img className="object-none cursor-pointer ml-2px mb-3px" src={HomeIcon} alt="" onClick={() => history.push("/")} />
-            <img className="object-none cursor-none mb-2px" src={RightArrow} alt=""/>
+            <img className="object-none cursor-pointer" src={HomeIcon} alt="" onClick={() => history.push("/")} />
+            <img className="object-none cursor-none" src={RightArrow} alt=""/>
             <span 
                 className={`${
                     !branch2 

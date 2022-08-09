@@ -97,7 +97,7 @@ const LeftMenu = ({
                     <ReauthenticatePopup setPopupOpen={setPopupOpen} setSelectedTab={setSelectedTab}/>
                 </PopupControls>              
                 ) : (
-                    <div className='flex w-full items-center pt-6px pr-6px pl-6px flex-col'>
+                    <div className='flex flex-col w-full items-center  pt-6px pr-5px pl-5px'>
                       <button 
                         className={`${
                           pathname.includes(item.mainPath)
@@ -133,7 +133,7 @@ const LeftMenu = ({
                               {item.text}
                             </label>
                             {item.inboxCount && (
-                              <div style={{backgroundColor:"#e9441d"}} className="ml-10px h-17px w-17px rounded-4px text-white flex items-center justify-center text-12px font-roboto pt-px pr-px">
+                              <div className="bg-red-e9441d ml-10px h-17px w-17px rounded-4px text-white flex items-center justify-center text-12px font-roboto pt-px pr-px">
                                 {item.inboxCount}
                               </div>
                             )}
@@ -160,7 +160,7 @@ const LeftMenu = ({
                             && isExpanded !== item.path2 + "closed"
                             && isExpanded !== item.path3 + "closed" 
                             ? "" : "hidden"
-                            }  w-full font-spoqaMedium text-16px cursor-pointer tracking-tight mt-px`} 
+                            }  w-full font-spoqaMedium text-16px cursor-pointer tracking-tight mt-px bg-gray-2c2c2c rounded-b-4px  pl-px pr-px pb-px overflow-hidden`} 
                         >
                             {item.sub1 && (
                                 <button 
@@ -173,9 +173,9 @@ const LeftMenu = ({
                                         || pathname === item.path_2 || pathname === item.path_3 
                                         || pathname === item.path_4 || pathname === item.path_5 
                                         || pathname === item.path_6 || pathname === item.path_7 || pathname === item.path_8 
-                                        ? " text-gray-r454545" 
-                                        : " text-gray-r8c8c8c"
-                                    } flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
+                                        ? " text-gray-f1e7d5 bg-gray-4e4941" 
+                                        : " text-gray-776f5f"
+                                    } flex items-center h-45px w-full  pl-60px`}>
                                         {item.sub1}
                                 </button>
                             )}
@@ -188,8 +188,8 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path2 || pathname === item.path2_1 || pathname === item.path2_2 || pathname === item.path2_3
-                                        ? " text-gray-r454545" 
-                                        : " text-gray-r8c8c8c"
+                                        ? " text-gray-f1e7d5 bg-gray-4e4941" 
+                                        : " text-gray-776f5f"
                                     } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
                                         {item.sub2}
                                 </button>
@@ -203,8 +203,8 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path3 || pathname === item.path3_1
-                                        ? " text-gray-r454545" 
-                                        : " text-gray-r8c8c8c"
+                                        ? " text-gray-f1e7d5 bg-gray-4e4941" 
+                                        : " text-gray-776f5f"
                                     } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
                                         {item.sub3}
                                 </button>
@@ -218,8 +218,8 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path4
-                                        ? " text-gray-r454545" 
-                                        : " text-gray-r8c8c8c"
+                                        ? " text-gray-f1e7d5 bg-gray-4e4941" 
+                                        : " text-gray-776f5f"
                                     } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
                                         {item.sub4}
                                 </button>
@@ -234,8 +234,8 @@ const LeftMenu = ({
     }
 
   return (
-    <div className="w-200px rounded-6px mb-180px p-px shadow-navbar overflow-hidden" style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0 ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}>
-      <div className="rounded-6px bg-gray-323232 overflow-hidden">
+    <div className="w-200px rounded-6px mb-180px p-px shadow-navbar overflow-hidden flex flex-col items-center" style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0% ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}>
+      <div className="rounded-6px bg-gray-323232 overflow-hidden w-full">
         <MenuList items={array} />
       </div>
     </div>

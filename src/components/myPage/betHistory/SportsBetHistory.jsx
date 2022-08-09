@@ -42,7 +42,7 @@ const SportsBetHistory = ({checkedState, setCheckedState , showSub = true, attac
                                 }}
                                 className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                             >
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">{isAllSelected ? "선택해제" : "전체선택"}</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px">{isAllSelected ? "선택해제" : "전체선택"}</span>
                             </div>
                         </button>
                         <button 
@@ -55,13 +55,13 @@ const SportsBetHistory = ({checkedState, setCheckedState , showSub = true, attac
                               }}
                                 className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                             >
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">선택삭제</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 pt-px">선택삭제</span>
                             </div>
                         </button>
                     </div>
                     <button className="flex items-center justify-center w-159px h-36px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:opacity-75 shadow-link">
                         <div className="flex items-center justify-center h-34px w-157px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">게시판에 내역올리기</span>
+                            <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-px">게시판에 내역올리기</span>
                         </div>
                     </button>
                 </div>

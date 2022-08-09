@@ -1,9 +1,7 @@
 import Navbar from 'components/mainPage/Navbar'
-// import NoticeBanner from 'components/mainPage/NoticeBanner'
 import React, { useState } from 'react'
 import MyPageBanner from '../images/myPage/mypage_banner_v2.png'
 import LeftMenu from 'components/myPage/LeftMenu'
-// import Footer2 from 'components/mainPage/Footer2'
 import Footer from 'components/mainPage/Footer'
 import { Route } from 'react-router-dom'
 import BetHistory from 'components/myPage/BetHistory'
@@ -91,199 +89,195 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
     const [selectedSubTab, setSelectedSubTab] = useState(location.pathname)
     console.log('selectedTab',selectedTab,selectedSubTab)
     return (
-        <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
+      <div className="relative flex flex-col justify-center limit:overflow-x-hidden  bg-gray-1e1e1e">
+       
 
-          <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
-          
-                {/* <NoticeBanner /> */}
-                <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
-            </div>
-
+        <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
+          <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
+        </div>
 
         <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full ">
          
-                <Route path="/mypage/bet-history">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab}
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="베팅내역" 
-                        mainPath="/mypage/bet-history"
-                    />
-                </Route>
-                <Route path="/mypage/transaction/charge-history">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="충/환전내역" 
-                        branch3="충전내역"
-                        mainPath="/mypage/transaction/charge-history"
-                    />
-                </Route>
-                <Route path="/mypage/transaction/exchange-history">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="충/환전내역"
-                        branch3="환전내역" 
-                        mainPath="/mypage/transaction/charge-history"
-                    />
-                </Route>
-                <Route path="/mypage/win-lose-settlement">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="윈루즈정산" 
-                        mainPath="/mypage/win-lose-settlement"
-                    />
-                </Route>
-                <Route path="/mypage/coupon/coupon-usage">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="쿠폰관리" 
-                        branch3="쿠폰사용" 
-                        mainPath="/mypage/coupon/coupon-usage"
-                    />
-                </Route>
-                <Route path="/mypage/coupon/coupon-gift">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="쿠폰관리" 
-                        branch3="쿠폰선물" 
-                        mainPath="/mypage/coupon/coupon-usage"
-                    />
-                </Route>
-                <Route path="/mypage/coupon/coupon-history">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="쿠폰관리" 
-                        branch3="쿠폰내역" 
-                        mainPath="/mypage/coupon/coupon-usage"
-                    />
-                </Route>
-                <Route path="/mypage/points/points-apply">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="포인트" 
-                        branch3="포인트전환신청" 
-                        mainPath="/mypage/points/points-apply"
-                    />
-                </Route>
-                <Route path="/mypage/points/points-accumulate-history">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="포인트" 
-                        branch3="포인트적립내역" 
-                        mainPath="/mypage/points/points-apply"
-                    />
-                </Route>
-                <Route path="/mypage/points/points-transaction-history">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="포인트" 
-                        branch3="포인트전환내역" 
-                        mainPath="/mypage/points/points-apply"
-                    />
-                </Route>
-                <Route exact path="/mypage/inbox">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="쪽지관리" 
-                        mainPath="/mypage/inbox"
-                    />
-                </Route>
-                <Route path="/mypage/inbox/*">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="쪽지관리" 
-                        branch3="뷰" 
-                        mainPath="/mypage/inbox"
-                    />
-                </Route>
-                <Route path="/mypage/edit-info">
-                    <DirectoryComponent 
-                        setSelectedTab={setSelectedTab} 
-                        setSelectedSubTab={setSelectedSubTab}
-                        branch2="회원정보수정" 
-                        mainPath="/mypage/edit-info"
-                    />
-                </Route>
+          <Route path="/mypage/bet-history">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab}
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="베팅내역" 
+              mainPath="/mypage/bet-history"
+            />
+          </Route>
+          <Route path="/mypage/transaction/charge-history">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="충/환전내역" 
+              branch3="충전내역"
+              mainPath="/mypage/transaction/charge-history"
+            />
+          </Route>
+          <Route path="/mypage/transaction/exchange-history">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="충/환전내역"
+              branch3="환전내역" 
+              mainPath="/mypage/transaction/charge-history"
+            />
+          </Route>
+          <Route path="/mypage/win-lose-settlement">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="윈루즈정산" 
+              mainPath="/mypage/win-lose-settlement"
+            />
+          </Route>
+          <Route path="/mypage/coupon/coupon-usage">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="쿠폰관리" 
+              branch3="쿠폰사용" 
+              mainPath="/mypage/coupon/coupon-usage"
+            />
+          </Route>
+          <Route path="/mypage/coupon/coupon-gift">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="쿠폰관리" 
+              branch3="쿠폰선물" 
+              mainPath="/mypage/coupon/coupon-usage"
+            />
+          </Route>
+          <Route path="/mypage/coupon/coupon-history">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="쿠폰관리" 
+              branch3="쿠폰내역" 
+              mainPath="/mypage/coupon/coupon-usage"
+            />
+          </Route>
+          <Route path="/mypage/points/points-apply">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="포인트" 
+              branch3="포인트전환신청" 
+              mainPath="/mypage/points/points-apply"
+            />
+          </Route>
+          <Route path="/mypage/points/points-accumulate-history">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="포인트" 
+              branch3="포인트적립내역" 
+              mainPath="/mypage/points/points-apply"
+            />
+          </Route>
+          <Route path="/mypage/points/points-transaction-history">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="포인트" 
+              branch3="포인트전환내역" 
+              mainPath="/mypage/points/points-apply"
+            />
+          </Route>
+          <Route exact path="/mypage/inbox">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="쪽지관리" 
+              mainPath="/mypage/inbox"
+            />
+          </Route>
+          <Route path="/mypage/inbox/*">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="쪽지관리" 
+              branch3="뷰" 
+              mainPath="/mypage/inbox"
+            />
+          </Route>
+          <Route path="/mypage/edit-info">
+            <DirectoryComponent 
+              setSelectedTab={setSelectedTab} 
+              setSelectedSubTab={setSelectedSubTab}
+              branch2="회원정보수정" 
+              mainPath="/mypage/edit-info"
+            />
+          </Route>
 
-                <div className="h-125px">
-                    {/* <label className="text-36px font-spoqaMedium text-blue-r325685 absolute right-0 bottom-0 z-20 mb-86px mr-50px">마이페이지</label> */}
-                    <img className="z-10" src={MyPageBanner} alt="" />
-                </div>
+          <div className="h-125px">
+            <img className="z-10" src={MyPageBanner} alt="" />
+          </div>
 
-                <div className="flex  mt-20px">
-                    <div>
-                        <LeftMenu 
-                            selectedTab={selectedTab} 
-                            setSelectedTab={setSelectedTab} 
-                            selectedSubTab={selectedSubTab} 
-                            setSelectedSubTab={setSelectedSubTab}
-                            array={LeftMenuArray}
-                        />
-                    </div>
+          <div className="flex mt-20px w-default">
+            <div>
+              <LeftMenu 
+                selectedTab={selectedTab} 
+                setSelectedTab={setSelectedTab} 
+                selectedSubTab={selectedSubTab} 
+                setSelectedSubTab={setSelectedSubTab}
+                array={LeftMenuArray}
+              />
+            </div>
 
-                    <div className="ml-17px w-1040px">
-                         <Route path="/mypage/bet-history">
-                            <BetHistory />
-                        </Route>
-                        <Route path="/mypage/transaction/charge-history">
-                            <ChargeHistory />
-                        </Route>
-                        <Route path="/mypage/transaction/exchange-history">
-                            <ExchangeHistory />
-                        </Route>
-                        <Route path="/mypage/win-lose-settlement">
-                            <WinLoseSettlement />
-                        </Route>
-                        <Route path="/mypage/coupon/coupon-usage">
-                            <CouponUsage />
-                        </Route>
-                        <Route path="/mypage/coupon/coupon-gift">
-                            <CouponGift />
-                        </Route>
-                        <Route path="/mypage/coupon/coupon-history">
-                            <CouponHistory />
-                        </Route>
-                        <Route path="/mypage/points/points-apply">
-                            <PointsApply />
-                        </Route>
-                        <Route path="/mypage/points/points-accumulate-history">
-                            <PointsAccumulate />
-                        </Route>
-                        <Route path="/mypage/points/points-transaction-history">
-                            <PointsTransaction />
-                        </Route>
-                        <Route exact path="/mypage/inbox">
-                            <Inbox />
-                        </Route>
-                        <Route path="/mypage/inbox/*">
-                            <InboxView />
-                        </Route>
-                        <Route path="/mypage/edit-info">
-                            <EditInfo />
-                        </Route>
-                        <Route path="*">
-                        </Route> 
-                    </div>
-                </div>
+            <div className="ml-17px w-1040px">
+              <Route path="/mypage/bet-history">
+                <BetHistory />
+              </Route>
+              <Route path="/mypage/transaction/charge-history">
+                <ChargeHistory />
+              </Route>
+              <Route path="/mypage/transaction/exchange-history">
+                <ExchangeHistory />
+              </Route>
+              <Route path="/mypage/win-lose-settlement">
+                <WinLoseSettlement />
+              </Route>
+              <Route path="/mypage/coupon/coupon-usage">
+                <CouponUsage />
+              </Route>
+              <Route path="/mypage/coupon/coupon-gift">
+                <CouponGift />
+              </Route>
+              <Route path="/mypage/coupon/coupon-history">
+                  <CouponHistory />
+              </Route>
+              <Route path="/mypage/points/points-apply">
+                <PointsApply />
+              </Route>
+              <Route path="/mypage/points/points-accumulate-history">
+                <PointsAccumulate />
+              </Route>
+              <Route path="/mypage/points/points-transaction-history">
+                <PointsTransaction />
+              </Route>
+              <Route exact path="/mypage/inbox">
+                <Inbox />
+              </Route>
+              <Route path="/mypage/inbox/*">
+                <InboxView />
+              </Route>
+              <Route path="/mypage/edit-info">
+                <EditInfo />
+              </Route>
+              <Route path="*">
+              </Route> 
+            </div>
+          </div>
 
-                <div>
-                    {/* <Footer2 /> */}
-                    <Footer />
-                </div>
+          <div>
+            <Footer />
+          </div>
 
         </div>
-        </div>
+      </div>
     )
 }
 
