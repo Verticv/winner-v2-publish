@@ -9,12 +9,14 @@ import PragIcon from '../../../images/myPage/betHistory/pragmatic_v2.png'
 import DgIcon from '../../../images/myPage/betHistory/dg_v2.png'
 import SexyIcon from '../../../images/myPage/betHistory/sexy_v2.png'
 import BigIcon from '../../../images/myPage/betHistory/big_v2.png'
+import RoyalIcon from '../../../images/myPage/betHistory/royal_v2.png'
 
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
     { text: "에볼루션", icon: EvoIcon, id: 1 },
-    { text: "아시아게이밍", icon: AsiaIcon, id: 2 },
     { text: "프레그메틱플레이", icon: PragIcon, id: 3, custom: "mt-8px" },
+    { text: "로얄지", icon: RoyalIcon, id: 1 },
+    { text: "아시아게이밍", icon: AsiaIcon, id: 2 },
     { text: "드림게이밍", icon: DgIcon, id: 4 },
     { text: "섹시게이밍", icon: SexyIcon, id: 5 },
     { text: "빅게이밍", icon: BigIcon, id: 6 },

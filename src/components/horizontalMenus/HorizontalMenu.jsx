@@ -40,7 +40,7 @@ const HorizontalMenu = ({
             className='w-full flex h-75px absolute top-0 p-px rounded-4px'>
             <div style={{
                 background: pathname === item.path?'linear-gradient( to top, #8d7752, #dabe82)':'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
-                }} className='w-full rounded-4px flex flex-col justify-end items-center pb-5px relative'>
+                }} className='w-full rounded-3px flex flex-col justify-end items-center pb-4px relative'>
               <img className=" object-none" src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
               {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
               <span className='text-14px font-spoqaMedium tracking-tight  text-golden-ccc2b6'>{item.text}</span>

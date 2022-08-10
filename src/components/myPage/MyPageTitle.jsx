@@ -13,8 +13,7 @@ const MyPageTitle = ({
     return (
         <div className="flex h-21px w-full justify-between">
             <div className="flex h-21px w-full">
-                {/* <div className="w-8px h-20px bg-gradient-to-b from-blue-gradLight to-blue-gradDark rounded-3px mt-px" /> */}
-                <img className="z-10 object-none" src={TitleIcon} alt="" />
+                <img className="z-10 object-none -ml-px" src={TitleIcon} alt="" />
                 <label className="font-spoqaMedium text-22px ml-7px -mt-5px" style={{color:'#89806f'}}>{title}</label>
                 {couponCount && (
                     <>

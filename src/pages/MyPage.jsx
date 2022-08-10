@@ -227,7 +227,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
               />
             </div>
 
-            <div className="ml-17px w-1040px">
+            <div className="ml-20px w-1040px">
               <Route path="/mypage/bet-history">
                 <BetHistory />
               </Route>

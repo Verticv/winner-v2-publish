@@ -453,7 +453,9 @@ module.exports = {
           "2c2c2c": '#2c2c2c',
           '4e4941': "#4e4941",
           "776f5f": "#776f5f",
-          'f1e7d5':"#f1e7d5"
+          'f1e7d5': "#f1e7d5",
+          '1f1f1e': "#1f1f1e",
+          '343434':"#343434"
         },
         red: {
           notification: '#ed2f59',

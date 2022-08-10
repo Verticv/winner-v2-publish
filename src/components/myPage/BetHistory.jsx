@@ -41,7 +41,8 @@ const tabsArray = [
     { text: "키론가상게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/mypage/bet-history/ar-game" },
     { text: "피싱게임", icon: Icon8, iconHighlight: IconHighlight8, id: 7, path: "/mypage/bet-history/fishing-game" },
     { text: "로터리게임", icon: Icon9, iconHighlight: IconHighlight9, id: 8, path: "/mypage/bet-history/lottery-game" },
-    { text: "로터리게임", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/mypage/bet-history/lottery-game" }
+    { text: "로터리게임", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/mypage/bet-history/lottery-game" },
+
 ];
 
 
@@ -61,7 +62,7 @@ const BetHistory = () => {
              <div className="relative w-full mt-20px">
                 <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab}/>
                 {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8 && selectedTab !== 9) && (
-                  <div style={{marginLeft: `${selectedTab * 104 + 47}px`}} className={`absolute bottom-0 w-20px -mb-12px overflow-hidden inline-block `}>
+                  <div style={{marginLeft: `${selectedTab * 104 + 45}px`}} className={`absolute bottom-0 w-20px -mb-12px overflow-hidden inline-block `}>
                     <div style={{
                       background:'#323231'
                     }} className="h-15px w-15px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>

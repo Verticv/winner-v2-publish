@@ -19,7 +19,7 @@ const SubHorizontalMenu = ({
                   isState === item.id
                   ? "" 
                   : ""
-              } overflow-hidden h-81px w-full rounded-4px flex justify-end border border-gray-2a2a2a`} 
+              } overflow-hidden h-80px w-full rounded-4px flex justify-end border border-gray-2a2a2a`} 
               onClick={() => setState(item.id)}
               // onMouseOver={() => setHover(item.id)}
               // onMouseLeave={() => setHover(null)}
