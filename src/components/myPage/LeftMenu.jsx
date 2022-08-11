@@ -63,7 +63,7 @@ const LeftMenu = ({
                w-50px flex items-center justify-center flex-shrink-0`} 
             >
                 <img 
-                    className="rounded-full flex items-center justify-center" 
+                    className="flex items-center justify-center" 
                     src={(pathname.includes(path)) ? iconHighlight : icon} 
                     alt="icon" />
             </div>
