@@ -55,14 +55,14 @@ const SportsBetHistoryPanel = ({
         hasUp = false,
         hasDown = false
     }) => (
-        <div className="flex items-center w-full h-56px" style={{background:'#323231'}}>
+        <div className="flex items-center w-full h-54px" style={{background:'#323231'}}>
         <div
             style={{ width: isAttached ? "127px" : "122px", marginLeft: isAttached ? "16px" : "0px" }}
-            className="-space-y-4px flex flex-col items-center justify-center h-56px font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8">
+            className="-space-y-4px flex flex-col items-center justify-center h-54px font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8">
                 <span>승무패</span> 
                 <span>(연장포함)</span>
             </div>
-            <div className="flex space-x-4px">
+             <div className="flex space-x-4px">
                 <button 
                     style={{
                       width: isAttached ? "365px" : "285px",
@@ -126,9 +126,9 @@ const SportsBetHistoryPanel = ({
                 </button>
             </div>
 
-            <div className="flex ml-10px font-spoqaMedium tracking-tight text-14px text-center">
-                <div style={{width: isAttached && "90px"}} className="font-roboto w-99px text-gray-c8c8c8 text-shadow">{score}</div>
-                <div style={{width: isAttached && "59px"}} className="w-61px text-gray-c8c8c8">{choice === "home" ? "홈팀 승" : "원정팀 승"}</div>
+            <div className="flex ml-4px font-spoqaMedium tracking-tight text-14px text-center">
+                <div style={{width: isAttached && "90px"}} className="font-roboto w-99px text-gray-c8c8c8 text-shadow pr-5px">{score}</div>
+                <div style={{width: isAttached && "59px"}} className="w-57px text-gray-c8c8c8">{choice === "home" ? "홈팀 승" : "원정팀 승"}</div>
                 <div 
                 style={{marginRight:isAttached && "5px"}}
                 className={`${
@@ -151,14 +151,14 @@ const SportsBetHistoryPanel = ({
                     : result === "cancel" 
                     ? "취소" 
                     : "결과없음"}</div>
-            </div>
+            </div> 
         </div>
     )
 
 
     const Cards0 = ({bet = "right"}) => (
         <div className="w-full rounded-4px overflow-hidden shadow-subNavbar border-2 border-gray-473b35">
-            <div className="flex items-center justify-between h-56px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
+            <div className="flex items-center justify-between h-54px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={USFlagIcon} alt="" />
@@ -189,7 +189,7 @@ const SportsBetHistoryPanel = ({
 
     const Cards1 = ({hasUp = true, hasDown = true}) => (
         <div className="w-full rounded-4px overflow-hidden shadow-subNavbar border-2 border-gray-473b35">
-            <div className="flex items-center justify-between h-56px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
+            <div className="flex items-center justify-between h-54px w-full px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={UKFlagIcon} alt="" />
@@ -236,7 +236,7 @@ const SportsBetHistoryPanel = ({
 
     const Cards2 = () => (
         <div className="w-full rounded-4px overflow-hidden shadow-subNavbar border-2 border-gray-473b35">
-            <div className="flex items-center justify-between h-56px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
+            <div className="flex items-center justify-between h-54px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={UKFlagIcon} alt="" />
@@ -267,7 +267,7 @@ const SportsBetHistoryPanel = ({
 
     const Cards3 = () => (
         <div className="w-full rounded-4px overflow-hidden shadow-subNavbar border-2 border-gray-473b35">
-            <div className="flex items-center justify-between h-56px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
+            <div className="flex items-center justify-between h-54px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={SpainFlagIcon} alt="" />
@@ -377,7 +377,7 @@ const SportsBetHistoryPanel = ({
                             className="flex items-center justify-center w-111px h-73px rounded-4px bg-gradient-to-b from-blue-88d9e8  to-blue-3d4a8d hover:opacity-75 shadow-link" 
                         >
                             <div className="pt-px flex items-center justify-center h-71px w-109px rounded-3px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
-                                <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff text-shadow">내역올리기</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff text-shadow-5">내역올리기</span>
                             </div>
                         </button>
                     )}
@@ -385,7 +385,7 @@ const SportsBetHistoryPanel = ({
                     {(isPopup === false && noButtons === false) && (
                         <button onClick={() => setAttachedArray && handleRemoveItem(id) } className="flex items-center justify-center w-111px h-73px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:opacity-75 shadow-link">
                             <div className="pt-px flex items-center justify-center h-71px w-109px rounded-3px  bg-gradient-to-b from-red-e06446  to-red-96341d cursor-pointer">
-                                <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow">내역삭제</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">내역삭제</span>
                             </div>
                         </button>
                     )}
