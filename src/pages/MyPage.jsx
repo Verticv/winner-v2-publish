@@ -1,5 +1,6 @@
 import Navbar from 'components/mainPage/Navbar'
-import React, { useState } from 'react'
+import QuickMenu from 'components/QuickMenu'
+import React, { useState, useEffect } from 'react'
 import MyPageBanner from '../images/myPage/mypage_banner_v2.png'
 import LeftMenu from 'components/myPage/LeftMenu'
 import Footer from 'components/mainPage/Footer'
@@ -37,7 +38,18 @@ import Icon8 from '../images/myPage/leftMenu/icon_8_v2.png'
 // import IconHighlight8 from '../images/myPage/leftMenu/icon_8_highlight.png'
 
 const MyPage = ({isAuthenticated, setAuthenticated}) => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
 
+	  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
     const LeftMenuArray = [
         { text: "베팅내역", icon: Icon1, iconHighlight: Icon1, id: 0, path: "/mypage/bet-history", mainPath:"/mypage/bet-history" },
         { 
@@ -89,13 +101,14 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
     const [selectedSubTab, setSelectedSubTab] = useState(location.pathname)
     console.log('selectedTab',selectedTab,selectedSubTab)
     return (
-      <div className="relative flex flex-col justify-center limit:overflow-x-hidden  bg-gray-1e1e1e">
+      <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
        
-
         <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
           <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
         </div>
-
+        <div style={{width:'1496px', height:'calc(100vh - 394px)'}} className={`${scrollPosition > 497 ? "top-200px" : "bottom-0"} fixed z-20 flex justify-end`}>
+          <QuickMenu />
+        </div>
         <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full ">
          
           <Route path="/mypage/bet-history">

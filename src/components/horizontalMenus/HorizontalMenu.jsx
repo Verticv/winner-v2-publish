@@ -43,7 +43,7 @@ const HorizontalMenu = ({
                 }} className='w-full rounded-3px flex flex-col justify-end items-center pb-4px relative'>
               <img className=" object-none" src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
               {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
-              <span className='text-14px font-spoqaMedium tracking-tight  text-golden-ccc2b6'>{item.text}</span>
+              <span className='text-14px font-spoqaMedium tracking-tight text-golden-ccc2b6 mt-2px'>{item.text}</span>
             </div>
           </div>
         </button>

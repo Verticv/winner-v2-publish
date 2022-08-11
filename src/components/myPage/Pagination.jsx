@@ -43,8 +43,8 @@ const Pagination = ({page, setPage}) => {
                         className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
                         onClick={() => setSelectedPage(1)}
                     >
-                    <div style={{ background: selectedPage === 1 && "linear-gradient(to top,  #a67c52, #7f5f3f)" }}
-                        className={` flex items-center justify-center h-30px w-30px rounded-4px  cursor-pointer`}>
+                    <div style={{ background: selectedPage === 1 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
+                        className={` flex items-center justify-center h-30px w-30px rounded-3px  cursor-pointer`}>
                             <span className={`text-gray-activeText font-roboto tracking-tight text-14px pt-2px`}>1</span>
                         </div>
                     </button>
@@ -53,8 +53,8 @@ const Pagination = ({page, setPage}) => {
                         className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
                         onClick={() => setSelectedPage(2)}
                     >
-                        <div style={{ background: selectedPage === 2 && "linear-gradient(to top,  #a67c52, #7f5f3f)" }}
-                          className={` flex items-center justify-center h-30px w-30px rounded-4px  cursor-pointer`}>
+                        <div style={{ background: selectedPage === 2 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
+                          className={` flex items-center justify-center h-30px w-30px rounded-3px  cursor-pointer`}>
                             <span className={`text-gray-activeText font-roboto tracking-tight text-14px pt-2px`}>2</span>
                         </div>
                     </button>
@@ -63,8 +63,8 @@ const Pagination = ({page, setPage}) => {
                         className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
                         onClick={() => setSelectedPage(3)}
                     >
-                        <div style={{ background: selectedPage === 3 && "linear-gradient(to top,  #a67c52, #7f5f3f)" }}
-                          className={` flex items-center justify-center h-30px w-30px rounded-4px  cursor-pointer`}>
+                        <div style={{ background: selectedPage === 3 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
+                          className={` flex items-center justify-center h-30px w-30px rounded-3px  cursor-pointer`}>
                             <span className={`text-gray-activeText font-roboto tracking-tight text-14px pt-2px`}>3</span>
                         </div>
                     </button>
@@ -73,8 +73,8 @@ const Pagination = ({page, setPage}) => {
                         className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
                         onClick={() => setSelectedPage(4)}
                     >
-                      <div style={{ background: selectedPage === 4&& "linear-gradient(to top,  #a67c52, #7f5f3f)" }}
-                        className={` flex items-center justify-center h-30px w-30px rounded-4px  cursor-pointer`}>
+                      <div style={{ background: selectedPage === 4&& "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
+                        className={` flex items-center justify-center h-30px w-30px rounded-43x  cursor-pointer`}>
                             <span className={`text-gray-activeText font-roboto tracking-tight text-14px pt-2px`}>4</span>
                         </div>
                     </button>
@@ -83,8 +83,8 @@ const Pagination = ({page, setPage}) => {
                         className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
                         onClick={() => setSelectedPage(5)}
                     >
-                      <div style={{ background: selectedPage === 5 && "linear-gradient(to top,  #a67c52, #7f5f3f)" }}
-                        className={`flex items-center justify-center h-30px w-30px rounded-4px  cursor-pointer`}>
+                      <div style={{ background: selectedPage === 5 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
+                        className={`flex items-center justify-center h-30px w-30px rounded-3px  cursor-pointer`}>
                           <span className={`text-gray-activeText font-roboto tracking-tight text-14px pt-2px`}>5</span>
                         </div>
                     </button>

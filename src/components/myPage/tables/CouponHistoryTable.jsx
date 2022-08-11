@@ -16,31 +16,31 @@ const CouponHistoryTable = () => {
             </thead>
             <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center">테스트쿠폰</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center">eric123</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                    <td style={{color:"#92278f", WebkitTextStroke:"0.2px"}} className="w-141px text-center">선물완료</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-88px text-center font-robotoRegular">2021-06-29</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-124px text-center font-robotoRegular">2021-07-29</td>
+                    <td className="w-292px text-center">테스트쿠폰</td>
+                    <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
+                    <td className="w-140px text-center">eric123</td>
+                    <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
+                    <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
+                    <td className="w-88px text-center font-robotoRegular">2021-06-29</td>
+                    <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center">테스트쿠폰</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center">eric123</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                    <td style={{color:"#92278f",WebkitTextStroke:"0.2px"}} className="w-141px text-center">선물완료</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-88px text-center font-robotoRegular">2021-06-29</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-124px text-center font-robotoRegular">2021-07-29</td>
+                    <td className="w-292px text-center">테스트쿠폰</td>
+                    <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
+                    <td className="w-140px text-center">eric123</td>
+                    <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
+                    <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
+                    <td className="w-88px text-center font-robotoRegular">2021-06-29</td>
+                    <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center">테스트쿠폰</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center">eric123</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                    <td style={{color:"#92278f",WebkitTextStroke:"0.2px"}} className="w-141px text-center">선물완료</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-88px text-center font-robotoRegular">2021-06-29</td>
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-124px text-center font-robotoRegular">2021-07-29</td>
+                    <td className="w-292px text-center">테스트쿠폰</td>
+                    <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
+                    <td className="w-140px text-center">eric123</td>
+                    <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
+                    <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
+                    <td className="w-88px text-center font-robotoRegular">2021-06-29</td>
+                    <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
             </tbody>
         </table> 

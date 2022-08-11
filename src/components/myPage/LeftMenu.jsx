@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ArrowDown from '../../images/myPage/leftMenu/arr_down.png'
-import ArrowUp from '../../images/myPage/leftMenu/arr_down_v2.png'
+// import ArrowDown from '../../images/myPage/leftMenu/arr_down.png'
+import ArrowDown from '../../images/myPage/leftMenu/arr_down_v2.png'
 import { useHistory } from 'react-router-dom'
 import PopupControls from '../popups/PopupControls'
 import ReauthenticatePopup from 'components/popups/ReauthenticatePopup'
@@ -97,7 +97,7 @@ const LeftMenu = ({
                     <ReauthenticatePopup setPopupOpen={setPopupOpen} setSelectedTab={setSelectedTab}/>
                 </PopupControls>              
                 ) : (
-                    <div className='flex flex-col w-full items-center  pt-6px pr-5px pl-5px'>
+                    <div className='flex flex-col w-full items-center  pt-5px pr-5px pl-5px'>
                       <button 
                         className={`${
                           pathname.includes(item.mainPath)
@@ -143,9 +143,9 @@ const LeftMenu = ({
                                 className={isExpanded === item.path + "closed" && "transform rotate-180"} 
                                 src={
                                     isExpanded === item.path + "closed"
-                                    ? ArrowUp 
+                                    ? ArrowDown 
                                     : pathname.includes(item.mainPath)
-                                    ? ArrowUp 
+                                    ? ArrowDown 
                                     : ArrowDown
                                 } 
                                 alt="" 
@@ -159,8 +159,9 @@ const LeftMenu = ({
                             && isExpanded !== item.path + "closed" 
                             && isExpanded !== item.path2 + "closed"
                             && isExpanded !== item.path3 + "closed" 
-                            ? "" : "hidden"
-                            }  w-full font-spoqaMedium text-16px cursor-pointer tracking-tight mt-px bg-gray-2c2c2c rounded-b-4px  pl-px pr-px pb-px overflow-hidden`} 
+                            ? item.sub1||item.sub2||item.sub3||item.sub4?'bg-gray-2c2c2c mt-px pl-px pr-px pb-px':'' : "hidden"
+
+                            } w-full font-spoqaMedium text-16px cursor-pointer tracking-tight rounded-b-4px overflow-hidden `} 
                         >
                             {item.sub1 && (
                                 <button 
@@ -175,7 +176,7 @@ const LeftMenu = ({
                                         || pathname === item.path_6 || pathname === item.path_7 || pathname === item.path_8 
                                         ? " text-gray-f1e7d5 bg-gray-4e4941" 
                                         : " text-gray-776f5f"
-                                    } flex items-center h-45px w-full  pl-60px`}>
+                                    } flex items-center h-45px w-full pl-60px `}>
                                         {item.sub1}
                                 </button>
                             )}

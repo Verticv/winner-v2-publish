@@ -123,18 +123,18 @@ const WinLoseTable = ({
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-100px font-robotoRegular h-56px text-center flex items-center justify-center pt-3px"><RadioButton id={item.id}/></td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-64px h-56px text-center font-robotoRegular pt-2px">{item.number}</td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-176px h-56px text-center font-robotoRegular pt-2px">{item.startDate}</td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-136px h-56px text-center font-robotoRegular pt-2px">{item.endDate}</td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-265px h-56px text-center pt-2px">{item.type}</td>
+                <td className="w-100px font-robotoRegular h-56px text-center flex items-center justify-center pt-3px"><RadioButton id={item.id}/></td>
+                <td className="w-64px h-56px text-center font-robotoRegular pt-2px">{item.number}</td>
+                <td className="w-176px h-56px text-center font-robotoRegular pt-2px">{item.startDate}</td>
+                <td className="w-136px h-56px text-center font-robotoRegular pt-2px">{item.endDate}</td>
+                <td className="w-265px h-56px text-center pt-2px">{item.type}</td>
                 <td 
                     style={{color: item.amount.includes("+") ? "#d52e2e" : item.amount.includes("-") ? "#0056a6" : "#585858", WebkitTextStroke:"0.2px"}}
                     className="w-170px h-56px text-center font-robotoRegular pt-2px"
                 >
                     {item.amount}
                 </td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-128px h-56px text-center pt-2px">{item.status}</td>
+                <td className="w-128px h-56px text-center pt-2px">{item.status}</td>
             </tr>
         ));
     }

@@ -104,9 +104,9 @@ const CouponRequestTable = () => {
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}
             >
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center">{item.name}</td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e65454 font-robotoRegular pr-20px">{item.amount}</td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center">{item.username}</td>
+                <td className="w-292px text-center">{item.name}</td>
+                <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-20px">{item.amount}</td>
+                <td className="w-140px text-center">{item.username}</td>
                 <td 
                     style={{
                         color: item.state === "사용가능" 
@@ -122,8 +122,8 @@ const CouponRequestTable = () => {
                 >
                     {item.state}
                 </td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-88px text-center font-robotoRegular">{item.date}</td>
-                <td style={{WebkitTextStroke:"0.2px"}} className="w-124px text-center font-robotoRegular">{item.expireDate}</td>
+                <td className="w-88px text-center font-robotoRegular">{item.date}</td>
+                <td className="w-124px text-center font-robotoRegular">{item.expireDate}</td>
             </tr>
         ));
     }
