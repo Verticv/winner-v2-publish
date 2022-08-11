@@ -102,28 +102,28 @@ const DateSearchBar = ({
 
                 <div className="flex space-x-10px items-center w-304px h-full">
                     <div className="relative">
-                  <DatePicker 
+                    <DatePicker 
                             
-                            className="pt-px mt-px flex-shrink-0 outline-none w-138px h-42px rounded-md bg-dark-1a1a1a border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px"
+                            className="mt-px flex-shrink-0 outline-none w-138px h-42px rounded-md bg-dark-1a1a1a border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px"
                             locale="ko" 
                             selected={startDate} 
                             onChange={(date) => setStartDate(date)}
                             dateFormat="yyyy-MM-dd"
                             dateFormatCalendar="yyyy년 MM월"
                         />
-                        <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-14px mr-10px" />
+                        <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-12px mr-10px" />
                     </div>
                     <span className="font-spoqaMedium text-14px text-gray-8e8780 mt-px">~</span>
                     <div className="relative">
                         <DatePicker 
-                            className="pt-px mt-px flex-shrink-0 outline-none bg-dark-1a1a1a w-138px h-42px rounded-md border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6" 
+                            className="mt-px flex-shrink-0 outline-none bg-dark-1a1a1a w-138px h-42px rounded-md border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6" 
                             locale="ko"
                             selected={endDate} 
                             onChange={(date) => setEndDate(date)}
                             dateFormat="yyyy-MM-dd"
                             dateFormatCalendar="yyyy년 MM월"
                         />
-                        <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-14px mr-10px" />
+                        <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-12px mr-10px" />
                     </div>
                 </div>
                 <div className="flex h-full space-x-6px items-center">
