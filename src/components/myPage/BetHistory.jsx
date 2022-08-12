@@ -47,7 +47,7 @@ const tabsArray = [
 
 
 const BetHistory = () => {
-    const [selectedTab, setSelectedTab] = useState(0)
+    // const [selectedTab, setSelectedTab] = useState(0)
     const [selectedSubTab, setSelectedSubTab] = useState(0)
     const [page, setPage] = useState(0)
     const [checkedState, setCheckedState] = useState(
