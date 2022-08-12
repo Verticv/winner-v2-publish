@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useHistory } from 'react-router';
 import Reflect from '../../images/myPage/betHistory/Reflect.png'
 const HorizontalMenu = ({
@@ -9,7 +9,7 @@ const HorizontalMenu = ({
 
     const history = useHistory();
     const pathname = window.location.pathname
-   // const [isHover, setHover] = useState(null)
+    const [isHover, setHover] = useState(null)
 
     function TabsList({ items }) {
       return items.map(item => (
@@ -31,8 +31,8 @@ const HorizontalMenu = ({
                   setSelectedSubTab(0)
               }
             }}
-            // onMouseOver={() => setHover(item.id)}
-            // onMouseLeave={() => setHover(null)}
+            onMouseOver={() => setHover(item.id)}
+            onMouseLeave={() => setHover(null)}
         >
           <div style={{
             background: pathname === item.path?'linear-gradient( to top, #a6926f, #f9f0d3)':'linear-gradient( to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)',
@@ -43,7 +43,13 @@ const HorizontalMenu = ({
                 }} className='w-full rounded-3px flex flex-col justify-end items-center pb-4px relative'>
               <img className=" object-none" src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
               {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
-              <span className='text-14px font-spoqaMedium tracking-tight text-golden-ccc2b6 mt-2px'>{item.text}</span>
+              <span className={`${
+                pathname === item.path
+                  ? isHover == item.id
+                  ? "text-golden-ccc2b6"
+                  : "text-black"
+                  : "text-golden-ccc2b6"} 
+                  text-14px font-spoqaMedium tracking-tight mt-2px hover:text-golden-ccc2b6`} >{item.text}</span>
             </div>
           </div>
         </button>
