@@ -45,7 +45,7 @@ const HorizontalMenu = ({
               {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
               <span className={`${
                 pathname === item.path
-                  ? isHover == item.id
+                  ? isHover === item.id
                   ? "text-golden-ccc2b6"
                   : "text-black"
                   : "text-golden-ccc2b6"} 

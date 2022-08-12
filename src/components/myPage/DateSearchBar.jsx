@@ -38,7 +38,7 @@ const DateSearchBar = ({
     const dropDownCellClass = "flex w-full h-30px py-2px bg-white items-center hover:bg-blue-lightGradLight px-10px"
 
     const gameResultButton = (
-        <div className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight  hover:text-gray-r585858 border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" >
+        <div className="flex items-center justify-between  placeholder-gray-ccc2b6 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight  hover:text-gray-r585858 border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" >
           <p className="mt-px">{selectedCarrier}</p>
           <img src={ArrowDownGray} alt="" />
         </div>
@@ -83,11 +83,11 @@ const DateSearchBar = ({
                     <div className="space-x-5px">
                         <input 
                             placeholder="리그선택"
-                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" 
+                            className="pt-px mt-px placeholder-gray-ccc2b6 flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" 
                         />
                         <input
                             placeholder="팀명검색" 
-                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
+                            className="pt-px mt-px placeholder-gray-ccc2b6 flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
                     </div>
                 )}
 
@@ -96,7 +96,7 @@ const DateSearchBar = ({
                         <div className="pt-px">{InboxSearch}</div>
                         <input
                             placeholder="팀명검색" 
-                            className="pt-px mt-px placeholder-gray-r8c8c8c flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight  border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
+                            className="pt-px mt-px placeholder-gray-ccc2b6 flex-shrink-0 outline-none w-138px h-42px rounded-md border  px-10px font-spoqaMedium text-15px tracking-tight  border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
                     </div>
                 )}
 

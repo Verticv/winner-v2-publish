@@ -2,22 +2,28 @@ import React, { useState } from 'react'
 import DateSearchBar from '../DateSearchBar'
 import SubHorizontalMenu from './SubHorizontalMenu'
 import LiveCasinoBetHistoryTable from '../tables/LiveCasinoBetHistoryTable'
-import AllIcon from '../../../images/myPage/betHistory/all.png'
+import AllIcon from '../../../images/myPage/betHistory/all_v2.png'
 import Sub1 from '../../../images/myPage/betHistory/slotGame/sub1.png'
-import Sub2 from '../../../images/myPage/betHistory/slotGame/sub2.png'
-import Sub3 from '../../../images/myPage/betHistory/slotGame/sub3.png'
-import Sub4 from '../../../images/myPage/betHistory/slotGame/sub4.png'
-import Sub5 from '../../../images/myPage/betHistory/slotGame/sub5.png'
-import Sub6 from '../../../images/myPage/betHistory/slotGame/sub6.png'
-import Sub7 from '../../../images/myPage/betHistory/slotGame/sub7.png'
+import Sub2 from '../../../images/myPage/betHistory/slotGame/sub2_v2.png'
+import Sub3 from '../../../images/myPage/betHistory/slotGame/sub3_v2.png'
+import Sub4 from '../../../images/myPage/betHistory/slotGame/sub4_v2.png'
+import Sub5 from '../../../images/myPage/betHistory/slotGame/sub5_v2.png'
+import Sub6 from '../../../images/myPage/betHistory/slotGame/sub6_v2.png'
+import Sub7 from '../../../images/myPage/betHistory/slotGame/sub7_v2.png'
 import Sub8 from '../../../images/myPage/betHistory/slotGame/sub8.png'
-import Sub9 from '../../../images/myPage/betHistory/slotGame/sub9.png'
-import Sub10 from '../../../images/myPage/betHistory/slotGame/sub10.png'
-import Sub11 from '../../../images/myPage/betHistory/slotGame/sub11.png'
-import Sub12 from '../../../images/myPage/betHistory/slotGame/sub12.png'
-import Sub13 from '../../../images/myPage/betHistory/slotGame/sub13.png'
-import Sub14 from '../../../images/myPage/betHistory/slotGame/sub14.png'
-import Sub15 from '../../../images/myPage/betHistory/slotGame/sub15.png'
+import Sub9 from '../../../images/myPage/betHistory/slotGame/sub9_v2.png'
+import Sub10 from '../../../images/myPage/betHistory/slotGame/sub10_v2.png'
+import Sub11 from '../../../images/myPage/betHistory/slotGame/sub11_v2.png'
+import Sub12 from '../../../images/myPage/betHistory/slotGame/sub12_v2.png'
+import Sub13 from '../../../images/myPage/betHistory/slotGame/sub13_v2.png'
+import Sub14 from '../../../images/myPage/betHistory/slotGame/sub14_v2.png'
+import Sub15 from '../../../images/myPage/betHistory/slotGame/sub15_v2.png'
+import Sub16 from '../../../images/myPage/betHistory/slotGame/sub16_v2.png'
+import Sub17 from '../../../images/myPage/betHistory/slotGame/sub17_v2.png'
+import Sub18 from '../../../images/myPage/betHistory/slotGame/sub18_v2.png'
+import Sub19 from '../../../images/myPage/betHistory/slotGame/sub19_v2.png'
+import Sub20 from '../../../images/myPage/betHistory/slotGame/sub20_v2.png'
+import Sub21 from '../../../images/myPage/betHistory/slotGame/sub21_v2.png'
 
 
 const subTabsArray = [
@@ -37,6 +43,12 @@ const subTabsArray = [
     { text: "플레이앤고", icon: Sub13, id: 13 },
     { text: "YL게이밍", icon: Sub14, id: 14 },
     { text: "레드타이거", icon: Sub15, id: 15 },
+    { text: "플레이텍", icon: Sub16, id: 16 },
+    { text: "스카이윈드", icon: Sub17, id: 17 },
+    { text: "CQ9", icon: Sub18, id: 18 },
+    { text: "올웨이스핀", icon: Sub19, id: 19 },
+    { text: "와즈단", icon: Sub20, id: 20 },
+    { text: "PG소프트", icon: Sub21, id: 21 },
 ];
 
 const tableArray = [
@@ -91,7 +103,7 @@ const SlotBetHistory = ({isState, setState, showSub = true}) => {
         <div className="w-full">
             {showSub === true && (
                 <>
-                  <div className="mt-10px w-full p-5px rounded-4px bg-gray-323231">
+                  <div className="mt-10px w-full p-4px rounded-4px bg-gray-323231">
                       <SubHorizontalMenu itemsArray={subTabsArray} isState={isState} setState={setState} />
                   </div>
                 </>

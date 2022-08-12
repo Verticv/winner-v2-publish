@@ -2,15 +2,18 @@ import React, { useState } from 'react'
 import DateSearchBar from '../DateSearchBar'
 import SubHorizontalMenu from './SubHorizontalMenu'
 import LiveCasinoBetHistoryTable from '../tables/LiveCasinoBetHistoryTable'
-import AllIcon from '../../../images/myPage/betHistory/all.png'
-import Sub1 from '../../../images/myPage/betHistory/ARGame/sub1.png'
-import Sub2 from '../../../images/myPage/betHistory/ARGame/sub2.png'
-import Sub3 from '../../../images/myPage/betHistory/ARGame/sub3.png'
+import AllIcon from '../../../images/myPage/betHistory/all_v2.png'
+import Sub1 from '../../../images/myPage/betHistory/ARGame/sub1_v2.png'
+import Sub2 from '../../../images/myPage/betHistory/ARGame/sub2_v2.png'
+import Sub3 from '../../../images/myPage/betHistory/ARGame/sub3_v2.png'
 import Sub4 from '../../../images/myPage/betHistory/ARGame/sub4.png'
 import Sub5 from '../../../images/myPage/betHistory/ARGame/sub5.png'
 import Sub6 from '../../../images/myPage/betHistory/ARGame/sub6.png'
 import Sub7 from '../../../images/myPage/betHistory/ARGame/sub7.png'
-
+import Sub8 from '../../../images/myPage/betHistory/ARGame/sub8.png'
+import Sub9 from '../../../images/myPage/betHistory/ARGame/sub9.png'
+import Sub10 from '../../../images/myPage/betHistory/ARGame/sub10.png'
+import Sub11 from '../../../images/myPage/betHistory/ARGame/sub11.png'
 
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
@@ -21,6 +24,10 @@ const subTabsArray = [
     { text: "탁구", icon: Sub5, id: 5 },
     { text: "배드민턴", icon: Sub6, id: 6 },
     { text: "양궁", icon: Sub7, id: 7 },
+    { text: "마구", icon: Sub8, id: 8 },
+    { text: "레이싱룰렛", icon: Sub9, id: 9 },
+    { text: "농구", icon: Sub10, id: 10 },
+    { text: "아이스하키", icon: Sub11, id: 11 },
 ];
 
 const tableArray = [
@@ -74,7 +81,7 @@ const ARGameBetHistory = ({isState, setState, showSub = true}) => {
     return (
         <div className="w-full">
             {showSub === true && (
-              <div className="mt-10px h-88px w-full p-4px rounded-4px bg-gray-323231">
+              <div className="mt-10px w-full p-4px rounded-4px bg-gray-323231">
                 <SubHorizontalMenu itemsArray={subTabsArray} isState={isState} setState={setState} />
               </div>
             )}

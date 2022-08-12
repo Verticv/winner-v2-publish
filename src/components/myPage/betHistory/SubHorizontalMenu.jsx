@@ -26,7 +26,7 @@ const SubHorizontalMenu = ({
           >
             <div style={{
                 background: 'linear-gradient( to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)'
-              }} className={` h-79px w-full flex flex-col items-center justify-center p-px`}>
+              }} className={` h-78px w-full flex flex-col items-center justify-center p-px`}>
               <div
 
                 // style={{
@@ -36,7 +36,7 @@ const SubHorizontalMenu = ({
                 //     ? "linear-gradient(to bottom, #daf2ff, #ecffff 60%)"
                 //     : "linear-gradient(to bottom, #d0dbe4, #ffffff 60%)"
                 // }}
-                  className={`h-77px w-full rounded-3px flex flex-col items-center justify-end bg-gradient-to-t from-gray-323231 to-gray-545452`}
+                  className={`h-76px w-full rounded-3px flex flex-col items-center justify-end bg-gradient-to-t from-gray-323231 to-gray-545452`}
                   >
                       <img className="mt-8px ml-2px object-none h-40px" src={item.icon} alt="" />
                       <span className={`text-13px font-spoqaMedium tracking-tight text-golden-ccc2b6 mb-10px mt-2px ${item.custom}`} >{item.text}</span>
@@ -49,11 +49,11 @@ const SubHorizontalMenu = ({
     return (
         <>
           {itemsArray.length < 10 ? (
-            <div className="flex w-full h-80px space-x-4px">
+            <div className="flex w-full h-80px space-x-2px">
                 <TabsList items={itemsArray} />
             </div>
           ) : (
-            <div className="grid grid-cols-8 gap-px w-full">
+            <div className="grid grid-cols-8 gap-2px w-full">
                 <TabsList items={itemsArray} />
             </div>
           )}
