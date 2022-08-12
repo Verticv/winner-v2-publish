@@ -60,14 +60,14 @@ const BetHistory = () => {
             <MyPageTitle title="베팅내역" />
             
              <div className="relative w-full mt-20px">
-                <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab}/>
-                {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8 && selectedTab !== 9) && (
-                  <div style={{marginLeft: `${selectedTab * 104 + 43}px`}} className={`absolute bottom-0 w-20px -mb-12px overflow-hidden inline-block `}>
+                <HorizontalMenu itemsArray={tabsArray} setSelectedSubTab={setSelectedSubTab}/>
+                {/* {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8 && selectedTab !== 9) && (
+                  <div style={{marginLeft: `${selectedTab * 103 + 46}px`}} className={`absolute bottom-0 w-20px -mb-12px overflow-hidden inline-block `}>
                     <div style={{
                       background:'#323231'
                     }} className="h-15px w-15px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>
                   </div>
-                )}
+                )} */}
             </div>
             
             <Route exact path="/mypage/bet-history">

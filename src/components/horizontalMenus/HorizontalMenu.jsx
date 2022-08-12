@@ -3,17 +3,18 @@ import { useHistory } from 'react-router';
 import Reflect from '../../images/myPage/betHistory/Reflect.png'
 const HorizontalMenu = ({
     itemsArray, 
-    setSelectedTab,
     setSelectedSubTab = null
 }) => {
 
     const history = useHistory();
     const pathname = window.location.pathname
     const [isHover, setHover] = useState(null)
-
+    const [selectedTab, setSelectedTab] = useState(0)
+  
     function TabsList({ items }) {
       return items.map(item => (
-        <button
+        <div className='relative w-full'>
+          <button
           key={item.id}
           style={{
             background:pathname === item.path?'linear-gradient( to top, #62553f, #dabe82)':'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
@@ -52,14 +53,22 @@ const HorizontalMenu = ({
                   text-14px font-spoqaMedium tracking-tight mt-2px hover:text-golden-ccc2b6`} >{item.text}</span>
             </div>
           </div>
-        </button>
+          </button>
+          {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8 && selectedTab !== 9 && selectedTab === item.id) && (
+          <div className={`absolute bottom-0 left-40px w-20px -mb-12px overflow-hidden inline-block `}>
+            <div style={{
+              background:'#323231'
+            }} className="h-15px w-15px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>
+          </div>
+        )}
+        </div>
         ));
     }
 
 
     return (
         <div className="flex justify-between w-full h-78px space-x-3px pl-4px pr-4px">
-            <TabsList items={itemsArray} />
+          <TabsList items={itemsArray} />
         </div>
     )
 }

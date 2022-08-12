@@ -52,7 +52,7 @@ const LeftMenu = ({
                 pathname.includes(path)
                 ? "bg-gradient-to-b from-golden-gradLight to-golden-gradDark shadow-link" 
                 : ""
-            } flex w-full items-center h-48px rounded-4px`} 
+            } flex w-full items-center h-48px rounded-4px hover:bg-gray-4e4941`} 
             onClick={() => {
                 buttonPressed(path)
                 setPopupOpen(true)
