@@ -30,8 +30,10 @@ const SubHorizontalMenu = ({
               <div
 
                 style={{
-                    background: isState === item.id || isHover === item.id 
+                  background: isState === item.id 
                     ? "linear-gradient( to top, #3e3e3b, #afafa6)"
+                    :isHover === item.id 
+                    ? "#4b4b46"
                     : ''
                 }}
                   className={`h-76px w-full rounded-3px flex flex-col items-center justify-end bg-gradient-to-t from-gray-323231 to-gray-545452`}
