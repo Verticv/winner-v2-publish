@@ -63,7 +63,7 @@ const LeftMenu = ({
                w-50px flex items-center justify-center flex-shrink-0`} 
             >
                 <img 
-                    className="flex items-center justify-center" 
+                    className="flex items-center justify-center h-37px" 
                     src={(pathname.includes(path)) ? iconHighlight : icon} 
                     alt="icon" />
             </div>
@@ -111,10 +111,10 @@ const LeftMenu = ({
                       >
                         <div>
                           <div 
-                            className={`w-50px flex items-center justify-center flex-shrink-0`} 
+                            className={`w-50px flex items-center justify-start flex-shrink-0 pl-7px`} 
                           >
                             <img 
-                              className="flex items-center justify-center" 
+                              className="flex items-center justify-start w-45px h-37px" 
                               src={pathname.includes(item.mainPath) ? item.iconHighlight : item.icon} 
                                 alt="icon" />
                           </div>
@@ -174,9 +174,9 @@ const LeftMenu = ({
                                         || pathname === item.path_2 || pathname === item.path_3 
                                         || pathname === item.path_4 || pathname === item.path_5 
                                         || pathname === item.path_6 || pathname === item.path_7 || pathname === item.path_8 
-                                        ? " text-gray-f1e7d5 bg-gray-4e4941 hover:text-gray-776f5f" 
-                                        : " text-gray-776f5f"
-                                    } flex items-center h-45px w-full pl-60px hover:text-gray-r454545`}>
+                                        ? "text-gray-f1e7d5 bg-gray-4e4941" 
+                                        : "text-gray-776f5f hover:bg-gray-5f5951 hover:text-gray-c8c8c8"
+                                    } flex items-center h-45px w-full pl-60px `}>
                                         {item.sub1}
                                 </button>
                             )}
@@ -189,9 +189,9 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path2 || pathname === item.path2_1 || pathname === item.path2_2 || pathname === item.path2_3
-                                        ? " text-gray-f1e7d5 bg-gray-4e4941 hover:text-gray-776f5f" 
-                                        : " text-gray-776f5f"
-                                    } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
+                                        ? "text-gray-f1e7d5 bg-gray-4e4941" 
+                                        : "text-gray-776f5f hover:bg-gray-5f5951 hover:text-gray-c8c8c8"
+                                    } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full pl-60px `}>
                                         {item.sub2}
                                 </button>
                             )}
@@ -204,9 +204,9 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path3 || pathname === item.path3_1
-                                        ? " text-gray-f1e7d5 bg-gray-4e4941 hover:text-gray-776f5f" 
-                                        : " text-gray-776f5f"
-                                    } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-f1e7d5`}>
+                                        ? "text-gray-f1e7d5 bg-gray-4e4941 " 
+                                        : "text-gray-776f5f hover:bg-gray-5f5951 hover:text-gray-c8c8c8"
+                                    } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px `}>
                                         {item.sub3}
                                 </button>
                             )}
@@ -219,9 +219,9 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path4
-                                        ? " text-gray-f1e7d5 bg-gray-4e4941 hover:text-gray-776f5f" 
-                                        : " text-gray-776f5f"
-                                    } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px hover:text-gray-r454545`}>
+                                        ? "text-gray-f1e7d5 bg-gray-4e4941 " 
+                                        : "text-gray-776f5f hover:bg-gray-5f5951 hover:text-gray-c8c8c8"
+                                    } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px `}>
                                         {item.sub4}
                                 </button>
                             )}

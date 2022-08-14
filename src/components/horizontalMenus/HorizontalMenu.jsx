@@ -17,8 +17,8 @@ const HorizontalMenu = ({
           <button
           key={item.id}
           style={{
-            background:pathname === item.path?'linear-gradient( to top, #62553f, #dabe82)':'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
-            boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5) ',
+            background:pathname === item.path || isHover === item.id?'linear-gradient( to top, #62553f, #dabe82)':'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
+            boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5) '
           }}
           className={`${
               pathname === item.path
@@ -36,21 +36,25 @@ const HorizontalMenu = ({
             onMouseLeave={() => setHover(null)}
         >
           <div style={{
-            background: pathname === item.path?'linear-gradient( to top, #a6926f, #f9f0d3)':'linear-gradient( to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)',
+              background: pathname === item.path  || isHover === item.id
+              ? 'linear-gradient(to top, #a6926f, #f9f0d3)'
+              : 'linear-gradient( to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)',
             }}
-            className='w-full flex h-75px absolute top-0 p-px rounded-4px'>
+            className='w-full flex h-75px absolute top-0 p-px rounded-4px '>
             <div style={{
-                background: pathname === item.path?'linear-gradient( to top, #8d7752, #dabe82)':'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
-                }} className='w-full rounded-3px flex flex-col justify-end items-center pb-4px relative'>
-              <img className=" object-none" src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
+                background: pathname === item.path
+                  ? 'linear-gradient(to top, #8d7752, #dabe82)'
+                  :isHover === item.id
+                  ?'linear-gradient(to bottom, #f2f0eb, #a28c64)'
+                  :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
+              }} className='w-full rounded-3px flex flex-col justify-end items-center pb-3px relative '>
+              <img className='object-none h-40px' src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
               {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
               <span className={`${
-                pathname === item.path
-                  ? isHover === item.id
-                  ? "text-golden-ccc2b6"
-                  : "text-black"
+                pathname === item.path || isHover === item.id 
+                  ? "text-black"
                   : "text-golden-ccc2b6"} 
-                  text-14px font-spoqaMedium tracking-tight mt-2px hover:text-golden-ccc2b6`} >{item.text}</span>
+                  text-14px font-spoqaMedium tracking-tight mt-3px`} >{item.text}</span>
             </div>
           </div>
           </button>
