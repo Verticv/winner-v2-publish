@@ -27,7 +27,7 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
                  index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full  flex items-center border-b border-dark-252525`}>
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full  flex items-center border-b border-dark-252525 last:border-b-0`}>
                 <div style={{width: "51px"}} className="ml-20px text-center flex justify-center items-center">
                     <input
                         type="checkbox"
@@ -53,8 +53,11 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
         ))
     }
 
-    return (
-        <div className="shadow-subNavbar rounded-4px overflow-hidden">
+  return (
+      <div
+        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+        className="rounded-4px shadow-navbar overflow-hidden p-px">
+        <div className="rounded-3px overflow-hidden">
             <div style={{height:"56px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
                 <div style={{width: "51px"}} className="ml-20px text-center">선택</div>
                 <div style={{width: "86px"}} className="text-center">베팅번호</div>
@@ -72,6 +75,7 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
                 <Cells items={array} />
             </div>
         </div>      
+      </div>
     )
 }
 

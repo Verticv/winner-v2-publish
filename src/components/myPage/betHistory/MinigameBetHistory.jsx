@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DateSearchBar from '../DateSearchBar'
 import SubHorizontalMenu from './SubHorizontalMenu'
-import AllIcon from '../../../images/myPage/betHistory/all.png'
+import AllIcon from '../../../images/myPage/betHistory/all_v2.png'
 import Sub1 from '../../../images/myPage/betHistory/minigame/sub1.png'
 import Sub2 from '../../../images/myPage/betHistory/minigame/sub2.png'
 import Sub3 from '../../../images/myPage/betHistory/minigame/sub3.png'
@@ -75,7 +75,7 @@ const MinigameBetHistory = ({isState, setState, showSub = true, attachedArray, s
     return (
         <div className="w-full">
             {showSub === true && (
-          <div className="mt-10px h-88px w-full p-4px rounded-4px bg-gray-323231"
+          <div className="mt-10px h-88px w-full px-4px py-3px rounded-4px bg-gray-323231"
           >
             <SubHorizontalMenu itemsArray={subTabsArray} isState={isState} setState={setState} />
             </div>

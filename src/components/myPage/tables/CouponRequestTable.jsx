@@ -102,7 +102,7 @@ const CouponRequestTable = () => {
                 index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}
             >
                 <td className="w-292px text-center">{item.name}</td>
                 <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-20px">{item.amount}</td>
@@ -129,21 +129,25 @@ const CouponRequestTable = () => {
     }
 
     return (
-        <table className="rounded-4px shadow-navbar overflow-hidden">
-            <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
+        <div
+          style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+          className="rounded-4px shadow-navbar overflow-hidden p-px">
+            <table className="rounded-3px overflow-hidden">
+              <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
-                    <td style={{width: "371px"}} className="w-292px text-center">쿠폰명</td>
-                    <td style={{width: "163px"}} className="w-119px text-center">쿠폰금액</td>
-                    <td style={{width: "135px"}} className="w-140px text-center">보낸회원아이디</td>
-                    <td style={{width: "118px"}} className="w-141px text-center">처리상태</td>
-                    <td style={{width: "135px"}} className="w-88px text-center">발급일</td>
-                    <td style={{width: "121px"}} className="w-124px text-center">만료일</td>
+                  <td style={{width: "371px"}} className="w-292px text-center">쿠폰명</td>
+                  <td style={{width: "163px"}} className="w-119px text-center">쿠폰금액</td>
+                  <td style={{width: "135px"}} className="w-140px text-center">보낸회원아이디</td>
+                  <td style={{width: "118px"}} className="w-141px text-center">처리상태</td>
+                  <td style={{width: "135px"}} className="w-88px text-center">발급일</td>
+                  <td style={{width: "121px"}} className="w-124px text-center">만료일</td>
                 </tr>
-            </thead>
+              </thead>
             <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <Cells items={ExampleArray} />
             </tbody>
-        </table> 
+          </table> 
+        </div>
     )
 }
 

@@ -109,7 +109,7 @@ const CouponUsageTable = () => {
                 index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}
             >
                     <td className="w-313px text-center">{item.name}</td>
                     <td className="w-172px text-right text-red-e65454 pr-20px font-robotoRegular">{item.amount}</td>
@@ -124,8 +124,11 @@ const CouponUsageTable = () => {
     
 
     return (
-        <table className="rounded-4px shadow-navbar overflow-hidden">
-            <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
+       <div
+        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+          className="rounded-4px shadow-navbar overflow-hidden p-px">
+            <table className="rounded-3px overflow-hidden">
+                <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td className="w-313px text-center">쿠폰명</td>
                     <td className="w-172px text-center">쿠폰금액</td>
@@ -140,6 +143,7 @@ const CouponUsageTable = () => {
                 <Cells items={ExampleArray} />
             </tbody>
         </table>   
+        </div>
     )
 }
 

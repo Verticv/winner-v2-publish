@@ -74,7 +74,7 @@ const LiveCasinoBetHistory = ({isState, setState, showSub = true}) => {
         <div className="w-full">
             {showSub === true && (
               <>
-                <div className="mt-10px h-88px w-full p-4px rounded-4px bg-gray-323231">
+                <div className="mt-10px h-88px w-full px-4px py-3px rounded-4px bg-gray-323231">
                   <SubHorizontalMenu itemsArray={subTabsArray} isState={isState} setState={setState} />
                 </div>
                   {/* <DateSearchBar isLeagueSearch={false} /> */}

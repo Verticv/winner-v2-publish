@@ -122,7 +122,7 @@ const WinLoseTable = ({
                 index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}>
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}>
                 <td className="w-100px font-robotoRegular h-56px text-center flex items-center justify-center pt-3px"><RadioButton id={item.id}/></td>
                 <td className="w-64px h-56px text-center font-robotoRegular pt-2px">{item.number}</td>
                 <td className="w-176px h-56px text-center font-robotoRegular pt-2px">{item.startDate}</td>
@@ -140,8 +140,10 @@ const WinLoseTable = ({
     }
 
     return (
-        <div className="rounded-4px shadow-navbar overflow-hidden">
-            <table>
+      <div
+        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+          className="rounded-4px shadow-navbar overflow-hidden p-px">
+            <table className="rounded-3px overflow-hidden">
                 <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-dark-252525 bg-dark-2e2e2e ">
                     <tr>
                         <td className="w-100px text-center pt-2px">선택</td>

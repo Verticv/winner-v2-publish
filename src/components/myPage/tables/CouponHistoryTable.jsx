@@ -2,8 +2,11 @@ import React from 'react'
 
 const CouponHistoryTable = () => {
     return (
-          <table className="rounded-4px shadow-navbar overflow-hidden">
-            <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
+        <div
+          style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+          className="rounded-4px shadow-navbar overflow-hidden p-px">
+            <table className="rounded-3px overflow-hidden">
+                <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td className="w-292px text-center">쿠폰명</td>
                     <td className="w-119px text-center">쿠폰금액</td>
@@ -33,7 +36,7 @@ const CouponHistoryTable = () => {
                     <td className="w-88px text-center font-robotoRegular">2021-06-29</td>
                     <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
-                <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
+                <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px bg-dark-323232">
                     <td className="w-292px text-center">테스트쿠폰</td>
                     <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
                     <td className="w-140px text-center">eric123</td>
@@ -43,7 +46,8 @@ const CouponHistoryTable = () => {
                     <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
             </tbody>
-        </table> 
+        </table>
+      </div>        
     )
 }
 

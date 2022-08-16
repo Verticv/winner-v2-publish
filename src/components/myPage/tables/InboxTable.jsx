@@ -28,7 +28,7 @@ const InboxTable = ({
                     item.id % 2 === 0 
                     ? "bg-dark-323232" 
                     : "bg-dark-2e2e2e"
-              } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-dark-252525 hover:font-spoqaBold group`}
+              } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-dark-252525 hover:font-spoqaBold group last:border-b-0`}
 
             >
                 <div className="flex items-center font-spoqaBold text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 px-54px">        
@@ -81,18 +81,22 @@ const InboxTable = ({
         ));
     }
 
-    return (
-        <div className="rounded-4px shadow-navbar overflow-hidden">
-            <div className="flex items-center font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-dark-252525 bg-dark-2e2e2e px-54px">        
-                <div className="-ml-2px w-28px flex justify-center">선택</div>
-                <div className="w-107px flex justify-center">확인</div>
-                <div className="w-612px flex justify-center">제목</div>
-                <div className="w-158px flex justify-center">보낸시간</div>
-                <div className="w-70px flex justify-center">삭제</div>
-            </div>
+  return (
+      <div
+        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+          className="rounded-4px shadow-navbar overflow-hidden p-px">
+          <div className="rounded-3px overflow-hidden">
+              <div className="flex items-center font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-dark-252525 bg-dark-2e2e2e px-54px">        
+                  <div className="-ml-2px w-28px flex justify-center">선택</div>
+                  <div className="w-107px flex justify-center">확인</div>
+                  <div className="w-612px flex justify-center">제목</div>
+                  <div className="w-158px flex justify-center">보낸시간</div>
+                  <div className="w-70px flex justify-center">삭제</div>
+              </div>
 
-            <InboxList items={array} />
-        </div>
+              <InboxList items={array} />
+          </div>
+      </div>
     )
 }
 

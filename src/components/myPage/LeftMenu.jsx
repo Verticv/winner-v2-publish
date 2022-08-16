@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 // import ArrowDown from '../../images/myPage/leftMenu/arr_down.png'
 import ArrowDown from '../../images/myPage/leftMenu/arr_down_v2.png'
+import ArrowOn from '../../images/myPage/leftMenu/arrow_on.png'
+
 import { useHistory } from 'react-router-dom'
 import PopupControls from '../popups/PopupControls'
 import ReauthenticatePopup from 'components/popups/ReauthenticatePopup'
@@ -104,7 +106,6 @@ const LeftMenu = ({
                           ? "bg-gradient-to-b from-golden-gradLight to-golden-gradDark shadow-link" 
                           :''
                         } flex w-full items-center h-48px rounded-4px hover:bg-gray-4e4941`} 
-                    // style={{background:'linear-gradient(0deg, rgba(130,97,64,1) 0%, rgba(165,122,83,1) 96%, rgba(163,124,85,1) 98%)'}}
                         onClick={(e) => buttonPressed(item.text, item.path)}
                         onMouseEnter={() => mouseHover(item.path)}
                         onMouseLeave={() => mouseLeave(item.path)}
@@ -137,15 +138,15 @@ const LeftMenu = ({
                                 {item.inboxCount}
                               </div>
                             )}
-                          </div>
-                          {item.sub1 && (
+                      </div>
+                      
+                      {item.sub1 && (
+                        
                             <img 
-                                className={isExpanded === item.path + "closed" && "transform rotate-180"} 
+                                 className={isExpanded !== item.path + "closed" && pathname.includes(item.mainPath) && "transform rotate-180"} 
                                 src={
-                                    isExpanded === item.path + "closed"
-                                    ? ArrowDown 
-                                    : pathname.includes(item.mainPath)
-                                    ? ArrowDown 
+                                    pathname.includes(item.mainPath) 
+                                    ? ArrowOn
                                     : ArrowDown
                                 } 
                                 alt="" 

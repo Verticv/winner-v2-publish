@@ -586,6 +586,7 @@ module.exports = {
         '42px': '42px',
       },
       borderRadius: {
+        '2px':'2px',
         '3px': '3px',
         '4px': '4px',
         '6px': '6px',
@@ -606,6 +607,7 @@ module.exports = {
   variants: {
     extend: {
       linearGradients: ['hover', 'responsive'],
+      borderWidth: ['last'],
     },
     
     

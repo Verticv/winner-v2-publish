@@ -27,7 +27,7 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
                 index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525`}>
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 last:border-b-0`}>
                 <td style={{width: "92px"}} className="text-center pt-7px">
                     <input
                         type="checkbox"
@@ -51,8 +51,11 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
         ))
     }
 
-    return (
-        <table className="rounded-4px shadow-navbar overflow-hidden">
+  return (
+      <div
+        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+        className="rounded-4px shadow-navbar overflow-hidden p-px">
+        <table className="rounded-3px overflow-hidden">
             <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td style={{width: "92px"}} className="text-center">선택</td>
@@ -69,7 +72,8 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
             <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <Cells items={array} />
             </tbody>
-        </table>      
+      </table>  
+    </div>      
     )
 }
 

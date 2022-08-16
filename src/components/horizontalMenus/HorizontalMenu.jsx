@@ -66,7 +66,7 @@ const HorizontalMenu = ({
             </div>
           </div>
           </button>
-          {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8 && selectedTab !== 9 && selectedTab === item.id) && (
+          {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 5 && selectedTab !== 9 && selectedTab === item.id) && (
           <div className={`absolute bottom-0 left-40px w-20px -mb-12px overflow-hidden inline-block `}>
             <div style={{
               background:'#323231'

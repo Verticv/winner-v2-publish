@@ -13,8 +13,11 @@ const CouponGiftTable = () => {
         />
     )
 
-    return (
-        <table className="rounded-4px shadow-navbar overflow-hidden">
+  return (
+      <div
+        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+        className="rounded-4px shadow-navbar overflow-hidden p-px">
+        <table className="rounded-3px overflow-hidden">
             <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
                     <td className="w-79px text-center">선택</td>
@@ -108,7 +111,7 @@ const CouponGiftTable = () => {
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
                     <td className="w-119px text-center font-robotoRegular">2021-07-29</td>
                 </tr> 
-                <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
+                <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px bg-dark-2e2e2e">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
                     <td className="w-143px text-right text-red-e65454 pr-20px font-robotoRegular">10,000</td>
@@ -118,7 +121,8 @@ const CouponGiftTable = () => {
                     <td className="w-119px text-center font-robotoRegular">2021-07-29</td>
                 </tr> 
             </tbody>
-        </table> 
+      </table> 
+      </div>
     )
 }
 
