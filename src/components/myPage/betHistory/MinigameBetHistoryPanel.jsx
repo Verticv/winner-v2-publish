@@ -173,7 +173,6 @@ const MinigameBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={ClockIcon} alt="" />
                     <span 
-                        style={{color: "#dae8f5"}}
                         className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight pt-px"
                     >
                         2021-06-29 15:45
