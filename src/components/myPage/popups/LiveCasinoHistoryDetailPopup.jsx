@@ -6,7 +6,7 @@ import Sample2 from '../../../images/myPage/betHistory/sample2_v2.png'
 const LiveCasinoHistoryDetailPopup = ({setPopupOpen}) => {
   return (
       <div 
-        style={{ height: "793px",width: "690px", borderRadius: "10px", background:"linear-gradient(to top, #1f1f1e 80%, #343434 100%)",borderRadius: "10px",boxShadow: '3.5px 6.062px 7px 0px rgba(0, 0, 0, 0.75)'}}
+        style={{ height: "793px",width: "690px", borderRadius: "10px", background:"linear-gradient(to top, #1f1f1e 80%, #343434 100%)",boxShadow: '3.5px 6.062px 7px 0px rgba(0, 0, 0, 0.75)'}}
         className="overflow-hidden p-px"
         >
         <div 
