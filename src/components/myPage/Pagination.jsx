@@ -10,7 +10,7 @@ const Pagination = ({page, setPage}) => {
     const LeftArrow = () => (
         <button 
             style={{backgroundColor:selectedPage !==1 && "#fff"}} 
-            className="flex items-center justify-center w-32px h-32px rounded-4px  hover:opacity-75"
+            className="flex items-center justify-center w-32px h-32px rounded-4px  hover:filter hover:brightness-125"
             onClick={() => selectedPage !== 1 && setSelectedPage(selectedPage - 1)}
         >
             <img src={LeftIcon} alt="arrow" />
@@ -19,7 +19,7 @@ const Pagination = ({page, setPage}) => {
     const RightArrow = () => (
         <button 
             style={{backgroundColor:selectedPage !==1 && "#fff"}} 
-            className="flex items-center justify-center w-32px h-32px rounded-4px  hover:opacity-75"
+            className="flex items-center justify-center w-32px h-32px rounded-4px  hover:filter hover:brightness-125"
             onClick={() => selectedPage !== 5 && setSelectedPage(selectedPage + 1)}
         >
             <img src={RightIcon} alt="arrow" />
@@ -31,7 +31,7 @@ const Pagination = ({page, setPage}) => {
     return (
         <div className="relative flex h-32px mb-60px items-center justify-center space-x-6px">
             <button 
-                className="flex items-center justify-center w-32px h-32px rounded-4px  hover:opacity-75"
+                className="flex items-center justify-center w-32px h-32px rounded-4px  hover:filter hover:brightness-125"
                 onClick={() => setSelectedPage(1)}
             >
                 <img className="cursor-pointer h-32px object-none hover:bg-blend-darken" src={DoubleLeftIcon} alt="" />
@@ -40,7 +40,7 @@ const Pagination = ({page, setPage}) => {
                 <div className="space-x-px flex items-center">
                     <button 
                         style={{background: selectedPage ===1 && "linear-gradient(to top, #4b3b09, #e8b888)" }} 
-                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
+                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:filter hover:brightness-125"
                         onClick={() => setSelectedPage(1)}
                     >
                     <div style={{ background: selectedPage === 1 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
@@ -50,7 +50,7 @@ const Pagination = ({page, setPage}) => {
                     </button>
                     <button 
                          style={{background: selectedPage === 2 && "linear-gradient(to top, #4b3b09, #e8b888)" }} 
-                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
+                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:filter hover:brightness-125"
                         onClick={() => setSelectedPage(2)}
                     >
                         <div style={{ background: selectedPage === 2 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
@@ -60,7 +60,7 @@ const Pagination = ({page, setPage}) => {
                     </button>
                     <button 
                         style={{backgroundColor:selectedPage ===3 && "linear-gradient(to top, #4b3b09, #e8b888)"}} 
-                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
+                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:filter hover:brightness-125"
                         onClick={() => setSelectedPage(3)}
                     >
                         <div style={{ background: selectedPage === 3 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
@@ -70,7 +70,7 @@ const Pagination = ({page, setPage}) => {
                     </button>
                     <button 
                         style={{backgroundColor:selectedPage ===4 && "linear-gradient(to top, #4b3b09, #e8b888)"}} 
-                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
+                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:filter hover:brightness-125"
                         onClick={() => setSelectedPage(4)}
                     >
                       <div style={{ background: selectedPage === 4&& "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
@@ -80,7 +80,7 @@ const Pagination = ({page, setPage}) => {
                     </button>
                     <button 
                         style={{backgroundColor:selectedPage ===5 && "linear-gradient(to top, #4b3b09, #e8b888)"}} 
-                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:opacity-75"
+                        className="flex items-center justify-center w-32px h-32px rounded-4px hover:filter hover:brightness-125"
                         onClick={() => setSelectedPage(5)}
                     >
                       <div style={{ background: selectedPage === 5 && "linear-gradient(to bottom,  #a67c52, #7f5f3f)" }}
@@ -93,7 +93,7 @@ const Pagination = ({page, setPage}) => {
 
                 <RightArrow />                
                 <button 
-                    className="flex items-center justify-center w-32px h-32px rounded-4px  hover:opacity-75"
+                    className="flex items-center justify-center w-32px h-32px rounded-4px  hover:filter hover:brightness-125"
                     onClick={() => setSelectedPage(5)}
                 >
                     <img className=" cursor-pointer h-32px object-none hover:bg-blend-darken" src={DoubleRightIcon} alt="" />

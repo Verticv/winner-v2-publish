@@ -20,7 +20,7 @@ const HorizontalMenu = ({
             background: pathname === item.path 
               ?'linear-gradient( to top, #62553f, #dabe82)'
               : isHover === item.id
-              ? '#6c675e' 
+              ? '#54544f' 
               : 'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
             boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5) '
           }}
@@ -42,8 +42,6 @@ const HorizontalMenu = ({
           <div style={{
               background: pathname === item.path
               ? 'linear-gradient(to top, #a6926f, #f9f0d3)'
-              : isHover === item.id
-              ? 'linear-gradient(to top,#806f4f, #827c69)'
               : 'linear-gradient(to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)'
       
             }}
@@ -53,13 +51,13 @@ const HorizontalMenu = ({
                 background: pathname === item.path
                   ? 'linear-gradient(to top, #8d7752, #dabe82)'
                   :isHover === item.id
-                  ?'#6c675e'
+                  ?'#54544f'
                   :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
-              }} className={` w-full rounded-3px flex flex-col justify-end items-center pb-3px relative`}>
+              }} className={` w-full rounded-3px flex flex-col justify-end items-center pb-3px relative hover:filter hover:brightness-90`}>
               <img className='object-none h-40px' src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
               {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
               <span className={`${
-                pathname === item.path || isHover === item.id 
+                  pathname === item.path 
                   ? "text-black"
                   : "text-golden-ccc2b6"} 
                   text-14px font-spoqaMedium tracking-tight mt-3px`} >{item.text}</span>

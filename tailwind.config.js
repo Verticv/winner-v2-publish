@@ -608,6 +608,8 @@ module.exports = {
     extend: {
       linearGradients: ['hover', 'responsive'],
       borderWidth: ['last'],
+      brightness: ['hover'],
+      filter: ['hover', 'focus'],
     },
     
     
