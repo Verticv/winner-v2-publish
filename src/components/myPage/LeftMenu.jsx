@@ -65,7 +65,7 @@ const LeftMenu = ({
                w-50px flex items-center justify-center flex-shrink-0`} 
             >
                 <img 
-                    className="flex items-center justify-center h-37px" 
+                    className="flex items-center justify-center object-contain h-37px" 
                     src={(pathname.includes(path)) ? iconHighlight : icon} 
                     alt="icon" />
             </div>
@@ -115,7 +115,7 @@ const LeftMenu = ({
                             className={`w-50px flex items-center justify-start flex-shrink-0 pl-7px`} 
                           >
                             <img 
-                              className="flex items-center justify-start w-45px h-37px" 
+                              className="flex items-center justify-start w-45px object-contain h-37px" 
                               src={pathname.includes(item.mainPath) ? item.iconHighlight : item.icon} 
                                 alt="icon" />
                           </div>

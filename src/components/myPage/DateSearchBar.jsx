@@ -38,7 +38,7 @@ const DateSearchBar = ({
     const dropDownCellClass = "flex w-full h-30px py-2px bg-gray-1f1f1e items-center hover:bg-brown-r3d3934 px-12px"
 
     const gameResultButton = (
-        <div className="flex items-center justify-between  placeholder-gray-ccc2b6 outline-none w-138px h-42px rounded-2px border  px-10px font-spoqaMedium text-15px tracking-tight  hover:text-gray-r585858 border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" >
+        <div className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none w-138px h-42px rounded-2px border  px-10px font-spoqaMedium text-15px tracking-tight  hover:text-gray-r8c8c8c border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" >
           <p className="mt-px">{selectedCarrier}</p>
           <img src={ArrowDownGray} alt="" />
         </div>

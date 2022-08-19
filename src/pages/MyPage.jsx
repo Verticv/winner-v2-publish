@@ -1,6 +1,6 @@
 import Navbar from 'components/mainPage/Navbar'
 import QuickMenu from 'components/QuickMenu'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import MyPageBanner from '../images/myPage/mypage_banner_v2.png'
 import LeftMenu from 'components/myPage/LeftMenu'
 import Footer from 'components/mainPage/Footer'
@@ -30,18 +30,7 @@ import Icon7 from '../images/myPage/leftMenu/menuIcons/menuL_icon_07.png'
 import Icon8 from '../images/myPage/leftMenu/menuIcons/menuL_icon_08.png'
 
 const MyPage = ({isAuthenticated, setAuthenticated}) => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const handleScroll = () => {
-        const position = window.pageYOffset;
-        setScrollPosition(position);
-    };
-
-	  useEffect(() => {
-      window.addEventListener('scroll', handleScroll, { passive: true });
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
+ 
     const LeftMenuArray = [
         { text: "베팅내역", icon: Icon1, iconHighlight: Icon1, id: 0, path: "/mypage/bet-history", mainPath:"/mypage/bet-history" },
         { 
@@ -98,7 +87,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
         <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
           <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
         </div>
-        <div style={{height:'calc(100vh - 394px)'}} className={`${scrollPosition > 497 ? "top-210px" : "bottom-0"} right-200px fixed z-20 flex justify-end`}>
+        <div style={{height:'calc(100vh - 394px)'}} className={`bottom-0 right-210px fixed z-20 flex justify-end`}>
           <QuickMenu />
         </div>
         <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full ">

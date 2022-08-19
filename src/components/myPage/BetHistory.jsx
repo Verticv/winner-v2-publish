@@ -118,7 +118,8 @@ const BetHistory = () => {
             </Route>
             <Route path="/mypage/bet-history/lottery-game">
                 <>
-                    <ESportsBetHistory />
+                  <AllBetHistory />
+                  <Pagination page={page} setPage={setPage}/>
                 </>
             </Route> 
             <Route exact path="/mypage/bet-history/bet">

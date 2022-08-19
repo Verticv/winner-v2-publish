@@ -19,8 +19,6 @@ const HorizontalMenu = ({
           style={{
             background: pathname === item.path 
               ?'linear-gradient( to top, #62553f, #dabe82)'
-              : isHover === item.id
-              ? '#54544f' 
               : 'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
             boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5) '
           }}

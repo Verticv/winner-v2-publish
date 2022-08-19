@@ -4,7 +4,7 @@ const PointsTransactionTable = () => {
     return (
         <div
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
-          className="rounded-4px shadow-navbar overflow-hidden p-px">
+          className="rounded-4px shadow-table overflow-hidden p-px">
             <table className="rounded-3px overflow-hidden">
               <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>

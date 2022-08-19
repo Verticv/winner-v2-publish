@@ -21,13 +21,12 @@ const LiveCasinoBetHistoryTable = ({array, checkedState, setCheckedState, isPopu
             );
             setCheckedState(updatedCheckedState);
         }; 
-
         return items.map((item,index) => (
-            <div className={`${
-                 index%2===0
-                  ? "bg-dark-323232" 
-                  : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full  flex items-center border-b border-dark-252525 last:border-b-0`}>
+          <div className={`${
+              index%2===0
+              ? "bg-dark-323232" 
+              : "bg-dark-2e2e2e"
+            } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full  flex items-center border-b border-dark-252525 last:border-b-0`}>
                 <div style={{width: "92px"}} className="text-center pt-7px">
                     <input
                         type="checkbox"
@@ -35,14 +34,14 @@ const LiveCasinoBetHistoryTable = ({array, checkedState, setCheckedState, isPopu
                         onChange={() => handleOnChange(item.id)}
                     />
                 </div>
-                <div style={{width: "74px"}} className="font-robotoRegular text-center">{item.number}</div>
-                <div style={{width: "183px"}} className="font-robotoRegular text-center">{item.time}</div>
-                <div style={{width: "146px"}} className="text-center">{item.type}</div>
-                <div style={{width: "115px"}} className="text-center">{item.name}</div>
-                <div style={{width: "119px"}} className="font-robotoRegular text-right">{item.amount}</div>
-                <div style={{width: "140px", color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
-                <div style={{width: "87px", color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
-                <div style={{width: "90px"}} className="text-center pr-17px">
+                 <div style={{width: "72px"}} className="font-robotoRegular text-center">{item.number}</div>
+               <div style={{width: "185px"}} className="font-robotoRegular text-center">{item.time}</div>
+                 <div style={{width: "140px"}} className="text-center">{item.type}</div>
+                <div style={{width: "118px"}} className="text-center">{item.name}</div>
+                <div style={{width: "115px"}} className="font-robotoRegular text-right">{item.amount}</div>
+                <div style={{width: "138px", color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
+                <div style={{width: "92px", color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
+                <div style={{width: "83px"}} className="text-center pr-17px">
                     <PopupControls buttonChild={detailButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
                         <LiveCasinoHistoryDetailPopup setPopupOpen={setPopupOpen} />
                     </PopupControls> 
@@ -54,18 +53,18 @@ const LiveCasinoBetHistoryTable = ({array, checkedState, setCheckedState, isPopu
   return (
       <div
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
-        className="rounded-4px shadow-navbar overflow-hidden p-px">
+        className="rounded-4px shadow-table overflow-hidden p-px">
         <div className="rounded-3px overflow-hidden">
-            <div className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
+            <div className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-55px flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
                 <div style={{width: "92px"}} className="text-center">선택</div>
-                <div style={{width: "74px"}} className="text-center">베팅번호</div>
-                <div style={{width: "183px"}} className="text-center">베팅시간</div>
-                <div style={{width: "146px"}} className="text-center">게임종류</div>
-                <div style={{width: "115px"}} className="text-center">게임구분</div>
-                <div style={{width: "119px"}} className="text-center">베팅금액</div>
-                <div style={{width: "140px"}} className="text-center">적중/손실금액</div>
-                <div style={{width: "87px"}} className="text-center">상태</div>
-                <div style={{width: "90px"}} className="text-center pr-17px">보기</div>
+                <div style={{width: "72px"}} className="text-center">베팅번호</div>
+                 <div style={{width: "185px"}} className="text-center">베팅시간</div>
+                <div style={{width: "140px"}} className="text-center">게임종류</div>
+                <div style={{width: "118px"}} className="text-center">게임구분</div>
+                <div style={{width: "101px"}} className="text-center">베팅금액</div>
+                <div style={{width: "180px"}} className="text-center">적중/손실금액</div>
+                <div style={{width: "36px"}} className="text-center">상태</div>
+               <div style={{width: "110px",paddingLeft:"13px"}} className="text-center">보기</div>
             </div>
             <div className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <Cells items={array} />

@@ -9,7 +9,6 @@ const Pagination = ({page, setPage}) => {
 
     const LeftArrow = () => (
         <button 
-            style={{backgroundColor:selectedPage !==1 && "#fff"}} 
             className="flex items-center justify-center w-32px h-32px rounded-4px  hover:filter hover:brightness-125"
             onClick={() => selectedPage !== 1 && setSelectedPage(selectedPage - 1)}
         >
@@ -18,7 +17,6 @@ const Pagination = ({page, setPage}) => {
     )
     const RightArrow = () => (
         <button 
-            style={{backgroundColor:selectedPage !==1 && "#fff"}} 
             className="flex items-center justify-center w-32px h-32px rounded-4px  hover:filter hover:brightness-125"
             onClick={() => selectedPage !== 5 && setSelectedPage(selectedPage + 1)}
         >

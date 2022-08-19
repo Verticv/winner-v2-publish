@@ -272,7 +272,8 @@ module.exports = {
         glow: '0 0 3px 2px rgba(0, 0, 0, 0.1)',
         navbar: '0 0px 7px 0 rgba(0,0,0,0.4)',
         link: '0px 2px 5px 0px rgba(0, 0, 0, 0.6)',
-        btn: '0px 2px 5px 0px rgba(0, 0, 0, 0.5)'
+        btn: '0px 2px 5px 0px rgba(0, 0, 0, 0.5)',
+        table:'0 0px 7px 1px rgba(0,0,0,0.6)',
       },
       screens: {
         'limit': '1261px',

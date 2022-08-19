@@ -56,7 +56,7 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
   return (
       <div
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
-        className="rounded-4px shadow-navbar overflow-hidden p-px">
+        className="rounded-4px shadow-table overflow-hidden p-px">
         <div className="rounded-3px overflow-hidden">
             <div style={{height:"56px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
                 <div style={{width: "51px"}} className="ml-20px text-center">선택</div>

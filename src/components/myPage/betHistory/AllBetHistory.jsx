@@ -51,7 +51,7 @@ const AllBetHistory = () => {
     }
 
     return (
-        <div>
+        <div className="w-full">
             <DateSearchBar isLeagueSearch={false} />
             <div className="w-full h-full mt-20px">
                 <AllHistoryTable 
@@ -61,6 +61,7 @@ const AllBetHistory = () => {
                     isPopupOpen={isPopupOpen}
                     setPopupOpen={setPopupOpen}
                 />   
+
             </div>
 
             <div className="mt-40px h-36px w-full flex items-center justify-between">
