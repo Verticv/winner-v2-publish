@@ -30,7 +30,7 @@ const Sports = () => {
       icon1: Ball,
       icon2: Team1,
       icon3: Team2,
-      text1: '축구',
+      text1: '미식축구',
       text2: 'Premier League',
       text3: '멘체스터유나이티드',
       text4: '토트넘',
@@ -40,7 +40,7 @@ const Sports = () => {
       icon1: Ball,
       icon2: Team1,
       icon3: Team2,
-      text1: '축구',
+      text1: 'Basketball',
       text2: 'UEFA Champions League',
       text3: '리버풀',
       text4: '비야레알',
@@ -50,7 +50,7 @@ const Sports = () => {
       icon1: Ball,
       icon2: Team2,
       icon3: Team1,
-      text1: '축구',
+      text1: 'Volleyball',
       text2: 'UEFA Champions League',
       text3: '리버풀',
       text5: '비야레알',
@@ -99,10 +99,10 @@ const Sports = () => {
   ]
 
   const Button = ({top,bottom}) => (
-    <button className='hover:opacity-75' style={{height:'37px', width:'74px', borderRadius:'2px', background:'linear-gradient(to bottom, #4f4a41, #302d29)', padding:'1px', boxShadow:"0 2px 6px #00000090"}}>
+    <button className='filter hover:brightness-125' style={{height:'37px', width:'74px', borderRadius:'2px', background:'linear-gradient(to bottom, #4f4a41, #302d29)', padding:'1px', boxShadow:"0 2px 6px #00000090"}}>
       <div className='w-full h-full flex flex-col items-center justify-center' style={{borderRadius:'2px', backgroundColor:'#252525'}}>
         <p style={{color:'#8e8780'}} className="text-12px h-12px flex items-center font-roboto">{top}</p>
-        <p style={{color:'#ffffff'}} className="text-12px flex items-center font-roboto h-12px flex items-center mt-2px">{bottom}</p>
+        <p style={{color:'#ffffff'}} className="text-12px flex items-center font-roboto h-12px mt-2px">{bottom}</p>
       </div>
     </button>
   )
@@ -124,7 +124,7 @@ const Sports = () => {
             <div style={{width:'42px', height:'42px', marginTop:'54px', backgroundColor:'#1f1f1f'}} className="rounded-full flex items-center justify-center">
               <img src={icon1} alt="" className='object-none' />
             </div>
-            <p style={{color:'#8e8780'}} className="text-14px font-spoqa tracking-tighter">{text1}</p>
+            <p style={{color:'#8e8780'}} className={`font-spoqa tracking-tighter ${text1.length > 4 ? "text-12px mt-2px" : "text-14px"}`}>{text1}</p>
           </div>
         </div>
 
@@ -179,7 +179,7 @@ const Sports = () => {
     return (
       <div style={{height:'207px', width: '411px'}} className="flex items-end relative cursor-pointer" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <img src={isHover ? imgHover : img} alt="" className='object-none' />
-        <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-18px right-18px p-px hover:opacity-90'>
+        <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-18px right-18px p-px filter hover:brightness-125'>
           <div style={{borderRadius:'2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
             <p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
           </div>
@@ -191,8 +191,8 @@ const Sports = () => {
 
   return (
     <div style={{width:'1260px'}}>
-      <div className="flex space-x-3px items-center relative">
-        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer hover:opacity-90" alt="" onClick={() => index > 0 && setIndex(index-1)}/>
+      <div className="flex space-x-3px items-center relative -ml-3px">
+        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer filter hover:brightness-125" alt="" onClick={() => index > 0 && setIndex(index-1)}/>
         {DATA.splice(index, 4).map(item => (
           <Card
             icon1 = {item.icon1}
@@ -205,7 +205,7 @@ const Sports = () => {
             time = {item.time}
           />
         ))}
-        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer hover:opacity-90" alt="" onClick={() =>  index < DATA.length && setIndex(index+1)}/>
+        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer filter hover:brightness-125" alt="" onClick={() =>  index < DATA.length && setIndex(index+1)}/>
       </div>
 
       <div className='mt-11px space-x-19px flex'>

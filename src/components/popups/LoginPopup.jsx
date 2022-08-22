@@ -15,7 +15,7 @@ const LoginPopup = ({setAuth, setPopupOpen}) => {
 
 	else return (
 		<div style={{height:'526px', width:'450px', backgroundColor:'#323231', borderRadius:'10px', borderWidth:'1px', borderColor:'#1f1f1e'}} className="relative shadow-popup flex flex-col items-center">
-			<button className="absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:opacity-75" onClick={()=> setPopupOpen(false)}>
+			<button className="absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 filter hover:brightness-125" onClick={()=> setPopupOpen(false)}>
 				<img src={CloseIcon} alt="close_icon" />
 			</button>
 			<div style={{marginTop:'-64px'}} className="absolute w-full flex justify-center">
@@ -48,8 +48,8 @@ const LoginPopup = ({setAuth, setPopupOpen}) => {
 			</div>
 			
 			<button
-				style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 1px #00000070", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
-				className="text-20px tracking-tighter font-spoqaMedium text-white hover:opacity-75 mt-40px flex-shrink-0"
+				style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 0 6px #00000099", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}
+				className="text-20px tracking-tighter font-spoqaMedium text-white filter hover:brightness-125 mt-40px flex-shrink-0"
 				onClick={() => setAuth(true)}
 			>
 				로그인
@@ -57,7 +57,7 @@ const LoginPopup = ({setAuth, setPopupOpen}) => {
 
 			<div className="font-spoqaMedium text-16px mt-55px">
 				<span style={{color:'#929292'}}>아이디가 없으신가요?</span>
-				<button style={{color:'#948d81'}} className="hover:opacity-75 ml-8px" onClick={() => setToSignup(true)}>
+				<button style={{color:'#948d81'}} className="filter hover:brightness-125 ml-8px" onClick={() => setToSignup(true)}>
 					<p className='h-16px'>회원가입</p>
 					<div style={{width:'60px',height:'1px', backgroundColor:'#948d81'}} className="mt-4px"></div>
 				</button>
