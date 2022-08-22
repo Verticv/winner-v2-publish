@@ -84,7 +84,7 @@ const DirectoryComponent = ({
             {branch3 && (
                 <>
                     <img className="object-none" src={RightArrow} alt="" />
-                    <span className="font-spoqaBold text-13px text-gray-r393e41 tracking-tight cursor-pointer">{branch3}</span>
+                    <span className="font-spoqaBold text-13px text-gray-929292 tracking-tight cursor-pointer">{branch3}</span>
                 </>
             )}
             {branch4 && (

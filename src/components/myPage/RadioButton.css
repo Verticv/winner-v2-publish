@@ -25,7 +25,7 @@ input[type=checkbox]:hover:checked {
 
   
 input[type=radio]:checked {
-  background: transparent url(https://i.imgur.com/jcEenus.png) no-repeat center center
+   background: #1e1e1e url(../../images/check_on.png) no-repeat center center
 }
 
 input[type=radio]:hover:checked {
@@ -37,14 +37,14 @@ input[type="radio"]:hover  {
 }
 
 input[type=radio] {
-  border: 1px solid #dddddd;
+  border: 1px solid #1e1e1e;
   border-radius: 4px;
-  background-color: white;
+  background-color: #1e1e1e;
   -webkit-appearance: none;
   width: 15px;
   height: 15px;
   cursor: pointer;
-  background: white center center;
+  background: #1e1e1e center center;
 }
 
 

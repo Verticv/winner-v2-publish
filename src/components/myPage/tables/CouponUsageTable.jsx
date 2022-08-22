@@ -96,8 +96,8 @@ const CouponUsageTable = () => {
     ]
 
     const UseButton = () => (
-        <button style={{height:"29px", width: "73px",background: '#826140'}} 
-                className="rounded-4px text-golden-highLight font-spoqaMedium text-14px tracking-tight pt-2px hover:opacity-75 flex-shrink-0 ">
+        <button style={{height:"29px", width: "73px",background: '#826140',boxShadow: '0px 1px 1px 0px rgba(0, 0, 0, 0.6)'}} 
+                className="rounded-4px text-golden-highLight font-spoqaMedium text-14px tracking-tight pt-2px hover:filter hover:brightness-125">
             <span className="">사용하기</span>
         </button>
     )
@@ -109,7 +109,7 @@ const CouponUsageTable = () => {
                 index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 last:border-b-0`}
             >
                     <td className="w-313px text-center">{item.name}</td>
                     <td className="w-172px text-right text-red-e65454 pr-20px font-robotoRegular">{item.amount}</td>

@@ -178,7 +178,7 @@ const Inbox = () => {
                 <div className="flex space-x-2px">
                     <button 
                         style={{background:'linear-gradient(to bottom, rgba(232,184,136,1) 0%, rgba(75,59,9,1) 98%)'}}
-                            className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link"
+                            className="flex items-center justify-center w-90px h-36px rounded-4px   hover:filter hover:brightness-125 shadow-link shadow-link"
                         onClick={() => AllSelectButtonPressed()}
                     >
                         <div style={{
@@ -189,7 +189,7 @@ const Inbox = () => {
                         </div>
                     </button>
                     <button style={{background:'linear-gradient(to bottom, rgba(232,136,149,1) 0%, rgba(75,9,35,1) 98%)'}}
-                            className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link">
+                            className="flex items-center justify-center w-90px h-36px rounded-4px   hover:filter hover:brightness-125 shadow-link shadow-link">
                         <div style={{
                                   background: "linear-gradient(180deg, rgba(224,101,70,1) 0%, rgba(221,98,69,1) 6%, rgba(152,53,30,1) 97%, rgba(152,52,28,1) 100%)",
                                
@@ -199,7 +199,7 @@ const Inbox = () => {
                         </div>
                     </button>
                 </div>
-                <button className="flex items-center justify-center w-159px h-36px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:opacity-75 shadow-link">
+                <button className="flex items-center justify-center w-159px h-36px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px  hover:filter hover:brightness-125 shadow-link shadow-link">
                     <div className="flex items-center justify-center h-34px w-157px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
                         <span className="font-spoqaMedium tracking-tight text-14px text-white">전체읽음처리</span>
                     </div>

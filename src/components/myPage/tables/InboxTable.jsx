@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
-import MailIcon from '../../../images/myPage/mail.png'
-import MailOpenedIcon from '../../../images/myPage/mail_opened.png'
+import MailIcon from '../../../images/myPage/mail_v2.png'
+import MailOpenedIcon from '../../../images/myPage/mail_opened_v2.png'
 
 const InboxTable = ({
     array,
@@ -31,7 +31,7 @@ const InboxTable = ({
               } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-dark-252525 hover:font-spoqaBold group last:border-b-0`}
 
             >
-                <div className="flex items-center font-spoqaBold text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 px-54px">        
+                <div className="flex items-center font-spoqaBold text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 px-54px last:border-b-0">        
                     
                     <div className="-ml-2px w-28px flex justify-center">
                         <input
@@ -58,20 +58,20 @@ const InboxTable = ({
                             ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px">안내</div> 
                             : item.type === "이벤트" 
                             ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px">이벤트</div> 
-                            : <div></div>
+                            : ''
                         }
                         <p className="group-hover:text-gray-r585858">{item.text}</p>
                         {item.isRead === false && (
-                            <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto">
-                                N
-                            </div>
+                          <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto">
+                              N
+                          </div>
                         )}
                     </div>
 
                     <div className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-158px flex font-spoqa justify-center text-center`}>{item.time}</div>
 
-                    <button className="w-70px flex items-center justify-center hover:opacity-75">
-                        <div className={`${item.isRead === true  ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px`}>
+                    <button className="w-70px flex items-center justify-center ">
+                        <div className={`${item.isRead === true  ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px hover:filter hover:brightness-125 `}>
                             삭제
                         </div>
                     </button>

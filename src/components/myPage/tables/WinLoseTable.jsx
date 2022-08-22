@@ -122,19 +122,19 @@ const WinLoseTable = ({
                 index%2===0
                   ? "bg-dark-323232" 
                   : "bg-dark-2e2e2e"
-                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}>
-                <td className="w-100px font-robotoRegular h-56px text-center flex items-center justify-center pt-3px"><RadioButton id={item.id}/></td>
-                <td className="w-64px h-56px text-center font-robotoRegular pt-2px">{item.number}</td>
-                <td className="w-176px h-56px text-center font-robotoRegular pt-2px">{item.startDate}</td>
-                <td className="w-136px h-56px text-center font-robotoRegular pt-2px">{item.endDate}</td>
-                <td className="w-265px h-56px text-center pt-2px">{item.type}</td>
-                <td 
-                    style={{color: item.amount.includes("+") ? "#d52e2e" : item.amount.includes("-") ? "#0056a6" : "#585858", WebkitTextStroke:"0.2px"}}
-                    className="w-170px h-56px text-center font-robotoRegular pt-2px"
+                } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-55px  border-b border-dark-252525`}>
+                <td className="font-robotoRegular h-55px text-center flex items-center justify-center pt-3px"><RadioButton id={item.id}/></td>
+                <td className="h-55px text-center font-robotoRegular pt-2px">{item.number}</td>
+                <td className="h-55px text-center font-robotoRegular pt-2px">{item.startDate}</td>
+                <td className="h-55px text-center font-robotoRegular pt-2px">{item.endDate}</td>
+                <td className="h-55px text-center pt-2px">{item.type}</td>
+               <td 
+                    style={{color: item.amount.includes("+") ? "#e65454" : item.amount.includes("-") ? "#4c98ff" : "#c8c8c8"}}
+                    className="h-55px text-right font-robotoRegular pt-2px pr-82px"
                 >
                     {item.amount}
                 </td>
-                <td className="w-128px h-56px text-center pt-2px">{item.status}</td>
+                <td className="h-55px text-center pt-2px">{item.status}</td> 
             </tr>
         ));
     }
@@ -143,25 +143,25 @@ const WinLoseTable = ({
       <div
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
           className="rounded-4px shadow-table overflow-hidden p-px">
-            <table className="rounded-3px overflow-hidden">
-                <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-dark-252525 bg-dark-2e2e2e ">
-                    <tr>
-                        <td className="w-100px text-center pt-2px">선택</td>
-                        <td className="w-64px text-center pt-2px">번호</td>
-                        <td className="w-176px text-center pt-2px">정산시작일</td>
-                        <td className="w-136px text-center pt-2px">정산종료일</td>
-                        <td className="w-265px text-center pt-2px">분류</td>
-                        <td className="w-170px text-center pt-2px">금액</td>
-                        <td className="w-128px text-center pt-2px">처리상태</td>
+            <table className="rounded-3px overflow-hidden rounded-b-none table-auto w-full">
+                <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-55px border-b border-dark-252525 bg-dark-2e2e2e ">
+                    <tr className='w-full'>
+                        <td className="text-center pt-2px" style={{width:"96px"}}>선택</td>
+                        <td className="text-center pt-2px" style={{width:"67px"}}>번호</td>
+                        <td className="text-center pt-2px" style={{width:"176px"}}>정산시작일</td>
+                        <td className="text-center pt-2px" style={{width:"122px"}}>정산종료일</td>
+                        <td className="text-center pt-2px" style={{width:"288px"}}>분류</td>
+                        <td className="text-left pt-2px pl-18px" style={{width:"164px"}}>금액</td>
+                       <td className="text-center pt-2px" style={{width:"125px"}}>처리상태</td>
                     </tr>
                 </thead>
                 <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                     <Cells items={ExampleArray} />
                 </tbody>
             </table>
-            <div className="flex bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px">
-                <div className="w-full bg-gray-414141 h-56px flex items-center justify-center font-spoqaMedium text-16px tracking-tight text-gray-ccc2b6 border-r border-dark-252525">합계</div>
-                <div className="w-full h-56px text-center flex items-center justify-center font-roboto tracking-tight text-red-500 text-16px">+120,718</div>
+            <div className="flex bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-55px rounded-b-3px">
+                <div className="w-full bg-gray-414141 h-55px flex items-center justify-center font-spoqaMedium text-16px tracking-tight text-gray-ccc2b6 border-r border-dark-252525 rounded-b-3px rounded-br-none">합계</div>
+                <div className="w-full h-55px text-center flex items-center justify-center font-roboto tracking-tight text-red-e65454 text-16px rounded-b-3px rounded-tl-none"><span className='flex ml-40px'>+120,718</span></div>
             </div>
         </div>
     )

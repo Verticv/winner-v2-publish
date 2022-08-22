@@ -195,16 +195,16 @@ const MinigameBetHistoryPanel = ({
     )
 
   return (
-      <div className="w-full shadow-subNavbar p-px rounded-4px"
+      <div className="w-full shadow-table p-px rounded-4px"
         style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0% ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}>
         <div className="w-full bg-gray-2b2b2a rounded-3px pb-10px">
             <div className="flex h-54px w-full font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6">
-                <div style={{width: isAttached === true ? "162px" : "138px"}} className="h-full flex items-center justify-center">회차</div>
-                <div style={{width: isAttached === true ? "315px" : "274px"}} className="h-full flex items-center justify-center">승(홈)</div>
-                <div style={{width: isAttached === true ? "139px" : "98px"}} className="h-full flex items-center justify-center">VS</div>
-                <div style={{width: isAttached === true ? "317px" : "293px"}} className="h-full flex items-center justify-center">패(원정)</div>
+                <div style={{width: isAttached === true ? "162px" : "120px", marginLeft:  isAttached === true ? "0" : "10px"}} className="h-full flex items-center justify-center ml-10px">회차</div>
+                <div style={{width: isAttached === true ? "315px" : "285px"}} className="h-full flex items-center justify-center">승(홈)</div>
+                <div style={{width: isAttached === true ? "139px" : "89px"}} className="h-full flex items-center justify-center">VS</div>
+                <div style={{width: isAttached === true ? "317px" : "285px"}} className="h-full flex items-center justify-center">패(원정)</div>
                 <div style={{width: isAttached === true ? "66px" : "150px"}} className="h-full flex items-center justify-center">선택</div>
-                <div style={{width: isAttached === true ? "58px" : "42px", marginRight:  isAttached === true ? "25px" : "0px"}} className="h-full flex items-center justify-center">결과</div>
+                <div style={{width: isAttached === true ? "58px" : "89px", marginRight:  isAttached === true ? "25px" : "10px"}} className="h-full flex items-center justify-center">결과</div>
             </div>
 
             <div className="w-full px-8px space-y-10px">

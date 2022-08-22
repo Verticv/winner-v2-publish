@@ -35,7 +35,7 @@ const ChargeHistory = () => {
                 <div className="flex space-x-2px">
                     <button 
                         style={{background:'linear-gradient(to bottom, rgba(232,184,136,1) 0%, rgba(75,59,9,1) 98%)'}}
-                        className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link"
+                        className="flex items-center justify-center w-90px h-36px rounded-4px  hover:filter hover:brightness-125 shadow-link"
                         onClick={() => AllSelectButtonPressed()}
                     >
                         <div 
@@ -44,12 +44,12 @@ const ChargeHistory = () => {
                           }}
                             className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight">{isAllSelected ? "선택해제" : "전체선택"}</span>
+                            <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">{isAllSelected ? "선택해제" : "전체선택"}</span>
                         </div>
                     </button>
                     <button 
                         style={{background:'linear-gradient(to bottom, rgba(232,136,149,1) 0%, rgba(75,9,35,1) 98%)'}}
-                            className="flex items-center justify-center w-90px h-36px rounded-4px  hover:opacity-75 shadow-link"
+                            className="flex items-center justify-center w-90px h-36px rounded-4px hover:filter hover:brightness-125 shadow-link"
                     >
                         <div 
                             style={{
@@ -58,7 +58,7 @@ const ChargeHistory = () => {
                             }}
                             className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2">선택삭제</span>
+                            <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">선택삭제</span>
                         </div>
                     </button>
                 </div>

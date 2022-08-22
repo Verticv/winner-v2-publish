@@ -300,7 +300,7 @@ const SportsBetHistoryPanel = ({
 
 
   return (
-    <div className="w-full shadow-subNavbar p-px rounded-4px"
+    <div className="w-full shadow-table p-px rounded-4px"
       style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0% ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}>
         <div className="w-full bg-gray-2b2b2a rounded-3px pb-10px">
             <div className="flex h-54px w-full font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6">
@@ -357,13 +357,13 @@ const SportsBetHistoryPanel = ({
                             </div>
                         )}
                         {(isAttached === false && isPopup === false) && (
-                            <div style={{WebkitTextStroke:"0.2px"}} className="w-116px h-full flex items-center justify-center ">{ticketNumber}</div>
+                            <div  className="w-116px h-full flex items-center justify-center ">{ticketNumber}</div>
                         )}
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "151px" : "151px", WebkitTextStroke:"0.2px"}} className="h-full flex items-center justify-center ">{time}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "150px", WebkitTextStroke:"0.2px"}} className="h-full flex items-center justify-end  pr-5px">{amount}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "78px" : "178px", WebkitTextStroke:"0.2px"}} className="h-full flex items-center justify-center ">{ratio}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "165px", WebkitTextStroke:"0.2px"}} className="h-full flex items-center justify-end  pr-5px">{predictedPrice}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "200px", WebkitTextStroke:"0.2px"}} className="h-full flex items-center justify-end  pr-5px"><p className={`${winAmount.includes("+") && "text-red-e65454"}`}>{winAmount}</p>원</div>
+                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "151px" : "151px"}} className="h-full flex items-center justify-center ">{time}</div>
+                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "150px"}} className="h-full flex items-center justify-end  pr-5px">{amount}</div>
+                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "78px" : "178px"}} className="h-full flex items-center justify-center ">{ratio}</div>
+                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "165px"}} className="h-full flex items-center justify-end  pr-5px">{predictedPrice}</div>
+                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "200px"}} className="h-full flex items-center justify-end  pr-5px"><p className={`${winAmount.includes("+") && "text-red-e65454"}`}>{winAmount}</p>원</div>
                     </div>
                 </table>
                 
