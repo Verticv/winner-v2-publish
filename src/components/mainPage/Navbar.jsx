@@ -14,6 +14,7 @@ import Nav5 from '../../images/navBar/5.png'
 import NavbarHover from '../hovers/NavbarHover'
 import SignupPopup from '../popups/SignupPopup'
 import { useHistory } from 'react-router-dom'
+import ArrowDown from '../../images/arrows/arrow_dn.png'
 
 import TopLogo from '../../images/top_logo.png'
 
@@ -64,24 +65,24 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 					&& setSelectedTab(null)
 				}}
 			>
-				<span className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
+				<span style={{marginBottom:'2px'}} className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
 				<div style={{backgroundColor: selectedTab === item.id ? "#fcd6a8" : ""}} className={selectedTab === item.id ? selectedLineClass : lineClass}></div>
 			</button>
 		));
 	}
 
 	const CountryButton = (
-		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-7px hover:opacity-75 text-12px text-yellow-ad9e8c cursor-pointer">
+		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-6px hover:brightness-110 filter text-12px text-yellow-ad9e8c cursor-pointer">
 			<img className="object-none mr-7px" src={country === "KR" ? Koreaflag : UKflag} alt="flag"></img>
 			<label className="font-spoqaBold cursor-pointer">{country}</label>
-			<label className="font-spoqaBold cursor-pointer">{' >'}</label>
+			<img className="object-none ml-2px" src={ArrowDown} alt="flag"></img>
 		</div>
 	)
 
 	const LoginButton = (
 		<button 
-			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd'}} 
-			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:opacity-90"
+			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #00000099', color:'#ffdfbd'}} 
+			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:brightness-125 filter"
 		>
 			로그인
 		</button>
@@ -89,8 +90,8 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 
 	const SignupButton = (
 		<button 
-			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd'}} 
-			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:opacity-90"
+			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #00000099', color:'#ffdfbd'}} 
+			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:brightness-125 filter"
 		>
 			회원가입
 		</button>

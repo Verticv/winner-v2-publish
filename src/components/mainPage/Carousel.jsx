@@ -39,7 +39,7 @@ const Carousel = () => {
 	};
 
 	// Tailwind styles. Most importantly notice position absolute, this will sit relative to the carousel's outer div.
-	const arrowStyle = "absolute z-10 hover:opacity-75"
+	const arrowStyle = "absolute z-10 hover:brightness-125 filter"
 
 	// Let's create dynamic buttons. It can be either left or right. Using
 	// isLeft boolean we can determine which side we'll be rendering our button
@@ -59,7 +59,7 @@ const Carousel = () => {
 			type="button"
 			onClick={isLeft ? previousImage : nextImage}
 			style={{marginBottom:'-105px'}}
-			className={`${arrowStyle} ${isLeft ? 'left-20px' : 'right-20px'}`}
+			className={`${arrowStyle} ${isLeft ? 'left-20px' : 'right-20px'} hover:brightness-125 filter`}
 		>
 			{isLeft ? leftArrow : rightArrow}
 		</button>

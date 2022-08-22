@@ -8,7 +8,7 @@ import Quick6 from '../images/quick6.png'
 
 const QuickMenu = () => {
   return (
-    <div style={{height:'553px', width:'86px'}} className={'flex-shrink-0 z-10 -mt-85px'}>
+    <div style={{height:'553px', width:'86px'}} className={'flex-shrink-0 z-10 -mt-120px'}>
       <div style={{height:'553px', width:'86px'}} className='flex flex-col items-center'>
         <div style={{height:'487px', borderColor:'#4f4a41', borderWidth:'2px', boxShadow:"0 4px 5px #00000050"}} className="w-full bg-black rounded-full">
           <div className='w-full h-full bg-black border border-black rounded-full overflow-hidden flex flex-col items-center'>
@@ -17,31 +17,31 @@ const QuickMenu = () => {
               <p className='h-14px mt-2px'>MENU</p>
             </div>
 
-            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:opacity-90 cursor-pointer">
+            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer">
               <img src={Quick1} alt="" className='mt-12px' />
               <p style={{color:'#bbbbbb'}} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">충전하기</p>
             </div>
             <div style={{height:'1px', width:'70px', backgroundColor:'#362b20'}}></div>
 
-            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:opacity-90 cursor-pointer">
+            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer">
               <img src={Quick2} alt="" className='mt-9px' />
               <p style={{color:'#bbbbbb'}} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">환전하기</p>
             </div>
             <div style={{height:'1px', width:'70px', backgroundColor:'#362b20'}}></div>
 
-            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:opacity-90 cursor-pointer">
+            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer">
               <img src={Quick3} alt="" className='mt-15px' />
               <p style={{color:'#bbbbbb'}} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">포인트전환</p>
             </div>
             <div style={{height:'1px', width:'70px', backgroundColor:'#362b20'}}></div>
 
-            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:opacity-90 cursor-pointer">
+            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer">
               <img src={Quick4} alt="" className='mt-13px' />
               <p style={{color:'#bbbbbb'}} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">베팅규정</p>
             </div>
             <div style={{height:'1px', width:'70px', backgroundColor:'#362b20'}}></div>
 
-            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:opacity-90 cursor-pointer">
+            <div style={{height:'84px'}} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer">
               <img src={Quick5} alt="" className='mt-15px' />
               <p style={{color:'#bbbbbb'}} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">고객센터</p>
             </div>
@@ -51,7 +51,7 @@ const QuickMenu = () => {
 
         <div 
           style={{height:'56px', width:'56px',borderColor:'#4f4a41', borderWidth:'2px', boxShadow:"0 4px 5px #00000050"}} 
-          className="w-full mt-10px bg-black rounded-full flex flex-col items-center cursor-pointer hover:opacity-70"
+          className="w-full mt-10px bg-black rounded-full flex flex-col items-center cursor-pointer hover:brightness-125 filter"
           onClick={() => window.scrollTo({
             top: 0,
             behavior: 'smooth'
