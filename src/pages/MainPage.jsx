@@ -42,7 +42,7 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 				<Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
 			</div>
 
-			<div style={{width:'1496px', height:'calc(100vh - 497px)'}} className={`${scrollPosition > 497 ? "top-200px" : "bottom-0"} fixed z-20 flex justify-end`}>
+			<div style={{width:'1496px', height:'calc(100vh - 497px)'}} className={`${scrollPosition > 497 ? "top-235px" : "bottom-0"} fixed z-20 flex justify-end`}>
 				<QuickMenu />
 			</div>
 
@@ -62,7 +62,7 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 					<Tabs />
 				</div>
 
-				<div style={{marginTop:'19px'}}>
+				<div style={{marginTop:'20px'}}>
 					<SubComp text="슬롯게임" />
 				</div>
 

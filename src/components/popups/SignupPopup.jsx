@@ -57,7 +57,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 
 	const carrierDropdown = (
-		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-10px rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-5px">
+		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-5px rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-5px">
 			<button className={dropDownCellClass} onClick={() => {
 				setSelectedCarrier("SKT")
 				setDropdownOpen(false)
@@ -80,7 +80,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 
 	const bankDropdown = (
-		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}}  className="flex flex-col w-170px h-170px py-10px rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px overflow-y-scroll overflow-x-hidden">
+		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}}  className="flex flex-col w-170px h-170px py-5px rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px overflow-y-scroll overflow-x-hidden">
 			<button className={dropDownCellClass} onClick={() => {
 				setSelectedBank("KEB하나은행")
 				setDropdownOpen(false)
@@ -262,7 +262,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	
 	else return (
 		<div style={{height:'886px', width:'850px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
-			<button className="w-29 h-29 absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:opacity-75" onClick={()=> setPopupOpen(false)}>
+			<button className="w-29 h-29 absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:brightness-125 filter" onClick={()=> setPopupOpen(false)}>
 				<img src={CloseIcon} alt="close_icon" />
 			</button>
 			<div style={{marginTop:'-64px'}} className="absolute w-full flex justify-center">
@@ -432,7 +432,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 										setSelectedInput(9)
 									}} 
 								onBlur={(e) => {
-										e.target.placeholder = "가입코드"
+										e.target.placeholder = "계좌번호 (숫자만 입력)"
 										setSelectedInput(false)
 								}}
 							/>
@@ -444,8 +444,8 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 			{/* BREAK */}
 			<div className="w-full flex flex-col items-center mt-20px">
 				<button 
-					style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 1px #00000070", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
-					className="flex items-center justify-center text-20px tracking-tighter font-spoqaMedium shadow-lg pt-px hover:opacity-90"
+					style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 0 6px #00000099", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}
+					className="flex items-center justify-center text-20px tracking-tighter font-spoqaMedium shadow-lg pt-px hover:brightness-125 filter"
 					onClick={() => setSignedUp(true)}
 				>
 					회원가입
