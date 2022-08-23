@@ -9,7 +9,7 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
     
     const history = useHistory();
     const [selectedInput, setSelectedInput] = useState()
-
+  console.log('selectedInput',selectedInput)
     return (
         <div style={{height:'526px', width:'450px', backgroundColor:'#323231', borderRadius:'10px', borderWidth:'1px', borderColor:'#1f1f1e'}} className="relative shadow-popup flex flex-col items-center">
             <button className="absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:opacity-75" onClick={()=> setPopupOpen(false)}>
@@ -46,7 +46,7 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
                             setSelectedInput(false)
                         }}
             >louie3</div>
-             <div className={`${selectedInput === 0 ? "bg-blue-r1ca7ec h-2px -mb-px" : "bg-gray-bebebe h-px"} w-full`} />
+             {/* <div className={`${selectedInput === 0 ? "bg-blue-r1ca7ec h-2px -mb-px" : "bg-gray-bebebe h-px"} w-full`} /> */}
                 </div>
                 <div style={{width:'390px', height:'64px', backgroundColor:'#191817', borderRadius:'4px', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)'}} className="flex items-center flex-shrink-0 mt-20px py-4px">
                   <img src={Password} alt="" className="ml-21px" />
