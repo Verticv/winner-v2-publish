@@ -152,8 +152,8 @@ const DistributorPage = ({
      
       className="w-227px h-165px rounded-10px flex flex-col items-center justify-center overflow-hidden shadow-navbar p-px" >
       <div className="w-full h-163px flex flex-col items-center justify-start rounded-10px bg-gray-323232">
-            <img className="mt-17px object-none" src={img} alt="" />
-            <span className="mt-2px font-spoqaMedium tracking-tight text-18px text-gray-ccc2b6">{text}</span>
+            <img className="mt-19px object-none" src={img} alt="" />
+            <span className="mt-3px font-spoqaMedium tracking-tight text-18px text-gray-ccc2b6">{text}</span>
             <span className="mt-2px font-spoqaBold tracking-tight text-26px text-golden-aa9264">{count}</span>
         </div>
       </div>
@@ -537,7 +537,7 @@ const DistributorPage = ({
                                     </div>
                                     <img src={WhiteArrow} className={`${subArrowClicked[2] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-full h-full flex items-center justify-center">요율보기</div>
+                                {/* <div className="w-full h-full flex items-center justify-center">요율보기</div>
                                 <div className="w-full h-full flex items-center justify-center">입금액</div>
                                 <div className="w-full h-full flex items-center justify-center">보너스</div>
                                 <button 
@@ -579,7 +579,7 @@ const DistributorPage = ({
                                         <div className="flex items-center h-16px">금액</div>
                                     </div>
                                     <img src={WhiteArrow} className={`${subArrowClicked[7] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button>
+                                </button> */}
                             </div>
                             <RecommendedUserCell items={RecommendedUserArray2} />
                         </div>
@@ -639,8 +639,7 @@ const DistributorPage = ({
 
 
     return (
-        <div className="relative flex flex-col justify-center bg-gray-1e1e1e">
-            
+        <div className="relative flex flex-col justify-center bg-gray-1e1e1e ">
           <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
             <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
           </div>
@@ -677,7 +676,7 @@ const DistributorPage = ({
                             <img src={SummaryIcon} alt=""/>
                             <span className='mt-2px'>총판현황</span>
                         </div>
-                        <div className="flex h-165px w-full mt-20px space-x-3px">
+                        <div className="flex h-165px w-full mt-20px space-x-4px">
                             <SummaryCard img={SummaryIcon1} text="전체 유저" count={5} />
                             <SummaryCard img={SummaryIcon2} text="요율 설정 완료건" count={20} />
                             <SummaryCard img={SummaryIcon3} text="요율 설정 미완료건" count={5} />
@@ -688,56 +687,56 @@ const DistributorPage = ({
                             <SummaryCard img={SummaryIcon8} text="제휴 금액" count="117,515,875.76" />
                         </div>
 
-                         <div className="mt-60px h-29px w-full flex items-center space-x-6px text-24px tracking-tight text-gray-ccc2b6 font-spoqaMedium">
+                         <div className="mt-56px h-29px w-full flex items-center space-x-6px text-24px tracking-tight text-gray-ccc2b6 font-spoqaMedium">
                             <img src={PieIcon} alt="" />
                             <span className='mt-5px'>롤링요율</span>
                         </div>
 
                         <div style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
                           className="mt-20px h-111px w-full shadow-navbar rounded-4px flex items-center p-px">
-                            <table className="w-full overflow-hidden rounded-3px">
+                            <table className="w-full overflow-hidden rounded-3px bg-gray-2e2e2e">
                                 <thead className="h-54px w-full border-b border-gray-252525 bg-gray-2e2e2e font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">
-                                    <tr className="flex items-center h-54px">
-                                        <td className="w-91px text-center">스포츠</td>
-                                        <td className="w-91px text-center">미니게임</td>
-                                        <td className="w-91px text-center">에볼루션</td>
-                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
+                                    <tr className="flex items-center h-54px w-full">
+                                        <td className="w-77px text-center">스포츠</td>
+                                        <td className="w-104px text-center">미니게임</td>
+                                        <td className="w-82px text-center">에볼루션</td>
+                                        <td className="w-100px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
                                         <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>카지노</span></td>
                                         <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>드림</span><span>게이밍</span></td>
                                         <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>섹시</span><span>게이밍</span></td>
                                         <td className="w-91px text-center">빅게이밍</td>
                                         <td className="w-91px text-center">넷엔트</td>
-                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>플레이</span></td>
+                                        <td className="w-96px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>플레이</span></td>
                                         <td className="w-91px text-center">퀵스핀</td>
                                         <td className="w-91px text-center">스페이드</td>
                                         <td className="w-91px text-center">하바네로</td>
                                         <td className="w-91px text-center">월드매치</td>
                                         <td className="w-91px text-center">메버릭</td>
-                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>플레이</span><span>앤고</span></td>
+                                        <td className="w-96px text-center flex flex-col pt-2px -space-y-4px"><span>플레이</span><span>앤고</span></td>
                                         <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
                                         <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
                                         <td className="w-91px text-center">e-스포츠</td>
-                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>키론</span><span>가상게임</span></td>
+                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>키론</span><span>가상게임</span></td> 
                                     </tr>
                                 </thead>
                                 <tbody className="w-full text-gray-r585858 text-14px tracking-tight font-spoqaMedium border-r border-l border-gray-2e2e2e">
                                     <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
-                                        <td className="w-91px text-center">1.00%</td>
-                                        <td className="w-91px text-center">1.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.70%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
+                                        <td className="w-77px text-center">1.00%</td>
+                                        <td className="w-104px text-center">1.00%</td>
+                                        <td className="w-82px text-center">0.00%</td>
+                                        <td className="w-100px text-center">0.70%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
+                                        <td className="w-96px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
+                                        <td className="w-96px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
                                         <td className="w-91px text-center">0.00%</td>
@@ -955,20 +954,20 @@ const DistributorPage = ({
                         <div  className="flex flex-col items-center justify-center mt-21px w-full rounded-10px p-px overflow-hidden border-b  border-gray-252525" >
                           {/* style={{background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)"}} */}
   
-                          <div className="h-67px w-full  border-b  border-gray-252525 bg-gray-2e2e2e flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight">
+                          <div className="h-67px w-full  border-b  border-gray-252525 bg-gray-2e2e2e1 flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight">
                          
-                                <div className="w-114px text-center">번호</div>
+                                <div className="w-85px text-center">번호</div>
                                  <button 
-                                    className="flex w-114px text-center items-center space-x-5px justify-center hover:font-spoqaBold hover:opacity-75"
+                                    className="flex w-146px text-center items-center space-x-5px justify-center hover:font-spoqaBold hover:opacity-75"
                                     onClick={() => handleOnChange(0)}
                                 >
                                     <p>아이디</p>
                                     <img src={GrayArrow} className={`${isArrowUp[0] === true ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-114px text-center">이름</div>
-                                <div className="w-114px text-center">별명</div>
+                                <div className="w-87px text-center">이름</div>
+                                <div className="w-142px text-center">별명</div>
                                 <button 
-                                    className="w-114px text-center flex items-center justify-center space-x-5px hover:opacity-75"
+                                    className="w-92px text-center flex items-center justify-center space-x-5px hover:opacity-75"
                                     onClick={() => handleOnChange(1)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px ">
@@ -978,7 +977,7 @@ const DistributorPage = ({
                                     <img src={GrayArrow} className={`${isArrowUp[1] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
                                <button 
-                                    className="w-114px text-center flex items-center justify-center space-x-5px hover:opacity-75 "
+                                    className="w-138px text-center flex items-center justify-center space-x-5px hover:opacity-75 "
                                     onClick={() => handleOnChange(2)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px">
@@ -988,19 +987,19 @@ const DistributorPage = ({
                                     </div>
                                     <img src={GrayArrow} className={`${isArrowUp[2] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-114px text-center">요율보기</div>
-                                <div className="w-114px text-center">입금액</div>
-                                  <div className="w-114px text-center">보너스</div>
+                                <div className="w-98px text-center">요율보기</div>
+                                <div className="w-132px text-center">입금액</div>
+                                  <div className="w-100px text-center">보너스</div>
                                 <button 
-                                    className="flex w-114px text-center items-center space-x-5px justify-center hover:opacity-75"
+                                    className="flex w-130px text-center items-center space-x-5px justify-center hover:opacity-75"
                                     onClick={() => handleOnChange(3)}
                                 >
                                     <p>출금액</p>
                                     <img src={GrayArrow} className={`${isArrowUp[3] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-114px text-center">입출금액</div>
+                                <div className="w-104px text-center">입출금액</div>
                                 <button 
-                                    className="flex w-114px text-center items-center space-x-5px justify-center hover:opacity-75"
+                                    className="flex w-120px text-center items-center space-x-5px justify-center hover:opacity-75"
                                     onClick={() => handleOnChange(4)}
                                 >
                                     <p>베팅액</p>
