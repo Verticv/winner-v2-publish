@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import MyPageTitle from './MyPageTitle'
 import Pagination from './Pagination'
-import DownArrowIcon from '../../images/down_arrow_icon.png'
+// import DownArrowIcon from '../../images/down_arrow_icon.png'
 import SearchIcon from '../../images/myPage/search.png'
 import DropDownControls from '../dropdowns/DropDownControls'
 import InboxTable from './tables/InboxTable'
-
+import ArrowDownGray from '../../images/arrows/arrow_down_gray.png'
 const Inbox = () => {
 
     const inboxArray = [
@@ -112,12 +112,13 @@ const Inbox = () => {
         }
     };
 
-    const dropDownCellClass = "flex w-120px h-40px py-2px bg-white items-center hover:bg-blue-lightGradLight px-14px"
+    const dropDownCellClass = "flex w-full h-30px py-2px bg-gray-1f1f1e items-center hover:bg-brown-r3d3934 px-12px"
 
 
 
-    const searchDropdown = (
-        <div className="mt-4px flex flex-col items-center justify-center w-120px overflow-hidden bg-white rounded-md border border-gray-dddddd shadow-plain5 text-gray-r393e41 font-spoqaMedium text-14px tracking-tight">
+  const searchDropdown = (
+      <div  className="mt-4px flex flex-col items-center justify-center w-120px overflow-hidden rounded-2px border  font-spoqaMedium text-14px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a ">
+        <div className="w-full mt-2px h-full overflow-x-hidden border-gray-2c2c2c">
             <button className={dropDownCellClass} onClick={() => {
                 setSelectedCarrier("제목")
                 setDropdownOpen(false)
@@ -130,15 +131,16 @@ const Inbox = () => {
             }}>
                 본문
             </button>
-        </div>
+      </div>
+      </div>
     )
 
     const dropdownButton = (
         <div className="flex w-120px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 group ">
             <input  className="w-0 text-16px"/>
-            <div className="flex w-full text-gray-ccc2b6 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" >
-                <label className="ml-14px cursor-pointer group-hover:text-black">{selectedCarrier}</label>
-                <img className="w-10px h-6px object-contain mr-10px" src={DownArrowIcon} alt="arrow" /> 
+            <div className="flex w-full text-gray-ccc2b6 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight " >
+                <label className="ml-14px cursor-pointer group-hover:text-gray-r8c8c8c">{selectedCarrier}</label>
+                <img className="w-10px h-6px object-contain mr-10px" src={ArrowDownGray} alt="arrow" /> 
             </div>
         </div>
     )

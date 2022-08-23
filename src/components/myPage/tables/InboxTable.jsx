@@ -60,7 +60,7 @@ const InboxTable = ({
                             ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px">이벤트</div> 
                             : ''
                         }
-                        <p className="group-hover:text-gray-r585858">{item.text}</p>
+                        <p className="">{item.text}</p>
                         {item.isRead === false && (
                           <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto">
                               N
@@ -68,7 +68,7 @@ const InboxTable = ({
                         )}
                     </div>
 
-                    <div className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-158px flex font-spoqa justify-center text-center`}>{item.time}</div>
+                    <div className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-164px flex font-spoqa justify-center text-center`}>{item.time}</div>
 
                     <button className="w-70px flex items-center justify-center ">
                         <div className={`${item.isRead === true  ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px hover:filter hover:brightness-125 `}>
@@ -89,8 +89,8 @@ const InboxTable = ({
               <div className="flex items-center font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-dark-252525 bg-dark-2e2e2e px-54px">        
                   <div className="-ml-2px w-28px flex justify-center">선택</div>
                   <div className="w-107px flex justify-center">확인</div>
-                  <div className="w-612px flex justify-center">제목</div>
-                  <div className="w-158px flex justify-center">보낸시간</div>
+                  <div className="flex justify-center -ml-28px" style={{width:'600px'}}>제목</div>
+                  <div className="w-164px flex justify-center">보낸시간</div>
                   <div className="w-70px flex justify-center">삭제</div>
               </div>
 

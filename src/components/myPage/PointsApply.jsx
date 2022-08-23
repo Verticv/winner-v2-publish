@@ -56,7 +56,7 @@ const PointsApply = () => {
                     <div className="flex space-x-10px items-center">
                         <Title text="현재 잔여 포인트" />
                         <div className="w-full h-44px">
-                          <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817' }}>
+                          <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
                             <div className='h-full w-full flex items-center'>
                               <span className="font-spoqaBold text-blue-2980b9 mt-3px">278</span>
                               <span className='mt-3px'>P</span>
@@ -67,7 +67,7 @@ const PointsApply = () => {
                     <div className="flex space-x-10px">
                       <Title text="전환 예정 포인트" />
                       <div className="h-44px w-full">
-                        <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817' }}>
+                        <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
                           <div className='h-full w-full flex items-center'>
                             <span className="font-spoqaBold text-blue-2980b9 mt-3px">0</span>
                             <span className='mt-3px'>P</span>
@@ -78,7 +78,7 @@ const PointsApply = () => {
                     <div className="flex space-x-10px">
                       <Title text="전환 후 잔여 포인트" />
                       <div className="h-44px  w-full">
-                        <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817' }}>
+                        <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
                           <div className='h-full w-full flex items-center'>
                             <span className="font-spoqaBold text-blue-2980b9 mt-3px">0</span>
                             <span className='mt-3px'>P</span>

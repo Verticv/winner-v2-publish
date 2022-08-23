@@ -19,7 +19,7 @@ const MyPageTitle = ({
                     <>
                         <div className="ml-20px h-21px flex items-center space-x-20px">
                             <div style={{backgroundColor:"#4c4c4c"}} className="h-12px w-px bg-gray-r8c8c8c mb-px" />
-                            <div className="font-spoqaMedium tracking-tight text-gray-r8c8c8c space-x-2px">
+                            <div className="font-spoqaMedium tracking-tight text-gray-c8c8c8 space-x-2px">
                                 <span>{couponText}</span>
                                 <span style={{color: "#ed2f59"}} className="font-spoqaBold">{couponCount}</span>
                                 <span>장</span>
@@ -37,24 +37,24 @@ const MyPageTitle = ({
                     </div>
                 )}
                 {inboxCount && (
-                    <div className="ml-20px h-21px flex items-center space-x-20px">
+                    <div className="ml-18px h-21px flex items-center space-x-18px mt-3px">
                         <div style={{backgroundColor:"#4c4c4c"}} className="h-12px w-px mb-px" />
-                        <div className="font-spoqaMedium tracking-tight text-gray-r8c8c8c">
-                            <span className="">전체 받은 쪽지</span>
-                            <span className="font-spoqaBold text-red-ff1237 ml-3px">{inboxCount}</span>
+                        <div className="font-spoqaMedium tracking-tight text-gray-c8c8c8">
+                            <span className="">전체 받은 쪽지:</span>
+                            <span className="font-spoqaBold text-red-e65454 ml-3px">{inboxCount}</span>
                             <span className="">건</span>
                         </div>
                     </div>
                 )}
             </div>
             {inboxCount && (
-                <div className="ml-20px h-21px flex items-center space-x-20px flex-shrink-0">
-                    <div className="font-spoqaMedium tracking-tight text-gray-r8c8c8c">
+                <div className="ml-20px h-21px flex items-center space-x-20px flex-shrink-0 mt-3px">
+                    <div className="font-spoqaMedium tracking-tight text-gray-c8c8c8">
                         <span className="">쪽지 보관은 최장</span>
                         <span className="font-spoqaBold text-blue-r0056a6 ml-3px">14</span>
                         <span className="">일</span>
                         <span className="ml-2px">최대</span>
-                        <span className="font-spoqaBold text-blue-r0056a6 ml-3px">20</span>
+                        <span className="font-spoqaBold text-blue-4c98ff ml-3px">20</span>
                         <span className="">개입니다.</span>
                     </div>
                 </div>

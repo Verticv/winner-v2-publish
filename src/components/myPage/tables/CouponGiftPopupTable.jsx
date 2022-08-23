@@ -14,7 +14,7 @@ const CouponGiftPopupTable = () => {
     )
 
   return (
-    <div className="overflow-auto pr-5px shadow-table w-550px h-330px">
+    <div className="overflow-auto  shadow-table w-550px h-330px rounded-4px ">
       <div className="flex flex-col justify-center rounded-4px p-px"
       style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
         <div className='flex flex-col justify-center rounded-4px  bg-gray-323231'>
