@@ -31,7 +31,7 @@ const SlotGame = () => {
       </div>
 
       <div style={{color:'#5f5f5f'}} className="ml-8px text-14px font-spoqa tracking-tighter pt-2px" >
-        <div className='flex space-x-2px h-14px flex items-center'><p style={{color:'#929292'}} className="text-14px font-spoqaMedium">마이프로틴화이팅</p><p className="text-14px font-spoqa">님이</p></div>
+        <div className='flex space-x-2px h-14px items-center'><p style={{color:'#929292'}} className="text-14px font-spoqaMedium">마이프로틴화이팅</p><p className="text-14px font-spoqa">님이</p></div>
         <p className='h-14px mt-4px flex items-center'>{game.length > 19 ? `${game.slice(0,19)}...` : game}에서 우승</p>
 
         <p style={{color:'#aa9264'}} className='h-18px font-spoqaMedium text-18px mt-10px flex items-center'>₩123,456,789</p>
@@ -47,7 +47,7 @@ const SlotGame = () => {
 
       <div style={{height:'306px'}} className="flex flex-col justify-between">
         <div className="flex items-start">
-          <img src={SlotJackpot} alt="" className='object-none mr-9px' />
+          <img src={SlotJackpot} alt="" className='object-none mr-5px' />
           <div className='flex space-x-2px'>
             <CardType1 image={Slot1} text="Titan Thunder Wrath example"/>
             <CardType1 image={Slot2} text="Space Man"/>
