@@ -39,10 +39,10 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
                 <div style={{width: "185px"}} className="font-robotoRegular text-center">{item.time}</div>
                 <div style={{width: "140px"}} className="text-center">{item.type}</div>
                 <div style={{width: "118px"}} className="text-center">{item.name}</div>
-                <div style={{width: "115px"}} className="font-robotoRegular text-right">{item.amount}</div>
-                <div style={{width: "138px", color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
-                <div style={{width: "92px", color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
-                <div style={{width: "83px"}} className="text-center pr-17px">
+                <div style={{width: "135px"}} className="font-robotoRegular text-right">{item.amount}</div>
+                <div style={{width: "135px", color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
+                <div style={{width: "51px", color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
+                <div style={{width: "110px"}} className="text-center">
                     <PopupControls buttonChild={detailButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
                         <LiveCasinoHistoryDetailPopup setPopupOpen={setPopupOpen} />
                     </PopupControls> 
@@ -63,10 +63,10 @@ const AllHistoryTable = ({array, checkedState, setCheckedState, isPopupOpen, set
                     <div style={{width: "185px"}} className="text-center">베팅시간</div>
                     <div style={{width: "140px"}} className="text-center">게임종류</div>
                     <div style={{width: "118px"}} className="text-center">게임구분</div>
-                    <div style={{width: "101px"}} className="text-center">베팅금액</div>
-                    <div style={{width: "180px"}} className="text-center">적중/손실금액</div>
-                    <div style={{width: "36px"}} className="text-center">상태</div>
-                    <div style={{width: "110px",paddingLeft:"13px"}} className="text-center">보기</div>
+                    <div style={{width: "135px"}} className="text-center">베팅금액</div>
+                    <div style={{width: "135px"}} className="text-center">적중/손실금액</div>
+                    <div style={{width: "51px"}} className="text-center">상태</div>
+                    <div style={{width: "110px"}} className="text-center">보기</div>
                 {/* </tr> */}
             </div>
             <div className="w-full text-585858 text-14px tracking-tight font-spoqa">

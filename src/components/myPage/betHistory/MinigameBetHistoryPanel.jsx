@@ -126,9 +126,9 @@ const MinigameBetHistoryPanel = ({
             </div>
 
             <div className="flex ml-10px font-spoqaMedium tracking-tight text-14px text-center">
-                <div style={{width:"160px"}} className="w-61px text-gray-c8c8c8">{choice === "even" ? "짝" : "우"}</div>
+                <div style={{width:"130px"}} className="w-61px text-gray-c8c8c8">{choice === "even" ? "짝" : "우"}</div>
                 <div 
-                style={{width:"32px"}}
+                style={{width:"108px"}}
                 className={`${
                     result === "win" 
                     ? "text-red-e65454" 
