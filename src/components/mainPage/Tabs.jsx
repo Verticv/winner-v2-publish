@@ -25,6 +25,7 @@ const Tabs = () => {
   return (
     <div style={{width:'1260px'}} className="flex justify-center items-center">
       <img src={Left} className="object-none -mr-5px mb-8px" alt="" />
+      <div className='flex space-x-2px'>
       <SingleTab title="마이페이지" icon={Tab1} />
       <SingleTab title="공지사항" icon={Tab2} />
       <SingleTab title="게시판" icon={Tab3} />
@@ -35,6 +36,7 @@ const Tabs = () => {
       <SingleTab title="경기결과" icon={Tab8} />
       <SingleTab title="출석부" icon={Tab9} />
       <SingleTab title="라이브영상" icon={Tab10} />
+      </div>
       <img src={Right} className="object-none -ml-5px mb-8px" alt="" />
     </div>
   )
