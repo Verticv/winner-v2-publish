@@ -65,7 +65,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 					&& setSelectedTab(null)
 				}}
 			>
-				<span style={{marginBottom:'2px'}} className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
+				<span style={{marginBottom:'3px'}} className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
 				<div style={{backgroundColor: selectedTab === item.id ? "#fcd6a8" : ""}} className={selectedTab === item.id ? selectedLineClass : lineClass}></div>
 			</button>
 		));
@@ -81,8 +81,8 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 
 	const LoginButton = (
 		<button 
-			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #00000099', color:'#ffdfbd'}} 
-			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:brightness-125 filter"
+			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #000000', color:'#ffdfbd'}} 
+			className="flex items-center justify-center text-white text-14px font-spoqaMedium pt-px hover:brightness-125 filter"
 		>
 			로그인
 		</button>
@@ -90,8 +90,8 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 
 	const SignupButton = (
 		<button 
-			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #00000099', color:'#ffdfbd'}} 
-			className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 pt-px hover:brightness-125 filter"
+			style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #000000', color:'#ffdfbd'}} 
+			className="flex items-center justify-center text-white text-14px font-spoqaMedium pt-px hover:brightness-125 filter"
 		>
 			회원가입
 		</button>
@@ -101,35 +101,35 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		<div className='space-x-5px flex'>
 			<button className='flex items-center h-12px'>
 				<img src={Nav1} alt="" className='mr-3px object-none'/>
-				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					Lv3마이프로틴화이팅님
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
 				<img src={Nav2} alt="" className='mr-3px object-none'/>
-				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{color:'#ad9e8c',WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					10,000,000원
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
 				<img src={Nav3} alt="" className='mr-3px object-none'/>
-				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					12,500P
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
 				<img src={Nav4} alt="" className='mr-3px object-none'/>
-				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쪽지 2
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
 				<img src={Nav5} alt="" className='mr-3px object-none'/>
-				<p style={{color:'#ad9e8c'}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쿠폰 3
 				</p>
 			</button>
@@ -140,15 +140,15 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		<div style={{borderBottomWidth:'1px', borderBottomColor:'#414141'}} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit1920:items-center'>
 			<div style={{width:'1260px'}} className="z-50">
 
-				<div style={{height:'104px'}} className="">
-					<div style={{height:'59px', paddingTop:'17px'}} className="block justify-center relative">
+				<div style={{height:'103px'}} className="">
+					<div style={{height:'59px', paddingTop:'16px'}} className="block justify-center relative">
 						<img style={{margin:'auto'}} className="cursor-pointer object-none" src={TopLogo} alt="logo" onClick={() => history.push('/')} />
 
 						{isAuthenticated ? (
 							<div className='absolute right-0 bottom-0 flex items-center -mb-3px'>
 								<button 
-									style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #00000090', color:'#ffdfbd'}} 
-									className="flex items-center justify-center text-white text-14px font-spoqaMedium shadow-plain2 hover:opacity-90 mr-5px"
+									style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #000000', color:'#ffdfbd'}} 
+									className="flex items-center justify-center text-white text-14px font-spoqaMedium filter hover:brightness-125 mr-5px"
 								>
 									총판페이지
 								</button>

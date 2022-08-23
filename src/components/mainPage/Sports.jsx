@@ -124,7 +124,7 @@ const Sports = () => {
             <div style={{width:'42px', height:'42px', marginTop:'54px', backgroundColor:'#1f1f1f'}} className="rounded-full flex items-center justify-center">
               <img src={icon1} alt="" className='object-none' />
             </div>
-            <p style={{color:'#8e8780'}} className={`font-spoqa tracking-tighter ${text1.length > 4 ? "text-12px mt-2px" : "text-14px"}`}>{text1}</p>
+            <p style={{color:'#8e8780'}} className={`font-spoqa tracking-tighter ${text1.length > 4 ? "text-11px mt-3px" : "text-14px"}`}>{text1}</p>
           </div>
         </div>
 
@@ -179,7 +179,7 @@ const Sports = () => {
     return (
       <div style={{height:'207px', width: '411px'}} className="flex items-end relative cursor-pointer" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <img src={isHover ? imgHover : img} alt="" className='object-none' />
-        <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-18px right-18px p-px filter hover:brightness-125'>
+        <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-25px right-18px p-px filter hover:brightness-125'>
           <div style={{borderRadius:'2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
             <p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
           </div>

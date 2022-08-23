@@ -57,7 +57,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 
 	const carrierDropdown = (
-		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-5px rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-5px">
+		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-5px rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-9px">
 			<button className={dropDownCellClass} onClick={() => {
 				setSelectedCarrier("SKT")
 				setDropdownOpen(false)
@@ -80,7 +80,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 
 	const bankDropdown = (
-		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}}  className="flex flex-col w-170px h-170px py-5px rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px overflow-y-scroll overflow-x-hidden">
+		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}}  className="flex flex-col w-170px h-170px py-5px rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px overflow-y-scroll overflow-x-hidden mt-9px">
 			<button className={dropDownCellClass} onClick={() => {
 				setSelectedBank("KEB하나은행")
 				setDropdownOpen(false)
@@ -444,7 +444,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 			{/* BREAK */}
 			<div className="w-full flex flex-col items-center mt-20px">
 				<button 
-					style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 0 6px #00000099", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}
+					style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 0 6px #000000", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}
 					className="flex items-center justify-center text-20px tracking-tighter font-spoqaMedium shadow-lg pt-px hover:brightness-125 filter"
 					onClick={() => setSignedUp(true)}
 				>
