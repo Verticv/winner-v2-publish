@@ -20,7 +20,7 @@ const SportsBetHistory = ({checkedState, setCheckedState , showSub = true, attac
     return (
         <div className="w-full">
 
-            <DateSearchBar isGameResultsSearch={true} />
+            <DateSearchBar isGameResultsSearch={true}  isPopup={showSub}/>
 
 
         <div className="w-full h-full mt-20px rounded-4px">

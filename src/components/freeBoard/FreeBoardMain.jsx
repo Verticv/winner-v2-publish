@@ -2,16 +2,16 @@ import DropDownControls from 'components/dropdowns/DropDownControls';
 import Pagination from 'components/myPage/Pagination';
 import React, { useState } from 'react'
 import { useHistory } from 'react-router';
-import DownArrowIcon from '../../images/down_arrow_icon.png'
+import DownArrowIcon from '../../images/arrows/arrow_down_gray.png'
 import SearchIcon from '../../images/myPage/search.png'
-import BlueSpeaker from '../../images/freeBoard/blue_speaker.png'
+import BlueSpeaker from '../../images/freeBoard/blue_speaker_v2.png'
 import YellowSpeaker from '../../images/freeBoard/yellow_speaker.png'
-import WinnerLogo from '../../images/freeBoard/winner_logo.png'
-import Rank1 from '../../images/freeBoard/1.png'
-import Rank2 from '../../images/freeBoard/2.png'
-import Rank3 from '../../images/freeBoard/3.png'
-import Rank4 from '../../images/freeBoard/4.png'
-import Rank5 from '../../images/freeBoard/5.png'
+import WinnerLogo from '../../images/freeBoard/winner_logo_v2.png'
+import Rank1 from '../../images/freeBoard/1_v2.png'
+import Rank2 from '../../images/freeBoard/2_v2.png'
+import Rank3 from '../../images/freeBoard/3_v2.png'
+import Rank4 from '../../images/freeBoard/4_v2.png'
+import Rank5 from '../../images/freeBoard/5_v2.png'
 
 const FreeBoardMain = () => {
 
@@ -43,7 +43,7 @@ const FreeBoardMain = () => {
         },
         { 
             id: 3,
-            text: "진행중 이벤트 안내(2021.06.02)", 
+            text: "진행중 이벤트 안내 (2021.06.02)", 
             isRead: true,
             time: "2021.06.29 07:35",
             type: "이벤트",
@@ -51,7 +51,7 @@ const FreeBoardMain = () => {
         },
         { 
             id: 4,
-            text: "스포츠 미니게임 충전 보너스 (21.04.24 변경)", 
+            text: "스포츠 미니게임 충전 보너스 (변경 21.05.21)", 
             isRead: true,
             time: "2021.06.29 07:35",
             type: "이벤트",
@@ -67,7 +67,7 @@ const FreeBoardMain = () => {
         },
         { 
             id: 6,
-            text: "다폴더 적중 보너스 지금(변경 21.04.16)", 
+            text: "다폴더 적중 보너스 지금 (변경 21.04.16)", 
             isRead: true,
             time: "2021.06.29 07:35",
             type: "이벤트",
@@ -75,7 +75,7 @@ const FreeBoardMain = () => {
         },
         { 
             id: 7,
-            text: "카지노 주간 낙첨 이벤트!(변경 21.06.07)", 
+            text: "카지노 주간 낙첨 이벤트! (변경 21.06.07)", 
             isRead: true,
             time: "2021.06.29 07:35",
             type: "이벤트",
@@ -83,7 +83,7 @@ const FreeBoardMain = () => {
         },
         { 
             id: 8,
-            text: "슬롯 충전 남첨 이벤트(변경 21.06.07)", 
+            text: "슬롯 충전 남첨 이벤트 (변경 21.06.07)", 
             isRead: true,
             time: "2021.06.29 07:35",
             type: "이벤트",
@@ -269,10 +269,11 @@ const FreeBoardMain = () => {
     const [selectedCarrier, setSelectedCarrier] = useState("제목")
     const [isDropdownOpen, setDropdownOpen] = useState(true)
 
-    const dropDownCellClass = "flex w-120px h-40px py-2px bg-white items-center hover:bg-blue-lightGradLight px-14px"
+    const dropDownCellClass = "flex w-full h-30px py-2px bg-gray-1f1f1e items-center hover:bg-brown-r3d3934 px-12px"
 
     const searchDropdown = (
-        <div className="mt-4px flex flex-col items-center justify-center w-120px overflow-hidden bg-white rounded-md border border-gray-dddddd text-gray-r393e41 font-spoqaMedium text-14px tracking-tight">
+        <div  className="mt-4px flex flex-col items-center justify-center w-120px overflow-hidden rounded-2px border  font-spoqaMedium text-14px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a ">
+          <div className="w-full mt-2px h-full overflow-x-hidden border-gray-2c2c2c">
             <button className={dropDownCellClass} onClick={() => {
                 setSelectedCarrier("제목")
                 setDropdownOpen(false)
@@ -291,23 +292,24 @@ const FreeBoardMain = () => {
             }}>
                 작성자
             </button>
+          </div>
         </div>
     )
 
     const dropdownButton = (
-        <div className="flex w-120px h-42px bg-white rounded-md border border-gray-dddddd group">
+        <div className="flex w-120px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 group">
             <input  className="w-0 text-16px"/>
             <div
-                className="flex w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" 
+                className="flex w-full text-gray-ccc2b6 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" 
             >
-                <label className="ml-14px cursor-pointer group-hover:text-black">{selectedCarrier}</label>
+                <label className="ml-14px cursor-pointer group-hover:text-gray-r8c8c8c">{selectedCarrier}</label>
                 <img className="w-10px h-6px object-contain mr-10px" src={DownArrowIcon} alt="arrow" /> 
             </div>
         </div>
     )
 
     const InboxSearch = (
-        <div className="h-102px w-full bg-gray-f9f9f9 rounded-2xl border border-gray-dddddd flex items-center justify-center space-x-10px">
+        <div className="h-102px w-full bg-gray-2e2e2e rounded-4px flex items-center justify-center space-x-10px">
             <DropDownControls 
                 buttonChild={dropdownButton} 
                 isDropdownOpen={isDropdownOpen} 
@@ -316,13 +318,15 @@ const FreeBoardMain = () => {
                 {searchDropdown}
             </DropDownControls>
 
-            <div className="flex w-381px h-42px bg-white rounded-md border border-gray-dddddd">
+            <div className="flex w-381px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 overflow-hidden">
                 <input 
-                    className="pl-11px rounded-md placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight"
+                    className="pl-11px placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a" 
                     placeholder="검색어를 입력해 주세요"
                 />
-                <button className="flex items-center justify-center w-42px h-42px rounded-md bg-gradient-to-b from-gray-r555555 via-gray-r555555 to-gray-r333333 -mt-px -mr-px flex-shrink-0 hover:opacity-75">
-                    <img src={SearchIcon} alt=""/>
+                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  hover:opacity-75 p-px">
+                  <div className="flex items-center justify-center w-full  h-40px rounded-4px bg-gradient-to-b from-gray-e6b786  to-gray-80603f">
+                    <img src={SearchIcon} alt="" />
+                  </div>
                 </button>
             </div>
         </div>
@@ -332,23 +336,23 @@ const FreeBoardMain = () => {
         return items.map(item => (
             <button 
                 key={item.id} 
-                className={`font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px w-full border-b border-gray-dddddd`}
+                className={`font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525`}
                 onClick={() => history.push(item.path)}
             >
                 <div 
                     style={{
                         backgroundColor: 
                         item.type === "안내" 
-                        ? "#e5edfb" 
+                        ? "#303843" 
                         : item.type === "이벤트" 
-                        ? "#fff5d7" 
+                        ? "#473c37" 
                         : item.id % 2 === 0 
-                        ? "#f7f9fc"
-                        : ""
+                        ? "#2e2e2e"
+                        : "#323232"
                     }}
-                    className="flex items-center font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd" >     
+                    className="flex items-center font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-gray-252525" >     
                     
-                    <div style={{width: "128px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 flex items-center justify-center">
+                    <div style={{width: "126px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 flex items-center justify-center">
                         {item.type === "안내" 
                         ? <img src={BlueSpeaker} alt="" />
                         : item.type === "이벤트" 
@@ -358,46 +362,46 @@ const FreeBoardMain = () => {
                     </div>   
 
                     <div 
-                        style={{width: "808px"}}
-                        className={`w-612px flex items-center space-x-10px font-spoqaMedium text-gray-r585858 group`}>
+                        style={{width: "796px"}}
+                        className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group`}>
                         {
                             item.type === "안내" 
-                            ? <div className="w-45px h-25px rounded-full bg-blue-r00a1e9 flex items-center justify-center text-white text-12px">안내</div> 
+                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-15px">안내</div> 
                             : item.type === "이벤트" 
-                            ? <div className="w-53px h-25px rounded-full bg-yellow-ffab39 flex items-center justify-center text-white text-12px">이벤트</div> 
+                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-11px">이벤트</div> 
                             : <div></div>
                         }
                         <p
                             className={`${
                                 item.type === "안내" 
-                                ? "text-blue-r0056a6 group-hover:text-blue-700" 
+                                ? "text-blue-6cbbe9 group-hover:text-blue-500" 
                                 : item.type === "이벤트" 
-                                ? "text-yellow-a65600 group-hover:text-yellow-600" 
-                                : "group-hover:text-black"
-                            }`}
+                                ? "text-yellow-d2b28f group-hover:text-yellow-400" 
+                                : "group-hover:text-gray-r8c8c8c"
+                            } mr-10px mt-2px`}
                         >
                             {item.text}
                         </p>
                         {item.replies && (
-                            <div className="h-17px pl-7px pr-8px rounded-full flex items-center justify-center text-white font-roboto text-12px bg-blue-r0056a6">{item.replies}</div>
+                            <div className="h-17px pl-5px pr-5px rounded-4px flex items-center justify-center text-white font-roboto text-12px bg-red-e9441d mr-10px">{item.replies}</div>
                         )}
                         {item.isBetHistory === true && (
                             <div style={{backgroundColor: "#41b06c"}} className="h-25px w-65px rounded-full flex items-center justify-center text-white font-spoqaMedium text-12px">베팅내역</div>
                         )}
                         {item.isRead === false && (
-                            <div className="w-18px h-18px bg-red-notification rounded-full text-12px text-white flex items-center justify-center font-roboto">
-                                <p className="flex items-center h-12px pr-px pt-px">N</p>
+                            <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto">
+                                <p className="flex items-center h-12px">N</p>
                             </div>
                         )}
                     </div>
 
                     <div 
-                        style={{width: "108px"}}
-                        className={`w-158px flex justify-center font-spoqaMedium tracking-tight text-r585858 text-center`} >
+                        style={{width: "135px"}}
+                        className={`w-158px flex justify-center items-center font-spoqaMedium tracking-tight text-gray-c8c8c8 text-center`} >
                             {item.type !== "일반"
-                            ? <img src={WinnerLogo} alt="" />
+                            ? <img src={WinnerLogo} alt="" className='-mt-5px'/>
                             : (
-                                <div className="flex space-x-2px">
+                                <div className="flex space-x-4px">
                                     {
                                     item.level === 1 
                                     ? <img src={Rank1} alt="" />
@@ -409,12 +413,12 @@ const FreeBoardMain = () => {
                                     ? <img src={Rank4} alt="" />
                                     : <img src={Rank5} alt="" />
                                     }
-                                    <p>{item.author}</p>
+                                    <p className='mt-2px'>{item.author}</p>
                                 </div>
                             )
                             }
                         </div>
-                    <div style={{width: "216px"}} className="w-70px flex items-center justify-center text-gray-r585858 font-spoqa">
+                    <div style={{width: "190px"}} className="w-70px flex items-center justify-center text-gray-c8c8c8 font-spoqa">
                         {item.type !== "일반"
                             ? ""
                             : item.time
@@ -429,30 +433,34 @@ const FreeBoardMain = () => {
     return (
         <div className="w-full">
 
-            <div style={{borderRadius:"1em"}} className="shadow-subNavbar w-full overflow-hidden">
-                <div className="h-56px bg-gray-fafafa w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-r454545">
-                    <div style={{width: "128px"}} className="flex items-center justify-center">번호</div>
-                    <div style={{width: "808px"}} className="flex items-center justify-center">제목</div>
-                    <div style={{width: "108px"}} className="flex items-center justify-center">닉네임</div>
-                    <div style={{width: "216px"}} className="flex items-center justify-center">등록일시</div>
-                </div>
+          <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
+          style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+        >
+            <div className=" w-full rounded-4px bg-gray-3232321 overflow-hidden">
+              <div className="h-57px bg-gray-2e2e2e w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6 rounded-t-4px  border-b border-gray-252525">
+                  <div style={{width: "126px"}} className="flex items-center justify-center">번호</div>
+                  <div style={{width: "796px"}} className="flex items-center justify-center">제목</div>
+                  <div style={{width: "135px"}} className="flex items-center justify-center">닉네임</div>
+                  <div style={{width: "190px"}} className="flex items-center justify-center">등록일시</div>
+              </div>
 
-                <div className="flex flex-col w-full">
-                    <InboxList items={cellArray} />
-                </div>
+              <div className="flex flex-col w-full">
+                  <InboxList items={cellArray} />
+              </div>
             </div>
+          </div>
 
 
             <div className="mt-20px flex justify-end">
-                <button onClick={() => history.push('/freeboard/compose')} className="flex items-center justify-center h-36px w-90px rounded-4px bg-blue-r0070d9 hover:opacity-75">
-                    <div className="flex items-center justify-center h-34px w-88px bg-black rounded-4px border border-blue-r3ba3fc bg-gradient-to-b from-blue-r1491fc via-blue-r0e84ed to-blue-r0675db cursor-pointer">
-                        <span className="font-spoqaMedium tracking-tight text-14px text-white">작성하기</span>
+                <button onClick={() => history.push('/freeboard/compose')} className="flex items-center justify-center h-36px w-90px  rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
+                    <div className="flex items-center justify-center h-34px w-88px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
+                        <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-2px text-shadow-5">작성하기</span>
                     </div>
                 </button>
             </div>
             
 
-            <div className="flex w-full justify-center mt-14px">
+            <div className="flex w-full justify-center mt-3px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
 

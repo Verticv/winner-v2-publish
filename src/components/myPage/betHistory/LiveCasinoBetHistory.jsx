@@ -82,7 +82,7 @@ const LiveCasinoBetHistory = ({isState, setState, showSub = true}) => {
 
             )}
             
-            <DateSearchBar isLeagueSearch={false} />
+            <DateSearchBar isLeagueSearch={false} isPopup={showSub}/>
 
 
             <div className="w-full h-full mt-20px">

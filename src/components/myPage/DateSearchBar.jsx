@@ -13,7 +13,8 @@ const DateSearchBar = ({
     isLeagueSearch = false, 
     hasIdSearch = false,
     has3MonthSearch = false,
-    isGameResultsSearch = false
+    isGameResultsSearch = false,
+    isPopup = false
 }) => {
 
     const LeagueExampleArray = [
@@ -76,8 +77,9 @@ const DateSearchBar = ({
 
 
 
-    return (
-      <div className="h-64px w-full  mt-20px  flex items-center justify-center space-x-10px rounded-4px bg-gray-2e2e2e">
+  return (
+      
+      <div className={`${!isPopup?'bg-gray-2b2b2a':'bg-gray-2e2e2e'} h-64px w-full  mt-20px  flex items-center justify-center space-x-10px rounded-4px `}>
         {isLeagueSearch === true && (
           <div className="space-x-5px">
             <input 
@@ -88,8 +90,7 @@ const DateSearchBar = ({
               placeholder="팀명검색" 
               className="pt-px mt-px placeholder-gray-ccc2b6 flex-shrink-0 outline-none w-138px h-42px rounded-2px border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
           </div>
-        )}
-
+      )}
         {isGameResultsSearch === true && (
           <div className="space-x-5px flex">
             <div className="pt-px">{InboxSearch}</div>

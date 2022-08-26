@@ -382,21 +382,21 @@ const DistributorPage = ({
     
         return items.map(item => (
             <>
-            <div className={`${item.id % 2 === 1 ? "bg-gray-242424" : "bg-gray-323232"} ${item.isLast ? "" : ""} w-full h-69px flex items-center justify-evenly font-roboto text-16px text-gray-c8c8c8 tracking-tight`}>
-                <div className="w-full h-full flex items-center justify-center">{item.number}</div>
-                <div className="w-full h-full flex items-center justify-center">{item.username}</div>
-                {item.name && (
-                    <div className="w-full h-full flex items-center justify-center font-spoqaMedium">{item.name}</div>
+            <div className={`${item.id % 2 === 1 ? "bg-gray-242424" : "bg-gray-323231"} ${item.isLast ? "" : ""} w-full h-69px flex items-center justify-start font-roboto text-16px text-gray-c8c8c8 tracking-tight`}>
+                <div className="w-85px h-full flex items-center justify-center">{item.number}</div>
+                <div className="w-full h-full flex items-center justify-center"  style={{width:'145px'}}>{item.username}</div>
+               {item.name && (
+                    <div className="w-87px h-full flex items-center justify-center font-spoqaMedium">{item.name}</div>
                 )}
-                <div className="w-full h-full flex items-center justify-center font-spoqaMedium">{item.nickname}</div>
-                <div className="relative w-full h-full flex items-center justify-center">
+                 <div className="w-144px h-full flex items-center justify-center font-spoqaMedium" style={{width:'144px'}}>{item.nickname}</div>
+                 <div className="relative w-88px h-full flex items-center justify-center">
                     {item.user_count === 0 
                     ? <div className="">{item.added_amount}</div>
                   : 
                   
                     <button 
                         style={{width: "87px", background:isUserCountOpen ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                        className={`${isUserCountOpen ? "" : ""} flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75 p-px shadow-link`}
+                        className={`${isUserCountOpen ? "" : ""} flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75 p-px shadow-link -ml-19px`}
                         onClick={() => {
                             handleOnChange1(item.id)
                         }}
@@ -421,12 +421,12 @@ const DistributorPage = ({
                         </div>
                     )}
                 </div>
-                <div className="w-full text-center flex flex-col items-center justify-center space-y-3px">
+                <div className="text-center flex flex-col items-center justify-center space-y-3px text-16px tracking-tight font-roboto ml-3px" style={{width:'140px'}}>
                     <div className="flex items-center h-16px">{item.recommended_date}</div>
                     <div className="flex items-center h-16px">{item.login_date}</div>
-                    <div className="flex items-center h-16px font-spoqaMedium">({item.absent_date})</div>
+                    <div className="flex items-center h-16px">({item.absent_date})</div>
                 </div>
-                <div className="relative w-full h-full flex items-center justify-center">
+                <div className="relative w-96px h-full flex items-center justify-end">
                 <button 
                         style={{background: isUserCountOpen ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
                         className={`${isUserCountOpen ? "" : ""} flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75 p-px shadow-link`}
@@ -450,16 +450,16 @@ const DistributorPage = ({
                         </div>
                     )}
                 </div>
-                <div className="w-full h-full flex items-center justify-end text-right"><p className="pr-32px">{item.added_amount}</p></div>
-                <div className="w-full h-full flex items-center justify-end text-right"><p className="pr-32px">{item.bonus}</p></div>
-                <div className="w-full h-full flex items-center justify-end text-right"><p className="pr-32px">{item.withdraw_amount}</p></div>
-                <div className="w-full h-full flex items-center justify-end text-right"><p className="pr-32px">{item.added_withdraw_amount}</p></div>
-                <div className="w-full h-full flex items-center justify-end text-right"><p className="pr-32px">{item.bet_amount}</p></div>
-                <div className="w-full h-full flex items-center justify-end text-right"><p className="pr-32px">{item.win_lose}</p></div>
-                <div className="relative w-full h-full flex items-center justify-center">
+                <div className="h-full flex items-center justify-end text-right" style={{width:'133px'}}><p className="pr-43px">{item.added_amount}</p></div>
+                <div className="h-full flex items-center justify-end text-right" style={{width:'98px'}}><p className="pr-25px">{item.bonus}</p></div>
+                <div className="w-133px h-full flex items-center justify-end text-right"><p className="pr-44px">{item.withdraw_amount}</p></div>
+                <div className="w-98px h-full flex items-center justify-end text-right"><p className="pr-25px">{item.added_withdraw_amount}</p></div>
+                <div className="h-full flex items-center justify-end text-right" style={{width:'131px'}}><p className="pr-42px">{item.bet_amount}</p></div>
+                <div className="w-102px h-full flex items-center justify-end text-right"><p className="pr-28px">{item.win_lose}</p></div>
+                <div className="relative w-full h-full flex items-center justify-center" style={{width:'131px'}}>
                 <button 
                     style={{background:isUserCountOpen[item.id] ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                        className={` flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75 p-px shadow-link`}
+                        className={` flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75 p-px shadow-link ml-9px`}
                         onClick={() => {
                             handleOnChange1(item.id + 2)
                         }}
@@ -481,8 +481,8 @@ const DistributorPage = ({
                         </div>
                     )}
                 </div>
-                <div className="w-full h-full flex items-center justify-end"><p className="pr-32px">{item.point}</p></div>
-                <div className="w-full h-full flex items-center justify-end"><p className="pr-32px">{item.holding_amount}</p></div>
+                <div className="w-98px h-full flex items-center justify-end"><p className="pr-26px">{item.point}</p></div>
+                <div className="h-full flex items-center justify-end" style={{width:'120px'}}><p className="pr-34px">{item.holding_amount}</p></div>
             </div>
             <div 
                 style={{
@@ -506,18 +506,18 @@ const DistributorPage = ({
                         </div>
                         <div className=" w-full flex flex-col">
                             {/* === Header === */}
-                            <div className="h-67px w-full bg-gray-242424 flex items-center justify-evenly font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">
-                                <div className="w-full h-full flex items-center justify-center">번호</div>
+                            <div className="h-67px  bg-gray-242424 flex items-center justify-start font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">
+                                <div className="h-full flex items-center justify-center" style={{width:'136px'}}>번호</div>
                                 <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px hover:opacity-75"
+                                    className="h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'117px'}}
                                     onClick={() => handleOnChange2(0)}
                                 >
                                     <p >아이디</p>
                                     <img src={WhiteArrow} className={`${subArrowClicked[0] === true ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-full h-full flex items-center justify-center">별명</div>
-                                <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px"
+                                <div className="h-full flex items-center justify-center" style={{width:'133px'}}>별명</div>
+                                 <button 
+                                    className="h-full flex items-center justify-center space-x-3px" style={{width:'122px'}}
                                     onClick={() => handleOnChange2(1)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px hover:opacity-75 ">
@@ -527,7 +527,7 @@ const DistributorPage = ({
                                     <img src={WhiteArrow} className={`${subArrowClicked[1] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
                                 <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px"
+                                    className="h-full flex items-center justify-center space-x-3px"  style={{width:'125px'}}
                                     onClick={() => handleOnChange2(2)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px  hover:opacity-75">
@@ -537,41 +537,41 @@ const DistributorPage = ({
                                     </div>
                                     <img src={WhiteArrow} className={`${subArrowClicked[2] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                {/* <div className="w-full h-full flex items-center justify-center">요율보기</div>
-                                <div className="w-full h-full flex items-center justify-center">입금액</div>
-                                <div className="w-full h-full flex items-center justify-center">보너스</div>
+                                <div className="h-full flex items-center justify-center" style={{width:'129px'}}>요율보기</div>
+                                <div className="h-full flex items-center justify-center" style={{width:'105px'}}>입금액</div>
+                                <div className="h-full flex items-center justify-center" style={{width:'120px'}}>보너스</div>
                                 <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px hover:opacity-75"
+                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'116px'}}
                                     onClick={() => handleOnChange2(3)}
                                 >
                                     <p>출금액</p>
                                     <img src={WhiteArrow} className={`${subArrowClicked[3] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-full h-full flex items-center justify-center">입출금액</div>
+                                <div className=" h-full flex items-center justify-center" style={{width:'110px'}}>입출금액</div>
                                 <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px hover:opacity-75"
+                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'122px'}}
                                     onClick={() => handleOnChange2(4)}
                                 >
                                     <p>베팅액</p>
                                     <img src={WhiteArrow} className={`${subArrowClicked[4] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px hover:opacity-75"
+                               <button 
+                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'112px'}}
                                     onClick={() => handleOnChange2(5)}
                                 >
                                     <p>윈루즈</p>
                                     <img src={WhiteArrow} className={`${subArrowClicked[5] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-full h-full flex items-center justify-center">상세내역</div>
+                                <div className=" h-full flex items-center justify-center" style={{width:'119px'}}>상세내역</div>
                                 <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px hover:opacity-75"
+                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'110px'}}
                                     onClick={() => handleOnChange2(6)}
                                 >
                                     <p>포인트</p>
                                     <img src={WhiteArrow} className={`${subArrowClicked[6] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
                                 <button 
-                                    className="w-full h-full flex items-center justify-center space-x-5px hover:opacity-75"
+                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'116px'}}
                                     onClick={() => handleOnChange2(7)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px ">
@@ -579,7 +579,7 @@ const DistributorPage = ({
                                         <div className="flex items-center h-16px">금액</div>
                                     </div>
                                     <img src={WhiteArrow} className={`${subArrowClicked[7] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button> */}
+                                </button>
                             </div>
                             <RecommendedUserCell items={RecommendedUserArray2} />
                         </div>
@@ -639,7 +639,7 @@ const DistributorPage = ({
 
 
     return (
-        <div className="relative flex flex-col justify-center bg-gray-1e1e1e ">
+        <div className="relative flex flex-col justify-center bg-gray-1e1e1e">
           <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
             <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
           </div>
@@ -671,7 +671,7 @@ const DistributorPage = ({
 
                 <div className="flex flex-col items-start limit1920:items-center w-full h-full">
 
-                    <div className="mt-55px w-1836px">
+                    <div className="mt-53px w-1836px ml-8px">
                          <div className="h-29px w-full flex items-center space-x-10px text-24px tracking-tight text-gray-ccc2b6 font-spoqaMedium">
                             <img src={SummaryIcon} alt=""/>
                             <span className='mt-2px'>총판현황</span>
@@ -951,23 +951,25 @@ const DistributorPage = ({
                         </div> 
 
                         {/* === 추천회원내역 표 === */}
-                        <div  className="flex flex-col items-center justify-center mt-21px w-full rounded-10px p-px overflow-hidden border-b  border-gray-252525" >
-                          {/* style={{background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)"}} */}
-  
-                          <div className="h-67px w-full  border-b  border-gray-252525 bg-gray-2e2e2e1 flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight">
+                        <div className="flex flex-col items-center justify-center mt-21px w-full rounded-4px p-px overflow-hidden border-b  border-gray-252525 shadow-table"
+                        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+              >
+
+                          <div className="h-67px w-full  border-b  border-gray-252525 bg-gray-2e2e2e flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight rounded-t-4px">
                          
                                 <div className="w-85px text-center">번호</div>
-                                 <button 
-                                    className="flex w-146px text-center items-center space-x-5px justify-center hover:font-spoqaBold hover:opacity-75"
+                                <button 
+                                  className="flex text-center items-center space-x-3px justify-center hover:font-spoqaBold hover:opacity-75" 
+                                  style={{width:'145px'}}
                                     onClick={() => handleOnChange(0)}
                                 >
                                     <p>아이디</p>
                                     <img src={GrayArrow} className={`${isArrowUp[0] === true ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-87px text-center">이름</div>
-                                <div className="w-142px text-center">별명</div>
-                                <button 
-                                    className="w-92px text-center flex items-center justify-center space-x-5px hover:opacity-75"
+                               <div className="w-87px text-center">이름</div>
+                                <div className="w-144px text-center" style={{width:'144px'}}>별명</div>
+                                 <button 
+                                    className="w-88px text-center flex items-center justify-center space-x-3px hover:opacity-75" 
                                     onClick={() => handleOnChange(1)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px ">
@@ -976,8 +978,9 @@ const DistributorPage = ({
                                     </div>
                                     <img src={GrayArrow} className={`${isArrowUp[1] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                               <button 
-                                    className="w-138px text-center flex items-center justify-center space-x-5px hover:opacity-75 "
+                                 <button 
+                                    className="w-125px text-center flex items-center justify-center space-x-3px hover:opacity-75 ml-3px"
+                                    style={{width:'140px'}}
                                     onClick={() => handleOnChange(2)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px">
@@ -987,41 +990,41 @@ const DistributorPage = ({
                                     </div>
                                     <img src={GrayArrow} className={`${isArrowUp[2] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-98px text-center">요율보기</div>
-                                <div className="w-132px text-center">입금액</div>
-                                  <div className="w-100px text-center">보너스</div>
-                                <button 
-                                    className="flex w-130px text-center items-center space-x-5px justify-center hover:opacity-75"
-                                    onClick={() => handleOnChange(3)}
-                                >
-                                    <p>출금액</p>
-                                    <img src={GrayArrow} className={`${isArrowUp[3] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button>
-                                <div className="w-104px text-center">입출금액</div>
-                                <button 
-                                    className="flex w-120px text-center items-center space-x-5px justify-center hover:opacity-75"
+                               <div className="w-96px text-center">요율보기</div>
+                              <div className="w-133px text-center" style={{width:'133px'}}>입금액</div>
+                              <div className="w-118px text-center"  style={{width:'98px'}}>보너스</div>
+                              <button 
+                                className="flex w-133px text-center items-center space-x-3px justify-center hover:opacity-75"
+                                onClick={() => handleOnChange(3)}
+                              >
+                                <p>출금액</p>
+                                <img src={GrayArrow} className={`${isArrowUp[3] === false ? "transform rotate-180" : ""}`} alt=""/>
+                              </button>
+                              <div className="w-98px text-center">입출금액</div>
+                              <button 
+                                    className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75" style={{width:'131px'}}
                                     onClick={() => handleOnChange(4)}
                                 >
                                     <p>베팅액</p>
                                     <img src={GrayArrow} className={`${isArrowUp[4] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button>
-                                <button 
-                                    className="flex w-114px text-center items-center space-x-5px justify-center hover:opacity-75"
+                              </button>
+                               <button 
+                                    className="flex w-102px text-center items-center space-x-3px justify-center hover:opacity-75"
                                     onClick={() => handleOnChange(5)}
                                 >
                                     <p>윈루즈</p>
                                     <img src={GrayArrow} className={`${isArrowUp[5] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                 <div className="w-114px text-center">상세내역</div>
+                                 <div className="w-118px text-center" style={{width:'131px'}}>상세내역</div>
                                 <button 
-                                    className="flex w-114px text-center items-center space-x-5px justify-center hover:opacity-75"
+                                    className="flex w-98px text-center items-center space-x-3px justify-center hover:opacity-75"
                                     onClick={() => handleOnChange(6)}
                                 >
                                     <p>포인트</p>
                                     <img src={GrayArrow} className={`${isArrowUp[6] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
                               <button 
-                                    className="w-114px text-end flex items-center justify-center space-x-5px hover:opacity-75 pl-26px"
+                                    className="text-end flex items-center justify-center space-x-3px hover:opacity-75 pl-8px" style={{width:'120px'}}
                                     onClick={() => handleOnChange(7)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px ">
@@ -1042,7 +1045,7 @@ const DistributorPage = ({
 
 
                     <div className="w-full">
-                        {/* <Footer2  fullWidth={true}/> */}
+                        
                         <Footer fullWidth={true} />
                     </div>
                 </div>

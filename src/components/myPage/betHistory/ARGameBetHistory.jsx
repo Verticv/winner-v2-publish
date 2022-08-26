@@ -87,7 +87,7 @@ const ARGameBetHistory = ({isState, setState, showSub = true}) => {
             )}
             
 
-            <DateSearchBar isGameResultsSearch={true} />
+            <DateSearchBar isGameResultsSearch={true} isPopup={showSub} />
 
             <div className="w-full h-full mt-20px">
                 <LiveCasinoBetHistoryTable 
