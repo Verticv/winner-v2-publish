@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router';
+import Reflect from '../../images/myPage/betHistory/Reflect.png'
 
 const HorizontalMenu9 = ({
     itemsArray, 
@@ -18,15 +19,13 @@ const HorizontalMenu9 = ({
             <button 
                 key={item.id} 
                 style={{
-                    height:"59px",
-                    background: "linear-gradient(to bottom, #dddddd, #bcbcbc)",
-                    borderRadius:"10px",
+                    height:"57px",
+                    background: pathname === item.path 
+                    ?'linear-gradient( to top, #62553f, #dabe82)'
+                    : 'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
+                    boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5) '
                 }}
-                className={`${
-                    pathname === item.path
-                    ? "bg-blue-r58baf7" 
-                    : "bg-white hover:bg-blue-d3f3fe"
-                } overflow-hidden w-full rounded-lg flex items-end p-px`} 
+                className='relative overflow-hidden h-78px w-full flex items-end rounded-4px'
                 onClick={() => {
                     history.push(item.path)
                     setSelectedTab(item.id)
@@ -39,39 +38,31 @@ const HorizontalMenu9 = ({
             >
                 <div 
                     style={{
-                        height:"57px", 
-                        width:"100%", 
-                        borderRadius:"9px",
-                    }} 
-                    className={`flex w-full justify-end items-end ${
-                        pathname === item.path 
-                        ? "bg-blue-r58baf7" 
-                        : "bg-white hover:bg-blue-d3f3fe"
-                    }`}
+                      height:"54px", 
+                      background: pathname === item.path
+                      ? 'linear-gradient(to top, #a6926f, #f9f0d3)'
+                      : 'linear-gradient(to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)'
+                
+                    }}
+                    className='w-full flex h-54px absolute top-0 p-px rounded-4px'
                 >
                     <div 
                         style={{
-                            background: pathname === item.path
-                            ? "linear-gradient(to bottom, #2087f0, #1873cf)"
-                            : isHover === item.path 
-                            ? "linear-gradient(to bottom, #b9dcff, #d2f6ff)"
-                            : "linear-gradient(to bottom, #c4d6e6, #e8f3fd 26%, #ffffff )",
-                            height:"54px",
-                            borderBottomLeftRadius:"9px",
-                            borderBottomRightRadius:"9px",
-                            borderTopLeftRadius:"8px",
-                            borderTopRightRadius: "8px",
-                            borderColor: pathname === item.path ? "#1a73ce" : "#d6dfe8",   
-                            boxShadow:'rgb(0 0 0 / 30%) 7px 0px 2px -7px inset, rgb(0 0 0 / 30%) -7px 0px 2px -7px inset, rgb(0 0 0 / 30%) 0px -7px 2px -7px inset'
+                          background: pathname === item.path
+                          ? 'linear-gradient(to top, #8d7752, #dabe82)'
+                          :isHover === item.path
+                          ?'#54544f'
+                          :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
                         }}
-                        className={`mt-3px w-full rounded-md flex items-center justify-center pt-3px`}
-                    >
+                      className={`w-full rounded-3px flex flex-col justify-start pt-14px items-center relative hover:filter hover:brightness-90`}
+                      >
+                      {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
                         <span 
-                            className={`${
-                                pathname === item.path
-                                ? "text-white"
-                                : "text-gray-r616161" }
-                                text-20px font-spoqaBold tracking-tight -mt-2px`}
+                          className={`${
+                          pathname === item.path
+                          ? "text-gray-252525"
+                          : "text-golden-ccc2b6" }
+                          text-20px font-spoqaBold tracking-tight`}
                         >{item.text}</span>
                     </div>
                 </div>
@@ -80,7 +71,7 @@ const HorizontalMenu9 = ({
     }
 
     return (
-        <div className="flex w-full space-x-2px">
+        <div className="flex w-full space-x-4px pr-3px">
             <TabsList items={itemsArray} />
         </div>
     )

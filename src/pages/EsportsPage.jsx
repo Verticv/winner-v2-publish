@@ -1,8 +1,6 @@
 import Footer from 'components/mainPage/Footer';
-import Footer2 from 'components/mainPage/Footer2';
 import DirectoryComponent from 'components/myPage/DirectoryComponent';
 import Navbar from 'components/mainPage/Navbar'
-import NoticeBanner from 'components/mainPage/NoticeBanner'
 import React, { useState } from 'react'
 import { Route } from 'react-router';
 import HorizontalMenu9 from 'components/horizontalMenus/HorizontalMenu9';
@@ -21,15 +19,15 @@ const EsportsPage = ({isAuthenticated, setAuthenticated}) => {
     const [, setSelectedTab] = useState(0)
 
     return (
-        <div className="relative flex flex-col justify-center limit:overflow-x-hidden">
+        <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
 
             <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
-                <NoticeBanner />
+                {/* <NoticeBanner /> */}
                 <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
             </div>
 
 
-            <div className="flex flex-col items-start limit:items-center limit1600:mt-92px mt-122px w-full h-full">
+            <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
 
                 <Route path="/esports/structure">
                     <DirectoryComponent 
@@ -87,7 +85,6 @@ const EsportsPage = ({isAuthenticated, setAuthenticated}) => {
                 </div>
 
                 <div>
-                    <Footer2 />
                     <Footer />
                 </div>
 
