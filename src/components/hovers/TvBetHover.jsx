@@ -1,13 +1,19 @@
 import React, { useState } from 'react'
 import Expand from 'react-expand-animated'
-import AugBanner from '../../images/navbarHover/8_1.png'
-import AugBannerHighlight from '../../images/navbarHover/8_1_hl.png'
+import img1 from '../../images/navbarHover/9_1.png'
+import img1hl from '../../images/navbarHover/9_1_hl.png'
+import img2 from '../../images/navbarHover/9_2.png'
+import img2hl from '../../images/navbarHover/9_2_hl.png'
+import img3 from '../../images/navbarHover/9_3.png'
+import img3hl from '../../images/navbarHover/9_3_hl.png'
 
-const FishingGameHover = ({ selection }) => {
+const TvBetHover = ({ selection }) => {
   const [isHover, setHover] = useState(null)
 
   const gamesArray = [
-    { id: 0, background: AugBanner, highlight: AugBannerHighlight, imgText: "케이플레이피싱", color: "group-hover:bg-blue-r3384ca", btnText: "게임시작", class: "bg-opacity-25" }
+    { id: 0, background: img1, highlight: img1hl, imgText: "티비벳", color: "group-hover:bg-blue-r3384ca", btnText: "게임시작", class: "bg-opacity-25" },
+    { id: 1, background: img2, highlight: img2hl, imgText: "화면구성설명", color: "group-hover:bg-blue-r3384ca", btnText: "설명보기", class: "bg-opacity-25" },
+    { id: 2, background: img3, highlight: img3hl, imgText: "베팅방법", color: "group-hover:bg-blue-r3384ca", btnText: "설명보기", class: "bg-opacity-25" }
   ];
 
   function GamesList({ items }) {
@@ -22,7 +28,7 @@ const FishingGameHover = ({ selection }) => {
 				<div style={{marginBottom:'31px'}} className={`absolute z-20`}>
 					<button style={{width:'89px', height:'26px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className={`p-px filter hover:brightness-125`}>
 						<div style={{borderRadius:'2px', background: isHover === item.id ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
-							<p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-13px font-spoqaMedium tracking-tight">게임시작</p>
+							<p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-13px font-spoqaMedium tracking-tight">{item.btnText}</p>
 						</div>
 					</button>
 				</div>
@@ -34,7 +40,7 @@ const FishingGameHover = ({ selection }) => {
 
   return (
     <Expand
-      open={selection === 7}
+      open={selection === 8}
       duration={200}
       className="absolute w-full h-262px border-b border-t border-brown-r796657"
     >
@@ -45,4 +51,4 @@ const FishingGameHover = ({ selection }) => {
   )
 }
 
-export default FishingGameHover
+export default TvBetHover
