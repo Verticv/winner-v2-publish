@@ -1,57 +1,58 @@
 import React, { useState } from 'react'
-import Powerball from '../../images/navbarHover/powerball_banner.png'
-import PowerballHighlight from '../../images/navbarHover/powerball_banner_highlight.png'
-import PowerLadder from '../../images/navbarHover/powerladder_banner.png'
-import PowerLadderHighlight from '../../images/navbarHover/powerladder_banner_highlight.png'
-import Speedkino from '../../images/navbarHover/speedkino_banner.png'
-import SpeedkinoHighlight from '../../images/navbarHover/speedkino_banner_highlight.png'
-import KinoLadder from '../../images/navbarHover/kinoladder_banner.png'
-import KinoLadderHighlight from '../../images/navbarHover/kinoladder_banner_highlight.png'
+import Powerball from '../../images/navbarHover/6_1.png'
+import PowerballHighlight from '../../images/navbarHover/6_1_hl.png'
+import PowerLadder from '../../images/navbarHover/6_2.png'
+import PowerLadderHighlight from '../../images/navbarHover/6_2_hl.png'
+import Speedkino from '../../images/navbarHover/6_3.png'
+import SpeedkinoHighlight from '../../images/navbarHover/6_3_hl.png'
+import KinoLadder from '../../images/navbarHover/6_4.png'
+import KinoLadderHighlight from '../../images/navbarHover/6_4_hl.png'
 import Expand from 'react-expand-animated'
-import { useHistory } from 'react-router'
 
-const MinigamesHover = ({selection}) => {
+const MinigamesHover = ({ selection }) => {
 
-    const [selectedGame, setSelectedGame] = useState(false)
-    const history = useHistory();
+  const [isHover, setHover] = useState(null)
 
-    const gamesArray = [
-        { id: 0, background: Powerball, highlight: PowerballHighlight, imgText: "파워볼", color: "bg-purple-d03ab7 text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerball" },
-        { id: 1, background: PowerLadder, highlight: PowerLadderHighlight, imgText: "파워사다리", color: "bg-blue-r3384ca text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerladder" },
-        { id: 2, background: Speedkino, highlight: SpeedkinoHighlight, imgText: "스피드키노", color: "bg-red-db4a4a text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/speedkino" },
-        { id: 3, background: KinoLadder, highlight: KinoLadderHighlight, imgText: "키노사다리", color: "bg-green-e3ba3c text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/kinoladder" }
-    ];
+  const gamesArray = [
+    { id: 0, background: Powerball, highlight: PowerballHighlight, imgText: "파워볼", color: "bg-purple-d03ab7 text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerball" },
+    { id: 1, background: PowerLadder, highlight: PowerLadderHighlight, imgText: "파워사다리", color: "bg-blue-r3384ca text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerladder" },
+    { id: 2, background: Speedkino, highlight: SpeedkinoHighlight, imgText: "스피드키노", color: "bg-red-db4a4a text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/speedkino" },
+    { id: 3, background: KinoLadder, highlight: KinoLadderHighlight, imgText: "키노사다리", color: "bg-green-e3ba3c text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/kinoladder" }
+  ];
 
-    function GamesList({ items }) {
-        return items.map(item => (
-            <div 
-                key={item.id} 
-                className="relative group w-305px h-206px cursor-pointer limit:flex-shrink-1 flex-shrink-0 "
-                onClick={() => history.push(item.path)}
-                onMouseEnter={() => setSelectedGame(item.id)} 
-                onMouseLeave={() => setSelectedGame(false)}
-            >
-                <img className={`opacity-100 group-hover:opacity-0 w-305px h-206px object-none object-left transition transition-opacity transform duration-200`} src={item.background} alt="game_image" />
-                <img className={`opacity-0 group-hover:opacity-100 absolute top-0 transition transition-opacity transform duration-100 w-305px h-206px object-none object-left `} src={item.highlight} alt="game_image" />
-                <div className="absolute bottom-0 h-20px w-170px right-0 flex items-center justify-center -mb-2px"><span className="group-hover:text-black font-spoqaBold tracking-tight text-12px text-gray-r616161">{item.imgText}</span></div>
-                <div className={`absolute bottom-0 font-spoqaBold text-12px w-80px h-25px ml-80px -mb-17px flex items-center justify-center rounded-full shadow-plain4 ${selectedGame === item.id ? item.color : "bg-white text-gray-r888889"}`}>게임시작</div>
-            </div>
-        ));
-    }
+  function GamesList({ items }) {
+		return items.map(item => (
+			<div 
+				key={item.id} 
+				className={`group relative cursor-pointer flex flex-col items-center justify-end`}
+				style={{width:'235px'}}
+				onMouseEnter={() => setHover(item.id)}
+			>
+				<p style={{color:'#ffdfbd', marginBottom:'70px'}} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex`}>{item.imgText}</p>
+				<div style={{marginBottom:'31px'}} className={`absolute z-20`}>
+					<button style={{width:'89px', height:'26px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className={`p-px hover:opacity-90`}>
+						<div style={{borderRadius:'2px', background: isHover === item.id ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
+							<p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-13px font-spoqaMedium tracking-tight">게임시작</p>
+						</div>
+					</button>
+				</div>
+				<img className={`${isHover === item.id ? "opacity-0" : "opacity-100"} absolute bottom-0 object-none h-full mb-13px`} src={item.background} alt="game_image" />
+				<img className={`${isHover === item.id ? "opacity-100" : "opacity-0"} absolute bottom-0 object-none h-full mb-13px`} src={item.highlight} alt="game_image" />				
+			</div>
+		))
+	}
 
-    return (
-        <Expand
-            open={selection === 4} 
-            duration={200} 
-            className="absolute w-full h-244px bg-white bg-opacity-80 shadow-inner border-b-2 border-gray-300 space-y-50px"
-        >
-            <div>
-                <div className="flex limit:justify-center justify-start pt-6px h-244px">
-                    <GamesList items={gamesArray} />
-                </div>
-            </div>
-        </Expand>
-    )
+  return (
+    <Expand
+      open={selection === 5}
+      duration={200}
+      className="absolute w-full h-262px border-b border-t border-brown-r796657"
+    >
+      <div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85 -space-x-12">
+        <GamesList items={gamesArray} />
+      </div>
+    </Expand>
+  )
 }
 
 export default MinigamesHover
