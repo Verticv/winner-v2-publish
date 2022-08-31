@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { registerLocale } from  "react-datepicker";
 import ko from 'date-fns/locale/ko';
-import CalendarIcon from '../../images/myPage/betHistory/calendar.png'
+import CalendarIcon from '../../images/myPage/betHistory/calendar_v2.png'
 import DropDownControls from 'components/dropdowns/DropDownControls';
 import ArrowDownGray from '../../images/arrows/arrow_down_gray.png'
 import './DatePicker.css'
@@ -29,10 +29,10 @@ const DateSearchBar2 = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(true)
     const [selectedCarrier, setSelectedCarrier] = useState("전체회차")
 
-    const dropDownCellClass = "flex w-full h-30px py-2px bg-white items-center hover:bg-blue-lightGradLight px-10px"
+    const dropDownCellClass = "flex w-full h-30px py-2px bg-gray-1f1f1e items-center hover:bg-brown-r3d3934 px-12px"
 
     const gameResultButton = (
-        <div className="flex items-center justify-between bg-white placeholder-gray-r8c8c8c outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c hover:text-gray-r585858" >
+        <div className="flex items-center justify-between placeholder-gray-r8c8c8c outline-none w-138px h-42px rounded-2px border border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a px-10px font-spoqaMedium text-15px tracking-tight " >
             <p className="mt-px">{selectedCarrier}</p>
             <img src={ArrowDownGray} alt="" />
         </div>
@@ -51,7 +51,7 @@ const DateSearchBar2 = () => {
 
 
     const searchDropdown = (
-        <div style={{height:"249px"}} className="mt-4px flex flex-col items-center justify-center w-138px overflow-hidden bg-white rounded-md border border-gray-dddddd text-gray-r8c8c8c font-spoqaMedium text-14px tracking-tight">
+        <div style={{height:"249px"}} className="mt-4px flex flex-col items-center justify-center w-138px overflow-hidden  rounded-2px border border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a font-spoqaMedium text-14px tracking-tight">
             <div style={{width:"134px"}} className="pt-4px mt-2px h-full overflow-y-scroll overflow-x-hidden">
                 <DropdownCells items={LeagueExampleArray} />
             </div>
@@ -70,12 +70,12 @@ const DateSearchBar2 = () => {
 
 
     return (
-        <div className="h-63px w-full bg-gray-f9f9f9 mt-20px rounded-2xl border border-gray-dddddd flex items-center justify-center space-x-10px">
+        <div className="h-64px w-full bg-gray-2e2e2e mt-20px rounded-4px flex items-center justify-center space-x-10px">
 
-                <div className="flex space-x-10px items-center  h-full justify-center">
+                <div className="flex space-x-10px items-center h-full justify-center">
                     <div className="relative">
                         <DatePicker 
-                            className="pt-px mt-px flex-shrink-0 outline-none w-138px h-42px rounded-md border border-gray-dddddd px-10px font-spoqaMedium text-15px tracking-tight text-gray-r8c8c8c focus:ml-10px"
+                            className="pt-px mt-px flex-shrink-0 outline-none w-138px h-42px rounded-2px bg-dark-1a1a1a border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px"
                             locale="ko" 
                             selected={startDate} 
                             onChange={(date) => setStartDate(date)}
@@ -85,9 +85,11 @@ const DateSearchBar2 = () => {
                         <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-14px mr-10px" />
                     </div>
                     <div className="pt-px">{InboxSearch}</div>
-                    <div className="flex items-center justify-center h-42px w-75px rounded-4px bg-gray-r171a1d hover:opacity-75">
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px border border-gray-r737579 bg-gradient-to-b from-gray-r585b5e via-gray-r45484c to-gray-r303337 cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white pt-px">검색</span>
+                    <div className="flex items-center justify-center h-42px w-75px rounded-2px shadow-link hover:filter hover:brightness-125"
+                      style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
+                      <div className="flex items-center justify-center h-40px w-73px rounded-2px cursor-pointer"
+                      style={{background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}}>
+                            <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5 pt-px">검색</span>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Reflect from '../../images/myPage/betHistory/Reflect.png'
 
 const HorizontalMenu1 = ({
     itemsArray, 
@@ -13,53 +14,43 @@ const HorizontalMenu1 = ({
             <button 
                 key={item.id} 
                 style={{
-                    background: "linear-gradient(to bottom, #dddddd, #bcbcbc)",
-                    borderRadius:"10px",
+                  background: isState === item.id
+                  ? 'linear-gradient( to top, #62553f, #dabe82)'
+                  : 'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
+                  boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5) '
                 }}
-                className={`${
-                    isState === item.id
-                    ? "bg-blue-r58baf7" 
-                    : "bg-white hover:bg-blue-d3f3fe"
-                } overflow-hidden h-103px w-full flex items-end p-px`} 
+                className='h-98px w-full flex items-end  relative overflow-hidden rounded-4px' 
                 onClick={() => setState(item.id)}
                 onMouseOver={() => setHover(item.id)}
                 onMouseLeave={() => setHover(null)}
             >
                 <div 
                     style={{
-                        height:"101px", 
-                        width:"100%", 
-                        borderRadius:"9px",
+                        height:"95px", 
+                        background: isState === item.id
+                        ? 'linear-gradient(to top, #a6926f, #f9f0d3)'
+                        : 'linear-gradient(to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)'
                     }} 
-                    className={`flex w-full justify-end items-end bg-white ${
-                        isState === item.id
-                        ? "bg-blue-r58baf7" 
-                        : "bg-white hover:bg-blue-d3f3fe"
-                    }`}
-                >
+                     className={`w-full flex h-98px absolute top-0 p-px rounded-4px`}>
+                    
                     <div 
                         style={{
-                            height: "98px",
-                            background: isState === item.id
-                            ? "linear-gradient(to bottom, #2087f0, #1873cf)"
-                            : isHover === item.id
-                            ? "linear-gradient(to bottom, #b9dcff, #d2f6ff)"
-                            : "linear-gradient(to bottom, #c4d6e6, #e8f3fd 26%, #ffffff)",
-                            borderBottomLeftRadius:"9px",
-                            borderBottomRightRadius:"9px",
-                            borderTopLeftRadius:"8px",
-                            borderTopRightRadius: "8px",
-                            borderColor: isState === item.id  ? "#1a73ce" : "#d6dfe8",
-                            boxShadow:'rgb(0 0 0 / 30%) 7px 0px 2px -7px inset, rgb(0 0 0 / 30%) -7px 0px 2px -7px inset, rgb(0 0 0 / 30%) 0px -7px 2px -7px inset'
+                            height: "93px",
+                             background: isState === item.id
+                          ? 'linear-gradient(to top, #8d7752, #dabe82)'
+                          :isHover === item.id
+                          ?'#54544f'
+                          :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
                         }}
-                        className={`mt-3px w-full rounded-b-md rounded-t-md flex flex-col items-center`}>
-                        <img className="mt-5px ml-2px object-none" src={item.icon} alt="" />
+                        className={`w-full rounded-3px flex flex-col items-center`}>
+                          <img className="mt-7px ml-2px object-none" src={item.icon} alt="" />
+                          {isState === item.id&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
                         <div 
                             className={`${
                                 isState === item.id
-                                ? "text-white"
-                                : "text-gray-r616161" }
-                                text-14px font-spoqaMedium tracking-tight -mt-3px h-14px flex items-center`}
+                                ? "text-gray-252525"
+                                : "text-golden-ccc2b6"} 
+                                text-14px font-spoqaMedium tracking-tight h-14px flex items-center mt-3px`}
                         >
                             {item.text}
                         </div>
@@ -67,10 +58,10 @@ const HorizontalMenu1 = ({
                             style={{
                                 width: "38px",
                                 backgroundColor: isState === item.id 
-                                ? "#1b4372"
-                                : "#8c8c8c"
+                                ? "#4b3f2b"
+                                : "#1a1a1a"
                             }}
-                            className={`text-white text-12px font-roboto tracking-tight mt-9px h-17px rounded-full flex items-center justify-center`}
+                            className={`text-white text-12px font-roboto tracking-tight mt-8px h-17px rounded-full flex items-center justify-center`}
                         >
                             {item.number}
                         </div>
@@ -81,7 +72,7 @@ const HorizontalMenu1 = ({
     }
 
     return (
-        <div className="flex w-full h-103px space-x-px">
+        <div className="flex w-full h-98px space-x-3px pl-4px ">
             <TabsList items={itemsArray} />
         </div>
     )

@@ -48,7 +48,7 @@ const LeftMenu = ({
     }
       
   const EditProfileButton = ({ path, text, icon, iconHighlight, selectedTab }) => (
-    <div className='flex w-full items-center  p-6px flex-col'>
+    <div className='flex w-full items-center pt-5px flex-col'>
         <button 
             className={`${
                 pathname.includes(path)
@@ -65,7 +65,7 @@ const LeftMenu = ({
                w-50px flex items-center justify-center flex-shrink-0`} 
             >
                 <img 
-                    className="flex items-center justify-center object-contain h-42px" 
+                    className="flex items-center justify-center object-contain" 
                     src={(pathname.includes(path)) ? iconHighlight : icon} 
                     alt="icon" />
             </div>
@@ -99,7 +99,7 @@ const LeftMenu = ({
                     <ReauthenticatePopup setPopupOpen={setPopupOpen} setSelectedTab={setSelectedTab}/>
                 </PopupControls>              
                 ) : (
-                    <div className='flex flex-col w-full items-center  pt-5px pr-5px pl-5px'>
+                    <div className='flex flex-col w-full items-center pt-5px'>
                       <button 
                         className={`${
                           pathname.includes(item.mainPath)
@@ -115,7 +115,7 @@ const LeftMenu = ({
                             className={`w-50px flex items-center justify-start flex-shrink-0 pl-7px`} 
                           >
                             <img 
-                              className="flex items-center justify-start w-42px object-contain h-42px" 
+                              className="flex items-center justify-start  object-contain " 
                               src={pathname.includes(item.mainPath) ? item.iconHighlight : item.icon} 
                                 alt="icon" />
                           </div>
@@ -177,7 +177,7 @@ const LeftMenu = ({
                                         || pathname === item.path_6 || pathname === item.path_7 || pathname === item.path_8 
                                         ? "text-gray-f1e7d5 bg-gray-4e4941" 
                                         : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
-                                    } flex items-center h-45px w-full pl-60px `}>
+                                    } flex items-center h-47px w-full pl-57px `}>
                                         {item.sub1}
                                 </button>
                             )}
@@ -192,7 +192,7 @@ const LeftMenu = ({
                                         pathname === item.path2 || pathname === item.path2_1 || pathname === item.path2_2 || pathname === item.path2_3
                                         ? "text-gray-f1e7d5 bg-gray-4e4941" 
                                         : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
-                                    } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full pl-60px `}>
+                                    } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-47px w-full pl-57px `}>
                                         {item.sub2}
                                 </button>
                             )}
@@ -207,7 +207,7 @@ const LeftMenu = ({
                                         pathname === item.path3 || pathname === item.path3_1
                                         ? "text-gray-f1e7d5 bg-gray-4e4941 " 
                                         : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
-                                    } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px `}>
+                                    } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-47px w-full  pl-57px `}>
                                         {item.sub3}
                                 </button>
                             )}
@@ -223,7 +223,7 @@ const LeftMenu = ({
                                         pathname === item.path4
                                         ? "text-gray-f1e7d5 bg-gray-4e4941 " 
                                         : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
-                                    } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-45px w-full  pl-60px `}>
+                                    } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-47px w-full  pl-57px `}>
                                         {item.sub4}
                                 </button>
                             )}
@@ -240,7 +240,7 @@ const LeftMenu = ({
     <div className="w-200px rounded-6px mb-180px p-px shadow-navbar overflow-hidden flex flex-col items-center"
       style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0% ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}
     >
-      <div className="rounded-6px bg-gray-323232 overflow-hidden w-full">
+      <div className="rounded-6px bg-gray-323232 overflow-hidden w-full px-5px pb-5px">
         <MenuList items={array} />
       </div>
     </div>

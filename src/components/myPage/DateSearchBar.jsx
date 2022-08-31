@@ -79,7 +79,7 @@ const DateSearchBar = ({
 
   return (
       
-      <div className={`${!isPopup?'bg-gray-2b2b2a':'bg-gray-2e2e2e'} h-64px w-full  mt-20px  flex items-center justify-center space-x-10px rounded-4px `}>
+      <div className={`${isPopup?'bg-gray-2b2b2a':'bg-gray-2e2e2e'} h-64px w-full  mt-20px  flex items-center justify-center space-x-10px rounded-4px `}>
         {isLeagueSearch === true && (
           <div className="space-x-5px">
             <input 

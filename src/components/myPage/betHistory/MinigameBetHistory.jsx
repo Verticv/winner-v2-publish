@@ -57,7 +57,7 @@ const tableArray = [
     },
 ];
 
-const MinigameBetHistory = ({isState, setState, showSub = true, attachedArray, setAttachedArray, setPopupOpen1}) => {
+const MinigameBetHistory = ({isState, setState, showSub = true, attachedArray, setAttachedArray, setPopupOpen1, isPopup = false}) => {
 
     const [checkedState, setCheckedState] = useState(new Array(3).fill(false))
     const [isAllSelected, setAllSelected] = useState(false)
@@ -82,7 +82,7 @@ const MinigameBetHistory = ({isState, setState, showSub = true, attachedArray, s
           )}
             
 
-            <DateSearchBar isLeagueSearch={false} isPopup={showSub}/>
+            <DateSearchBar isLeagueSearch={false} isPopup={isPopup}/>
 
             <div className="w-full h-full mt-20px">
 

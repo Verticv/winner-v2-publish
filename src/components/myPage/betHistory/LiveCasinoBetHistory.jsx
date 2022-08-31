@@ -55,7 +55,7 @@ const tableArray = [
     },
 ];
 
-const LiveCasinoBetHistory = ({isState, setState, showSub = true}) => {
+const LiveCasinoBetHistory = ({isState, setState, showSub = true, isPopup = false}) => {
 
     const [checkedState, setCheckedState] = useState(new Array(3).fill(false))
     const [isAllSelected, setAllSelected] = useState(false)
@@ -82,7 +82,7 @@ const LiveCasinoBetHistory = ({isState, setState, showSub = true}) => {
 
             )}
             
-            <DateSearchBar isLeagueSearch={false} isPopup={showSub}/>
+            <DateSearchBar isLeagueSearch={false} isPopup={isPopup}/>
 
 
             <div className="w-full h-full mt-20px">

@@ -436,7 +436,7 @@ const FreeBoardMain = () => {
           <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         >
-            <div className=" w-full rounded-4px bg-gray-3232321 overflow-hidden">
+            <div className=" w-full rounded-4px bg-gray-323232 overflow-hidden">
               <div className="h-57px bg-gray-2e2e2e w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6 rounded-t-4px  border-b border-gray-252525">
                   <div style={{width: "126px"}} className="flex items-center justify-center">번호</div>
                   <div style={{width: "796px"}} className="flex items-center justify-center">제목</div>

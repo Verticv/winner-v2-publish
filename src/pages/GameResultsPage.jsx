@@ -1,16 +1,12 @@
 import Footer from 'components/mainPage/Footer';
-import Footer2 from 'components/mainPage/Footer2';
-import DirectoryComponent from 'components/myPage/DirectoryComponent';
+// import DirectoryComponent from 'components/myPage/DirectoryComponent';
 import LeftMenu from 'components/myPage/LeftMenu';
 import Navbar from 'components/mainPage/Navbar';
-import NoticeBanner from 'components/mainPage/NoticeBanner';
 import React, { useState } from 'react'
 import { Route, useLocation } from 'react-router';
-import Icon1 from '../images/gameResults/leftMenu/icon_1.png'
-import Icon2 from '../images/gameResults/leftMenu/icon_2.png'
-import IconHighlight1 from '../images/gameResults/leftMenu/icon_1_highlight.png'
-import IconHighlight2 from '../images/gameResults/leftMenu/icon_2_highlight.png'
-import GameResultsBanner from '../images/gameResults/game_results_banner.png'
+import Icon1 from '../images/gameResults/leftMenu/icon_1_v2.png'
+import Icon2 from '../images/gameResults/leftMenu/icon_2_v2.png'
+import GameResultsBanner from '../images/gameResults/game_results_banner_v2.png'
 import WinDrawLose from 'components/gameResults/WinDrawLose';
 import MinigameResults from 'components/gameResults/MinigameResults';
 
@@ -20,7 +16,7 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
         { 
             text: "스포츠", 
             icon: Icon1, 
-            iconHighlight: IconHighlight1, 
+            iconHighlight: Icon1, 
             id: 0, 
             path: "/gameresults/sports/win-draw-lose", 
             sub1: "승무패",
@@ -35,7 +31,7 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
         { 
             text: "미니게임", 
             icon: Icon2, 
-            iconHighlight: IconHighlight2, 
+            iconHighlight: Icon2, 
             id: 1, 
             path: "/gameresults/minigame/powerball", 
             mainPath: "/gameresults/minigame"
@@ -47,17 +43,16 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
     const [selectedSubTab, setSelectedSubTab] = useState(location.pathname)
 
     return (
-        <div className="relative flex flex-col justify-center limit:overflow-x-hidden">
+        <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
 
             <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
-                <NoticeBanner />
                 <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
             </div>
 
 
-            <div className="flex flex-col items-start limit:items-center limit1600:mt-92px mt-122px w-full h-full">
+            <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
 
-                <Route exact path="/gameresults/sports/win-draw-lose">
+                {/* <Route exact path="/gameresults/sports/win-draw-lose">
                     <DirectoryComponent 
                         branch1="경기결과"
                         branch2="스포츠" 
@@ -106,10 +101,9 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
                         setSelectedTab={setSelectedTab}
                         setSelectedSubTab={setSelectedSubTab}
                     />
-                </Route>
+                </Route> */}
 
-                <div className="relative w-default h-225px">
-                    <label className="text-36px font-spoqaMedium text-blue-r325685 absolute right-0 bottom-0 z-20 mb-86px mr-50px">경기결과</label>
+                <div className="relative w-default h-125px mt-50px">
                     <img className="z-10" src={GameResultsBanner} alt="" />
                 </div>
                 
@@ -147,7 +141,6 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
                 </div>
 
                 <div>
-                    <Footer2 />
                     <Footer />
                 </div>
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DateSearchBar from '../DateSearchBar';
 import SportsBetHistoryPanel from './SportsBetHistoryPanel'
 
-const SportsBetHistory = ({checkedState, setCheckedState , showSub = true, attachedArray, setAttachedArray, setPopupOpen}) => {
+const SportsBetHistory = ({checkedState, setCheckedState , showSub = true, attachedArray, setAttachedArray, setPopupOpen, isPopup = false}) => {
 
     const [isAllSelected, setAllSelected] = useState(false)
 
@@ -20,7 +20,7 @@ const SportsBetHistory = ({checkedState, setCheckedState , showSub = true, attac
     return (
         <div className="w-full">
 
-            <DateSearchBar isGameResultsSearch={true}  isPopup={showSub}/>
+            <DateSearchBar isGameResultsSearch={true}  isPopup={isPopup}/>
 
 
         <div className="w-full h-full mt-20px rounded-4px">

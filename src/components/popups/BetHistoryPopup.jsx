@@ -231,46 +231,46 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
                     >
                         {selectedTab === 0 ? (
                             <div className="-mt-20px">
-                                <LiveCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} />
+                                <LiveCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true} />
                                 <Pagination page={page} setPage={setPage}/>   
                             </div>
                         ) : selectedTab === 1 ? (
                             <div className="-mt-20px">
-                                <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} />
+                                <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true}/>
                                 <Pagination page={page} setPage={setPage}/>   
                             </div>
                         ) : selectedTab === 2 ? (
                             <div className="-mt-20px space-y-20px">
-                                <SportsBetHistory  checkedState={checkedState} setCheckedState={setCheckedState} showSub={false} attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen={setPopupOpen} />
+                                <SportsBetHistory  checkedState={checkedState} setCheckedState={setCheckedState} showSub={false} attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen={setPopupOpen} isPopup={true} />
                                 <Pagination page={page} setPage={setPage}/>   
                             </div>
                         ) : selectedTab === 3 ? (
                             <div className="-mt-20px">
-                              <AllBetHistory />
+                              <AllBetHistory isPopup={true}/>
                               <Pagination page={page} setPage={setPage}/>   
                             </div>
                         ) : selectedTab === 4 ? (
                         <div className="-mt-20px">
-                              <ESportsBetHistory />  
+                              <ESportsBetHistory isPopup={true} />  
                             </div>
                         ) : selectedTab === 5 ? (
                           <div className="-mt-20px">
-                                <MinigameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false}  attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen1={setPopupOpen}/>
+                                <MinigameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false}  attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen1={setPopupOpen} isPopup={true}/>
                                 <Pagination page={page} setPage={setPage}/>   
                             </div>
                         ) : selectedTab === 6 ? (
                             <div className="-mt-20px">
-                                <ARGameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} />
+                              <ARGameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true} />
                                 <Pagination page={page} setPage={setPage}/>   
                             </div>
                           ) : selectedTab === 7 ? (
                             <div className="-mt-20px">
-                                <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} />
+                                <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true}/>
                                 <Pagination page={page} setPage={setPage}/>   
                             </div>
                         ) : selectedTab === 8 ? (
                             <div className="-mt-20px">
-                                <AllBetHistory />
+                                <AllBetHistory isPopup={true}/>
                                 <Pagination page={page} setPage={setPage}/>   
                             </div>
                         ) :(

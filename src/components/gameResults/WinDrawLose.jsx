@@ -3,14 +3,14 @@ import DateSearchBar from 'components/myPage/DateSearchBar';
 import MyPageTitle from 'components/myPage/MyPageTitle'
 import Pagination from 'components/myPage/Pagination';
 import React, { useState } from 'react'
-import Icon1 from '../../images/gameResults/horizontalMenu/icon_1.png'
-import Icon2 from '../../images/gameResults/horizontalMenu/icon_2.png'
-import Icon3 from '../../images/gameResults/horizontalMenu/icon_3.png'
-import Icon4 from '../../images/gameResults/horizontalMenu/icon_4.png'
-import Icon5 from '../../images/gameResults/horizontalMenu/icon_5.png'
-import Icon6 from '../../images/gameResults/horizontalMenu/icon_6.png'
-import Icon7 from '../../images/gameResults/horizontalMenu/icon_7.png'
-import Icon8 from '../../images/gameResults/horizontalMenu/icon_8.png'
+import Icon1 from '../../images/gameResults/horizontalMenu/icon_1_v2.png'
+import Icon2 from '../../images/gameResults/horizontalMenu/icon_2_v2.png'
+import Icon3 from '../../images/gameResults/horizontalMenu/icon_3_v2.png'
+import Icon4 from '../../images/gameResults/horizontalMenu/icon_4_v2.png'
+import Icon5 from '../../images/gameResults/horizontalMenu/icon_5_v2.png'
+import Icon6 from '../../images/gameResults/horizontalMenu/icon_6_v2.png'
+import Icon7 from '../../images/gameResults/horizontalMenu/icon_7_v2.png'
+import Icon8 from '../../images/gameResults/horizontalMenu/icon_8_v2.png'
 import GameDetails from './GameDetails';
 
 const WinDrawLose = ({pageTitle = "승무패"}) => {

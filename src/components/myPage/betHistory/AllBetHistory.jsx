@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import DateSearchBar from '../DateSearchBar'
 import AllHistoryTable from '../tables/AllHistoryTable'
 
-const AllBetHistory = () => {
+const AllBetHistory = ({ isPopup = false}) => {
 
     const tableArray = [
         {
@@ -52,7 +52,7 @@ const AllBetHistory = () => {
 
     return (
         <div className="w-full">
-            <DateSearchBar isLeagueSearch={false} />
+            <DateSearchBar isLeagueSearch={false} isPopup={isPopup}/>
             <div className="w-full h-full mt-20px">
                 <AllHistoryTable 
                     array={tableArray} 

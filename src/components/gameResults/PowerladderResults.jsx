@@ -1,5 +1,5 @@
 import React from 'react'
-import ClockIcon from '../../images/myPage/betHistory/clock.png'
+import ClockIcon from '../../images/myPage/betHistory/clock_v2.png'
 
 const PowerladderResults = ({title="파워사다리", icon}) => {
 
@@ -39,58 +39,63 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
         stat1 ="1.95", 
         stat3 ="1.95",
     }) => (
-        <div className="flex items-center w-full h-56px bg-gray-fefefe border-b border-gray-dddddd">
-            <div style={{width:"77px"}} className="flex justify-center font-roboto text-14 tracking-tight text-gray-r454545">211</div>
-            <div className="flex space-x-4px">
+        <div className="flex items-center w-full h-54px">
+            <div style={{width:"77px"}} className="flex justify-center font-roboto text-14 tracking-tight text-gray-c8c8c8">211</div>
+              <div className="flex space-x-4px">
                 <button 
-                    style={{
-                        width: "424px",
-                        textShadow: bet === "left" ? "1px 1px 1px #00000070" : "",
-                        backgroundColor: bet === "left" ? "#cb4343" : "#dddddd"
-                    }} 
-                    className="flex items-center justify-center h-36px rounded-lg"
+                  style={{
+                    width: "424px",
+                    textShadow: bet === "left" ? "1px 1px 1px #00000070" : "",
+                    background:"linear-gradient(to bottom, #4f4a41, #2f2c28)"
+                  }} 
+                  className="flex items-center justify-center h-36px rounded-4px shadow-btn p-px"
                 >
-                    <div 
-                    style={{width: "422px"}}
+                  <div 
+                  style={{
+                    width: "422px",
+                    background: bet === "left" 
+                    ? "linear-gradient(to bottom, #987959, #634d38 )":""}}
                     className={`${
-                        bet === "left" 
-                        ? "text-white border-red-ff7982 from-red-ff535f via-red-ff535f to-red-ee4e5a" 
-                        : "border-white from-gray-f9f9f9 via-gray-f9f9f9 to-gray-ebebeb text-gray-r454545"} 
-                        flex items-center justify-between h-34px rounded-lg border bg-gradient-to-b cursor-pointer px-10px pt-px`
-                    }>
-                        <span className="truncate w-108px text-left font-spoqaMedium tracking-tight text-14px">{team1}</span>
-                        <div className="flex items-center space-x-5px">
-                            <span className="font-roboto tracking-tight text-14px">{stat1}</span>
-                        </div>
-                    </div>
+                      bet === "left" 
+                      ? "text-golden-highLight" 
+                      : "bg-dark-252525 text-gray-c8c8c8"} 
+                      flex items-center justify-between h-34px rounded-3px px-10px pt-px`
+                  }>
+                      <span className="truncate w-108px text-left font-spoqaMedium tracking-tight text-14px">{team1}</span>
+                      <div className="flex items-center space-x-5px">
+                          <span className="font-roboto tracking-tight text-14px">{stat1}</span>
+                      </div>
+                  </div>
                 </button>
 
                 <button
-                    style={{textShadow: bet === "middle" ? "1px 1px 1px #00000070" : "",}} 
-                    className={`flex group items-center justify-center w-81px h-36px rounded-lg bg-gray-dddddd ${bet === "middle" ? "bg-red-cb4343" : "bg-gray-dddddd"}`}
+                    style={{textShadow: bet === "middle" ? "1px 1px 1px #00000070" : "",background:"linear-gradient(to bottom, #4f4a41, #2f2c28)"}} 
+                    className={`flex group items-center justify-center w-81px h-36px rounded-4px `}
                 >
-                    <div className={`${
-                        bet === "middle" 
-                        ? "text-white border-red-ff7982 from-red-ff535f via-red-ff535f to-red-ee4e5a" 
-                        : "border-white from-gray-f9f9f9 via-gray-f9f9f9 to-gray-ebebeb text-gray-r454545"}
-                        pt-px flex items-center justify-center h-34px w-79px rounded-lg border border-white bg-gradient-to-b from-gray-f9f9f9 via-gray-f9f9f9 to-gray-ebebeb cursor-pointer`}
+                  <div
+                    style={{background: bet === "middle" ? "linear-gradient(to bottom, #987959, #634d38 )" : ""}}
+                    className={`${
+                      bet === "middle" 
+                      ? "text-golden-highLight" 
+                      : "bg-dark-252525 text-gray-c8c8c8"}
+                      pt-px flex items-center justify-center h-34px w-79px rounded-3px cursor-pointer`}
                     >
-                        <span className="font-spoqaMedium text-gray-r454545 tracking-tight text-14px">VS</span>
+                        <span className="font-spoqaMedium  tracking-tight text-14px">VS</span>
                     </div>
                 </button>
 
-                <button style={{width: "424px"}} className={`${bet === "right" ? "bg-red-cb4343" : "bg-gray-dddddd"} flex group items-center justify-center h-36px rounded-lg bg-gray-dddddd`}>
+                <button style={{width: "424px",background:"linear-gradient(to bottom, #4f4a41, #2f2c28)"}} className={`flex group items-center justify-center h-36px rounded-4px`}>
                     <div
                     style={{
                         width: "422px",
                         textShadow: bet === "right" ? "1px 1px 1px #00000070" : "",
-                        backgroundColor: bet === "right" ? "#cb4343" : "#dddddd"
+                        background: bet === "right" ? "linear-gradient(to bottom, #987959, #634d38 )":""
                     }} 
                     className={`${
                         bet === "right" 
-                        ? "text-white border-red-ff7982 from-red-ff535f via-red-f8515d to-red-ee4e5a" 
-                        : "border-white from-gray-f9f9f9 via-gray-f9f9f9 to-gray-ebebeb text-gray-r454545"} 
-                        pt-px flex items-center justify-between h-34px rounded-lg border border-white bg-gradient-to-b from-gray-f9f9f9 via-gray-f9f9f9 to-gray-ebebeb cursor-pointer px-10px`}
+                        ? "text-golden-highLight" 
+                    : "bg-dark-252525 text-gray-c8c8c8"} 
+                        pt-px flex items-center justify-between h-34px rounded-3px cursor-pointer px-10px`}
                     >
                         <div className="flex items-center space-x-5px">
                             <span className="font-roboto tracking-tight text-14px">{stat3}</span>
@@ -106,8 +111,8 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
         return items.map(item => (
             <div 
                 key={item.id} 
-                style={{backgroundColor: item.id % 2 === 0 ? "#fefefe" : "#f7f9fc"}} 
-                className="flex items-center bg-gray-fefefe font-spoqa text-14px tracking-tight text-gray-r585858 h-56px w-full border-b border-gray-dddddd text-14px font-roboto tracking-tight text-gray-r454545"
+                style={{background: item.id % 2 === 0 ? "#323231" : "#2e2e2e"}} 
+                className="flex items-center   text-gray-c8c8c8 h-54px w-full border-b border-gray-252525 text-14px font-roboto tracking-tight "
             >
                 <CardContent bet={item.bet} team1={item.team1} team2={item.team2} />
             </div>
@@ -115,19 +120,18 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
     }
 
     const Table = ({array}) => (
-        <div className="flex flex-col shadow-subNavbar rounded-lg overflow-hidden">
-            <div style={{backgroundColor:"#3591d5"}} className="h-56px flex items-center justify-between pr-20px">    
+        <div className="flex flex-col rounded-4px shadow-subNavbar border-2 border-gray-473b35 overflow-hidden">
+            <div style={{background:"linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)"}} className="h-56px flex items-center justify-between pr-20px">    
                 <div className="flex items-center">
                     <img src={icon} alt="" className="ml-19px object-none" />
-                    <span className="text-white font-spoqaMedium text-20px ml-4px pt-3px">{title}</span>
+                    <span className="text-golden-highLight font-spoqaMedium text-20px ml-4px pt-3px">{title}</span>
                 </div>
                 
 
                 <div className="flex items-center">
                     <img src={ClockIcon} alt="" />
                     <span 
-                        style={{color: "#dae8f5"}}
-                        className="ml-5px font-spoqa text-16px tracking-tight text-white"
+                        className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight"
                     >
                         2021-06-29 15:45
                     </span>
@@ -138,8 +142,11 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
     )
 
     return (
-        <div style={{borderRadius:"1em"}} className="w-full shadow-subNavbar bg-gray-fafafa">
-            <div style={{height:"54px"}} className="w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-r454545">
+      <div
+        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+        className="rounded-4px shadow-table overflow-hidden p-px">
+        <div className="w-full rounded-4px bg-gray-323232 overflow-hidden">
+            <div style={{height:"53px"}} className="w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">
                 <div style={{marginLeft:"36px"}}>회차</div>
                 <div style={{marginLeft:"221px"}}>승(홈)</div>
                 <div style={{marginLeft:"233px"}}>VS</div>
@@ -150,6 +157,7 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
                 <Table array={title === "스피드키노" ? ExampleArray5 : ExampleArray2} />
                 <Table array={title === "스피드키노" ? ExampleArray6 : ExampleArray3} />
             </div>
+        </div>
         </div>
     )
 }
