@@ -1,5 +1,5 @@
 import React from 'react'
-import SlotJackpot from '../../images/slot_jackpot.png'
+import SlotJackpot from '../../images/slot_jackpot.gif'
 import Type1Bg from '../../images/type_1_bg.png'
 import Slot1 from '../../images/slot1.png'
 import Slot2 from '../../images/slot2.png'

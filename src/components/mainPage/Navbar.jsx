@@ -72,7 +72,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	}
 
 	const CountryButton = (
-		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-6px hover:brightness-110 filter text-12px text-yellow-ad9e8c cursor-pointer">
+		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-6px hover:brightness-110 filter text-12px text-yellow-ad9e8c cursor-pointer -mt-px">
 			<img className="object-none mr-7px" src={country === "KR" ? Koreaflag : UKflag} alt="flag"></img>
 			<label className="font-spoqaBold cursor-pointer">{country}</label>
 			<img className="object-none ml-2px" src={ArrowDown} alt="flag"></img>
@@ -102,33 +102,33 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 			<button className='flex items-center h-12px'>
 				<img src={Nav1} alt="" className='mr-3px object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
-					Lv3마이프로틴화이팅님
+					Lv3 마이프로틴화이팅님
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav2} alt="" className='mr-3px object-none'/>
+				<img src={Nav2} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c',WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					10,000,000원
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav3} alt="" className='mr-3px object-none'/>
+				<img src={Nav3} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					12,500P
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav4} alt="" className='mr-3px object-none'/>
+				<img src={Nav4} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쪽지 2
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav5} alt="" className='mr-3px object-none'/>
+				<img src={Nav5} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쿠폰 3
 				</p>
@@ -147,12 +147,12 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 						{isAuthenticated ? (
 							<div className='absolute right-0 bottom-0 flex items-center -mb-3px'>
 								<button 
-									style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #000000', color:'#ffdfbd'}} 
+									style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #000000', color:'#ffdfbd'}} 
 									className="flex items-center justify-center text-white text-14px font-spoqaMedium filter hover:brightness-125 mr-5px"
 								>
 									총판페이지
 								</button>
-								<div style={{backgroundColor:'#36322c'}} className='w-px h-12px -mr-2px' />
+								<div style={{backgroundColor:'#36322c'}} className='w-px h-12px -mr-px' />
 								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
 									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
 								</DropDownControls>
@@ -168,7 +168,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 						)}
 	
 					</div>
-					<div style={{height:'44px'}} className="relative flex justify-between flex-row flex-shrink-0">
+					<div style={{height:'44px'}} className="relative flex justify-between flex-row flex-shrink-0 -mt-px">
 						<div className="flex items-center flex-shrink-0 -ml-13px">
 							<TabsList items={tabsArray} />
 						</div>
