@@ -6,7 +6,7 @@ import DropDownControls from '../dropdowns/DropDownControls'
 import CountryDropDown from '../dropdowns/CountryDropDown'
 import PopupControls from '../popups/PopupControls'
 import LoginPopup from '../popups/LoginPopup'
-import Nav1 from '../../images/navBar/1.png'
+import Nav13 from '../../images/navBar/1_3.png'
 import Nav2 from '../../images/navBar/2.png'
 import Nav3 from '../../images/navBar/3.png'
 import Nav4 from '../../images/navBar/4.png'
@@ -60,10 +60,6 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 					setHoveredTab(item.id)
 					setSelectedTab(item.id)
 				}}
-				onMouseLeave={() => {
-					item.id > 6 
-					&& setSelectedTab(null)
-				}}
 			>
 				<span style={{marginBottom:'3px'}} className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
 				<div style={{backgroundColor: selectedTab === item.id ? "#fcd6a8" : ""}} className={selectedTab === item.id ? selectedLineClass : lineClass}></div>
@@ -100,7 +96,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	const LoggedInComponent = () => (
 		<div className='space-x-5px flex'>
 			<button className='flex items-center h-12px'>
-				<img src={Nav1} alt="" className='mr-3px object-none'/>
+				<img src={Nav13} alt="" className='mr-3px object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					Lv3 마이프로틴화이팅님
 				</p>
@@ -160,7 +156,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 								<img src={LogoutIcon} alt="" className='object-none ml-11px mr-4px cursor-pointer' />
 							</div>
 						) : (
-							<div className='absolute right-0 bottom-0'>
+							<div className='absolute right-0 bottom-px'>
 								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
 									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
 								</DropDownControls>

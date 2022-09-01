@@ -48,11 +48,11 @@ const MainPage = ({isAuthenticated, setAuthenticated}) => {
 			</div>
 
 			<div className="w-screen flex flex-col z-10">
-				<div className="absolute top-0 flex justify-start limit:justify-center items-center w-screen">
+				<div className="absolute -top-px flex justify-start limit:justify-center items-center w-screen">
 					<Carousel />
 				</div>
 
-				<div style={{marginTop:'446px'}} className="flex-shrink-0 z-30 flex items-end justify-center">
+				<div style={{marginTop:'445px'}} className="flex-shrink-0 z-30 flex items-end justify-center">
 					<NoticeBanner />
 				</div>
 			</div>

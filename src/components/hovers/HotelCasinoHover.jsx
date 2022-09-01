@@ -4,9 +4,7 @@ import img1hl from '../../images/navbarHover/4_1_hl.png'
 import img2 from '../../images/navbarHover/4_2.png'
 import img2hl from '../../images/navbarHover/4_2_hl.png'
 import img3 from '../../images/navbarHover/4_3.png'
-import img3hl from '../../images/navbarHover/4_3_hl.png'
 import img4 from '../../images/navbarHover/4_4.png'
-import img4hl from '../../images/navbarHover/4_4_hl.png'
 import Expand from 'react-expand-animated'
 
 const HotelCasinoHover = ({ selection }) => {
@@ -34,7 +32,7 @@ const HotelCasinoHover = ({ selection }) => {
     {
       id: 2,
       background: img3,
-      highlight: img3hl,
+      highlight: img3,
       imgText: "호텔카지노",
       btnText: "준비중",
       class: "bg-opacity-25",
@@ -43,7 +41,7 @@ const HotelCasinoHover = ({ selection }) => {
     {
       id: 3,
       background: img4,
-      highlight: img4hl,
+      highlight: img4,
       imgText: "호텔카지노",
       btnText: "준비중",
       class: "bg-opacity-25",
@@ -70,7 +68,7 @@ const HotelCasinoHover = ({ selection }) => {
           ) : (
             <button style={{ width: '89px', height: '26px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className={`p-px filter hover:brightness-125`}>
               <div style={{ borderRadius: '2px', background: isHover === item.id ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)' }} className='w-full h-full flex items-center justify-center'>
-                <p style={{ color: '#ffdfbd', textShadow: "0 0 3px #00000090" }} className="text-13px font-spoqaMedium tracking-tight">게임시작</p>
+                <p style={{ color: '#ffdfbd', textShadow: "0 0 3px #00000090" }} className="text-13px font-spoqaMedium tracking-tight">{item.btnText}</p>
               </div>
             </button>
           )}

@@ -47,11 +47,11 @@ const SlotGame = () => {
 
       <div style={{ height: '306px' }} className="flex flex-col justify-between">
         <div className="flex items-start">
-          <div className='mr-5px flex-shrink-0 relative'>
+          <div className='mr-5px flex-shrink-0 relative flex justify-center'>
             <img src={SlotJackpot} alt="" className='object-none' />
             <div
-            style={{background: '-webkit-linear-gradient(#5a4a29, #fcefad, #5a4a29)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontSize:'30px', letterSpacing: '0.1rem'}}
-            className='absolute z-30 bottom-40px text-white font-spoqaBold right-50px'>₩1,234,567,890</div>
+              style={{ background: '-webkit-linear-gradient(#5a4a29, #fcefad, #5a4a29)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontSize: '30px', letterSpacing: '0.1rem' }}
+              className='absolute z-30 bottom-40px text-white font-spoqaBold'>₩1,234,567,890</div>
           </div>
           <div className='flex space-x-2px'>
             <CardType1 image={Slot1} text="Titan Thunder Wrath example" />
