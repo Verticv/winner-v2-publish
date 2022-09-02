@@ -6,7 +6,7 @@ import DropDownControls from '../dropdowns/DropDownControls'
 import CountryDropDown from '../dropdowns/CountryDropDown'
 import PopupControls from '../popups/PopupControls'
 import LoginPopup from '../popups/LoginPopup'
-import Nav1 from '../../images/navBar/1.png'
+import Nav13 from '../../images/navBar/1_3.png'
 import Nav2 from '../../images/navBar/2.png'
 import Nav3 from '../../images/navBar/3.png'
 import Nav4 from '../../images/navBar/4.png'
@@ -60,10 +60,6 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 					setHoveredTab(item.id)
 					setSelectedTab(item.id)
 				}}
-				onMouseLeave={() => {
-					item.id > 6 
-					&& setSelectedTab(null)
-				}}
 			>
 				<span style={{marginBottom:'3px'}} className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
 				<div style={{backgroundColor: selectedTab === item.id ? "#fcd6a8" : ""}} className={selectedTab === item.id ? selectedLineClass : lineClass}></div>
@@ -72,7 +68,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	}
 
 	const CountryButton = (
-		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-6px hover:brightness-110 filter text-12px text-yellow-ad9e8c cursor-pointer">
+		<div style={{height:'22px', color:'#ffdfbd'}} className="flex items-center px-6px hover:brightness-110 filter text-12px text-yellow-ad9e8c cursor-pointer -mt-px">
 			<img className="object-none mr-7px" src={country === "KR" ? Koreaflag : UKflag} alt="flag"></img>
 			<label className="font-spoqaBold cursor-pointer">{country}</label>
 			<img className="object-none ml-2px" src={ArrowDown} alt="flag"></img>
@@ -100,35 +96,35 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	const LoggedInComponent = () => (
 		<div className='space-x-5px flex'>
 			<button className='flex items-center h-12px'>
-				<img src={Nav1} alt="" className='mr-3px object-none'/>
+				<img src={Nav13} alt="" className='mr-3px object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
-					Lv3마이프로틴화이팅님
+					Lv3 마이프로틴화이팅님
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav2} alt="" className='mr-3px object-none'/>
+				<img src={Nav2} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c',WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					10,000,000원
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav3} alt="" className='mr-3px object-none'/>
+				<img src={Nav3} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					12,500P
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav4} alt="" className='mr-3px object-none'/>
+				<img src={Nav4} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쪽지 2
 				</p>
 			</button>
 			<div style={{backgroundColor:'#36322c'}} className='w-px h-12px' />
 			<button className='flex items-center h-12px'>
-				<img src={Nav5} alt="" className='mr-3px object-none'/>
+				<img src={Nav5} alt="" className=' object-none'/>
 				<p style={{color:'#ad9e8c', WebkitTextStroke:"0.2px"}} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쿠폰 3
 				</p>
@@ -137,7 +133,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	)
 
 	return (
-		<div style={{borderBottomWidth:'1px', borderBottomColor:'#414141'}} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit1920:items-center'>
+		<div style={{borderBottomWidth:'1px', borderBottomColor:'#414141'}} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit1600:items-center limit1920:items-center'>
 			<div style={{width:'1260px'}} className="z-50">
 
 				<div style={{height:'103px'}} className="">
@@ -147,12 +143,12 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 						{isAuthenticated ? (
 							<div className='absolute right-0 bottom-0 flex items-center -mb-3px'>
 								<button 
-									style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom right, #a67c52, #826140)", textShadow:'0px 0px 6px #000000', color:'#ffdfbd'}} 
+									style={{width:'104px', height:'28px', borderRadius:'2px', background:"linear-gradient(to bottom, #a67c52, #826140)", textShadow:'0px 0px 6px #000000', color:'#ffdfbd'}} 
 									className="flex items-center justify-center text-white text-14px font-spoqaMedium filter hover:brightness-125 mr-5px"
 								>
 									총판페이지
 								</button>
-								<div style={{backgroundColor:'#36322c'}} className='w-px h-12px -mr-2px' />
+								<div style={{backgroundColor:'#36322c'}} className='w-px h-12px -mr-px' />
 								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
 									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
 								</DropDownControls>
@@ -160,7 +156,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 								<img src={LogoutIcon} alt="" className='object-none ml-11px mr-4px cursor-pointer' />
 							</div>
 						) : (
-							<div className='absolute right-0 bottom-0'>
+							<div className='absolute right-0 bottom-px'>
 								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
 									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
 								</DropDownControls>
@@ -168,7 +164,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 						)}
 	
 					</div>
-					<div style={{height:'44px'}} className="relative flex justify-between flex-row flex-shrink-0">
+					<div style={{height:'44px'}} className="relative flex justify-between flex-row flex-shrink-0 -mt-px">
 						<div className="flex items-center flex-shrink-0 -ml-13px">
 							<TabsList items={tabsArray} />
 						</div>
