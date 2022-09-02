@@ -1,9 +1,8 @@
 import Footer from 'components/mainPage/Footer';
-import Footer2 from 'components/mainPage/Footer2';
 import DirectoryComponent from 'components/myPage/DirectoryComponent';
 import LeftMenu from 'components/myPage/LeftMenu';
 import Navbar from 'components/mainPage/Navbar'
-import NoticeBanner from 'components/mainPage/NoticeBanner'
+// import NoticeBanner from 'components/mainPage/NoticeBanner'
 import React, { useState } from 'react'
 import { Route, useLocation } from 'react-router';
 import Icon1 from '../images/cscenter/leftMenu/icon_1.png'
@@ -11,11 +10,6 @@ import Icon2 from '../images/cscenter/leftMenu/icon_2.png'
 import Icon3 from '../images/cscenter/leftMenu/icon_3.png'
 import Icon4 from '../images/cscenter/leftMenu/icon_4.png'
 import Icon5 from '../images/cscenter/leftMenu/icon_5.png'
-import IconHighlight1 from '../images/cscenter/leftMenu/icon_1_highlight.png'
-import IconHighlight2 from '../images/cscenter/leftMenu/icon_2_highlight.png'
-import IconHighlight3 from '../images/cscenter/leftMenu/icon_3_highlight.png'
-import IconHighlight4 from '../images/cscenter/leftMenu/icon_4_highlight.png'
-import IconHighlight5 from '../images/cscenter/leftMenu/icon_5_highlight.png'
 import CsPageBanner from '../images/cscenter/cscenter_banner.png'
 import Contact from 'components/cscenter/Contact';
 import ContactView from 'components/cscenter/ContactView';
@@ -29,14 +23,14 @@ import MinigamePolicy from 'components/cscenter/MinigamePolicy';
 const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
 
     const LeftMenuArray = [
-        { text: "문의하기", icon: Icon1, iconHighlight: IconHighlight1, id: 0, path: "/cscenter/contact/all", mainPath: "/cscenter/contact" },
-        { text: "공지사항", icon: Icon2, iconHighlight: IconHighlight2, id: 1, path: "/cscenter/announcement", mainPath: "/cscenter/announcement" },
-        { text: "자주묻는질문", icon: Icon3, iconHighlight: IconHighlight3, id: 2, path: "/cscenter/faq/all", mainPath: "/cscenter/faq" },
-        { text: "계좌문의", icon: Icon4, iconHighlight: IconHighlight4, id: 3, path: "/cscenter/inquiry", mainPath: "/cscenter/inquiry" },
+        { text: "문의하기", icon: Icon1, iconHighlight: Icon1, id: 0, path: "/cscenter/contact/all", mainPath: "/cscenter/contact" },
+        { text: "공지사항", icon: Icon2, iconHighlight: Icon2, id: 1, path: "/cscenter/announcement", mainPath: "/cscenter/announcement" },
+        { text: "자주묻는질문", icon: Icon3, iconHighlight: Icon3, id: 2, path: "/cscenter/faq/all", mainPath: "/cscenter/faq" },
+        { text: "계좌문의", icon: Icon4, iconHighlight: Icon4, id: 3, path: "/cscenter/inquiry", mainPath: "/cscenter/inquiry" },
         { 
             text: "베팅규정",
             icon: Icon5, 
-            iconHighlight: IconHighlight5, 
+            iconHighlight: Icon5, 
             id: 4, 
             path: "/cscenter/policy/sportsgame/soccer", 
             path_1: "/cscenter/policy/sportsgame/basketball", 
@@ -62,15 +56,15 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
     const [selectedSubTab, setSelectedSubTab] = useState(location.pathname)
 
     return (
-        <div className="relative flex flex-col justify-center limit:overflow-x-hidden">
+        <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
 
             <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
-                <NoticeBanner />
+                {/* <NoticeBanner /> */}
                 <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
             </div>
 
 
-            <div className="flex flex-col items-start limit:items-center limit1600:mt-92px mt-122px w-full h-full">
+            <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
 
                 <Route path="/cscenter/contact/all*">
                     <DirectoryComponent 
@@ -161,8 +155,7 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                     />
                 </Route>
 
-                <div className="relative w-default h-225px">
-                    <label style={{color:"#974458"}} className="text-36px font-spoqaMedium text-blue-r325685 absolute right-0 bottom-0 z-20 mb-86px mr-50px">고객센터</label>
+                <div className="relative w-default h-125px">
                     <img className="z-10" src={CsPageBanner} alt="" />
                 </div>
                 
@@ -208,7 +201,6 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                 </div>
 
                 <div>
-                    <Footer2 />
                     <Footer />
                 </div>
 

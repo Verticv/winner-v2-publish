@@ -3,7 +3,8 @@ import { useHistory } from 'react-router';
 import Reflect from '../../images/myPage/betHistory/Reflect.png'
 const HorizontalMenu = ({
     itemsArray, 
-    setSelectedSubTab = null
+    setSelectedSubTab = null,
+    showSub = true
 }) => {
 
     const history = useHistory();
@@ -62,7 +63,7 @@ const HorizontalMenu = ({
             </div>
           </div>
           </button>
-          {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 5 && selectedTab !== 9 && selectedTab === item.id) && (
+          {(showSub && selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 5 && selectedTab !== 9 && selectedTab === item.id) && (
           <div className={`absolute bottom-0 left-40px w-20px -mb-12px overflow-hidden inline-block `}>
             <div style={{
               background:'#323231'

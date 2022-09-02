@@ -1,15 +1,25 @@
 import MyPageTitle from 'components/myPage/MyPageTitle'
 import React, { useState } from 'react'
-import Icon1 from '../../images/myPage/betHistory/ico_1.png'
-import Icon2 from '../../images/myPage/betHistory/ico_2.png'
-import Icon3 from '../../images/myPage/betHistory/ico_3.png'
-import Icon4 from '../../images/myPage/betHistory/ico_4.png'
-import Icon5 from '../../images/myPage/betHistory/ico_5.png'
-import Icon6 from '../../images/myPage/betHistory/ico_6.png'
-import Icon7 from '../../images/myPage/betHistory/ico_7.png'
-import Icon8 from '../../images/cscenter/8.png'
-import Icon9 from '../../images/cscenter/9.png'
-import Icon10 from '../../images/cscenter/10.png'
+import Icon1 from '../../images/myPage/betHistory/ico_1_v2.png'
+import Icon2 from '../../images/myPage/betHistory/ico_2_v2.png'
+import Icon3 from '../../images/myPage/betHistory/ico_3_v2.png'
+import Icon4 from '../../images/myPage/betHistory/ico_4_v2.png'
+import Icon5 from '../../images/myPage/betHistory/ico_5_v2.png'
+import Icon6 from '../../images/myPage/betHistory/ico_6_v2.png'
+import Icon7 from '../../images/myPage/betHistory/ico_7_v2.png'
+import Icon8 from '../../images/cscenter/ico_8.png'
+import Icon9 from '../../images/cscenter/ico_9.png'
+import Icon10 from '../../images/cscenter/ico_10.png'
+import IconHighlight1 from '../../images/myPage/betHistory/Icon1_On.png'
+import IconHighlight2 from '../../images/myPage/betHistory/Icon2_On.png'
+import IconHighlight3 from '../../images/myPage/betHistory/Icon3_On.png'
+import IconHighlight4 from '../../images/myPage/betHistory/Icon4_On.png'
+import IconHighlight5 from '../../images/myPage/betHistory/Icon5_On.png'
+import IconHighlight6 from '../../images/myPage/betHistory/Icon6_On.png'
+import IconHighlight7 from '../../images/myPage/betHistory/Icon7_On.png'
+import IconHighlight8 from '../../images/myPage/betHistory/Icon8_On.png'
+import IconHighlight9 from '../../images/myPage/betHistory/Icon9_On.png'
+import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
 import HorizontalMenu from 'components/horizontalMenus/HorizontalMenu'
 import ArrowDown from '../../images/myPage/leftMenu/arr_down.png'
 import QIcon from '../../images/cscenter/q.png'
@@ -18,16 +28,16 @@ import AIcon from '../../images/cscenter/a.png'
 const Faq = () => {
 
     const tabsArray = [
-        { text: "전체", icon: Icon1, id: 0, path: "/cscenter/faq/all" },
-        { text: "라이브카지노", icon: Icon2, id: 1, path: "/cscenter/faq/live-casino" },
-        { text: "슬롯", icon: Icon3, id: 2, path: "/cscenter/faq/slot" },
-        { text: "스포츠", icon: Icon4, id: 3, path: "/cscenter/faq/sports" },
-        { text: "e-스포츠", icon: Icon5, id: 4, path: "/cscenter/faq/e-sports" },
-        { text: "미니게임", icon: Icon6, id: 5, path: "/cscenter/faq/minigame" },
-        { text: "키론가상게임", icon: Icon7, id: 6, path: "/cscenter/faq/ar-game" },
-        { text: "충전/환전", icon: Icon8, id: 7, path: "/cscenter/faq/transaction" },
-        { text: "베팅관련", icon: Icon9, id: 8, path: "/cscenter/faq/about-betting" },
-        { text: "기타", icon: Icon10, id: 9, path: "/cscenter/faq/other" },
+        { text: "전체", icon: Icon1, iconHighlight: IconHighlight1, id: 0, path: "/cscenter/faq/all" },
+        { text: "라이브카지노", icon: Icon2, iconHighlight: IconHighlight2, id: 1, path: "/cscenter/faq/live-casino" },
+        { text: "슬롯", icon: Icon3, iconHighlight: IconHighlight3, id: 2, path: "/cscenter/faq/slot" },
+        { text: "스포츠", icon: Icon4, iconHighlight: IconHighlight4, id: 3, path: "/cscenter/faq/sports" },
+        { text: "e-스포츠", icon: Icon5, iconHighlight: IconHighlight5, id: 4, path: "/cscenter/faq/e-sports" },
+        { text: "미니게임", icon: Icon6, iconHighlight: IconHighlight6, id: 5, path: "/cscenter/faq/minigame" },
+        { text: "키론가상게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/cscenter/faq/ar-game" },
+        { text: "충전/환전", icon: Icon8, iconHighlight: IconHighlight8, id: 7, path: "/cscenter/faq/transaction" },
+        { text: "베팅관련", icon: Icon9, iconHighlight: IconHighlight9, id: 8, path: "/cscenter/faq/about-betting" },
+        { text: "기타", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/faq/other" },
     ];
 
     const questionArray = [
@@ -50,34 +60,36 @@ const Faq = () => {
     const [openedCell, setOpenedCell] = useState(null)
 
     const QuestionCell = ({type, text, cellId}) => (
-        <>
+      <>
             <button 
-                style={{zIndex: 2}}
-                className="bg-white relative rounded-full shadow-subNavbar w-full h-56px flex items-center px-20px justify-between mb-10px border z-20 group hover:shadow-plain" 
+                style={{zIndex: 2,background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)"}}
+                className="relative rounded-4px shadow-table w-full h-56px flex items-center p-px  mb-10px  z-20 group hover:shadow-plain" 
+
                 onClick={() => {
                     if (openedCell === cellId) {
                         setOpenedCell(null) 
                     } else {
                         setOpenedCell(cellId)
                     }
-                }}
-            >
-                <img className="object-none mt-3px" src={QIcon} alt="" />
-                <div className="w-full h-full px-18px flex items-center space-x-9px"> 
-                    <div 
-                        style={{backgroundColor: "#8494a4", width: "89px"}} 
-                        className="h-29px rounded-full flex items-center justify-center text-white text-14px font-spoqaMedium tracking-tight pt-2px"
-                    > 
-                        {type}
-                    </div>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 group-hover:text-black">{text}</p>
-                </div>
-                <img className={`${openedCell === cellId && "transform rotate-180"}`} src={openedCell === cellId ? ArrowDown : ArrowDown} alt="" />
+                }}>
+                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden h-56px flex items-center px-20px justify-between">
+                  <img className="object-none mt-3px" src={QIcon} alt="" />
+                  <div className="w-full h-full px-18px flex items-center space-x-9px"> 
+                      <div 
+                          style={{backgroundColor: "#494745", width: "89px"}} 
+                          className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight pt-2px"
+                      > 
+                          {type}
+                      </div>
+                      <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 group-hover:text-black">{text}</p>
+                  </div>
+                  <img className={`${openedCell === cellId && "transform rotate-180"}`} src={openedCell === cellId ? ArrowDown : ArrowDown} alt="" />
+              </div>    
             </button>
             {openedCell === cellId && (
                 <div 
-                    style={{height: "421px", zIndex: 1, backgroundColor: "#fcfcfc" }} 
-                    className="flex h-full items-start justify-start w-full rounded-3xl -mt-64px z-0 mb-14px border border-gray-dddddd"
+                    style={{height: "421px", zIndex: 1, backgroundColor: "#252525" }} 
+                    className="flex h-full items-start justify-start w-full rounded-4px -mt-64px z-0 mb-14px border border-black"
                 >
                     <img 
                         style={{marginTop: "68px"}} 
@@ -86,36 +98,36 @@ const Faq = () => {
                         alt="" 
                     />
                     <div className="flex flex-col">
-                        <div style={{marginTop: "82px"}} className="ml-16px h-16px flex items-center text-16px font-spoqaMedium tracking-tight text-gray-r585858">
-                            <p style={{color: "#2980b9"}} className="mr-3px" >
+                        <div style={{marginTop: "82px",color:'#c1c1c1'}} className="ml-16px h-16px flex items-center text-16px font-spoqaMedium tracking-tight ">
+                            <p style={{color: "#4a90f0"}} className="mr-3px" >
                                 No.1
                             </p> 
                             그 이상.! 최고를 넘어선 『 Winner 』입니다.  ☞ 첫, 매충 10% 포인트를 받지 않을시 모든게
                         </div>
 
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-34px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px">
                             {BodyText1.split('\n').map((item, i) => 
                                 <p key={i} className={`flex items-center h-14px`}>{item}</p>
                             )}
                         </div>
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-10px flex items-center h-14px">
-                            - 스포츠 : <p style={{color: "#c0392b"}} className="mx-3px">두폴더 이상 </p> 롤링 100% 최대 30만원 
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
+                            - 스포츠 : <p style={{color: "#e65454"}} className="mx-3px">두폴더 이상 </p> 롤링 100% 최대 30만원 
                         </div>
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-10px flex items-center h-14px">
-                            - 스포츠단폴더, 키론가상게임, 미니게임, 카지노 : <p style={{color: "#c0392b"}} className="mx-3px">이용불가</p>
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
+                            - 스포츠단폴더, 키론가상게임, 미니게임, 카지노 : <p style={{color: "#e65454"}} className="mx-3px">이용불가</p>
                         </div>
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-10px flex items-center h-14px">
-                            - 스포츠 2폴더 이상 100% 롤링 후 이용 가능 스포츠 단폴더, 타 게임 이용 가능하며, 스포츠 2폴더 100% 롤링 전 타게임 이용시 보유금 <p style={{color: "#c0392b"}} className="mx-3px">전액 몰수처리</p>
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
+                            - 스포츠 2폴더 이상 100% 롤링 후 이용 가능 스포츠 단폴더, 타 게임 이용 가능하며, 스포츠 2폴더 100% 롤링 전 타게임 이용시 보유금 <p style={{color: "#e65454"}} className="mx-3px">전액 몰수처리</p>
                         </div>
                            
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-34px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px">
                             ※ 모든게임의 롤링적용시점은 게임이 끝나서 마감처리된 때입니다. 이후에 출금신청해주셔야 처리가능합니다.
                         </div>
 
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-34px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px">
                             언제나 고객에게 최상의 서비스 제공을 할 수 있도록 노력하는 『 Winner 』가 되겠습니다.
                         </div>
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-10px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
                             감사합니다.
                         </div>
                     </div>
@@ -137,7 +149,7 @@ const Faq = () => {
             <MyPageTitle title="자주묻는질문" />
 
             <div className="relative w-full mt-20px">
-                <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} />
+                <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} showSub={false} />
             </div>
 
             <div className="mt-20px mb-90px">

@@ -15,7 +15,9 @@ const HorizontalMenu10 = ({
                 key={item.id} 
                 style={{
                     height:"78px",
-                    background: "linear-gradient(to bottom, #51504e, #292929)",
+                    background: pathname === item.path 
+                    ?'linear-gradient( to top, #62553f, #dabe82)'
+                    :'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
                     boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5)'
                 }}
                 className={`relative overflow-hidden h-78px w-full rounded-4px flex items-end`} 
@@ -61,7 +63,7 @@ const HorizontalMenu10 = ({
     }
 
     return (
-        <div className="flex w-full h-80px space-x-3px justify-between pl-4px pr-4px">
+        <div className="flex w-full h-80px space-x-3px justify-between px-4px">
             <TabsList items={itemsArray} />
         </div>
     )

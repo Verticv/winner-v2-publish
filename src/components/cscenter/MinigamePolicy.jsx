@@ -6,8 +6,8 @@ import Icon1 from '../../images/cscenter/minigame/1.png'
 import Icon2 from '../../images/cscenter/minigame/2.png'
 import Icon3 from '../../images/cscenter/minigame/3.png'
 import Icon4 from '../../images/cscenter/minigame/4.png'
-import PowerballPolicy from '../../images/cscenter/minigame/powerball_policy.png'
-import PowerladderPolicy from '../../images/cscenter/minigame/powerladder_policy.png'
+import PowerballPolicy from '../../images/cscenter/minigame/powerball_policy_v2.png'
+import PowerladderPolicy from '../../images/cscenter/minigame/powerladder_policy_v2.png'
 import SpeedKinoPolicy from '../../images/cscenter/minigame/speedkino_policy.png'
 
 const MinigamePolicy = () => {
@@ -29,24 +29,26 @@ const MinigamePolicy = () => {
 
             
 
-            <div style={{paddingTop:"41px", paddingBottom:"41px", paddingLeft:"42px"}} className="mt-28px rounded-xl shadow-subNavbar">
-
-                <Route path="/cscenter/policy/minigame/powerball">
-                    <img src={PowerballPolicy} alt="" />
-                </Route>
-                <Route path="/cscenter/policy/minigame/powerladder">
-                    <img src={PowerladderPolicy} alt="" />
-                </Route>
-                <Route path="/cscenter/policy/minigame/speedkino">
-                    <img src={SpeedKinoPolicy} alt="" />
-                </Route>
-                <Route path="/cscenter/policy/minigame/kinoladder">
-                    <img src={PowerladderPolicy} alt="" />
-                </Route>
-            </div>
-
-            <div className="mt-60px" />
-
+           
+            <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-28px"
+              style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+              >
+                <div  style={{paddingTop:"41px", paddingBottom:"41px", paddingLeft:"42px"}} className="w-full bg-gray-323232 rounded-4px overflow-hidden">
+                  <Route path="/cscenter/policy/minigame/powerball">
+                      <img src={PowerballPolicy} alt="" />
+                  </Route>
+                  <Route path="/cscenter/policy/minigame/powerladder">
+                      <img src={PowerladderPolicy} alt="" />
+                  </Route>
+                  <Route path="/cscenter/policy/minigame/speedkino">
+                      <img src={SpeedKinoPolicy} alt="" />
+                  </Route>
+                  <Route path="/cscenter/policy/minigame/kinoladder">
+                      <img src={PowerladderPolicy} alt="" />
+                  </Route>
+                </div>
+              </div>
+              <div className="mt-60px" />
         </div>
     )
 }

@@ -4,11 +4,11 @@ const SportsGamePolicyTable2 = ({array}) => {
 
     function Cells({ items }) {     
         return items.map(item => (
-            <tr className="bg-gray-fefefe font-spoqa text-14px tracking-tight text-gray-r585858 h-56px w-full border-b border-gray-dddddd">
+            <tr className="bg-gray-323232 font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525">
                 <td style={{width: "248px"}} className="font-spoqaMedium h-56px text-center pl-20px flex justify-around items-center">
                     <p style={{color: item.color}}>{item.title}</p>
                     {item.title2 && (
-                        <p>{item.title2}</p>
+                        <p style={{color: '#929292'}}>{item.title2}</p>
                     )}
                 </td>
                 <td style={{width: "792px", WebkitTextStroke:"0.2px"}} className="h-56px pl-20px -space-y-4px">
@@ -21,17 +21,21 @@ const SportsGamePolicyTable2 = ({array}) => {
 
     
     return (
-        <table style={{borderRadius:"1em"}} className="shadow-subNavbar overflow-hidden">
-            <thead className="bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd">
-                <tr>
-                    <td style={{width: "248px"}} className="text-center pl-20px">타입 및 경기시간</td>
-                    <td style={{width: "792px"}} className="text-center">결과적용기준</td>
-                </tr>
-            </thead>
-            <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
-                <Cells items={array} />
-            </tbody>
-        </table>     
+        <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
+          style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)"}}
+        >
+          <table className="w-full bg-gray-323232 rounded-4px overflow-hidden">
+              <thead className="bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-55px border-b border-gray-252525">
+                  <tr>
+                      <td style={{width: "248px"}} className="text-center pl-20px">타입 및 경기시간</td>
+                      <td style={{width: "792px"}} className="text-center">결과적용기준</td>
+                  </tr>
+              </thead>
+              <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
+                  <Cells items={array} />
+              </tbody>
+          </table>     
+        </div>
     )
 }
 

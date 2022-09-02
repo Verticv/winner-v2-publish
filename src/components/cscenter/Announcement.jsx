@@ -12,7 +12,7 @@ const Announcement = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(true)
     const [selectedCarrier, setSelectedCarrier] = useState("제목")
 
-    const dropDownCellClass = "flex w-120px h-40px py-2px bg-white items-center hover:bg-blue-lightGradLight px-14px"
+    const dropDownCellClass = "flex w-120px h-40px py-2px bg-gray-1f1f1e items-center hover:bg-brown-r3d3934 px-14px"
 
 
 
@@ -34,19 +34,19 @@ const Announcement = () => {
     )
 
     const dropdownButton = (
-        <div className="flex w-120px h-42px bg-white rounded-md border border-gray-dddddd group">
+        <div className="flex w-120px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 group">
             <input  className="w-0 text-16px"/>
             <div
-                className="flex w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" 
+                className="flex w-full text-gray-ccc2b6 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" 
             >
-                <label className="ml-14px cursor-pointer group-hover:text-black">{selectedCarrier}</label>
+                <label className="ml-14px cursor-pointer group-hover:text-gray-r8c8c8c">{selectedCarrier}</label>
                 <img className="w-10px h-6px object-contain mr-10px" src={DownArrowIcon} alt="arrow" /> 
             </div>
         </div>
     )
 
     const InboxSearch = (
-        <div className="h-64px w-full bg-gray-f9f9f9 rounded-2xl border border-gray-dddddd flex items-center justify-center space-x-10px">
+        <div className="h-64px w-full bg-gray-2e2e2e rounded-4px  flex items-center justify-center space-x-10px">
             <DropDownControls 
                 buttonChild={dropdownButton} 
                 isDropdownOpen={isDropdownOpen} 
@@ -55,13 +55,15 @@ const Announcement = () => {
                 {searchDropdown}
             </DropDownControls>
 
-            <div className="flex w-381px h-42px bg-white rounded-md border border-gray-dddddd">
+            <div className="flex w-381px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040">
                 <input 
-                    className="pl-11px rounded-md placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight"
+                    className="pl-11px rounded-md placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a"
                     placeholder="검색어를 입력해 주세요"
                 />
-                <button className="flex items-center justify-center w-42px h-42px rounded-md bg-gradient-to-b from-gray-r555555 via-gray-r555555 to-gray-r333333 -mt-px -mr-px flex-shrink-0 hover:opacity-75">
-                    <img src={SearchIcon} alt=""/>
+                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  hover:opacity-75 p-px overflow-hidden">
+                  <div className="flex items-center justify-center w-full  h-40px rounded-4px bg-gradient-to-b from-gray-e6b786  to-gray-80603f">
+                    <img src={SearchIcon} alt="" />
+                  </div>
                 </button>
             </div>
         </div>

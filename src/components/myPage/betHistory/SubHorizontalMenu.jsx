@@ -31,7 +31,7 @@ const SubHorizontalMenu = ({
 
                 style={{
                   background: isState === item.id 
-                    ? "linear-gradient( to top, #3e3e3b, #afafa6)"
+                    ? "linear-gradient( to top, rgb(77,77,73), rgb(121,121,113)"
                     : isHover === item.id 
                     ? "#4b4b46"
                     : ''

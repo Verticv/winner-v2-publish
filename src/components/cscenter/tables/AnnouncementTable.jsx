@@ -82,14 +82,14 @@ const AnnouncementTable = () => {
     function Cells({ items }) {
         return items.map(item => (
             <tr 
-                style={{backgroundColor: item.id % 2 === 0 ? "#fefefe" : "#f7f9fb"}} 
-                className="bg-gray-fefefe text-14px tracking-tight text-gray-r585858 h-56px w-full border-b border-gray-dddddd group"
+                style={{backgroundColor: item.id % 2 === 0 ? "#323232" : "#2e2e2e"}} 
+                className="text-14px tracking-tight text-gray-c8c8c8 h-55px w-full border-b border-gray-252525 group"
             >
-                <td style={{width: "173px"}} className="h-56px text-center text-blue-r0056a6 ">{item.type}</td>
+                <td style={{width: "173px",color: "#4a90f0"}} className="h-56px text-center text-blue-r0056a6 ">{item.type}</td>
                 <td  style={{width: "698px"}} className="w-full h-56px flex items-center space-x-10px">
                     <p className="group-hover:text-black">{item.title}</p>
                     {item.isNew && (
-                        <div className="w-17px h-17px bg-red-notification rounded-full text-12px text-white flex items-center justify-center font-roboto pr-px">
+                        <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pr-px">
                             N
                         </div>
                     )}
@@ -99,9 +99,12 @@ const AnnouncementTable = () => {
         ));
     }
 
-    return (
-        <table style={{borderRadius:"1em"}} className="shadow-subNavbar overflow-hidden w-full">
-            <thead className="bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd">
+  return (
+      <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
+          style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+        >
+        <table className="w-full bg-gray-323232 rounded-4px overflow-hidden">
+            <thead className="bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-gray-252525">
                 <tr>
                     <td style={{width: "173px"}} className="text-center">구분</td>
                     <td style={{width: "698px"}} className="w-full text-center pr-44px">제목</td>
@@ -112,6 +115,7 @@ const AnnouncementTable = () => {
                 <Cells items={ExampleArray} />
             </tbody>
         </table>  
+      </div>
     )
 }
 

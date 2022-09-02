@@ -1,36 +1,47 @@
 import HorizontalMenu from 'components/horizontalMenus/HorizontalMenu';
 import MyPageTitle from 'components/myPage/MyPageTitle';
 import React, { useState } from 'react'
-import Icon1 from '../../images/myPage/betHistory/ico_1.png'
-import Icon2 from '../../images/myPage/betHistory/ico_2.png'
-import Icon3 from '../../images/myPage/betHistory/ico_3.png'
-import Icon4 from '../../images/myPage/betHistory/ico_4.png'
-import Icon5 from '../../images/myPage/betHistory/ico_5.png'
-import Icon6 from '../../images/myPage/betHistory/ico_6.png'
-import Icon7 from '../../images/myPage/betHistory/ico_7.png'
-import Icon8 from '../../images/cscenter/8.png'
-import Icon9 from '../../images/cscenter/9.png'
-import Icon10 from '../../images/cscenter/10.png'
+import Icon1 from '../../images/myPage/betHistory/ico_1_v2.png'
+import Icon2 from '../../images/myPage/betHistory/ico_2_v2.png'
+import Icon3 from '../../images/myPage/betHistory/ico_3_v2.png'
+import Icon4 from '../../images/myPage/betHistory/ico_4_v2.png'
+import Icon5 from '../../images/myPage/betHistory/ico_5_v2.png'
+import Icon6 from '../../images/myPage/betHistory/ico_6_v2.png'
+import Icon7 from '../../images/myPage/betHistory/ico_7_v2.png'
+import Icon8 from '../../images/cscenter/ico_8.png'
+import Icon9 from '../../images/cscenter/ico_9.png'
+import Icon10 from '../../images/cscenter/ico_10.png'
+import IconHighlight1 from '../../images/myPage/betHistory/Icon1_On.png'
+import IconHighlight2 from '../../images/myPage/betHistory/Icon2_On.png'
+import IconHighlight3 from '../../images/myPage/betHistory/Icon3_On.png'
+import IconHighlight4 from '../../images/myPage/betHistory/Icon4_On.png'
+import IconHighlight5 from '../../images/myPage/betHistory/Icon5_On.png'
+import IconHighlight6 from '../../images/myPage/betHistory/Icon6_On.png'
+import IconHighlight7 from '../../images/myPage/betHistory/Icon7_On.png'
+import IconHighlight8 from '../../images/myPage/betHistory/Icon8_On.png'
+import IconHighlight9 from '../../images/myPage/betHistory/Icon9_On.png'
+import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
 import ContactTable from './tables/ContactTable';
 import Pagination from 'components/myPage/Pagination';
 import DropDownControls from 'components/dropdowns/DropDownControls';
-import DownArrowIcon from '../../images/down_arrow_icon.png'
+// import DownArrowIcon from '../../images/down_arrow_icon.png'
+import DownArrowIcon from '../../images/arrows/arrow_down_gray.png'
 import SearchIcon from '../../images/myPage/search.png'
 import { useHistory } from 'react-router';
 
 const Contact = () => {
 
     const tabsArray = [
-        { text: "전체", icon: Icon1, id: 0, path: "/cscenter/contact/all" },
-        { text: "라이브카지노", icon: Icon2, id: 1, path: "/cscenter/contact/all/live-casino" },
-        { text: "슬롯", icon: Icon3, id: 2, path: "/cscenter/contact/all/slot" },
-        { text: "스포츠", icon: Icon4, id: 3, path: "/cscenter/contact/all/sports" },
-        { text: "e-스포츠", icon: Icon5, id: 4, path: "/cscenter/contact/all/e-sports" },
-        { text: "미니게임", icon: Icon6, id: 5, path: "/cscenter/contact/all/minigame" },
-        { text: "키론가상게임", icon: Icon7, id: 6, path: "/cscenter/contact/all/ar-game" },
-        { text: "충전/환전", icon: Icon8, id: 7, path: "/cscenter/contact/all/transaction" },
-        { text: "베팅관련", icon: Icon9, id: 8, path: "/cscenter/contact/all/about-betting" },
-        { text: "기타", icon: Icon10, id: 9, path: "/cscenter/contact/all/other" },
+        { text: "전체", icon: Icon1, iconHighlight: IconHighlight1, id: 0, path: "/cscenter/contact/all" },
+        { text: "라이브카지노", icon: Icon2, iconHighlight: IconHighlight2, id: 1, path: "/cscenter/contact/all/live-casino" },
+        { text: "슬롯", icon: Icon3, iconHighlight: IconHighlight3, id: 2, path: "/cscenter/contact/all/slot" },
+        { text: "스포츠", icon: Icon4, iconHighlight: IconHighlight4, id: 3, path: "/cscenter/contact/all/sports" },
+        { text: "e-스포츠", icon: Icon5, iconHighlight: IconHighlight5, id: 4, path: "/cscenter/contact/all/e-sports" },
+        { text: "미니게임", icon: Icon6, iconHighlight: IconHighlight6, id: 5, path: "/cscenter/contact/all/minigame" },
+        { text: "키론가상게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/cscenter/contact/all/ar-game" },
+        { text: "충전/환전", icon: Icon8, iconHighlight: IconHighlight8, id: 7, path: "/cscenter/contact/all/transaction" },
+        { text: "베팅관련", icon: Icon9, iconHighlight: IconHighlight9, id: 8, path: "/cscenter/contact/all/about-betting" },
+        { text: "기타", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/contact/all/other" },
     ];
 
     const inboxArray = [
@@ -124,7 +135,7 @@ const Contact = () => {
     const [isDropdownOpen, setDropdownOpen] = useState(true)
     const history = useHistory();
 
-    const dropDownCellClass = "flex w-120px h-40px py-2px bg-white items-center hover:bg-blue-lightGradLight px-14px"
+    const dropDownCellClass = "flex w-full h-30px py-2px bg-gray-1f1f1e items-center hover:bg-brown-r3d3934 px-12px"
 
     const searchDropdown = (
         <div className="mt-4px flex flex-col items-center justify-center w-120px overflow-hidden bg-white rounded-md border border-gray-dddddd shadow-plain5 text-gray-r393e41 font-spoqaMedium text-14px tracking-tight">
@@ -150,19 +161,19 @@ const Contact = () => {
     )
 
     const dropdownButton = (
-        <div className="flex w-120px h-42px bg-white rounded-md border border-gray-dddddd group">
+        <div className="flex w-120px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 group">
             <input  className="w-0 text-16px"/>
             <div
-                className="flex w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" 
+                className="flex w-full text-gray-ccc2b6 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" 
             >
-                <label className="ml-14px cursor-pointer group-hover:text-black">{selectedCarrier}</label>
+                <label className="ml-14px cursor-pointer group-hover:text-gray-r8c8c8c">{selectedCarrier}</label>
                 <img className="w-10px h-6px object-contain mr-10px" src={DownArrowIcon} alt="arrow" /> 
             </div>
         </div>
     )
 
     const InboxSearch = (
-        <div className="h-64px w-full bg-gray-f9f9f9 rounded-2xl border border-gray-dddddd flex items-center justify-center space-x-10px">
+        <div className="h-64px w-full bg-gray-2e2e2e rounded-4px  flex items-center justify-center space-x-10px">
             <DropDownControls
                 buttonChild={dropdownButton} 
                 isDropdownOpen={isDropdownOpen} 
@@ -171,13 +182,15 @@ const Contact = () => {
                 {searchDropdown}
             </DropDownControls>
 
-            <div className="flex w-381px h-42px bg-white rounded-md border border-gray-dddddd">
+            <div className="flex w-381px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 overflow-hidden">
                 <input 
-                    className="pl-11px rounded-md placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight"
+                    className="pl-11px placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a"
                     placeholder="검색어를 입력해 주세요"
                 />
-                <button className="flex items-center justify-center w-42px h-42px rounded-md bg-gradient-to-b from-gray-r555555 via-gray-r555555 to-gray-r333333 -mt-px -mr-px flex-shrink-0 hover:opacity-75">
-                    <img src={SearchIcon} alt=""/>
+                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  hover:opacity-75 p-px">
+                  <div className="flex items-center justify-center w-full  h-40px rounded-4px bg-gradient-to-b from-gray-e6b786  to-gray-80603f">
+                    <img src={SearchIcon} alt="" />
+                  </div>
                 </button>
             </div>
         </div>
@@ -189,7 +202,7 @@ const Contact = () => {
             <MyPageTitle title="문의하기" />
 
             <div className="relative w-full mt-20px">
-                <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} />
+            <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} showSub={false} />
 
                 <div className="mt-20px"></div>
 
@@ -197,17 +210,17 @@ const Contact = () => {
   
 
                 <div className="mt-20px h-36px w-full flex items-center justify-end space-x-2px">
-                    <button className="flex items-center justify-center w-90px h-36px  rounded-4px bg-red-cb4343 hover:opacity-75">
-                        <div className="flex items-center justify-center h-34px w-88px rounded-4px border border-red-f36576 bg-gradient-to-b from-red-f03a50 via-red-e2314f to-red-cf254d cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white">계좌문의</span>
+                    <button className="flex items-center justify-center w-90px h-36px  rounded-2px  bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:filter hover:brightness-125 shadow-link">
+                        <div className="flex items-center justify-center h-34px w-88px rounded-2px bg-gradient-to-b from-red-e06446  to-red-96341d cursor-pointer">
+                            <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">계좌문의</span>
                         </div>
                     </button>
                     <button 
-                        className="flex items-center justify-center h-36px w-90px rounded-4px bg-blue-r0070d9 hover:opacity-75"
+                        className="flex items-center justify-center h-36px w-90px rounded-2px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link"
                         onClick={() => history.push('/cscenter/contact/compose')}
                     >
-                        <div className="flex items-center justify-center h-34px w-88px bg-black rounded-4px border border-blue-r3ba3fc bg-gradient-to-b from-blue-r1491fc via-blue-r0e84ed to-blue-r0675db cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white">문의작성</span>
+                        <div className="flex items-center justify-center h-34px w-88px rounded-2px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
+                            <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff text-shadow-5">문의작성</span>
                         </div>
                     </button>
                 </div>

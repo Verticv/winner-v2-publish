@@ -192,7 +192,7 @@ const LeftMenu = ({
                                         pathname === item.path2 || pathname === item.path2_1 || pathname === item.path2_2 || pathname === item.path2_3
                                         ? "text-gray-f1e7d5 bg-gray-4e4941" 
                                         : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
-                                    } ${item.sub2 === "미니게임" && "rounded-b-3xl"} flex items-center h-47px w-full pl-57px `}>
+                                    }  flex items-center h-47px w-full pl-57px `}>
                                         {item.sub2}
                                 </button>
                             )}

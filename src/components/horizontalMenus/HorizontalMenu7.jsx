@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router';
+import Reflect from '../../images/myPage/betHistory/Reflect.png'
 
 const HorizontalMenu7 = ({
     itemsArray, 
@@ -13,15 +14,13 @@ const HorizontalMenu7 = ({
         return items.map(item => (
             <button 
                 key={item.id} 
-                className={`${
-                    pathname === item.path
-                    ? "bg-blue-r58baf7" 
-                    : "bg-white hover:bg-blue-d3f3fe"
-                } overflow-hidden w-full rounded-lg flex items-end p-px`} 
+                className={`relative overflow-hidden w-full rounded-4px flex items-end p-px`} 
                 style={{
-                    height:"80px",
-                    background: "linear-gradient(to bottom, #dddddd, #bcbcbc)",
-                    borderRadius:"10px",
+                    height:"78px",
+                    background: pathname === item.path 
+                    ?'linear-gradient( to top, #62553f, #dabe82)'
+                    :'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
+                    boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5)'
                 }}
                 onClick={() => {
                     history.push(item.path)
@@ -31,43 +30,33 @@ const HorizontalMenu7 = ({
             >
                 <div 
                     style={{
-                        height:"78px", 
+                        height:"75px", 
                         width:"100%", 
-                        borderRadius:"9px",
+                        background: pathname === item.path
+                        ? 'linear-gradient(to top, #a6926f, #f9f0d3)'
+                        : 'linear-gradient(to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)'
                     }} 
-                    className={`flex w-full justify-end items-end bg-white ${
-                        pathname === item.path 
-                        ? "bg-blue-r58baf7" 
-                        : "bg-white hover:bg-blue-d3f3fe"
-                    }`}
+                    className={`flex w-full justify-end items-end absolute top-0 p-px rounded-4px `}
                 >
                     <div 
                         style={{
-                            background: pathname === item.path
-                            ? "linear-gradient(to bottom, #2087f0, #1873cf)"
-                            : isHover === item.path 
-                            ? "linear-gradient(to bottom, #b9dcff, #d2f6ff)"
-                            : "linear-gradient(to bottom, #c4d6e6, #e8f3fd 26%, #ffffff )",
-                            borderBottomLeftRadius:"9px",
-                            borderBottomRightRadius:"9px",
-                            borderTopLeftRadius:"8px",
-                            borderTopRightRadius: "8px",
-                            borderColor: pathname === item.path ? "#1a73ce" : "#d6dfe8",
-                            boxShadow:'rgb(0 0 0 / 30%) 7px 0px 2px -7px inset, rgb(0 0 0 / 30%) -7px 0px 2px -7px inset, rgb(0 0 0 / 30%) 0px -7px 2px -7px inset'
+                          background: pathname === item.path
+                          ? 'linear-gradient(to top, #8d7752, #dabe82)'
+                          :isHover === item.id
+                          ?'#54544f'
+                          :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
                         }}
-                        className={`${
-                            pathname === item.path
-                            ? "bg-gradient-to-b from-blue-r2087f0 via-blue-r2087f0 to-blue-gradDark"
-                            : "bg-gradient-to-b from-blue-c4d6e6 via-gray-f5feff to-white  border-blue-d6dfe8"
-                        } mt-3px h-75px w-full rounded-b-md rounded-t-lg flex flex-col items-center justify-between`}
+                        className={`w-full rounded-4px flex flex-col justify-end items-center pb-3px h-73px relative hover:filter hover:brightness-90`}  
+                        
                     >
-                        <img className="mt-8px ml-2px object-none" src={item.icon} alt="" />
+                      <img className="mt-8px ml-2px object-none" src={item.icon} alt="" />
+                      {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
                         <span 
                             className={`${
                                 pathname === item.path
-                                ? "text-white"
-                                : "text-gray-r616161" }
-                                text-14px font-spoqaMedium tracking-tight mb-9px flex items-center h-14px`}
+                                ? "text-black"
+                                : "text-golden-ccc2b6" }
+                                text-14px font-spoqaMedium tracking-tight  flex items-center mt-4px`}
                         >{item.text}</span>
                     </div>
                 </div>
@@ -76,7 +65,7 @@ const HorizontalMenu7 = ({
     }
 
     return (
-        <div className="flex w-full h-80px space-x-px">
+        <div className="flex w-full h-80px space-x-3px px-4px">
             <TabsList items={itemsArray} />
         </div>
     )
