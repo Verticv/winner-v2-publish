@@ -20,7 +20,7 @@ const FreeBoardView2 = () => {
         tag = null
     }) => (
         <div className="w-full h-110px pr-19px">
-            <div className="h-56px ml-22px flex items-center justify-between">
+            <div className="h-56px ml-21px flex items-center justify-between">
                 <div className="flex">
                     <img className="object-none" src={ReplyArrow} alt="" />
                     <img className="pl-14px" src={rank === 1 ? Rank1 : rank === 2 ? Rank2 : rank === 3 ? Rank3 : rank === 4 ? Rank4 : Rank5} alt="" />
@@ -87,7 +87,7 @@ const FreeBoardView2 = () => {
                 <div className="py-23px border-b border-gray-252525 px-27px space-y-28px"> 
                     <SportsBetHistoryPanel type={1} winAmount="+900,000,000"  isAttached={true} noButtons={true}/>
                     <SportsBetHistoryPanel type={2} isAttached={true} noButtons={true}/>
-                    {/* <SportsBetHistoryPanel type={4} id={0} noButtons={true} attachedArray={[0]} />
+                    {/* <SportsBetHistoryPanel type={4} id={0} isAttached={true} noButtons={true} attachedArray={[0]} />
                     <SportsBetHistoryPanel type={3} id={0} isAttached={true} noButtons={true} attachedArray={[2]} /> */}
                 </div>
 
@@ -118,15 +118,15 @@ const FreeBoardView2 = () => {
             <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
               style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
               <div style={{height:"171px"}} className="w-full bg-gray-323232 rounded-4px px-19px pb-19px">
-                  <div className="h-58px flex items-center space-x-10px">
+                  <div className="h-58px flex items-center space-x-9px">
                       <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">댓글 작성하기</p>
-                    <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-notification pt-px">2</div>
+                    <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d pt-px">2</div>
                 </div>
                 <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
 
                     <textarea 
-                        style={{width: "1099px", resize: "none", WebkitTextStroke:"0.2px"}}
-                        className="outline-none w-full px-19px py-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525"
+                        style={{width: "1099px", resize: "none"}}
+                        className="outline-none w-full px-19px py-17px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px"
                         placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                     />
 
@@ -148,7 +148,7 @@ const FreeBoardView2 = () => {
               style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
             >
                 <div className="w-full bg-gray-323232 rounded-4px pb-20px">
-                    <div style={{height:"120px"}} className="border-b border-gray-252525 px-19px"> 
+                    <div style={{height:"120px"}} className="border-b border-gray-252525 pl-20px pr-18px"> 
                         <div className="h-55px w-full flex items-center justify-between">
                             <div className="flex items-center space-x-5px">
                                 <img src={Rank2} alt="" className='-mt-2px'/>
@@ -216,8 +216,8 @@ const FreeBoardView2 = () => {
                 <div style={{height:"115px"}} className="px-20px py-11px">
                   <div style={{ height: "93px" }}  className="rounded-4px bg-gray-252525 relative flex w-full">
                       <textarea 
-                          style={{width: "1099px", resize: "none", WebkitTextStroke:"0.2px"}}
-                          className="outline-none w-full px-19px py-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525"
+                          style={{width: "1099px", resize: "none"}}
+                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525"
                           placeholder="두개의 이벤트 모두 참여하였습니다."
                       />
                     <button className="rounded-2px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
@@ -257,7 +257,7 @@ const FreeBoardView2 = () => {
                   <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
                       <textarea 
                           style={{width: "1099px", resize: "none"}}
-                          className="outline-none w-full px-19px py-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525"
+                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525"
                           placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                       />
 

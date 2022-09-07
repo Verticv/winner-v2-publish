@@ -1,20 +1,18 @@
 import BetCombinationPanel from 'components/betCombination/BetCombinationPanel'
 import BetCombinationRightPanel from 'components/betCombination/BetCombinationRightPanel'
 import Footer from 'components/mainPage/Footer'
-import Footer2 from 'components/mainPage/Footer2'
 import DirectoryComponent from 'components/myPage/DirectoryComponent'
 import Navbar from 'components/mainPage/Navbar'
-import NoticeBanner from 'components/mainPage/NoticeBanner'
 import React, { useState } from 'react'
 import { Route } from 'react-router'
-import Icon1 from '../images/gameResults/horizontalMenu/icon_1.png'
-import Icon2 from '../images/gameResults/horizontalMenu/icon_2.png'
-import Icon3 from '../images/gameResults/horizontalMenu/icon_3.png'
-import Icon4 from '../images/gameResults/horizontalMenu/icon_4.png'
-import Icon5 from '../images/gameResults/horizontalMenu/icon_5.png'
-import Icon6 from '../images/gameResults/horizontalMenu/icon_6.png'
-import Icon7 from '../images/gameResults/horizontalMenu/icon_7.png'
-import Icon8 from '../images/gameResults/horizontalMenu/icon_8.png'
+import Icon1 from '../images/gameResults/horizontalMenu/icon_1_v2.png'
+import Icon2 from '../images/gameResults/horizontalMenu/icon_2_v2.png'
+import Icon3 from '../images/gameResults/horizontalMenu/icon_3_v2.png'
+import Icon4 from '../images/gameResults/horizontalMenu/icon_4_v2.png'
+import Icon5 from '../images/gameResults/horizontalMenu/icon_5_v2.png'
+import Icon6 from '../images/gameResults/horizontalMenu/icon_6_v2.png'
+import Icon7 from '../images/gameResults/horizontalMenu/icon_7_v2.png'
+import Icon8 from '../images/gameResults/horizontalMenu/icon_8_v2.png'
 import HorizontalMenu6 from 'components/horizontalMenus/HorizontalMenu6'
 
 const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
@@ -64,59 +62,49 @@ const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
         new Array(filterArray.length).fill(false)
     );
     return (
-        <div className="relative flex flex-col justify-center w-full">
-
-            <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
-                <NoticeBanner />
-                <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
-            </div>
-
-
-            <div className="flex flex-col items-start limit:items-center limit1600:mt-92px mt-122px w-full h-full">
-                <Route path="/bet-combination">
-                    <DirectoryComponent
-                        branch1="스포츠" 
-                        branch2="조합베팅"
-                        mainPath="/mypage/bet-history"
-                    />
-                </Route>
-
-                <div className=" relative flex w-default space-x-20px -mt-px">
-
-                    <div style={{width: "933px"}}>
-                        <div style={{width: "935px", marginLeft:"-1px"}}>
-
-                        <HorizontalMenu6 itemsArray={tabsArray} isState={selectedTab} setState={setSelectedTab} />
-                        </div>
-                        <div className="mt-15px">
-                            <BetCombinationPanel 
-                                addedCard={addedCard} 
-                                setAddedCard={setAddedCard} 
-                                filterArray={filterArray} 
-                                checkedState={checkedState}
-                                setCheckedState={setCheckedState}
-                            />
-                        </div>
-                    </div>
-                    
-                    <div style={{width: "307px", left:"0px", position:"-webkit-sticky", top: "150px", height: isPanelFixed ? "100%" : ""}} className={`${isPanelFixed && "sticky bottom-0 flex"} mb-60px pt-px `}>
-                        <BetCombinationRightPanel 
-                            addedCard={addedCard} 
-                            setAddedCard={setAddedCard} 
-                            isPanelFixed={isPanelFixed} 
-                            setPanelFixed={setPanelFixed} 
-                        />
-                    </div>
-
-                </div>
-
-                <div>
-                    <Footer2 />
-                    <Footer />
-                </div>
-
-            </div>
+      <div className="relative flex flex-col justify-center w-full bg-gray-1e1e1e">
+        <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
+          <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
         </div>
+        <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
+          <Route path="/bet-combination">
+            <DirectoryComponent
+              branch1="스포츠" 
+              branch2="조합베팅"
+              mainPath="/mypage/bet-history"
+            />
+          </Route>
+
+          <div className=" relative flex w-default space-x-20px -mt-px">
+            <div style={{width: "933px"}}>
+              <div style={{width: "935px", marginLeft:"-1px"}}>
+                <HorizontalMenu6 itemsArray={tabsArray} isState={selectedTab} setState={setSelectedTab} />
+              </div>
+              <div className="mt-15px">
+                <BetCombinationPanel 
+                  addedCard={addedCard} 
+                  setAddedCard={setAddedCard} 
+                  filterArray={filterArray} 
+                  checkedState={checkedState}
+                  setCheckedState={setCheckedState}
+                />
+              </div>
+            </div>
+              
+            <div style={{width: "307px", left:"0px", position:"-webkit-sticky", top: "150px", height: isPanelFixed ? "100%" : ""}} className={`${isPanelFixed && "sticky bottom-0 flex"} mb-60px pt-px `}>
+                <BetCombinationRightPanel 
+                    addedCard={addedCard} 
+                    setAddedCard={setAddedCard} 
+                    isPanelFixed={isPanelFixed} 
+                    setPanelFixed={setPanelFixed} 
+                />
+            </div>
+          </div>
+          <div>
+            <Footer />
+          </div>
+        </div>
+      </div>
     )
 }
 

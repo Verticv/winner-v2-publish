@@ -10,7 +10,7 @@ const EsportsStructure = () => {
         <div className="flex items-center">
         {/* <div style={{background: "linear-gradient(120deg, #2087f0, #1873cf", borderRadius:"3px"}} className="w-8px h-20px"></div> */}
             <img className="z-10 object-none" src={TitleIcon} alt="" />
-            <span className="text-22px font-spoqaBold tracking-tight text-gray-ccc2b6 ml-10px h-22px flex items-center">화면구성</span>
+            <span className="text-22px font-spoqaMedium tracking-tight text-gray-ccc2b6 ml-10px h-22px flex items-center">화면구성</span>
             <div style={{backgroundColor:"#494745", borderRadius:"100%"}} className="w-36px h-36px ml-5px flex items-center justify-center text-gray-ccc2b6 text-22px font-roboto">
                 {number}
             </div>
@@ -24,12 +24,12 @@ const EsportsStructure = () => {
                 <span className="text-golden-gradLight">{number}</span>
                 <span className="text-gray-ccc2b6">{title}</span>
             </div>
-            <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text} <p className="ml-2px text-blue-2980b9">{color1}</p><p style={{color:"#e65454"}} className="mr-2px">{color2}</p><p>{color3}</p></span>
+            <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-px">{text} <p className="ml-2px text-blue-2980b9">{color1}</p><p style={{color:"#e65454"}} className="mr-2px">{color2}</p><p>{color3}</p></span>
             {text2 && (
-                <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text2}</span>
+                <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium">{text2}</span>
             )}
             {text3 && (
-                <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text3}</span>
+                <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium">{text3}</span>
             )}
         </div>
     )
@@ -40,7 +40,7 @@ const EsportsStructure = () => {
                 <span className="text-golden-gradLight">{number}</span>
                 <span className="text-gray-ccc2b6">{title}</span>
             </div>
-            <div className="flex">
+            <div className="flex mt-px">
                 <img src={Dot} className="object-none mr-4px" alt="" />
                 <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text}</span>
             </div>
@@ -69,7 +69,7 @@ const EsportsStructure = () => {
                 <div style={{backgroundColor:"#2b2b2a", height:"523px"}} className="w-full h-full rounded-xl p-20px">
                     <TitleText />
 
-                    <div className="mt-20px w-full h-px bg-gray-dddddd"  style={{background:'#494745'}}></div>
+                    <div className="mt-19px w-full h-px bg-gray-dddddd"  style={{background:'#494745'}}></div>
                     <div className="pt-20px space-y-23px">
                         <Item />
                         <Item number="2." title="게임종류선택" text="다양한 게임을 선택할 수 있습니다." />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Reflect from '../../images/myPage/betHistory/Reflect.png'
 
 const HorizontalMenu4 = ({
     itemsArray, 
@@ -7,37 +8,36 @@ const HorizontalMenu4 = ({
 }) => {
 
     const [isHover, setHover] = useState(null)
-
+    console.log(isHover)
     function TabsList({ items }) {
         return items.map(item => (
             <button 
-                key={item.id} 
-                className={`${
-                    selectedTab === item.id
-                    ? "bg-blue-r58baf7" 
-                    : "bg-gray-f9f9f9 hover:bg-blue-d3f3fe"
-                } overflow-hidden h-47px w-full rounded-t-lg flex justify-end border border-gray-dddddd`} 
+              key={item.id} 
+              style={{
+                background: selectedTab === item.id
+                  ? 'linear-gradient(to top, #a6926f, #f9f0d3)'
+                  :'linear-gradient(to top, #393835, #4f4f4f)'
+              }} 
+                className={`relative overflow-hidden h-47px w-full rounded-t-4px flex justify-center p-px`} 
                 onClick={() => setSelectedTab(item.id)}
                 onMouseOver={() => setHover(item.id)}
                 onMouseLeave={() => setHover(null)}
             >
                 <div 
-                    style={{
-                        height: "45px",
-                        background: selectedTab === item.id 
-                        ? "linear-gradient(to bottom, #2087f0, #1873cf)" 
-                        : isHover === item.id 
-                        ? "linear-gradient(to bottom, #b9dcff, #d2f6ff)"
-                        : "linear-gradient(to bottom, #f9f9f9, #f9f9f9, #d4d9de)",
-                        borderBottomLeftRadius:"6px",
-                        borderBottomRightRadius:"6px",
-                        borderColor: selectedTab === item.path ? "#1a73ce" : "#d6dfe8",
-                    }}
-                    className="mt-2px w-full rounded-b-md rounded-t-lg flex items-start justify-center pt-9px"
-                >
+                  style={{
+                    height: "45px",
+                    background: selectedTab === item.id 
+                    ? "linear-gradient(to top, #a1885d, #dabe82)" 
+                    :'linear-gradient(to top, #4a4a4a, #5f5f5f)',
+                    borderBottomLeftRadius:"4px",
+                    borderBottomRightRadius:"4px",
+                  }}
+                  className="w-full rounded-b-md rounded-t-4px flex items-start justify-center pt-9px"
+                  >
+                    {selectedTab === item.id && <img className="absolute top-0 left-0" src={Reflect} alt="" />}
                     <div className="flex items-center">
                         <div 
-                            style={{color: selectedTab === item.id ? "#ffffff" : "#5b5b5b"}}
+                            style={{color: selectedTab === item.id ? "black" : "#c8c8c8"}}
                             className="text-16px tracking-tight font-spoqaMedium flex h-16px items-center pt-3px"
                         >
                             {item.text}

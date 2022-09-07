@@ -61,7 +61,7 @@ const HorizontalMenu1 = ({
                                 ? "#4b3f2b"
                                 : "#1a1a1a"
                             }}
-                            className={`text-white text-12px font-roboto tracking-tight mt-8px h-17px rounded-full flex items-center justify-center`}
+                            className={`text-white text-12px font-roboto tracking-tight mt-7px h-17px rounded-full flex items-center justify-center`}
                         >
                             {item.number}
                         </div>
@@ -72,7 +72,7 @@ const HorizontalMenu1 = ({
     }
 
     return (
-        <div className="flex w-full h-98px space-x-3px pl-4px ">
+        <div className="flex w-full h-98px space-x-3px px-4px ">
             <TabsList items={itemsArray} />
         </div>
     )

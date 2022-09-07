@@ -36,9 +36,9 @@ const MinigamesPanel = ({
             <div className="relative flex z-10 px-3px">
                 <HorizontalMenu4 itemsArray={MenuArray} selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
             </div>
-
-            <div className="px-2px w-full">
-                <div className="-mt-7px w-full bg-gray-fafafa z-20 flex relative rounded-xl shadow-subNavbar overflow-hidden">
+              <div className="shadow-table w-full overflow-hidden rounded-4px p-px -mt-7px relative z-20"
+              style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
+                <div className="w-full bg-gray-323232 rounded-4px overflow-hidden  flex relative z-20">
                     <Route path="/minigame/powerball">
                         <PowerballPanel  
                             selectedTab={selectedTab} 

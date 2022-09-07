@@ -12,8 +12,8 @@ const PowerballHistory = ({array, checkedState, setCheckedState}) => {
     function InboxList({ items }) {
         return items.map(item => (
             <div 
-                style={{height: "62px", backgroundColor: item.id % 2 === 0 ? "#ffffff" : "#f7f9fc" }} 
-                className="flex items-center justify-start font-spoqa text-14px tracking-tight text-gray-r585858 border-b border-gray-dddddd"
+                style={{height: "62px", backgroundColor: item.id % 2 === 0 ? "#323232" : "#2e2e2e" }} 
+                className="flex items-center justify-start font-spoqa text-14px tracking-tight text-gray-c8c8c8 border-b border-gray-252525"
             >        
                 <div style={{width: "60px"}} className="flex justify-center ml-28px">
                     <input
@@ -22,10 +22,10 @@ const PowerballHistory = ({array, checkedState, setCheckedState}) => {
                         onChange={() => handleOnChange(item.id)}
                     />
                 </div>
-                <div style={{width: "117px", WebkitTextStroke:"0.2px"}} className="flex justify-center">{item.number}</div>
-                <div style={{width: "147px", WebkitTextStroke:"0.2px"}} className="flex justify-center">{item.eventCount}</div>
-                <div style={{width: "170px", WebkitTextStroke:"0.2px"}} className="flex justify-center">{item.betTime}</div>
-                <div style={{width: "164px", WebkitTextStroke:"0.2px"}} className="flex justify-center">{item.type}</div>
+                <div style={{width: "117px"}} className="flex justify-center">{item.number}</div>
+                <div style={{width: "147px"}} className="flex justify-center">{item.eventCount}</div>
+                <div style={{width: "170px"}} className="flex justify-center">{item.betTime}</div>
+                <div style={{width: "164px"}} className="flex justify-center">{item.type}</div>
                 <div style={{width: "95px"}} className="flex justify-center items-center">
                     <div 
                         style={{
@@ -65,10 +65,10 @@ const PowerballHistory = ({array, checkedState, setCheckedState}) => {
                     }
                     </div>
                 </div> 
-                <div style={{width: "126px", WebkitTextStroke:"0.2px"}} className="flex justify-center">{item.percentage}</div>
-                <div style={{width: "112px", WebkitTextStroke:"0.2px"}} className="flex justify-end">{item.betAmount}</div>
-                <div style={{width: "121px", color: item.profit.includes("+") ? "#d52e2e" : "#585858", WebkitTextStroke:"0.2px"}} className="flex justify-end">{item.profit}</div>
-                <div style={{width: "107px", color: item.win ? "#d52e2e" : "#585858", WebkitTextStroke:"0.2px"}} className="flex justify-center">{item.win === true ? "승" : "패"}</div>
+                <div style={{width: "126px"}} className="flex justify-center">{item.percentage}</div>
+                <div style={{width: "112px"}} className="flex justify-end">{item.betAmount}</div>
+                <div style={{width: "121px", color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="flex justify-end">{item.profit}</div>
+                <div style={{width: "107px", color: item.win ? "#e65454" : "#c8c8c8"}} className="flex justify-center">{item.win === true ? "승" : "패"}</div>
             </div>
         ));
     }
@@ -76,7 +76,7 @@ const PowerballHistory = ({array, checkedState, setCheckedState}) => {
     return (
         <div className="w-full ">
 
-            <div className="flex items-center justify-start bg-gray-fafafa font-spoqaMedium text-14px tracking-tight text-gray-r454545 h-56px border-b border-gray-dddddd">        
+            <div className="flex items-center justify-start bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-gray-252525">        
                 <div style={{width: "60px"}} className="flex justify-center ml-28px">선택</div>
                 <div style={{width: "117px"}} className="flex justify-center">번호</div>
                 <div style={{width: "147px"}} className="flex justify-center">회차</div>

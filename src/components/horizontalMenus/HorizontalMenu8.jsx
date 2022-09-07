@@ -48,7 +48,7 @@ const HorizontalMenu8 = ({
                               :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
                           }} className={` w-full rounded-3px flex flex-col justify-end items-center pb-3px relative hover:filter hover:brightness-90`}>
                       
-                        <img className=" ml-2px object-none" src={selectedTab === item.id ? item.iconHighlight : item.icon} alt="" />
+                        <img className=" object-none" src={selectedTab === item.id ? item.iconHighlight : item.icon} alt="" />
                        <span className={`${
                           selectedTab === item.id
                           ? "text-black"
@@ -70,7 +70,7 @@ const HorizontalMenu8 = ({
     }
 
     return (
-        <div className="flex w-full h-80px space-x-3px  pl-4px pr-4px">
+        <div className="flex w-full h-80px space-x-3px px-4px">
             <TabsList items={itemsArray} />
         </div>
     )

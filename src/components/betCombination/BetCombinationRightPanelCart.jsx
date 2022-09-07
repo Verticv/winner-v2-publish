@@ -12,7 +12,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
     
     const ConfirmCard = () => (
         <div 
-            style={{height: "58px", backgroundColor: "#ed2f59", borderColor: "#a11735", borderRadius:"8px"}} 
+            style={{height: "58px", backgroundColor: "#987959", borderColor: "#fde1a4", borderRadius:"8px"}} 
             className="relative w-full rounded-md border"
         >
             <div className="flex">
@@ -37,36 +37,36 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
     function BetCard({ items }) {
         return items.map(item => (
             <div
-                style={{height:"87px", borderRadius: "8px"}}
-                className="w-full border border-gray-cccccc"
+               style={{ height: "87px", borderRadius: "8px",  background: "linear-gradient(to bottom, #4b4b49 , #2e2e2e )" }}
+                className="w-full p-px"
                 key={item.id}
             >
                 <div
-                    style={{
+              style={{
+                      height: "85px",
                         borderRadius:"7px", 
-                        borderColor:"#fbddb1",
-                        background: "linear-gradient(120deg, #ffffff, #e0e2e6)"
+                        background: "linear-gradient(to bottom right, #4b4b49 , #2e2e2e )" 
                     }}
-                    className="relative h-full w-full border border-gray-cccccc"
+                    className="relative w-full pt-10px"
                 >
                     <p 
-                        style={{color: item.value === "right" ? "#d52e2e" : "#454545"}} 
-                        className="text-14px font-spoqaBold tracking-tight text-gray-r454545 h-14px flex items-center mt-10px ml-9px"
+                        style={{color: item.value === "right" ? "#ffff" : "#454545"}} 
+                        className="text-14px font-spoqaBold tracking-tight text-white h-14px flex items-center  ml-9px"
                     >
                         {item.value === "right" ? "SV Kuchl" : "FK Haugesund"}
                     </p>
                     <p 
-                        style={{color: item.value === "right" ? "#454545" : "#d52e2e"}} 
+                        style={{color: item.value === "right" ? "#e65454" : "#d52e2e"}} 
                         className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-8px ml-8px"
                     >
                         {item.value === "right" ? "FC Blau Weiss Linz" : "스트룀스고세 IF"}
                     </p>
-                    <p className="text-13px font-spoqaMedium tracking-tight text-gray-r454545 h-14px flex items-center mt-13px ml-8px">축구 - 승무패 (게임)</p>
+                    <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 h-14px flex items-center mt-13px ml-8px">축구 - 승무패 (게임)</p>
                     <img src={CancelIconGray} alt="" name={item.id} className="absolute top-8px right-8px cursor-pointer hover:opacity-75" onClick={handleRemoveItem} />
-                    <div className="flex absolute bottom-9px right-10px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-r454545">
+                    <div className="flex absolute bottom-9px right-10px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-c8c8c8">
                         <p>{item.value === "right" ? "승 @" : "패 @"}</p> 
                         <p 
-                            style={{color: item.value === "right" ? "#d52e2e" : "#0056a6"}}
+                            style={{color: item.value === "right" ? "#e65454" : "#4c98ff"}}
                             className="ml-2px"
                         >
                             {item.value === "right" ? "2.26" : "3.47"}
@@ -83,10 +83,10 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
         <button 
             style={{
                 width:"95px", 
-                borderColor: "#b3bac1",
+                background:"linear-gradient(to bottom, #6b6865, #393835)" ,
                 height:"46px"
             }} 
-            className="flex items-center justify-center rounded-4px border"
+            className="flex items-center justify-center rounded-2px p-px shadow-link"
             onPointerDown={() => setButtonClicked(amount)}
             onPointerUp={() => {
                 setInputValue(inputValue + amount)
@@ -96,12 +96,11 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
         >
             <div 
                 style={{
-                    background: buttonClicked === amount ? "linear-gradient(to bottom, #a8defd, #8dc6ee)" : "linear-gradient(to bottom, #feffff, #cedeed)",
-                    borderRadius: "3px",
+                  background:  buttonClicked === amount ? "linear-gradient(to bottom, #545452, #323231)" : "linear-gradient(to bottom, #545452, #323231)",
                 }}  
-                className="flex items-center justify-center border border-white cursor-pointer w-full h-full"
+                className="flex items-center justify-center  rounded-2px cursor-pointer w-full h-full"
             >
-                <span className="font-roboto tracking-tight text-16px text-gray-r585858 pt-px">{nf.format(amount)}</span>
+                <span className="font-roboto tracking-tight text-16px text-golden-highLight pt-px">{nf.format(amount)}</span>
             </div>
         </button>
     )
@@ -109,7 +108,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
 
     return (
         <div style={{width:"307px"}}>
-            <div className="bg-white border-b border-gray-dddddd pb-5px px-3px flex flex-col">
+            <div className="bg-gray-262626 pb-5px px-3px flex flex-col">
                 {showConfirm && (
                     <>
                         <ConfirmCard />
@@ -118,8 +117,8 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                 )}
 
                 {!addedCard.length ? (
-                    <div style={{height: "38px", backgroundColor: "#e8e8e8"}} className="w-full rounded-md border border-gray-dddddd flex items-center px-8px">
-                        <p className="text-14px font-spoqaMedium tracking-tight text-gray-r454545">베팅을 선택하세요.</p>
+                    <div style={{height: "38px", backgroundColor: "#1a1a1a"}} className="w-full rounded-md border border-gray-404040 flex items-center px-8px">
+                        <p className="text-14px font-spoqaMedium tracking-tight text-gray-929292">베팅을 선택하세요.</p>
                     </div>
                 ) : (
                     <div className="space-y-4px">
@@ -127,36 +126,36 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                     </div>
                 )}
             </div>
-            <div className="h-47px border-b border-gray-dddddd flex items-center justify-between pl-11px pr-16px pt-px">
-                <p className="text-16px font-spoqaMedium tracking-tight text-gray-r454545">보유금액</p>
-                <p className="text-16px font-robotoBold tracking-tight text-blue-r0056a6">3,522,170</p>
+            <div className="h-47px border-b border-gray-1e1e1e flex items-center justify-between pl-11px pr-16px pt-px bg-gray-323232">
+                <p className="text-16px font-spoqaMedium tracking-tight text-gray-c8c8c8">보유금액</p>
+                <p className="text-16px font-robotoBold tracking-tight text-blue-4c98ff">3,522,170</p>
             </div>
 
-            <div className="h-34px border-b border-gray-dddddd flex  pl-11px pr-16px items-center justify-between bg-gray-fafafa pt-px">
+            <div className="h-34px border-b border-gray-1e1e1e flex  pl-11px pr-16px items-center justify-between bg-gray-262626 pt-px">
                 <p className="text-14px font-spoqaMedium tracking-tight text-gray-r7b7b7b">베팅 최소금액</p>
-                <p style={{color: "#d52e2e"}} className="text-14px font-robotoRegular tracking-tight">5,000</p>
+                <p style={{color: "#e65454"}} className="text-14px font-robotoRegular tracking-tight">5,000</p>
             </div>
             
-            <div className="h-34px border-b border-gray-dddddd flex pl-11px pr-16px items-center justify-between bg-gray-fafafa pt-px">
+            <div className="h-34px border-b border-gray-1e1e1e flex pl-11px pr-16px items-center justify-between bg-gray-262626 pt-px">
                 <p className="text-14px font-spoqaMedium tracking-tight text-gray-r7b7b7b">베팅 최대금액</p>
-                <p className="text-14px font-robotoRegular tracking-tight">7,000,000</p>
+                <p className="text-14px font-robotoRegular tracking-tight text-gray-c8c8c8">7,000,000</p>
             </div>
 
-            <div className="h-34px border-b border-gray-dddddd flex pl-11px pr-16px items-center justify-between bg-gray-fafafa pt-px">
+            <div className="h-34px border-b border-gray-1e1e1e flex pl-11px pr-16px items-center justify-between bg-gray-262626 pt-px">
                 <p className="text-14px font-spoqaMedium tracking-tight text-gray-r7b7b7b">적중 최대금액</p>
-                <p className="text-14px font-robotoRegular tracking-tight">20,000,000</p>
+                <p className="text-14px font-robotoRegular tracking-tight text-gray-c8c8c8">20,000,000</p>
             </div>
 
-            <div className="h-47px border-b border-gray-dddddd flex items-center justify-between pl-11px pr-16px pt-2px">
-                <p className="text-14px font-spoqaMedium tracking-tight text-gray-r454545">배당률합계</p>
+            <div className="h-47px border-b border-gray-252525 flex items-center justify-between pl-11px pr-16px pt-2px bg-gray-323232">
+                <p className="text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8">배당률합계</p>
                 <p style={{color: "#f26522"}} className="text-14px font-roboto tracking-tight text-blue-r0056a6">1.00</p>
             </div>
 
-            <div className="h-47px border-b border-gray-dddddd flex items-center justify-between pl-11px pr-10px">
-                <p className="text-14px font-spoqaMedium tracking-tight text-gray-r454545 pt-2px">베팅금액</p>
+            <div className="h-47px border-b border-gray-252525 flex items-center justify-between pl-11px pr-10px bg-gray-323232">
+                <p className="text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 pt-2px">베팅금액</p>
                 <input 
-                    style={{color: "#d52e2e", width: "191px", height: "32px", backgroundColor: "#e8e8e8"}} 
-                    className="flex items-center justify-end px-5px border rounded-4px border-gray-dddddd text-14px font-roboto tracking-tight outline-none text-right pt-2px"
+                    style={{color: "#e65454", width: "191px", height: "32px", backgroundColor: "#1a1a1a"}} 
+                    className="flex items-center justify-end px-5px border rounded-4px border-gray-404040 text-14px font-roboto tracking-tight outline-none text-right pt-2px"
                     placeholder="0"
                     value={nf.format(inputValue)}
                     onChange={e => setInputValue(e.target.value.replace(/,/g, ''))}
@@ -168,100 +167,100 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                 />
             </div>
 
-            <div className="h-47px border-b border-gray-dddddd flex items-center justify-between pl-11px pr-16px pt-2px">
-                <p className="text-14px font-spoqaMedium tracking-tight text-gray-r454545">적중예상금액</p>
-                <p className="text-14px font-roboto tracking-tight text-blue-r0056a6">11,000</p>
+            <div className="h-47px  flex items-center justify-between pl-11px pr-16px pt-2px bg-gray-323232">
+                <p className="text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8">적중예상금액</p>
+                <p className="text-14px font-roboto tracking-tight text-blue-4c98ff">11,000</p>
             </div>
 
-            <div style={{height:"213px"}} className="w-full bg-gray-fafafa p-10px rounded-b-xl">
+            <div style={{height:"213px"}} className="w-full bg-gray-262626 p-10px">
 
-                <div style={{width:"287px"}} className="flex flex-col space-y-2px w-full">
-                    <div className="flex space-x-2px">
+                <div style={{width:"287px"}} className="flex flex-col space-y-4px w-full">
+                    <div className="flex space-x-4px">
                         <BetAmountButton amount={5000} inputValue={inputValue} setInputValue={setInputValue}/>
                         <BetAmountButton amount={10000} inputValue={inputValue} setInputValue={setInputValue}/>
                         <BetAmountButton amount={50000} inputValue={inputValue} setInputValue={setInputValue}/>
                     </div>
-                    <div className="flex space-x-2px">
+                    <div className="flex space-x-4px">
                         <BetAmountButton amount={100000} inputValue={inputValue} setInputValue={setInputValue}/>
                         <BetAmountButton amount={500000} inputValue={inputValue} setInputValue={setInputValue}/>
                         <BetAmountButton amount={1000000} inputValue={inputValue} setInputValue={setInputValue}/>
                     </div>
                 </div>
                 
-                <div className="flex space-x-2px mt-2px">
+                <div className="flex space-x-4px mt-4px">
                     <button 
                         style={{
                             width:"95px",
-                            borderColor: "#171a1d",
+                            background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
                             height:"46px"
                         }} 
-                        className="flex items-center justify-center rounded-4px border hover:opacity-75"
+                        className="flex items-center justify-center rounded-2px p-px hover:opacity-75"
                         onClick={() => setInputValue(inputValue/2)}
                     >
                         <div 
                             style={{
                                 borderRadius:"3px",
-                                background: "linear-gradient(to bottom, #585b5e, #303337)",
+                                background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
                                 borderColor:"#747679"
                             }} 
-                            className="flex items-center justify-center h-full w-full border cursor-pointer"
+                            className="flex items-center justify-center h-full w-full  rounded-2px  pt-px cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-16px text-white pt-2px">하프</span>
+                            <span className="font-spoqaMedium tracking-tight text-16px  text-golden-highLight  pt-2px text-shadow-5">하프</span>
                         </div>
                     </button>
                     <button 
                         style={{
                             width:"95px",
-                            borderColor: "#171a1d",
+                            background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
                             height:"46px"
                         }} 
-                        className="flex items-center justify-center rounded-4px border hover:opacity-75"
+                        className="flex items-center justify-center rounded-2px p-px hover:opacity-75"
                         onClick={() => setInputValue(3522170)}
                     >
                         <div 
                             style={{
                                 borderRadius:"3px",
-                                background: "linear-gradient(to bottom, #585b5e, #303337)",
+                                background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
                                 borderColor:"#747679"
                             }} 
-                            className="flex items-center justify-center h-full w-full border cursor-pointer"
+                            className="flex items-center justify-center h-full w-full rounded-2px p-px cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-16px text-white pt-2px">최대</span>
+                            <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-2px">최대</span>
                         </div>
                     </button>
                     <button 
                         style={{
                             width:"95px",
-                            borderColor: "#171a1d",
+                            background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
                             height:"46px"
                         }} 
-                        className="flex items-center justify-center rounded-4px border hover:opacity-75"
+                        className="flex items-center justify-center rounded-2px p-px hover:opacity-75"
                         onClick={() => setInputValue(0)}
                     >
                         <div
                             style={{
                                 borderRadius:"3px",
-                                background: "linear-gradient(to bottom, #585b5e, #303337)",
+                                background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
                                 borderColor:"#747679"
                             }} 
-                            className="flex items-center justify-center h-full w-full border cursor-pointer"
+                            className="flex items-center justify-center h-full  rounded-2px w-full  cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-16px text-white pt-2px">정정</span>
+                            <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-2px">정정</span>
                         </div>
                     </button>
                 </div>
 
                 <button 
                     style={{width:"287px"}}
-                    className="mt-5px flex items-center justify-center h-46px rounded-4px bg-blue-r2068b2 hover:opacity-75"
+                    className="mt-5px flex items-center justify-center h-46px  rounded-2px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link"
                     onClick={() => {
                         setAddedCard([])
                         setShowConfirm(true)
                     }}
                 >
-                    <div style={{width:"285px"}} className="flex items-center justify-center h-44px rounded-4px border border-blue-r3975ae bg-gradient-to-b from-blue-r125a9e via-blue-r0e508d to-blue-r0b447a cursor-pointer">
+                    <div style={{width:"285px"}} className="flex items-center justify-center h-44px rounded-2px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
                         <img src={BetIcon} alt="" />
-                        <span className="ml-5px font-spoqaMedium tracking-tight text-16px text-white pt-px">베팅하기</span>
+                        <span className="ml-5px font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">베팅하기</span>
                     </div>
                 </button>
 

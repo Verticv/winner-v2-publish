@@ -73,7 +73,7 @@ const GameDetails = () => {
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={USFlagIcon} alt="" />
-                    <span className="ml-5px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-2px">MLS</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-2px">MLS</span>
                 </div>
             </div>            
             <div className="w-full h-54px bg-gray-323231 flex items-center tracking-tight">

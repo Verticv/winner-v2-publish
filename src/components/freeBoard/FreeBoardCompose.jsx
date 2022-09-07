@@ -12,7 +12,7 @@ const FreeBoardCompose = () => {
     const AttachButton = (
         <button 
             style={{width: "115px", height: "35px", backgroundColor: "#826140"}}
-            className="flex items-center justify-center rounded-4px text-golden-highLight text-14px tracking-tight font-spoqaMedium pt-px shadow-link"
+            className="flex items-center justify-center rounded-4px text-golden-highLight text-15px tracking-tight font-spoqaMedium pt-px shadow-link"
         >
             베팅내역첨부
         </button>
@@ -27,12 +27,12 @@ const FreeBoardCompose = () => {
 
               <div className="h-55px w-full bg-gray-2e2e2e border-b border-gray-252525">
                   <input 
-                      className="bg-gray-2e2e2e outline-none w-full h-full px-17px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8"
+                      className="bg-gray-2e2e2e outline-none w-full h-full px-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8"
                       placeholder="제목을 입력하세요."
                   />
               </div>
 
-              <div className="h-56px w-full bg-gray-2e2e2e border-b border-gray-252525 px-17px flex items-center">
+              <div className="h-56px w-full bg-gray-2e2e2e border-b border-gray-252525 px-19px flex items-center">
 
                   <PopupControls buttonChild={AttachButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
                       <BetHistoryPopup setPopupOpen={setPopupOpen} attachedArray={attachedArray} setAttachedArray={setAttachedArray} />
@@ -50,7 +50,7 @@ const FreeBoardCompose = () => {
               <div style={{height:"401px"}} className="w-full bg-gray-323232">
                   <textarea 
                       style={{resize: "none"}}
-                      className="bg-gray-323232 outline-none w-full h-full  px-17px py-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8"
+                      className="bg-gray-323232 outline-none w-full h-full  px-19px py-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8"
                       placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                   />
               </div>

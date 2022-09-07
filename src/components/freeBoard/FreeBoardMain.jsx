@@ -20,7 +20,7 @@ const FreeBoardMain = () => {
             id: 0,
             text: "입금규정 필독", 
             isRead: false,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "안내",
             isClicked: true,
             path: '/freeboard/view/0'
@@ -29,7 +29,7 @@ const FreeBoardMain = () => {
             id: 1,
             text: "메신저 고객센터 사칭주의", 
             isRead: false,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "안내",
             path: '/freeboard/view/1'
         },
@@ -37,7 +37,7 @@ const FreeBoardMain = () => {
             id: 2,
             text: "슬롯 롤링 보너스 요율 X2배 증가 안내", 
             isRead: false,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "안내",
             path: '/freeboard/view/2'
         },
@@ -45,7 +45,7 @@ const FreeBoardMain = () => {
             id: 3,
             text: "진행중 이벤트 안내 (2021.06.02)", 
             isRead: true,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/3'
         },
@@ -53,7 +53,7 @@ const FreeBoardMain = () => {
             id: 4,
             text: "스포츠 미니게임 충전 보너스 (변경 21.05.21)", 
             isRead: true,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/4'
         },
@@ -61,7 +61,7 @@ const FreeBoardMain = () => {
             id: 5,
             text: "라이브 카지노 충전 보너스", 
             isRead: true,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/5'
         },
@@ -69,7 +69,7 @@ const FreeBoardMain = () => {
             id: 6,
             text: "다폴더 적중 보너스 지금 (변경 21.04.16)", 
             isRead: true,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/6'
         },
@@ -77,7 +77,7 @@ const FreeBoardMain = () => {
             id: 7,
             text: "카지노 주간 낙첨 이벤트! (변경 21.06.07)", 
             isRead: true,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/7'
         },
@@ -85,7 +85,7 @@ const FreeBoardMain = () => {
             id: 8,
             text: "슬롯 충전 남첨 이벤트 (변경 21.06.07)", 
             isRead: true,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/8'
         },
@@ -93,7 +93,7 @@ const FreeBoardMain = () => {
             id: 9,
             text: "신규 이벤트 가입", 
             isRead: false,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/9'
         },
@@ -101,7 +101,7 @@ const FreeBoardMain = () => {
             id: 10,
             text: "슬롯 페이백 복구", 
             isRead: false,
-            time: "2021.06.29 07:35",
+            time: "2021.06.29  07:35",
             type: "이벤트",
             path: '/freeboard/view/10'
         },
@@ -111,7 +111,7 @@ const FreeBoardMain = () => {
             isRead: true,
             isBetHistory: true,
             replies: 20,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2805',
             author: "필라델피아",
@@ -123,7 +123,7 @@ const FreeBoardMain = () => {
             isRead: true,
             isBetHistory: true,
             replies: 2,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2804',
             author: "하이도1207",
@@ -134,7 +134,7 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2803',
             author: "소유",
@@ -145,7 +145,7 @@ const FreeBoardMain = () => {
             text: "다폴드 이벤트 참여", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2802',
             author: "보라매유아인",
@@ -156,7 +156,7 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2801',
             author: "아기히뽀",
@@ -167,7 +167,7 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2800',
             author: "소유",
@@ -178,7 +178,7 @@ const FreeBoardMain = () => {
             text: "다폴", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2799',
             author: "야리직",
@@ -189,7 +189,7 @@ const FreeBoardMain = () => {
             text: "다폴더", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2798',
             author: "신풍사우나",
@@ -200,7 +200,7 @@ const FreeBoardMain = () => {
             text: "아챔 올플핸", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2797',
             author: "필라델피아",
@@ -211,7 +211,7 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2796',
             author: "하이도1207",
@@ -222,7 +222,7 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2795',
             author: "소유",
@@ -230,10 +230,10 @@ const FreeBoardMain = () => {
         },
         { 
             id: 2794,
-            text: "다폴더 이벤트 참여.", 
+            text: "다폴더 이벤트 참여", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2794',
             author: "보라매유아인",
@@ -244,7 +244,7 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2793',
             author: "아기히뽀",
@@ -255,7 +255,7 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28 15:36",
+            time: "2021.06.28  15:36",
             type: "일반",
             path: '/freeboard/view2/2792',
             author: "소유",
@@ -333,10 +333,10 @@ const FreeBoardMain = () => {
     )
 
     function InboxList({ items }) {
-        return items.map(item => (
+        return items.map((item,index) => (
             <button 
                 key={item.id} 
-                className={`font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525`}
+                className={`font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full  group`}
                 onClick={() => history.push(item.path)}
             >
                 <div 
@@ -348,7 +348,9 @@ const FreeBoardMain = () => {
                         ? "#473c37" 
                         : item.id % 2 === 0 
                         ? "#2e2e2e"
-                        : "#323232"
+                        : "#323232",
+                        borderBottomWidth: index === items.length-1 ? 0: 1
+                        
                     }}
                     className="flex items-center font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-gray-252525" >     
                     
@@ -357,33 +359,33 @@ const FreeBoardMain = () => {
                         ? <img src={BlueSpeaker} alt="" />
                         : item.type === "이벤트" 
                         ? <img src={YellowSpeaker} alt="" />
-                        : item.id
+                        : <span className='mt-px'>{item.id}</span>
                         }
                     </div>   
 
                     <div 
                         style={{width: "796px"}}
-                        className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group`}>
+                        className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group ml-px`}>
                         {
                             item.type === "안내" 
-                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-15px">안내</div> 
+                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px">안내</div> 
                             : item.type === "이벤트" 
-                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-11px">이벤트</div> 
+                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-10px">이벤트</div> 
                             : <div></div>
                         }
                         <p
                             className={`${
                                 item.type === "안내" 
-                                ? "text-blue-6cbbe9 group-hover:text-blue-500" 
+                                ? "text-blue-6cbbe9 group-hover:text-blue-500 mr-11px" 
                                 : item.type === "이벤트" 
-                                ? "text-yellow-d2b28f group-hover:text-yellow-400" 
-                                : "group-hover:text-gray-r8c8c8c"
-                            } mr-10px mt-2px`}
+                                ? "text-yellow-d2b28f group-hover:text-yellow-400 mr-9px" 
+                                : "group-hover:text-gray-r8c8c8c mr-9px"
+                            }  mt-2px`}
                         >
                             {item.text}
                         </p>
                         {item.replies && (
-                            <div className="h-17px pl-5px pr-5px rounded-4px flex items-center justify-center text-white font-roboto text-12px bg-red-e9441d mr-10px">{item.replies}</div>
+                            <div className="h-17px pl-5px pr-5px rounded-4px flex items-center justify-center text-white font-roboto text-12px bg-red-e9441d mr-10px ml-px">{item.replies}</div>
                         )}
                         {item.isBetHistory === true && (
                             <div style={{backgroundColor: "#41b06c"}} className="h-25px w-65px rounded-full flex items-center justify-center text-white font-spoqaMedium text-12px">베팅내역</div>
@@ -397,9 +399,9 @@ const FreeBoardMain = () => {
 
                     <div 
                         style={{width: "135px"}}
-                        className={`w-158px flex justify-center items-center font-spoqaMedium tracking-tight text-gray-c8c8c8 text-center`} >
+                        className={`flex justify-center items-center font-spoqaMedium tracking-tight text-gray-c8c8c8 text-center`} >
                             {item.type !== "일반"
-                            ? <img src={WinnerLogo} alt="" className='-mt-5px'/>
+                            ? <img src={WinnerLogo} alt="" className='-mt-5px -ml-3px'/>
                             : (
                                 <div className="flex space-x-4px">
                                     {
@@ -418,7 +420,7 @@ const FreeBoardMain = () => {
                             )
                             }
                         </div>
-                    <div style={{width: "190px"}} className="w-70px flex items-center justify-center text-gray-c8c8c8 font-spoqa">
+                    <div style={{width: "190px"}} className="flex items-center justify-center text-gray-c8c8c8 font-spoqa">
                         {item.type !== "일반"
                             ? ""
                             : item.time
@@ -432,18 +434,16 @@ const FreeBoardMain = () => {
 
     return (
         <div className="w-full">
-
-          <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
+          <div className="shadow-table w-full overflow-hidden rounded-4px p-px "
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         >
             <div className=" w-full rounded-4px bg-gray-323232 overflow-hidden">
-              <div className="h-57px bg-gray-2e2e2e w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6 rounded-t-4px  border-b border-gray-252525">
-                  <div style={{width: "126px"}} className="flex items-center justify-center">번호</div>
-                  <div style={{width: "796px"}} className="flex items-center justify-center">제목</div>
-                  <div style={{width: "135px"}} className="flex items-center justify-center">닉네임</div>
-                  <div style={{width: "190px"}} className="flex items-center justify-center">등록일시</div>
+              <div className="h-56px bg-gray-2e2e2e w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6 rounded-t-4px  border-b border-gray-252525">
+                <div style={{width: "124px"}} className="flex items-center justify-center mt-px">번호</div>
+                <div style={{width: "798px"}} className="flex items-center justify-center mt-px">제목</div>
+                <div style={{width: "135px"}} className="flex items-center justify-center mt-px">닉네임</div>
+                <div style={{width: "190px"}} className="flex items-center justify-center mt-px">등록일시</div>
               </div>
-
               <div className="flex flex-col w-full">
                   <InboxList items={cellArray} />
               </div>
@@ -451,21 +451,21 @@ const FreeBoardMain = () => {
           </div>
 
 
-            <div className="mt-20px flex justify-end">
-                <button onClick={() => history.push('/freeboard/compose')} className="flex items-center justify-center h-36px w-90px  rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
-                    <div className="flex items-center justify-center h-34px w-88px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
-                        <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-2px text-shadow-5">작성하기</span>
-                    </div>
-                </button>
+            <div className="mt-19px flex justify-end">
+              <button onClick={() => history.push('/freeboard/compose')} className="flex items-center justify-center h-36px w-90px  rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
+                <div className="flex items-center justify-center h-34px w-88px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
+                  <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-2px text-shadow-5">작성하기</span>
+                </div>
+              </button>
             </div>
             
 
-            <div className="flex w-full justify-center mt-3px">
-                <Pagination page={page} setPage={setPage}/>   
+            <div className="flex w-full justify-center mt-5px">
+              <Pagination page={page} setPage={setPage}/>   
             </div>
 
             <div className="-mt-30px mb-60px">
-                {InboxSearch}
+              {InboxSearch}
             </div>
             
         </div>

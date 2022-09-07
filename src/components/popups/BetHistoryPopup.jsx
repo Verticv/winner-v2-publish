@@ -173,117 +173,120 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
         new Array(3).fill(false)
     );
 
-    return (
-        <div style={{height:"900px", width: "1110px"}} className="flex flex-col rounded-10px overflow-hidden">
-            <div className="relative h-61px bg-gray-272726 flex items-center justify-center flex-shrink-0" >
-                <label className="font-spoqaMedium text-yellow-ad9e8c tracking-tight text-24px">베팅내역</label>
-                <button className="absolute right-0 mr-26px cursor-pointer z-20" onClick={() => setPopupOpen(false)}>
-                    <img src={CloseIcon} alt="close_icon" />
-                </button>
-            </div>
-            
-            <div className="w-full h-full bg-gray-323231 pt-30px pb-40px">
-                
-                <div className="px-36px relative">
-                    <HorizontalMenu8 itemsArray={tabsArray} selectedTab={selectedTab} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />
-                    
-                    {/* {(selectedTab !== 2 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 7 && selectedTab !== 8) && (
-                        <div style={{marginLeft: `${selectedTab * 130 + 56}px`}} className={`absolute top-80px w-20px -mb-10px overflow-hidden inline-block `}>
-                            <div className="h-10px w-10px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>
-                        </div>
-                    )} */}
+  return (
+      <div className="shadow-table w-full overflow-hidden rounded-10px p-px"
+          style={{ height:"900px", width: "1110px",background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
+          <div  className="w-full h-full flex flex-col rounded-10px overflow-hidden">
+              <div className="relative h-61px bg-gray-272726 flex items-center justify-center flex-shrink-0" >
+                  <label className="font-spoqaMedium text-yellow-ad9e8c tracking-tight text-24px">베팅내역</label>
+                  <button className="absolute right-0 mr-22px cursor-pointer z-20" onClick={() => setPopupOpen(false)}>
+                      <img src={CloseIcon} alt="close_icon" />
+                  </button>
+              </div>
+              
+              <div className="w-full h-full bg-gray-323231 pt-30px pb-40px">
+                  
+                  <div className="pl-32px pr-36px relative">
+                      <HorizontalMenu8 itemsArray={tabsArray} selectedTab={selectedTab} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />
+                      
+                      {/* {(selectedTab !== 2 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 7 && selectedTab !== 8) && (
+                          <div style={{marginLeft: `${selectedTab * 130 + 56}px`}} className={`absolute top-80px w-20px -mb-10px overflow-hidden inline-block `}>
+                              <div className="h-10px w-10px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>
+                          </div>
+                      )} */}
 
-                    {(selectedTab !== 2 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8) && (
-                        <div className="mt-10px w-full px-4px py-3px rounded-4px bg-gray-2b2b2a">
-                            <SubHorizontalMenu 
-                                itemsArray={
-                                    selectedTab === 0
-                                    ? subTabsArray1
-                                    : selectedTab === 2
-                                    ? subTabsArray2
-                                    : selectedTab === 5
-                                    ? subTabsArray3
-                                    : selectedTab === 6
-                                    ? subTabsArray4
+                      {(selectedTab !== 2 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8) && (
+                          <div className="mt-10px w-full px-4px py-3px rounded-4px bg-gray-2b2b2a">
+                              <SubHorizontalMenu 
+                                  itemsArray={
+                                      selectedTab === 0
+                                      ? subTabsArray1
+                                      : selectedTab === 2
+                                      ? subTabsArray2
+                                      : selectedTab === 5
+                                      ? subTabsArray3
+                                      : selectedTab === 6
+                                      ? subTabsArray4
 
-                                    : subTabsArray2
-                                } 
-                                isState={selectedSubTab} 
-                                setState={setSelectedSubTab} 
-                            />
-                        </div>
-                    )}
-                </div>
+                                      : subTabsArray2
+                                  } 
+                                  isState={selectedSubTab} 
+                                  setState={setSelectedSubTab} 
+                              />
+                          </div>
+                      )}
+                  </div>
 
-                
+                  
 
-                <div className="w-full px-30px -mt-10px">
-                    <div 
-                        style={{
-                            height: 
-                            (selectedTab === 2 || selectedTab === 3 || selectedTab === 7)
-                            ? "665px" 
-                            : (selectedTab === 0 || selectedTab === 4 || selectedTab === 5 || selectedTab === 8)
-                            ? "565px" 
-                            : "485px"
-                        }} 
-                        className="overflow-y-auto mt-30px py-5px px-6px space-y-28px -pt-10px"
-                    >
-                        {selectedTab === 0 ? (
-                            <div className="-mt-20px">
-                                <LiveCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true} />
-                                <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                        ) : selectedTab === 1 ? (
-                            <div className="-mt-20px">
-                                <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true}/>
-                                <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                        ) : selectedTab === 2 ? (
-                            <div className="-mt-20px space-y-20px">
-                                <SportsBetHistory  checkedState={checkedState} setCheckedState={setCheckedState} showSub={false} attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen={setPopupOpen} isPopup={true} />
-                                <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                        ) : selectedTab === 3 ? (
-                            <div className="-mt-20px">
-                              <AllBetHistory isPopup={true}/>
-                              <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                        ) : selectedTab === 4 ? (
-                        <div className="-mt-20px">
-                              <ESportsBetHistory isPopup={true} />  
-                            </div>
-                        ) : selectedTab === 5 ? (
-                          <div className="-mt-20px">
-                                <MinigameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false}  attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen1={setPopupOpen} isPopup={true}/>
-                                <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                        ) : selectedTab === 6 ? (
-                            <div className="-mt-20px">
-                              <ARGameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true} />
-                                <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                          ) : selectedTab === 7 ? (
-                            <div className="-mt-20px">
-                                <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true}/>
-                                <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                        ) : selectedTab === 8 ? (
-                            <div className="-mt-20px">
+                  <div className={`w-full pl-24px -mt-10px ${selectedTab === 2 || selectedTab === 3 || selectedTab === 7?'pr-21px':'pr-30px'}`}>
+                      <div 
+                          style={{
+                              height: 
+                              (selectedTab === 2 || selectedTab === 3 || selectedTab === 7)
+                              ? "665px" 
+                              : (selectedTab === 0 || selectedTab === 4 || selectedTab === 5 || selectedTab === 8)
+                              ? "565px" 
+                              : "485px"
+                          }} 
+                          className="overflow-y-auto mt-30px py-5px px-6px space-y-28px -pt-10px"
+                      >
+                          {selectedTab === 0 ? (
+                              <div className="-mt-20px">
+                                  <LiveCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true} />
+                                  <Pagination page={page} setPage={setPage}/>   
+                              </div>
+                          ) : selectedTab === 1 ? (
+                              <div className="-mt-20px">
+                                  <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true}/>
+                                  <Pagination page={page} setPage={setPage}/>   
+                              </div>
+                          ) : selectedTab === 2 ? (
+                              <div className="-mt-20px space-y-20px">
+                                  <SportsBetHistory  checkedState={checkedState} setCheckedState={setCheckedState} showSub={false} attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen={setPopupOpen} isPopup={true} />
+                                  <Pagination page={page} setPage={setPage}/>   
+                              </div>
+                          ) : selectedTab === 3 ? (
+                              <div className="-mt-20px">
                                 <AllBetHistory isPopup={true}/>
                                 <Pagination page={page} setPage={setPage}/>   
-                            </div>
-                        ) :(
-                            <>
-                            </>
-                        )}
-                        
-                    </div>
-                </div>
-            </div>
+                              </div>
+                          ) : selectedTab === 4 ? (
+                          <div className="-mt-20px">
+                                <ESportsBetHistory isPopup={true} />  
+                              </div>
+                          ) : selectedTab === 5 ? (
+                            <div className="-mt-20px">
+                                  <MinigameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false}  attachedArray={attachedArray} setAttachedArray={setAttachedArray} setPopupOpen1={setPopupOpen} isPopup={true}/>
+                                  <Pagination page={page} setPage={setPage}/>   
+                              </div>
+                          ) : selectedTab === 6 ? (
+                              <div className="-mt-20px">
+                                <ARGameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true} />
+                                  <Pagination page={page} setPage={setPage}/>   
+                              </div>
+                            ) : selectedTab === 7 ? (
+                              <div className="-mt-20px">
+                                  <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true}/>
+                                  <Pagination page={page} setPage={setPage}/>   
+                              </div>
+                          ) : selectedTab === 8 ? (
+                              <div className="-mt-20px">
+                                  <AllBetHistory isPopup={true}/>
+                                  <Pagination page={page} setPage={setPage}/>   
+                              </div>
+                          ) :(
+                              <>
+                              </>
+                          )}
+                          
+                      </div>
+                  </div>
+              </div>
 
-            
-        </div>
+              
+          </div>
+      </div>
     )
 }
 

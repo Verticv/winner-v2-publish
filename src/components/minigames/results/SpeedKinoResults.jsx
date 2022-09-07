@@ -15,14 +15,14 @@ const SpeedKinoResults = ({array}) => {
             <div 
                 style={{
                     width:"61px",
-                    backgroundColor: item.id % 2 === 0 ? "#f8f8f8" : "#f7f9fc",
+                    backgroundColor: item.id % 2 === 0 ? "#2e2e2e" : "#2e2e2e",
                 }}
-                className="border-r border-gray-dddddd flex-shrink-0"
+                className="border-r border-gray-252525 flex-shrink-0"
             >
-                <div style={{borderColor:"#c5c5c5"}} className="flex items-center justify-center h-56px border-b">
+                <div style={{borderColor:"#252525"}} className="flex items-center justify-center h-56px border-b">
                     <p 
                         className="text-14px tracking-tight font-spoqaMedium"
-                        style={{color: item.id % 2 === 0 ? "#d52e2e" : "#2e6dd5"}}
+                        style={{color: item.id % 2 === 0 ? "#e65454" : "#4c98ff"}}
                     >
                         {subTab === 0 ? (
                             <>
@@ -37,8 +37,8 @@ const SpeedKinoResults = ({array}) => {
                 </div>
 
                 <div 
-                    style={{height:"62px", backgroundColor: "#ffffff"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#323232"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row1 && (
                         <div 
@@ -50,8 +50,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#f7f9fc"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#2e2e2e"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row2 && (
                         <div 
@@ -63,8 +63,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#ffffff"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#323232"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row3 && (
                         <div 
@@ -76,8 +76,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#f7f9fc"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#2e2e2e"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row4 && (
                         <div 
@@ -89,8 +89,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#ffffff"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#323232"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row5 && (
                         <div 
@@ -102,8 +102,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#f7f9fc"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#2e2e2e"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row6 && (
                         <div 
@@ -115,8 +115,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#ffffff"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#323232"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row7 && (
                         <div 
@@ -128,8 +128,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#f7f9fc"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#2e2e2e"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row8 && (
                         <div 
@@ -141,8 +141,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#ffffff"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#323232"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row9 && (
                         <div 
@@ -154,8 +154,8 @@ const SpeedKinoResults = ({array}) => {
                     )}
                 </div>
                 <div 
-                    style={{height:"62px", backgroundColor: "#f7f9fc"}} 
-                    className="flex items-center justify-center border-b border-gray-dddddd"
+                    style={{height:"62px", backgroundColor: "#2e2e2e"}} 
+                    className="flex items-center justify-center border-b border-gray-252525"
                 >
                     {item.row10 && (
                         <div 
@@ -171,12 +171,12 @@ const SpeedKinoResults = ({array}) => {
     }
 
     return (
-        <div style={{height: "737px"}} className="border border-gray-dddddd flex flex-col w-full">
-            <div style={{height: "51px", backgroundColor: "#fdfdfd"}} className="border-b border-gray-dddddd p-4px">
+        <div style={{height: "737px"}} className="rounded-4px  flex flex-col w-full">
+            <div style={{height: "51px", backgroundColor: "#323232"}} className="rounded-t-4px border-b border-gray-252525 p-4px">
                 <HorizontalMenu5 selectedTab={subTab} setSelectedTab={setSubTab} itemsArray={SubTabArray} />
             </div>
 
-            <div className="flex  overflow-x-scroll">
+            <div className="flex overflow-x-scroll">
                 <Strip items={array} />
             </div>
         </div>
