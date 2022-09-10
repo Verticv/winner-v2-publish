@@ -20,10 +20,10 @@ const FreeBoardView2 = () => {
         tag = null
     }) => (
         <div className="w-full h-110px pr-19px">
-            <div className="h-56px ml-21px flex items-center justify-between">
+            <div className="h-56px ml-22px flex items-center justify-between">
                 <div className="flex">
                     <img className="object-none" src={ReplyArrow} alt="" />
-                    <img className="pl-14px" src={rank === 1 ? Rank1 : rank === 2 ? Rank2 : rank === 3 ? Rank3 : rank === 4 ? Rank4 : Rank5} alt="" />
+                    <img className="pl-13px" src={rank === 1 ? Rank1 : rank === 2 ? Rank2 : rank === 3 ? Rank3 : rank === 4 ? Rank4 : Rank5} alt="" />
                     <p className="ml-5px text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">{username}</p>
                 </div>
                 {isEdit === true ? (
@@ -50,7 +50,7 @@ const FreeBoardView2 = () => {
                 )}
                
             </div> 
-            <div className="pl-49px">
+            <div className="pl-48px">
                 <div className="h-54px w-full rounded-4px bg-gray-252525 flex items-center px-20px justify-between">
                     <div className="flex text-14px font-spoqa tracking-tight">
                     {tag && ( <p className="text-blue-2980b9 mr-10px font-spoqaMedium">@{tag}</p>)}
@@ -67,7 +67,7 @@ const FreeBoardView2 = () => {
         <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         >
-          <div  className="w-full bg-gray-323232 rounded-4px overflow-hidden">
+          <div className="w-full bg-gray-323232 rounded-4px overflow-hidden">
             <div className="bg-gray-2e2e2e1 h-55px border-b border-gray-252525 flex items-center px-18px space-x-10px">
               <div className="text-15px font-spoqaMedium tracking-tight text-gray-c8c8c8">이벤트 신청합니다.</div>
               </div>
@@ -84,7 +84,7 @@ const FreeBoardView2 = () => {
                     <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d pr-px">2</div>
                 </div>
 
-                <div className="py-23px border-b border-gray-252525 px-27px space-y-28px"> 
+                <div className="py-23px border-b border-gray-252525 pl-27px pr-32px space-y-28px"> 
                     <SportsBetHistoryPanel type={1} winAmount="+900,000,000"  isAttached={true} noButtons={true}/>
                     <SportsBetHistoryPanel type={2} isAttached={true} noButtons={true}/>
                     {/* <SportsBetHistoryPanel type={4} id={0} isAttached={true} noButtons={true} attachedArray={[0]} />

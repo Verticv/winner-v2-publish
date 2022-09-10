@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router';
-import Reflect from '../../images/myPage/betHistory/Reflect.png'
+import Reflect from '../../images/esports/esports_reflect.png'
 
 const HorizontalMenu9 = ({
     itemsArray, 
@@ -71,7 +71,7 @@ const HorizontalMenu9 = ({
     }
 
     return (
-        <div className="flex w-full space-x-4px pr-3px">
+        <div className="flex w-full space-x-4px pr-3px pl-px">
             <TabsList items={itemsArray} />
         </div>
     )

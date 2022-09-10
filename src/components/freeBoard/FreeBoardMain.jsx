@@ -20,7 +20,8 @@ const FreeBoardMain = () => {
             id: 0,
             text: "입금규정 필독", 
             isRead: false,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "안내",
             isClicked: true,
             path: '/freeboard/view/0'
@@ -29,7 +30,8 @@ const FreeBoardMain = () => {
             id: 1,
             text: "메신저 고객센터 사칭주의", 
             isRead: false,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "안내",
             path: '/freeboard/view/1'
         },
@@ -37,7 +39,8 @@ const FreeBoardMain = () => {
             id: 2,
             text: "슬롯 롤링 보너스 요율 X2배 증가 안내", 
             isRead: false,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "안내",
             path: '/freeboard/view/2'
         },
@@ -45,7 +48,8 @@ const FreeBoardMain = () => {
             id: 3,
             text: "진행중 이벤트 안내 (2021.06.02)", 
             isRead: true,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/3'
         },
@@ -53,7 +57,8 @@ const FreeBoardMain = () => {
             id: 4,
             text: "스포츠 미니게임 충전 보너스 (변경 21.05.21)", 
             isRead: true,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/4'
         },
@@ -61,7 +66,8 @@ const FreeBoardMain = () => {
             id: 5,
             text: "라이브 카지노 충전 보너스", 
             isRead: true,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/5'
         },
@@ -69,7 +75,8 @@ const FreeBoardMain = () => {
             id: 6,
             text: "다폴더 적중 보너스 지금 (변경 21.04.16)", 
             isRead: true,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/6'
         },
@@ -77,7 +84,8 @@ const FreeBoardMain = () => {
             id: 7,
             text: "카지노 주간 낙첨 이벤트! (변경 21.06.07)", 
             isRead: true,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/7'
         },
@@ -85,7 +93,8 @@ const FreeBoardMain = () => {
             id: 8,
             text: "슬롯 충전 남첨 이벤트 (변경 21.06.07)", 
             isRead: true,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/8'
         },
@@ -93,7 +102,8 @@ const FreeBoardMain = () => {
             id: 9,
             text: "신규 이벤트 가입", 
             isRead: false,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/9'
         },
@@ -101,7 +111,8 @@ const FreeBoardMain = () => {
             id: 10,
             text: "슬롯 페이백 복구", 
             isRead: false,
-            time: "2021.06.29  07:35",
+            date: "2021.06.29",
+            time: "07:35",
             type: "이벤트",
             path: '/freeboard/view/10'
         },
@@ -111,7 +122,8 @@ const FreeBoardMain = () => {
             isRead: true,
             isBetHistory: true,
             replies: 20,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2805',
             author: "필라델피아",
@@ -123,7 +135,8 @@ const FreeBoardMain = () => {
             isRead: true,
             isBetHistory: true,
             replies: 2,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2804',
             author: "하이도1207",
@@ -134,7 +147,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2803',
             author: "소유",
@@ -145,7 +159,8 @@ const FreeBoardMain = () => {
             text: "다폴드 이벤트 참여", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2802',
             author: "보라매유아인",
@@ -156,7 +171,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2801',
             author: "아기히뽀",
@@ -167,7 +183,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2800',
             author: "소유",
@@ -178,7 +195,8 @@ const FreeBoardMain = () => {
             text: "다폴", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2799',
             author: "야리직",
@@ -189,7 +207,8 @@ const FreeBoardMain = () => {
             text: "다폴더", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2798',
             author: "신풍사우나",
@@ -200,7 +219,8 @@ const FreeBoardMain = () => {
             text: "아챔 올플핸", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2797',
             author: "필라델피아",
@@ -211,7 +231,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2796',
             author: "하이도1207",
@@ -222,7 +243,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2795',
             author: "소유",
@@ -233,7 +255,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 참여", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2794',
             author: "보라매유아인",
@@ -244,7 +267,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2793',
             author: "아기히뽀",
@@ -255,7 +279,8 @@ const FreeBoardMain = () => {
             text: "다폴더 이벤트 신청합니다.", 
             isRead: true,
             isBetHistory: true,
-            time: "2021.06.28  15:36",
+            date: "2021.06.28",
+            time: "15:36",
             type: "일반",
             path: '/freeboard/view2/2792',
             author: "소유",
@@ -352,7 +377,7 @@ const FreeBoardMain = () => {
                         borderBottomWidth: index === items.length-1 ? 0: 1
                         
                     }}
-                    className="flex items-center font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-gray-252525" >     
+                    className="flex items-center font-spoqaMedium text-14px  text-gray-c8c8c8 h-56px border-b border-gray-252525" >     
                     
                     <div style={{width: "126px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 flex items-center justify-center">
                         {item.type === "안내" 
@@ -365,7 +390,7 @@ const FreeBoardMain = () => {
 
                     <div 
                         style={{width: "796px"}}
-                        className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group ml-px`}>
+                        className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group ml-px tracking-tight`}>
                         {
                             item.type === "안내" 
                             ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px">안내</div> 
@@ -423,7 +448,7 @@ const FreeBoardMain = () => {
                     <div style={{width: "190px"}} className="flex items-center justify-center text-gray-c8c8c8 font-spoqa">
                         {item.type !== "일반"
                             ? ""
-                            : item.time
+                            : <div>{item.date}    {item.time}</div>
                         }
                     </div>
                     

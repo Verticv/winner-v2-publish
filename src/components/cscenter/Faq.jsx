@@ -72,16 +72,16 @@ const Faq = () => {
                         setOpenedCell(cellId)
                     }
                 }}>
-                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden h-56px flex items-center px-20px justify-between">
-                  <img className="object-none mt-3px" src={QIcon} alt="" />
-                  <div className="w-full h-full px-18px flex items-center space-x-9px"> 
+                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden h-56px flex items-center px-19px justify-between">
+                  <img className="object-none mt-8px" src={QIcon} alt="" />
+                  <div className="w-full h-full px-18px flex items-center space-x-7px"> 
                       <div 
                           style={{backgroundColor: "#494745", width: "89px"}} 
                           className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight pt-2px"
                       > 
                           {type}
                       </div>
-                      <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 group-hover:text-black">{text}</p>
+                      <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 group-hover:text-black mt-2px">{text}</p>
                   </div>
                   <img className={`${openedCell === cellId && "transform rotate-180"}`} src={openedCell === cellId ? ArrowDown : ArrowDown} alt="" />
               </div>    
@@ -105,29 +105,29 @@ const Faq = () => {
                             그 이상.! 최고를 넘어선 『 Winner 』입니다.  ☞ 첫, 매충 10% 포인트를 받지 않을시 모든게
                         </div>
 
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px ml-16px">
                             {BodyText1.split('\n').map((item, i) => 
                                 <p key={i} className={`flex items-center h-14px`}>{item}</p>
                             )}
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-16px">
                             - 스포츠 : <p style={{color: "#e65454"}} className="mx-3px">두폴더 이상 </p> 롤링 100% 최대 30만원 
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-16px">
                             - 스포츠단폴더, 키론가상게임, 미니게임, 카지노 : <p style={{color: "#e65454"}} className="mx-3px">이용불가</p>
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-16px">
                             - 스포츠 2폴더 이상 100% 롤링 후 이용 가능 스포츠 단폴더, 타 게임 이용 가능하며, 스포츠 2폴더 100% 롤링 전 타게임 이용시 보유금 <p style={{color: "#e65454"}} className="mx-3px">전액 몰수처리</p>
                         </div>
                            
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px ml-16px">
                             ※ 모든게임의 롤링적용시점은 게임이 끝나서 마감처리된 때입니다. 이후에 출금신청해주셔야 처리가능합니다.
                         </div>
 
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px ml-16px">
                             언제나 고객에게 최상의 서비스 제공을 할 수 있도록 노력하는 『 Winner 』가 되겠습니다.
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-16px">
                             감사합니다.
                         </div>
                     </div>

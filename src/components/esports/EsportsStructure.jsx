@@ -44,15 +44,15 @@ const EsportsStructure = () => {
                 <img src={Dot} className="object-none mr-4px" alt="" />
                 <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text}</span>
             </div>
-            <div className="flex">
+            <div className="flex mt-px">
                 <img src={Dot} className="object-none mr-4px" alt="" />
                 <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text2}</span>
             </div>
-            <div className="flex">
+            <div className="flex mt-px">
                 <img src={Dot} className="object-none mr-4px" alt="" />
                 <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text3}</span>
             </div>
-            <div className="flex">
+            <div className="flex mt-px">
                 <img src={Dot} className="object-none mr-4px" alt="" />
                 <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text4}</span>
             </div>
