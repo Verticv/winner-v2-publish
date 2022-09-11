@@ -15,7 +15,7 @@ const ContactCompose = () => {
             <div
                 className="flex w-full text-gray-ccc2b6 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight" 
             >
-                <label className="ml-14px cursor-pointer group-hover:text-black">{selectedCarrier}</label>
+                <label className="ml-14px cursor-pointer group-hover:text-gray-r8c8c8c">{selectedCarrier}</label>
                 <img className="w-10px h-6px object-contain mr-10px" src={DownArrowIcon} alt="arrow" /> 
             </div>
         </div>
@@ -102,11 +102,11 @@ const ContactCompose = () => {
                     </div>
                 </div>
 
-                <div className="h-55px bg-gray-2e2e2e border-b border-gray-252525 flex">
+                <div className="h-56px bg-gray-2e2e2e border-b border-gray-252525 flex">
                     <div style={{width: "139px"}} className="flex-shrink-0 border-r border-gray-252525 flex items-center justify-center bg-gray-2e2e2e">
                         <p className="text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">제목</p>
                     </div>
-                    <div className="w-full border-r border-gray-252525 bg-gray-323232 px-10px flex items-center">
+                    <div className="w-full  border-r border-gray-252525 bg-gray-323232 px-10px flex items-center">
                         <input 
                             className="outline-none w-full h-35px rounded-4px border border-gray-404040 px-9px text-14px font-spoqa tracking-tight placeholder-gray-828282 bg-dark-1a1a1a"
                             placeholder="제목을 입력하세요."
@@ -122,7 +122,7 @@ const ContactCompose = () => {
                     <div className="w-full border-r border-gray-252525 bg-gray-323232 flex items-center p-10px">
                         <textarea 
                             style={{height: "325px", resize: "none"}}
-                            className="outline-none w-full rounded-4px border border-gray-404040 px-9px py-8px text-14px font-spoqa tracking-tight placeholder-gray-828282 bg-dark-1a1a1a"
+                            className="outline-none w-full rounded-4px border border-gray-404040 px-9px py-10px text-14px font-spoqa tracking-tight placeholder-gray-828282 bg-dark-1a1a1a"
                             placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                         />
                     </div>

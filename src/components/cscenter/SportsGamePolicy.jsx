@@ -401,7 +401,7 @@ const SportsGamePolicy = ({setSelectedTab}) => {
             <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} showSub={false}/>
 
 
-            <div className=" mt-29px w-full flex h-16px items-center justify-center text-16px tracking-tight font-spoqaMedium text-gray-c8c8c8">
+            <div className=" mt-30px w-full flex h-16px items-center justify-center text-16px tracking-tight font-spoqaMedium text-gray-c8c8c8">
                 <Route path="/cscenter/policy/sportsgame/soccer">
                     <p className="text-gray-c8c8c8">모든 프로축구 경기는 해당 리그의 공식협회가 인정하는 경기 결과대로 반영됩니다.</p>
                 </Route>
@@ -431,7 +431,7 @@ const SportsGamePolicy = ({setSelectedTab}) => {
                 </Route>        
             </div>
 
-            <div className="mt-27px" />
+            <div className="mt-26px" />
 
             <Route path="/cscenter/policy/sportsgame/soccer">
                 <SportsGamePolicyTable1 array={SoccerArray} />

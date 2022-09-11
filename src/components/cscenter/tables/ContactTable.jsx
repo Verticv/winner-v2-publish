@@ -16,9 +16,9 @@ const ContactTable = ({
                 className={`${
                     item.isRead === false ? "bg-brown-r3d3934" :
                     item.id % 2 === 0 ? "bg-gray-323232" : "bg-gray-2e2e2e"
-                } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-55px w-full border-b border-gray-252525 group`}
+                } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525 group pt-px`}
             >
-                <div className="flex items-center font-spoqaBold text-14px tracking-tight text-gray-c8c8c8 h-55px border-b border-gray-252525 px-54px">        
+                <div className="flex items-center font-spoqaBold text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-gray-252525 px-54px">        
 
                     <div 
                         className="w-54px flex justify-center cursor-pointer h-full items-center"
@@ -28,7 +28,7 @@ const ContactTable = ({
                     </div>
 
                     <div 
-                        className="w-98px flex justify-center cursor-pointer h-full items-center"
+                        className="w-102px flex justify-center cursor-pointer h-full items-center"
                         onClick={() => history.push(item.path)}
                     >
                         <div 
@@ -48,19 +48,19 @@ const ContactTable = ({
 
                     <div 
                         style={{width: "420px"}} 
-                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} font-spoqaMedium flex items-center space-x-10px cursor-pointer h-full ml-24px`}
+                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} font-spoqaMedium flex items-center space-x-10px cursor-pointer h-full ml-23px`}
                         onClick={() => history.push(item.path)}
                     >
                         <p className="">{item.text}</p>
                         {item.isRead === false && (
-                            <div className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto ${item.id === 6 && "pr-px"}`}>
+                            <div className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px ${item.id === 6 && "pr-px"}`}>
                                 N
                             </div>
                         )}
                     </div>
 
                     <div 
-                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center`}
+                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center mr-3px`}
                         onClick={() => history.push(item.path)}
                     >
                         {item.time}
@@ -82,12 +82,12 @@ const ContactTable = ({
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         >
           <div  className="w-full bg-gray-323232 rounded-4px overflow-hidden">
-            <div className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-55px border-b border-gray-252525 px-52px">        
-                <div className="w-54px flex justify-center">확인</div>
-                <div className="w-98px flex justify-center">상태</div>
-                <div className="w-120px flex justify-center">구분</div>
-                <div style={{width: "420px"}} className="flex justify-center">제목</div>
-                <div className="w-138px flex justify-center">등록일시</div>
+            <div className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-54px border-b border-gray-252525 px-52px pt-px">        
+                <div className="w-57px flex justify-center">확인</div>
+                <div className="w-92px flex justify-center">상태</div>
+                <div className="w-124px flex justify-center">구분</div>
+                <div style={{width: "416px"}} className="flex justify-center">제목</div>
+                <div style={{width: "142px"}} className="flex justify-center ml-5px">등록일시</div>
                 <div className="ml-33px w-70px flex justify-center">삭제</div>
             </div>
 

@@ -19,7 +19,7 @@ const ContactView = () => {
             <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-20px" style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
               > 
               <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
-                <div className="h-56px w-full border-b border-gray-252525 px-20px flex items-center space-x-10px">
+                <div className="h-55px w-full border-b border-gray-252525 px-19px flex items-center space-x-10px">
                     <div 
                         style={{backgroundColor: "#494745", color: "#ccc2b6"}} 
                         className="w-66px h-25px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center"
@@ -37,7 +37,7 @@ const ContactView = () => {
                     <p className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">스포츠북 문의</p>
                 </div>
 
-                <div className="h-56px w-full border-b border-gray-252525 px-20px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-929292">
+                <div className="h-56px w-full border-b border-gray-252525 px-19px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-929292 pt-4px">
                     <img src={Rank1Icon} alt="" />
                     <p className="ml-3px">마이마이프로틴화이팅</p>
 
@@ -46,12 +46,12 @@ const ContactView = () => {
                     <p className="">2021.06.28 15:49</p>
                 </div>
 
-                <div className="w-full bg-gray-323232 py-20px px-16px">
-                    <div style={{WebkitTextStroke:"0.2px"}} className="rounded-4px  h-54px flex items-center px-21px font-spoqa text-14px tracking-tight text-gray-c8c8c8 bg-gray-252525">
+                <div className="w-full bg-gray-323232 py-22px px-16px">
+                    <div style={{WebkitTextStroke:"0.2px"}} className="rounded-4px  h-52px flex items-center px-21px font-spoqa text-14px tracking-tight text-gray-c8c8c8 bg-gray-252525">
                         스포츠북 문의 입니다.
                     </div>
 
-                    <div className="bg-gray-414141 rounded-4px py-20px px-23px mt-20px font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-32px">
+                    <div className="bg-gray-414141 rounded-4px pt-20pxpb-17px  px-22px mt-21px font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-35px">
                         <div className="space-y-10px">
                             {BodyText1.split('\n').map((item, i) => 
                                 <p key={i} className="flex items-center h-14px">{item}</p>

@@ -83,11 +83,11 @@ const AnnouncementTable = () => {
         return items.map(item => (
             <tr 
                 style={{backgroundColor: item.id % 2 === 0 ? "#323232" : "#2e2e2e"}} 
-                className="text-14px tracking-tight text-gray-c8c8c8 h-55px w-full border-b border-gray-252525 group"
+                className="text-14px tracking-tight text-gray-c8c8c8 h-55px w-full border-b border-gray-252525 group pt-px"
             >
                 <td style={{width: "173px",color: "#4a90f0"}} className="h-56px text-center text-blue-r0056a6 ">{item.type}</td>
                 <td  style={{width: "698px"}} className="w-full h-56px flex items-center space-x-10px">
-                    <p className="group-hover:text-black">{item.title}</p>
+                    <p className="">{item.title}</p>
                     {item.isNew && (
                         <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pr-px">
                             N
@@ -104,7 +104,7 @@ const AnnouncementTable = () => {
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         >
         <table className="w-full bg-gray-323232 rounded-4px overflow-hidden">
-            <thead className="bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-gray-252525">
+            <thead className="bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-54px border-b border-gray-252525 pt-px">
                 <tr>
                     <td style={{width: "173px"}} className="text-center">구분</td>
                     <td style={{width: "698px"}} className="w-full text-center pr-44px">제목</td>

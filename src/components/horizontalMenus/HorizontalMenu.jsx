@@ -4,7 +4,8 @@ import Reflect from '../../images/myPage/betHistory/Reflect.png'
 const HorizontalMenu = ({
     itemsArray, 
     setSelectedSubTab = null,
-    showSub = true
+    showSub = true,
+    hasRows = false
 }) => {
 
     const history = useHistory();
@@ -75,10 +76,22 @@ const HorizontalMenu = ({
     }
 
 
-    return (
-        <div className="flex justify-between w-full h-78px space-x-3px pl-4px pr-4px">
+  return (
+    <>
+    {!hasRows ? (
+      <div className="flex justify-between w-full h-78px space-x-3px pl-4px pr-4px">
           <TabsList items={itemsArray} />
-        </div>
+      </div>
+    ) : (
+      <div className="grid grid-cols-8 gap-3px w-full pl-4px pr-5px">
+          <TabsList items={itemsArray} />
+      </div>
+    )}
+      
+  </>
+        // <div className="flex justify-between w-full h-78px space-x-3px pl-4px pr-4px">
+        //   <TabsList items={itemsArray} />
+        // </div>
     )
 }
 

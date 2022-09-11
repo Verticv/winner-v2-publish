@@ -2,8 +2,9 @@ import Footer from 'components/mainPage/Footer';
 import DirectoryComponent from 'components/myPage/DirectoryComponent';
 import LeftMenu from 'components/myPage/LeftMenu';
 import Navbar from 'components/mainPage/Navbar'
+import QuickMenu from 'components/QuickMenu'
 // import NoticeBanner from 'components/mainPage/NoticeBanner'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Route, useLocation } from 'react-router';
 import Icon1 from '../images/cscenter/leftMenu/icon_1.png'
 import Icon2 from '../images/cscenter/leftMenu/icon_2.png'
@@ -54,7 +55,18 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
     const location = useLocation();
     const [selectedTab, setSelectedTab] = useState(location.pathname)
     const [selectedSubTab, setSelectedSubTab] = useState(location.pathname)
+    const [scrollPosition, setScrollPosition] = useState(0);
+	const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+	};
 
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
     return (
         <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
 
@@ -63,7 +75,9 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                 <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
             </div>
 
-
+            <div style={{right: '208px'}} className={`${scrollPosition > 397 ? "top-235px" : "top-428px"} fixed z-20 flex justify-end`}>
+                <QuickMenu />
+            </div>
             <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
 
                 <Route path="/cscenter/contact/all*">
