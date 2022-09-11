@@ -115,7 +115,7 @@ const LeftMenu = ({
                             className={`w-50px flex items-center justify-start flex-shrink-0 pl-7px`} 
                           >
                             <img 
-                              className="flex items-center justify-start  object-contain " 
+                              className="flex items-center justify-start object-contain" 
                               src={pathname.includes(item.mainPath) ? item.iconHighlight : item.icon} 
                                 alt="icon" />
                           </div>
@@ -162,7 +162,7 @@ const LeftMenu = ({
                             && isExpanded !== item.path3 + "closed" 
                             ? item.sub1||item.sub2||item.sub3||item.sub4?'bg-gray-2c2c2c mt-px pl-px pr-px pb-px':'' : "hidden"
 
-                            } w-full font-spoqaMedium text-16px cursor-pointer tracking-tight rounded-b-4px overflow-hidden `} 
+                            } w-full font-spoqaMedium text-16px cursor-pointer tracking-tight rounded-b-4px overflow-hidden`} 
                         >
                             {item.sub1 && (
                                 <button 

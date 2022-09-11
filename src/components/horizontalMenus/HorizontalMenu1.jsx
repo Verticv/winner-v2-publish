@@ -43,7 +43,7 @@ const HorizontalMenu1 = ({
                           :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
                         }}
                         className={`w-full rounded-3px flex flex-col items-center`}>
-                          <img className="mt-7px ml-2px object-none" src={item.icon} alt="" />
+                          <img className="mt-6px ml-px object-none" src={item.icon} alt="" />
                           {isState === item.id&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
                         <div 
                             className={`${
@@ -56,12 +56,11 @@ const HorizontalMenu1 = ({
                         </div>
                         <div 
                             style={{
-                                width: "38px",
                                 backgroundColor: isState === item.id 
                                 ? "#4b3f2b"
                                 : "#1a1a1a"
                             }}
-                            className={`text-white text-12px font-roboto tracking-tight mt-7px h-17px rounded-full flex items-center justify-center`}
+                            className={`text-white text-12px font-roboto tracking-tight px-9px mt-8px h-17px rounded-full flex items-center justify-center`}
                         >
                             {item.number}
                         </div>

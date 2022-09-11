@@ -226,6 +226,7 @@ module.exports = {
         '400px': '400px',
         '406px': '406px',
         '407px': '407px',
+        '428px':'428px',
         '440px': '440px',
         '466px': '466px',
         '480px': '480px',
@@ -282,7 +283,8 @@ module.exports = {
         btn: '0px 2px 5px 0px rgba(0, 0, 0, 0.5)',
         table: '0 0px 7px 1px rgba(0,0,0,0.6)',
         card: '5px 5px 2px 0 rgba(0,0,0,0.75)',
-        plain10:'0px 1px 1px 0px rgba(0, 0, 0, 0.6)'
+        plain10: '0px 1px 1px 0px rgba(0, 0, 0, 0.6)',
+        plain11: '0px 1px 4px 0px rgba(0, 0, 0, 0.5)'
       },
       screens: {
         'limit': '1261px',
