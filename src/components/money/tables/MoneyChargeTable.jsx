@@ -6,7 +6,7 @@ const MoneyChargeTable = () => {
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         className="rounded-4px shadow-table overflow-hidden p-px">
         <table className="rounded-4px overflow-hidden">
-            <thead className="bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px border-b border-gray-252525">
+            <thead className="bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-55px border-b border-gray-252525">
                 <tr>
                     <td style={{width: "245px"}} className="text-center flex-shrink-0">신청일시</td>
                     <td style={{width: "183px"}} className="text-center">충전금액</td>
