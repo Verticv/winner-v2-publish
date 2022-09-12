@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Reflect from '../../images/myPage/betHistory/Reflect.png'
+import Reflect from '../../images/minigames/Reflect.png'
 
 const HorizontalMenu4 = ({
     itemsArray, 
@@ -38,7 +38,7 @@ const HorizontalMenu4 = ({
                     <div className="flex items-center">
                         <div 
                             style={{color: selectedTab === item.id ? "black" : "#c8c8c8"}}
-                            className="text-16px tracking-tight font-spoqaMedium flex h-16px items-center pt-3px"
+                            className="text-16px tracking-tight font-spoqaMedium flex h-16px items-center pt-5px"
                         >
                             {item.text}
                         </div>

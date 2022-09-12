@@ -28,21 +28,21 @@ const MoneyCharge = () => {
             
             <MyPageTitle title="보유머니 충전" />
 
-            <div style={{height: "187px"}} className="mt-20px w-full rounded-4px border border-red-594c49 bg-red-413937 px-19px pt-17px">
-                <div className="flex items-center h-26px space-x-10px">
+            <div style={{height: "187px"}} className="mt-20px w-full rounded-4px border border-red-594c49 bg-red-413937 px-19px pt-16px">
+                <div className="flex items-center h-26px space-x-9px">
                     <img src={AlertIcon} alt="" />
-                    <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight">확인/필독사항</span>
+                    <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight mt-px">확인 / 필독사항</span>
                 </div>
-                <div className="mt-18px flex flex-col space-y-14px text-gray-ccc2b6 tracking-tight font-spoqaMedium text-16px">
-                    <span style={{color:"#ffdfbd"}} className="h-14px"><span className="mr-5px font-bold">✓</span>  입금 시 반드시 회원님의 성함으로 입금 바랍니다.</span>
-                    <span className="h-14px"><span className="mr-5px font-bold">✓</span>  입금이 지연될 수 있으니 은행 점검 시간을 확인하신 후 점검 시간을 피해 신청해 주시기 바랍니다.</span>
-                    <span className="h-14px"><span className="mr-5px font-bold">✓</span>  입금계좌는 수시로 변경되오니 반드시 계좌번호 문의 신청을 통해 계좌번호를 확인 후 입금하여 주시기 바랍니다.</span>
-                    <span className="h-14px"><span className="mr-5px font-bold">✓</span>  자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</span>
+                <div className="mt-16px flex flex-col space-y-15px text-gray-ccc2b6 tracking-tight font-spoqaMedium text-16px">
+                    <span style={{color:"#ffdfbd"}} className="h-14px space-y-4px"><span className="mr-4px mt-px font-bold">✓</span>  입금 시 반드시 회원님의 성함으로 입금 바랍니다.</span>
+                    <span className="h-14px space-y-4px"><span className="mr-4px mt-px font-bold">✓</span>  입금이 지연될 수 있으니 은행 점검 시간을 확인하신 후 점검 시간을 피해 신청해 주시기 바랍니다.</span>
+                    <span className="h-14px space-y-4px"><span className="mr-4px mt-px font-bold">✓</span>  입금계좌는 수시로 변경되오니 반드시 계좌번호 문의 신청을 통해 계좌번호를 확인 후 입금하여 주시기 바랍니다.</span>
+                    <span className="h-14px space-y-4px"><span className="mr-4px mt-px font-bold">✓</span>  자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</span>
                 </div>
             </div>
 
           <div style={{ height: "686px", background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
-          className="rounded-4px shadow-table overflow-hidden p-px mt-20px w-full ">
+          className="rounded-4px shadow-table overflow-hidden p-px mt-21px w-full ">
             <div className="h-full w-full rounded-3px overflow-hidden bg-gray-323232 p-10px">
                 <div style={{height: "288px"}} className="w-full rounded-4px border border-gray-404040 bg-gray-252525">
                     <div 
@@ -57,7 +57,7 @@ const MoneyCharge = () => {
                     >
                         입금 계좌번호는 쪽지로 발송되며, 발송된 계좌번호로 선입금 바랍니다.
                     </div>
-                    <div style={{width: "905px", marginLeft: "55px", backgroundColor:'#494745'}} className="h-px w-full mt-19px" />
+                    <div style={{width: "905px", marginLeft: "55px", backgroundColor:'#494745'}} className="h-px w-full mt-18px" />
 
                     <button 
                         style={{width: "222px", marginLeft:"75px", background: "linear-gradient(to top, #4b3b09, #e8b888)"}} 

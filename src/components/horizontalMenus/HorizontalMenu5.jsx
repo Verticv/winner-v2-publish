@@ -13,26 +13,36 @@ const HorizontalMenu5 = ({
                 key={item.id} 
                 style={{
                     height:"41px",
-                    backgroundColor: selectedTab === item.id
-                    ? "#3771ad" 
-                    : "#c7c7c7"
+                    background: selectedTab === item.id
+                    ?'linear-gradient( to top, #62553f, #dabe82)'
+                    :'linear-gradient( to top, rgb(41,41,41) 0%, rgb(80,80,78) 100%)',
+                    boxShadow: '0 5px 5px -2px rgba(0,0,0,0.5)'
                 }}
-                className="overflow-hidden w-full rounded-lg flex border border-gray-dddddd rounded-lg pb-2px"
+                className="relative overflow-hidden w-full rounded-4px flex items-end p-px "
                 onClick={() => setSelectedTab(item.id)}
             >
                 <div 
                     style={{
-                        height: "37px",
+                        height: "38px",
                         background: selectedTab === item.id 
-                        ? "linear-gradient(to bottom, #3e9dfd, #1c7cde)" 
-                        : "linear-gradient(to bottom, #f7f7f7, #e9e9e9)"
+                        ? 'linear-gradient(to top, #a6926f, #f9f0d3)'
+                        : 'linear-gradient(to top, rgb(57,56,53) 0%, rgb(107,104,101) 100%)',
                     }}
-                    className="w-full rounded-b-md rounded-b-lg flex items-center justify-center"
+                    className="w-full absolute top-0 left-0 p-px rounded-4px flex items-center justify-center"
                 >
-                    <div className="flex items-center">
+                    <div
+                        style={{
+                            height: "36px",
+                            background: selectedTab === item.id
+                            ? 'linear-gradient(to top, #8d7752, #dabe82)'
+                           
+                            : 'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)',
+                            boxShadow:selectedTab === item.id?"rgba(255, 240, 214, 15%) 1px 2px 5px 6px inset":''
+                        }} className="w-full rounded-3px flex items-center justify-center  pt-4px relative hover:filter hover:brightness-90" >
+                        
                         <div 
-                            style={{color: selectedTab === item.id ? "#ffffff" : "#585858"}}
-                            className="text-14px tracking-tight font-spoqaMedium flex h-14px items-center pt-3px"
+                            style={{color: selectedTab === item.id ? "black" : "#ccc2b6"}}
+                            className="text-14px tracking-tight font-spoqaMedium flex h-14px items-center "
                         >
                             {item.text}
                         </div>

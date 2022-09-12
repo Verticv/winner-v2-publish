@@ -8,7 +8,7 @@ const MyPageTitle = ({
     couponText ="사용 가능한 쿠폰:",
     pointsFor = null,
     inboxCount = null,
-    isTransaction = false
+    isTransaction = false,
 }) => {
     return (
         <div className="flex h-21px w-full justify-between">

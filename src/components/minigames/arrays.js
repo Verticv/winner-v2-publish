@@ -124,7 +124,7 @@ export const PowerballHistoryArray = [
 export const PowerballResultsArray = [
     {
         count: 288,
-        chosenNum: "05,06,20,21,23",
+        chosenNum: "05, 06, 20, 21, 23",
         numberSum: "75",
         odd: true,
         powerball: "0",
@@ -134,7 +134,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 287,
-        chosenNum: "07,08,10,11,16",
+        chosenNum: "07, 08, 10, 11, 16",
         numberSum: "52",
         odd: false,
         powerball: "2",
@@ -144,7 +144,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 286,
-        chosenNum: "02,04,10,13,23",
+        chosenNum: "02, 04, 10, 13, 23",
         numberSum: "52",
         odd: false,
         powerball: "4",
@@ -154,7 +154,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 285,
-        chosenNum: "07,08,10,11,16",
+        chosenNum: "07, 08, 10, 11, 16",
         numberSum: "52",
         odd: false,
         powerball: "2",
@@ -164,7 +164,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 284,
-        chosenNum: "05,06,20,21,23",
+        chosenNum: "05, 06, 20, 21, 23",
         numberSum: "75",
         odd: false,
         powerball: "0",
@@ -174,7 +174,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 283,
-        chosenNum: "07,08,10,11,16",
+        chosenNum: "07, 08, 10, 11, 16",
         numberSum: "52",
         odd: false,
         powerball: "2",
@@ -184,7 +184,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 282,
-        chosenNum: "02,04,10,13,23",
+        chosenNum: "02, 04, 10, 13, 23",
         numberSum: "52",
         odd: false,
         powerball: "2",
@@ -194,7 +194,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 281,
-        chosenNum: "07,08,10,11,16",
+        chosenNum: "07, 08, 10, 11 ,16",
         numberSum: "52",
         odd: false,
         powerball: "2",
@@ -204,7 +204,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 280,
-        chosenNum: "02,04,10,13,23",
+        chosenNum: "02, 04, 10, 13 ,23",
         numberSum: "52",
         odd: false,
         powerball: "4",
@@ -214,7 +214,7 @@ export const PowerballResultsArray = [
     },
     {
         count: 279,
-        chosenNum: "07,08,10,11,16",
+        chosenNum: "07, 08, 10, 11 ,16",
         numberSum: "52",
         odd: false,
         powerball: "2",

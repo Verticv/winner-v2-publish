@@ -7,7 +7,7 @@ import BlueButtonPressed from '../../../images/minigames/test/blue_rec_pressed.p
 import RedButtonPressed from '../../../images/minigames/test/red_rec_pressed.png'
 import RedSMButtonPressed from '../../../images/minigames/test/red_pressed.png'
 import BlueSMButtonPressed from '../../../images/minigames/test/blue_pressed.png'
-import TitleIcon from '../../../images/title-icon.png'
+import TitleIcon from '../../../images/minigames/title_icon.png'
 
 const PowerLadderGame = ({setSelectedOption}) => {
 
@@ -106,7 +106,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
                                         {titleNumber === 1 ? "홀" : titleNumber === 2 ? "좌" : "3줄"}
                                     </p>
                                 </div>
-                                <div className="text-12px font-robotoRegular tracking-tight text-white mt-4px h-12px flex items-center">1.95</div>
+                                <div className="text-12px font-robotoRegular tracking-tight text-white mt-4px h-12px flex items-center -ml-2px">1.95</div>
                             </div>
 
                             <div className="flex flex-col items-center">
@@ -132,7 +132,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
                                         {titleNumber === 1 ? "짝" : titleNumber === 2 ? "우" : "4줄"}
                                     </p>
                                 </div>
-                                <p className="text-12px font-robotoRegular tracking-tight text-white mt-4px h-12px flex items-center">1.95</p>
+                                <p className="text-12px font-robotoRegular tracking-tight text-white mt-4px h-12px flex items-center -ml-2px">1.95</p>
                             </div>
                         </div>
                     ) : titleNumber === 4 ? (
@@ -153,7 +153,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
                                             <div className="text-white text-12px tracking-tight font-spoqaMedium">3</div>
                                         </div>
                                     </div>
-                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center">3.80</div>
+                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center -ml-2px">3.80</div>
                                 </div>
                                 <div className="flex flex-col items-center">
                                     <div 
@@ -170,7 +170,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
                                             <div className="text-white text-12px tracking-tight font-spoqaMedium">3</div>
                                         </div>
                                     </div>
-                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center">3.80</div>
+                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center -ml-2px">3.80</div>
                                 </div>
                             </div>
                             <div className="flex space-x-18px mt-10px"> 
@@ -189,7 +189,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
                                             <div className="text-white text-12px tracking-tight font-spoqaMedium">4</div>
                                         </div>
                                     </div>
-                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center">3.80</div>
+                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center -ml-2px">3.80</div>
                                 </div>
                                 <div className="flex flex-col items-center">
                                     <div 
@@ -206,7 +206,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
                                             <div className="text-white text-12px tracking-tight font-spoqaMedium">4</div>
                                         </div>
                                     </div>
-                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center">3.80</div>
+                                    <div className="text-12px font-robotoRegular tracking-tight text-white h-12px flex items-center -ml-2px">3.80</div>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +220,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
     return (
         <div 
             style={{height: "205px"}}
-            className="flex w-full px-6px pb-7px"
+            className="flex w-full px-7px pb-7px"
         >
             <div className="w-full flex flex-col">
                 <PanelTitle title="파워사다리" />
