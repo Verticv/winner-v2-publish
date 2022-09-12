@@ -3,7 +3,8 @@ import BetCombinationRightPanel from 'components/betCombination/BetCombinationRi
 import Footer from 'components/mainPage/Footer'
 import DirectoryComponent from 'components/myPage/DirectoryComponent'
 import Navbar from 'components/mainPage/Navbar'
-import React, { useState } from 'react'
+import QuickMenu from 'components/QuickMenu'
+import React, { useState, useEffect } from 'react'
 import { Route } from 'react-router'
 import Icon1 from '../images/gameResults/horizontalMenu/icon_1_v2.png'
 import Icon2 from '../images/gameResults/horizontalMenu/icon_2_v2.png'
@@ -60,11 +61,26 @@ const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
     const [addedCard, setAddedCard] = useState(cardsArray)
     const [checkedState, setCheckedState] = useState(
         new Array(filterArray.length).fill(false)
-    );
+  );
+  const [scrollPosition, setScrollPosition] = useState(0);
+	const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
     return (
       <div className="relative flex flex-col justify-center w-full bg-gray-1e1e1e">
         <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
           <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
+        </div>
+        <div style={{right: '208px'}} className={`${scrollPosition > 397 ? "top-282px" : "top-282px"} fixed z-20 flex justify-end`}>
+            <QuickMenu />
         </div>
         <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
           <Route path="/bet-combination">
@@ -91,7 +107,7 @@ const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
               </div>
             </div>
               
-            <div style={{width: "307px", left:"0px", position:"-webkit-sticky", top: "150px", height: isPanelFixed ? "100%" : ""}} className={`${isPanelFixed && "sticky bottom-0 flex"} mb-60px pt-px `}>
+            <div style={{width: "309px", left:"0px", position:"-webkit-sticky", top: "150px", height: isPanelFixed ? "100%" : ""}} className={`${isPanelFixed && "sticky bottom-0 flex"} mb-60px pt-px `}>
                 <BetCombinationRightPanel 
                     addedCard={addedCard} 
                     setAddedCard={setAddedCard} 

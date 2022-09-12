@@ -8,7 +8,6 @@ import QuickMenu from 'components/QuickMenu'
 import React, { useState, useEffect } from 'react'
 import { Route, useLocation } from 'react-router'
 import MoneyChargeBanner from '../images/money/money_charge.png'
-import MoneyExchangeBanner from '../images/money/money_exchange.png'
 import Icon1 from '../images/money/leftMenu/icon_1.png'
 import Icon2 from '../images/money/leftMenu/icon_2.png'
 

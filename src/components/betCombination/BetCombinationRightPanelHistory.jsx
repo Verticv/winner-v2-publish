@@ -39,13 +39,13 @@ const BetCombinationRightPanelHistory = () => {
                     {team1}
                 </p>
                 <p 
-                    className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-7px"
-                    style={{color: side === "left" ? "#e65454" : "#454545"}}
+                    className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-7px text-white"
+                    // style={{color: side === "left" ? "#e65454" : "#454545"}}
                 >
                     {team2}
                 </p>
                 <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 h-14px flex items-center mt-14px">{type}</p>
-                <div className="flex absolute bottom-12px right-11px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-r454545">
+                <div className="flex absolute bottom-12px right-11px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-c8c8c8">
                     <p>{winStatus === "win" ? "승 @" : "패 @"}</p> 
                     <p 
                         className="ml-2px"
@@ -63,23 +63,23 @@ const BetCombinationRightPanelHistory = () => {
 
     const ResultsCard = () => (
         <div style={{height:"133px", borderRadius:"6px", background:'#4d4d4d',borderColor:'#3f3f3f'}} className="w-full border  space-y-9px pt-13px">
-            <div className="flex justify-between pl-8px pr-12px">
+            <div className="flex justify-between pl-7px pr-11px">
                 <p className="font-spoqaMedium text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">베팅시간</p>
                 <p className="font-roboto text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">2021-06-29 16:00</p>
             </div>
-            <div className="flex justify-between pl-8px pr-12px">
+            <div className="flex justify-between pl-7px pr-11px">
                 <p className="font-spoqaMedium text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">베팅금액</p>
                 <p className="font-roboto text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">5,000</p>
             </div>
-            <div className="flex justify-between pl-8px pr-12px">
+            <div className="flex justify-between pl-7px pr-11px">
                 <p className="font-spoqaMedium text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">배당률</p>
                 <p className="font-roboto text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">1.00</p>
             </div>
-            <div className="flex justify-between pl-8px pr-12px">
+            <div className="flex justify-between pl-7px pr-11px">
                 <p className="font-spoqaMedium text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">적중예상금액</p>
                 <p className="font-roboto text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">11,000.00</p>
             </div>
-            <div className="flex justify-between pl-8px pr-12px">
+            <div className="flex justify-between pl-7px pr-11px">
                 <p className="font-spoqaMedium text-14px h-14px flex items-center tracking-tight text-gray-c8c8c8">티켓번호</p>
                 <p className="font-roboto text-14px h-14px flex items-center tracking-tight text-blue-4c98ff">189106964</p>
             </div>

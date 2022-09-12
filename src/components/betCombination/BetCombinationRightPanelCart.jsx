@@ -84,7 +84,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
             style={{
                 width:"95px", 
                 background:"linear-gradient(to bottom, #6b6865, #393835)" ,
-                height:"46px"
+                height:"44px"
             }} 
             className="flex items-center justify-center rounded-2px p-px shadow-link"
             onPointerDown={() => setButtonClicked(amount)}
@@ -108,7 +108,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
 
     return (
         <div style={{width:"307px"}}>
-            <div className="bg-gray-262626 pb-5px px-3px flex flex-col">
+            <div className="bg-gray-262626 pb-6px px-3px flex flex-col">
                 {showConfirm && (
                     <>
                         <ConfirmCard />
@@ -200,7 +200,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                         <div 
                             style={{
                                 borderRadius:"3px",
-                                background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
+                                background: "linear-gradient(to top, #7f5f3f, #a67c52)",
                                 borderColor:"#747679"
                             }} 
                             className="flex items-center justify-center h-full w-full  rounded-2px  pt-px cursor-pointer"
@@ -220,7 +220,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                         <div 
                             style={{
                                 borderRadius:"3px",
-                                background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
+                                background: "linear-gradient(to top, #7f5f3f, #a67c52)",
                                 borderColor:"#747679"
                             }} 
                             className="flex items-center justify-center h-full w-full rounded-2px p-px cursor-pointer"
@@ -240,7 +240,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                         <div
                             style={{
                                 borderRadius:"3px",
-                                background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
+                                background: "linear-gradient(to top, #7f5f3f, #a67c52)",
                                 borderColor:"#747679"
                             }} 
                             className="flex items-center justify-center h-full  rounded-2px w-full  cursor-pointer"

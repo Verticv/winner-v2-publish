@@ -5,7 +5,7 @@ import BonusCell from '../../images/betCombination/bonus_cell.png'
 import NormalCell from '../../images/betCombination/normal_cell.png'
 import FootballIcon from '../../images/betCombination/soccer.png'
 import GlobeIcon from '../../images/betCombination/globe.png'
-import ArrowBlack from '../../images/down_arrow_icon.png'
+import ArrowBlack from '../../images/betCombination/ARR.png'
 import DropDownControls from 'components/dropdowns/DropDownControls'
 import T1 from '../../images/betCombination/t1.png'
 import T2 from '../../images/betCombination/t2.png'
@@ -297,7 +297,7 @@ const BetCombinationPanel = ({
     ]
 
     const [isDropdownOpen, setDropdownOpen] = useState(true)
-    const [selectedCarrier, setSelectedCarrier] = useState("국가선택")
+    const [selectedCarrier, setSelectedCarrier] = useState("국가 선택")
     const [isHover1, setHover1] = useState(null)
     const [isOpen, setOpen] = useState(new Array(20).fill(false))
     const [isButtonClicked, setButtonClicked] = useState("")
@@ -308,14 +308,14 @@ const BetCombinationPanel = ({
     const gameResultButton = (
         <div
             style={{
-                width: "159px",
+                width: "161px",
                 height: "39px"
             }}
-            className="flex items-center justify-between bg-dark-1a1a1a placeholder-gray-ccc2b6 outline-none rounded-md border border-gray-404040 px-12px font-spoqaMedium text-15px tracking-tight text-gray-ccc2b6 group" 
+            className="flex items-center justify-between bg-dark-1a1a1a placeholder-gray-ccc2b6 outline-none rounded-md border border-gray-404040 px-12px pl-13px font-spoqaMedium text-15px tracking-tight text-gray-ccc2b6 group" 
         >
             <div className="flex">
                 <img className="object-none" src={GlobeIcon} alt="" />
-                <p className="mt-px ml-6px text-14px group-hover:text-black">{selectedCarrier}</p>
+                <p className="mt-px ml-6px text-14px group-hover:text-gray-r8c8c8c">{selectedCarrier}</p>
             </div>
             <img src={ArrowBlack} alt="" />
         </div>
@@ -426,7 +426,7 @@ const BetCombinationPanel = ({
                     height: "39px",
                     background: "linear-gradient(to bottom, #debb78, #7a652c)" ,
                 }}  
-                className="flex items-center justify-center rounded-lg"
+                className="flex items-center justify-center rounded-lg shadow-link"
                 onMouseEnter={() => setHover1(0)}
                 onMouseLeave={() => setHover1(null)}
             >
@@ -457,7 +457,7 @@ const BetCombinationPanel = ({
                     height: "39px",
                     background: "linear-gradient(to bottom, #debb78, #7a652c)" ,
                 }}  
-                className="flex items-center justify-center rounded-lg"              
+                className="flex items-center justify-center rounded-lg shadow-link"              
             >
                 <div 
                     style={{
@@ -475,23 +475,23 @@ const BetCombinationPanel = ({
 
             <button 
                 style={{
-                    width:"267px", 
+                    width:"264px", 
                     height: "39px",
                     background: "linear-gradient(to bottom, #debb78, #7a652c)" ,
                 }}  
-                className="relative flex items-center justify-center rounded-lg"
+                className="relative flex items-center justify-center rounded-lg shadow-link"
                 onMouseEnter={() => setHover1(1)}
                 onMouseLeave={() => setHover1(null)}
             >
                 <div 
                     style={{
-                        width:"265px", 
+                        width:"262px", 
                         height: "37px",
                         background: "linear-gradient(to bottom, #c79e45, #9c6c38)",
                         color: "#ffffff",
                         textShadow: "1px 1px 0px #00000070"
                     }}  
-                    className="flex items-center justify-between rounded-lg  bg-gradient-to-b cursor-pointer px-10px pt-px"
+                    className="flex items-center justify-between rounded-lg  bg-gradient-to-b cursor-pointer px-10px pr-12px pt-px"
                 >
                     <span className="font-roboto tracking-tight text-14px">{stat3}</span>
                     <span className="truncate font-spoqaMedium tracking-tight text-14px text-right">{team2}</span>
@@ -531,7 +531,7 @@ const BetCombinationPanel = ({
                         height: "39px",
                         background: "linear-gradient(to bottom, #4f4a41, #2f2c28)" 
                     }}  
-                    className="flex items-center justify-center rounded-lg"
+                    className="flex items-center justify-center rounded-lg shadow-link"
                     onClick={() => {
                         setButtonClicked(`${id}left`)
                         setAddedCard(prevArray => 
@@ -550,7 +550,7 @@ const BetCombinationPanel = ({
                             color: (`${id}left` === isButtonClicked || `${id}left` === isHover3) ? "#ffdfbd" : "#c8c8c8",
                             textShadow: (`${id}left` === isButtonClicked || `${id}left` === isHover3) ? "1px 1px 0px #00000070" : ""
                         }}  
-                        className="flex items-center justify-end rounded-lg  bg-gradient-to-b cursor-pointer px-10px"
+                        className="flex items-center justify-end rounded-lg  bg-gradient-to-b cursor-pointer px-10px "
                     >
                         <span className="truncate text-right font-spoqaMedium tracking-tight text-14px pt-2px">{team1}</span>
                         <div style={{width:"38px"}} className={`${hasUp ? "justify-end pr-5px" : "justify-center"} flex items-center `}>
@@ -571,7 +571,7 @@ const BetCombinationPanel = ({
                         height: "39px",
                         background: "linear-gradient(to bottom, #4f4a41, #2f2c28)" 
                     }}  
-                    className="flex items-center justify-center rounded-lg"
+                    className="flex items-center justify-center rounded-lg shadow-link"
                     onClick={() => {
                         setButtonClicked(`${id}middle`)
                         setAddedCard(prevArray => 
@@ -598,11 +598,11 @@ const BetCombinationPanel = ({
 
                 <button 
                     style={{
-                        width:"267px", 
+                        width:"264px", 
                         height: "39px",
                          background: "linear-gradient(to bottom, #4f4a41, #2f2c28)" 
                     }}  
-                    className="flex items-center justify-center rounded-lg"
+                    className="flex items-center justify-center rounded-lg shadow-link"
                     onClick={() => {
                         setButtonClicked(`${id}right`)
                         setAddedCard(prevArray => 
@@ -666,7 +666,7 @@ const BetCombinationPanel = ({
                         <p className="font-spoqaMedium text-14px tracking-tight">{items.type}</p>
                         <p className="font-spoqa text-12px tracking-tight">(연장미포함)</p>
                     </div>
-                    <div className="ml-11px h-full flex items-center">
+                    <div className="ml-13px h-full flex items-center">
                         <NormalOptions  
                             id={items.id}
                             bet={items.bet}
@@ -738,9 +738,9 @@ const BetCombinationPanel = ({
                 <img style={{filter: "drop-shadow(5px 5px 5px #00000020)"}} className="absolute z-10" src={NormalCell} alt="" />
                 <div className="h-50px w-full z-20 flex items-center relative">
                     <img className="mx-10px" src={FootballIcon} alt="" />
-                    <img className="mr-10px" src={flag} alt="" />
+                    <img className="mr-10px -mt-px" src={flag} alt="" />
                     <p 
-                        className="text-20px font-spoqaMedium text-golden-highLight mt-3px truncate w-350px" 
+                        className="text-20px font-spoqaMedium text-golden-highLight mt-2px truncate w-350px" 
                         onMouseEnter={() => setHover4(title)}
                         onMouseLeave={() => setHover4("")}
                     >
@@ -759,7 +759,7 @@ const BetCombinationPanel = ({
                 </div>
                 <div className="h-px w-full bg-gray-1e1e1e" />
                 
-                <div className="w-full bg-gray-c8c8c8 z-20 flex flex-col shadow-subNavbar rounded-b-xl">
+                <div className="w-full  z-20 flex flex-col shadow-subNavbar rounded-b-xl">
                     <LeagueCell array={array} />
                 </div>
             </div>
@@ -767,32 +767,32 @@ const BetCombinationPanel = ({
     }
 
     return (
-      <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
+      <div className="shadow-table w-full  rounded-4px p-px mb-60px"
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}> 
-        <div  className="w-full bg-gray-323232 rounded-4px overflow-hidden">
+        <div  className="w-full bg-gray-323232 rounded-4px ">
           <div className="h-50px w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6 pt-4px">
-            <p className="ml-50px">경기일시</p>
-            <p style={{marginLeft: "62px"}}>구분</p>
-            <div style={{marginLeft: "136px"}} className="flex">
+            <p className="ml-48px">경기일시</p>
+            <p style={{marginLeft: "63px"}}>구분</p>
+            <div style={{marginLeft: "145px"}} className="flex">
               <p>승(홈)오버</p>
               <img className="blink object-none ml-5px" src={UpIcon} alt="" />
             </div>
-            <p style={{marginLeft: "112px"}}>무/핸/합</p>
-            <div style={{marginLeft: "107px"}} className="flex">
+            <p style={{marginLeft: "105px"}}>무/핸/합</p>
+            <div style={{marginLeft: "112px"}} className="flex">
               <p>패(원정)언더</p>
               <img className="blink object-none ml-5px" src={DownIcon} alt="" />
             </div>
-            <p style={{marginLeft: "118px"}}>정보</p>
+            <p style={{marginLeft: "109px"}}>정보</p>
           </div>
 
-          <div className="relative flex flex-col justify-start items-center h-119px px-7px">
-            <img className="absolute object-none" src={BonusCell} alt="" />
+          <div className="relative flex flex-col justify-start items-center h-115px px-7px">
+            <img className="absolute object-none -mt-4px" src={BonusCell} alt="" />
             <div className="h-50px w-full z-20 mt-8px flex items-center">
-              <div style={{color:"#ffffff", textShadow: "2px 2px 0px #00000050"}} className="ml-52px font-spoqaBold text-20px mt-4px">보너스 이벤트</div>
+              <div style={{color:"#ffffff", textShadow: "2px 2px 0px #00000050"}} className="ml-54px font-spoqaBold text-20px -mt-2px">보너스 이벤트</div>
             </div>
-            <div className="h-60px w-full z-20 flex items-center">
-              <div style={{color:"#ffdfbd"}} className="font-roboto text-14px tracking-tight ml-10px">2021-06-29 15:45</div>
-              <div style={{color:"#ffdfbd"}} className="font-spoqaMedium text-14px tracking-tight ml-32px mr-26px">보너스</div>
+            <div className="h-60px w-full z-20 flex items-center -mt-5px">
+              <div style={{color:"#ffdfbd"}} className="font-roboto text-14px tracking-tight ml-12px">2021-06-29 15:45</div>
+              <div style={{color:"#ffdfbd",marginRight:'31px'}} className="font-spoqaMedium text-14px tracking-tight ml-30px">보너스</div>
               <EventOptions 
                 team1 = "다폴더 보너스 배당"
                 team2 = "◀ 3폴더 이상 베팅 시"
@@ -803,11 +803,11 @@ const BetCombinationPanel = ({
             </div>
           </div>
 
-          <div className="mt-8px px-10px">
+          <div className="mt-8px px-9px">
             <div className="flex items-center justify-between h-59px rounded-lg bg-gray-252525">
               <div className="flex items-center">
-                <img className="object-none mx-9px" src={FootballIcon} alt="" />
-                <p className="text-20px font-spoqaMedium text-gray-ccc2b6 mr-9px">축구</p>
+                <img className="object-none mx-9px ml-10px" src={FootballIcon} alt="" />
+                <p className="text-20px font-spoqaMedium text-gray-ccc2b6 mr-8px">축구</p>
                 <div 
                   style={{backgroundColor:"#826140",color:'#ffdfbd'}} 
                   className="h-27px w-49px rounded-full flex items-center justify-center text-18px font-spoqaMedium tracking-tight  pt-2px pr-2px"
@@ -821,7 +821,7 @@ const BetCombinationPanel = ({
             </div>
           </div>
 
-          <div className="mt-10px px-10px pb-11px mb-60px space-y-11px">
+          <div className="mt-10px px-9px pb-11px space-y-11px">
             <LeagueGroup title="노르웨이 - UEFA Europa Conference League" />
             <LeagueGroup flag={AustriaIcon} title="오스트리아 - 컵" array={SecondArray}/>
             <LeagueGroup flag={NetherlandIcon} title="네덜란드 - D2" array={ThirdArray}/>

@@ -40,11 +40,11 @@ const BetCombinationRightPanel = ({
     const [selectedTab, setSelectedTab] = useState(0)
 
     return (
-      <div className="w-fill rounded-4px shadow-table overflow-hidden p-px"
+      <div className="w-full rounded-4px shadow-table overflow-hidden p-px"
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
         <div className="rounded-3px overflow-hidden">
-          <div style={{boxShadow:"0 2px 2px 0.5px #00000040"}} className="relative bg-gradient-to-b from-gray-545452 to-gray-323231 h-54px w-full z-20 rounded-t-3px flex items-center justify-between px-8px">
-              <div className="flex flex-col space-y-2px">
+          <div style={{boxShadow:"0 2px 2px 0.5px #00000040"}} className="relative bg-gradient-to-b from-gray-545452 to-gray-323231 h-54px w-full z-20 rounded-t-3px flex items-center justify-between pl-8px pr-9px">
+              <div className="flex flex-col space-y-2px mt-px">
                   <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">{format(time, dateFormat, { locale : ko })}</div>
                   <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-blue-4c98ff">{format(time, dateFormat1, { locale : ko })}</div>
               </div>

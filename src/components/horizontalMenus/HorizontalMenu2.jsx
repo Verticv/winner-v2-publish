@@ -43,7 +43,7 @@ const HorizontalMenu2 = ({
                             ?'#54544f'
                             :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
                         }}
-                        className={` w-full rounded-4px flex items-center justify-center space-x-4px`}
+                        className={` w-full rounded-4px flex items-center justify-center space-x-4px mt-px`}
                     >
                         <img className={`${item.id === 0 ? "mb-3px" : "mb-2px" } object-none`} src={isState === item.id ? item.iconHighlight : item.icon} alt="" />
                         <div 
@@ -57,13 +57,11 @@ const HorizontalMenu2 = ({
                         </div>
 
                         <div 
-                          className={`${isState === item.id
-                            ? "bg-gradient-to-b from-red-ff426a via-red-ef325f to-red-cf1348 "
-                            : "bg-gradient-to-b from-blue-r4c6782 via-blue-r40566c to-blue-r26303a"
-                          } absolute top-3px right-3px h-22px w-22px border rounded-full flex items-center justify-center shadow-plain1`
+                          className={`absolute top-3px right-3px h-22px w-22px border rounded-full flex items-center justify-center shadow-plain1`
                           }
                           style={{
-                            borderColor: "#f7efd1",
+                              borderColor: "#f7efd1",
+                              background: isState === item.id ?'linear-gradient(to top, #8a2a13, #e9441d)' :'linear-gradient(to top, #26303a, #4c6782)'
                           }}>
                             <p className=" font-roboto text-12px text-white">{item.number}</p>
                         </div>
@@ -75,7 +73,7 @@ const HorizontalMenu2 = ({
     }
 
     return (
-        <div className="flex w-full space-x-2px">
+        <div className="flex w-full space-x-3px">
             <TabsList items={itemsArray} />
         </div>
     )

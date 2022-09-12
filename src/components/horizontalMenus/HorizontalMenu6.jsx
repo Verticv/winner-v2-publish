@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Reflect from '../../images/myPage/betHistory/Reflect.png'
+import Reflect from '../../images/betCombination/Reflect.png'
 
 const HorizontalMenu6 = ({
     itemsArray, 
@@ -44,7 +44,7 @@ const HorizontalMenu6 = ({
                         }}
                         className={`w-full rounded-3px flex flex-col items-center`}
                     >
-                        <img className={`${item.id === 0 || item.id === 1 || item.id === 4 || item.id === 5 ? "ml-4px" : "ml-3px"} mt-4px object-none`} src={item.icon} alt="" />
+                        <img className={`${item.id === 0 || item.id === 1 || item.id === 4 || item.id === 5 ? "" : ""} mt-6px object-none`} src={item.icon} alt="" />
                         {isState === item.id&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
                         <div 
                             className={`${
@@ -73,7 +73,7 @@ const HorizontalMenu6 = ({
     }
 
     return (
-      <div className="flex w-full h-103px space-x-3px px-px">
+      <div className="flex w-full h-103px space-x-3px px-2px">
         <TabsList items={itemsArray} />
       </div>
     )
