@@ -51,7 +51,7 @@ const ContactView = () => {
                         스포츠북 문의 입니다.
                     </div>
 
-                    <div className="bg-gray-414141 rounded-4px pt-20pxpb-17px  px-22px mt-21px font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-35px">
+                    <div className="bg-gray-414141 rounded-4px pt-20px pb-17px  px-22px mt-21px font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-35px">
                         <div className="space-y-10px">
                             {BodyText1.split('\n').map((item, i) => 
                                 <p key={i} className="flex items-center h-14px">{item}</p>

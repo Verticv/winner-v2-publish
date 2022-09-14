@@ -178,7 +178,7 @@ const DateSearchBar = ({
                 </div>
             ) : (
                 <div className="flex items-center justify-center h-42px w-75px rounded-2px shadow-link hover:filter hover:brightness-125"
-                  style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
+                  style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}>
                     <div className="flex items-center justify-center h-40px w-73px  rounded-2px cursor-pointer"
                       style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">3개월</span>
@@ -198,16 +198,16 @@ const DateSearchBar = ({
                     style={{
                         width:"75px",
                         height:"42px",
-                        borderRadius: "4px",
-                        background: 'linear-gradient(0deg, rgb(128, 96, 62) 0%, rgb(129, 96, 64) 5%, rgb(165, 124, 82) 97%)'
+                        borderRadius: "2px",
+                        background: 'linear-gradient(to top, #4b3b09, #e8b888)'
                     }} 
-                    className="flex items-center justify-center rounded-2px  hover:opacity-75"
+                    className="flex items-center justify-center rounded-2px  hover:opacity-75 shadow-link hover:filter hover:brightness-125"
                 >
                     <div 
                         style={{
                             width:"73px", 
                             height:"40px",
-                            // background: "linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)",
+                            background: "linear-gradient(0deg, rgb(128, 96, 62) 0%, rgb(129, 96, 64) 5%, rgb(165, 124, 82) 97%)",
                             borderRadius: "2px"
                         }} 
                         className="flex items-center justify-center rounded-2px  cursor-pointer"

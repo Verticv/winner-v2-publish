@@ -612,7 +612,7 @@ const BetCombinationPanel = ({
                 >
                     <div 
                         style={{
-                            width:"265px", 
+                            width:"262px", 
                             height: "37px",
                             background: (`${id}right` === isButtonClicked || `${id}right` === isHover3)
                             ? "linear-gradient(to bottom, #987959, #634d38)"  

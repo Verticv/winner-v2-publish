@@ -72,7 +72,7 @@ const Faq = () => {
       <>
             <button 
                 style={{zIndex: 2,background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)"}}
-                className="relative rounded-4px shadow-table w-full h-56px flex items-center p-px  mb-10px  z-20 group hover:shadow-plain" 
+                className="relative rounded-4px shadow-table w-full h-56px flex items-center p-px  mb-11px  z-20 group hover:shadow-table" 
 
                 onClick={() => {
                     if (openedCell === cellId) {
@@ -81,7 +81,7 @@ const Faq = () => {
                         setOpenedCell(cellId)
                     }
                 }}>
-                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden h-56px flex items-center px-19px justify-between">
+                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden h-54px flex items-center px-19px justify-between">
                   <img className="object-none mt-8px" src={QIcon} alt="" />
                   <div className="w-full h-full px-18px flex items-center space-x-7px"> 
                       <div 

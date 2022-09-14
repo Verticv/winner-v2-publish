@@ -40,7 +40,7 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
         stat3 ="1.95",
     }) => (
         <div className="flex items-center w-full h-54px">
-            <div style={{width:"75px"}} className="flex justify-center font-roboto text-14 tracking-tight text-gray-c8c8c8">211</div>
+            <div style={{width:"75px"}} className="flex justify-center font-roboto text-14 tracking-tight text-gray-c8c8c8 mt-3px">211</div>
               <div className="flex space-x-4px">
                 <button 
                   style={{
@@ -63,14 +63,14 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
                   }>
                       <span className="truncate w-108px text-left font-spoqaMedium tracking-tight text-14px">{team1}</span>
                       <div className="flex items-center space-x-5px">
-                          <span className="font-roboto tracking-tight text-14px">{stat1}</span>
+                          <span className="font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
                       </div>
                   </div>
                 </button>
 
                 <button
                     style={{textShadow: bet === "middle" ? "1px 1px 1px #00000070" : "",background:"linear-gradient(to bottom, #4f4a41, #2f2c28)"}} 
-                    className={`flex group items-center justify-center w-82px h-36px rounded-4px `}
+                    className={`flex group items-center justify-center w-82px h-36px rounded-4px shadow-btn `}
                 >
                   <div
                     style={{background: bet === "middle" ? "linear-gradient(to bottom, #987959, #634d38 )" : ""}}
@@ -78,13 +78,13 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
                       bet === "middle" 
                       ? "text-golden-highLight" 
                       : "bg-dark-252525 text-gray-c8c8c8"}
-                      pt-px flex items-center justify-center h-34px w-79px rounded-3px cursor-pointer`}
+                      pt-px flex items-center justify-center h-34px w-80px rounded-3px cursor-pointer`}
                     >
                         <span className="font-spoqaMedium  tracking-tight text-14px">VS</span>
                     </div>
                 </button>
 
-                <button style={{width: "424px",background:"linear-gradient(to bottom, #4f4a41, #2f2c28)"}} className={`flex group items-center justify-center h-36px rounded-4px`}>
+                <button style={{width: "424px",background:"linear-gradient(to bottom, #4f4a41, #2f2c28)"}} className={`flex group items-center justify-center h-36px rounded-4px shadow-btn`}>
                     <div
                     style={{
                         width: "422px",
@@ -95,10 +95,10 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
                         bet === "right" 
                         ? "text-golden-highLight" 
                     : "bg-dark-252525 text-gray-c8c8c8"} 
-                        pt-px flex items-center justify-between h-34px rounded-3px cursor-pointer px-8px`}
+                        pt-px flex items-center justify-between h-34px rounded-3px cursor-pointer px-8px pl-9px`}
                     >
                         <div className="flex items-center space-x-5px">
-                            <span className="font-roboto tracking-tight text-14px">{stat3}</span>
+                            <span className="font-roboto tracking-tight text-14px pt-2px">{stat3}</span>
                         </div>
                         <span className="truncate w-108px font-spoqaMedium tracking-tight text-14px text-right">{team2}</span>
                     </div>
@@ -129,7 +129,7 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
                 
 
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt="" />
+                    <img src={ClockIcon} alt="" className='-mt-2px' />
                     <span 
                         className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight"
                     >
@@ -145,14 +145,14 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
       <div
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         className="rounded-4px shadow-table overflow-hidden p-px">
-        <div className="w-full rounded-4px bg-gray-323232 overflow-hidden">
+        <div className="w-full rounded-4px bg-gray-2b2b2a overflow-hidden">
             <div style={{height:"54px"}} className="w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">
                 <div style={{marginLeft:"35px"}}>회차</div>
                 <div style={{marginLeft:"221px"}}>승(홈)</div>
                 <div style={{marginLeft:"233px"}}>VS</div>
                 <div style={{marginLeft:"225px"}}>패(원정)</div>
             </div>
-            <div className="px-9px space-y-10px pb-12px">
+            <div className="px-9px space-y-10px pb-12px -mt-px">
                 <Table array={title === "스피드키노" ? ExampleArray4 : ExampleArray} />
                 <Table array={title === "스피드키노" ? ExampleArray5 : ExampleArray2} />
                 <Table array={title === "스피드키노" ? ExampleArray6 : ExampleArray3} />

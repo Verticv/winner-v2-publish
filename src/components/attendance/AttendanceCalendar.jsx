@@ -165,7 +165,7 @@ class Calendar extends React.Component {
           onClick={this.checkAttendance}
         >
             <div className="flex items-center justify-center h-50px w-190px rounded-2px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
-                <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff text-shadow-5">출석체크하기</span>
+                <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff text-shadow-5 mt-px">출석체크하기</span>
             </div>
         </button>
 

@@ -206,11 +206,11 @@ const Contact = () => {
     )
 
     return (
-        <div>
+        <div className='-mt-px'>
 
             <MyPageTitle title="문의하기" />
 
-            <div className="relative w-full mt-20px">
+            <div className="relative w-full mt-21px">
             <HorizontalMenu itemsArray={tabsArray} hasRows={true} setSelectedTab={setSelectedTab} showSub={false} />
 
                 <div className="mt-20px"></div>

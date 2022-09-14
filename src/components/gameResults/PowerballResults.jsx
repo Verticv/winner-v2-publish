@@ -41,14 +41,14 @@ const PowerballResults = () => {
       <div
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         className="rounded-4px shadow-table overflow-hidden p-px">
-        <div className="w-full rounded-4px bg-gray-323232 overflow-hidden">
+        <div className="w-full rounded-4px bg-gray-2b2b2a overflow-hidden">
           <div style={{height:"54px"}} className="w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">
             <div style={{marginLeft:"96px"}}>경기일시</div>
             <div style={{marginLeft:"215px"}}>회차</div>
             <div style={{marginLeft:"250px"}}>결과</div>
             <div style={{marginLeft:"244px"}}>배당률</div>
           </div>
-          <div className="px-10px space-y-10px pb-12px">
+          <div className="px-9px space-y-10px pb-12px -mt-px">
             <Table count="211" />
             <Table count="212" />
           </div>

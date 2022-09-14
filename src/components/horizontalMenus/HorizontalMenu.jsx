@@ -27,7 +27,7 @@ const HorizontalMenu = ({
           className={`${
               pathname === item.path
               ? "flex-shrink" 
-              : ""
+              : "flex-shrink"
           } relative overflow-hidden h-78px w-full flex items-end rounded-4px`} 
           onClick={() => {
               history.push(item.path)
@@ -54,13 +54,13 @@ const HorizontalMenu = ({
                   ?'#54544f'
                   :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
               }} className={` w-full rounded-3px flex flex-col justify-end items-center pb-3px relative hover:filter hover:brightness-90`}>
-              <img className='object-none h-40px' src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
+              <img className='object-none h-40px'  src={pathname === item.path ? item.iconHighlight : item.icon} alt="" />
               {pathname === item.path&&<img className="absolute top-0 left-0" src={Reflect} alt="" />}
               <span className={`${
                   pathname === item.path 
                   ? "text-black"
                   : "text-golden-ccc2b6"} 
-                  text-14px font-spoqaMedium tracking-tight mt-3px`} >{item.text}</span>
+                  text-14px font-spoqaMedium tracking-tight mt-2px`} >{item.text}</span>
             </div>
           </div>
           </button>
@@ -79,11 +79,11 @@ const HorizontalMenu = ({
   return (
     <>
     {!hasRows ? (
-      <div className="flex justify-between w-full h-78px space-x-3px pl-4px pr-4px">
+      <div className="flex justify-start w-full h-78px space-x-3px pl-4px pr-4px">
           <TabsList items={itemsArray} />
       </div>
     ) : (
-      <div className="grid grid-cols-8 gap-3px w-full pl-4px pr-5px">
+      <div className="grid grid-cols-8 gap-3px justify-between w-full pl-4px pr-5px">
           <TabsList items={itemsArray} />
       </div>
     )}

@@ -60,7 +60,7 @@ const ContactTable = ({
                     </div>
 
                     <div 
-                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center mr-3px`}
+                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center pr-5px`}
                         onClick={() => history.push(item.path)}
                     >
                         {item.time}
@@ -82,7 +82,7 @@ const ContactTable = ({
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         >
           <div  className="w-full bg-gray-323232 rounded-4px overflow-hidden">
-            <div className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-54px border-b border-gray-252525 px-52px pt-px">        
+            <div className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-55px border-b border-gray-252525 px-52px pt-px">        
                 <div className="w-57px flex justify-center">확인</div>
                 <div className="w-92px flex justify-center">상태</div>
                 <div className="w-124px flex justify-center">구분</div>

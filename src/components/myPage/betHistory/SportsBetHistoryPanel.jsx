@@ -165,7 +165,7 @@ const SportsBetHistoryPanel = ({
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">MLS</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt="" />
+                    <img src={ClockIcon} alt="" className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight pt-px">
                         2021-06-29 15:45
                     </span>
@@ -196,7 +196,7 @@ const SportsBetHistoryPanel = ({
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">EPL</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt="" />
+                    <img src={ClockIcon} alt=""  className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
@@ -243,7 +243,7 @@ const SportsBetHistoryPanel = ({
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">EPL</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt="" />
+                    <img src={ClockIcon} alt="" className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
@@ -274,7 +274,7 @@ const SportsBetHistoryPanel = ({
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">라리가</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt="" />
+                    <img src={ClockIcon} alt="" className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
