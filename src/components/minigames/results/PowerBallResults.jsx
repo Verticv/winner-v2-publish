@@ -6,7 +6,7 @@ const PowerBallResults = ({array}) => {
         return items.map(item => (
             <tr 
                 style={{height: "62px", backgroundColor: item.count % 2 === 0 ? "#323232" : "#2e2e2e"}} 
-                className="rounded-3xl font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-62px w-full border-b border-gray-252525 pr-4px"
+                className="rounded-3xl font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-62px w-full border-b border-gray-252525 last:border-b-0 pr-4px"
             >
                 <td style={{width: "156px"}} className="text-center">{item.count}</td>
                 <td style={{width: "225px"}} className="text-center">{item.chosenNum}</td>

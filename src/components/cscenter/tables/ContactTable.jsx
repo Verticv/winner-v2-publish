@@ -16,7 +16,7 @@ const ContactTable = ({
                 className={`${
                     item.isRead === false ? "bg-brown-r3d3934" :
                     item.id % 2 === 0 ? "bg-gray-323232" : "bg-gray-2e2e2e"
-                } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525 group pt-px`}
+                } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525 last:border-b-0 group pt-px`}
             >
                 <div className="flex items-center font-spoqaBold text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-gray-252525 px-54px">        
 

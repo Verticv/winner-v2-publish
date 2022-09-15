@@ -27,7 +27,7 @@ const MoneyExchangeTable = () => {
                     <td style={{width: "247px"}} className="h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>
                     <td style={{width: "204px"}} className="h-56px text-center">취소</td>
                 </tr>
-                <tr className="bg-gray-323232 font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525">
+                <tr className="bg-gray-323232 font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full">
                     <td style={{width: "258px"}} className="font-robotoRegular h-56px text-center flex-shrink-0">2021-06-29 15:45:41</td>
                     <td style={{width: "284px"}} className="h-56px text-right pr-100px font-robotoRegular">50,000</td>
                     <td style={{width: "247px"}} className="h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>

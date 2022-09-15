@@ -4,7 +4,7 @@ const SportsGamePolicyTable2 = ({array}) => {
 
     function Cells({ items }) {     
         return items.map(item => (
-            <tr className="bg-gray-323232 font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525 pt-2px">
+            <tr className="bg-gray-323232 font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525 pt-2px last:border-b-0">
                 <td style={{width: "248px"}} className="font-spoqaMedium h-54px text-center pl-20px flex justify-around items-center">
                     <p style={{color: item.color}}>{item.title}</p>
                     {item.title2 && (

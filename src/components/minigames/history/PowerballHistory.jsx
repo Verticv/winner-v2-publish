@@ -13,7 +13,7 @@ const PowerballHistory = ({array, checkedState, setCheckedState}) => {
         return items.map(item => (
             <div 
                 style={{height: "62px", backgroundColor: item.id % 2 === 0 ? "#323232" : "#2e2e2e" }} 
-                className="flex items-center justify-start font-spoqa text-14px tracking-tight text-gray-c8c8c8 border-b border-gray-252525"
+                className="flex items-center justify-start font-spoqa text-14px tracking-tight text-gray-c8c8c8 border-b border-gray-252525 last:border-b-0"
             >        
                 <div style={{width: "60px"}} className="flex justify-center ml-28px">
                     <input

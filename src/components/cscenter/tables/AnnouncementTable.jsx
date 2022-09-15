@@ -83,7 +83,7 @@ const AnnouncementTable = () => {
         return items.map(item => (
             <tr 
                 style={{backgroundColor: item.id % 2 === 0 ? "#323232" : "#2e2e2e"}} 
-                className="text-14px tracking-tight text-gray-c8c8c8 h-55px w-full border-b border-gray-252525 group pt-px"
+                className="text-14px tracking-tight text-gray-c8c8c8 h-55px w-full border-b border-gray-252525 group pt-px last:border-b-0"
             >
                 <td style={{width: "173px",color: "#4a90f0"}} className="h-56px text-center text-blue-r0056a6 ">{item.type}</td>
                 <td  style={{width: "698px"}} className="w-full h-56px flex items-center space-x-10px">

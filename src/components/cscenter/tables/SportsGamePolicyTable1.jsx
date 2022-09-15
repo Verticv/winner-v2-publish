@@ -9,7 +9,7 @@ const SportsGamePolicyTable1 = ({array}) => {
         ruleText, 
         ruleText2 = null
     }) => (
-        <tr className={`${ruleText2 ? "h-73px" : "h-56px"} bg-gray-323232 font-spoqa text-14px tracking-tight text-gray-c8c8c8  w-full border-b border-gray-252525 pt-px`}>
+        <tr className={`${ruleText2 ? "h-73px" : "h-56px"} bg-gray-323232 font-spoqa text-14px tracking-tight text-gray-c8c8c8  w-full border-b border-gray-252525 last:border-b-0 pt-px`}>
             <td style={{width: "162px", color: typeColor}} className="font-spoqaMedium w-235px h-56px text-center">{type}</td>
             <td style={{width: "86px", color: overtime === null ? "#ffcc00" : overtime === true ? "#dbae00" : "#929292"}} className="font-spoqaMedium h-56px text-center">{overtime === null ? "연장포함" : overtime === true ? "연장제외" : "연장없음"}</td>
             <td style={{width: "792px"}} className={`${ruleText2 ? "-space-y-4px" : ""} h-56px pl-20px`}>
