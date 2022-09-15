@@ -76,8 +76,10 @@ const MoneyExchange = () => {
                                             event.preventDefault();
                                         }
                                     }}
-                                /> 
-                            </form>
+                                    /> 
+                                    <div style={{backgroundColor: inputClicked === 0 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
+                                </form>
+                                
                             {/* <div className={`${inputClicked === 0 ? "bg-blue-r1ca7ec h-2px" : " h-px bg-gray-bebebe"} w-full`}></div> */}
                         </div>
                     </div>
@@ -167,7 +169,7 @@ const MoneyExchange = () => {
                 <div style={{width: "906px"}} className="ml-57px mt-42px flex flex-col">
                     <div className="flex space-x-10px">
                         <Title text="출금 비밀번호" />
-                        <div className="space-y-5px w-full  h-44px overflow-hidden rounded-4px">
+                        <div className=" w-full  h-44px overflow-hidden rounded-4px">
                             <input 
                                 style={{ background: '#191817',  boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', }}                      
                                     className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-42px mt-px"
@@ -177,7 +179,8 @@ const MoneyExchange = () => {
                                 onFocus={() => setInputClicked(1)}
                                 onBlur={() => setInputClicked(null)}
                                 type="password"
-                            />
+                                />
+                                <div style={{backgroundColor: inputClicked === 1 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
                             {/* <div className={`${inputClicked === 1 ? "bg-blue-r1ca7ec h-2px" : " h-px bg-gray-bebebe"} w-full`}></div> */}
                         </div>
                     </div>

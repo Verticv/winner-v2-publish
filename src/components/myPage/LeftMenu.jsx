@@ -12,7 +12,8 @@ const LeftMenu = ({
     setSelectedTab,
     selectedSubTab = null,
     setSelectedSubTab = null,
-    array
+    array,
+    isBig = false
 }) => {
     const pathname = window.location.pathname
     const history = useHistory();
@@ -48,7 +49,7 @@ const LeftMenu = ({
     }
       
   const EditProfileButton = ({ path, text, icon, iconHighlight, selectedTab }) => (
-    <div className='flex w-full items-center pt-5px flex-col'>
+    <div className='flex w-full items-center flex-col'>
         <button 
             className={`${
                 pathname.includes(path)
@@ -115,7 +116,7 @@ const LeftMenu = ({
                             className={`w-50px flex items-center justify-start flex-shrink-0 pl-7px`} 
                           >
                             <img 
-                              className="flex items-center justify-start object-contain" 
+                                className={`${isBig ? '-mt-2px' : 'mt-3px'} flex items-center justify-start object-contain`} 
                               src={pathname.includes(item.mainPath) ? item.iconHighlight : item.icon} 
                                 alt="icon" />
                           </div>
@@ -129,7 +130,7 @@ const LeftMenu = ({
                                   : isMouseHover === item.path
                                   ? 'text-golden-ccc2b6'
                                   : "text-golden-ccc2b6"
-                              } font-spoqaMedium text-16px cursor-pointer tracking-tight`}
+                              }  font-spoqaMedium text-16px cursor-pointer tracking-tight mt-3px`}
                             >
                               {item.text}
                             </label>
@@ -240,7 +241,7 @@ const LeftMenu = ({
     <div className="w-200px rounded-6px mb-180px p-px shadow-table overflow-hidden flex flex-col items-center"
       style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0% ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}
     >
-      <div className="rounded-6px bg-gray-323232 overflow-hidden w-full p-5px space-y-7px">
+      <div className="rounded-6px bg-gray-323232 overflow-hidden w-full p-5px pb-6px space-y-6px">
         <MenuList items={array} />
       </div>
     </div>

@@ -117,7 +117,8 @@ const MoneyCharge = () => {
                                     }
                                 }}
                                 type = "tel"
-                            />
+                                />
+                                 <div style={{backgroundColor: inputClicked  ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
                             {/* <div className={`${inputClicked ? "bg-blue-r1ca7ec h-2px" : " h-px bg-gray-bebebe"} w-full`}></div> */}
                         </div>
                     </div>

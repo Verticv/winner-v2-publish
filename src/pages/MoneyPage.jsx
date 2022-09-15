@@ -78,6 +78,7 @@ const MoneyPage = ({isAuthenticated, setAuthenticated}) => {
                             selectedTab={selectedTab} 
                             setSelectedTab={setSelectedTab}
                             array={LeftMenuArray}
+                            isBig={true}
                         />
                     </div>
 

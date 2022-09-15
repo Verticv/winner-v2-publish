@@ -6,6 +6,7 @@ const PointsApply = () => {
 
     const [inputValue, setInputValue] = useState(null)
     const [inputClicked, setInputClicked] = useState(false)
+    // const [selectedInput, setSelectedInput] = useState()
     var nf = new Intl.NumberFormat();
 
     const Title = ({text}) => (
@@ -88,10 +89,10 @@ const PointsApply = () => {
                     </div>
                     <div className="flex space-x-10px">
                         <Title text="전환 포인트 입력" />
-                        <div className="h-44px w-full">
+                        <div className="h-44px w-full overflow-hidden rounded-4px">
                               <input 
-                                style={{ background: '#191817' }}
-                                className="w-full  font-spoqaMedium text-16px text-gray-r828282 outline-none pl-9px placeholder-gray-r828282 h-full rounded-4px"
+                                style={{ background: '#191817',boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', }}
+                                className="w-full  font-spoqaMedium text-16px text-gray-r828282 outline-none pl-9px placeholder-gray-r828282 h-42px"
                                 placeholder="직접 입력시 숫자만 입력해 주세요."
                                 value={inputValue !==null ? nf.format(inputValue) : ""}
                                 onChange={e => setInputValue(e.target.value.replace(/,/g, ''))}
@@ -103,7 +104,7 @@ const PointsApply = () => {
                                     }
                                 }}
                             />
-                            {/* <div className={`${inputClicked ? "bg-blue-r1ca7ec h-2px" : " h-px bg-gray-bebebe"} w-full`}></div> */}
+                             <div style={{backgroundColor: inputClicked ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
                         </div>
                     </div>
                 </div>

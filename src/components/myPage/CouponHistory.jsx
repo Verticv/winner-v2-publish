@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import MyPageTitle from './MyPageTitle'
 import HorizontalMenu from '../horizontalMenus/HorizontalMenu'
-import Icon1 from '../../images/myPage/coupon/coupon_img1.png'
-import Icon2 from '../../images/myPage/coupon/coupon_img2.png'
+// import Icon1 from '../../images/myPage/coupon/coupon_img1.png'
+// import Icon2 from '../../images/myPage/coupon/coupon_img2.png'
 import Pagination from './Pagination'
 import CouponHistoryTable from './tables/CouponHistoryTable'
 import CouponRequestTable from './tables/CouponRequestTable'
@@ -14,8 +14,8 @@ const CouponHistory = () => {
     const [page, setPage] = useState(0)
 
     const tabsArray = [
-        { text: "쿠폰발급내역", icon: Icon1, id: 0, path: "/mypage/coupon/coupon-history/received" },
-        { text: "쿠폰선물내역", icon: Icon2, id: 1, path: "/mypage/coupon/coupon-history/sent" }
+        { text: "쿠폰발급내역", icon: '', id: 0, path: "/mypage/coupon/coupon-history/received" },
+        { text: "쿠폰선물내역", icon: '', id: 1, path: "/mypage/coupon/coupon-history/sent" }
     ]
 
     return (
@@ -23,7 +23,7 @@ const CouponHistory = () => {
             <MyPageTitle title="쿠폰내역"/>
 
             <div className="relative w-full mt-20px">
-                <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} />
+                <HorizontalMenu itemsArray={tabsArray} setSelectedTab={setSelectedTab} showSub={false} />
             </div>
                 
             <div className="mt-20px w-full">

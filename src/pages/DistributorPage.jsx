@@ -20,7 +20,8 @@ import SummaryIcon7 from '../images/myPage/distributor/summary/img7_v2.png'
 import SummaryIcon8 from '../images/myPage/distributor/summary/img8_v2.png'
 import DateSearchBar from 'components/myPage/DateSearchBar'
 import Diamond from '../images/myPage/diamond.png'
-import GrayArrow from '../images/arrows/arrow_up_gray.png'
+import SmallDiamond from '../images/myPage/small_diamond.png'
+import GrayArrow from '../images/arrows/gray_arrow.png'
 import WhiteArrow from '../images/arrows/white_arrow.png'
 import ReplyArrow from '../images/arrows/reply_arrow_v2.png'
 import BlueTriangle from '../images/golden_triangle.png'
@@ -167,7 +168,9 @@ const DistributorPage = ({
                 </div>
                 <div className="h-112px w-full flex flex-col">
                     <div className="flex h-56px w-full border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424">
-                        <div className="w-full h-full flex items-center justify-center bg-gray-1a1b1c">구분</div>
+                        <div className="w-full h-full flex items-center justify-center bg-gray-1a1b1c">
+                            <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>구분</div>
+                        </div>
                         <div className="w-full h-full flex items-center justify-center">스포츠</div>
                         <div className="w-full h-full flex items-center justify-center">미니게임</div>
                         <div className="w-full h-full flex items-center justify-center">에볼루션</div>
@@ -187,11 +190,13 @@ const DistributorPage = ({
                         <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
                         <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
                         <div className="w-full h-full flex items-center justify-center">e-스포츠</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>키론</span><span>가상게임</span></div>
+                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px mr-2px"><span>키론</span><span>가상게임</span></div>
                         <div className="w-full h-full flex items-center justify-center pr-3px">관리</div>
                     </div>
                     <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">변경</div>
+                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
+                        <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>변경</div>
+                        </div>
                         <div className="w-full h-full flex items-center justify-center">0.00%</div>
                         <div className="w-full h-full flex items-center justify-center">0.00%</div>
                         <div className="w-full h-full flex items-center justify-center">0.00%</div>
@@ -211,8 +216,8 @@ const DistributorPage = ({
                         <div className="w-full h-full flex items-center justify-center">0.00%</div>
                         <div className="w-full h-full flex items-center justify-center">0.00%</div>
                         <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">
+                        <div className="w-full h-full flex items-center justify-center mr-2px">0.00%</div>
+                        <div className="w-full h-full flex items-center justify-center mr-4px">
                         <button 
                             style={{width: "65px",background:'linear-gradient(to top, #4b3b09, #e8b888)'}}
                             className={` flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75`}
@@ -236,28 +241,28 @@ const DistributorPage = ({
     const DetailCell = () => (
         <>
             <div className="w-full flex">
-                <div className="w-40px mt-10px flex justify-center items-start">
+                <div className="w-39px mt-10px flex justify-center items-start">
                     {/* <img src={ReplyArrow} className="object-none" alt="" /> */}
                 </div>
                 <div className="w-full flex flex-col  border-gray-242424  bg-white  border-b">
-                    <div className="flex h-56px w-full border-b border-gray-242424 items-center bg-gray-323232">
+                    <div className="flex h-56px w-full  items-center bg-gray-323232">
 
-                        <div className="ml-10px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-16px tracking-tight">
-                            <img className="mr-10px" src={Diamond} alt="" />
+                        <div className="ml-8px pr-3px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-16px tracking-tight">
+                            <img className="mr-10px" src={SmallDiamond} alt="" />
                             <div className="flex items-center space-x-4px">
                                 <span className="text-white">입금:</span>
                                 <span className="text-yellow-ffcc00">000,000,000</span>
                             </div>
                         </div>
-                        <div className="ml-10px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-16px tracking-tight">
-                            <img className="mr-10px" src={Diamond} alt="" />
+                        <div className="ml-5px pr-3px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-16px tracking-tight">
+                            <img className="mr-10px" src={SmallDiamond} alt="" />
                             <div className="flex items-center space-x-4px">
                                 <span className="text-white">보너스:</span>
                                 <span className="text-yellow-ffcc00">0</span>
                             </div>
                         </div>
-                        <div className="ml-10px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-16px tracking-tight">
-                            <img className="mr-10px" src={Diamond} alt="" />
+                        <div className="ml-5px pr-20px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-16px tracking-tight">
+                            <img className="mr-10px" src={SmallDiamond} alt="" />
                             <div className="flex items-center space-x-4px">
                                 <span className="text-white">출금:</span>
                                 <span className="text-yellow-ffcc00">0</span>
@@ -266,7 +271,9 @@ const DistributorPage = ({
 
                     </div>
                     <div className="flex h-56px w-full border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424">
-                        <div className="w-full h-full flex items-center justify-center bg-gray-1a1b1c">구분</div>
+                        <div className="w-full h-full flex items-center justify-center bg-gray-1a1b1c border-l border-gray-242424">
+                            <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>구분</div>
+                        </div>
                         <div className="w-full h-full flex items-center justify-center">스포츠</div>
                         <div className="w-full h-full flex items-center justify-center">미니게임</div>
                         <div className="w-full h-full flex items-center justify-center">에볼루션</div>
@@ -286,10 +293,12 @@ const DistributorPage = ({
                         <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
                         <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
                         <div className="w-full h-full flex items-center justify-center">e-스포츠</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>키론</span><span>가상게임</span></div>
+                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px mr-10px"><span>키론</span><span>가상게임</span></div>
                     </div>
                     <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">베팅금</div>
+                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
+                            <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>베팅금</div>
+                        </div>
                         <div className="w-full h-full flex items-center justify-end">1.09M</div>
                         <div className="w-full h-full flex items-center justify-end">33K</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
@@ -309,10 +318,12 @@ const DistributorPage = ({
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">7.14M</div>
-                        <div className="w-full h-full flex items-center justify-end pr-12px">0</div>
+                        <div className="w-full h-full flex items-center justify-end pr-9px">0</div>
                     </div>
                     <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">승패</div>
+                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
+                            <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>승패</div>
+                        </div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
@@ -332,10 +343,12 @@ const DistributorPage = ({
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end pr-12px">0</div>
+                        <div className="w-full h-full flex items-center justify-end pr-9px">0</div>
                     </div>
                     <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">정산금액</div>
+                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
+                            <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>정산금액</div>
+                        </div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
@@ -355,7 +368,7 @@ const DistributorPage = ({
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
                         <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end pr-12px">0</div>
+                        <div className="w-full h-full flex items-center justify-end pr-9px">0</div>
                     </div>
                 </div>
             </div>
@@ -382,14 +395,16 @@ const DistributorPage = ({
     
         return items.map(item => (
             <>
-            <div className={`${item.id % 2 === 1 ? "bg-gray-242424" : "bg-gray-323231"} ${item.isLast ? "" : ""} w-full h-69px flex items-center justify-start font-roboto text-16px text-gray-c8c8c8 tracking-tight`}>
-                <div className={`${item.name?'w-85px':'w-138px'}  h-full flex items-center justify-center`}>{item.number}</div>
-                <div className="w-full h-full flex items-center justify-center"  style={{width:item.name?'147px':'115px'}}>{item.username}</div>
+                <div
+                    className={`${item.id % 2 === 1 ? "bg-gray-242424" : "bg-gray-323231"} 
+                     ${item.isLast ? "" : ""} w-full h-69px flex items-center justify-start font-roboto text-16px text-gray-c8c8c8 tracking-tight`}>
+                <div className={`${item.name?'w-90px pr-5px':'w-138px'}  h-full flex items-center justify-center`}>{item.number}</div>
+                <div className="w-full h-full flex items-center justify-center"  style={{width:item.name?'136px':'113px'}}>{item.username}</div>
                 {item.name && (
-                    <div className="w-87px h-full flex items-center justify-center font-spoqaMedium">{item.name}</div>
+                    <div className="w-96px h-full flex items-center justify-center font-spoqaMedium">{item.name}</div>
                 )}
-                 <div className="w-144px h-full flex items-center justify-center font-spoqaMedium" style={{width:item.name?'144px':'135px'}}>{item.nickname}</div>
-                 <div className="relative w-88px h-full flex items-center justify-center"  style={{width:item.name?'88px':'120px'}}>
+                 <div className="w-144px h-full flex items-center justify-center font-spoqaMedium" style={{width:item.name?'130px':'139px',paddingLeft:item.name?'7px':'0'}}>{item.nickname}</div>
+                    <div className={`${item.name ? 'justify-center' : 'justify-end pr-32px'} relative w-88px h-full flex items-center`}  style={{width:item.name?'108px':'113px',paddingLeft:item.name?'1px':'0'}}>
                     {item.user_count === 0 
                     ? <div className="">{item.added_amount}</div>
                   : 
@@ -416,50 +431,50 @@ const DistributorPage = ({
                   
                     }
                     {isUserCountOpen[item.id] === true && (
-                        <div className="absolute bottom-0 -mb-px left-24px">
+                        <div className="absolute bottom-0 -mb-px left-34px">
                             <img src={BlueTriangle} alt="" />
                         </div>
                     )}
                 </div>
-                <div className="text-center flex flex-col items-center justify-center space-y-3px text-16px tracking-tight font-roboto ml-3px" style={{width:item.name?'140px':'127px'}}>
+                <div className={`${item.name?'pl-2px':'pl-11px'} text-center flex flex-col items-center justify-center space-y-3px text-16px tracking-tight font-roboto`} style={{width:item.name?'125px':'134px'}}>
                     <div className="flex items-center h-16px">{item.recommended_date}</div>
                     <div className="flex items-center h-16px">{item.login_date}</div>
                     <div className="flex items-center h-16px">({item.absent_date})</div>
                 </div>
-                    <div className={`relative w-96px h-full flex items-center justify-end`} style={{width:item.name?'96px':'110px'}} >
+                    <div className={`relative w-96px h-full flex items-center justify-end`} style={{width:item.name?'109px':'109px'}} >
                     <button 
                         style={{background: isUserCountOpen ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                        className={`${isUserCountOpen ? "" : ""} ${item.name?'mr-2px':''} flex items-center justify-center h-36px w-85px rounded-4px hover:opacity-75 p-px shadow-link`}
+                        className={`${isUserCountOpen ? "" : ""} ${item.name?'mr-9px':''} flex items-center justify-center h-36px w-85px rounded-4px hover:opacity-75 p-px shadow-link`}
                         onClick={() => {
                             handleOnChange1(item.id + 1)
                         }}
                     >
-                  <div
-                    style={{background: isUserCountOpen[item.id+1] ? 'linear-gradient(to bottom, #f38d27, #b45a00)' : 'linear-gradient(to bottom, #a67c52, #7f5f3f)' }}
-                    className={` flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
-                        >
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white">
-                                {isUserCountOpen[item.id + 1] === true ? "접기" : "보기"}
-                            </span>
-                            <img className={isUserCountOpen[item.id + 1] === false && " transform rotate-180"} src={WhiteArrow} alt=""/>
+                        <div
+                        style={{background: isUserCountOpen[item.id+1] ? 'linear-gradient(to bottom, #f38d27, #b45a00)' : 'linear-gradient(to bottom, #a67c52, #7f5f3f)' }}
+                        className={` flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
+                            >
+                                <span className="font-spoqaMedium tracking-tight text-14px text-white">
+                                    {isUserCountOpen[item.id + 1] === true ? "접기" : "보기"}
+                                </span>
+                                <img className={isUserCountOpen[item.id + 1] === false && " transform rotate-180"} src={WhiteArrow} alt=""/>
                         </div>
                     </button>
                     {isUserCountOpen[item.id + 1] === true && (
-                        <div className="absolute bottom-0 -mb-px">
+                        <div className="absolute bottom-0 -mb-px left-47px" style={{left:item.name?'47px':'56px'}}>
                             <img src={BlueTriangle} alt="" />
                         </div>
                     )}
                 </div>
-                <div className="h-full flex items-center justify-end text-right" style={{width:'133px'}}><p className="pr-45px">{item.added_amount}</p></div>
-                <div className="h-full flex items-center justify-end text-right" style={{width: '98px'}}><p className="pr-27px">{item.bonus}</p></div>
-                <div className="w-133px h-full flex items-center justify-end text-right"><p className="pr-44px">{item.withdraw_amount}</p></div>
-                <div className="w-98px h-full flex items-center justify-end text-right"><p className="pr-25px">{item.added_withdraw_amount}</p></div>
-                <div className="h-full flex items-center justify-end text-right" style={{width:'131px'}}><p className="pr-42px">{item.bet_amount}</p></div>
-                <div className="w-102px h-full flex items-center justify-end text-right"><p className="pr-28px">{item.win_lose}</p></div>
-                <div className="relative w-full h-full flex items-center justify-center" style={{width:'131px'}}>
+                <div className="h-full flex items-center justify-end text-right" style={{width:'122px',marginLeft:!item.name?'9px':'0px'}}><p className="pr-39px">{item.added_amount}</p></div>
+                <div className="h-full flex items-center justify-end text-right" style={{width: '108px',paddingRight:'31px'}}><p className="pr-31px">{item.bonus}</p></div>
+                <div className="h-full flex items-center justify-end text-right"  style={{width: '123px'}}><p className="pr-38px">{item.withdraw_amount}</p></div>
+                <div className="w-110px h-full flex items-center justify-end text-right"><p className="pr-30px">{item.added_withdraw_amount}</p></div>
+                <div className="h-full flex items-center justify-end text-right" style={{width:'120px'}}><p className="pr-36px">{item.bet_amount}</p></div>
+                <div className=" h-full flex items-center justify-end text-right"  style={{width:'113px',paddingRight:'33px'}}><p>{item.win_lose}</p></div>
+                <div className="relative w-full h-full flex items-center justify-center" style={{width:'122px'}}>
                 <button 
                     style={{background:isUserCountOpen[item.id] ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                        className={` ${item.name?'ml-10px':''} flex items-center justify-center h-36px w-85px rounded-4px hover:opacity-75 p-px shadow-link`}
+                        className={` ${item.name?'ml-9px':'ml-8px'} flex items-center justify-center h-36px w-85px rounded-4px hover:opacity-75 p-px shadow-link`}
                         onClick={() => {
                             handleOnChange1(item.id + 2)
                         }}
@@ -476,23 +491,23 @@ const DistributorPage = ({
                         </div>
                     </button>
                     {isUserCountOpen[item.id + 2] === true && (
-                        <div className="absolute bottom-0 -mb-px">
+                        <div className="absolute bottom-0 -mb-px left-47px">
                             <img src={BlueTriangle} alt="" />
                         </div>
                     )}
-                </div>
-                <div className="w-98px h-full flex items-center justify-end"><p className="pr-25px">{item.point}</p></div>
-                <div className="h-full flex items-center justify-end" style={{width:'120px'}}><p className="pr-28px">{item.holding_amount}</p></div>
+                </div> 
+                 <div className="w-100px h-full flex items-center justify-end"><p className="pr-23px">{item.point}</p></div>
+                <div className="h-full flex items-center justify-end" style={{width:'116px'}}><p className="pr-23px">{item.holding_amount}</p></div>
             </div>
             <div 
-                style={{
-                    borderTop: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #a67c52",
+                    style={{
+                   borderTop: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #a67c52",
                     // borderBottom: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #dddddd",
                 }}
-                className={`flex flex-col relative w-full`}
+                className={`bg-gray-1e1e1e flex flex-col relative w-full`}
             >
                 {(isUserCountOpen[item.id] === true || isUserCountOpen[item.id + 1] === true || isUserCountOpen[item.id + 2] === true) &&
-                    <div className="absolute w-40px mt-10px flex justify-center items-start ml-2px">
+                    <div className="absolute w-39px mt-10px flex justify-center items-start ml-2px ">
                         <img src={ReplyArrow} className="object-none" alt="" />
                     </div>
                 }
@@ -591,10 +606,10 @@ const DistributorPage = ({
                     <>
                         {(isUserCountOpen[item.id] === true && item.hasSubArray === true) ? (
                             <>
-                                <div className="h-10px"/>
+                                <div className="h-10px" />
                                 <PercentageCell />
                             </>
-                        ) : (<PercentageCell />)}       
+                        ) : (<PercentageCell /> )}       
                     </>
                 )}
                 {isUserCountOpen[item.id + 2] === true && (
@@ -753,7 +768,7 @@ const DistributorPage = ({
 
                         <DateSearchBar isLeagueSearch={false} hasIdSearch={true}/>
 
-                        <div className="flex mt-30px w-full space-x-13px -ml-3px">
+                        <div className="flex mt-30px w-full space-x-11px">
                             <div className="w-333px h-48px rounded-full border-2 border-gray-635f5b bg-gray-2e2e2e flex items-center justify-center font-spoqaMedium text-20px tracking-tight">
                                 <img className="mr-14px" src={Diamond} alt="" />
                                 <div className="flex items-center space-x-4px pt-2px">
@@ -951,24 +966,29 @@ const DistributorPage = ({
                         </div> 
 
                         {/* === 추천회원내역 표 === */}
-                        <div className="flex flex-col items-center justify-center mt-21px w-full rounded-4px p-px overflow-hidden border-b  border-gray-252525 shadow-table"
-                        style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
+                        <div className="flex flex-col items-center justify-center mt-21px w-full rounded-4px  overflow-hidden  "
+                        >
+                        <div className="flex flex-col items-center justify-center  w-full border overflow-hidden shadow-table"
+                            style={{borderImageSource:'linear-gradient(to top, #1f1f1e 80%, #343434 100%)', borderImageSlice: 1 }}
+                        >
 
-                          <div className="h-67px w-full  border-b  border-gray-252525 bg-gray-2e2e2e flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight rounded-t-4px">
-                         
-                                <div className="w-85px text-center">번호</div>
-                                <button 
+                                <div 
+                                    style={{ boxShadow: '10px 0 5px -2px #888'}}
+                                className="h-67px w-full border-b border-gray-252525 bg-gray-2e2e2e flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight">
+                                
+                                <div className="w-90px text-center pr-5px">번호</div>
+                                 <button 
                                   className="flex text-center items-center space-x-3px justify-center hover:font-spoqaBold hover:opacity-75" 
-                                  style={{width:'145px'}}
+                                  style={{width:'136px'}}
                                     onClick={() => handleOnChange(0)}
                                 >
                                     <p>아이디</p>
                                     <img src={GrayArrow} className={`${isArrowUp[0] === true ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                <div className="w-87px text-center">이름</div>
-                                <div className="w-144px text-center" style={{width:'146px'}}>별명</div>
+                               <div className="w-96px text-center">이름</div>
+                                 <div className="w-124px text-center pl-7px" style={{width:'130px'}}>별명</div>
                                  <button 
-                                    className="w-86px text-center flex items-center justify-center space-x-3px hover:opacity-75" 
+                                    className="w-108px text-center flex items-center justify-center space-x-3px hover:opacity-75" 
                                     onClick={() => handleOnChange(1)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px ">
@@ -978,8 +998,8 @@ const DistributorPage = ({
                                     <img src={GrayArrow} className={`${isArrowUp[1] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
                                  <button 
-                                    className="w-125px text-center flex items-center justify-center space-x-3px hover:opacity-75 ml-3px"
-                                    style={{width:'140px'}}
+                                    className="text-center flex items-center justify-center space-x-3px hover:opacity-75 pr-px"
+                                    style={{width:'125px'}}
                                     onClick={() => handleOnChange(2)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px">
@@ -989,41 +1009,44 @@ const DistributorPage = ({
                                     </div>
                                     <img src={GrayArrow} className={`${isArrowUp[2] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                               <div className="w-94px text-center">요율보기</div>
-                              <div className="w-133px text-center" style={{width:'135px'}}>입금액</div>
-                              <div className="w-118px text-center"  style={{width:'98px'}}>보너스</div>
-                              <button 
-                                className="flex w-133px text-center items-center space-x-3px justify-center hover:opacity-75"
+                               <div className="text-center" style={{width:'109px'}}>요율보기</div>
+                              <div className="text-center" style={{width:'122px'}}>입금액</div>
+                             <div className="text-center"  style={{width:'108px'}}>보너스</div>
+                               <button 
+                                className="flex text-center items-center space-x-3px justify-center hover:opacity-75"
+                                style={{width:'123px'}}
                                 onClick={() => handleOnChange(3)}
                               >
                                 <p>출금액</p>
                                 <img src={GrayArrow} className={`${isArrowUp[3] === false ? "transform rotate-180" : ""}`} alt=""/>
                               </button>
-                              <div className="w-100px text-center">입출금액</div>
+                             <div className="w-110px text-center">입출금액</div>
                                <button 
-                                    className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75" style={{width:'131px'}}
+                                    className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75" style={{width:'120px'}}
                                     onClick={() => handleOnChange(4)}
                                 >
                                     <p>베팅액</p>
                                     <img src={GrayArrow} className={`${isArrowUp[4] === false ? "transform rotate-180" : ""}`} alt=""/>
                               </button>
                                <button 
-                                    className="flex w-102px text-center items-center space-x-3px justify-center hover:opacity-75"
+                                    className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75"
+                                    style={{width:'113px'}}
                                     onClick={() => handleOnChange(5)}
                                 >
                                     <p>윈루즈</p>
                                     <img src={GrayArrow} className={`${isArrowUp[5] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                                 <div className="w-118px text-center" style={{width:'131px'}}>상세내역</div>
+                                  <div className="w-118px text-center" style={{width:'122px'}}>상세내역</div>
                                 <button 
-                                    className="flex w-98px text-center items-center space-x-3px justify-center hover:opacity-75"
+                                    className="flex text-center items-center space-x-3px justify-center hover:opacity-75"
+                                    style={{width:'106px'}}
                                     onClick={() => handleOnChange(6)}
                                 >
                                     <p>포인트</p>
                                     <img src={GrayArrow} className={`${isArrowUp[6] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
-                             <button 
-                                    className="text-end flex items-center justify-center space-x-3px hover:opacity-75 pl-12px" style={{width:'120px'}}
+                            <button 
+                                    className="text-end flex items-center justify-center space-x-3px hover:opacity-75 pl-12px" style={{width:'116px'}}
                                     onClick={() => handleOnChange(7)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px">
@@ -1035,7 +1058,7 @@ const DistributorPage = ({
                           </div>
                           <RecommendedUserCell items={RecommendedUserArray}/>
                         </div>
-
+                        </div>
                     </div>
     
                     <div className="flex mt-60px justify-center w-full">

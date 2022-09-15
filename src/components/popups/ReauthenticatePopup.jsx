@@ -48,8 +48,9 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
             >louie3</div>
              {/* <div className={`${selectedInput === 0 ? "bg-blue-r1ca7ec h-2px -mb-px" : "bg-gray-bebebe h-px"} w-full`} /> */}
                 </div>
-                <div style={{width:'390px', height:'64px', backgroundColor:'#191817', borderRadius:'4px', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)'}} className="flex items-center flex-shrink-0 mt-20px py-4px">
-                  <img src={Password} alt="" className="ml-21px" />
+                <div style={{width:'390px', height:'64px', backgroundColor:'#191817', borderRadius:'4px', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)'}} className="relative flex items-center flex-shrink-0 mt-20px py-4px">
+                    <img src={Password} alt="" className="ml-21px" />
+                   
                   <input
                     style={{color:'#948d81', backgroundColor:'#191817', borderRadius:'4px'}}
                     className="text-20px outline-none font-spoqa w-full h-full pl-19px placeholder-gray-r948d81 pt-3px" 
@@ -63,7 +64,9 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
                             e.target.placeholder = "비밀번호"
                             setSelectedInput(false)
                         }}
-                  />
+                    />
+                        <div style={{ backgroundColor: selectedInput === 1 ? "#a67c52" : "#191817" }} className={`absolute bottom-0 w-full h-2px`} />
+                       
                 </div>
                     <button 
                         style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 1px #00000070", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
