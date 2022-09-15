@@ -38,12 +38,12 @@ const LiveCasinoHover = ({selection}) => {
 		return items.map(item => (
 			<div 
 				key={item.id} 
-				className={`group relative cursor-pointer flex flex-col items-center justify-end`}
-				style={{width:'235px'}}
+				className={`group relative cursor-pointer flex flex-col items-center justify-end flex-shrink-0 h-262px`}
+				// style={{width:'235px'}}
 				onClick={() => history.push('/live-casino')}
 				onMouseEnter={() => setHover(item.id)}
 			>
-				<p style={{color:'#ffdfbd', marginBottom:'70px'}} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex`}>{item.imgText}</p>
+				<p style={{color:'#ffdfbd', marginBottom:'70px'}} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex flex-shrink-0`}>{item.imgText}</p>
 				<div style={{marginBottom:'31px'}} className={`absolute z-20`}>
 					<button style={{width:'89px', height:'26px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className={`p-px filter hover:brightness-125`}>
 						<div style={{borderRadius:'2px', background: isHover === item.id ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
@@ -51,8 +51,8 @@ const LiveCasinoHover = ({selection}) => {
 						</div>
 					</button>
 				</div>
-				<img className={`${isHover === item.id ? "opacity-0" : "opacity-100"} absolute bottom-0 object-none h-full mb-13px`} src={item.background} alt="game_image" />
-				<img className={`${isHover === item.id ? "opacity-100" : "opacity-0"} absolute bottom-0 object-none h-full mb-13px`} src={item.highlight} alt="game_image" />				
+				<img className={`${isHover === item.id ? "opacity-0" : "opacity-100"} absolute bottom-0 object-none h-full mb-13px flex-shrink-0`} src={item.background} alt="game_image" />
+				<img className={`${isHover === item.id ? "opacity-100" : "opacity-0"} absolute bottom-0 object-none h-full mb-13px flex-shrink-0`} src={item.highlight} alt="game_image" />				
 			</div>
 		))
 	}
@@ -63,8 +63,8 @@ const LiveCasinoHover = ({selection}) => {
 			duration={200}
 			className="absolute w-full h-262px border-b border-t border-brown-r796657" 	
 		>
-			<div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85">
-				<div style={{width:'1260px'}} className="flex">
+			<div onMouseLeave={() => setHover(null)} style={{minHeight:'262px'}} className="h-full w-full flex justify-center bg-black bg-opacity-85">
+				<div style={{width:'1260px'}} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 limit:grid-cols-7">
 					<GamesList items={gamesArray} />
 				</div>
 			</div>
