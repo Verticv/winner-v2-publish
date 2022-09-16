@@ -305,7 +305,7 @@ const SportsBetHistoryPanel = ({
       style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0% ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}>
         <div className="w-full bg-gray-2b2b2a rounded-3px pb-10px">
             <div className="flex h-54px w-full font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6">
-                <div style={{width: isAttached === true ? "162px" : "120px", marginLeft: width=='full'?"":"10px"}} className="h-full flex items-center justify-center">베팅구분</div>
+                <div style={{width: isAttached === true ? "162px" : "120px", marginLeft: width === 'full'?"":"10px"}} className="h-full flex items-center justify-center">베팅구분</div>
                 <div style={{width: isAttached === true ? "315px" : "283px"}} className="h-full flex items-center justify-center">승(홈)</div>
                 <div style={{width: isAttached === true ? "139px" : "91px"}} className="h-full flex items-center justify-center">무</div>
                 <div style={{width: isAttached === true ? "317px" : "283px"}} className="h-full flex items-center justify-center">패(원정)</div>
