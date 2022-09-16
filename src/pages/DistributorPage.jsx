@@ -21,7 +21,7 @@ import SummaryIcon8 from '../images/myPage/distributor/summary/img8_v2.png'
 import DateSearchBar from 'components/myPage/DateSearchBar'
 import Diamond from '../images/myPage/diamond.png'
 import SmallDiamond from '../images/myPage/small_diamond.png'
-import GrayArrow from '../images/arrows/gray_arrow.png'
+import GrayArrow from '../images/arrows/arrow_d.png'
 import WhiteArrow from '../images/arrows/white_arrow.png'
 import ReplyArrow from '../images/arrows/reply_arrow_v2.png'
 import BlueTriangle from '../images/golden_triangle.png'
@@ -397,7 +397,7 @@ const DistributorPage = ({
             <>
                 <div
                     className={`${item.id % 2 === 1 ? "bg-gray-242424" : "bg-gray-323231"} 
-                     ${item.isLast ? "" : ""} w-full h-69px flex items-center justify-start font-roboto text-16px text-gray-c8c8c8 tracking-tight`}>
+                     ${item.isLast ? "border-b" : ""} w-full h-69px flex items-center justify-start font-roboto text-16px text-gray-c8c8c8 tracking-tight border-l border-r border-gray-252525`}>
                 <div className={`${item.name?'w-90px pr-5px':'w-138px'}  h-full flex items-center justify-center`}>{item.number}</div>
                 <div className="w-full h-full flex items-center justify-center"  style={{width:item.name?'136px':'113px'}}>{item.username}</div>
                 {item.name && (
@@ -504,7 +504,7 @@ const DistributorPage = ({
                    borderTop: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #a67c52",
                     // borderBottom: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #dddddd",
                 }}
-                className={`bg-gray-1e1e1e flex flex-col relative w-full`}
+                className={` flex flex-col relative w-full`}
             >
                 {(isUserCountOpen[item.id] === true || isUserCountOpen[item.id + 1] === true || isUserCountOpen[item.id + 2] === true) &&
                     <div className="absolute w-39px mt-10px flex justify-center items-start ml-2px ">
@@ -811,104 +811,104 @@ const DistributorPage = ({
                               <table >
                                   <thead className="h-54px w-full bg-gray-242424 font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight border-b border-gray-252525">
                                       <tr className="flex items-center h-54px">
-                                          <td className="w-83px bg-gray-1a1b1c h-full flex items-center justify-center">구분</td>
+                                          <td className="w-84px bg-gray-1a1b1c h-full flex items-center justify-center">구분</td>
                                           <td className="w-83px text-center">스포츠</td>
-                                          <td className="w-83px text-center ml-4px">미니게임</td>
-                                          <td className="w-83px text-center">에볼루션</td>
+                                          <td className="w-81px text-center ml-4px">미니게임</td>
+                                          <td className="w-85px text-center">에볼루션</td>
                                           <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
                                           <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>카지노</span></td>
                                           <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>드림</span><span>게이밍</span></td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px pr-2px"><span>섹시</span><span>게이밍</span></td>
+                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>섹시</span><span>게이밍</span></td>
                                           <td className="w-83px text-center">빅게이밍</td>
                                           <td className="w-83px text-center">넷엔트</td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px ml-2px"><span>프레그메틱</span><span>플레이</span></td>
-                                          <td className="w-83px text-center pr-2px">퀵스핀</td>
+                                          <td className="w-85px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>플레이</span></td>
+                                          <td className="w-83px text-center">퀵스핀</td>
                                           <td className="w-83px text-center">스페이드</td>
                                           <td className="w-83px text-center">하바네로</td>
-                                          <td className="w-83px text-center ml-2px">월드매치</td>
-                                          <td className="w-83px text-center pr-2px">메버릭</td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>플레이</span><span>앤고</span></td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
-                                          <td className="w-83px text-center">e-스포츠</td>
-                                          <td className="w-90px text-center flex flex-col pt-2px -space-y-4px ml-2px"><span>키론</span><span>가상게임</span></td>
-                                          <td style={{backgroundColor:"#202020"}} className="w-83px text-center h-full flex items-center justify-center pr-6px">합계</td>
+                                          <td className="w-85px text-center">월드매치</td>
+                                          <td className="w-81px text-center">메버릭</td>
+                                          <td className="w-88px text-center flex flex-col pt-2px -space-y-4px"><span>플레이</span><span>앤고</span></td>
+                                          <td className="w-79px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
+                                          <td className="w-87px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
+                                          <td className="w-77px text-center">e-스포츠</td>
+                                          <td className="w-96px text-center flex flex-col pt-2px -space-y-4px pl-6px"><span>키론</span><span>가상게임</span></td>
+                                          <td style={{backgroundColor:"#202020"}} className="w-70px text-center h-full flex items-center justify-center">합계</td> 
                                       </tr>
                                   </thead>
-                                  <tbody className="w-full text-585858 text-14px tracking-tight font-spoqaMedium">
+                                   <tbody className="w-full text-585858 text-14px tracking-tight font-spoqaMedium">
                                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full border-b border-gray-252525">
-                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
-                                          <td className="w-83px text-right pr-4px">1.09M</td>
-                                          <td className="w-83px text-right pr-4px">33K</td>
+                                          <td className="w-84px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
+                                          <td className="w-83px text-right pr-5px">1.09M</td>
+                                          <td className="w-81px text-right pr-4px">33K</td>
+                                          <td className="w-85px text-right pr-5px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">3.06M</td>
-                                          <td className="w-90px text-right pr-7px">0</td>
-                                          <td style={{backgroundColor:"#2f2f2f"}} className="w-83px text-right pr-10px h-full flex items-center justify-end">7.14M</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-85px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-81px text-right pr-2px">0</td>
+                                          <td className="w-88px text-right pr-7px">0</td>
+                                          <td className="w-79px text-right pr-2px">0</td>
+                                          <td className="w-87px text-right pr-6px">0</td>
+                                          <td className="w-77px text-right">3.06M</td>
+                                          <td className="w-100px text-right pr-10px">0</td>
+                                          <td style={{backgroundColor:"#2f2f2f"}} className="w-70px text-right pr-10px h-full flex items-center justify-end">7.14M</td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full border-b border-gray-252525">
-                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">승패</td>
-                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-84px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">승패</td>
+                                          <td className="w-83px text-right pr-5px">1.09M</td>
+                                          <td className="w-81px text-right pr-4px">33K</td>
+                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-90px text-right pr-7px">0</td>
-                                          <td style={{backgroundColor:"#2a2a2a"}} className="w-83px text-right pr-10px h-full flex items-center justify-end">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-85px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-81px text-right pr-2px">0</td>
+                                          <td className="w-88px text-right pr-7px">0</td>
+                                          <td className="w-79px text-right pr-2px">0</td>
+                                          <td className="w-87px text-right pr-6px">0</td>
+                                          <td className="w-77px text-right">3.06M</td>
+                                          <td className="w-100px text-right pr-10px">0</td>
+                                          <td style={{backgroundColor:"#2a2a2a"}} className="w-70px text-right pr-10px h-full flex items-center justify-end">0</td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
-                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">정산금액</td>
-                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-84px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">정산금액</td>
+                                          <td className="w-83px text-right pr-5px">1.09M</td>
+                                          <td className="w-81px text-right pr-4px">33K</td>
+                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-83px text-right">0</td>
-                                          <td className="w-90px text-right pr-7px">0</td>
-                                          <td style={{backgroundColor:"#2f2f2f"}} className="w-83px  text-right pr-10px h-full flex items-center justify-end">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-85px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-81px text-right pr-2px">0</td>
+                                          <td className="w-88px text-right pr-7px">0</td>
+                                          <td className="w-79px text-right pr-2px">0</td>
+                                          <td className="w-87px text-right pr-6px">0</td>
+                                          <td className="w-77px text-right">3.06M</td>
+                                          <td className="w-100px text-right pr-10px">0</td>
+                                          <td style={{backgroundColor:"#2f2f2f"}} className="w-70px  text-right pr-10px h-full flex items-center justify-end">0</td>
                                       </tr>
-                                  </tbody>
+                                  </tbody> 
                               </table>  
                             </div>                    
                         </div>
@@ -966,98 +966,97 @@ const DistributorPage = ({
                         </div> 
 
                         {/* === 추천회원내역 표 === */}
-                        <div className="flex flex-col items-center justify-center mt-21px w-full rounded-4px  overflow-hidden  "
-                        >
-                        <div className="flex flex-col items-center justify-center  w-full border overflow-hidden shadow-table"
-                            style={{borderImageSource:'linear-gradient(to top, #1f1f1e 80%, #343434 100%)', borderImageSlice: 1 }}
-                        >
+                        <div className="flex flex-col items-center justify-center mt-21px w-full rounded-4px overflow-hidden "  
+                            style={{filter:'drop-shadow(rgba(0, 0, 0, 0.6) 0 0px 5px)'}}>
+                            <div className="flex flex-col items-center justify-center  w-full overflow-hidden shadow-table"
+                                // style={{borderImageSource:'linear-gradient(to top, #1f1f1e 80%, #343434 100%)', borderImageSlice: 1 }}
+                            >
 
-                                <div 
-                                    style={{ boxShadow: '10px 0 5px -2px #888'}}
-                                className="h-67px w-full border-b border-gray-252525 bg-gray-2e2e2e flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight">
-                                
-                                <div className="w-90px text-center pr-5px">번호</div>
-                                 <button 
-                                  className="flex text-center items-center space-x-3px justify-center hover:font-spoqaBold hover:opacity-75" 
-                                  style={{width:'136px'}}
-                                    onClick={() => handleOnChange(0)}
-                                >
-                                    <p>아이디</p>
-                                    <img src={GrayArrow} className={`${isArrowUp[0] === true ? "transform rotate-180" : ""}`} alt=""/>
-                                </button>
-                               <div className="w-96px text-center">이름</div>
-                                 <div className="w-124px text-center pl-7px" style={{width:'130px'}}>별명</div>
-                                 <button 
-                                    className="w-108px text-center flex items-center justify-center space-x-3px hover:opacity-75" 
-                                    onClick={() => handleOnChange(1)}
-                                >
-                                    <div className="flex flex-col items-center justify-center space-y-3px ">
-                                        <div className="flex items-center h-16px">하부</div>
-                                        <div className="flex items-center h-16px">유저수</div>
-                                    </div>
-                                    <img src={GrayArrow} className={`${isArrowUp[1] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button>
-                                 <button 
-                                    className="text-center flex items-center justify-center space-x-3px hover:opacity-75 pr-px"
-                                    style={{width:'125px'}}
-                                    onClick={() => handleOnChange(2)}
-                                >
-                                    <div className="flex flex-col items-center justify-center space-y-3px">
-                                        <div className="flex items-center h-16px">추천일시</div>
-                                        <div className="flex items-center h-16px">로그인일시</div>
-                                        <div className="flex items-center h-16px">(미접속일수)</div>
-                                    </div>
-                                    <img src={GrayArrow} className={`${isArrowUp[2] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button>
-                               <div className="text-center" style={{width:'109px'}}>요율보기</div>
-                              <div className="text-center" style={{width:'122px'}}>입금액</div>
-                             <div className="text-center"  style={{width:'108px'}}>보너스</div>
-                               <button 
-                                className="flex text-center items-center space-x-3px justify-center hover:opacity-75"
-                                style={{width:'123px'}}
-                                onClick={() => handleOnChange(3)}
-                              >
-                                <p>출금액</p>
-                                <img src={GrayArrow} className={`${isArrowUp[3] === false ? "transform rotate-180" : ""}`} alt=""/>
-                              </button>
-                             <div className="w-110px text-center">입출금액</div>
-                               <button 
-                                    className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75" style={{width:'120px'}}
-                                    onClick={() => handleOnChange(4)}
-                                >
-                                    <p>베팅액</p>
-                                    <img src={GrayArrow} className={`${isArrowUp[4] === false ? "transform rotate-180" : ""}`} alt=""/>
-                              </button>
-                               <button 
-                                    className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75"
-                                    style={{width:'113px'}}
-                                    onClick={() => handleOnChange(5)}
-                                >
-                                    <p>윈루즈</p>
-                                    <img src={GrayArrow} className={`${isArrowUp[5] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button>
-                                  <div className="w-118px text-center" style={{width:'122px'}}>상세내역</div>
+                                    <div 
+                                    className="h-67px w-full bg-gray-2e2e2e flex items-center justify-start font-spoqa text-16px text-gray-ccc2b6 tracking-tight border border-gray-252525">
+                                    
+                                    <div className="w-90px text-center pr-5px">번호</div>
+                                    <button 
+                                    className="flex text-center items-center space-x-3px justify-center hover:font-spoqaBold hover:opacity-75" 
+                                    style={{width:'136px'}}
+                                        onClick={() => handleOnChange(0)}
+                                    >
+                                        <p>아이디</p>
+                                        <img src={GrayArrow} className={`${isArrowUp[0] === true ? "transform rotate-180" : ""} w-13px`} alt=""/>
+                                    </button>
+                                <div className="w-96px text-center">이름</div>
+                                    <div className="w-124px text-center pl-7px" style={{width:'130px'}}>별명</div>
+                                    <button 
+                                        className="w-108px text-center flex items-center justify-center space-x-3px hover:opacity-75" 
+                                        onClick={() => handleOnChange(1)}
+                                    >
+                                        <div className="flex flex-col items-center justify-center space-y-3px ">
+                                            <div className="flex items-center h-16px">하부</div>
+                                            <div className="flex items-center h-16px">유저수</div>
+                                        </div>
+                                        <img src={GrayArrow} className={`${isArrowUp[1] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
+                                    </button>
+                                    <button 
+                                        className="text-center flex items-center justify-center space-x-3px hover:opacity-75 pr-px"
+                                        style={{width:'125px'}}
+                                        onClick={() => handleOnChange(2)}
+                                    >
+                                        <div className="flex flex-col items-center justify-center space-y-3px">
+                                            <div className="flex items-center h-16px">추천일시</div>
+                                            <div className="flex items-center h-16px">로그인일시</div>
+                                            <div className="flex items-center h-16px">(미접속일수)</div>
+                                        </div>
+                                        <img src={GrayArrow} className={`${isArrowUp[2] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
+                                    </button>
+                                <div className="text-center" style={{width:'109px'}}>요율보기</div>
+                                <div className="text-center" style={{width:'122px'}}>입금액</div>
+                                <div className="text-center"  style={{width:'108px'}}>보너스</div>
                                 <button 
                                     className="flex text-center items-center space-x-3px justify-center hover:opacity-75"
-                                    style={{width:'106px'}}
-                                    onClick={() => handleOnChange(6)}
+                                    style={{width:'123px'}}
+                                    onClick={() => handleOnChange(3)}
                                 >
-                                    <p>포인트</p>
-                                    <img src={GrayArrow} className={`${isArrowUp[6] === false ? "transform rotate-180" : ""}`} alt=""/>
+                                    <p>출금액</p>
+                                    <img src={GrayArrow} className={`${isArrowUp[3] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
                                 </button>
-                            <button 
-                                    className="text-end flex items-center justify-center space-x-3px hover:opacity-75 pl-12px" style={{width:'116px'}}
-                                    onClick={() => handleOnChange(7)}
-                                >
-                                    <div className="flex flex-col items-center justify-center space-y-3px">
-                                        <div className="flex items-center h-16px">보유</div>
-                                        <div className="flex items-center h-16px">금액</div>
-                                    </div>
-                                    <img src={GrayArrow} className={`${isArrowUp[7] === false ? "transform rotate-180" : ""}`} alt=""/>
-                                </button> 
-                          </div>
-                          <RecommendedUserCell items={RecommendedUserArray}/>
-                        </div>
+                                <div className="w-110px text-center">입출금액</div>
+                                <button 
+                                        className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75" style={{width:'120px'}}
+                                        onClick={() => handleOnChange(4)}
+                                    >
+                                        <p>베팅액</p>
+                                        <img src={GrayArrow} className={`${isArrowUp[4] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
+                                </button>
+                                <button 
+                                        className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75"
+                                        style={{width:'113px'}}
+                                        onClick={() => handleOnChange(5)}
+                                    >
+                                        <p>윈루즈</p>
+                                        <img src={GrayArrow} className={`${isArrowUp[5] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
+                                    </button>
+                                    <div className="w-118px text-center" style={{width:'122px'}}>상세내역</div>
+                                    <button 
+                                        className="flex text-center items-center space-x-3px justify-center hover:opacity-75"
+                                        style={{width:'106px'}}
+                                        onClick={() => handleOnChange(6)}
+                                    >
+                                        <p>포인트</p>
+                                        <img src={GrayArrow} className={`${isArrowUp[6] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
+                                    </button>
+                                <button 
+                                        className="text-end flex items-center justify-center space-x-3px hover:opacity-75 pl-12px" style={{width:'116px'}}
+                                        onClick={() => handleOnChange(7)}
+                                    >
+                                        <div className="flex flex-col items-center justify-center space-y-3px">
+                                            <div className="flex items-center h-16px">보유</div>
+                                            <div className="flex items-center h-16px">금액</div>
+                                        </div>
+                                        <img src={GrayArrow} className={`${isArrowUp[7] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
+                                    </button> 
+                            </div>
+                            <RecommendedUserCell items={RecommendedUserArray}/>
+                            </div>
                         </div>
                     </div>
     

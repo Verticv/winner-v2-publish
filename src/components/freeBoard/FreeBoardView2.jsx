@@ -85,8 +85,8 @@ const FreeBoardView2 = () => {
                 </div>
 
                 <div className="py-23px border-b border-gray-252525 pl-27px pr-32px space-y-28px"> 
-                    <SportsBetHistoryPanel type={1} winAmount="+900,000,000"  isAttached={true} noButtons={true}/>
-                    <SportsBetHistoryPanel type={2} isAttached={true} noButtons={true}/>
+                    <SportsBetHistoryPanel type={1} winAmount="+900,000,000" isAttached={true} noButtons={true} width={'full'} />
+                    <SportsBetHistoryPanel type={2} isAttached={true} noButtons={true} width={'full'}/>
                     {/* <SportsBetHistoryPanel type={4} id={0} isAttached={true} noButtons={true} attachedArray={[0]} />
                     <SportsBetHistoryPanel type={3} id={0} isAttached={true} noButtons={true} attachedArray={[2]} /> */}
                 </div>

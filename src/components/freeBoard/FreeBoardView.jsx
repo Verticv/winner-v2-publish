@@ -1,5 +1,5 @@
 import React from 'react'
-import WinnerSmall from '../../images/freeBoard/winner_small.png'
+import WinnerSmall from '../../images/freeBoard/winner_small2.png'
 import Sample from '../../images/freeBoard/sample.png'
 import { useHistory } from 'react-router';
 import Rank1 from '../../images/freeBoard/1_v2.png'
@@ -86,7 +86,7 @@ const FreeBoardView = () => {
                   </div>
 
                   <div className="bg-gray-2e2e2e h-56px border-b border-gray-252525 flex items-center px-19px space-x-10px">
-                      <img className="mb-px" src={WinnerSmall} alt="" />
+                      <img className="mb-px h-15px" src={WinnerSmall} alt="" />
                       <div className="w-px h-10px bg-gray-929292 ml-8px mt-px" />
                       <div className="font-spoqaMedium text-14px tracking-tight text-gray-929292 mt-px">댓글</div>
                       <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d mt-4px">2</div>

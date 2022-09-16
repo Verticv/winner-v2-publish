@@ -6,10 +6,10 @@ import CheckIcon from '../../images/minigames/checkbox.png'
 import BetIcon from '../../images/betCombination/bet_icon.png'
 import LockIcon from '../../images/minigames/lock.png'
 import BlueButton from '../../images/minigames/blue.png'
-import RedButton from '../../images/minigames/red.png'
+import RedButton from '../../images/minigames/red_v2.png'
 import YellowButton from '../../images/minigames/yellow.png'
 import GreenButton from '../../images/minigames/green.png'
-import BlueButtonSq from '../../images/minigames/blue_sq.png'
+import BlueButtonSq from '../../images/minigames/blue_sq_v2.png'
 import RedButtonSq from '../../images/minigames/red_sq.png'
 import { format } from 'date-fns'
 import { ko } from "date-fns/locale"
@@ -140,7 +140,7 @@ const MinigamesRightPanel = ({
                         <img 
                             className={`${
                                 (selectedOption[0].buttonType === "blue_sq" || selectedOption[0].buttonType === "red_sq") ? "h-52px" : "h-59px"
-                            } absolute object-contain`} 
+                            } w-full absolute object-cover`} 
                             src={
                                 selectedOption[0].buttonType === "blue" 
                                 ? BlueButton
