@@ -220,13 +220,13 @@ const DistributorPage = ({
                         <div className="w-full h-full flex items-center justify-center mr-4px">
                         <button 
                             style={{width: "65px",background:'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                            className={` flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75`}
+                            className={` flex items-center justify-center h-36px w-87px rounded-4px filter hover:brightness-125`}
                         >
                             <div 
                                 style={{width:"63px",background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}
                                 className={` flex items-center justify-center h-34px w-85px rounded-4px  cursor-pointer space-x-10px`}
                             >
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white ">
+                                <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                                     수정
                                 </span>
                             </div>
@@ -411,7 +411,7 @@ const DistributorPage = ({
                   
                     <button 
                         style={{width: "87px", background:isUserCountOpen ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                        className={`${isUserCountOpen ? "" : ""} flex items-center justify-center h-36px w-87px rounded-4px hover:opacity-75 p-px shadow-link -ml-19px`}
+                        className={`${isUserCountOpen ? "" : ""} flex items-center justify-center h-36px w-87px rounded-4px filter hover:brightness-125 p-px shadow-link -ml-19px`}
                         onClick={() => {
                             handleOnChange1(item.id)
                         }}
@@ -422,7 +422,7 @@ const DistributorPage = ({
                                 
                                 flex items-center justify-center h-34px w-85px rounded-4px cursor-pointer space-x-10px`}
                         >
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white ">
+                            <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                                 {isUserCountOpen[item.id] === true ? "접기" : "보기"}  {item.user_count} 
                             </span>
                             <img className={isUserCountOpen[0] === false && " transform rotate-180"} src={WhiteArrow} alt=""/>
@@ -444,7 +444,7 @@ const DistributorPage = ({
                     <div className={`relative w-96px h-full flex items-center justify-end`} style={{width:item.name?'109px':'109px'}} >
                     <button 
                         style={{background: isUserCountOpen ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                        className={`${isUserCountOpen ? "" : ""} ${item.name?'mr-9px':''} flex items-center justify-center h-36px w-85px rounded-4px hover:opacity-75 p-px shadow-link`}
+                        className={`${isUserCountOpen ? "" : ""} ${item.name?'mr-9px':''} flex items-center justify-center h-36px w-85px rounded-4px filter hover:brightness-125 p-px shadow-link`}
                         onClick={() => {
                             handleOnChange1(item.id + 1)
                         }}
@@ -453,7 +453,7 @@ const DistributorPage = ({
                         style={{background: isUserCountOpen[item.id+1] ? 'linear-gradient(to bottom, #f38d27, #b45a00)' : 'linear-gradient(to bottom, #a67c52, #7f5f3f)' }}
                         className={` flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
                             >
-                                <span className="font-spoqaMedium tracking-tight text-14px text-white">
+                                <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                                     {isUserCountOpen[item.id + 1] === true ? "접기" : "보기"}
                                 </span>
                                 <img className={isUserCountOpen[item.id + 1] === false && " transform rotate-180"} src={WhiteArrow} alt=""/>
@@ -474,7 +474,7 @@ const DistributorPage = ({
                 <div className="relative w-full h-full flex items-center justify-center" style={{width:'122px'}}>
                 <button 
                     style={{background:isUserCountOpen[item.id] ?'linear-gradient(to top, #4b3b09, #e8b888)':'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                        className={` ${item.name?'ml-9px':'ml-8px'} flex items-center justify-center h-36px w-85px rounded-4px hover:opacity-75 p-px shadow-link`}
+                        className={` ${item.name?'ml-9px':'ml-8px'} flex items-center justify-center h-36px w-85px rounded-4px filter hover:brightness-125 p-px shadow-link`}
                         onClick={() => {
                             handleOnChange1(item.id + 2)
                         }}
@@ -484,7 +484,7 @@ const DistributorPage = ({
                     className={`
                            flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
                         >
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white">
+                            <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                                 {isUserCountOpen[item.id + 2] === true ? "접기" : "보기"}
                             </span>
                             <img className={isUserCountOpen[item.id + 1] === false && " transform rotate-180"} src={WhiteArrow} alt=""/>
@@ -524,7 +524,7 @@ const DistributorPage = ({
                             <div className="h-67px  bg-gray-242424 flex items-center justify-start font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">
                                 <div className="h-full flex items-center justify-center" style={{width:'138px'}}>번호</div>
                                  <button 
-                                    className="h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'115px'}}
+                                    className="h-full flex items-center justify-center space-x-3px filter hover:brightness-125" style={{width:'115px'}}
                                     onClick={() => handleOnChange2(0)}
                                 >
                                     <p >아이디</p>
@@ -535,7 +535,7 @@ const DistributorPage = ({
                                     className="h-full flex items-center justify-center space-x-3px ml-2px" style={{width:'120px'}}
                                     onClick={() => handleOnChange2(1)}
                                 >
-                                    <div className="flex flex-col items-center justify-center space-y-3px hover:opacity-75 ">
+                                    <div className="flex flex-col items-center justify-center space-y-3px filter hover:brightness-125 ">
                                         <div className="flex items-center h-16px">하부</div>
                                         <div className="flex items-center h-16px">유저수</div>
                                     </div>
@@ -545,7 +545,7 @@ const DistributorPage = ({
                                     className="h-full flex items-center justify-center space-x-3px"  style={{width:'127px'}}
                                     onClick={() => handleOnChange2(2)}
                                 >
-                                    <div className="flex flex-col items-center justify-center space-y-3px  hover:opacity-75">
+                                    <div className="flex flex-col items-center justify-center space-y-3px  filter hover:brightness-125">
                                         <div className="flex items-center h-16px">추천일시</div>
                                         <div className="flex items-center h-16px">로그인일시</div>
                                         <div className="flex items-center h-16px">(미접속일수)</div>
@@ -556,7 +556,7 @@ const DistributorPage = ({
                                 <div className="h-full flex items-center justify-center" style={{width:'101px'}}>입금액</div>
                                 <div className="h-full flex items-center justify-center" style={{width:'132px'}}>보너스</div>
                                 <button 
-                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'102px'}}
+                                    className=" h-full flex items-center justify-center space-x-3px filter hover:brightness-125" style={{width:'102px'}}
                                     onClick={() => handleOnChange2(3)}
                                 >
                                     <p>출금액</p>
@@ -564,14 +564,14 @@ const DistributorPage = ({
                                 </button>
                                 <div className=" h-full flex items-center justify-center ml-5px" style={{width:'118px'}}>입출금액</div>
                                 <button 
-                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75" style={{width:'114px'}}
+                                    className=" h-full flex items-center justify-center space-x-3px filter hover:brightness-125" style={{width:'114px'}}
                                     onClick={() => handleOnChange2(4)}
                                 >
                                     <p>베팅액</p>
                                     <img src={WhiteArrow} className={`${subArrowClicked[4] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
                               <button 
-                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75 ml-4px" style={{width:'110px'}}
+                                    className=" h-full flex items-center justify-center space-x-3px filter hover:brightness-125 ml-4px" style={{width:'110px'}}
                                     onClick={() => handleOnChange2(5)}
                                 >
                                     <p>윈루즈</p>
@@ -579,14 +579,14 @@ const DistributorPage = ({
                                 </button>
                                  <div className=" h-full flex items-center justify-center ml-6px" style={{width:'113px'}}>상세내역</div>
                                 <button 
-                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75 ml-5px" style={{width:'104px'}}
+                                    className=" h-full flex items-center justify-center space-x-3px filter hover:brightness-125 ml-5px" style={{width:'104px'}}
                                     onClick={() => handleOnChange2(6)}
                                 >
                                     <p>포인트</p>
                                     <img src={WhiteArrow} className={`${subArrowClicked[6] === false ? "transform rotate-180" : ""}`} alt=""/>
                                 </button>
                                <button 
-                                    className=" h-full flex items-center justify-center space-x-3px hover:opacity-75 ml-15px" style={{width:'100px'}}
+                                    className=" h-full flex items-center justify-center space-x-3px filter hover:brightness-125 ml-15px" style={{width:'100px'}}
                                     onClick={() => handleOnChange2(7)}
                                 >
                                     <div className="flex flex-col items-center justify-center space-y-3px ">
@@ -977,7 +977,7 @@ const DistributorPage = ({
                                     
                                     <div className="w-90px text-center pr-5px">번호</div>
                                     <button 
-                                    className="flex text-center items-center space-x-3px justify-center hover:font-spoqaBold hover:opacity-75" 
+                                    className="flex text-center items-center space-x-3px justify-center hover:font-spoqaBold filter hover:brightness-125" 
                                     style={{width:'136px'}}
                                         onClick={() => handleOnChange(0)}
                                     >
@@ -987,7 +987,7 @@ const DistributorPage = ({
                                 <div className="w-96px text-center">이름</div>
                                     <div className="w-124px text-center pl-7px" style={{width:'130px'}}>별명</div>
                                     <button 
-                                        className="w-108px text-center flex items-center justify-center space-x-3px hover:opacity-75" 
+                                        className="w-108px text-center flex items-center justify-center space-x-3px filter hover:brightness-125" 
                                         onClick={() => handleOnChange(1)}
                                     >
                                         <div className="flex flex-col items-center justify-center space-y-3px ">
@@ -997,7 +997,7 @@ const DistributorPage = ({
                                         <img src={GrayArrow} className={`${isArrowUp[1] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
                                     </button>
                                     <button 
-                                        className="text-center flex items-center justify-center space-x-3px hover:opacity-75 pr-px"
+                                        className="text-center flex items-center justify-center space-x-3px filter hover:brightness-125 pr-px"
                                         style={{width:'125px'}}
                                         onClick={() => handleOnChange(2)}
                                     >
@@ -1012,7 +1012,7 @@ const DistributorPage = ({
                                 <div className="text-center" style={{width:'122px'}}>입금액</div>
                                 <div className="text-center"  style={{width:'108px'}}>보너스</div>
                                 <button 
-                                    className="flex text-center items-center space-x-3px justify-center hover:opacity-75"
+                                    className="flex text-center items-center space-x-3px justify-center filter hover:brightness-125"
                                     style={{width:'123px'}}
                                     onClick={() => handleOnChange(3)}
                                 >
@@ -1021,14 +1021,14 @@ const DistributorPage = ({
                                 </button>
                                 <div className="w-110px text-center">입출금액</div>
                                 <button 
-                                        className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75" style={{width:'120px'}}
+                                        className="flex w-113px text-center items-center space-x-3px justify-center filter hover:brightness-125" style={{width:'120px'}}
                                         onClick={() => handleOnChange(4)}
                                     >
                                         <p>베팅액</p>
                                         <img src={GrayArrow} className={`${isArrowUp[4] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
                                 </button>
                                 <button 
-                                        className="flex w-113px text-center items-center space-x-3px justify-center hover:opacity-75"
+                                        className="flex w-113px text-center items-center space-x-3px justify-center filter hover:brightness-125"
                                         style={{width:'113px'}}
                                         onClick={() => handleOnChange(5)}
                                     >
@@ -1037,7 +1037,7 @@ const DistributorPage = ({
                                     </button>
                                     <div className="w-118px text-center" style={{width:'122px'}}>상세내역</div>
                                     <button 
-                                        className="flex text-center items-center space-x-3px justify-center hover:opacity-75"
+                                        className="flex text-center items-center space-x-3px justify-center filter hover:brightness-125"
                                         style={{width:'106px'}}
                                         onClick={() => handleOnChange(6)}
                                     >
@@ -1045,7 +1045,7 @@ const DistributorPage = ({
                                         <img src={GrayArrow} className={`${isArrowUp[6] === false ? "transform rotate-180" : ""} w-13px`} alt=""/>
                                     </button>
                                 <button 
-                                        className="text-end flex items-center justify-center space-x-3px hover:opacity-75 pl-12px" style={{width:'116px'}}
+                                        className="text-end flex items-center justify-center space-x-3px filter hover:brightness-125 pl-12px" style={{width:'116px'}}
                                         onClick={() => handleOnChange(7)}
                                     >
                                         <div className="flex flex-col items-center justify-center space-y-3px">
