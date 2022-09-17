@@ -1,6 +1,7 @@
 import HorizontalMenu3 from 'components/horizontalMenus/HorizontalMenu3'
 import Footer from 'components/mainPage/Footer'
 import Navbar from 'components/mainPage/Navbar'
+import QuickMenu from 'components/QuickMenu'
 import React, { useEffect, useState } from 'react'
 import PowerballIcon from '../images/minigames/powerball_v2.png'
 import PowerLadder from '../images/minigames/powerladder_v2.png'
@@ -31,7 +32,7 @@ const MinigamesPage = ({isAuthenticated, setAuthenticated}) => {
       subtitle: null
     }
   ])
-
+   
   const location = useLocation();
 
   useEffect(() => {
@@ -43,8 +44,10 @@ const MinigamesPage = ({isAuthenticated, setAuthenticated}) => {
       <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
         <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
       </div>
-
-      <div className="w-full flex flex-col items-center limit1600:mt-107px mt-117px">
+      <div style={{top: '306px',right: '208px'}} className={`fixed z-20 flex justify-end`}>
+        <QuickMenu />
+      </div>
+      <div className="w-full flex flex-col items-center  mt-117px">
         <div className="w-default">
 
           <Route path="/minigame/powerball">
