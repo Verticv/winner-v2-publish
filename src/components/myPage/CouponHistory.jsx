@@ -14,7 +14,7 @@ const CouponHistory = () => {
 
     const [selectedTab, setSelectedTab] = useState(0)
     const [page, setPage] = useState(0)
-
+    console.log(selectedTab)
     const tabsArray = [
         { text: "쿠폰발급내역", icon: Icon1,iconHighlight: IconHighlight1, id: 0, path: "/mypage/coupon/coupon-history/received" },
         { text: "쿠폰선물내역", icon: Icon2, iconHighlight: IconHighlight2, id: 1, path: "/mypage/coupon/coupon-history/sent" }
