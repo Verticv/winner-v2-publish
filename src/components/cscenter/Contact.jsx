@@ -147,7 +147,8 @@ const Contact = () => {
     const dropDownCellClass = "flex w-full h-30px py-2px bg-gray-1f1f1e items-center hover:bg-brown-r3d3934 px-12px"
 
     const searchDropdown = (
-        <div className="mt-4px flex flex-col items-center justify-center w-120px overflow-hidden bg-white rounded-md border border-gray-dddddd shadow-plain5 text-gray-r393e41 font-spoqaMedium text-14px tracking-tight">
+        <div className="mt-4px flex flex-col items-center justify-center w-120px overflow-hidden bg-dark-1a1a1a  rounded-2px border border-gray-404040 shadow-plain5 text-gray-ccc2b6 font-spoqaMedium text-14px tracking-tight">
+            <div className="w-full mt-2px h-full overflow-x-hidden border-gray-2c2c2c">
             <button className={dropDownCellClass} onClick={() => {
                 setSelectedCarrier("제목")
                 setDropdownOpen(false)
@@ -166,6 +167,7 @@ const Contact = () => {
             }}>
                 작성자
             </button>
+            </div>
         </div>
     )
 
@@ -193,10 +195,10 @@ const Contact = () => {
 
             <div className="flex w-381px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 overflow-hidden">
                 <input 
-                    className="pl-11px placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a"
+                    className="pl-11px placeholder-gray-r7c7c7c w-full text-gray-c8c8c8 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a"
                     placeholder="검색어를 입력해 주세요"
                 />
-                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  hover:opacity-75 p-px">
+                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  filter hover:brightness-125 p-px">
                   <div className="flex items-center justify-center w-full  h-40px rounded-4px bg-gradient-to-b from-gray-e6b786  to-gray-80603f">
                     <img src={SearchIcon} alt="" />
                   </div>

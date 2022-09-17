@@ -61,7 +61,7 @@ const InboxTable = ({
                             ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px -mt-px pt-px">이벤트</div> 
                             : ''
                         }
-                        <p className="filter group-hover:text-gray-f1e9e9">{item.text}</p>
+                        <p className="group-hover:text-gray-f1e9e9">{item.text}</p>
                         {item.isRead === false && (
                           <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px">
                               N

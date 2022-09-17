@@ -48,12 +48,12 @@ const ContactTable = ({
 
                     <div 
                         style={{width: "420px"}} 
-                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} font-spoqaMedium flex items-center space-x-10px cursor-pointer h-full ml-23px`}
+                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8 group"} ${item.text.length>30 ? '':'space-x-10px'} font-spoqaMedium flex items-center cursor-pointer h-full ml-23px`}
                         onClick={() => history.push(item.path)}
                     >
-                        <p className="">{item.text}</p>
+                        <p style={{maxWidth: '390px'}}  className="group-hover:text-gray-f1e9e9 truncate">{item.text}</p>
                         {item.isRead === false && (
-                            <div className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px ${item.id === 6 && "pr-px"}`}>
+                            <div className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px flex-shrink-0  ${item.id === 6 && "pr-px"}`}>
                                 N
                             </div>
                         )}
@@ -66,7 +66,7 @@ const ContactTable = ({
                         {item.time}
                     </div>
                     <div className="ml-33px w-70px flex items-center justify-center">
-                        <button className={`${item.isRead === true ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px hover:opacity-75 shadow-plain10`}>
+                        <button className={`${item.isRead === true ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px filter hover:brightness-125 shadow-plain10`}>
                             삭제
                         </button>
                     </div>
