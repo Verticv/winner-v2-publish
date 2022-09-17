@@ -542,7 +542,8 @@ module.exports = {
           r7bd26a: '#7bd26a',
           e3ba3c: '#e3ba3c',
           r279140: '#279140',
-          '45bc61':'#45bc61'
+          '45bc61': '#45bc61',
+          '4aca68': '#4aca68'
         },
         brown: {
           r351a1e: '#351a1e',

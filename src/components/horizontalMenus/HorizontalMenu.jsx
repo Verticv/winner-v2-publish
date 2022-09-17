@@ -5,7 +5,7 @@ const HorizontalMenu = ({
     itemsArray, 
     setSelectedSubTab = null,
     showSub = true,
-    hasRows = false
+    hasRows = false,
 }) => {
 
     const history = useHistory();
@@ -33,7 +33,7 @@ const HorizontalMenu = ({
               history.push(item.path)
               setSelectedTab(item.id)
               if (setSelectedSubTab !== null) {
-                  setSelectedSubTab(0)
+                  setSelectedSubTab(item.id)
               }
             }}
             onMouseOver={() => setHover(item.id)}

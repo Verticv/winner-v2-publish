@@ -105,18 +105,17 @@ const CouponRequestTable = () => {
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}
             >
                 <td className="w-292px text-center">{item.name}</td>
-                <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-20px">{item.amount}</td>
+                <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-20px">{item.amount}</td>
                 <td className="w-140px text-center">{item.username}</td>
                 <td 
                     style={{
                         color: item.state === "사용가능" 
-                        ? "#ff1237"
+                        ? "#e65454"
                         : item.state ==="사용완료"
-                        ? "#0056a6"
+                        ? "#4c98ff"
                         : item.state === "회수쿠폰"
-                        ? "#279140"
-                        : "#454545"
-                        , WebkitTextStroke:"0.2px"
+                        ? "#4aca68"
+                        : "#c8c8c8"
                     }} 
                     className="w-141px text-center"
                 >
