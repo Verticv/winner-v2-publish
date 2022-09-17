@@ -33,7 +33,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -42,7 +42,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -51,7 +51,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -60,7 +60,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -69,7 +69,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -78,7 +78,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -87,7 +87,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -96,7 +96,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -105,7 +105,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>
@@ -114,7 +114,7 @@ const CouponGiftTable = () => {
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px bg-dark-2e2e2e">
                     <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td className="w-340px text-center">테스트쿠폰</td>
-                    <td className="w-143px text-right text-red-d74220 pr-13px font-robotoRegular">10,000</td>
+                    <td className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td className="w-135px text-center">eric123</td>
                     <td className="w-94px text-center  text-red-e65454">사용가능</td>
                     <td className="w-132px text-center font-robotoRegular">2021-06-29</td>

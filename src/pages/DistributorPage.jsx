@@ -661,7 +661,6 @@ const DistributorPage = ({
 
           <div className="relative flex flex-col limit1600:mt-104px mt-104px items-start limit1920:items-center">
             <div className="relative w-default h-125px mt-26px">
-              {/* <label style={{color:"#3a5f39"}} className="text-36px font-spoqaMedium absolute right-0 bottom-0 z-20 mb-86px mr-50px">총판페이지</label> */}
               <img className="z-10" src={DistributorBanner} alt="" />
             </div>
           </div>
@@ -679,10 +678,6 @@ const DistributorPage = ({
             </div>
 
             <div className="relative flex flex-col justify-start limit:justify-center">
-                {/* <div className="relative w-default h-225px mt-20px">
-                    <label style={{color:"#3a5f39"}} className="text-36px font-spoqaMedium absolute right-0 bottom-0 z-20 mb-86px mr-50px">총판페이지</label>
-                    <img className="z-10" src={DistributorBanner} alt="" />
-                </div> */}
 
                 <div className="flex flex-col items-start limit1920:items-center w-full h-full">
 
@@ -969,7 +964,6 @@ const DistributorPage = ({
                         <div className="flex flex-col items-center justify-center mt-21px w-full rounded-4px overflow-hidden "  
                             style={{filter:'drop-shadow(rgba(0, 0, 0, 0.6) 0 0px 5px)'}}>
                             <div className="flex flex-col items-center justify-center  w-full overflow-hidden shadow-table"
-                                // style={{borderImageSource:'linear-gradient(to top, #1f1f1e 80%, #343434 100%)', borderImageSlice: 1 }}
                             >
 
                                     <div 
@@ -1066,7 +1060,6 @@ const DistributorPage = ({
 
 
                     <div className="w-full">
-                        
                         <Footer fullWidth={true} />
                     </div>
                 </div>

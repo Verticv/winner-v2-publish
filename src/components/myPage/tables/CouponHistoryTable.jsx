@@ -20,7 +20,7 @@ const CouponHistoryTable = () => {
             <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
                     <td className="w-292px text-center">테스트쿠폰</td>
-                    <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
+                    <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td className="w-140px text-center">eric123</td>
                     <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
                     <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
@@ -29,7 +29,7 @@ const CouponHistoryTable = () => {
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-292px text-center">테스트쿠폰</td>
-                    <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
+                    <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td className="w-140px text-center">eric123</td>
                     <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
                     <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
@@ -38,7 +38,7 @@ const CouponHistoryTable = () => {
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px bg-dark-323232">
                     <td className="w-292px text-center">테스트쿠폰</td>
-                    <td className="w-119px text-right text-red-e65454 font-robotoRegular pr-10px">10,000</td>
+                    <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td className="w-140px text-center">eric123</td>
                     <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
                     <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
