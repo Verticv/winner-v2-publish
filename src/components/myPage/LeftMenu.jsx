@@ -177,7 +177,7 @@ const LeftMenu = ({
                                         || pathname === item.path_4 || pathname === item.path_5 
                                         || pathname === item.path_6 || pathname === item.path_7 || pathname === item.path_8 
                                         ? "text-gray-f1e7d5 bg-gray-4e4941" 
-                                        : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
+                                        : "text-gray-7e7564 hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
                                     } flex items-center h-47px w-full pl-57px `}>
                                         {item.sub1}
                                 </button>
@@ -192,7 +192,7 @@ const LeftMenu = ({
                                     className={`${
                                         pathname === item.path2 || pathname === item.path2_1 || pathname === item.path2_2 || pathname === item.path2_3
                                         ? "text-gray-f1e7d5 bg-gray-4e4941" 
-                                        : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
+                                        : "text-gray-7e7564 hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
                                     }  flex items-center h-47px w-full pl-57px `}>
                                         {item.sub2}
                                 </button>
@@ -206,8 +206,8 @@ const LeftMenu = ({
                                     }}
                                     className={`${
                                         pathname === item.path3 || pathname === item.path3_1
-                                        ? "text-gray-f1e7d5 bg-gray-4e4941 " 
-                                        : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
+                                        ? "text-gray-f1e7d5 bg-gray-4e4941" 
+                                        : "text-gray-7e7564 hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
                                     } ${item.sub3 === "키론가상게임" && "rounded-b-3xl"} flex items-center h-47px w-full  pl-57px `}>
                                         {item.sub3}
                                 </button>
@@ -223,7 +223,7 @@ const LeftMenu = ({
                                     className={`${
                                         pathname === item.path4
                                         ? "text-gray-f1e7d5 bg-gray-4e4941 " 
-                                        : "text-gray-776f5f hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
+                                        : "text-gray-7e7564 hover:bg-gray-44423e  hover:text-gray-c8c8c8  hover:opacity-50"
                                     } ${item.text === "미니게임" && "rounded-b-3xl"} flex items-center h-47px w-full  pl-57px `}>
                                         {item.sub4}
                                 </button>

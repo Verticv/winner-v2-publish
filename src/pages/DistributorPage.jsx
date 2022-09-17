@@ -916,7 +916,7 @@ const DistributorPage = ({
 
                         <div className="mt-55px h-42px w-full flex items-center space-x-9px text-24px tracking-tight text-gray-ccc2b6 font-spoqaMedium">
                             <img src={MemberIcon} alt="" />
-                            <div>접속중인 회원수: <span className="font-spoqaBold text-gray-c8c8c8 tracking-tight text-gray-r454545">2 명</span></div>
+                            <div>접속중인 회원수: <span className="font-spoqaBold text-gray-c8c8c8 tracking-tight ">2 명</span></div>
 
                             <div 
                                 style={{
@@ -926,7 +926,7 @@ const DistributorPage = ({
                                     marginLeft: "14px",
                                     background: 'linear-gradient(to top, #4b3b09, #e8b888)'
                                 }} 
-                                className="flex items-center justify-center rounded-4px  hover:opacity-75"
+                                className="flex items-center justify-center rounded-4px hover:filter hover:brightness-125 shadow-link"
                                 onClick={() => setViewOnline(!viewOnline)}
                             >
                                 <div 
@@ -938,7 +938,7 @@ const DistributorPage = ({
                                     }} 
                                     className="flex items-center justify-center rounded-4px cursor-pointer"
                                 >
-                                    <span className="font-spoqaMedium tracking-tight text-14px text-golden-ffdfbd">{viewOnline ? "닫기" : "보기"}</span>
+                                    <span className="font-spoqaMedium tracking-tight text-14px text-shadow-5" style={{ color: '#ffdfbd'}}>{viewOnline ? "닫기" : "보기"}</span>
                                 </div>
                             </div>
                         </div>
