@@ -160,7 +160,7 @@ const Inbox = () => {
                     className="pl-11px  placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a"
                     placeholder="검색어를 입력해 주세요"
                 />
-                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  hover:opacity-75 p-px">
+                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  filter hover:brightness-125 p-px">
                   <div className="flex items-center justify-center w-full  h-40px rounded-4px bg-gradient-to-b from-gray-e6b786  to-gray-80603f">
                     <img src={SearchIcon} alt="" />
                   </div>
@@ -180,30 +180,30 @@ const Inbox = () => {
                 <div className="flex space-x-2px">
                     <button 
                         style={{background:'linear-gradient(to bottom, rgba(232,184,136,1) 0%, rgba(75,59,9,1) 98%)'}}
-                            className="flex items-center justify-center w-90px h-36px rounded-4px   hover:filter hover:brightness-125 shadow-link shadow-link"
+                            className="flex items-center justify-center w-90px h-36px rounded-4px   hover:filter hover:brightness-125 shadow-link"
                         onClick={() => AllSelectButtonPressed()}
                     >
                         <div style={{
                           background: "linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)",
                           }}
                         className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white">{isAllSelected ? "선택해제" : "전체선택"}</span>
+                            <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">{isAllSelected ? "선택해제" : "전체선택"}</span>
                         </div>
                     </button>
                     <button style={{background:'linear-gradient(to bottom, rgba(232,136,149,1) 0%, rgba(75,9,35,1) 98%)'}}
-                            className="flex items-center justify-center w-90px h-36px rounded-4px   hover:filter hover:brightness-125 shadow-link shadow-link">
+                            className="flex items-center justify-center w-90px h-36px rounded-4px   hover:filter hover:brightness-125 shadow-link">
                         <div style={{
                                   background: "linear-gradient(180deg, rgba(224,101,70,1) 0%, rgba(221,98,69,1) 6%, rgba(152,53,30,1) 97%, rgba(152,52,28,1) 100%)",
                                
                                 }}
                                 className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer">
-                            <span className="font-spoqaMedium tracking-tight text-14px text-white">선택삭제</span>
+                            <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">선택삭제</span>
                         </div>
                     </button>
                 </div>
-                <button className="flex items-center justify-center w-159px h-36px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px  hover:filter hover:brightness-125 shadow-link shadow-link">
+                <button className="flex items-center justify-center w-114px h-36px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px  hover:filter hover:brightness-125 shadow-link ">
                     <div className="flex items-center justify-center h-34px w-157px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
-                        <span className="font-spoqaMedium tracking-tight text-14px text-white">전체읽음처리</span>
+                        <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff text-shadow-5">전체읽음처리</span>
                     </div>
                 </button>
             </div>
