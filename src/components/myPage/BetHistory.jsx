@@ -28,6 +28,7 @@ import AllBetHistory from './betHistory/AllBetHistory'
 import SlotBetHistory from './betHistory/SlotBetHistory'
 import MinigameBetHistory from './betHistory/MinigameBetHistory'
 import ARGameBetHistory from './betHistory/ARGameBetHistory'
+import HotelCasinoBetHistory from './betHistory/HotelCasinoBetHistory'
 import { Route } from 'react-router'
 import ESportsBetHistory from './betHistory/ESportsBetHistory'
 
@@ -36,7 +37,7 @@ const tabsArray = [
     { text: "라이브카지노", icon: Icon2, iconHighlight: IconHighlight2, id: 1, path: "/mypage/bet-history/live-casino" },
     { text: "슬롯게임", icon: Icon3, iconHighlight: IconHighlight3, id: 2, path: "/mypage/bet-history/slot-game" },
     { text: "스포츠", icon: Icon4, iconHighlight: IconHighlight4, id: 3, path: "/mypage/bet-history/sports" },
-    { text: "호텔카지노", icon: Icon5, iconHighlight: IconHighlight5,id: 4, path: "/mypage/bet-history/lottery-game" },
+    { text: "호텔카지노", icon: Icon5, iconHighlight: IconHighlight5,id: 4, path: "/mypage/bet-history/hotel-casino" },
     { text: "e-스포츠", icon: Icon6, iconHighlight: IconHighlight6, id: 5, path: "/mypage/bet-history/e-sports" },
     { text: "미니게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/mypage/bet-history/minigame" },
     { text: "키론가상게임", icon: Icon8, iconHighlight: IconHighlight8, id: 7,  path: "/mypage/bet-history/ar-game" },
@@ -116,9 +117,9 @@ const BetHistory = () => {
                     <Pagination page={page} setPage={setPage}/>   
                 </>
             </Route>
-            <Route path="/mypage/bet-history/lottery-game">
+            <Route path="/mypage/bet-history/hotel-casino">
                 <>
-                  <AllBetHistory />
+                  <HotelCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab}/>
                   <Pagination page={page} setPage={setPage}/>
                 </>
             </Route> 
