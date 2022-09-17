@@ -109,7 +109,7 @@ const PointsApply = () => {
                     </div>
                 </div>
 
-                <div className={`${inputClicked ? "mt-19px" : "mt-20px"} flex space-x-5px w-full justify-end pr-117px`}>
+                <div className={`mt-20px flex space-x-5px w-full justify-end pr-117px`}>
                     <button 
                       className="flex items-center justify-center h-42px w-75px p-px  rounded-2px shadow-link hover:filter hover:brightness-125"
                       style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
