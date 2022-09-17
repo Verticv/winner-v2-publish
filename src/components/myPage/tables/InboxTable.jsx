@@ -28,7 +28,7 @@ const InboxTable = ({
                     item.id % 2 === 0 
                     ? "bg-dark-323232" 
                     : "bg-dark-2e2e2e"
-              } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-dark-252525 hover:font-spoqaBold group last:border-b-0`}
+              } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-dark-252525 hover:font-spoqaBold last:border-b-0`}
 
             >
                 <div className="flex items-center font-spoqaBold text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 px-52px last:border-b-0">        
@@ -51,19 +51,19 @@ const InboxTable = ({
                             item.isRead === true 
                             ? "text-gray-c8c8c8 font-spoqaMedium" 
                             : "text-gray-c8c8c8 font-spoqaMedium"
-                            } flex items-center space-x-10px cursor-pointer`}
+                            } group flex items-center space-x-10px cursor-pointer`}
                         onClick={() => history.push(item.path)}
                     >
                         {
                             item.type === "안내" 
-                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px">안내</div> 
+                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px -mt-px  pt-px">안내</div> 
                             : item.type === "이벤트" 
-                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px">이벤트</div> 
+                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px -mt-px pt-px">이벤트</div> 
                             : ''
                         }
-                        <p className="">{item.text}</p>
+                        <p className="filter group-hover:text-gray-f1e9e9">{item.text}</p>
                         {item.isRead === false && (
-                          <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto">
+                          <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px">
                               N
                           </div>
                         )}
@@ -71,8 +71,8 @@ const InboxTable = ({
 
                    <div className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} flex font-spoqa justify-center text-center`} style={{width:'160px'}}>{item.time}</div>
 
-                    <button className="w-72px flex items-center justify-center ">
-                        <div className={`${item.isRead === true  ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px hover:filter hover:brightness-125 `}>
+                    <button className="w-72px flex items-center justify-center">
+                        <div className={`${item.isRead === true  ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center shadow-link pt-2px hover:filter hover:brightness-125 `}>
                             삭제
                         </div>
                     </button>
