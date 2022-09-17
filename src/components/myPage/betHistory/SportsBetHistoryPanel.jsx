@@ -375,7 +375,7 @@ const SportsBetHistoryPanel = ({
                                 setPopupOpen && setPopupOpen(false)
                                 setAttachedArray && addEntryClick()
                             }} 
-                            className="flex items-center justify-center w-112px h-73px rounded-4px bg-gradient-to-b from-blue-88d9e8  to-blue-3d4a8d hover:opacity-75 shadow-link" 
+                            className="flex items-center justify-center w-112px h-73px rounded-4px bg-gradient-to-b from-blue-88d9e8  to-blue-3d4a8d hover:brightness-125 filter shadow-link" 
                         >
                             <div className="pt-px flex items-center justify-center h-71px w-110px rounded-3px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
                                 <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff text-shadow-5">내역올리기</span>
@@ -384,7 +384,7 @@ const SportsBetHistoryPanel = ({
                     )}
                     
                     {(isPopup === false && noButtons === false) && (
-                        <button onClick={() => setAttachedArray && handleRemoveItem(id) } className="flex items-center justify-center w-112px h-73px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:opacity-75 shadow-link">
+                        <button onClick={() => setAttachedArray && handleRemoveItem(id) } className="flex items-center justify-center w-112px h-73px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:brightness-125 filter shadow-link">
                             <div className="pt-px flex items-center justify-center h-71px w-110px rounded-3px  bg-gradient-to-b from-red-e06446  to-red-96341d cursor-pointer">
                                 <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">내역삭제</span>
                             </div>
