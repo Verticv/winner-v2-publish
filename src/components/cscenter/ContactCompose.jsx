@@ -20,7 +20,6 @@ const ContactCompose = () => {
             </div>
         </div>
     )
-
     const searchDropdown = (
         <div className="-mt-2px flex flex-col items-center justify-center w-120px overflow-hidden bg-gray-1f1f1e rounded-2px border border-gray-2c2c2c text-gray-ccc2b6 font-spoqaMedium text-14px tracking-tight">
             <button className={dropDownCellClass} onClick={() => {
@@ -42,6 +41,12 @@ const ContactCompose = () => {
                 스포츠
             </button>
             <button className={dropDownCellClass} onClick={() => {
+                setSelectedCarrier("호텔카지노")
+                setDropdownOpen(false)
+            }}>
+                호텔카지노
+            </button>
+            <button className={dropDownCellClass} onClick={() => {
                 setSelectedCarrier("e-스포츠")
                 setDropdownOpen(false)
             }}>
@@ -58,6 +63,18 @@ const ContactCompose = () => {
                 setDropdownOpen(false)
             }}>
                 키론가상게임
+            </button>
+            <button className={dropDownCellClass} onClick={() => {
+                setSelectedCarrier("피싱게임")
+                setDropdownOpen(false)
+            }}>
+                피싱게임
+            </button>
+            <button className={dropDownCellClass} onClick={() => {
+                setSelectedCarrier("티비벳")
+                setDropdownOpen(false)
+            }}>
+                티비벳
             </button>
             <button className={dropDownCellClass} onClick={() => {
                 setSelectedCarrier("충전/환전")
@@ -108,7 +125,7 @@ const ContactCompose = () => {
                     </div>
                     <div className="w-full  border-r border-gray-252525 bg-gray-323232 px-10px flex items-center">
                         <input 
-                            className="outline-none w-full h-35px rounded-4px border border-gray-404040 px-9px text-14px font-spoqa tracking-tight placeholder-gray-828282 bg-dark-1a1a1a"
+                            className="outline-none w-full h-35px rounded-4px border border-gray-404040 px-9px text-14px font-spoqa tracking-tight placeholder-gray-828282 bg-dark-1a1a1a text-gray-c8c8c8"
                             placeholder="제목을 입력하세요."
                         />
                     </div>
@@ -122,7 +139,7 @@ const ContactCompose = () => {
                     <div className="w-full border-r border-gray-252525 bg-gray-323232 flex items-center p-10px">
                         <textarea 
                             style={{height: "325px", resize: "none"}}
-                            className="outline-none w-full rounded-4px border border-gray-404040 px-9px py-10px text-14px font-spoqa tracking-tight placeholder-gray-828282 bg-dark-1a1a1a"
+                            className="outline-none w-full rounded-4px border border-gray-404040 px-9px py-10px text-14px font-spoqa tracking-tight placeholder-gray-828282 text-gray-c8c8c8 bg-dark-1a1a1a"
                             placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                         />
                     </div>
