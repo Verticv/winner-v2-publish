@@ -25,7 +25,7 @@ const HorizontalMenu7 = ({
                 onClick={() => {
                     history.push(item.path)
                 }}
-                onMouseOver={() => setHover(item.path)}
+                onMouseOver={() => setHover(item.id)}
                 onMouseLeave={() => setHover(null)}
             >
                 <div 
