@@ -36,18 +36,18 @@ import IconHighlight13 from '../../images/cscenter/Icon13_On.png'
 const Announcement = () => {
     const tabsArray = [
         { text: "전체", icon: Icon1, iconHighlight: IconHighlight1, id: 0, path: "/cscenter/announcement/all" },
-        { text: "라이브카지노", icon: Icon2, iconHighlight: IconHighlight2, id: 1, path: "/cscenter/announcement/live-casino" },
-        { text: "슬롯게임", icon: Icon3, iconHighlight: IconHighlight3, id: 2, path: "/cscenter/announcement/slot" },
-        { text: "스포츠", icon: Icon4, iconHighlight: IconHighlight4, id: 3, path: "/cscenter/announcement/sports" },
-        { text: "호텔카지노", icon: Icon5, iconHighlight: IconHighlight5, id: 4, path: "/cscenter/announcement/hotel-casino" },
-        { text: "e-스포츠", icon: Icon6, iconHighlight: IconHighlight6, id: 5, path: "/cscenter/announcement/e-sports" },
-        { text: "미니게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/cscenter/announcement/minigame" },
-        { text: "키론가상게임", icon: Icon8, iconHighlight: IconHighlight8, id: 7, path: "/cscenter/announcement/ar-game" },
-        { text: "피싱게임", icon: Icon9, iconHighlight: IconHighlight9, id: 8, path: "/cscenter/announcement/phishing-game" },
-        { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/announcement/bet" },
-        { text: "충전/환전", icon: Icon11, iconHighlight: IconHighlight11, id: 10, path: "/cscenter/announcement/transaction" },
-        { text: "베팅관련", icon: Icon12, iconHighlight: IconHighlight12, id: 11, path: "/cscenter/announcement/about-betting" },
-        { text: "기타", icon: Icon13, iconHighlight: IconHighlight13, id: 12, path: "/cscenter/announcement/other" },
+        { text: "라이브카지노", icon: Icon2, iconHighlight: IconHighlight2, id: 1, path: "/cscenter/announcement/all/live-casino" },
+        { text: "슬롯게임", icon: Icon3, iconHighlight: IconHighlight3, id: 2, path: "/cscenter/announcement/all/slot" },
+        { text: "스포츠", icon: Icon4, iconHighlight: IconHighlight4, id: 3, path: "/cscenter/announcement/all/sports" },
+        { text: "호텔카지노", icon: Icon5, iconHighlight: IconHighlight5, id: 4, path: "/cscenter/announcement/all/hotel-casino" },
+        { text: "e-스포츠", icon: Icon6, iconHighlight: IconHighlight6, id: 5, path: "/cscenter/announcement/all/e-sports" },
+        { text: "미니게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/cscenter/announcement/all/minigame" },
+        { text: "키론가상게임", icon: Icon8, iconHighlight: IconHighlight8, id: 7, path: "/cscenter/announcement/all/ar-game" },
+        { text: "피싱게임", icon: Icon9, iconHighlight: IconHighlight9, id: 8, path: "/cscenter/announcement/all/phishing-game" },
+        { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/announcement/all/bet" },
+        { text: "충전/환전", icon: Icon11, iconHighlight: IconHighlight11, id: 10, path: "/cscenter/announcement/all/transaction" },
+        { text: "베팅관련", icon: Icon12, iconHighlight: IconHighlight12, id: 11, path: "/cscenter/announcement/all/about-betting" },
+        { text: "기타", icon: Icon13, iconHighlight: IconHighlight13, id: 12, path: "/cscenter/announcement/all/other" },
     ];
     const [page, setPage] = useState(0)
     const [isDropdownOpen, setDropdownOpen] = useState(true)

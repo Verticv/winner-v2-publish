@@ -14,7 +14,7 @@ const InboxView = () => {
     const history = useHistory();
 
     const NewLabel = (
-        <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px pl-px flex-shrink-0">
+        <div className="mt-3px w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px pl-px flex-shrink-0">
             N
         </div>
         // <div style={{paddingTop:"1px", paddingLeft:"1px"}} className="w-17px h-17px rounded-full bg-red-ff1237 text-white font-roboto text-12px flex items-center justify-center">
@@ -30,7 +30,7 @@ const InboxView = () => {
             > 
                 <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
                 {/* TITLE */}
-                    <div className="py-15px w-full  flex items-center px-19px space-x-10px border-b border-gray-252525" >
+                    <div className="py-15px w-full  flex items-start px-19px space-x-10px border-b border-gray-252525" >
                         <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px font-spoqaMedium flex-shrink-0">안내</div>
                         <h1 className="mt-4px font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8 ">
                             {TitleText}

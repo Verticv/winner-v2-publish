@@ -195,11 +195,11 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                             <ContactCompose />
                         </Route>
                        
+                        <Route path="/cscenter/announcement/all/">
+                            <Announcement />
+                        </Route>
                         <Route exact path="/cscenter/announcement/view">
                             <AnnouncementView />
-                        </Route>
-                        <Route exact path="/cscenter/announcement/*">
-                            <Announcement />
                         </Route>
                         <Route path="/cscenter/faq">
                             <Faq />
