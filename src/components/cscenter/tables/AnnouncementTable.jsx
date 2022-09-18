@@ -86,10 +86,10 @@ const AnnouncementTable = () => {
                 className="text-14px tracking-tight text-gray-c8c8c8 h-55px w-full border-b border-gray-252525 group pt-px last:border-b-0"
             >
                 <td style={{width: "173px",color: "#4a90f0"}} className="h-56px text-center text-blue-r0056a6 ">{item.type}</td>
-                <td  style={{width: "698px"}} className="w-full h-56px flex items-center space-x-10px">
-                    <p className="">{item.title}</p>
+                <td  style={{width: "720px"}} className="group w-full h-56px flex items-center space-x-10px">
+                    <p style={{maxWidth: '700'}} className="group-hover:text-gray-f1e9e9 truncate">{item.title}</p>
                     {item.isNew && (
-                        <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pr-px">
+                        <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pr-px flex-shrink-0">
                             N
                         </div>
                     )}
