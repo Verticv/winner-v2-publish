@@ -25,7 +25,7 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
 
     const LeftMenuArray = [
         { text: "문의하기", icon: Icon1, iconHighlight: Icon1, id: 0, path: "/cscenter/contact/all", mainPath: "/cscenter/contact" },
-        { text: "공지사항", icon: Icon2, iconHighlight: Icon2, id: 1, path: "/cscenter/announcement", mainPath: "/cscenter/announcement" },
+        { text: "공지사항", icon: Icon2, iconHighlight: Icon2, id: 1, path: "/cscenter/announcement/all", mainPath: "/cscenter/announcement" },
         { text: "자주묻는질문", icon: Icon3, iconHighlight: Icon3, id: 2, path: "/cscenter/faq/all", mainPath: "/cscenter/faq" },
         { text: "계좌문의", icon: Icon4, iconHighlight: Icon4, id: 3, path: "/cscenter/inquiry", mainPath: "/cscenter/inquiry" },
         { 
@@ -106,11 +106,11 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                         setSelectedTab={setSelectedTab}
                     />
                 </Route>
-                <Route exact path="/cscenter/announcement">
+                <Route exact path="/cscenter/announcement/all*">
                     <DirectoryComponent 
                         branch1="고객센터"
                         branch2="공지사항" 
-                        mainPath="/cscenter/announcement"
+                        mainPath="/cscenter/announcement/all"
                         setSelectedTab={setSelectedTab}
                     />
                 </Route>
@@ -194,7 +194,7 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                         <Route path="/cscenter/contact/compose">
                             <ContactCompose />
                         </Route>
-                        <Route exact path="/cscenter/announcement">
+                        <Route exact path="/cscenter/announcement/*">
                             <Announcement />
                         </Route>
                         <Route exact path="/cscenter/announcement/view">
