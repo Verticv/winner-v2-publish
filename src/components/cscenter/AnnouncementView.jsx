@@ -1,7 +1,7 @@
 import MyPageTitle from 'components/myPage/MyPageTitle'
 import React from 'react'
 import { useHistory } from 'react-router'
-import WinnerLogo from '../../images/logo.png'
+import WinnerLogo from '../../images/freeBoard/winner_small2.png'
 
 const AnnouncementView = () => {
 
@@ -18,7 +18,7 @@ const AnnouncementView = () => {
     const history = useHistory();
 
     const NewLabel = (
-        <div className="w-17px h-17px rounded-full bg-red-ff1237 -mt-px text-white font-roboto text-12px flex items-center justify-center pt-px">
+        <div className="mt-px w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px pl-px flex-shrink-0">
             N
         </div>
     )
@@ -27,97 +27,94 @@ const AnnouncementView = () => {
         <div>
             <MyPageTitle title="공지사항"/>
 
-            <div style={{borderRadius:"1em"}} className="w-full overflow-hidden shadow-subNavbar mt-20px">
+            <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-20px" style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
+            > 
+                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
                 {/* TITLE */}
-                <div className="h-56px w-full bg-gray-fafafa flex items-center px-19px space-x-10px border-b border-gray-dddddd">
-                    <p className="text-14px font-spoqaMedium tracking-tight text-blue-r0056a6">스포츠북</p>
-                    <h1 className="font-spoqaMedium text-15px tracking-tight text-gray-r454545 ">
+                <div className="py-15px w-full flex items-start px-19px space-x-10px border-b border-gray-252525">
+                    <p className="text-14px font-spoqaMedium tracking-tight text-blue-r0056a6 flex flex-shrink-0">스포츠북</p>
+                    <h1 className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">
                         {TitleText}
                     </h1>
                     {NewLabel}
                 </div>
                 {/* SENDER */}
-                <div className="h-56px w-full bg-gray-fafafa flex px-19px space-x-10px border-b border-gray-dddddd items-center">
+                <div className="h-56px w-full flex px-19px space-x-10px border-b border-gray-252525 items-center">
                     <img className="h-17px w-72px object-contain mb-4px" src={WinnerLogo} alt=""/>
-                    <div className="w-px bg-gray-dddddd h-11px" />
-                    <div className="text-14px font-spoqaMedium tracking-tight text-gray-r7b7b7b">2021.06.29</div>
+                    <div className="w-px bg-gray-252525 h-11px" />
+                    <div className="text-14px font-spoqaMedium tracking-tight h-12px  flex items-center flex-shrink-0 text-gray-929292">2021.06.29</div>
                 </div>
-                <div className="w-full bg-white flex flex-col px-19px border-b border-gray-dddddd py-18px px-19px">
-                    <p className="font-spoqaMedium text-16px tracking-tight text-gray-r585858 ">
+                <div className="w-full bg-gray-323232 flex flex-col px-19px border-b border-gray-252525 py-18px">
+                    <p className="font-spoqaMedium text-16px tracking-tight text-gray-c8c8c8 ">
                         {SubtitleText}
                     </p>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-39px">
+                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-10px mt-39px">
                         {BodyText1.split('\n').map((item, i) => 
-                            <p key={i} className="flex items-center h-14px">{item}</p>
+                            <p key={i} className="flex items-center">{item}</p>
                         )}
                     </p>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-39px">
+                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-10px mt-39px">
                         {BodyText2.split('\n').map((item, i) => 
-                            <p key={i} className="flex items-center h-14px">{item}</p>
+                            <p key={i} className="flex items-center">{item}</p>
                         )}
                     </p>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-39px">
+                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-10px mt-39px">
                         {BodyText3.split('\n').map((item, i) => 
-                            <p key={i} className="flex items-center h-14px">{item}</p>
+                            <p key={i} className="flex items-center">{item}</p>
                         )}
                     </p>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-39px">
+                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-10px mt-39px">
                         {BodyText4.split('\n').map((item, i) => 
-                            <p key={i} className="flex items-center h-14px">{item}</p>
+                            <p key={i} className="flex items-center">{item}</p>
                         )}
                     </p>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-39px">
+                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-10px mt-39px">
                         {BodyText5.split('\n').map((item, i) => 
-                            <p key={i} className="flex items-center h-14px">{item}</p>
+                            <p key={i} className="flex items-center">{item}</p>
                         )}
                     </p>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-39px">
+                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-10px mt-39px">
                         {BodyText6.split('\n').map((item, i) => 
-                            <p key={i} className="flex items-center h-14px">{item}</p>
+                            <p key={i} className="flex items-center">{item}</p>
                         )}
                     </p>
-                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-r585858 space-y-10px mt-39px">
+                    <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-10px mt-39px">
                         {BodyText7.split('\n').map((item, i) => 
-                            <p key={i} className="flex items-center h-14px">{item}</p>
+                            <p key={i} className="flex items-center">{item}</p>
                         )}
                     </p>
+                    </div>
                 </div>
             </div>
 
             <div className="mt-20px mb-60px flex items-start justify-between">
-                <button className="flex items-center justify-center h-36px w-90px rounded-4px bg-gray-r171a1d hover:opacity-75">
+                <button className="flex items-center justify-center h-36px w-90px rounded-2px p-px shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
                     <div 
-                        style={{
-                            background: "linear-gradient(to bottom, #585b5e, #303337)",
-                        }}
-                        className="flex items-center justify-center h-34px w-88px bg-black rounded-4px border border-gray-r737579 cursor-pointer"
+                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
+                        className="flex items-center justify-center h-34px w-88px bg-black rounded-2pxx cursor-pointer"
                     >
-                        <span className="font-spoqaMedium tracking-tight text-14px text-white">이전</span>
+                        <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">이전</span>
                     </div>
                 </button>
 
                 <button 
-                    className="flex items-center justify-center h-52px w-192px rounded-4px bg-gray-r171a1d hover:opacity-75"
+                   className="flex items-center justify-center h-52px w-192px rounded-2px p-px shadow-link hover:filter hover:brightness-125"
                     onClick={() => history.push('/cscenter/announcement')}
                 >
                     <div
-                        style={{
-                            background: "linear-gradient(to bottom, #585b5e, #303337)",
-                        }}
-                        className="flex items-center justify-center h-50px w-190px bg-black rounded-4px border border-gray-r737579 cursor-pointer"
+                        style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
+                        className="flex items-center justify-center h-50px w-190px  rounded-2px cursor-pointer"
                     >
-                        <span className="font-spoqaMedium tracking-tight text-16px text-white">목록보기</span>
+                        <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-px text-shadow-5">목록보기</span>
                     </div>
                 </button>
 
-                <button className="flex items-center justify-center h-36px w-90px rounded-4px bg-gray-r171a1d hover:opacity-75">
+                <button className="flex items-center justify-center h-36px w-90px p-px rounded-2px  shadow-link hover:filter hover:brightness-125">
                     <div 
-                        style={{
-                            background: "linear-gradient(to bottom, #585b5e, #303337)",
-                        }}
-                        className="flex items-center justify-center h-34px w-88px bg-black rounded-4px border border-gray-r737579 cursor-pointer"
+                        style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
+                        className="flex items-center justify-center h-34px w-88px bg-black rounded-2px  cursor-pointer"
                     >
-                        <span className="font-spoqaMedium tracking-tight text-14px text-white">다음</span>
+                        <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">다음</span>
                     </div>
                 </button>
             </div>
