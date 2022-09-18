@@ -19,57 +19,57 @@ const ContactView = () => {
             <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-20px" style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
               > 
               <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
-                <div className="h-55px w-full border-b border-gray-252525 px-19px flex items-center space-x-10px">
+                <div className="w-full border-b border-gray-252525 px-19px flex items-start space-x-10px py-15px">
                     <div 
                         style={{backgroundColor: "#494745", color: "#ccc2b6"}} 
-                        className="w-66px h-25px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center"
+                        className="w-66px h-25px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center flex-shrink-0"
                     >
                         답변완료
                     </div>
 
                     <div 
                         style={{backgroundColor: "#40915f", color: "#fff"}} 
-                        className="w-56px h-25px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center"
+                        className="w-56px h-25px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center flex-shrink-0"
                     >
                         스포츠
                     </div>
                     
-                    <p className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">스포츠북 문의</p>
+                    <p className=" mt-2px font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">스포츠북 문의</p>
                 </div>
 
-                <div className="h-56px w-full border-b border-gray-252525 px-19px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-929292 pt-4px">
+                <div className="pt-17px pb-14px w-full border-b border-gray-252525 px-19px flex items-start text-14px font-spoqaMedium tracking-tight text-gray-929292">
                     <img src={Rank1Icon} alt="" />
                     <p className="ml-3px">마이마이프로틴화이팅</p>
 
                     <div className="h-11px w-px bg-gray-929292 mx-10px"></div>
 
-                    <p className="">2021.06.28 15:49</p>
+                    <p className="flex flex-shrink-0">2021.06.28 15:49</p>
                 </div>
 
                 <div className="w-full bg-gray-323232 py-22px px-16px">
-                    <div style={{WebkitTextStroke:"0.2px"}} className="rounded-4px  h-52px flex items-center px-21px font-spoqa text-14px tracking-tight text-gray-c8c8c8 bg-gray-252525">
+                    <div className="rounded-4px  py-15px  flex items-start px-21px font-spoqa text-14px tracking-tight text-gray-c8c8c8 bg-gray-252525">
                         스포츠북 문의 입니다.
                     </div>
 
                     <div className="bg-gray-414141 rounded-4px pt-20px pb-17px  px-22px mt-21px font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 space-y-35px">
                         <div className="space-y-10px">
                             {BodyText1.split('\n').map((item, i) => 
-                                <p key={i} className="flex items-center h-14px">{item}</p>
+                                <p key={i} className="flex items-center">{item}</p>
                             )}
                         </div>
                         <div className="space-y-10px">
                             {BodyText2.split('\n').map((item, i) => 
-                                <p key={i} className="flex items-center h-14px">{item}</p>
+                                <p key={i} className="flex items-center">{item}</p>
                             )}
                         </div>
                         <div className="space-y-10px">
                             {BodyText3.split('\n').map((item, i) => 
-                                <p key={i} className="flex items-center h-14px">{item}</p>
+                                <p key={i} className="flex items-center">{item}</p>
                             )}
                         </div>
                         <div className="space-y-10px">
                             {BodyText4.split('\n').map((item, i) => 
-                                <p key={i} className="flex items-center h-14px">{item}</p>
+                                <p key={i} className="flex items-center">{item}</p>
                             )}
                         </div>
                         
