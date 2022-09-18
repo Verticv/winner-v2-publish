@@ -72,7 +72,7 @@ const Faq = () => {
       <>
             <button 
                 style={{zIndex: 2,background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)"}}
-                className="relative rounded-4px shadow-table w-full h-56px flex items-center p-px  mb-11px  z-20 group hover:shadow-table" 
+                className="relative rounded-4px shadow-table w-full  flex items-center p-px  mb-11px  z-20 group hover:shadow-table" 
 
                 onClick={() => {
                     if (openedCell === cellId) {
@@ -81,24 +81,24 @@ const Faq = () => {
                         setOpenedCell(cellId)
                     }
                 }}>
-                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden h-54px flex items-center px-19px justify-between">
-                  <img className="object-none mt-8px" src={QIcon} alt="" />
+                <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden  flex items-start px-19px justify-between pt-11px pb-10px">
+                  <img className="object-none relative top-4px" src={QIcon} alt="" />
                   <div className="w-full h-full px-18px flex items-center space-x-7px"> 
                       <div 
                           style={{backgroundColor: "#494745", width: "89px"}} 
-                          className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight pt-2px"
+                          className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight pt-2px flex-shrink-0"
                       > 
                           {type}
                       </div>
                       <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8  mt-2px">{text}</p>
                   </div>
-                  <img className={`${openedCell === cellId && "transform rotate-180"}`} src={openedCell === cellId ? ArrowDown : ArrowDown} alt="" />
+                  <img className={`${openedCell === cellId && "transform rotate-180"} self-center`} src={openedCell === cellId ? ArrowDown : ArrowDown} alt="" />
               </div>    
             </button>
             {openedCell === cellId && (
                 <div 
-                    style={{height: "421px", zIndex: 1, backgroundColor: "#252525" }} 
-                    className="flex h-full items-start justify-start w-full rounded-4px -mt-64px z-0 mb-14px border border-black"
+                    style={{ zIndex: 1, backgroundColor: "#252525" }} 
+                    className="flex h-full items-start justify-start w-full rounded-4px -mt-64px z-0 mb-14px border border-black pb-30px"
                 >
                     <img 
                         style={{marginTop: "68px"}} 
@@ -106,8 +106,8 @@ const Faq = () => {
                         src={AIcon} 
                         alt="" 
                     />
-                    <div className="flex flex-col">
-                        <div style={{marginTop: "82px",color:'#c1c1c1'}} className="ml-15px h-16px flex items-center text-16px font-spoqaMedium tracking-tight ">
+                    <div className="w-full flex flex-col">
+                        <div style={{marginTop: "82px",color:'#c1c1c1'}} className=" ml-15px  flex items-center text-16px font-spoqaMedium tracking-tight ">
                             <p style={{color: "#4a90f0"}} className="mr-3px" >
                                 No.1
                             </p> 
@@ -117,27 +117,27 @@ const Faq = () => {
 
                         <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px ml-14px">
                             {BodyText1.split('\n').map((item, i) => 
-                                <p key={i} className={`flex items-center h-14px`}>{item}</p>
+                                <p key={i} className={`flex items-center`}>{item}</p>
                             )}
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center ml-14px">
                             - 스포츠 : <p style={{color: "#e65454"}} className="mx-3px">두폴더 이상 </p> 롤링 100% 최대 30만원 
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center ml-14px">
                             - 스포츠단폴더, 가상게임, 미니게임, 카지노 : <p style={{color: "#e65454"}} className="mx-3px">이용불가</p>
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center ml-14px">
                             - 스포츠 2폴더 이상 100% 롤링 후 이용 가능 스포츠 단폴더, 타 게임 이용 가능하며, 스포츠 2폴더 100% 롤링 전 타게임 이용시 보유금 <p style={{color: "#e65454"}} className="mx-3px">전액 몰수처리</p>
                         </div>
                            
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px ml-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center ml-14px">
                             ※ 모든게임의 롤링적용시점은 게임이 끝나서 마감처리된 때입니다. 이후에 출금신청해주셔야 처리가능합니다.
                         </div>
 
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center h-14px ml-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-34px flex items-center ml-14px">
                             언제나 고객에게 최상의 서비스 제공을 할 수 있도록 노력하는 『 Winner 』가 되겠습니다.
                         </div>
-                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center h-14px ml-14px">
+                        <div style={{color:'#c1c1c1'}} className="font-spoqaMedium text-14px tracking-tight  space-y-10px mt-10px flex items-center ml-14px">
                             감사합니다.
                         </div>
                     </div>
