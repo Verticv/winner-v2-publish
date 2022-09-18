@@ -41,7 +41,7 @@ const ContactView = () => {
                     <img src={Rank1Icon} alt="" />
                     <p className="ml-3px">마이마이프로틴화이팅</p>
 
-                    <div className="h-11px w-px bg-gray-929292 mx-10px"></div>
+                    <div className="h-11px w-px bg-gray-929292 mx-10px mt-4px"></div>
 
                     <p className="flex flex-shrink-0">2021.06.28 15:49</p>
                 </div>

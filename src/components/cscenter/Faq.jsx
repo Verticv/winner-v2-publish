@@ -72,7 +72,7 @@ const Faq = () => {
       <>
             <button 
                 style={{zIndex: 2,background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)"}}
-                className="relative rounded-4px shadow-table w-full  flex items-center p-px  mb-11px  z-20 group hover:shadow-table" 
+                className="relative rounded-4px shadow-table w-full  flex items-start p-px  mb-11px  z-20 group hover:shadow-table hover:brightness-125 filter" 
 
                 onClick={() => {
                     if (openedCell === cellId) {
@@ -83,14 +83,14 @@ const Faq = () => {
                 }}>
                 <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden  flex items-start px-19px justify-between pt-11px pb-10px">
                   <img className="object-none relative top-4px" src={QIcon} alt="" />
-                  <div className="w-full h-full px-18px flex items-center space-x-7px"> 
+                  <div className="w-full h-full px-18px flex items-start space-x-7px self-start"> 
                       <div 
                           style={{backgroundColor: "#494745", width: "89px"}} 
-                          className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight pt-2px flex-shrink-0"
+                          className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight mt-2px pt-2px flex-shrink-0"
                       > 
                           {type}
                       </div>
-                      <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8  mt-2px">{text}</p>
+                      <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8  mt-7px text-left">{text}</p>
                   </div>
                   <img className={`${openedCell === cellId && "transform rotate-180"} self-center`} src={openedCell === cellId ? ArrowDown : ArrowDown} alt="" />
               </div>    

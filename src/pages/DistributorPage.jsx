@@ -220,7 +220,7 @@ const DistributorPage = ({
                         <div className="w-full h-full flex items-center justify-center mr-4px">
                         <button 
                             style={{width: "65px",background:'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                            className={` flex items-center justify-center h-36px w-87px rounded-4px filter hover:brightness-125`}
+                            className={` flex items-center justify-center h-36px w-87px rounded-4px filter hover:brightness-125 shadow-link`}
                         >
                             <div 
                                 style={{width:"63px",background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}

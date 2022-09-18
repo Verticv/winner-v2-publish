@@ -51,7 +51,7 @@ const ContactTable = ({
                         className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8 group"} ${item.text.length>30 ? '':'space-x-10px'} font-spoqaMedium flex items-center cursor-pointer h-full ml-23px`}
                         onClick={() => history.push(item.path)}
                     >
-                        <p style={{maxWidth: '390px'}}  className="group-hover:text-gray-f1e9e9 truncate">{item.text}</p>
+                        <p style={{maxWidth: '380px'}}  className="group-hover:text-gray-f1e9e9 truncate">{item.text}</p>
                         {item.isRead === false && (
                             <div className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px flex-shrink-0  ${item.id === 6 && "pr-px"}`}>
                                 N

@@ -33,7 +33,7 @@ const HorizontalMenu = ({
               history.push(item.path)
               setSelectedTab(item.id)
               if (setSelectedSubTab !== null) {
-                  setSelectedSubTab(item.id)
+                  setSelectedSubTab(0)
               }
             }}
             onMouseOver={() => setHover(item.id)}

@@ -32,7 +32,7 @@ const AnnouncementView = () => {
                 <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
                 {/* TITLE */}
                 <div className="py-15px w-full flex items-start px-19px space-x-10px border-b border-gray-252525">
-                    <p className="text-14px font-spoqaMedium tracking-tight text-blue-r0056a6 flex flex-shrink-0">스포츠북</p>
+                    <p className="text-14px font-spoqaMedium tracking-tight flex flex-shrink-0" style={{color:'#4a90f0'}}>스포츠북</p>
                     <h1 className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">
                         {TitleText}
                     </h1>
