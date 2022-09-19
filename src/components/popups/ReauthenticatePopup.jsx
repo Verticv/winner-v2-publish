@@ -66,7 +66,7 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
                   />
                 </div>
                     <button 
-                        style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 2px 1px #00000070", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
+                        style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 0 6px #000000", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #80603f)'}}
 				                className="text-20px tracking-tighter font-spoqaMedium text-white hover:opacity-75 mt-40px flex-shrink-0"
                         onClick={() => {
                             history.push("/mypage/edit-info")
