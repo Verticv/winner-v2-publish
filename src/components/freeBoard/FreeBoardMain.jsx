@@ -345,10 +345,10 @@ const FreeBoardMain = () => {
 
             <div className="flex w-381px h-42px bg-dark-1a1a1a rounded-4px border border-gray-404040 overflow-hidden">
                 <input 
-                    className="pl-11px placeholder-gray-r7c7c7c w-full text-gray-r393e41 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a" 
+                    className="pl-11px placeholder-gray-r7c7c7c w-full text-gray-c8c8c8 font-spoqaMedium text-14px outline-none h-full justify-between items-center tracking-tight bg-dark-1a1a1a" 
                     placeholder="검색어를 입력해 주세요"
                 />
-                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0  hover:opacity-75 p-px">
+                <button className="flex items-center justify-center w-42px h-42px rounded-4px bg-gradient-to-b from-gray-a57b51  to-gray-4b3b09 -mt-px -mr-px flex-shrink-0 filter hover:brightness-125 p-px">
                   <div className="flex items-center justify-center w-full  h-40px rounded-4px bg-gradient-to-b from-gray-e6b786  to-gray-80603f">
                     <img src={SearchIcon} alt="" />
                   </div>
@@ -393,30 +393,31 @@ const FreeBoardMain = () => {
                         className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group ml-px tracking-tight`}>
                         {
                             item.type === "안내" 
-                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px">안내</div> 
+                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px flex-shrink-0">안내</div> 
                             : item.type === "이벤트" 
-                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-10px">이벤트</div> 
+                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-10px flex-shrink-0">이벤트</div> 
                             : <div></div>
                         }
                         <p
                             className={`${
                                 item.type === "안내" 
-                                ? "text-blue-6cbbe9 group-hover:text-blue-500 mr-11px" 
+                                ? "text-blue-6cbbe9 group-hover:text-blue-87eaff mr-11px" 
                                 : item.type === "이벤트" 
-                                ? "text-yellow-d2b28f group-hover:text-yellow-400 mr-9px" 
-                                : "group-hover:text-gray-r8c8c8c mr-9px"
-                            }  mt-2px`}
+                                ? "text-yellow-d2b28f group-hover:text-yellow-ffdeb3 mr-9px" 
+                                : "group-hover:text-gray-fafafa mr-9px"
+                                }  mt-2px truncate text-left`}
+                            style={{maxWidth: '705px'}}
                         >
                             {item.text}
                         </p>
                         {item.replies && (
-                            <div className="h-17px pl-5px pr-5px rounded-4px flex items-center justify-center text-white font-roboto text-12px bg-red-e9441d mr-10px ml-px">{item.replies}</div>
+                            <div className="h-17px pl-5px pr-5px rounded-4px flex items-center justify-center text-white font-roboto text-12px bg-red-e9441d mr-10px ml-px flex-shrink-0">{item.replies}</div>
                         )}
                         {item.isBetHistory === true && (
-                            <div style={{backgroundColor: "#41b06c"}} className="h-25px w-65px rounded-full flex items-center justify-center text-white font-spoqaMedium text-12px">베팅내역</div>
+                            <div style={{backgroundColor: "#41b06c"}} className="h-25px w-65px rounded-full flex items-center justify-center text-white font-spoqaMedium text-12px flex-shrink-0">베팅내역</div>
                         )}
                         {item.isRead === false && (
-                            <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto">
+                            <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto flex-shrink-0">
                                 <p className="flex items-center h-12px">N</p>
                             </div>
                         )}
@@ -426,9 +427,9 @@ const FreeBoardMain = () => {
                         style={{width: "135px"}}
                         className={`flex justify-center items-center font-spoqaMedium tracking-tight text-gray-c8c8c8 text-center`} >
                             {item.type !== "일반"
-                            ? <img src={WinnerLogo} alt="" className='-mt-5px -ml-3px'/>
+                            ? <img src={WinnerLogo} alt="" className='-mt-5px -ml-3px flex-shrink-0'/>
                             : (
-                                <div className="flex space-x-4px">
+                                <div className="flex space-x-4px flex-shrink-0">
                                     {
                                     item.level === 1 
                                     ? <img src={Rank1} alt="" />
@@ -440,7 +441,7 @@ const FreeBoardMain = () => {
                                     ? <img src={Rank4} alt="" />
                                     : <img src={Rank5} alt="" />
                                     }
-                                    <p className='mt-2px'>{item.author}</p>
+                                    <p style={{maxWidth: '100px'}}  className='mt-2px truncate'>{item.author}</p>
                                 </div>
                             )
                             }

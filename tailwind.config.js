@@ -364,7 +364,8 @@ module.exports = {
           'd6f3ff': '#d6f3ff',
           '0469a3': '#0469a3',
           '2980b9': '#2980b9',
-          '6cbbe9': '#6cbbe9'
+          '6cbbe9': '#6cbbe9',
+          '87eaff': '#87eaff'
 
         },
         gray: {
@@ -537,7 +538,8 @@ module.exports = {
           ad9e8c: '#ad9e8c',
           c08029: '#c08029',
           ffd200: ' #ffd200',
-          d2b28f: '#d2b28f'
+          d2b28f: '#d2b28f',
+          ffdeb3: '#ffdeb3'
         },
         green: {
           r7bd26a: '#7bd26a',
