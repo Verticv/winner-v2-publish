@@ -552,8 +552,8 @@ const BetCombinationPanel = ({
                         }}  
                         className="flex items-center justify-end rounded-lg  bg-gradient-to-b cursor-pointer px-10px "
                     >
-                        <span className="truncate text-right font-spoqaMedium tracking-tight text-14px pt-2px">{team1}</span>
-                        <div style={{width:"38px"}} className={`${hasUp ? "justify-end pr-5px" : "justify-center"} flex items-center `}>
+                        <span style={{maxWidth:"188px"}} className="truncate text-right font-spoqaMedium tracking-tight text-14px pt-2px">{team1}</span>
+                        <div style={{width:"38px"}} className={`${hasUp ? "justify-end pr-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo1 && (
                                 <img src={logo1} alt="" />
                             )}
@@ -623,7 +623,7 @@ const BetCombinationPanel = ({
                         className="flex items-center justify-start rounded-lg  bg-gradient-to-b cursor-pointer px-10px pt-px"
                     >
                         <span className="font-roboto tracking-tight text-14px  pt-2px">{stat3}</span>
-                        <div style={{width:"38px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center `}>
+                        <div style={{width:"38px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo2 && (
                                 <img src={logo2} alt="" />
                             )}
@@ -631,7 +631,7 @@ const BetCombinationPanel = ({
                                 <img src={DownIcon} alt="" />
                             )}
                         </div>
-                        <span className="truncate font-spoqaMedium tracking-tight text-14px text-left  pt-2px">{team2}</span>
+                        <span style={{maxWidth:"188px"}} className="truncate font-spoqaMedium tracking-tight text-14px text-left  pt-2px">{team2}</span>
                     </div>
                 </button>
             </div>
@@ -687,7 +687,7 @@ const BetCombinationPanel = ({
                                     width:"71px",
                                     background: "linear-gradient(to bottom, #e8b888, #4b3b09)"
                                 }} 
-                                className="relative flex items-center justify-center h-39px w-75px rounded-4px ml-4px group hover:opacity-75"
+                                className="relative flex items-center justify-center h-39px w-75px rounded-4px ml-4px group hover:brightness-125 filter shadow-link"
                                 onClick={() => handleOnChange(items.id)}
                                 onMouseOver={() => setHover2(items.id)}
                                 onMouseLeave={() => setHover2(null)}
@@ -697,7 +697,7 @@ const BetCombinationPanel = ({
                                         width:"69px",
                                         background: isOpen[items.id] === true
                                         ? "linear-gradient(to bottom, #f38d27, #b45a00)"
-                                        : "linear-gradient(to bottom, #7f5f3f, #a67c52)"
+                                        : "linear-gradient(to top, #7f5f3f, #a67c52)"
                                     }} 
                                     className="flex items-center justify-center h-37px w-73px rounded-4px  cursor-pointer"
                                 >
