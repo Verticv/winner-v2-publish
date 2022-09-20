@@ -43,7 +43,7 @@ const HorizontalMenu2 = ({
                             ?'#54544f'
                             :'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)'
                         }}
-                        className={` w-full rounded-4px flex items-center justify-center space-x-4px mt-px`}
+                        className={` w-full rounded-4px flex items-center justify-center space-x-4px`}
                     >
                         <img className={`${item.id === 0 ? "mb-3px" : "mb-2px" } object-none`} src={isState === item.id ? item.iconHighlight : item.icon} alt="" />
                         <div 

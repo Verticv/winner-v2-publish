@@ -37,26 +37,26 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
     function BetCard({ items }) {
         return items.map(item => (
             <div
-               style={{ height: "87px", borderRadius: "8px",  background: "linear-gradient(to bottom, #4b4b49 , #2e2e2e )" }}
+               style={{ height: "87px", borderRadius: "8px",  background: "linear-gradient(to top, #21211f , #7b746d )" }}
                 className="w-full p-px"
                 key={item.id}
             >
                 <div
-              style={{
+                style={{
                       height: "85px",
                         borderRadius:"7px", 
-                        background: "linear-gradient(to bottom right, #4b4b49 , #2e2e2e )" 
+                        background: "linear-gradient(to left, #2e2e2e , #4b4b49 )" 
                     }}
                     className="relative w-full pt-10px"
                 >
                     <p 
-                        style={{color: item.value === "right" ? "#ffff" : "#454545"}} 
+                        style={{color: item.value === "right" ? "#e65454" : "#ffffff"}} 
                         className="text-14px font-spoqaBold tracking-tight text-white h-14px flex items-center  ml-9px"
                     >
                         {item.value === "right" ? "SV Kuchl" : "FK Haugesund"}
                     </p>
                     <p 
-                        style={{color: item.value === "right" ? "#e65454" : "#d52e2e"}} 
+                        style={{color: item.value === "right" ? "#ffffff" : "#e65454"}} 
                         className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-8px ml-8px"
                     >
                         {item.value === "right" ? "FC Blau Weiss Linz" : "스트룀스고세 IF"}
@@ -126,7 +126,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                     </div>
                 )}
             </div>
-            <div className="h-47px border-b border-gray-1e1e1e flex items-center justify-between pl-11px pr-16px pt-px bg-gray-323232">
+            <div className="h-47px border-b border-t border-gray-1e1e1e flex items-center justify-between pl-11px pr-16px pt-px bg-gray-323232">
                 <p className="text-16px font-spoqaMedium tracking-tight text-gray-c8c8c8">보유금액</p>
                 <p className="text-16px font-robotoBold tracking-tight text-blue-4c98ff">3,522,170</p>
             </div>
