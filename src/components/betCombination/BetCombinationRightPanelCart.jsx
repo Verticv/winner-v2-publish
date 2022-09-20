@@ -86,7 +86,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                 background:"linear-gradient(to bottom, #6b6865, #393835)" ,
                 height:"44px"
             }} 
-            className="flex items-center justify-center rounded-2px p-px shadow-link"
+            className="flex items-center justify-center rounded-2px p-px hover:brightness-125 filter shadow-link"
             onPointerDown={() => setButtonClicked(amount)}
             onPointerUp={() => {
                 setInputValue(inputValue + amount)
@@ -100,7 +100,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                 }}  
                 className="flex items-center justify-center  rounded-2px cursor-pointer w-full h-full"
             >
-                <span className="font-roboto tracking-tight text-16px text-golden-highLight pt-px">{nf.format(amount)}</span>
+                <span className="font-roboto tracking-tight text-16px text-golden-highLight pt-px text-shadow-5">{nf.format(amount)}</span>
             </div>
         </button>
     )
@@ -194,7 +194,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                             background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
                             height:"46px"
                         }} 
-                        className="flex items-center justify-center rounded-2px p-px hover:opacity-75"
+                        className="flex items-center justify-center rounded-2px p-px hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue/2)}
                     >
                         <div 
@@ -214,7 +214,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                             background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
                             height:"46px"
                         }} 
-                        className="flex items-center justify-center rounded-2px p-px hover:opacity-75"
+                        className="flex items-center justify-center rounded-2px p-px hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(3522170)}
                     >
                         <div 
@@ -225,7 +225,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                             }} 
                             className="flex items-center justify-center h-full w-full rounded-2px p-px cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-2px">최대</span>
+                            <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-2px text-shadow-5">최대</span>
                         </div>
                     </button>
                     <button 
@@ -234,7 +234,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                             background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
                             height:"46px"
                         }} 
-                        className="flex items-center justify-center rounded-2px p-px hover:opacity-75"
+                        className="flex items-center justify-center rounded-2px p-px hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(0)}
                     >
                         <div
@@ -245,7 +245,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                             }} 
                             className="flex items-center justify-center h-full  rounded-2px w-full  cursor-pointer"
                         >
-                            <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-2px">정정</span>
+                            <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-2px text-shadow-5">정정</span>
                         </div>
                     </button>
                 </div>
