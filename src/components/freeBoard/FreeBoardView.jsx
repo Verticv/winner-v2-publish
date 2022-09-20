@@ -92,46 +92,47 @@ const FreeBoardView = () => {
                       <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d flex-shrink-0">2</div>
                   </div>
 
-                  <div className="py-60px bg-gray-323232">
+                  <div className="py-60px pt-60px pb-53px bg-gray-323232">
 
                       <div className="w-full flex justify-center">
                           <img src={Sample} alt="" />
                       </div>
 
-                      <div className="px-19px pt-21px">
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8">이벤트 중 주간 낙첨 포인트 지급은 21년 6월 7일 이후 베팅건 부터 아래와 같이 적용됩니다.</div>
+                      <div className="px-19px pt-18px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8">이벤트 중 주간 낙첨 포인트 지급은 21년 6월 7일 이후 베팅건 부터 아래와 같이 적용됩니다.</div>
                           <div 
                               style={{color:"#dd431e"}} 
-                              className="h-16px flex items-center text-16px font-spoqaMedium tracking-tight mt-39px">
+                              className="h-16px flex items-center text-16px font-spoqaMedium tracking-tight mt-33px">
                                   [낙첨 금액별 쿠폰 금액]
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-17px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-15px">
                               10만원 ~<span className='mr-13px'></span>     5,000 쿠폰
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-18px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-13px">
                               20만원 이상 <span className='mr-13px'></span>    10,000  <span className='ml-5px'>쿠폰</span>
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-20px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-13px">
                               30만원 이상 <span className='mr-13px'></span>    15,000  <span className='ml-5px'>쿠폰</span>
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-19px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-12px">
                               50만원 이상  <span className='mr-13px'></span>   25,000  <span className='ml-5px'>쿠폰</span>
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-20px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-13px">
                               100만원 이상  <span className='mr-13px'></span>   50,000  <span className='ml-5px'>쿠폰</span>
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-20px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-13px">
                               300만원 이상  <span className='mr-13px'></span>   150,000 <span className='ml-5px'> 쿠폰</span>
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-20px">
+                          <div className="flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-13px">
                               500만원 이상   <span className='mr-13px'></span>  낙첨액 5%  <span className='ml-5px'>쿠폰</span>
                           </div>
 
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-37px">
-                            <span className='mt-5px'>*</span>  <span> 2021년 5월 31일 ~ 6월 6일 (일요일)까지 베팅 내역을 화요일 낙첨금액 5% 쿠폰 발행되며,</span>
+                          <div className="text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-26px">
+                            <span className='relative top-3px'>*</span>  <span> 2021년 5월 31일 ~ 6월 6일 (일요일)까지 베팅 내역을 화요일 낙첨금액 5% 쿠폰 발행되며,</span>
                           </div>
-                          <div className="h-14px flex items-center text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-21px">
-                            <span className='mt-4px'>*</span>  <p style={{color:"#2980b9"}}>2021년 6월 7일 (월) 이후 베팅에 대한 낙첨쿠폰은 위 기준에 따라 제공</p>되오니 참고 부탁 드립니다.
+                          <div className="text-14px font-spoqaMedium tracking-tight text-gray-c8c8c8 mt-9px">
+                                <span className='relative top-3px'>*</span>  <span style={{ color: "#2980b9" }}>2021년 6월 7일 (월) 이후 베팅에 대한 낙첨쿠폰은 위 기준에 따라 제공</span>되오니 참고 부탁 드립니다.
+                                
                           </div>
                       </div>
 
@@ -164,7 +165,7 @@ const FreeBoardView = () => {
                 <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
                     <textarea 
                         style={{width: "1099px", resize: "none"}}
-                        className="outline-none w-full px-19px py-17px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px"
+                        className="outline-none w-full px-19px py-17px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px text-gray-c8c8c8"
                         placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                     />
 
@@ -183,16 +184,16 @@ const FreeBoardView = () => {
               style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
             >
                 <div className="w-full bg-gray-323232 rounded-4px pb-20px">
-                    <div style={{height:"120px"}} className="border-b border-gray-252525 pl-20px pr-18px"> 
-                        <div className="h-55px w-full flex items-center justify-between">
-                            <div className="flex items-center space-x-5px">
-                                <img src={Rank2} alt="" className='-mt-2px'/>
+                    <div className="border-b border-gray-252525 pl-20px pr-18px"> 
+                        <div className="py-9px w-full flex items-center justify-between">
+                            <div className="flex items-start space-x-5px mt-px">
+                                <img src={Rank2} alt="" className='-mt-2px '/>
                                 <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">신풍사우나</p>
                             </div>
-                            <div className="flex space-x-4px my-20px justify-end">
+                            <div className="flex space-x-4px  justify-end">
                                 <button className="flex items-center justify-center w-90px h-36px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:filter hover:brightness-125 shadow-link">
                                     <div className="flex items-center justify-center h-34px w-88px rounded-4px  bg-gradient-to-b from-red-e06446  to-red-96341d  cursor-pointer">
-                                        <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">수정하기</span>
+                                        <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 pt-px text-shadow-5">수정하기</span>
                                     </div>
                                 </button>
                                 <button className="flex items-center justify-center w-90px h-36px p-px rounded-4px  shadow-link hover:filter hover:brightness-125"
@@ -205,9 +206,9 @@ const FreeBoardView = () => {
                             </div>
                         </div>
                         
-                        <div  className="rounded-4px bg-gray-252525 h-54px w-full  flex items-center px-19px justify-between text-gray-c8c8c8 mt-px">
+                        <div className="rounded-4px bg-gray-252525 w-full  flex items-start px-19px pt-17px pb-14px justify-between text-gray-c8c8c8 mb-10px mt-px">
                             <p className="text-15px font-spoqa tracking-tight">두개의 이벤트 모두 참여하였습니다</p>
-                            <p className="text-14px tracking-tight font-spoqa">2021.06.28 15:36</p>
+                            <p className="text-14px tracking-tight font-spoqa flex-shrink-0 mt-px">2021.06.28 15:36</p>
                         </div>
                     </div>
 
@@ -252,7 +253,7 @@ const FreeBoardView = () => {
                   <div style={{ height: "93px" }}  className="rounded-4px bg-gray-252525 relative flex w-full">
                       <textarea 
                           style={{width: "1099px", resize: "none"}}
-                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px"
+                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px text-gray-c8c8c8"
                           placeholder="두개의 이벤트 모두 참여하였습니다."
                       />
                     <button className="rounded-4px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
@@ -292,7 +293,7 @@ const FreeBoardView = () => {
                   <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
                       <textarea 
                           style={{width: "1099px", resize: "none"}}
-                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px"
+                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px text-gray-c8c8c8"
                           placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                       />
 
