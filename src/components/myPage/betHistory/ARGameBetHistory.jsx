@@ -116,8 +116,8 @@ const ARGameBetHistory = ({isState, setState, showSub = true, isPopup = false}) 
                         </div>
                     </button>
                     <button 
-                        style={{borderRadius:"4px"}}
-                        className="flex items-center justify-center w-90px h-36px rounded-md bg-red-cb4343 hover:filter hover:brightness-125"
+                         style={{background:'linear-gradient(to bottom, rgba(232,136,149,1) 0%, rgba(75,9,35,1) 98%)'}}
+                        className="flex items-center justify-center w-90px h-36px rounded-4px hover:filter hover:brightness-125 shadow-link"
                     >
                         <div 
                           style={{
