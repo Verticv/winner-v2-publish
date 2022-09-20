@@ -14,7 +14,7 @@ const EsportsMulti = () => {
                 <span className="text-golden-gradLight">{number}</span>
                 <span className="text-gray-ccc2b6">{title}</span>
             </div>
-            <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-px">{text} <p className="ml-2px text-blue-r0056a6">{color1}</p><p style={{color:"#ff1237"}} className="mr-2px">{color2}</p><p>{color3}</p></span>
+            <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-px">{text} <p className="ml-2px text-blue-2980b9">{color1}</p><p style={{color:"#e65454"}} className="mr-2px">{color2}</p><p>{color3}</p></span>
             {text2 && (
                 <span style={{color:"#828282"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium ">{text2}</span>
             )}
