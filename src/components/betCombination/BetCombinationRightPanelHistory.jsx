@@ -34,13 +34,13 @@ const BetCombinationRightPanelHistory = () => {
                 </p>
                 <p 
                     className="text-14px font-spoqaBold tracking-tight text-gray-r454545 h-14px flex items-center mt-8px"
-                    style={{color: side === "left" ? "#ffffff" : "#d52e2e"}}
+                    style={{color: side === "left" ? "#ffffff" : "#e65454"}}
                 >
                     {team1}
                 </p>
                 <p 
-                    className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-7px text-white"
-                    // style={{color: side === "left" ? "#e65454" : "#454545"}}
+                    className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-7px "
+                    style={{color: side === "left" ? "#e65454" : "#ffffff"}}
                 >
                     {team2}
                 </p>
@@ -49,7 +49,7 @@ const BetCombinationRightPanelHistory = () => {
                     <p>{winStatus === "win" ? "승 @" : "패 @"}</p> 
                     <p 
                         className="ml-2px"
-                        style={{color: winStatus === "win" ? "#d52e2e" : "#0056a6"}}
+                        style={{color: winStatus === "win" ? "#e65454" : "#4c98ff"}}
                     >
                         {winStatus === "win" ? "2.26" : "3.47"}
                     </p>
