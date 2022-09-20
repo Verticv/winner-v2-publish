@@ -58,6 +58,8 @@ import Sub23 from '../../images/myPage/betHistory/minigame/sub2.png'
 import Sub24 from '../../images/myPage/betHistory/minigame/sub3.png'
 import Sub25 from '../../images/myPage/betHistory/minigame/sub4.png'
 
+import HIcon1 from '../../images/myPage/betHistory/h_icon1.png'
+import HIcon2 from '../../images/myPage/betHistory/h_icon2.png'
 
 // import Sub22 from '../../images/myPage/betHistory/ARGame/sub3.png'
 // import Sub23 from '../../images/myPage/betHistory/ARGame/sub4.png'
@@ -82,7 +84,7 @@ import ARGameBetHistory from 'components/myPage/betHistory/ARGameBetHistory'
 import ESportsBetHistory from 'components/myPage/betHistory/ESportsBetHistory'
 import Pagination from 'components/myPage/Pagination'
 import AllBetHistory from 'components/myPage/betHistory/AllBetHistory'
-
+import HotelCasinoBetHistory from 'components/myPage/betHistory/HotelCasinoBetHistory'
 const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
 
     // const tabsArray = [
@@ -164,7 +166,12 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
         { text: "농구", icon: ARSub10, id: 10 },
         { text: "아이스하키", icon: ARSub11, id: 11 },
     ];
-
+    const subTabsArray5 = [
+        { text: "전체", icon: AllIcon, id: 0 },
+        { text: "보타카지노", icon: HIcon1, id: 1 },
+        { text: "호텔카지노", icon: HIcon2, id: 3, custom: "mt-8px" },
+        { text: "호텔카지노", icon: HIcon2, id: 4 },
+    ]
     const [selectedTab, setSelectedTab] = useState(0)
     const [selectedSubTab, setSelectedSubTab] = useState(0)
     const [page, setPage] = useState(0)
@@ -195,7 +202,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
                           </div>
                       )} */}
 
-                      {(selectedTab !== 2 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8) && (
+                      {(selectedTab !== 2  && selectedTab !== 4 && selectedTab !== 8) && (
                           <div className="mt-10px w-full px-4px py-3px rounded-4px bg-gray-2b2b2a">
                               <SubHorizontalMenu 
                                   itemsArray={
@@ -203,6 +210,8 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
                                       ? subTabsArray1
                                       : selectedTab === 2
                                       ? subTabsArray2
+                                      : selectedTab === 3
+                                      ? subTabsArray5
                                       : selectedTab === 5
                                       ? subTabsArray3
                                       : selectedTab === 6
@@ -219,13 +228,13 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
 
                   
 
-                  <div className={`w-full pl-24px -mt-10px ${selectedTab === 2 || selectedTab === 3 || selectedTab === 7?'pr-21px':'pr-30px'}`}>
+                  <div className={`w-full pl-24px -mt-10px ${selectedTab === 2 || selectedTab === 7?'pr-21px':'pr-30px'}`}>
                       <div 
                           style={{
                               height: 
-                              (selectedTab === 2 || selectedTab === 3 || selectedTab === 7)
+                              (selectedTab === 2  || selectedTab === 7)
                               ? "665px" 
-                              : (selectedTab === 0 || selectedTab === 4 || selectedTab === 5 || selectedTab === 8)
+                              : (selectedTab === 0 || selectedTab === 4 || selectedTab === 5 || selectedTab === 8 || selectedTab === 3)
                               ? "565px" 
                               : "485px"
                           }} 
@@ -248,7 +257,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
                               </div>
                           ) : selectedTab === 3 ? (
                               <div className="-mt-20px">
-                                <AllBetHistory isPopup={true}/>
+                                <HotelCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab} showSub={false} isPopup={true}/>
                                 <Pagination page={page} setPage={setPage}/>   
                               </div>
                           ) : selectedTab === 4 ? (
