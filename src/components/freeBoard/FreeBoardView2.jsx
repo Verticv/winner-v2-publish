@@ -91,10 +91,8 @@ const FreeBoardView2 = () => {
                     <SportsBetHistoryPanel type={3} id={0} isAttached={true} noButtons={true} attachedArray={[2]} /> */}
                 </div>
 
-                <div style={{height:"441px", WebkitTextStroke:"0.2px"}} className="p-20px bg-gray-323232 text-14px font-spoqa tracking-tight text-gray-c8c8c8">
-
+                <div style={{minHeight:"441px"}} className="p-20px bg-gray-323232 text-14px font-spoqa tracking-tight text-gray-c8c8c8">
                     베팅기록 올려봅니다.
-
                 </div>
           </div>
           </div>
