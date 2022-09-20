@@ -29,7 +29,7 @@ const MinigamesRightPanel = ({
             width:"108px", 
             background:"linear-gradient(to bottom, #6b6865, #393835)" ,
           }} 
-          className="flex items-center h-44px justify-center rounded-2px flex-shrink-0 p-px shadow-link"
+          className="flex items-center h-44px justify-center rounded-2px flex-shrink-0 p-px filter hover:brightness-125 shadow-link"
           onPointerDown={() => setButtonClicked(amount)}
           onPointerUp={() => {
               setInputValue(inputValue + amount)
@@ -54,7 +54,7 @@ const MinigamesRightPanel = ({
               width:"108px",
               background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
           }} 
-          className="flex items-center justify-center h-44px rounded-2px p-px flex-shrink-0  shadow-link hover:opacity-75"
+          className="flex items-center justify-center h-44px rounded-2px p-px flex-shrink-0  shadow-link filter hover:brightness-125"
           onClick={() => setInputValue(amount)}
       >
 
@@ -62,7 +62,7 @@ const MinigamesRightPanel = ({
               style={{
                   width:"106px", 
                   borderRadius:"2px",
-                  background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
+                  background: "linear-gradient(to top, #7f5f3f, #a67c52)",
                   borderColor:"#747679"
               }} 
               className="flex items-center justify-center h-42px  cursor-pointer rounded-2px  pt-px">
@@ -111,7 +111,7 @@ const MinigamesRightPanel = ({
                 <p>02:16</p>
               </div>
             </div>
-            <img src={RefreshIcon} alt="" className="mt-3px cursor-pointer hover:opacity-75" />  
+            <img src={RefreshIcon} alt="" className="mt-3px cursor-pointer hover:filter hover:brightness-125" />  
           </div>
         </div>
 
@@ -123,7 +123,7 @@ const MinigamesRightPanel = ({
             </div>
             <div style={{width:"90px"}} className="ml-18px flex h-full z-20 items-center justify-center pr-2px flex-col space-y-4px">
                 {(selectedOption[0].type === "일반볼" || selectedOption[0].type === "파워볼") && (
-                    <p style={{color:"#3e83b3"}} className="text-12px tracking-tight font-spoqaMedium flex items-center h-12px">{selectedOption[0].type}</p>
+                    <p  className="text-gray-c8c8c8 text-12px tracking-tight font-spoqaMedium flex items-center h-12px">{selectedOption[0].type}</p>
                 )}
                 {(selectedOption[0].type === "일반볼" || selectedOption[0].type === "파워볼") ? (
                     <p style={{color:"#4c98ff"}} className="text-14px tracking-tight font-spoqaMedium flex items-center h-12px">{selectedOption[0].name}</p>
@@ -131,10 +131,10 @@ const MinigamesRightPanel = ({
                     <p style={{color:"#4c98ff"}} className="text-12px tracking-tight font-spoqaMedium flex items-center h-12px">{selectedOption[0].name}</p>
                 )}
             </div>
-            <div style={{width:"81px"}} className="ml-20px flex h-full z-20 flex items-center justify-center">
+            <div style={{width:"81px"}} className="ml-20px flex h-full z-20 items-center justify-center">
                 {selectedOption[0].buttonType && (
                     <div 
-                        style={{width:"52px", height:"52px"}} 
+                        style={{width:"59px", height:(selectedOption[0].buttonType === "blue_sq" || selectedOption[0].buttonType === "red_sq") ? "52px" : "52px"}} 
                         className="relative flex items-center justify-center cursor-pointer pt-2px"
                     >
                         <img 

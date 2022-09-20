@@ -58,7 +58,7 @@ const HorizontalMenu3 = ({
                 height: "54px",
                 background: selectedTab === item.path
                 ? 'linear-gradient(to top, #8d7752, #dabe82)'
-                :isHover === item.id
+                :isHover === item.path
                 ?'#54544f'
                 : 'linear-gradient( to top, rgb(50,50,49) 0%, rgb(84,84,82) 100%)',
                 boxShadow:selectedTab === item.path?"rgba(255, 240, 214, 15%) 1px 2px 5px 6px inset":''

@@ -30,6 +30,7 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
         subText = "홀짝",
         subText2 = null,
         dividerColor = "#4d473c",
+        dividerColor2 = "#b1aa9d" 
     }) => (
         <div
             style={{
@@ -73,9 +74,9 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                         </div>
                     </div>
 
-                    <div style={{height:"76px", width:"2px"}} className="flex flex-shrink-0">
+                    <div style={{height:"76px", width:"2px"}} className="flex flex-shrink-0 mt-px">
                         <div style={{backgroundColor: dividerColor}} className="h-full w-px"></div>
-                        <div style={{backgroundColor:"#b1aa9d"}} className="h-full w-px"></div>
+                        <div style={{backgroundColor: dividerColor2}} className="h-full w-px"></div>
                     </div>
 
                     {titleNumber === 1 || titleNumber === 6 ? (
@@ -679,6 +680,7 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             gradient1="#50655e" 
                             gradient2="#687f78" 
                             dividerColor="#3e4a41"
+                            dividerColor2= "#a0aca9"
                         />
                         <BetOptions 
                             titleNumber={8} 
@@ -690,6 +692,7 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             width={409}
                             subText2="언오버"
                             dividerColor="#3e4a41"
+                            dividerColor2= "#a0aca9"
                         />
                     </div>
                     <div className="flex space-x-2px">
@@ -702,6 +705,7 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             gradient2="#687f78"   
                             subText="언오버" 
                             dividerColor="#3e4a41"
+                            dividerColor2= "#a0aca9"
                         />
                         <BetOptions 
                             titleNumber={9} 
@@ -713,6 +717,7 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             width={409} 
                             subText="구간"
                             dividerColor="#3e4a41"
+                            dividerColor2= "#a0aca9"
                         />
                     </div>
                     <BetOptions 
@@ -725,6 +730,7 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                         width={619} 
                         subText2="소중대"
                         dividerColor="#3e4a41"
+                        dividerColor2= "#a0aca9"
                     />
                 </div>
             </div>
