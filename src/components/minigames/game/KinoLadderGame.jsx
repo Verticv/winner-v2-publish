@@ -202,7 +202,7 @@ const KinoLadderGame = ({setSelectedOption}) => {
                                     >
                                         <img className={`absolute  ${state === `${titleNumber}-4` ? "object-contain mb-3px" : "object-none"}`} src={state === `${titleNumber}-4` ? RedSMButtonPressed : RedSMButton} alt="" />
                                         <p style={{textShadow: "2px 2px 2px #00000050"}} className="z-20 font-swagger text-white text-20px">짝</p>
-                                        <div className="absolute w-22px h-22px rounded-full bg-black z-20 right-6px top-0 flex items-center justify-center">
+                                        <div className="absolute w-22px h-22px rounded-4px bg-black z-20 right-6px top-0 flex items-center justify-center">
                                             <div className="text-white text-12px tracking-tight font-spoqaMedium">4</div>
                                         </div>
                                     </div>
@@ -224,7 +224,7 @@ const KinoLadderGame = ({setSelectedOption}) => {
         >
             <div className="w-full flex flex-col px-7px pb-7px">
                 <PanelTitle title="키노사다리" />
-                <div className="flex space-x-2px">
+                <div className="flex justify-center space-x-2px">
                     <div className="flex space-x-2px">
                         <BetOptions width={308} titleNumber={1} subText="홀짝" />
                         <BetOptions titleNumber={2} subText="출발점"/>

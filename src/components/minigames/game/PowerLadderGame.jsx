@@ -224,7 +224,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
         >
             <div className="w-full flex flex-col">
                 <PanelTitle title="파워사다리" />
-                <div className="flex space-x-2px">
+                <div className="flex justify-center space-x-2px">
                     <div className="flex space-x-2px">
                         <BetOptions width={308} titleNumber={1} subText="홀짝" />
                         <BetOptions titleNumber={2} subText="출발점"/>
