@@ -331,7 +331,7 @@ const BetCombinationPanel = ({
     function SearchDropdownCell({ items }) {
         return items.map(item => (
             <div className={dropDownCellClass} onClick={() => {
-                setSelectedCarrier("국가선택")
+                setSelectedCarrier("국가 선택")
             }}>
                 <input
                     type="checkbox"
@@ -364,7 +364,7 @@ const BetCombinationPanel = ({
                     <div 
                         style={{
                             width:"73px",
-                            background: "linear-gradient(to bottom, #7f5f3f, #a67c52)",
+                            background: "linear-gradient(to top, #7f5f3f, #a67c52)",
                             height:"33px",
                             borderRadius:"3px"
                         }} 
@@ -387,7 +387,7 @@ const BetCombinationPanel = ({
                     <div 
                         style={{
                             width:"73px",
-                            background: "linear-gradient(to bottom, #96341d, #e06446)",
+                            background: "linear-gradient(to top, #96341d, #e06446)",
                             height:"33px",
                             borderRadius:"3px"
                         }} 
@@ -772,13 +772,13 @@ const BetCombinationPanel = ({
         <div  className="w-full bg-gray-323232 rounded-4px ">
           <div className="h-50px w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6 pt-4px">
             <p className="ml-48px">경기일시</p>
-            <p style={{marginLeft: "63px"}}>구분</p>
-            <div style={{marginLeft: "145px"}} className="flex">
+            <p style={{marginLeft: "65px"}}>구분</p>
+            <div style={{marginLeft: "144px"}} className="flex">
               <p>승(홈)오버</p>
               <img className="blink object-none ml-5px" src={UpIcon} alt="" />
             </div>
             <p style={{marginLeft: "105px"}}>무/핸/합</p>
-            <div style={{marginLeft: "112px"}} className="flex">
+            <div style={{marginLeft: "113px"}} className="flex">
               <p>패(원정)언더</p>
               <img className="blink object-none ml-5px" src={DownIcon} alt="" />
             </div>
