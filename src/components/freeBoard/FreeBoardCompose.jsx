@@ -27,7 +27,7 @@ const FreeBoardCompose = () => {
 
               <div className="h-55px w-full bg-gray-2e2e2e border-b border-gray-252525">
                   <input 
-                      className="bg-gray-2e2e2e outline-none w-full h-full px-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8"
+                      className="bg-gray-2e2e2e outline-none w-full h-full px-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 text-gray-c8c8c8"
                       placeholder="제목을 입력하세요."
                   />
               </div>
@@ -50,7 +50,7 @@ const FreeBoardCompose = () => {
               <div style={{height:"401px"}} className="w-full bg-gray-323232">
                   <textarea 
                       style={{resize: "none"}}
-                      className="bg-gray-323232 outline-none w-full h-full  px-19px py-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8"
+                      className="bg-gray-323232 outline-none w-full h-full  px-19px py-19px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 text-gray-c8c8c8"
                       placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                   />
               </div>
@@ -62,7 +62,7 @@ const FreeBoardCompose = () => {
           
               <button onClick={() => history.push("/freeboard")} className="flex items-center justify-center h-52px w-192px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
                   <div className="flex items-center justify-center h-50px w-190px bg-black rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer pt-2px">
-                      <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff">작성하기</span>
+                      <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff text-shadow-5">작성하기</span>
                   </div>
               </button>
           <button onClick={() => history.push("/freeboard")} className="flex items-center justify-center w-192px h-52px rounded-4px  shadow-link hover:filter hover:brightness-125"
