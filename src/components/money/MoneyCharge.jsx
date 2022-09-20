@@ -61,9 +61,9 @@ const MoneyCharge = () => {
 
                     <button 
                         style={{width: "222px", marginLeft:"76px", background: "linear-gradient(to top, #4b3b09, #e8b888)"}} 
-                        className="flex items-center justify-center h-42px rounded-2px mt-20px hover:brightness-125 filter"
+                        className="flex items-center justify-center h-42px rounded-4px mt-20px hover:brightness-125 filter"
                     >
-                        <div style={{width: "220px", background: "linear-gradient(to bottom, #a67c52, #7f5f3f)"}} className="flex items-center justify-center h-40px rounded-2px  cursor-pointer">
+                        <div style={{width: "220px", background: "linear-gradient(to bottom, #a67c52, #7f5f3f)"}} className="flex items-center justify-center h-40px rounded-4px  cursor-pointer">
                             <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight text-shadow-5">계좌번호 신청</span>
                         </div>
                     </button>
@@ -123,7 +123,7 @@ const MoneyCharge = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{marginLeft: "268px"}} className={`${inputClicked ? "mt-22px" : "mt-23px"} flex space-x-5px w-full justify-start pr-115px`}>
+                <div style={{marginLeft: "268px"}} className={`mt-23px flex space-x-5px w-full justify-start pr-115px`}>
                     <button 
                       style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
                         className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link"
@@ -239,30 +239,30 @@ const MoneyCharge = () => {
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
                                     className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter" 
-                                    onClick={() => setRadioValue("yes")}
+                                    onClick={() => setRadioValue("slot_game")}
                                 >
                                     <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-2px  cursor-pointer">
-                                        <input type="radio" className="ml-11px" name="gender" checked={radioValue === "yes"} />
+                                        <input type="radio" className="ml-11px" name="gender" checked={radioValue === "slot_game"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff ml-30px text-shadow-5">슬롯게임</span>
                                     </div>
                                 </button>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
                                     className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter" 
-                                    onClick={() => setRadioValue("yes")}
+                                    onClick={() => setRadioValue("sports")}
                                 >
                                     <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-2px  cursor-pointer">
-                                        <input type="radio" className="ml-11px" name="gender" checked={radioValue === "yes"} />
+                                        <input type="radio" className="ml-11px" name="gender" checked={radioValue === "sports"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff ml-33px text-shadow-5">스포츠</span>
                                     </div>
                                 </button>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
                                     className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter" 
-                                    onClick={() => setRadioValue("yes")}
+                                    onClick={() => setRadioValue("v_game")}
                                 >
                                     <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-2px  cursor-pointer">
-                                        <input type="radio" className="ml-11px" name="gender" checked={radioValue === "yes"} />
+                                        <input type="radio" className="ml-11px" name="gender" checked={radioValue === "v_game"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff ml-16px text-shadow-5">키론가상게임</span>
                                     </div>
                                 </button>

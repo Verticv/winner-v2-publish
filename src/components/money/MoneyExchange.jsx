@@ -85,7 +85,7 @@ const MoneyExchange = () => {
                     </div>
                 </div>
 
-                <div style={{marginLeft: "277px"}} className={`${inputClicked === 0 ? "mt-19px" : "mt-20px"} flex space-x-5px w-full justify-start pr-115px`}>
+                <div style={{marginLeft: "277px"}} className={`mt-20px flex space-x-5px w-full justify-start pr-115px`}>
                     <button 
                         style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
                         className="flex items-center justify-center h-42px w-75px rounded-2px hover:brightness-125 filter shadow-link"
@@ -190,7 +190,7 @@ const MoneyExchange = () => {
 
             <button style={{width: "228px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} className={`mt-20px flex items-center justify-center h-52px rounded-2px hover:brightness-125 filter shadow-link`}>
                 <div style={{width: "226px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center justify-center h-50px rounded-2px cursor-pointer">
-                    <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff">신청하기</span>
+                    <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff text-shadow-5">신청하기</span>
                 </div>
             </button>
 
