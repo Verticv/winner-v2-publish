@@ -27,7 +27,7 @@ const GameDetails = () => {
                     : "bg-dark-252525 text-gray-c8c8c8"} 
                     flex items-center justify-between h-34px w-283px rounded-3px cursor-pointer pl-8px pr-9px pt-px`
                 }>
-                    <span className="truncate w-108px text-left font-spoqaMedium tracking-tight text-14px">{team1}</span>
+                    <span className="truncate w-223px text-left font-spoqaMedium tracking-tight text-14px overflow-ellipsis">{team1}</span>
                     <span className="font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
                 </div>
             </button>
@@ -60,7 +60,7 @@ const GameDetails = () => {
                     pt-px flex items-center justify-between h-34px w-283px rounded-3px cursor-pointer px-9px`}
                 >
                     <span className="font-roboto tracking-tight text-14px pt-2px">{stat3}</span>
-                    <span className="truncate w-108px font-spoqaMedium tracking-tight text-14px text-right">{team2}</span>
+                    <span className="truncate w-223px font-spoqaMedium tracking-tight text-14px text-right overflow-ellipsis">{team2}</span>
                 </div>
             </button>
         </div>
@@ -84,8 +84,8 @@ const GameDetails = () => {
                     <Options bet="middle" />
                 </div>
                 
-                <div className="ml-35px font-roboto text-14px text-gray-c8c8c8">4 : 4</div>
-                <div className="ml-35px font-spoqaMedium text-14px text-green-45bc61">무</div>
+                <div className="w-56px ml-17px font-roboto text-14px text-gray-c8c8c8 text-center">4 : 4</div>
+                <div className="w-63px font-spoqaMedium text-14px text-green-45bc61 text-center">무</div>
 
             </div>
         </div>
@@ -110,8 +110,8 @@ const GameDetails = () => {
                     <Options bet="left" team1="LA레이커스" team2="피닉스" stat1="2.95" stat2="VS" stat3="1.39" />
                 </div>
                 
-                <div className="ml-17px font-roboto text-14px text-gray-c8c8c8">222 : 222</div>
-                <div style={{color: "#e65454"}} className="ml-22px font-spoqaMedium text-14px">승</div>
+                <div className="w-56px ml-17px font-roboto text-14px text-gray-c8c8c8 text-center truncate">222 : 222</div>
+                <div style={{color: "#e65454"}} className="w-63px text-center font-spoqaMedium text-14px">승</div>
             </div>
 
             <div className="w-full h-55px bg-gray-323231 flex items-center tracking-tight pt-px">
@@ -122,8 +122,8 @@ const GameDetails = () => {
                     <Options bet="right" team1="세크라멘토" team2="오클라호마" stat1="2.95" stat2="VS" stat3="2.25" />
                 </div>
                 
-                <div className="ml-17px font-roboto text-14px text-gray-c8c8c8">222 : 222</div>
-                <div className="ml-22px font-spoqaMedium text-14px text-gray-c8c8c8">패</div>
+                <div className="w-56px ml-17px font-roboto text-14px text-gray-c8c8c8 text-center truncate">222 : 222</div>
+                <div className="w-63px text-center font-spoqaMedium text-14px text-gray-c8c8c8">패</div>
             </div>
 
         </div>
@@ -139,9 +139,9 @@ const GameDetails = () => {
               <div style={{marginLeft: "60px"}} className="h-14px flex items-center">종목</div>
               <div style={{marginLeft: "156px"}} className="h-14px flex items-center">승(홈)</div>
               <div style={{marginLeft: "163px"}} className="h-14px flex items-center">무</div>
-              <div style={{marginLeft: "156px"}} className="h-14px flex items-center">패(원정)</div>
-              <div style={{marginLeft: "148px"}} className="h-14px flex items-center">스코어</div>
-              <div style={{marginLeft: "25px"}} className="h-14px flex items-center">결과</div>
+              <div style={{marginLeft: "156px"}} className="h-14px flex items-center pl-3px">패(원정)</div>
+              <div style={{marginLeft: "146px"}} className="h-14px flex items-center">스코어</div>
+              <div style={{marginLeft: "27px"}} className="h-14px flex items-center">결과</div>
             </div>
 
             <div className="px-9px pb-10px space-y-9px -mt-px">
