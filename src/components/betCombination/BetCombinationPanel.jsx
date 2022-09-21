@@ -315,7 +315,7 @@ const BetCombinationPanel = ({
         >
             <div className="flex">
                 <img className="object-none" src={GlobeIcon} alt="" />
-                <p className="mt-px ml-6px text-14px group-hover:text-gray-r8c8c8c">{selectedCarrier}</p>
+                <p className="mt-px ml-6px text-14px group-hover:text-gray-r8c8c8c tracking-tight">{selectedCarrier}</p>
             </div>
             <img src={ArrowBlack} alt="" />
         </div>

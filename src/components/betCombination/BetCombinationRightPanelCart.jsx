@@ -13,7 +13,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
     const ConfirmCard = () => (
         <div 
             style={{height: "58px", backgroundColor: "#987959", borderColor: "#fde1a4", borderRadius:"8px"}} 
-            className="relative w-full rounded-md border"
+            className="relative w-full rounded-4px border"
         >
             <div className="flex">
                 <img src={CheckboxIcon} alt="" className="mt-8px ml-9px" />

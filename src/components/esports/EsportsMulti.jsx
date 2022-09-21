@@ -70,7 +70,7 @@ const EsportsMulti = () => {
 
                 <div style={{width:"97px", height:"25px", backgroundColor:"#f45400"}} className="text-white flex items-center justify-center font-spoqaBold text-18px tracking-tight pt-px mt-60px">알아두세요!</div>
                     <div className="flex items-center">
-                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-5px">※ 각 팀의 좌/우 가장자리에있는 ①<p className="ml-2px text-blue-r0056a6">[+]</p><p style={{color:"#ff1237"}}>[+]</p></span>
+                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-5px">※ 각 팀의 좌/우 가장자리에있는 ①<p className="ml-2px text-blue-2980b9">[+]</p><p style={{color:"#e65454"}}>[+]</p></span>
                     </div>
                     <div className="flex items-center">
                         <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">버튼을 누르면 선택한 경기(배당)가 </span>

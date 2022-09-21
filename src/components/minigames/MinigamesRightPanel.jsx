@@ -139,8 +139,8 @@ const MinigamesRightPanel = ({
                     >
                         <img 
                             className={`${
-                                (selectedOption[0].buttonType === "blue_sq" || selectedOption[0].buttonType === "red_sq") ? "h-52px" : "h-59px"
-                            } w-full absolute object-cover`} 
+                                (selectedOption[0].buttonType === "blue_sq" || selectedOption[0].buttonType === "red_sq") ? "h-59px" : "h-59px"
+                            } w-full absolute object-none`} 
                             src={
                                 selectedOption[0].buttonType === "blue" 
                                 ? BlueButton
