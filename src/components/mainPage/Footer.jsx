@@ -64,8 +64,8 @@ const Footer = ({ fullWidth = false }) => {
 				<div style={{ width: '221px', height: '158px' }} className="flex-shrink-0">
 					<p className="font-spoqa text-14px h-14px tracking-tigther text-white mb-23px">마이페이지</p>
 					<p onClick={() => history.push('/mypage/bet-history')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">베팅내역</p>
-					<p onClick={() => history.push('/coupon/coupon-usage')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">쿠폰관리</p>
-					<p onClick={() => history.push('/points/points-apply')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">포인트</p>
+					<p onClick={() => history.push('/mypage/coupon/coupon-usage')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">쿠폰관리</p>
+					<p onClick={() => history.push('/mypage/points/points-apply')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">포인트</p>
 					<PopupControls
 						buttonChild={<p style={{marginLeft:'-169px'}} onClick={() => history.push('/')} className="font-spoqa text-14px h-14px tracking-tigther text-gray-r828282 hover:text-gray-300 cursor-pointer">회원정보</p>}
 						isPopupOpen={isPopupOpen}
