@@ -78,7 +78,7 @@ const Footer = ({ fullWidth = false }) => {
 				<div style={{ width: '221px', height: '158px' }} className="flex-shrink-0">
 					<p className="font-spoqa text-14px h-14px tracking-tigther text-white mb-23px">고객센터</p>
 					<p onClick={() => history.push('/cscenter/contact/all')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">문의하기</p>
-					<p onClick={() => history.push('/cscenter/announcement')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">공지사항</p>
+					<p onClick={() => history.push('/cscenter/announcement/all')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">공지사항</p>
 					<p onClick={() => history.push('/cscenter/faq/all')} className="font-spoqa text-14px h-14px tracking-tigther mb-23px text-gray-r828282 hover:text-gray-300 cursor-pointer">자주묻는질문</p>
 					<p onClick={() => history.push('/cscenter/policy/sportsgame/soccer')} className="font-spoqa text-14px h-14px tracking-tigther text-gray-r828282 hover:text-gray-300 cursor-pointer">베팅규정</p>
 				</div>
