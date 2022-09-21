@@ -10,10 +10,12 @@ import Sports2Hl from '../../images/sports2_hl.png'
 import Sports3Hl from '../../images/sports3_hl.png'
 import ArrowLeft from '../../images/arrows/sports_arrow_left.png'
 import ArrowRight from '../../images/arrows/sports_arrow_right.png'
+import { useHistory } from 'react-router-dom'
 
 const Sports = () => {
 
   const [index, setIndex] = useState(0)
+  const history = useHistory()
 
   const DATA = [
     {
@@ -174,10 +176,10 @@ const Sports = () => {
     )
   }
 
-  const Card1 = ({img, imgHover,text}) => {
+  const Card1 = ({img, imgHover,text, path}) => {
     const [isHover, setHover] = useState(false)
     return (
-      <div style={{height:'207px', width: '411px'}} className="flex items-end relative cursor-pointer" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+      <button onClick={() => history.push(path)} style={{height:'207px', width: '411px'}} className="flex items-end relative cursor-pointer" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <img src={isHover ? imgHover : img} alt="" className='object-none' />
         <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-25px right-18px p-px filter hover:brightness-125'>
           <div style={{borderRadius:'2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
@@ -185,7 +187,7 @@ const Sports = () => {
           </div>
         </button>
         <p style={{color:'#ffdfbd', marginBottom:'129px'}} className='z-20 absolute bottom-0 right-18px text-16px tracking-tighter font-spoqa h-16px flex items-center'>{text}</p>
-      </div>
+      </button>
     )
   }
 
@@ -209,9 +211,9 @@ const Sports = () => {
       </div>
 
       <div className='mt-11px space-x-19px flex'>
-        <Card1 img={Sports1} text="라이브베팅" imgHover={Sports1Hl} />
-        <Card1 img={Sports2} text="조합베팅" imgHover={Sports2Hl} />
-        <Card1 img={Sports3} text="스페셜베팅" imgHover={Sports3Hl} />
+        <Card1 img={Sports1} text="라이브베팅" imgHover={Sports1Hl} path="/" />
+        <Card1 img={Sports2} text="조합베팅" imgHover={Sports2Hl} path="/bet-combination"/>
+        <Card1 img={Sports3} text="스페셜베팅" imgHover={Sports3Hl} path="/bet-combination" />
       </div>
     </div>
   )
