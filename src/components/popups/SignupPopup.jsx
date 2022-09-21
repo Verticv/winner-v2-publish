@@ -261,7 +261,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 	
 	else return (
-		<div style={{height:'886px', width:'850px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
+		<div style={{height:'856px', width:'850px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
 			<button className="w-29 h-29 absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:brightness-125 filter" onClick={()=> setPopupOpen(false)}>
 				<img src={CloseIcon} alt="close_icon" />
 			</button>
@@ -451,7 +451,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 					회원가입
 				</button>
 
-				<div style={{width:'270px'}} className="flex justify-between items-center mt-35px">
+				<div style={{width:'270px'}} className="flex justify-between items-center mt-20px">
 					<div className="flex items-center space-x-10px">
 						<img className="object-none" src={KakaoLogo} alt="kakao-icon" />
 						<span style={{color:'#828282'}} className="font-spoqaMedium text-16px">test1234</span>

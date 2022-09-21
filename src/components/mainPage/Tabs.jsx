@@ -12,30 +12,33 @@ import Tab7 from '../../images/tabs/7.png'
 import Tab8 from '../../images/tabs/8.png'
 import Tab9 from '../../images/tabs/9.png'
 import Tab10 from '../../images/tabs/10.png'
+import { useHistory } from 'react-router-dom'
 
 const Tabs = () => {
 
-  const SingleTab = ({ title, icon }) => (
-    <button style={{width:'115px', height:'109px'}} className='relative flex flex-col items-center justify-between pb-24px hover:brightness-125 filter'>
-      <img src={icon} alt="icon1" className='object-none z-20' style={{marginTop:'15px'}} />
-      <h2 style={{color:'#252525', fontSize:'14px', marginBottom:'-2px', WebkitTextStroke:'0.2px'}} className='tracking-tighter z-20 font-spoqaBold'>{title}</h2>
+  const history = useHistory()
+
+  const SingleTab = ({ title, icon, path }) => (
+    <button style={{ width: '115px', height: '109px' }} className='relative flex flex-col items-center justify-between pb-24px hover:brightness-125 filter' onClick={() => history.push(path)}>
+      <img src={icon} alt="icon1" className='object-none z-20' style={{ marginTop: '15px' }} />
+      <h2 style={{ color: '#252525', fontSize: '14px', marginBottom: '-2px', WebkitTextStroke: '0.2px' }} className='tracking-tighter z-20 font-spoqaBold'>{title}</h2>
       <img src={TabBg} alt="bg" className='object-none absolute' />
     </button>
   )
   return (
-    <div style={{width:'1260px'}} className="flex justify-center items-center">
+    <div style={{ width: '1260px' }} className="flex justify-center items-center">
       <img src={Left} className="object-none -mr-5px mb-8px" alt="" />
       <div className='flex space-x-2px'>
-      <SingleTab title="마이페이지" icon={Tab1} />
-      <SingleTab title="공지사항" icon={Tab2} />
-      <SingleTab title="게시판" icon={Tab3} />
-      <SingleTab title="문의하기" icon={Tab4}/>
-      <SingleTab title="충전하기" icon={Tab5} />
-      <SingleTab title="환전하기" icon={Tab6} />
-      <SingleTab title="포인트전환" icon={Tab7} />
-      <SingleTab title="경기결과" icon={Tab8} />
-      <SingleTab title="출석부" icon={Tab9} />
-      <SingleTab title="라이브영상" icon={Tab10} />
+        <SingleTab title="마이페이지" icon={Tab1} path="/mypage/bet-history" />
+        <SingleTab title="공지사항" icon={Tab2} path="/cscenter/announcement" />
+        <SingleTab title="게시판" icon={Tab3} path="/freeboard" />
+        <SingleTab title="문의하기" icon={Tab4} path="/contact/all" />
+        <SingleTab title="충전하기" icon={Tab5} path="/charge" />
+        <SingleTab title="환전하기" icon={Tab6} path="/exchange" />
+        <SingleTab title="포인트전환" icon={Tab7} path="/points-apply" />
+        <SingleTab title="경기결과" icon={Tab8} path="/win-draw-lose" />
+        <SingleTab title="출석부" icon={Tab9} path="/attendance" />
+        <SingleTab title="라이브영상" icon={Tab10} path="/" />
       </div>
       <img src={Right} className="object-none -ml-5px mb-8px" alt="" />
     </div>
