@@ -61,7 +61,7 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
                       : "bg-dark-252525 text-gray-c8c8c8"} 
                       flex items-center justify-between h-34px rounded-3px px-8px pt-px`
                   }>
-                      <span className="truncate w-108px text-left font-spoqaMedium tracking-tight text-14px">{team1}</span>
+                      <span className="truncate w-323px text-left font-spoqaMedium tracking-tight text-14px">{team1}</span>
                       <div className="flex items-center space-x-5px">
                           <span className="font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
                       </div>
@@ -100,7 +100,7 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
                         <div className="flex items-center space-x-5px">
                             <span className="font-roboto tracking-tight text-14px pt-2px">{stat3}</span>
                         </div>
-                        <span className="truncate w-108px font-spoqaMedium tracking-tight text-14px text-right">{team2}</span>
+                        <span className="truncate w-323px font-spoqaMedium tracking-tight text-14px text-right">{team2}</span>
                     </div>
                 </button>
             </div>

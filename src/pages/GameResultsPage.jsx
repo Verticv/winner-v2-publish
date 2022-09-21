@@ -1,5 +1,5 @@
 import Footer from 'components/mainPage/Footer';
-// import DirectoryComponent from 'components/myPage/DirectoryComponent';
+import DirectoryComponent from 'components/myPage/DirectoryComponent';
 import LeftMenu from 'components/myPage/LeftMenu';
 import Navbar from 'components/mainPage/Navbar';
 import QuickMenu from 'components/QuickMenu'
@@ -68,7 +68,7 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
 
             <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
 
-                {/* <Route exact path="/gameresults/sports/win-draw-lose">
+                <Route exact path="/gameresults/sports/win-draw-lose">
                     <DirectoryComponent 
                         branch1="경기결과"
                         branch2="스포츠" 
@@ -117,9 +117,9 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
                         setSelectedTab={setSelectedTab}
                         setSelectedSubTab={setSelectedSubTab}
                     />
-                </Route> */}
+                </Route>
 
-                <div className="relative w-default h-125px mt-60px">
+                <div className="relative w-default h-125px">
                     <img className="z-10" src={GameResultsBanner} alt="" />
                 </div>
                 

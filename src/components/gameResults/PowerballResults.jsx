@@ -19,10 +19,10 @@ const PowerballResults = () => {
                 style={{backgroundColor: item.id % 2 === 0 ? "#323231" : "#2e2e2e"}} 
                 className="flex items-center text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525 font-roboto last:border-b-0 pt-px"
             >
-                <div style={{marginLeft:"40px", width:"136px"}} className="flex justify-center">2021-06-29 15:45</div>
-                <div style={{marginLeft:"142px", width:"90px"}} className="flex justify-center">{count}</div>
-                <div style={{marginLeft:"120px", width:"220px"}} className="font-spoqaMedium text-blue-4c98ff flex justify-center">{item.result}</div>
-                <div style={{marginLeft:"130px", width:"74px"}} className="flex justify-center">{item.percentage}</div>
+                <div style={{marginLeft:"0", width:"216px"}} className="flex justify-center pl-2px">2021-06-29 15:45</div>
+                <div style={{marginLeft:"0", width:"296px"}} className="flex justify-center">{count}</div>
+                <div style={{marginLeft:"0", width:"255px"}} className="font-spoqaMedium text-blue-4c98ff flex justify-center">{item.result}</div>
+                <div style={{marginLeft:"42px", width:"211px"}} className="flex justify-center">{item.percentage}</div>
             </div>
         ))
     }
@@ -41,12 +41,12 @@ const PowerballResults = () => {
       <div
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         className="rounded-4px shadow-table overflow-hidden p-px">
-        <div className="w-full rounded-4px bg-gray-2b2b2a overflow-hidden">
-          <div style={{height:"54px"}} className="w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">
-            <div style={{marginLeft:"96px"}}>경기일시</div>
-            <div style={{marginLeft:"215px"}}>회차</div>
-            <div style={{marginLeft:"250px"}}>결과</div>
-            <div style={{marginLeft:"244px"}}>배당률</div>
+        <div className="w-full rounded-4px bg-gray-2b2b2a overflow-hidden ">
+          <div style={{height:"54px"}} className="w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6 px-9px">
+            <div className='text-center pl-2px' style={{width:'216px'}}>경기일시</div>
+            <div className='text-center' style={{width:'296px'}}>회차</div>
+            <div className='text-center' style={{width:'255px'}}>결과</div>
+            <div className='text-center' style={{marginLeft:"42px",width:'211px'}}>정렬</div>
           </div>
           <div className="px-9px space-y-10px pb-12px -mt-px">
             <Table count="211" />
