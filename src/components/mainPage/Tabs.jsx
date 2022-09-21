@@ -30,13 +30,13 @@ const Tabs = () => {
       <img src={Left} className="object-none -mr-5px mb-8px" alt="" />
       <div className='flex space-x-2px'>
         <SingleTab title="마이페이지" icon={Tab1} path="/mypage/bet-history" />
-        <SingleTab title="공지사항" icon={Tab2} path="/cscenter/announcement" />
+        <SingleTab title="공지사항" icon={Tab2} path="/cscenter/announcement/all" />
         <SingleTab title="게시판" icon={Tab3} path="/freeboard" />
-        <SingleTab title="문의하기" icon={Tab4} path="/contact/all" />
-        <SingleTab title="충전하기" icon={Tab5} path="/charge" />
-        <SingleTab title="환전하기" icon={Tab6} path="/exchange" />
-        <SingleTab title="포인트전환" icon={Tab7} path="/points-apply" />
-        <SingleTab title="경기결과" icon={Tab8} path="/win-draw-lose" />
+        <SingleTab title="문의하기" icon={Tab4} path="/cscenter/contact/all" />
+        <SingleTab title="충전하기" icon={Tab5} path="/mypage/transaction/charge-history" />
+        <SingleTab title="환전하기" icon={Tab6} path="/mypage/transaction/exchange-history" />
+        <SingleTab title="포인트전환" icon={Tab7} path="/mypage/points/points-apply" />
+        <SingleTab title="경기결과" icon={Tab8} path="/gameresults/sports/win-draw-lose" />
         <SingleTab title="출석부" icon={Tab9} path="/attendance" />
         <SingleTab title="라이브영상" icon={Tab10} path="/" />
       </div>

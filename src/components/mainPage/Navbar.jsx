@@ -102,28 +102,28 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 				</p>
 			</button>
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
-			<button className='flex items-center h-12px' onClick={() => history.push("/charge")}>
+			<button className='flex items-center h-12px' onClick={() => history.push("/mypage/transaction/charge-history")}>
 				<img src={Nav2} alt="" className=' object-none' />
 				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					10,000,000원
 				</p>
 			</button>
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
-			<button className='flex items-center h-12px' onClick={() => history.push("/points-apply")}>
+			<button className='flex items-center h-12px' onClick={() => history.push("/mypage/points/points-apply")}>
 				<img src={Nav3} alt="" className=' object-none' />
 				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					12,500P
 				</p>
 			</button>
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px'/>
-			<button className='flex items-center h-12px'  onClick={() => history.push("/inbox")}>
+			<button className='flex items-center h-12px'  onClick={() => history.push("/mypage/inbox")}>
 				<img src={Nav4} alt="" className=' object-none' />
 				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쪽지 2
 				</p>
 			</button>
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
-			<button className='flex items-center h-12px'  onClick={() => history.push("/coupon-usage")}>
+			<button className='flex items-center h-12px'  onClick={() => history.push("/mypage/coupon/coupon-usage")}>
 				<img src={Nav5} alt="" className=' object-none' />
 				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쿠폰 3
