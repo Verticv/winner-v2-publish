@@ -20,15 +20,15 @@ const FreeBoardView = () => {
         isEdit = false,
         tag = null
     }) => (
-        <div className="w-full h-110px pr-19px">
-            <div className="h-56px ml-22px flex items-center justify-between">
-                <div className="flex">
-                    <img className="object-none" src={ReplyArrow} alt="" />
+        <div className="w-full pr-19px">
+            <div className="py-10px ml-22px flex items-center justify-between">
+                <div className="flex items-start pr-10px">
+                    <img className="object-none mt-5px" src={ReplyArrow} alt="" />
                     <img className="pl-13px" src={rank === 1 ? Rank1 : rank === 2 ? Rank2 : rank === 3 ? Rank3 : rank === 4 ? Rank4 : Rank5} alt="" />
-                    <p className="ml-5px text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">{username}</p>
+                    <p className="ml-5px mt-px text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">{username}</p>
                 </div>
                 {isEdit === true ? (
-                    <div className="flex space-x-4px my-20px justify-end">
+                    <div className="flex self-start items-start space-x-4px justify-end">
                         <button className="flex items-center justify-center w-90px h-36px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:filter hover:brightness-125 shadow-link">
                         <div className="flex items-center justify-center h-34px w-88px rounded-4px  bg-gradient-to-b from-red-e06446  to-red-96341d cursor-pointer">
                           <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">수정하기</span>
@@ -43,7 +43,7 @@ const FreeBoardView = () => {
                         </button>
                     </div>
                 ) : (
-                    <button className="flex items-center justify-center h-36px w-90px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
+                    <button className="self-start flex items-center justify-center h-36px w-90px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
                         <div className="flex items-center justify-center h-34px w-88px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084  cursor-pointer">
                             <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-2px text-shadow-5">답글달기</span>
                         </div>
@@ -52,12 +52,12 @@ const FreeBoardView = () => {
                
             </div> 
             <div className="pl-48px">
-                <div className="h-54px w-full rounded-4px bg-gray-252525 flex items-center px-20px  justify-between">
-                    <div className="flex text-14px font-spoqa tracking-tight">
-                    {tag && ( <p className="text-blue-2980b9 mr-10px font-spoqaMedium">@{tag}</p>)}
-                    <p style={{WebkitTextStroke:"0.2px"}} className="text-gray-c8c8c8">{text}</p>
+                <div className="w-full rounded-4px bg-gray-252525 flex items-start px-20px  pt-17px pb-14px justify-between text-gray-c8c8c8 mt-px">
+                    <div className="flex text-14px font-spoqa tracking-tight ">
+                    {tag && ( <p className="text-blue-2980b9 mr-10px font-spoqaMedium flex flex-shrink-0">@{tag}</p>)}
+                    <p className="text-gray-c8c8c8">{text}</p>
                     </div>
-                    <p className="text-gray-c8c8c8  tracking-tight font-spoqa text-14px">2021.06.28 15:36</p>
+                    <p className="text-gray-c8c8c8  tracking-tight font-spoqa text-14px flex flex-shrink-0">2021.06.28 15:36</p>
                 </div>
             </div>
         </div>
@@ -157,10 +157,10 @@ const FreeBoardView = () => {
 
             <div className="shadow-table w-full overflow-hidden rounded-4px p-px"
               style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
-              <div style={{height:"171px"}} className="w-full bg-gray-323232 rounded-4px pl-18px pr-19px pb-19px">
-                  <div className="h-58px flex items-center space-x-9px">
+              <div  className="w-full bg-gray-323232 rounded-4px pl-18px pr-19px pb-19px">
+                  <div className="pt-16px pb-18px flex items-start space-x-9px">
                       <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">댓글 작성하기</p>
-                    <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d pt-px flex-shrink-0 -mt-4px">2</div>
+                    <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d pt-px flex-shrink-0 mt-2px">2</div>
                   </div>
                 <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
                     <textarea 
@@ -187,10 +187,10 @@ const FreeBoardView = () => {
                     <div className="border-b border-gray-252525 pl-20px pr-18px"> 
                         <div className="py-9px w-full flex items-center justify-between">
                             <div className="flex items-start space-x-5px mt-px">
-                                <img src={Rank2} alt="" className='-mt-2px '/>
+                                <img src={Rank2} alt="" className='-mt-2px'/>
                                 <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">신풍사우나</p>
                             </div>
-                            <div className="flex space-x-4px  justify-end">
+                            <div className="self-start flex space-x-4px items-start justify-end">
                                 <button className="flex items-center justify-center w-90px h-36px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:filter hover:brightness-125 shadow-link">
                                     <div className="flex items-center justify-center h-34px w-88px rounded-4px  bg-gradient-to-b from-red-e06446  to-red-96341d  cursor-pointer">
                                         <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 pt-px text-shadow-5">수정하기</span>
@@ -207,7 +207,7 @@ const FreeBoardView = () => {
                         </div>
                         
                         <div className="rounded-4px bg-gray-252525 w-full  flex items-start px-19px pt-17px pb-14px justify-between text-gray-c8c8c8 mb-10px mt-px">
-                            <p className="text-15px font-spoqa tracking-tight">두개의 이벤트 모두 참여하였습니다</p>
+                            <p className="text-15px font-spoqa tracking-tight pr-10px">두개의 이벤트 모두 참여하였습니다</p>
                             <p className="text-14px tracking-tight font-spoqa flex-shrink-0 mt-px">2021.06.28 15:36</p>
                         </div>
                     </div>
@@ -222,13 +222,13 @@ const FreeBoardView = () => {
               style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
             >
              <div  className=" bg-gray-323232 rounded-4px ">
-                <div style={{height:"120px"}} className="border-b border-gray-252525 px-19px"> 
-                    <div className="h-55px w-full flex items-center  justify-between">
-                        <div className="flex items-center space-x-5px">
-                            <img src={Rank2} alt="" />
+                <div className="border-b border-gray-252525 px-19px"> 
+                    <div className="py-9px w-full flex items-center  justify-between">
+                        <div className="flex items-start space-x-5px mt-px">
+                            <img src={Rank2} alt="" className='-mt-2px'/>
                             <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">신풍사우나</p>
                         </div>
-                        <div className="flex space-x-4px my-20px justify-end">
+                        <div className="self-start flex space-x-4px justify-end">
                             <button className="flex items-center justify-center w-90px h-36px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:filter hover:brightness-125 shadow-link">
                               <div className="flex items-center justify-center h-34px w-88px rounded-4px  bg-gradient-to-b from-red-e06446  to-red-96341d  cursor-pointer">
                                 <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5">수정하기</span>
@@ -244,9 +244,9 @@ const FreeBoardView = () => {
                         </div>
                     </div>
                     
-                    <div className="rounded-4px bg-gray-252525 h-54px w-full  flex items-center px-20px justify-between text-gray-c8c8c8">
-                        <p className="text-15px font-spoqa tracking-tight">두개의 이벤트 모두 참여하였습니다</p>
-                        <p className="text-14px tracking-tight font-spoqa">2021.06.28 15:36</p>
+                    <div className="rounded-4px bg-gray-252525  w-full  flex items-start px-19px pt-17px pb-14px justify-between text-gray-c8c8c8 mb-10px mt-px">
+                        <p className="text-15px font-spoqa tracking-tight pr-10px">두개의 이벤트 모두 참여하였습니다</p>
+                        <p className="text-14px tracking-tight font-spoqa flex-shrink-0 mt-px">2021.06.28 15:36</p>
                     </div>
                 </div>
                 <div style={{height:"115px"}} className="px-20px py-11px">
@@ -270,13 +270,13 @@ const FreeBoardView = () => {
           <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-20px"
               style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }} >
             <div className="w-full bg-gray-323232 rounded-4px">
-              <div style={{height:"120px"}} className="border-b border-gray-252525 px-19px"> 
-                  <div className="h-55px w-full flex items-center  justify-between">
-                      <div className="flex items-center space-x-5px">
-                          <img src={Rank2} alt="" />
+              <div  className="border-b border-gray-252525 px-19px"> 
+                  <div className="py-9px w-full flex items-center  justify-between">
+                      <div className="flex items-start space-x-5px mt-px">
+                          <img src={Rank2} alt="" className='-mt-2px'/>
                           <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">신풍사우나</p>
                       </div>
-                       <button className="flex items-center justify-center h-36px w-90px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
+                       <button className="self-start flex items-center justify-center h-36px w-90px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
                         <div className="flex items-center justify-center h-34px w-88px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084  cursor-pointer">
                             <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-2px text-shadow-5">답글달기</span>
                         </div>
@@ -284,9 +284,9 @@ const FreeBoardView = () => {
 
                   </div>
                   
-                  <div className="rounded-4px bg-gray-252525 h-54px w-full  flex items-center px-20px justify-between text-gray-c8c8c8">
-                      <p className="text-15px font-spoqa tracking-tight">두개의 이벤트 모두 참여하였습니다</p>
-                      <p className="text-14px tracking-tight font-spoqa">2021.06.28 15:36</p>
+                  <div className="rounded-4px bg-gray-252525  w-full  flex items-start px-19px pt-17px pb-14px justify-between text-gray-c8c8c8 mb-10px mt-px">
+                      <p className="text-15px font-spoqa tracking-tight pr-10px">두개의 이벤트 모두 참여하였습니다</p>
+                      <p className="text-14px tracking-tight font-spoqa flex-shrink-0 mt-px">2021.06.28 15:36</p>
                   </div>
               </div>
               <div style={{height:"115px"}} className="px-20px py-11px">
