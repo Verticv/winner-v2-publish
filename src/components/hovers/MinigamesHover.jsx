@@ -8,51 +8,54 @@ import SpeedkinoHighlight from '../../images/navbarHover/6_3_hl.png'
 import KinoLadder from '../../images/navbarHover/6_4.png'
 import KinoLadderHighlight from '../../images/navbarHover/6_4_hl.png'
 import Expand from 'react-expand-animated'
+import { useHistory } from 'react-router-dom'
 
 const MinigamesHover = ({ selection }) => {
 
-  const [isHover, setHover] = useState(null)
+	const [isHover, setHover] = useState(null)
+	const history = useHistory()
 
-  const gamesArray = [
-    { id: 0, background: Powerball, highlight: PowerballHighlight, imgText: "파워볼", color: "bg-purple-d03ab7 text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerball" },
-    { id: 1, background: PowerLadder, highlight: PowerLadderHighlight, imgText: "파워사다리", color: "bg-blue-r3384ca text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerladder" },
-    { id: 2, background: Speedkino, highlight: SpeedkinoHighlight, imgText: "스피드키노", color: "bg-red-db4a4a text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/speedkino" },
-    { id: 3, background: KinoLadder, highlight: KinoLadderHighlight, imgText: "키노사다리", color: "bg-green-e3ba3c text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/kinoladder" }
-  ];
+	const gamesArray = [
+		{ id: 0, background: Powerball, highlight: PowerballHighlight, imgText: "파워볼", color: "bg-purple-d03ab7 text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerball" },
+		{ id: 1, background: PowerLadder, highlight: PowerLadderHighlight, imgText: "파워사다리", color: "bg-blue-r3384ca text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/powerladder" },
+		{ id: 2, background: Speedkino, highlight: SpeedkinoHighlight, imgText: "스피드키노", color: "bg-red-db4a4a text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/speedkino" },
+		{ id: 3, background: KinoLadder, highlight: KinoLadderHighlight, imgText: "키노사다리", color: "bg-green-e3ba3c text-white shadow-plain4", btnText: "게임시작", class: "bg-opacity-25", path: "/minigame/kinoladder" }
+	];
 
-  function GamesList({ items }) {
+	function GamesList({ items }) {
 		return items.map(item => (
-			<div 
-				key={item.id} 
+			<div
+				key={item.id}
 				className={`group relative cursor-pointer flex flex-col items-center justify-end`}
-				style={{width:'235px'}}
+				style={{ width: '235px' }}
 				onMouseEnter={() => setHover(item.id)}
+				onClick={() => history.push(item.path)}
 			>
-				<p style={{color:'#ffdfbd', marginBottom:'70px'}} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex`}>{item.imgText}</p>
-				<div style={{marginBottom:'31px'}} className={`absolute z-20`}>
-					<button style={{width:'89px', height:'26px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className={`p-px hover:opacity-90`}>
-						<div style={{borderRadius:'2px', background: isHover === item.id ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
-							<p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-13px font-spoqaMedium tracking-tight">게임시작</p>
+				<p style={{ color: '#ffdfbd', marginBottom: '70px' }} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex`}>{item.imgText}</p>
+				<div style={{ marginBottom: '31px' }} className={`absolute z-20`}>
+					<button style={{ width: '89px', height: '26px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className={`p-px hover:opacity-90`}>
+						<div style={{ borderRadius: '2px', background: isHover === item.id ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)' }} className='w-full h-full flex items-center justify-center'>
+							<p style={{ color: '#ffdfbd', textShadow: "0 0 3px #00000090" }} className="text-13px font-spoqaMedium tracking-tight">게임시작</p>
 						</div>
 					</button>
 				</div>
 				<img className={`${isHover === item.id ? "opacity-0" : "opacity-100"} absolute bottom-0 object-none h-full mb-13px`} src={item.background} alt="game_image" />
-				<img className={`${isHover === item.id ? "opacity-100" : "opacity-0"} absolute bottom-0 object-none h-full mb-13px`} src={item.highlight} alt="game_image" />				
+				<img className={`${isHover === item.id ? "opacity-100" : "opacity-0"} absolute bottom-0 object-none h-full mb-13px`} src={item.highlight} alt="game_image" />
 			</div>
 		))
 	}
 
-  return (
-    <Expand
-      open={selection === 5}
-      duration={200}
-      className="absolute w-full h-262px border-b border-t border-brown-r796657"
-    >
-      <div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85 -space-x-12">
-        <GamesList items={gamesArray} />
-      </div>
-    </Expand>
-  )
+	return (
+		<Expand
+			open={selection === 5}
+			duration={200}
+			className="absolute w-full h-262px border-b border-t border-brown-r796657"
+		>
+			<div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85 -space-x-12">
+				<GamesList items={gamesArray} />
+			</div>
+		</Expand>
+	)
 }
 
 export default MinigamesHover
