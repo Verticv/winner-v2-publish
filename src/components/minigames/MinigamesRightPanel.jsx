@@ -7,10 +7,10 @@ import BetIcon from '../../images/betCombination/bet_icon.png'
 import LockIcon from '../../images/minigames/lock.png'
 import BlueButton from '../../images/minigames/blue.png'
 import RedButton from '../../images/minigames/red_v2.png'
-import YellowButton from '../../images/minigames/yellow.png'
-import GreenButton from '../../images/minigames/green.png'
+import YellowButton from '../../images/minigames/yellow_v2.png'
+import GreenButton from '../../images/minigames/green_v2.png'
 import BlueButtonSq from '../../images/minigames/blue_sq_v2.png'
-import RedButtonSq from '../../images/minigames/red_sq.png'
+import RedButtonSq from '../../images/minigames/red_sq_v2.png'
 import { format } from 'date-fns'
 import { ko } from "date-fns/locale"
 

@@ -2,15 +2,24 @@ import HorizontalMenu from 'components/horizontalMenus/HorizontalMenu';
 import MyPageTitle from 'components/myPage/MyPageTitle'
 import React from 'react'
 import { Route } from 'react-router';
-import Icon1 from '../../images/cscenter/sportsPolicy/1.png'
-import Icon2 from '../../images/cscenter/sportsPolicy/2.png'
-import Icon3 from '../../images/cscenter/sportsPolicy/3.png'
-import Icon4 from '../../images/cscenter/sportsPolicy/4.png'
-import Icon5 from '../../images/cscenter/sportsPolicy/5.png'
-import Icon6 from '../../images/cscenter/sportsPolicy/6.png'
-import Icon7 from '../../images/cscenter/sportsPolicy/7.png'
-import Icon8 from '../../images/cscenter/sportsPolicy/8.png'
-import Icon9 from '../../images/cscenter/sportsPolicy/9.png'
+import Icon1 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_01.png'
+import Icon2 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_02.png'
+import Icon3 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_03.png'
+import Icon4 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_04.png'
+import Icon5 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_05.png'
+import Icon6 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_06.png'
+import Icon7 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_07.png'
+import Icon8 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_08.png'
+import Icon9 from '../../images/cscenter/sportsPolicy/tabs/cs_icon_09.png'
+import Icon1_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_01_on.png'
+import Icon2_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_02_on.png'
+import Icon3_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_03_on.png'
+import Icon4_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_04_on.png'
+import Icon5_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_05_on.png'
+import Icon6_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_06_on.png'
+import Icon7_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_07_on.png'
+import Icon8_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_08_on.png'
+import Icon9_on from '../../images/cscenter/sportsPolicy/tabs/cs_icon_09_on.png'
 import SportsGamePolicyTable1 from './tables/SportsGamePolicyTable1';
 import SportsGamePolicyTable2 from './tables/SportsGamePolicyTable2';
 
@@ -381,15 +390,15 @@ const ESportsSubArray = [
 const SportsGamePolicy = ({setSelectedTab}) => {
 
     const tabsArray = [
-        { text: "축구", icon: Icon1, iconHighlight: Icon1, id: 0, path: "/cscenter/policy/sportsgame/soccer" },
-        { text: "농구", icon: Icon2, iconHighlight: Icon2, id: 1, path: "/cscenter/policy/sportsgame/basketball" },
-        { text: "야구", icon: Icon3, iconHighlight: Icon1, id: 2, path: "/cscenter/policy/sportsgame/baseball" },
-        { text: "배구", icon: Icon4, iconHighlight: Icon4, id: 3, path: "/cscenter/policy/sportsgame/volleyball" },
-        { text: "테니스", icon: Icon5, iconHighlight: Icon5, id: 4, path: "/cscenter/policy/sportsgame/tennis" },
-        { text: "하키", icon: Icon6, iconHighlight: Icon6, id: 5, path: "/cscenter/policy/sportsgame/hockey" },
-        { text: "핸드볼", icon: Icon7, iconHighlight: Icon7, id: 6, path: "/cscenter/policy/sportsgame/handball" },
-        { text: "미식축구", icon: Icon8, iconHighlight: Icon8, id: 7, path: "/cscenter/policy/sportsgame/football" },
-        { text: "e-스포츠", icon: Icon9, iconHighlight: Icon9, id: 8, path: "/cscenter/policy/sportsgame/e-sports" }
+        { text: "축구", icon: Icon1, iconHighlight: Icon1_on, id: 0, path: "/cscenter/policy/sportsgame/soccer" },
+        { text: "농구", icon: Icon2, iconHighlight: Icon2_on, id: 1, path: "/cscenter/policy/sportsgame/basketball" },
+        { text: "야구", icon: Icon3, iconHighlight: Icon3_on, id: 2, path: "/cscenter/policy/sportsgame/baseball" },
+        { text: "배구", icon: Icon4, iconHighlight: Icon4_on, id: 3, path: "/cscenter/policy/sportsgame/volleyball" },
+        { text: "테니스", icon: Icon5, iconHighlight: Icon5_on, id: 4, path: "/cscenter/policy/sportsgame/tennis" },
+        { text: "하키", icon: Icon6, iconHighlight: Icon6_on, id: 5, path: "/cscenter/policy/sportsgame/hockey" },
+        { text: "핸드볼", icon: Icon7, iconHighlight: Icon7_on, id: 6, path: "/cscenter/policy/sportsgame/handball" },
+        { text: "미식축구", icon: Icon8, iconHighlight: Icon8_on, id: 7, path: "/cscenter/policy/sportsgame/football" },
+        { text: "e-스포츠", icon: Icon9, iconHighlight: Icon9_on, id: 8, path: "/cscenter/policy/sportsgame/e-sports" }
     ];
     
     return (
