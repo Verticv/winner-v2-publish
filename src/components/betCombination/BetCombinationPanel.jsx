@@ -550,10 +550,10 @@ const BetCombinationPanel = ({
                             color: (`${id}left` === isButtonClicked || `${id}left` === isHover3) ? "#ffdfbd" : "#c8c8c8",
                             textShadow: (`${id}left` === isButtonClicked || `${id}left` === isHover3) ? "1px 1px 0px #00000070" : ""
                         }}  
-                        className="flex items-center justify-end rounded-lg  bg-gradient-to-b cursor-pointer px-10px "
+                        className="flex items-center justify-end rounded-lg  bg-gradient-to-b cursor-pointer px-6px"
                     >
-                        <span style={{maxWidth:"188px"}} className="truncate text-right font-spoqaMedium tracking-tight text-14px pt-2px">{team1}</span>
-                        <div style={{width:"38px"}} className={`${hasUp ? "justify-end pr-5px" : "justify-center"} flex items-center flex-shrink-0`}>
+                        <span style={{maxWidth:"188px"}} className="truncate text-right font-spoqaMedium tracking-tight text-14px pt-2px mr-2px">{team1}</span>
+                        <div style={{width:"34px"}} className={`${hasUp ? "justify-end pr-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo1 && (
                                 <img src={logo1} alt="" />
                             )}
@@ -561,7 +561,7 @@ const BetCombinationPanel = ({
                                 <img src={UpIcon} alt="" />
                             )}
                         </div>
-                        <span style={{color: stat1Color === "red" && `${id}left` !== isButtonClicked && `${id}left` !== isHover3 ? "#e65454" : ""}} className="font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
+                        <span style={{color: stat1Color === "red" && `${id}left` !== isButtonClicked && `${id}left` !== isHover3 ? "#e65454" : ""}} className="w-34px font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
                     </div>
                 </button>
 
@@ -620,10 +620,10 @@ const BetCombinationPanel = ({
                             color: (`${id}right` === isButtonClicked || `${id}right` === isHover3) ? "#ffdfbd" : "#c8c8c8",
                             textShadow: (`${id}right` === isButtonClicked || `${id}right` === isHover3) ? "1px 1px 0px #00000070" : ""
                         }}  
-                        className="flex items-center justify-start rounded-lg  bg-gradient-to-b cursor-pointer px-10px pt-px"
+                        className="flex items-center justify-start rounded-lg  bg-gradient-to-b cursor-pointer px-6px pt-px"
                     >
-                        <span className="font-roboto tracking-tight text-14px  pt-2px">{stat3}</span>
-                        <div style={{width:"38px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center flex-shrink-0`}>
+                        <span className="w-34px font-roboto tracking-tight text-14px  pt-2px">{stat3}</span>
+                        <div style={{width:"34px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo2 && (
                                 <img src={logo2} alt="" />
                             )}
@@ -631,7 +631,7 @@ const BetCombinationPanel = ({
                                 <img src={DownIcon} alt="" />
                             )}
                         </div>
-                        <span style={{maxWidth:"188px"}} className="truncate font-spoqaMedium tracking-tight text-14px text-left  pt-2px">{team2}</span>
+                        <span style={{maxWidth:"188px"}} className="truncate font-spoqaMedium tracking-tight text-14px text-left pt-2px ml-2px">{team2}</span>
                     </div>
                 </button>
             </div>

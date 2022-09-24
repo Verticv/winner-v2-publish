@@ -57,12 +57,11 @@ const HorizontalMenu6 = ({
                         </div>
                         <div 
                             style={{
-                                width: "38px",
                                 backgroundColor: isState === item.id 
                                 ? "#4b3f2b"
                                 : "#1a1a1a"
                             }}
-                            className={`text-white text-12px font-roboto tracking-tight mt-8px h-17px rounded-full flex items-center justify-center`}
+                            className={`text-white text-12px font-roboto tracking-tight px-9px  mt-8px h-17px rounded-full flex items-center justify-center`}
                         >
                             {item.number}
                         </div>
