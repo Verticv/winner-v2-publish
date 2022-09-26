@@ -57,7 +57,7 @@ const MinigameBetHistoryPowerballTable = ({array, checkedState, setCheckedState,
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         className="rounded-4px shadow-table overflow-hidden p-px">
         <div className="rounded-3px overflow-hidden">
-           <div style={{height:"56px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
+           <div style={{height:"55px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6  flex items-center pt-px border-b border-dark-252525 bg-dark-2e2e2e">
                 <div style={{width: "51px"}} className="ml-20px text-center">선택</div>
                 <div style={{width: "86px"}} className="text-center">베팅번호</div>
                 <div style={{width: "160px"}} className="text-center">베팅시간</div>

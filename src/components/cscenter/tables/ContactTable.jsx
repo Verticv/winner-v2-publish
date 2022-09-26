@@ -28,12 +28,12 @@ const ContactTable = ({
                     </div>
 
                     <div 
-                        className="w-102px flex justify-center cursor-pointer h-full items-center"
+                        className="w-102px flex justify-center cursor-pointer h-full items-center -mt-px"
                         onClick={() => history.push(item.path)}
                     >
                         <div 
                             style={{backgroundColor: item.isRead === true ? "#494745" : "#7e7564", color: item.isRead === true ? "#c8c8c8" : "#f1e7d5"}}
-                            className={`w-69px h-29px rounded-full font-spoqaMedium text-14px tracking-tight flex items-center justify-center pt-px cursor-pointer`} 
+                            className={`w-69px h-29px rounded-full font-spoqaMedium text-14px tracking-tight flex items-center justify-center pt-px cursor-pointer truncate`} 
                         >
                             <p>{item.isRead === true ? "답변완료" : "답변대기"}</p>
                         </div>
@@ -51,9 +51,9 @@ const ContactTable = ({
                         className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8 group"} ${item.text.length>30 ? '':'space-x-10px'} font-spoqaMedium flex items-center cursor-pointer h-full ml-23px`}
                         onClick={() => history.push(item.path)}
                     >
-                        <p style={{maxWidth: '380px'}}  className="group-hover:text-gray-f1e9e9 truncate">{item.text}</p>
+                        <p style={{maxWidth: '370px'}}  className="group-hover:text-gray-f1e9e9 truncate">{item.text}</p>
                         {item.isRead === false && (
-                            <div className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px flex-shrink-0  ${item.id === 6 && "pr-px"}`}>
+                            <div className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px flex-shrink-0 -mt-2px ${item.id === 6 && "pr-px"}`}>
                                 N
                             </div>
                         )}

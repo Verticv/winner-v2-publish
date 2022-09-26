@@ -38,12 +38,14 @@ const ContactView = () => {
                 </div>
 
                 <div className="pt-17px pb-14px w-full border-b border-gray-252525 px-19px flex items-start text-14px font-spoqaMedium tracking-tight text-gray-929292">
-                    <img src={Rank1Icon} alt="" />
-                    <p className="ml-3px">마이마이프로틴화이팅</p>
-
-                    <div className="h-11px w-px bg-gray-929292 mx-10px mt-4px"></div>
-
-                    <p className="flex flex-shrink-0">2021.06.28 15:49</p>
+                    <img src={Rank1Icon} alt="" className='-mt-2px'/>
+                        <p className="ml-3px">마이마이프로틴화이팅
+                        <div className="inline-block">
+                            <div className="inline-block h-11px w-px mx-10px mt-4px" style={{background:'#4c4c4c'}}></div>
+                            <p className="inline-block">2021.06.28 15:49</p>
+                            </div>
+                            </p>
+                    
                 </div>
 
                 <div className="w-full bg-gray-323232 py-22px px-16px">
@@ -90,7 +92,8 @@ const ContactView = () => {
                 </button>
 
                 <button 
-                    className="flex items-center justify-center h-52px w-192px p-px rounded-2px  shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}
+                    style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}
+                    className="flex items-center justify-center h-52px w-192px p-px rounded-2px  shadow-link hover:filter hover:brightness-125" 
                     onClick={() => history.push('/cscenter/contact/all')}
                 >
                     <div

@@ -89,7 +89,8 @@ const DateSearchBar = ({
             <input
               placeholder="팀명검색" 
               className="pt-px mt-px placeholder-gray-ccc2b6 flex-shrink-0 outline-none w-138px h-42px rounded-2px border  px-10px font-spoqaMedium text-15px tracking-tight border-gray-404040 text-gray-ccc2b6 bg-dark-1a1a1a" />
-          </div>
+              </div>
+              
       )}
         {isGameResultsSearch === true && (
           <div className="space-x-5px flex">
@@ -198,19 +199,17 @@ const DateSearchBar = ({
                     style={{
                         width:"75px",
                         height:"42px",
-                        borderRadius: "2px",
                         background: 'linear-gradient(to top, #4b3b09, #e8b888)'
                     }} 
-                    className="flex items-center justify-center rounded-2px  hover:opacity-75 shadow-link hover:filter hover:brightness-125"
+                    className="flex items-center justify-center rounded-4px  hover:opacity-75 shadow-link hover:filter hover:brightness-125"
                 >
                     <div 
                         style={{
                             width:"73px", 
                             height:"40px",
                             background: "linear-gradient(0deg, rgb(128, 96, 62) 0%, rgb(129, 96, 64) 5%, rgb(165, 124, 82) 97%)",
-                            borderRadius: "2px"
                         }} 
-                        className="flex items-center justify-center rounded-2px  cursor-pointer"
+                        className="flex items-center justify-center rounded-4px  cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">검색</span>
                     </div>

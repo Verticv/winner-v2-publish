@@ -48,7 +48,7 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
             >louie3</div>
              {/* <div className={`${selectedInput === 0 ? "bg-blue-r1ca7ec h-2px -mb-px" : "bg-gray-bebebe h-px"} w-full`} /> */}
                 </div>
-                <div style={{width:'390px', height:'64px', backgroundColor:'#191817', borderRadius:'4px', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)'}} className="relative flex items-center flex-shrink-0 mt-20px py-4px">
+                <div style={{width:'390px', height:'64px', backgroundColor:'#191817', borderRadius:'4px', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)'}} className="relative flex items-center flex-shrink-0 mt-20px py-4px overflow-hidden">
                     <img src={Password} alt="" className="ml-21px" />
                    
                   <input

@@ -98,6 +98,7 @@ const AnnouncementView = () => {
                 </button>
 
                 <button 
+                    style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}
                    className="flex items-center justify-center h-52px w-192px rounded-2px p-px shadow-link hover:filter hover:brightness-125"
                     onClick={() => history.push('/cscenter/announcement')}
                 >

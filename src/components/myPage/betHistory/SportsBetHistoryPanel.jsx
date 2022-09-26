@@ -309,7 +309,7 @@ const SportsBetHistoryPanel = ({
                 <div style={{width: isAttached === true ? "315px" : "283px"}} className="h-full flex items-center justify-center">승(홈)</div>
                 <div style={{width: isAttached === true ? "139px" : "91px"}} className="h-full flex items-center justify-center">무</div>
                 <div style={{width: isAttached === true ? "317px" : "283px"}} className="h-full flex items-center justify-center">패(원정)</div>
-                <div style={{width: isAttached === true ? "85px" : "114px", marginLeft:  isAttached === true ? "40px" : "0px"}} className="h-full flex items-center justify-center">스코어</div>
+                <div style={{width: isAttached === true ? "85px" : "114px", paddingLeft:  isPopup ? '9px':!isAttached ? '7px':'5px' ,marginLeft:  isAttached === true ? "40px" : "0px"}} className="h-full flex items-center justify-center">스코어</div>
                 <div style={{width: isAttached === true ? "66px" : "53px"}} className="h-full flex items-center justify-center">선택</div>
                 <div style={{width: isAttached === true ? "58px" : "79px", marginRight:  isAttached === true ? "25px" : "4px"}} className="h-full flex items-center justify-center">결과</div>
             </div>
@@ -340,7 +340,7 @@ const SportsBetHistoryPanel = ({
                         )}
                         <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "151px" : "151px"}} className="h-full flex items-center justify-center border-l border-gray-2b2b2a">베팅시간</div>
                         <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "150px"}} className="h-full flex items-center justify-center border-l border-gray-2b2b2a">베팅금액</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "78px" : "178px"}} className="h-full flex items-center justify-center border-l border-gray-2b2b2a">배당률</div>
+                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "78px" : "178px" }} className="h-full flex items-center justify-center border-l border-gray-2b2b2a">배당률</div>
                         <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "165px"}} className="h-full flex items-center justify-center border-l border-gray-2b2b2a">예상적중금액</div>
                         <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "178px"}} className="h-full flex items-center justify-center border-l border-gray-2b2b2a">당첨금</div>
                         

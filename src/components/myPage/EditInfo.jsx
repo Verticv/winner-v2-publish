@@ -7,7 +7,7 @@ const EditInfo = () => {
 
     const Title = ({text}) => (
         <div className="w-140px space-y-2 flex-shrink-0 bg-gray-272726 h-44px pl-10px flex items-center rounded-4px">
-            <label className="text-gray-ccc2b6 font-spoqaMedium text-16px mt-3px">{text}</label>
+            <label className="text-gray-ccc2b6 font-spoqaMedium text-16px mt-2px">{text}</label>
             {/* <div className="border-b w-full border-gray-bebebe"></div> */}
         </div>
     )
@@ -33,7 +33,7 @@ const EditInfo = () => {
                             <Title text="아이디" />
                             <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                               style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                <label className=" font-spoqa text-16px pl-10px">louie3</label>
+                                <label className=" font-spoqa text-16px pl-10px mt-px">louie3</label>
                                 {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const EditInfo = () => {
                             <div className={`w-full h-44px overflow-hidden rounded-4px`} style={{ background: '#191817' }}>
                                   <input
                                     style={{ background: '#191817',  boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', }}                      
-                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px " 
+                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px pt-px" 
                                     onFocus={(e) => setSelectedInput(0)}
                                     onBlur={(e) => setSelectedInput(false)}
                                     type="password"
@@ -62,7 +62,7 @@ const EditInfo = () => {
                             <div className={` w-full h-44px overflow-hidden rounded-4px`} style={{ background: '#191817' }}>
                                 <input 
                                     style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}                      
-                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px "  
+                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px pt-px"  
                                     onFocus={(e) => setSelectedInput(1)}
                                     onBlur={(e) => setSelectedInput(false)}
                                     type="password"
@@ -78,7 +78,7 @@ const EditInfo = () => {
                             <div className={`w-full h-44px overflow-hidden`} style={{ background: '#191817' }}>
                                 <input 
                                     style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}                      
-                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px overflow-hidden" 
+                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px overflow-hidden pt-px" 
                                     onFocus={(e) => setSelectedInput(2)}
                                     onBlur={(e) => setSelectedInput(false)}
                                     type="password"
@@ -95,7 +95,7 @@ const EditInfo = () => {
                             <div className={`w-full h-44px overflow-hidden rounded-4px`} style={{ background: '#191817' }}>
                                 <input 
                                     style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}                      
-                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px overflow-hidden"  
+                                    className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px overflow-hidden pt-px"  
                                     onFocus={(e) => setSelectedInput(3)}
                                     onBlur={(e) => setSelectedInput(false)}
                                     type="password"
@@ -111,7 +111,7 @@ const EditInfo = () => {
                                 <Title text="레벨" />
                                 <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                                   style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                    <label className="font-spoqa text-16px pl-10px ">레벨 LV.1 (점수: 0) / 다음레벨 LV.2 (점수: 20)</label>
+                                    <label className="font-spoqa text-16px pl-10px mt-px">레벨 LV.1 (점수: 0) / 다음레벨 LV.2 (점수: 20)</label>
                                     {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                                 </div>
                             </div>
@@ -121,7 +121,7 @@ const EditInfo = () => {
                                 <Title text="스포츠" />
                                 <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                                   style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                    <label className="font-spoqa text-16px pl-10px ">Bronze</label>
+                                    <label className="font-spoqa text-16px pl-10px mt-px">Bronze</label>
                                     {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ const EditInfo = () => {
                                 <Title text="카지노" />
                                 <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                                   style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                    <label className=" font-spoqa text-16px pl-10px ">Bronze</label>
+                                    <label className=" font-spoqa text-16px pl-10px mt-px ">Bronze</label>
                                     {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                                 </div>
                             </div>
@@ -141,7 +141,7 @@ const EditInfo = () => {
                                 <Title text="슬롯" />
                                 <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                                   style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                    <label className=" font-spoqa text-16px pl-10px ">Bronze</label>
+                                    <label className=" font-spoqa text-16px pl-10px mt-px">Bronze</label>
                                     {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                                 </div>
                             </div>
@@ -151,7 +151,7 @@ const EditInfo = () => {
                                 <Title text="미니게임" />
                                 <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                                   style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                    <label className=" font-spoqa text-16px pl-10px ">Bronze</label>
+                                    <label className=" font-spoqa text-16px pl-10px mt-px">Bronze</label>
                                     {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                                 </div>
                             </div>

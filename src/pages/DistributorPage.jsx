@@ -491,19 +491,19 @@ const DistributorPage = ({
                         </div>
                     </button>
                     {isUserCountOpen[item.id + 2] === true && (
-                        <div className="absolute bottom-0 -mb-px left-47px">
+                        <div className="absolute bottom-0 -mb-px left-56px">
                             <img src={BlueTriangle} alt="" />
                         </div>
                     )}
                 </div> 
                  <div className="w-100px h-full flex items-center justify-end"><p className="pr-23px">{item.point}</p></div>
                 <div className="h-full flex items-center justify-end" style={{width:'116px'}}><p className="pr-23px">{item.holding_amount}</p></div>
-            </div>
-            <div 
+                </div>
+                <div 
                     style={{
-                   borderTop: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #a67c52",
+                    borderTop: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #a67c52",
                     // borderBottom: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #dddddd",
-                }}
+                    }}
                 className={` flex flex-col relative w-full`}
             >
                 {(isUserCountOpen[item.id] === true || isUserCountOpen[item.id + 1] === true || isUserCountOpen[item.id + 2] === true) &&

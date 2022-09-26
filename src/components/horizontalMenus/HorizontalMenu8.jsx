@@ -57,8 +57,8 @@ const HorizontalMenu8 = ({
                     </div>
                 </div>
             </button>
-            {(selectedTab !== 2 && selectedTab !== 3 && selectedTab !== 4  && selectedTab !== 8 && selectedTab === item.id) && (
-              <div className={`absolute bottom-0 left-40px w-20px -mb-12px overflow-hidden inline-block `}>
+            {(selectedTab !== 2  && selectedTab !== 4  && selectedTab !== 8 && selectedTab === item.id) && (
+              <div className={`absolute bottom-0 left-46px w-20px -mb-12px overflow-hidden inline-block `}>
                 <div style={{
                   background:'#2b2b2a'
                 }} className="h-15px w-15px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>

@@ -71,8 +71,9 @@ const InboxTable = ({
 
                    <div className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} flex font-spoqa justify-center text-center`} style={{width:'160px'}}>{item.time}</div>
 
-                    <button className="w-72px flex items-center justify-center">
-                        <div className={`${item.isRead === true  ? "bg-gray-5c5c5c" : "bg-red-c65337" } w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center shadow-link pt-2px hover:filter hover:brightness-125 `}>
+                    <button className="w-72px flex items-center justify-center ">
+                        <div style={{boxShadow: '0px 1px 1px 0px rgba(0, 0, 0, 0.6)' }}
+                            className={`${item.isRead === true ? "bg-gray-5c5c5c" : "bg-red-c65337"} w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px hover:filter hover:brightness-125 `}>
                             삭제
                         </div>
                     </button>

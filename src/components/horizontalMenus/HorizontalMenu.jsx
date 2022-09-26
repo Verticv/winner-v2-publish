@@ -5,7 +5,8 @@ const HorizontalMenu = ({
     itemsArray, 
     setSelectedSubTab = null,
     showSub = true,
-    hasRows = false,
+  hasRows = false,
+      
 }) => {
 
     const history = useHistory();
@@ -64,7 +65,7 @@ const HorizontalMenu = ({
             </div>
           </div>
           </button>
-          {(showSub && selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4  && selectedTab !== 9 && selectedTab === item.id) && (
+          {(showSub && selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 5  && selectedTab !== 9 && selectedTab === item.id) && (
           <div className={`absolute bottom-0 left-40px w-20px -mb-12px overflow-hidden inline-block `}>
             <div style={{
               background:'#323231'

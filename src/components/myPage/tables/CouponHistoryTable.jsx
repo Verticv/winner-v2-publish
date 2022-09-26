@@ -23,7 +23,7 @@ const CouponHistoryTable = () => {
                     <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td className="w-140px text-center">eric123</td>
                     <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                    <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
+                    <td style={{color:"#e16eff"}} className="w-141px text-center">선물완료</td>
                     <td className="w-88px text-center font-robotoRegular">2021-06-29</td>
                     <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
@@ -32,7 +32,7 @@ const CouponHistoryTable = () => {
                     <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td className="w-140px text-center">eric123</td>
                     <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                    <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
+                    <td style={{color:"#e16eff"}} className="w-141px text-center">선물완료</td>
                     <td className="w-88px text-center font-robotoRegular">2021-06-29</td>
                     <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
@@ -41,7 +41,7 @@ const CouponHistoryTable = () => {
                     <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td className="w-140px text-center">eric123</td>
                     <td className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                    <td style={{color:"#92278f"}} className="w-141px text-center">선물완료</td>
+                    <td style={{color:"#e16eff"}} className="w-141px text-center">선물완료</td>
                     <td className="w-88px text-center font-robotoRegular">2021-06-29</td>
                     <td className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
