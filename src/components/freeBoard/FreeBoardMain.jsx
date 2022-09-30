@@ -406,7 +406,7 @@ const FreeBoardMain = () => {
                                 ? "text-yellow-d2b28f group-hover:text-yellow-ffdeb3 mr-9px" 
                                 : "group-hover:text-gray-fafafa mr-9px"
                                 }  mt-2px truncate text-left`}
-                            style={{maxWidth: '705px'}}
+                            style={{maxWidth: '680px'}}
                         >
                             {item.text}
                         </p>
@@ -441,7 +441,7 @@ const FreeBoardMain = () => {
                                     ? <img src={Rank4} alt="" />
                                     : <img src={Rank5} alt="" />
                                     }
-                                    <p style={{maxWidth: '100px'}}  className='mt-2px truncate'>{item.author}</p>
+                                    <p style={{maxWidth: '120px'}}  className='mt-2px truncate'>{item.author}</p>
                                 </div>
                             )
                             }

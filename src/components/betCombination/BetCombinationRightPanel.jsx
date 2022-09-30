@@ -55,7 +55,7 @@ const BetCombinationRightPanel = ({
                       className="rounded-4px  flex items-center justify-center hover:brightness-125 filter shadow-link"
                       onClick={() => setAddedCard([])}
                   >
-                      <div style={{width: "34px", height: "34px",background: "linear-gradient(to bottom, #7f5f3f, #a67c52)"}} className="rounded-4px flex items-center justify-center">
+                      <div style={{width: "34px", height: "34px",background: "linear-gradient(to bottom, #a67c52, #7f5f3f)"}} className="rounded-4px flex items-center justify-center">
                           <img src={TrashIcon} alt="" />
                       </div>
                   </button>
@@ -64,7 +64,7 @@ const BetCombinationRightPanel = ({
                       style={{width: "36px", height: "36px",background: "linear-gradient(to bottom, #e8b888, #4b3b09)"}} 
                       className="rounded-4px flex items-center justify-center hover:brightness-125 filter shadow-link"
                   >
-                      <div style={{width: "34px", height: "34px",background: "linear-gradient(to bottom, #7f5f3f, #a67c52)"}} className="rounded-4px flex items-center justify-center -mt-px">
+                      <div style={{width: "34px", height: "34px",background: "linear-gradient(to bottom, #a67c52, #7f5f3f)"}} className="rounded-4px flex items-center justify-center -mt-px">
                           <img src={isPanelFixed ? LockIconOn : LockIcon} alt="" />
                       </div>
                   </button>
@@ -72,7 +72,7 @@ const BetCombinationRightPanel = ({
                       style={{width: "36px", height: "36px",background: "linear-gradient(to bottom, #e8b888, #4b3b09)"}} 
                       className="rounded-4px flex items-center justify-center hover:brightness-125 filter shadow-link"
                   >
-                      <div style={{width: "34px", height: "34px",background: "linear-gradient(to bottom, #7f5f3f, #a67c52)"}} className="rounded-4px flex items-center justify-center">
+                      <div style={{width: "34px", height: "34px",background: "linear-gradient(to bottom, #a67c52, #7f5f3f)"}} className="rounded-4px flex items-center justify-center">
                           <img src={RefrshIcon} alt="" />
                       </div>
                   </button>

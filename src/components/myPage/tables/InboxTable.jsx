@@ -23,11 +23,12 @@ const InboxTable = ({
             <div 
                 key={item.id} 
                 className={`${
-                    // item.isRead === false
-                    // ? "bg-gray-e8eff6" :
+                    item.isRead === false
+                    ? "bg-gray-3d3934" :
                     item.id % 2 === 0 
                     ? "bg-dark-323232" 
                     : "bg-dark-2e2e2e"
+
               } font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-dark-252525 hover:font-spoqaBold last:border-b-0`}
 
             >
@@ -49,29 +50,29 @@ const InboxTable = ({
                         style={{width:'569px'}}
                         className={`${
                             item.isRead === true 
-                            ? "text-gray-c8c8c8 font-spoqaMedium" 
+                            ? "text-gray-929292 font-spoqaMedium" 
                             : "text-gray-c8c8c8 font-spoqaMedium"
                             } group flex items-center space-x-10px cursor-pointer`}
                         onClick={() => history.push(item.path)}
                     >
                         {
                             item.type === "안내" 
-                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px -mt-px  pt-px">안내</div> 
+                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px -mt-px  pt-px flex-shrink-0">안내</div> 
                             : item.type === "이벤트" 
-                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px -mt-px pt-px">이벤트</div> 
+                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px -mt-px pt-px flex-shrink-0">이벤트</div> 
                             : ''
                         }
-                        <p className="group-hover:text-gray-f1e9e9">{item.text}</p>
+                        <p className="group-hover:text-gray-f1e9e9 truncate" style={{maxWidth: item.type === "안내"||item.type === "이벤트"?"487px":"550px"}}>{item.text}</p>
                         {item.isRead === false && (
-                          <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px">
+                          <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px -mt-px flex-shrink-0">
                               N
                           </div>
                         )}
                     </div>
 
-                   <div className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} flex font-spoqa justify-center text-center`} style={{width:'160px'}}>{item.time}</div>
+                   <div className={`${item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"} flex font-spoqa justify-center text-center`} style={{width:'160px'}}>{item.time}</div>
 
-                    <button className="w-72px flex items-center justify-center ">
+                    <button className="w-72px flex items-center justify-center">
                         <div style={{boxShadow: '0px 1px 1px 0px rgba(0, 0, 0, 0.6)' }}
                             className={`${item.isRead === true ? "bg-gray-5c5c5c" : "bg-red-c65337"} w-49px h-29px flex justify-center rounded-4px text-white font-spoqaMedium items-center pt-2px hover:filter hover:brightness-125 `}>
                             삭제

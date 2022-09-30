@@ -21,8 +21,8 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
     const BetOptions = ({
         width = 208, 
         height = 83,
-        gradient1 = "#7a6c5e",
-        gradient2 = "#988a77",
+        gradient1 = "#988a77",
+        gradient2 = "#7a6c5e",
         borderGradient1 = '#cbc2b5',
         borderGradient2 = '#4b443d',
         titleBg = "linear-gradient(to bottom, #645745, #605342)",
@@ -74,7 +74,7 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                         </div>
                     </div>
 
-                    <div style={{height:"76px", width:"2px"}} className="flex flex-shrink-0 mt-px">
+                    <div style={{height:"77px", width:"2px"}} className="flex flex-shrink-0 mt-2px">
                         <div style={{backgroundColor: dividerColor}} className="h-full w-px"></div>
                         <div style={{backgroundColor: dividerColor2}} className="h-full w-px"></div>
                     </div>
@@ -677,8 +677,8 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             titleBg="linear-gradient(to bottom, #475449, #414d43)" 
                             borderGradient1='#a0bab4'
                             borderGradient2='#2b3838'
-                            gradient1="#50655e" 
-                            gradient2="#687f78" 
+                            gradient1="#687f78" 
+                            gradient2="#50655e" 
                             dividerColor="#3e4a41"
                             dividerColor2= "#a0aca9"
                         />
@@ -687,8 +687,8 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             titleBg="linear-gradient(to bottom, #475449, #414d43)" 
                             borderGradient1='#a0bab4'
                             borderGradient2='#2b3838'
-                            gradient1="#50655e" 
-                            gradient2="#687f78"  
+                            gradient1="#687f78" 
+                            gradient2="#50655e"  
                             width={409}
                             subText2="언오버"
                             dividerColor="#3e4a41"
@@ -701,8 +701,8 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             titleBg="linear-gradient(to bottom, #475449, #414d43)" 
                             borderGradient1='#a0bab4'
                             borderGradient2='#2b3838'
-                            gradient1="#50655e" 
-                            gradient2="#687f78"   
+                            gradient1="#687f78" 
+                            gradient2="#50655e"   
                             subText="언오버" 
                             dividerColor="#3e4a41"
                             dividerColor2= "#a0aca9"
@@ -712,8 +712,8 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                             titleBg="linear-gradient(to bottom, #475449, #414d43)" 
                             borderGradient1='#a0bab4'
                             borderGradient2='#2b3838'
-                            gradient1="#50655e" 
-                            gradient2="#687f78"  
+                            gradient1="#687f78" 
+                            gradient2="#50655e"  
                             width={409} 
                             subText="구간"
                             dividerColor="#3e4a41"
@@ -725,8 +725,8 @@ const PowerballGame = ({state, setChosen, setSelectedOption}) => {
                         titleBg="linear-gradient(to bottom, #475449, #414d43)" 
                         borderGradient1='#a0bab4'
                         borderGradient2='#2b3838'
-                        gradient1="#50655e" 
-                        gradient2="#687f78"  
+                        gradient1="#687f78" 
+                        gradient2="#50655e"  
                         width={619} 
                         subText2="소중대"
                         dividerColor="#3e4a41"

@@ -36,8 +36,8 @@ const LiveCasinoBetHistoryTable = ({array, checkedState, setCheckedState, isPopu
                 </div>
                  <div style={{width: "72px"}} className="font-robotoRegular text-center">{item.number}</div>
                <div style={{width: "185px"}} className="font-robotoRegular text-center">{item.time}</div>
-                 <div style={{width: "140px"}} className="text-center">{item.type}</div>
-                <div style={{width: "118px"}} className="text-center">{item.name}</div>
+                 <div style={{width: "140px"}} className="text-center truncate px-10px">{item.type}</div>
+                <div style={{width: "118px"}} className="text-center truncate">{item.name}</div>
                 <div style={{width: "135px"}} className="font-robotoRegular text-right">{item.amount}</div>
                 <div style={{width: "135px", color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
                 <div style={{width: "51px", color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>

@@ -75,13 +75,13 @@ const FreeBoardView2 = () => {
                 <div className="bg-gray-fafafa1 h-55px border-b border-gray-252525 flex items-center px-19px space-x-9px mt-px">
                     
                     <div className="font-spoqaMedium text-14px tracking-tight text-gray-929292 flex items-center"><img className="mb-2px mr-3px" src={Rank1} alt="" />하이도1207</div>
-                    <div className="w-px h-10px bg-gray-929292" />
+                    <div className="w-px h-10px" style={{background: '#4c4c4c'}}/>
 
                     <div className="font-spoqaMedium text-14px tracking-tight text-gray-929292">2021.06.28 15:49</div>
                     
-                    <div className="w-px h-10px bg-gray-929292 ml-8px" />
+                    <div className="w-px h-10px ml-8px" style={{background: '#4c4c4c'}} />
                     <div className="font-spoqaMedium text-14px tracking-tight text-gray-929292">댓글</div>
-                    <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d pr-px">2</div>
+                    <div className="px-5px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d -mt-px">2</div>
                 </div>
 
                 <div className="py-23px border-b border-gray-252525 pl-27px pr-32px space-y-28px"> 
@@ -124,13 +124,13 @@ const FreeBoardView2 = () => {
 
                     <textarea 
                         style={{width: "1099px", resize: "none"}}
-                        className="outline-none w-full px-19px py-17px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 rounded-4px"
+                        className="outline-none w-full px-19px py-17px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 text-gray-c8c8c8 bg-gray-252525 rounded-4px"
                         placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                     />
 
-                    <button className="rounded-2px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
+                    <button className="rounded-4px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
                       style={{ background: 'linear-gradient(to top, #223348, #5f80a4)'}}>
-                      <div className="flex items-center justify-center h-91px w-118px  rounded-2px cursor-pointer"
+                      <div className="flex items-center justify-center h-91px w-118px  rounded-4px cursor-pointer"
                         style={{ width: "118px",background: 'linear-gradient(to bottom, #39618e, #27405d)'}}>
                             <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">댓글작성</span>
                         </div>
@@ -216,12 +216,12 @@ const FreeBoardView2 = () => {
                   <div style={{ height: "93px" }}  className="rounded-4px bg-gray-252525 relative flex w-full">
                       <textarea 
                           style={{width: "1099px", resize: "none"}}
-                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525"
+                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 text-gray-c8c8c8"
                           placeholder="두개의 이벤트 모두 참여하였습니다."
                       />
-                    <button className="rounded-2px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
+                    <button className="rounded-4px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
                       style={{ background: 'linear-gradient(to top, #223348, #5f80a4)'}}>
-                      <div className="flex items-center justify-center h-91px w-118px  rounded-2px cursor-pointer"
+                      <div className="flex items-center justify-center h-91px w-118px  rounded-4px cursor-pointer"
                         style={{ width: "118px",background: 'linear-gradient(to bottom, #39618e, #27405d)'}}>
                         <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">댓글작성</span>
                       </div>
@@ -257,13 +257,13 @@ const FreeBoardView2 = () => {
                   <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
                       <textarea 
                           style={{width: "1099px", resize: "none"}}
-                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525"
+                          className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 text-gray-c8c8c8"
                           placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                       />
 
-                      <button className="rounded-2px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
+                      <button className="rounded-4px right-0 absolute flex items-center justify-center h-93px w-120px p-px hover:filter hover:brightness-125 shadow-link"
                       style={{ background: 'linear-gradient(to top, #223348, #5f80a4)'}}>
-                      <div className="flex items-center justify-center h-91px w-118px  rounded-2px cursor-pointer"
+                      <div className="flex items-center justify-center h-91px w-118px  rounded-4px cursor-pointer"
                         style={{ width: "118px",background: 'linear-gradient(to bottom, #39618e, #27405d)'}}>
                         <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">답글작성</span>
                           </div>

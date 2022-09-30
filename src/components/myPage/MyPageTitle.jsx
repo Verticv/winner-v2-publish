@@ -11,13 +11,13 @@ const MyPageTitle = ({
     isTransaction = false,
 }) => {
     return (
-        <div className="flex h-21px w-full justify-between">
+        <div className="flex h-21px w-full justify-between mt-px">
             <div className="flex h-21px w-full">
                 <img className="z-10 object-none -ml-px" src={TitleIcon} alt="" />
                 <label className="font-spoqaMedium text-22px ml-7px -mt-5px" style={{color:'#89806f'}}>{title}</label>
                 {couponCount && (
                     <>
-                        <div className="ml-20px h-21px flex items-center space-x-20px">
+                        <div className="ml-20px h-21px flex items-center space-x-20px mt-px">
                             <div style={{backgroundColor:"#4c4c4c"}} className="h-12px w-px bg-gray-r8c8c8c mb-px" />
                             <div className="font-spoqaMedium tracking-tight text-gray-c8c8c8 space-x-2px">
                                 <span>{couponText}</span>
@@ -28,16 +28,16 @@ const MyPageTitle = ({
                     </>
                 )}
                 {pointsFor && (
-                    <div className="ml-20px h-21px flex items-center space-x-20px">
+                    <div className="ml-20px h-21px flex items-center space-x-20px mt-px">
                         <div style={{backgroundColor:"#4c4c4c"}} className="h-12px w-px bg-gray-r8c8c8c mb-px" />
-                        <div className="font-spoqaMedium tracking-tight text-gray-r8c8c8c space-x-2px">
-                            <span className="font-spoqaBold text-golden-aa9264">{pointsFor}</span>
+                        <div className="font-spoqaMedium tracking-tight text-gray-r8c8c8c space-x-2px flex">
+                            <span className="font-spoqaBold text-golden-aa9264 truncate" style={{maxWidth:'645px'}}>{pointsFor}</span>
                             <span className="님의 포인트전환 정보입니다.">{isTransaction ? "님의 포인트전환 정보입니다." : "님의 포인트적립 정보입니다."}</span>
                         </div>
                     </div>
                 )}
                 {inboxCount && (
-                    <div className="ml-18px h-21px flex items-center space-x-18px mt-3px">
+                    <div className="ml-18px h-21px flex items-center space-x-18px mt-px">
                         <div style={{backgroundColor:"#4c4c4c"}} className="h-12px w-px mb-px" />
                         <div className="font-spoqaMedium tracking-tight text-gray-c8c8c8">
                             <span className="">전체 받은 쪽지:</span>
@@ -48,7 +48,7 @@ const MyPageTitle = ({
                 )}
             </div>
             {inboxCount && (
-                <div className="ml-20px h-21px flex items-center space-x-20px flex-shrink-0 mt-3px">
+                <div className="ml-20px h-21px flex items-center space-x-20px flex-shrink-0 mt-px">
                     <div className="font-spoqaMedium tracking-tight text-gray-c8c8c8">
                         <span className="">쪽지 보관은 최장</span>
                         <span className="font-spoqaBold text-blue-4c98ff ml-3px">14</span>

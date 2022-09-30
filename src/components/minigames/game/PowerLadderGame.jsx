@@ -21,7 +21,7 @@ const PowerLadderGame = ({setSelectedOption}) => {
     )
 
     const BetOptions = ({
-        width = 309, 
+        width = 310, 
         height = 168,
         gradient1 = "#698195",
         gradient2 = "#445463",
@@ -224,13 +224,13 @@ const PowerLadderGame = ({setSelectedOption}) => {
         >
             <div className="w-full flex flex-col">
                 <PanelTitle title="파워사다리" />
-                <div className="flex justify-center space-x-2px">
+                <div className="flex justify-between space-x-2px">
                     <div className="flex space-x-2px">
-                        <BetOptions width={308} titleNumber={1} subText="홀짝" />
+                        <BetOptions width={309} titleNumber={1} subText="홀짝" />
                         <BetOptions titleNumber={2} subText="출발점"/>
                     </div>
                     <div className="flex space-x-2px">
-                        <BetOptions width={308} titleNumber={3} subText="줄갯수" />
+                        <BetOptions width={309} titleNumber={3} subText="줄갯수" />
                         <BetOptions titleNumber={4} subText="좌우" subText2="출발" subText3="3/4줄" />
                     </div>
                 </div>

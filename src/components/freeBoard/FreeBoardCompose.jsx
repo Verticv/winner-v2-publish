@@ -11,8 +11,8 @@ const FreeBoardCompose = () => {
     const [attachedArray, setAttachedArray] = useState([]);
     const AttachButton = (
         <button 
-            style={{width: "115px", height: "35px", backgroundColor: "#826140"}}
-            className="flex items-center justify-center rounded-4px text-golden-highLight text-15px tracking-tight font-spoqaMedium pt-px shadow-link"
+            style={{width: "115px", height: "35px", backgroundColor: "#826140",boxShadow: '0px 1px 1px 0px rgba(0, 0, 0, 0.6)'}}
+            className="flex items-center justify-center rounded-4px text-golden-highLight text-15px tracking-tight font-spoqaMedium pt-px"
         >
             베팅내역첨부
         </button>

@@ -15,7 +15,7 @@ const MoneyExchange = () => {
 
     const Title = ({text}) => (
         <div style={{width: "201px"}} className="bg-gray-272726 space-y-2 flex-shrink-0 h-44px pl-10px flex items-center rounded-4px">
-            <div className=" text-gray-ccc2b6 font-spoqaMedium text-16px mt-3px">{text}</div>
+            <div className=" text-gray-ccc2b6 font-spoqaMedium text-16px mt-2px">{text}</div>
         </div>
     )
     
@@ -65,7 +65,7 @@ const MoneyExchange = () => {
                             <form autoComplete="off">
                                 <input 
                                     style={{ background: '#191817',  boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', }}                      
-                                    className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-42px mt-px"
+                                    className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-43px "
                                     placeholder="직접 입력시 숫자만 입력해 주세요."
                                     value={inputValue !==null ? nf.format(inputValue) : ""}
                                     onChange={e => setInputValue(e.target.value.replace(/,/g, ''))}
@@ -77,7 +77,7 @@ const MoneyExchange = () => {
                                         }
                                     }}
                                     /> 
-                                    <div style={{backgroundColor: inputClicked === 0 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
+                                    <div style={{backgroundColor: inputClicked === 0 ? "#a67c52" : "#191817"}} className={`w-full h-px`} />
                                 </form>
                                 
                             {/* <div className={`${inputClicked === 0 ? "bg-blue-r1ca7ec h-2px" : " h-px bg-gray-bebebe"} w-full`}></div> */}
@@ -172,7 +172,7 @@ const MoneyExchange = () => {
                         <div className=" w-full  h-44px overflow-hidden rounded-4px">
                             <input 
                                 style={{ background: '#191817',  boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', }}                      
-                                    className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-42px mt-px"
+                                    className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-43px"
                                 placeholder="비밀번호를 입력하세요."
                                 value={passwordValue}
                                 onChange={e => setPasswordValue(e.target.value)}
@@ -180,7 +180,7 @@ const MoneyExchange = () => {
                                 onBlur={() => setInputClicked(null)}
                                 type="password"
                                 />
-                                <div style={{backgroundColor: inputClicked === 1 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
+                                <div style={{backgroundColor: inputClicked === 1 ? "#a67c52" : "#191817"}} className={`w-full h-px`} />
                             {/* <div className={`${inputClicked === 1 ? "bg-blue-r1ca7ec h-2px" : " h-px bg-gray-bebebe"} w-full`}></div> */}
                         </div>
                     </div>

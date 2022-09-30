@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Reflect from '../../images/minigames/Reflect.png'
 
 const HorizontalMenu4 = ({
     itemsArray, 
@@ -32,7 +31,6 @@ const HorizontalMenu4 = ({
                   }}
                   className="w-full  rounded-t-4px flex items-start justify-center pt-9px"
                   >
-                    {selectedTab === item.id && <img className="absolute top-0 left-0" src={Reflect} alt="" />}
                     <div className="flex items-center">
                         <div 
                             style={{color: selectedTab === item.id ? "black" : "#c8c8c8"}}

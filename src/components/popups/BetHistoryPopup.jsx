@@ -228,11 +228,11 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
 
                   
 
-                  <div className={`w-full pl-24px -mt-10px ${selectedTab === 2 || selectedTab === 7?'pr-21px':'pr-30px'}`}>
+                  <div className={`w-full pl-24px -mt-10px ${selectedTab === 2 || selectedTab === 1 || selectedTab === 7?'pr-21px':'pr-30px'}`}>
                       <div 
                           style={{
                               height: 
-                              (selectedTab === 2  || selectedTab === 7)
+                              (selectedTab === 2  || selectedTab === 1 || selectedTab === 7)
                               ? "665px" 
                               : (selectedTab === 0 || selectedTab === 4 || selectedTab === 5 || selectedTab === 8 || selectedTab === 3)
                               ? "565px" 

@@ -37,37 +37,36 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
     function BetCard({ items }) {
         return items.map(item => (
             <div
-               style={{ height: "87px", borderRadius: "8px",  background: "linear-gradient(to top, #21211f , #7b746d )" }}
+               style={{  borderRadius: "8px",  background: "linear-gradient(to top, #21211f , #7b746d )" }}
                 className="w-full p-px"
                 key={item.id}
             >
                 <div
                 style={{
-                      height: "85px",
                         borderRadius:"7px", 
                         background: "linear-gradient(to left, #2e2e2e , #4b4b49 )" 
                     }}
-                    className="relative w-full pt-10px"
+                    className="relative w-full py-9px"
                 >
                     <p 
-                        style={{color: item.value === "right" ? "#e65454" : "#ffffff"}} 
-                        className="text-14px font-spoqaBold tracking-tight text-white h-14px flex items-center  ml-9px"
+                        style={{width:"263px", color: item.value === "right" ? "#e65454" : "#ffffff"}} 
+                        className="text-14px font-spoqaBold tracking-tight text-white  flex items-center ml-9px leading-none"
                     >
                         {item.value === "right" ? "SV Kuchl" : "FK Haugesund"}
                     </p>
                     <p 
-                        style={{color: item.value === "right" ? "#ffffff" : "#e65454"}} 
-                        className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-8px ml-8px"
+                        style={{width:"263px", color: item.value === "right" ? "#ffffff" : "#e65454"}} 
+                        className="text-14px font-spoqaBold tracking-tight  flex items-center mt-8px ml-8px leading-none"
                     >
                         {item.value === "right" ? "FC Blau Weiss Linz" : "스트룀스고세 IF"}
                     </p>
-                    <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 h-14px flex items-center mt-13px ml-8px">축구 - 승무패 (게임)</p>
-                    <img src={CancelIconGray} alt="" name={item.id} className="absolute top-8px right-8px cursor-pointer hover:opacity-75" onClick={handleRemoveItem} />
-                    <div className="flex absolute bottom-9px right-10px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-c8c8c8">
+                    <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8  flex items-center mt-13px ml-8px leading-none" style={{width: "224px"}}>축구 - 승무패 (게임)</p>
+                    <img src={CancelIconGray} alt="" name={item.id} className="absolute top-10px right-8px cursor-pointer hover:opacity-75" onClick={handleRemoveItem} />
+                    <div className="flex absolute bottom-11px right-10px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-c8c8c8">
                         <p>{item.value === "right" ? "승 @" : "패 @"}</p> 
                         <p 
                             style={{color: item.value === "right" ? "#e65454" : "#4c98ff"}}
-                            className="ml-2px"
+                            className="ml-2px leading-none"
                         >
                             {item.value === "right" ? "2.26" : "3.47"}
                         </p>

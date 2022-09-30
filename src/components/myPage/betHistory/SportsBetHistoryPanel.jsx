@@ -80,7 +80,7 @@ const SportsBetHistoryPanel = ({
                 : "bg-dark-252525 text-gray-c8c8c8"} 
                 flex items-center justify-between h-34px rounded-3px  cursor-pointer px-10px pt-px`
               }>
-                <span className={`${isAttached? 'w-310px': 'w-223px'} truncate text-left font-spoqaMedium tracking-tight text-14px text-shadow overflow-ellipsis`}>{team1}</span>
+                <span className={`${isAttached? 'w-290px': 'w-223px'} truncate text-left font-spoqaMedium tracking-tight text-14px text-shadow overflow-ellipsis`}>{team1}</span>
                 <div className="flex items-center space-x-5px">
                     {hasUp && <img className="object-none" src={UpIcon} alt="" /> }
                     <span className="font-roboto tracking-tight text-14px text-shadow">{stat1}</span>
@@ -122,7 +122,7 @@ const SportsBetHistoryPanel = ({
                       <span className="font-roboto tracking-tight text-14px">{stat3}</span>
                         {hasDown && <img className="object-none" src={DownIcon} alt="" /> }
                     </div>
-                    <span className={`${isAttached? 'w-310px': 'w-223px'} truncate w-223px font-spoqaMedium tracking-tight text-14px text-right text-shadow overflow-ellipsis`}>{team2}</span>
+                    <span className={`${isAttached? 'w-290px': 'w-223px'} truncate w-223px font-spoqaMedium tracking-tight text-14px text-right text-shadow overflow-ellipsis`}>{team2}</span>
                 </div>
             </button>
         </div>

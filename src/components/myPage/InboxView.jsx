@@ -14,7 +14,7 @@ const InboxView = () => {
     const history = useHistory();
 
     const NewLabel = (
-        <div className="mt-5px w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px pl-px flex-shrink-0">
+        <div className="mt-2px w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px pl-px flex-shrink-0">
             N
         </div>
         // <div style={{paddingTop:"1px", paddingLeft:"1px"}} className="w-17px h-17px rounded-full bg-red-ff1237 text-white font-roboto text-12px flex items-center justify-center">
@@ -32,17 +32,15 @@ const InboxView = () => {
                 {/* TITLE */}
                     <div className="py-15px w-full  flex items-start px-19px space-x-10px border-b border-gray-252525" >
                         <div className="px-12px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px font-spoqaMedium flex-shrink-0 mt-px" style={{ maxWidth: '90px' }}>안내</div>
-                        
-                            <h1 className="mt-3px font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8 ">
-                                {TitleText}
-                            </h1>
-                            {NewLabel}
+                        <div  className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8 ">
+                            <h1 className='align-top mt-3px'>{TitleText} <span className='inline-block align-top ml-10px'>{NewLabel}</span></h1> 
+                        </div >
                     </div>
                     {/* SENDER */}
                     <div className="h-56px w-full  flex px-19px space-x-10px border-b border-gray-252525 text-gray-929292">
                         <img className="h-17px w-72px object-contain mt-19px" src={WinnerLogo} alt=""/>
                         <div className="h-11px w-px mt-24px" style={{background:'#4c4c4c'}}/>
-                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-929292 h-12px flex items-center mt-24px flex-shrink-0">
+                        <div className="font-spoqaMedium text-14px tracking-tight text-gray-929292 h-12px flex items-center mt-23px flex-shrink-0">
                             {PostedTime}
                         </div>
                     </div>

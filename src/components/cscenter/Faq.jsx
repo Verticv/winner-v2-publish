@@ -97,7 +97,7 @@ const Faq = () => {
             {openedCell === cellId && (
                 <div 
                     style={{ zIndex: 1, backgroundColor: "#252525" }} 
-                    className="flex h-full items-start justify-start w-full rounded-4px -mt-64px z-0 mb-14px border border-black pb-30px"
+                    className="flex h-full items-start justify-start w-full rounded-4px -mt-64px z-0 mb-14px border border-black pb-30px pr-42px"
                 >
                     <img 
                         style={{marginTop: "68px"}} 
@@ -107,7 +107,7 @@ const Faq = () => {
                     />
                     <div className="w-full flex flex-col">
                         <div style={{marginTop: "82px",color:'#c1c1c1'}} className=" ml-15px  flex items-center text-16px font-spoqaMedium tracking-tight ">
-                            <p style={{color: "#4a90f0"}} className="mr-3px" >
+                            <p style={{color: "#4a90f0"}} className="self-start mr-3px" >
                                 No.1
                             </p> 
                             그 이상.! 최고를 넘어선 『 Winner 』입니다.

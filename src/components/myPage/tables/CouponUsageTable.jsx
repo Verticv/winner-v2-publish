@@ -111,9 +111,9 @@ const CouponUsageTable = () => {
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 last:border-b-0`}
             >
-                    <td className="w-313px text-center">{item.name}</td>
+                    <td className="w-313px text-center"><div className='w-313px truncate px-5px'>{item.name}</div></td>
                     <td className="w-172px text-right text-red-e9441d pr-20px font-robotoRegular">{item.amount}</td>
-                    <td className="w-111px text-center">{item.username}</td>
+                    <td className="w-111px text-center"><div className='w-111px truncate px-5px'>{item.username}</div></td>
                     <td className="w-108px text-center  text-red-e65454">{item.status}</td>
                     <td className="w-122px text-center font-robotoRegular">{item.date}</td>
                     <td className="w-111px text-center font-robotoRegular">{item.expireDate}</td>

@@ -12,12 +12,12 @@ const BetCombinationRightPanelHistory = () => {
         winStatus = "lose"
     }) => (
         <div 
-            style={{width:"301px", height:"149px", borderRadius:"6px", borderColor:'#7b746d'}}
-            className="flex flex-col border border-gray-7b746d overflow-hidden"
+            style={{width:"301px", height:"149px", borderRadius:"6px", background: "linear-gradient(to top, #21211f, #7b746d)"}}
+            className="flex flex-col overflow-hidden p-px"
         >
             <div 
                 style={{height:"36px", backgroundColor: "#252525"}}
-                className="flex flex-shrink-0 items-center pl-7px font-spoqaMedium text-14px h-14px  text-gray-ccc2b6 tracking-tight"
+                className="flex flex-shrink-0 items-center pl-7px font-spoqaMedium text-14px h-14px  text-gray-ccc2b6 tracking-tight rounded-t-6px"
             >
                 {title}
             </div>
@@ -27,7 +27,7 @@ const BetCombinationRightPanelHistory = () => {
                     background: "linear-gradient(to right, #4b4b49, #2e2e2e)",
                     height: "111px"
                 }}
-                className="relative w-full h-full pl-9px"
+                className="relative w-full h-full pl-9px rounded-b-6px"
             >
                 <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 h-13px flex items-center mt-15px">
                     {time}

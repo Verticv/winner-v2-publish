@@ -104,9 +104,9 @@ const CouponRequestTable = () => {
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}
             >
-                <td className="w-292px text-center">{item.name}</td>
+                <td className="w-360px text-center"><div className='w-360px truncate px-5px'>{item.name}</div></td>
                 <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-20px">{item.amount}</td>
-                <td className="w-140px text-center">{item.username}</td>
+                <td className="w-140px text-center"><div className='w-140px truncate px-10px'>{item.username}</div></td>
                 <td 
                     style={{
                         color: item.state === "사용가능" 

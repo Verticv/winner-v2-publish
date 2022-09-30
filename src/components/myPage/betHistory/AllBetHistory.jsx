@@ -77,7 +77,7 @@ const AllBetHistory = ({ isPopup = false}) => {
                               }}
                                 className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                             >
-                                <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">{isAllSelected ? "선택해제" : "전체선택"}</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-2px text-shadow-5">{isAllSelected ? "선택해제" : "전체선택"}</span>
                             </div>
                         </button>
                         <button 
@@ -91,7 +91,7 @@ const AllBetHistory = ({ isPopup = false}) => {
                                 }}
                                 className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                             >
-                                <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 pt-px text-shadow-5">선택삭제</span>
+                                <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 pt-2px text-shadow-5">선택삭제</span>
                             </div>
                         </button>
                     </div>

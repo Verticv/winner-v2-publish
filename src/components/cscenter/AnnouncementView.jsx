@@ -33,15 +33,18 @@ const AnnouncementView = () => {
                 {/* TITLE */}
                 <div className="py-15px w-full flex items-start px-19px space-x-10px border-b border-gray-252525">
                     <p className="text-14px font-spoqaMedium tracking-tight flex flex-shrink-0" style={{color:'#4a90f0'}}>스포츠북</p>
-                    <h1 className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">
+                    {/* <h1 className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">
                         {TitleText}
                     </h1>
-                    {NewLabel}
+                        {NewLabel} */}
+                    <div  className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8 ">
+                        <h1 className='align-top -mt-px'>{TitleText} <span className='inline-block align-top mt-px ml-10px'>{NewLabel}</span></h1> 
+                    </div >
                 </div>
                 {/* SENDER */}
                 <div className="h-56px w-full flex px-19px space-x-10px border-b border-gray-252525 items-center">
                     <img className="h-17px w-72px object-contain mb-4px" src={WinnerLogo} alt=""/>
-                    <div className="w-px bg-gray-252525 h-11px" />
+                    <div className="w-px h-11px" style={{background: '#4c4c4c'}} />
                     <div className="text-14px font-spoqaMedium tracking-tight h-12px  flex items-center flex-shrink-0 text-gray-929292">2021.06.29</div>
                 </div>
                 <div className="w-full bg-gray-323232 flex flex-col px-19px border-b border-gray-252525 py-18px">

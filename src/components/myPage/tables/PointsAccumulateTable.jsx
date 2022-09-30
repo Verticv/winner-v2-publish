@@ -21,8 +21,8 @@ const PointsAccumulateTable = () => {
             <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
                     <td className="w-152px text-center font-robotoRegular">2021-06-30</td>
-                    <td className="w-133px text-center">Rolling Bonus</td>
-                    <td className="w-129px text-center">louie3</td>
+                    <td className="w-133px text-center"><div className='w-133px truncate'>Rolling Bonus</div></td>
+                    <td className="w-129px text-center"><div className='w-129px truncate'>louie3</div></td>
                     <td className="w-136px text-center">스포츠</td>
                     <td className="w-141px text-right pr-14px font-robotoRegular">5,000</td>
                     <td className="w-116px text-center font-robotoRegular">1.00%</td>
@@ -31,8 +31,8 @@ const PointsAccumulateTable = () => {
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-152px text-center font-robotoRegular">2021-06-30</td>
-                    <td className="w-133px text-center">Rolling Bonus</td>
-                    <td className="w-129px text-center">louie3</td>
+                    <td className="w-133px text-center"><div className='w-133px truncate'>Rolling Bonus</div></td>
+                    <td className="w-129px text-center"><div className='w-129px truncate'>louie3</div></td>
                     <td className="w-136px text-center">스포츠</td>
                     <td className="w-141px text-right pr-14px font-robotoRegular">5,000</td>
                     <td className="w-116px text-center font-robotoRegular">1.00%</td>
@@ -41,8 +41,8 @@ const PointsAccumulateTable = () => {
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px bg-dark-323232">
                     <td className="w-152px text-center font-robotoRegular">2021-06-30</td>
-                    <td className="w-133px text-center">Rolling Bonus</td>
-                    <td className="w-129px text-center">louie3</td>
+                    <td className="w-133px text-center"><div className='w-133px truncate'>Rolling Bonus</div></td>
+                    <td className="w-129px text-center"><div className='w-129px truncate'>louie3</div></td>
                     <td className="w-136px text-center">스포츠</td>
                     <td className="w-141px text-right pr-14px font-robotoRegular">5,000</td>
                     <td className="w-116px text-center font-robotoRegular">1.00%</td>
