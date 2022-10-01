@@ -12,7 +12,7 @@ const BetCombinationRightPanelHistory = () => {
         winStatus = "lose"
     }) => (
         <div 
-            style={{width:"301px", height:"149px", borderRadius:"6px", background: "linear-gradient(to top, #21211f, #7b746d)"}}
+            style={{width:"301px", borderRadius:"6px", background: "linear-gradient(to top, #21211f, #7b746d)"}}
             className="flex flex-col overflow-hidden p-px"
         >
             <div 
@@ -25,27 +25,26 @@ const BetCombinationRightPanelHistory = () => {
             <div 
                 style={{
                     background: "linear-gradient(to right, #4b4b49, #2e2e2e)",
-                    height: "111px"
                 }}
-                className="relative w-full h-full pl-9px rounded-b-6px"
+                className="relative w-full px-9px rounded-b-6px pb-13px"
             >
-                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 h-13px flex items-center mt-15px">
+                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 h-13px flex items-center mt-14px">
                     {time}
                 </p>
                 <p 
-                    className="text-14px font-spoqaBold tracking-tight text-gray-r454545 h-14px flex items-center mt-8px"
+                    className="text-14px font-spoqaBold tracking-tight text-gray-r454545 flex items-center mt-8px leading-none break-all"
                     style={{color: side === "left" ? "#ffffff" : "#e65454"}}
                 >
                     {team1}
                 </p>
                 <p 
-                    className="text-14px font-spoqaBold tracking-tight h-14px flex items-center mt-7px "
+                    className="text-14px font-spoqaBold tracking-tight  flex items-center mt-8px leading-none break-all"
                     style={{color: side === "left" ? "#e65454" : "#ffffff"}}
                 >
                     {team2}
                 </p>
-                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 h-14px flex items-center mt-14px">{type}</p>
-                <div className="flex absolute bottom-12px right-11px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-c8c8c8">
+                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 flex items-center mt-14px leading-none break-all"  style={{width: "224px"}}>{type}</p>
+                <div className="flex absolute bottom-10px right-11px text-13px tracking-tight font-spoqaMedium items-center text-gray-c8c8c8">
                     <p>{winStatus === "win" ? "승 @" : "패 @"}</p> 
                     <p 
                         className="ml-2px"

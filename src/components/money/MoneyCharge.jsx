@@ -105,7 +105,7 @@ const MoneyCharge = () => {
                         <div className="w-full h-44px overflow-hidden rounded-4px" style={{ background: '#191817' }}>
                               <input 
                                 style={{ background: '#191817',  boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', }}                      
-                                className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-42px mt-px"
+                                className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-43px"
                                 placeholder="직접 입력시 숫자만 입력해 주세요."
                                 value={inputValue !==null ? nf.format(inputValue) : ""}
                                 onChange={e => setInputValue(e.target.value.replace(/,/g, ''))}

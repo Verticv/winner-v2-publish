@@ -18,7 +18,7 @@ const AnnouncementView = () => {
     const history = useHistory();
 
     const NewLabel = (
-        <div className="mt-px w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px pl-px flex-shrink-0">
+        <div className="mt-px w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px flex-shrink-0">
             N
         </div>
     )
@@ -91,10 +91,10 @@ const AnnouncementView = () => {
             </div>
 
             <div className="mt-20px mb-60px flex items-start justify-between">
-                <button className="flex items-center justify-center h-36px w-90px rounded-2px p-px shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
+                <button className="flex items-center justify-center h-36px w-90px rounded-4px p-px shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
                     <div 
                          style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
-                        className="flex items-center justify-center h-34px w-88px bg-black rounded-2pxx cursor-pointer"
+                        className="flex items-center justify-center h-34px w-88px bg-black rounded-4pxx cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">이전</span>
                     </div>
@@ -102,21 +102,21 @@ const AnnouncementView = () => {
 
                 <button 
                     style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                   className="flex items-center justify-center h-52px w-192px rounded-2px p-px shadow-link hover:filter hover:brightness-125"
+                   className="flex items-center justify-center h-52px w-192px rounded-4px p-px shadow-link hover:filter hover:brightness-125"
                     onClick={() => history.push('/cscenter/announcement')}
                 >
                     <div
                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
-                        className="flex items-center justify-center h-50px w-190px  rounded-2px cursor-pointer"
+                        className="flex items-center justify-center h-50px w-190px  rounded-4px cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-px text-shadow-5">목록보기</span>
                     </div>
                 </button>
 
-                <button className="flex items-center justify-center h-36px w-90px p-px rounded-2px  shadow-link hover:filter hover:brightness-125">
+                <button className="flex items-center justify-center h-36px w-90px p-px rounded-4px  shadow-link hover:filter hover:brightness-125">
                     <div 
                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
-                        className="flex items-center justify-center h-34px w-88px bg-black rounded-2px  cursor-pointer"
+                        className="flex items-center justify-center h-34px w-88px bg-black rounded-4px  cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">다음</span>
                     </div>

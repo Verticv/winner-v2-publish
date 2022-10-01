@@ -300,9 +300,7 @@ const BetCombinationPanel = ({
     const [selectedCarrier, setSelectedCarrier] = useState("국가 선택")
     const [isHover1, setHover1] = useState(null)
     const [isOpen, setOpen] = useState(new Array(20).fill(false))
-    const [isButtonClicked, setButtonClicked] = useState("")
-
-
+    const [isButtonOn, setButtonOn] = useState([])
     const dropDownCellClass = "flex w-full h-42px py-2px bg-gray-1f1f1e items-center  hover:bg-brown-r3d3934 px-14px space-x-8px"
 
     const gameResultButton = (
@@ -327,7 +325,13 @@ const BetCombinationPanel = ({
         );
         setCheckedState(updatedCheckedState);
     }; 
-
+    
+    const handleOnClick = (position) => {
+        const updatedButtonClicked = isButtonOn
+        const index = isButtonOn.indexOf(position);
+        index > -1 ? updatedButtonClicked.splice(index, 1):updatedButtonClicked.push(position)
+        setButtonOn(updatedButtonClicked);
+    }
     function SearchDropdownCell({ items }) {
         return items.map(item => (
             <div className={dropDownCellClass} onClick={() => {
@@ -358,7 +362,7 @@ const BetCombinationPanel = ({
                         background: "linear-gradient(to bottom, #e8b888, #4b3b09)",
                         height:"35px"
                     }} 
-                    className="relative flex items-center justify-center rounded-4px hover:opacity-75"
+                    className="relative flex items-center justify-center rounded-4px hover:filter hover:brightness-125 shadow-link"
                     onClick={() => setDropdownOpen(false)}
                 >
                     <div 
@@ -381,7 +385,7 @@ const BetCombinationPanel = ({
                         background: "linear-gradient(to bottom, #e88895, #4b0923)",
                         height:"35px"
                     }} 
-                    className="relative flex items-center justify-center rounded-4px hover:opacity-75"
+                    className="relative flex items-center justify-center rounded-4px hover:filter hover:brightness-125 shadow-link"
                     onClick={() => setCheckedState(filterArray.fill(false))}
                 >
                     <div 
@@ -519,7 +523,9 @@ const BetCombinationPanel = ({
         stat2 = "2.96",
         stat3 = "3.47",
         stat1Color = "none",
-        stat2Color = "none"
+        stat2Color = "none",
+        isSubArray = false,
+        items_id= null
     }) => {
         const [isHover3, setHover3] = useState("")
 
@@ -533,7 +539,7 @@ const BetCombinationPanel = ({
                     }}  
                     className="flex items-center justify-center rounded-lg shadow-link"
                     onClick={() => {
-                        setButtonClicked(`${id}left`)
+                        handleOnClick(isSubArray?`${items_id}-${id}left`:`${id}left`)
                         setAddedCard(prevArray => 
                         [...prevArray, {id: _uniqueId('prefix-'), value: "left"}])}}
                     onMouseEnter={() => setHover3(`${id}left`)}
@@ -544,16 +550,16 @@ const BetCombinationPanel = ({
                         style={{
                             width:"265px", 
                             height: "37px",
-                            background:  (`${id}left` === isButtonClicked || `${id}left` === isHover3)
+                            background:  (`${id}left` === isHover3 || isButtonOn.indexOf(isSubArray?`${items_id}-${id}left`:`${id}left`)>-1)
                             ? "linear-gradient(to bottom, #987959, #634d38)"  
                             : "#252525",
-                            color: (`${id}left` === isButtonClicked || `${id}left` === isHover3) ? "#ffdfbd" : "#c8c8c8",
-                            textShadow: (`${id}left` === isButtonClicked || `${id}left` === isHover3) ? "1px 1px 0px #00000070" : ""
+                            color: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}left`:`${id}left`)>-1 || `${id}left` === isHover3) ? "#ffdfbd" : "#c8c8c8",
+                            textShadow: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}left`:`${id}left`)>-1 || `${id}left` === isHover3) ? "1px 1px 0px #00000070" : ""
                         }}  
                         className="flex items-center justify-end rounded-lg  bg-gradient-to-b cursor-pointer px-6px"
                     >
-                        <span style={{maxWidth:"188px"}} className="truncate text-right font-spoqaMedium tracking-tight text-14px pt-2px mr-2px">{team1}</span>
-                        <div style={{width:"34px"}} className={`${hasUp ? "justify-end pr-5px" : "justify-center"} flex items-center flex-shrink-0`}>
+                        <span style={{maxWidth:"182px"}} className="truncate text-right font-spoqaMedium tracking-tight text-14px pt-2px mr-3px">{team1}</span>
+                        <div style={{width:"33px"}} className={`${hasUp ? "justify-end pr-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo1 && (
                                 <img src={logo1} alt="" />
                             )}
@@ -561,7 +567,7 @@ const BetCombinationPanel = ({
                                 <img src={UpIcon} alt="" />
                             )}
                         </div>
-                        <span style={{color: stat1Color === "red" && `${id}left` !== isButtonClicked && `${id}left` !== isHover3 ? "#e65454" : ""}} className="w-34px font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
+                        <span style={{color: stat1Color === "red" && isButtonOn.indexOf(isSubArray?`${items_id}-${id}left`:`${id}left`)===-1 && `${id}left` !== isHover3 ? "#e65454" : ""}} className="w-34px font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
                     </div>
                 </button>
 
@@ -573,7 +579,7 @@ const BetCombinationPanel = ({
                     }}  
                     className="flex items-center justify-center rounded-lg shadow-link"
                     onClick={() => {
-                        setButtonClicked(`${id}middle`)
+                        handleOnClick(isSubArray?`${items_id}-${id}middle`:`${id}middle`)
                         setAddedCard(prevArray => 
                         [...prevArray, {id: _uniqueId('prefix-'), value: "middle"}])}}
                     onMouseEnter={() => setHover3(`${id}middle`)}
@@ -584,15 +590,15 @@ const BetCombinationPanel = ({
                         style={{
                             width:"69px", 
                             height: "37px",
-                            background: (`${id}middle` === isButtonClicked || `${id}middle` === isHover3)
+                            background: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}middle`:`${id}middle`)>-1 || `${id}middle` === isHover3)
                             ? "linear-gradient(to bottom, #987959, #634d38)"  
                             : "#252525",
-                            color: (`${id}middle` === isButtonClicked || `${id}middle` === isHover3) ? "#ffdfbd" : "#c8c8c8",
-                            textShadow: (`${id}middle` === isButtonClicked || `${id}middle` === isHover3) ? "1px 1px 0px #00000070" : ""
+                            color: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}middle`:`${id}middle`)>-1 || `${id}middle` === isHover3) ? "#ffdfbd" : "#c8c8c8",
+                            textShadow: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}middle`:`${id}middle`)>-1 || `${id}middle` === isHover3) ? "1px 1px 0px #00000070" : ""
                         }}  
                         className="flex items-center justify-center rounded-lg bg-gradient-to-b cursor-pointer px-10px pt-2px"
                     >
-                        <span  style={{color: stat2Color === "blue" && `${id}middle` !== isButtonClicked && `${id}middle` !== isHover3 ? "#4c98ff" : ""}} className="font-roboto tracking-tight text-14px pt-px">{stat2}</span>
+                        <span  style={{color: stat2Color === "blue" && isButtonOn.indexOf(isSubArray?`${items_id}-${id}middle`:`${id}middle`)===-1 && `${id}middle` !== isHover3 ? "#4c98ff" : ""}} className="font-roboto tracking-tight text-14px pt-px">{stat2}</span>
                     </div>
                 </button>
 
@@ -604,7 +610,7 @@ const BetCombinationPanel = ({
                     }}  
                     className="flex items-center justify-center rounded-lg shadow-link"
                     onClick={() => {
-                        setButtonClicked(`${id}right`)
+                        handleOnClick(isSubArray?`${items_id}-${id}right`:`${id}right`)
                         setAddedCard(prevArray => 
                         [...prevArray, {id: _uniqueId('prefix-'), value: "right"}])}}
                     onMouseEnter={() => setHover3(`${id}right`)}
@@ -614,16 +620,16 @@ const BetCombinationPanel = ({
                         style={{
                             width:"262px", 
                             height: "37px",
-                            background: (`${id}right` === isButtonClicked || `${id}right` === isHover3)
+                            background: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}right`:`${id}right`)>-1 || `${id}right` === isHover3)
                             ? "linear-gradient(to bottom, #987959, #634d38)"  
                             : "#252525",
-                            color: (`${id}right` === isButtonClicked || `${id}right` === isHover3) ? "#ffdfbd" : "#c8c8c8",
-                            textShadow: (`${id}right` === isButtonClicked || `${id}right` === isHover3) ? "1px 1px 0px #00000070" : ""
+                            color: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}right`:`${id}right`)>-1 || `${id}right` === isHover3) ? "#ffdfbd" : "#c8c8c8",
+                            textShadow: (isButtonOn.indexOf(isSubArray?`${items_id}-${id}right`:`${id}right`)>-1 || `${id}right` === isHover3) ? "1px 1px 0px #00000070" : ""
                         }}  
                         className="flex items-center justify-start rounded-lg  bg-gradient-to-b cursor-pointer px-6px pt-px"
                     >
                         <span className="w-34px font-roboto tracking-tight text-14px  pt-2px">{stat3}</span>
-                        <div style={{width:"34px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center flex-shrink-0`}>
+                        <div style={{width:"33px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo2 && (
                                 <img src={logo2} alt="" />
                             )}
@@ -631,7 +637,7 @@ const BetCombinationPanel = ({
                                 <img src={DownIcon} alt="" />
                             )}
                         </div>
-                        <span style={{maxWidth:"188px"}} className="truncate font-spoqaMedium tracking-tight text-14px text-left pt-2px ml-2px">{team2}</span>
+                        <span style={{maxWidth:"182px"}} className="truncate font-spoqaMedium tracking-tight text-14px text-left pt-2px ml-3px">{team2}</span>
                     </div>
                 </button>
             </div>
@@ -641,7 +647,8 @@ const BetCombinationPanel = ({
     function LeagueCell({
         array, 
         isSubArray = false, 
-        isLastSubarray = false
+        isLastSubarray = false,
+        items_id= null
     }) {
 
         const [isHover2, setHover2] = useState(null)
@@ -678,6 +685,8 @@ const BetCombinationPanel = ({
                             hasDown={items.hasDown}
                             stat1Color={items.stat1Color}
                             stat2Color={items.stat2Color}
+                            isSubArray={isSubArray}
+                            items_id={items_id}
                         />
                     </div>
                     {isSubArray === false && (
@@ -720,7 +729,7 @@ const BetCombinationPanel = ({
 
                 </div>
                 {isOpen[items.id] === true && (
-                    <LeagueCell array={items.subArray} isSubArray={true} isLastSubarray={items.isLast} />
+                    <LeagueCell array={items.subArray} isSubArray={true} isLastSubarray={items.isLast} items_id={items.id} />
                 )}
             </div>
         ))

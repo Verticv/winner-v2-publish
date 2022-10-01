@@ -82,10 +82,10 @@ const ContactView = () => {
 
 
             <div className="mt-20px mb-60px flex items-start justify-between">
-                <button className="flex items-center justify-center h-36px w-90px p-px rounded-2px  shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
+                <button className="flex items-center justify-center h-36px w-90px p-px rounded-4px  shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
                     <div 
                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
-                        className="flex items-center justify-center h-34px w-88px rounded-2px cursor-pointer"
+                        className="flex items-center justify-center h-34px w-88px rounded-4px cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">이전</span>
                     </div>
@@ -93,21 +93,21 @@ const ContactView = () => {
 
                 <button 
                     style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}
-                    className="flex items-center justify-center h-52px w-192px p-px rounded-2px  shadow-link hover:filter hover:brightness-125" 
+                    className="flex items-center justify-center h-52px w-192px p-px rounded-4px  shadow-link hover:filter hover:brightness-125" 
                     onClick={() => history.push('/cscenter/contact/all')}
                 >
                     <div
                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
-                        className="flex items-center justify-center h-50px w-190px rounded-2px cursor-pointer"
+                        className="flex items-center justify-center h-50px w-190px rounded-4px cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-16px text-golden-highLight pt-px text-shadow-5">목록보기</span>
                     </div>
                 </button>
 
-                <button className="flex items-center justify-center h-36px w-90px p-px rounded-2px  shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
+                <button className="flex items-center justify-center h-36px w-90px p-px rounded-4px  shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
                     <div 
                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
-                        className="flex items-center justify-center h-34px w-88px  rounded-2px  cursor-pointer"
+                        className="flex items-center justify-center h-34px w-88px  rounded-4px  cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">다음</span>
                     </div>

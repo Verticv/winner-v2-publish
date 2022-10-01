@@ -22,7 +22,7 @@ const FreeBoardView = () => {
     }) => (
         <div className="w-full pr-19px">
             <div className="py-10px ml-22px flex items-center justify-between">
-                <div className="flex items-start pr-10px">
+                <div className="self-start pt-6px flex items-start pr-10px">
                     <img className="object-none mt-5px" src={ReplyArrow} alt="" />
                     <img className="pl-13px" src={rank === 1 ? Rank1 : rank === 2 ? Rank2 : rank === 3 ? Rank3 : rank === 4 ? Rank4 : Rank5} alt="" />
                     <p className="ml-5px mt-px text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">{username}</p>
@@ -186,7 +186,7 @@ const FreeBoardView = () => {
                 <div className="w-full bg-gray-323232 rounded-4px pb-20px">
                     <div className="border-b border-gray-252525 pl-20px pr-18px"> 
                         <div className="py-9px w-full flex items-center justify-between">
-                            <div className="flex items-start space-x-5px mt-px">
+                            <div className="self-start pt-6px flex items-start space-x-5px mt-px">
                                 <img src={Rank2} alt="" className='-mt-2px'/>
                                 <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">신풍사우나</p>
                             </div>
@@ -224,7 +224,7 @@ const FreeBoardView = () => {
              <div  className=" bg-gray-323232 rounded-4px ">
                 <div className="border-b border-gray-252525 px-19px"> 
                     <div className="py-9px w-full flex items-center  justify-between">
-                        <div className="flex items-start space-x-5px mt-px">
+                        <div className="self-start pt-6px flex items-start space-x-5px mt-px">
                             <img src={Rank2} alt="" className='-mt-2px'/>
                             <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">신풍사우나</p>
                         </div>
@@ -272,7 +272,7 @@ const FreeBoardView = () => {
             <div className="w-full bg-gray-323232 rounded-4px">
               <div  className="border-b border-gray-252525 px-19px"> 
                   <div className="py-9px w-full flex items-center  justify-between">
-                      <div className="flex items-start space-x-5px mt-px">
+                      <div className="self-start pt-6px flex items-start space-x-5px mt-px">
                           <img src={Rank2} alt="" className='-mt-2px'/>
                           <p className="text-15px font-spoqaMedium tracking-tight text-gray-ccc2b6">신풍사우나</p>
                       </div>

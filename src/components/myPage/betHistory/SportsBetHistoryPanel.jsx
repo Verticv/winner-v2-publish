@@ -122,7 +122,7 @@ const SportsBetHistoryPanel = ({
                       <span className="font-roboto tracking-tight text-14px">{stat3}</span>
                         {hasDown && <img className="object-none" src={DownIcon} alt="" /> }
                     </div>
-                    <span className={`${isAttached? 'w-290px': 'w-223px'} truncate w-223px font-spoqaMedium tracking-tight text-14px text-right text-shadow overflow-ellipsis`}>{team2}</span>
+                    <span className={`${isAttached? 'w-290px': 'w-223px'} truncate font-spoqaMedium tracking-tight text-14px text-right text-shadow overflow-ellipsis`}>{team2}</span>
                 </div>
             </button>
         </div>
