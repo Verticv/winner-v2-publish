@@ -53,8 +53,8 @@ const HotelCasinoHover = ({ selection }) => {
     return items.map(item => (
       <div
         key={item.id}
-        className={`group relative cursor-pointer flex flex-col items-center justify-end`}
-        style={{ width: '235px' }}
+				className={`group relative cursor-pointer flex flex-col items-center justify-end flex-shrink-0 h-262px`}
+        // style={{ width: '235px' }}
         onMouseEnter={() => setHover(item.id)}
       >
         <p style={{ color: '#ffdfbd', marginBottom: '70px' }} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex`}>{item.imgText}</p>
@@ -62,7 +62,7 @@ const HotelCasinoHover = ({ selection }) => {
           {item.btnText === "준비중" ? (
             <button style={{ width: '89px', height: '26px', borderRadius: '2px', background: 'linear-gradient(to bottom, #ada299, #5a554f)' }} className={`p-px`}>
               <div style={{ borderRadius: '2px', background: 'linear-gradient(to bottom, #8a8179, #6b655e)' }} className='w-full h-full flex items-center justify-center cursor-default'>
-              <p style={{ color: '#cccccc', textShadow: "0 0 3px #00000090" }} className="text-13px font-spoqaMedium tracking-tight">준비중</p>
+                <p style={{ color: '#cccccc', textShadow: "0 0 3px #00000090" }} className="text-13px font-spoqaMedium tracking-tight">준비중</p>
               </div>
             </button>
           ) : (
@@ -74,8 +74,8 @@ const HotelCasinoHover = ({ selection }) => {
           )}
 
         </div>
-        <img className={`${isHover === item.id ? "opacity-0" : "opacity-100"} absolute bottom-0 object-none h-full mb-13px`} src={item.background} alt="game_image" />
-        <img className={`${isHover === item.id ? "opacity-100" : "opacity-0"} absolute bottom-0 object-none h-full mb-13px`} src={item.highlight} alt="game_image" />
+        <img className={`${isHover === item.id ? "opacity-0" : "opacity-100"} absolute bottom-0 object-none h-full mb-13px flex-shrink-0`} src={item.background} alt="game_image" />
+				<img className={`${isHover === item.id ? "opacity-100" : "opacity-0"} absolute bottom-0 object-none h-full mb-13px flex-shrink-0`} src={item.highlight} alt="game_image" />		
       </div>
     ))
   }
@@ -86,8 +86,10 @@ const HotelCasinoHover = ({ selection }) => {
       duration={200}
       className="absolute w-full h-262px border-b border-t border-brown-r796657"
     >
-      <div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85 -space-x-12">
-        <GamesList items={gamesArray} />
+      <div onMouseLeave={() => setHover(null)} style={{ minHeight: '262px' }} className="h-full w-full flex justify-center bg-black bg-opacity-85">
+        <div style={{ width: '740px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 limit:grid-cols-4">
+          <GamesList items={gamesArray} />
+        </div>
       </div>
     </Expand>
   )

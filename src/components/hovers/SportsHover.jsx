@@ -47,7 +47,7 @@ const SportsHover = ({ selection }) => {
       <div
         key={item.id}
         className={`group relative cursor-pointer flex flex-col items-center justify-end`}
-        style={{ width: '235px' }}
+        // style={{ width: '235px' }}
         onMouseEnter={() => setHover(item.id)}
         onClick={() => history.push(item.path)}
       >
@@ -71,8 +71,10 @@ const SportsHover = ({ selection }) => {
       duration={200}
       className="absolute w-full h-262px border-b border-t border-brown-r796657"
     >
-      <div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85 -space-x-12">
-        <GamesList items={gamesArray} />
+      <div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85">
+        <div style={{ width: '550px' }} className="grid grid-cols-3">
+          <GamesList items={gamesArray} />
+        </div>
       </div>
     </Expand>
   )
