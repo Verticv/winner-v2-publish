@@ -1,6 +1,5 @@
 import HotelCasino from 'components/mainPage/HotelCasino'
 import LiveCasino from 'components/mainPage/LiveCasino'
-import NoticeBanner from 'components/mainPage/NoticeBanner'
 import Other from 'components/mainPage/Other'
 import SlotGame from 'components/mainPage/SlotGame'
 import Sports from 'components/mainPage/Sports'
@@ -16,9 +15,9 @@ import SubtitleRight from '../images/subtitle_right.png'
 const MainPage = ({ isAuthenticated, setAuthenticated }) => {
 
 	const SubComp = ({ text }) => (
-		<div className='flex justify-center h-22px items-center space-x-29px'>
+		<div className='flex justify-center h-22px items-center space-x-29px flex-shrink-0'>
 			<img src={SubtitleLeft} className="object-none flex-shrink-0 mt-3px" alt="" />
-			<h3 style={{ color: '#ad9e8c', fontSize: '24px' }} className="font-spoqaBold h-22px flex items-center">{text}</h3>
+			<h3 style={{ color: '#ad9e8c', fontSize: '24px' }} className="font-spoqaBold h-22px flex items-center flex-shrink-0">{text}</h3>
 			<img src={SubtitleRight} className="object-none flex-shrink-0 mt-3px" alt="" />
 		</div>
 	)
@@ -47,14 +46,8 @@ const MainPage = ({ isAuthenticated, setAuthenticated }) => {
 				<QuickMenu scrollPosition={scrollPosition} />
 			</div>
 
-			<div className="w-screen flex flex-col z-10">
-				<div className="absolute -top-px flex justify-start limit:justify-center items-center w-screen">
-					<Carousel />
-				</div>
-
-				<div style={{ marginTop: '445px' }} className="flex-shrink-0 z-30 flex items-end justify-center">
-					<NoticeBanner />
-				</div>
+			<div className="flex justify-start limit:justify-center items-center w-screen">
+				<Carousel />
 			</div>
 
 			<div className="flex flex-col items-start limit:items-center h-full relative z-30">
