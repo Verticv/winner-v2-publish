@@ -42,6 +42,7 @@ const LoginPopup = ({setAuth, setPopupOpen}) => {
 					style={{color:'#948d81', backgroundColor:'#191817', borderRadius:'4px'}}
 					className="text-20px outline-none font-spoqa w-full h-full pl-19px placeholder-gray-r948d81 pt-3px" 
 					placeholder={"비밀번호"}
+					type="password"
 					onFocus={(e) => e.target.placeholder = ""} 
 					onBlur={(e) => e.target.placeholder = "비밀번호"}
 				/>

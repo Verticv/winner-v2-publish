@@ -36,9 +36,9 @@ const LiveCasino = () => {
     )
 
     return (
-      <div className='relative flex cursor-pointer' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+      <div onClick={() => history.push("/live-casino")} className='relative flex cursor-pointer' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <img src={isHover ? bgHover : bg} className="object-none" alt="" />
-        <button onClick={() => history.push("/live-casino")} style={{ width: '106px', height: '30px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className='absolute bottom-15px right-35px p-px filter hover:brightness-125'>
+        <button  style={{ width: '106px', height: '30px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className='absolute bottom-15px right-35px p-px filter hover:brightness-125'>
           <div style={{ borderRadius: '2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)' }} className='w-full h-full flex items-center justify-center'>
             <p style={{ color: '#ffdfbd', textShadow: "0 0 6px #000000" }} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
           </div>
