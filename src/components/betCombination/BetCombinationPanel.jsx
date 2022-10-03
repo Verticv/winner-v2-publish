@@ -628,7 +628,7 @@ const BetCombinationPanel = ({
                         }}  
                         className="flex items-center justify-start rounded-lg  bg-gradient-to-b cursor-pointer px-6px pt-px"
                     >
-                        <span className="w-34px font-roboto tracking-tight text-14px  pt-2px">{stat3}</span>
+                        <span className="w-34px font-roboto tracking-tight text-14px  pt-2px flex-shrink-0">{stat3}</span>
                         <div style={{width:"33px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo2 && (
                                 <img src={logo2} alt="" />
@@ -819,7 +819,7 @@ const BetCombinationPanel = ({
                 <p className="text-20px font-spoqaMedium text-gray-ccc2b6 mr-8px">축구</p>
                 <div 
                   style={{backgroundColor:"#826140",color:'#ffdfbd'}} 
-                  className="h-27px w-49px rounded-full flex items-center justify-center text-18px font-spoqaMedium tracking-tight  pt-2px pr-2px"
+                  className="h-27px rounded-full flex items-center justify-center text-18px font-spoqaMedium tracking-tight pl-13px pr-14px pt-2px"
                 >
                 15
                 </div>
