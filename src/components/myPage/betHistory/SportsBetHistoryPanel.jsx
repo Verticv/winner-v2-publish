@@ -76,9 +76,9 @@ const SportsBetHistoryPanel = ({
               style={{width: isAttached ? "363px" : "283px", background: bet === "left" ? "linear-gradient(to bottom, #987959, #634d38 )" : ""}}
               className={`${
                 bet === "left" 
-                ? "text-golden-highLight text-golden-highLight from-red-ff535f via-red-ff535f to-red-ee4e5a" 
+                ? "text-golden-highLight  from-red-ff535f via-red-ff535f to-red-ee4e5a" 
                 : "bg-dark-252525 text-gray-c8c8c8"} 
-                flex items-center justify-between h-34px rounded-3px  cursor-pointer px-10px pt-px`
+                flex items-center justify-between h-34px rounded-3px cursor-pointer px-10px pt-px`
               }>
                 <span className={`${isAttached? 'w-290px': 'w-223px'} truncate text-left font-spoqaMedium tracking-tight text-14px text-shadow overflow-ellipsis`}>{team1}</span>
                 <div className="flex items-center space-x-5px">
