@@ -223,7 +223,7 @@ const FreeBoardView2 = () => {
                       style={{ background: 'linear-gradient(to top, #223348, #5f80a4)'}}>
                       <div className="flex items-center justify-center h-91px w-118px  rounded-4px cursor-pointer"
                         style={{ width: "118px",background: 'linear-gradient(to bottom, #39618e, #27405d)'}}>
-                        <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">댓글작성</span>
+                        <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">댓글수정</span>
                       </div>
                       </button>
                   </div>
