@@ -15,7 +15,7 @@ const MoneyExchange = () => {
 
     const Title = ({text}) => (
         <div style={{width: "201px"}} className="bg-gray-272726 space-y-2 flex-shrink-0 h-44px pl-10px flex items-center rounded-4px">
-            <div className=" text-gray-ccc2b6 font-spoqaMedium text-16px mt-2px">{text}</div>
+            <div className=" text-gray-ccc2b6 font-spoqaMedium text-16px">{text}</div>
         </div>
     )
     
