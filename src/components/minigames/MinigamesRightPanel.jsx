@@ -165,7 +165,7 @@ const MinigamesRightPanel = ({
                             )}
                         </div> 
                         {selectedOption[0].tailSide && (
-                            <div className={`${selectedOption[0].tailSide === "left" ? "left-6px" : "right-6px"} absolute w-22px h-22px rounded-full bg-black z-20 top-0 flex items-center justify-center`}>
+                            <div className={`${selectedOption[0].tailSide === "left" ? "left-0" : "right-0"} absolute w-22px h-22px rounded-full bg-black z-20 top-0 flex items-center justify-center`}>
                                 <div className="text-white text-12px tracking-tight font-spoqaMedium">{selectedOption[0].tail}</div>
                             </div>
                         )}   
