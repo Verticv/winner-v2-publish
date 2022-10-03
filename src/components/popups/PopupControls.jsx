@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { useOnClickOutside } from "../../helpers/functions";
+import ReactPortal from"../ReactPortal";
 
 export default function PopupControls({
     children,
@@ -47,11 +48,13 @@ export default function PopupControls({
                 }}
             >{buttonChild}</div>
             {open && (
-                <div className="fixed flex items-center justify-center w-screen h-screen bg-black bg-opacity-60 z-50 left-0 top-0" onClick={(e) => onHeaderClick(e)}>
-                    <div >
-                        {children}
+                <ReactPortal wrapperId="react-portal-modal-container">
+                    <div className="fixed flex items-center justify-center w-screen h-screen bg-black bg-opacity-60 z-50 left-0 top-0" onClick={(e) => onHeaderClick(e)}>
+                        <div>
+                            {children}
+                        </div>
                     </div>
-                </div>
+                </ReactPortal>
             )}
         </div>
     );

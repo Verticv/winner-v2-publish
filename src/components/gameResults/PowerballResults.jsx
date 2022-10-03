@@ -46,7 +46,7 @@ const PowerballResults = () => {
             <div className='text-center pl-2px' style={{width:'216px'}}>경기일시</div>
             <div className='text-center' style={{width:'296px'}}>회차</div>
             <div className='text-center' style={{width:'255px'}}>결과</div>
-            <div className='text-center' style={{marginLeft:"42px",width:'211px'}}>정렬</div>
+            <div className='text-center' style={{marginLeft:"42px",width:'211px'}}>배당률</div>
           </div>
           <div className="px-9px space-y-10px pb-12px -mt-px">
             <Table count="211" />

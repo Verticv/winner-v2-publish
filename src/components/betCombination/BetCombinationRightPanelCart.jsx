@@ -258,8 +258,8 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                     }}
                 >
                     <div style={{width:"285px"}} className="flex items-center justify-center h-44px rounded-2px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
-                        <img src={BetIcon} alt="" />
-                        <span className="ml-5px font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">베팅하기</span>
+                        <img src={BetIcon} className="mt-2px" alt="" />
+                        <span className="ml-2px font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff pt-px text-shadow-5">베팅하기</span>
                     </div>
                 </button>
 

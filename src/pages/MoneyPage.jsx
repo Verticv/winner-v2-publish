@@ -33,14 +33,14 @@ const MoneyPage = ({isAuthenticated, setAuthenticated}) => {
 		};
 	}, []);
     return (
-        <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
+        <div className="relative w-full flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
 
             <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
                 <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
             </div>
 
-            <div style={{right: '208px'}} className={`${scrollPosition > 397 ? "top-235px" : "top-428px"} fixed z-20 flex justify-end`}>
-                <QuickMenu />
+            <div style={{ width: '1496px', height: 'calc(100vh - 497px)' }} className={`${scrollPosition > 397 ? "top-235px" : "top-428px"} fixed z-20 flex justify-end`}>
+                <QuickMenu scrollPosition={scrollPosition}/>
             </div>
             <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
 
@@ -72,7 +72,7 @@ const MoneyPage = ({isAuthenticated, setAuthenticated}) => {
                     </div>
                 </Route>
                 
-                <div className="flex mt-20px w-default">
+                <div className="flex mt-20px w-default z-30">
                     <div>
                         <LeftMenu 
                             selectedTab={selectedTab} 
@@ -94,7 +94,7 @@ const MoneyPage = ({isAuthenticated, setAuthenticated}) => {
                     </div>
                 </div>
 
-                <div>
+                <div className='z-30'>
                     <Footer />
                 </div>
 

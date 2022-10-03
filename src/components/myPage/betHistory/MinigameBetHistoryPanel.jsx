@@ -69,16 +69,16 @@ const MinigameBetHistoryPanel = ({
                     style={{
                         width: isAttached ? "365px" : "285px",
                         textShadow: bet === "left" ? "1px 1px 1px #00000070" : "",
-                        backgroundColor: bet === "left" ? "linear-gradient(to bottom, #4f4a41, #2f2c28)" : "linear-gradient(to bottom, #4f4a41, #2f2c28)",
+                        background: bet === "left" ? "linear-gradient(to bottom, #4f4a41, #2f2c28)" : "linear-gradient(to bottom, #4f4a41, #2f2c28)",
                     }} 
                     className="flex items-center justify-center h-36px rounded-4px shadow-btn p-px"
                 >
                     <div 
-                    style={{width: isAttached ? "363px" : "283px", background: bet === "left" ? "linear-gradient(to bottom, #987959, #634d38 )" : "linear-gradient(to bottom, #987959, #634d38 )"}}
+                    style={{width: isAttached ? "363px" : "283px", background: bet === "left" ? "linear-gradient(to bottom, #987959, #634d38 )" : ""}}
                     className={`${
                         bet === "left" 
-                        ? "text-gray-c8c8c8 shadow-btn from-red-ff535f via-red-ff535f to-red-ee4e5a" 
-                      : " text-golden-highLight"} 
+                        ? "text-golden-highLight shadow-btn" 
+                      : " bg-dark-252525 text-gray-c8c8c8"} 
                         flex items-center justify-between h-34px rounded-3px cursor-pointer px-10px pt-px`
                     }>
                         <span className="truncate w-231px text-left font-spoqaMedium tracking-tight text-14px text-shadow overflow-ellipsis">{team1}</span>
@@ -90,11 +90,11 @@ const MinigameBetHistoryPanel = ({
                 </button>
 
                 <button
-                  style={{ textShadow: bet === "middle" ? "1px 1px 1px #00000070" : "", background: bet === "middle" ? "" : "linear-gradient(to bottom, #4f4a41, #2f2c28)", }} 
+                  style={{ textShadow: bet === "middle" ? "1px 1px 1px #00000070" : "", background: bet === "middle" ? "" : "linear-gradient(to bottom, #4f4a41, #2f2c28)" }} 
                     className={`flex group items-center justify-center w-81px h-36px rounded-4px  shadow-btn p-px ${bet === "middle" ? "bg-red-cb4343" : ""}`}>
                     <div className={`${
                         bet === "middle" 
-                        ? "text-white border-red-ff7982 from-red-ff535f via-red-ff535f to-red-ee4e5a" 
+                        ? "text-white " 
                     : "bg-dark-252525 text-gray-c8c8c8"}
                     pt-px flex items-center justify-center h-34px w-79px rounded-3px  cursor-pointer`}
                     >
@@ -108,11 +108,11 @@ const MinigameBetHistoryPanel = ({
                     style={{
                         width: isAttached ? "363px" : "283px",
                         textShadow: bet === "right" ? "1px 1px 1px #00000070" : "",
-                        backgroundColor: bet === "right" ? "linear-gradient(to bottom, #987959, #634d38 )" : ""
+                        background: bet === "right" ? "linear-gradient(to bottom, #987959, #634d38 )" : ""
                     }} 
                     className={`${
                         bet === "right" 
-                       ? "text-gray-c8c8c8" 
+                       ? "text-golden-highLight" 
                       : "bg-dark-252525 text-gray-c8c8c8"} 
                       pt-px flex items-center justify-between h-34px rounded-3px  cursor-pointer px-10px`}
                     >

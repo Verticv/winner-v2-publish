@@ -40,15 +40,15 @@ const MinigamesPage = ({isAuthenticated, setAuthenticated}) => {
   }, [location]);
 
   return (
-    <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
+    <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
       <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
         <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
       </div>
-      <div style={{top: '306px',right: '208px'}} className={`fixed z-20 flex justify-end`}>
+      <div style={{ width: '1496px', height: 'calc(100vh - 497px)',top: '306px' }}  className={`fixed z-20 flex justify-end`}>
         <QuickMenu />
       </div>
       <div className="w-full flex flex-col items-center  mt-117px">
-        <div className="w-default">
+        <div className="w-default z-30">
 
           <Route path="/minigame/powerball">
             <HorizontalMenu3 itemsArray={GameTypeArray} selectedTab={"/minigame/powerball"} setSelectedTab={setSelectedGame} setSelectedOption={setSelectedOption} setSelectedTab1={setSelectedTab} />
@@ -93,7 +93,7 @@ const MinigamesPage = ({isAuthenticated, setAuthenticated}) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start limit:items-center limit:mt-92px mt-122px w-full h-full">
+      <div className="flex flex-col items-start limit:items-center limit:mt-92px mt-122px w-full h-full z-30">
         <div>
           <Footer />
         </div>

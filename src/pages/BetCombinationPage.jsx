@@ -75,12 +75,12 @@ const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
 		};
 	}, []);
     return (
-      <div className="relative flex flex-col justify-center w-full bg-gray-1e1e1e overflow-x-hidden">
+      <div className="relative flex flex-col justify-center items-center w-full bg-gray-1e1e1e overflow-x-hidden">
         <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
           <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
         </div>
-        <div style={{right: '208px'}} className={`${scrollPosition > 397 ? "top-282px" : "top-282px"} fixed z-20 flex justify-end`}>
-            <QuickMenu />
+        <div style={{ width: '1496px', height: 'calc(100vh - 497px)' }} className={`${scrollPosition > 397 ? "top-282px" : "top-282px"} fixed z-20 flex justify-end`}>
+            <QuickMenu scrollPosition={scrollPosition}/>
         </div>
         <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
           <Route path="/bet-combination">
@@ -91,7 +91,7 @@ const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
             />
           </Route>
 
-          <div className=" relative flex w-default space-x-20px -mt-px">
+          <div className=" relative flex w-default space-x-20px -mt-px z-30">
             <div style={{width: "933px"}}>
               <div style={{width: "935px", marginLeft:"-1px"}}>
                 <HorizontalMenu6 itemsArray={tabsArray} isState={selectedTab} setState={setSelectedTab} />
@@ -116,7 +116,7 @@ const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
                 />
             </div>
           </div>
-          <div>
+          <div className='z-30'>
             <Footer />
           </div>
         </div>

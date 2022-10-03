@@ -88,10 +88,10 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
         <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
           <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
         </div>
-        <div style={{height:'calc(100vh - 394px)'}} className={`bottom-0 right-210px fixed z-20 flex justify-end`}>
+        <div style={{width: '1496px', height:'calc(100vh - 394px)'}} className={`bottom-0 fixed z-20 flex justify-end`}>
           <QuickMenu />
         </div>
-        <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full ">
+        <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
          
           <Route path="/mypage/bet-history">
             <DirectoryComponent 
@@ -211,7 +211,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
             <img className="z-10" src={MyPageBanner} alt="" />
           </div>
 
-          <div className="flex mt-20px w-default">
+          <div className="flex mt-20px w-default z-30">
             <div>
               <LeftMenu 
                 selectedTab={selectedTab} 
@@ -267,7 +267,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
             </div>
           </div>
 
-          <div>
+          <div className='z-30'>
             <Footer />
           </div>
 

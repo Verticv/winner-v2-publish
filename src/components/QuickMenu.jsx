@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import Quick1 from '../images/quick1.png'
 import Quick2 from '../images/quick2.png'
@@ -6,10 +6,13 @@ import Quick3 from '../images/quick3.png'
 import Quick4 from '../images/quick4.png'
 import Quick5 from '../images/quick5.png'
 import Quick6 from '../images/quick6.png'
+import PointsApplyPopup from 'components/popups/PointsApplyPopup'
+import PopupControls from 'components/popups/PopupControls'
 
 const QuickMenu = ({ scrollPosition }) => {
 
   const history = useHistory()
+  const [isPopupOpen, setPopupOpen] = useState(true)
 
   return (
     <div style={{ height: '553px', width: '86px' }} className={'flex-shrink-0 z-10 -mt-120px'}>
@@ -33,10 +36,21 @@ const QuickMenu = ({ scrollPosition }) => {
             </button>
             <div style={{ height: '1px', width: '70px', backgroundColor: '#362b20' }}></div>
 
-            <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/mypage/points/points-apply')}>
+
+            <PopupControls 
+                buttonChild={<button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer">
+                <img src={Quick3} alt="" className='mt-15px' />
+                <p style={{ color: '#bbbbbb' }} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">포인트전환</p>
+              </button>} 
+              isPopupOpen={isPopupOpen} 
+              setPopupOpen={setPopupOpen}
+              >
+                <PointsApplyPopup setPopupOpen={setPopupOpen} />
+            </PopupControls> 
+            {/* <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/mypage/points/points-apply')}>
               <img src={Quick3} alt="" className='mt-15px' />
               <p style={{ color: '#bbbbbb' }} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">포인트전환</p>
-            </button>
+            </button> */}
             <div style={{ height: '1px', width: '70px', backgroundColor: '#362b20' }}></div>
 
             <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/policy/sportsgame/soccer')}>

@@ -13,11 +13,11 @@ import FreeBoardView2 from 'components/freeBoard/FreeBoardView2'
 const Freeboard = ({isAuthenticated, setAuthenticated}) => {
 
   return (
-    <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
+    <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
       <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
         <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
       </div>
-      <div style={{top: '430px',right: '208px'}} className={`right-208px fixed z-20 flex justify-end`}>
+      <div style={{ width: '1496px', height: 'calc(100vh - 497px)',top: '430px' }} className={`right-208px fixed z-20 flex justify-end`}>
         <QuickMenu />
       </div>
       <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
@@ -52,7 +52,7 @@ const Freeboard = ({isAuthenticated, setAuthenticated}) => {
           <img className="z-10 mt-px" src={FreeBoardBanner} alt="" />
         </div>
 
-         <div className="mt-20px w-default">
+         <div className="mt-20px w-default z-30">
           <Route exact path="/freeboard">
             <FreeBoardMain />
           </Route>
@@ -66,7 +66,7 @@ const Freeboard = ({isAuthenticated, setAuthenticated}) => {
             <FreeBoardCompose />
           </Route>
         </div> 
-        <div>
+        <div className='z-30'>
           <Footer />
         </div> 
 

@@ -31,13 +31,13 @@ const EsportsPage = ({isAuthenticated, setAuthenticated}) => {
     const [, setSelectedTab] = useState(0)
 
     return (
-        <div className="relative flex flex-col justify-center limit:overflow-x-hidden bg-gray-1e1e1e">
+        <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
 
             <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
                 <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
             </div>
-            <div style={{right: '208px'}} className={`${scrollPosition > 497 ? "top-235px" : "top-356px"} fixed z-20 flex justify-end`}>
-                <QuickMenu />
+            <div style={{ width: '1496px', height: 'calc(100vh - 497px)' }} className={`${scrollPosition > 497 ? "top-235px" : "top-356px"} fixed z-20 flex justify-end`}>
+                <QuickMenu scrollPosition={scrollPosition} />
             </div>
 
             <div className="flex flex-col items-start limit:items-center mt-103px w-full h-full">
@@ -69,7 +69,7 @@ const EsportsPage = ({isAuthenticated, setAuthenticated}) => {
 
                 
 
-                <div className="w-default -mt-5px">
+                <div className="w-default -mt-5px z-30">
                     <Route path="/esports/structure">
                         <HorizontalMenu9 itemsArray={MenuArray} setSelectedTab={setSelectedTab} />
                     </Route>
@@ -81,7 +81,7 @@ const EsportsPage = ({isAuthenticated, setAuthenticated}) => {
                     </Route>
                 </div>
                 
-                <div className="flex mt-20px mb-60px w-default">
+                <div className="flex mt-20px mb-60px w-default z-30">
                         <Route path="/esports/structure">
                             <EsportsStructure />
                         </Route>
@@ -95,7 +95,7 @@ const EsportsPage = ({isAuthenticated, setAuthenticated}) => {
                         </Route>
                 </div>
 
-                <div>
+                <div className='z-30'>
                     <Footer />
                 </div>
 
