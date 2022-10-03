@@ -24,13 +24,13 @@ const QuickMenu = ({ scrollPosition }) => {
               <p className='h-14px mt-2px'>MENU</p>
             </div>
 
-            <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/mypage/transaction/charge-history')}>
+            <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/money/charge')}>
               <img src={Quick1} alt="" className='mt-12px' />
               <p style={{ color: '#bbbbbb' }} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">충전하기</p>
             </button>
             <div style={{ height: '1px', width: '70px', backgroundColor: '#362b20' }}></div>
 
-            <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/mypage/transaction/exchange-history')}>
+            <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/money/exchange')}>
               <img src={Quick2} alt="" className='mt-9px' />
               <p style={{ color: '#bbbbbb' }} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">환전하기</p>
             </button>
@@ -53,7 +53,7 @@ const QuickMenu = ({ scrollPosition }) => {
             </button> */}
             <div style={{ height: '1px', width: '70px', backgroundColor: '#362b20' }}></div>
 
-            <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/policy/sportsgame/soccer')}>
+            <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/cscenter/policy/sportsgame/soccer')}>
               <img src={Quick4} alt="" className='mt-13px' />
               <p style={{ color: '#bbbbbb' }} className="font-spoqa text-14px h-14px tracking-tighter mb-14px cursor-pointer">베팅규정</p>
             </button>

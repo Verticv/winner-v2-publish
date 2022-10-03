@@ -26,8 +26,8 @@ const MinigamesHover = ({ selection }) => {
 		return items.map(item => (
 			<div
 				key={item.id}
-				className={`group relative cursor-pointer flex flex-col items-center justify-end`}
-				style={{ width: '235px' }}
+				className={`group relative cursor-pointer flex flex-col items-center justify-end flex-shrink-0 h-262px`}
+				// style={{ width: '235px' }}
 				onMouseEnter={() => setHover(item.id)}
 				onClick={() => history.push(item.path)}
 			>
@@ -51,8 +51,10 @@ const MinigamesHover = ({ selection }) => {
 			duration={200}
 			className="absolute w-full h-262px border-b border-t border-brown-r796657"
 		>
-			<div onMouseLeave={() => setHover(null)} className="h-262px w-full flex justify-center bg-black bg-opacity-85 -space-x-12">
-				<GamesList items={gamesArray} />
+			<div onMouseLeave={() => setHover(null)} style={{ minHeight: '262px' }} className="h-full w-full flex justify-center bg-black bg-opacity-85">
+				<div style={{ width: '740px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 limit:grid-cols-4">
+					<GamesList items={gamesArray} />
+				</div>
 			</div>
 		</Expand>
 	)
