@@ -32,7 +32,7 @@ const ContactTable = ({
                         onClick={() => history.push(item.path)}
                     >
                         <div 
-                            style={{backgroundColor: item.isRead === true ? "#494745" : "#7e7564", color: item.isRead === true ? "#c8c8c8" : "#f1e7d5"}}
+                            style={{maxWidth: "92px",backgroundColor: item.isRead === true ? "#494745" : "#7e7564", color: item.isRead === true ? "#c8c8c8" : "#f1e7d5"}}
                             className={`w-69px h-29px rounded-full font-spoqaMedium text-14px tracking-tight flex items-center justify-center pt-px cursor-pointer truncate`} 
                         >
                             <p>{item.isRead === true ? "답변완료" : "답변대기"}</p>
@@ -40,7 +40,7 @@ const ContactTable = ({
                     </div>
 
                     <div 
-                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} font-spoqaMedium w-120px  flex justify-center cursor-pointer h-full items-center `}
+                        className={`${item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"} font-spoqaMedium w-120px  flex justify-center cursor-pointer h-full items-center `}
                         onClick={() => history.push(item.path)}
                     >
                         {item.category}
@@ -48,7 +48,7 @@ const ContactTable = ({
 
                     <div 
                         style={{width: "420px"}} 
-                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8 group"} ${item.text.length>30 ? '':'space-x-10px'} font-spoqaMedium flex items-center cursor-pointer h-full ml-23px`}
+                        className={`${item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8 group"} ${item.text.length>30 ? '':'space-x-10px'} font-spoqaMedium flex items-center cursor-pointer h-full ml-23px`}
                         onClick={() => history.push(item.path)}
                     >
                         <p style={{maxWidth: '370px'}}  className="group-hover:text-gray-f1e9e9 truncate">{item.text}</p>
@@ -60,7 +60,7 @@ const ContactTable = ({
                     </div>
 
                     <div 
-                        className={`${item.isRead === true ? "text-gray-c8c8c8" : "text-gray-c8c8c8"} w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center pr-5px`}
+                        className={`${item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"} w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center pr-5px`}
                         onClick={() => history.push(item.path)}
                     >
                         {item.time}
