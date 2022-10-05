@@ -134,14 +134,14 @@ const GameDetails = () => {
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         className="rounded-4px shadow-table overflow-hidden p-px">
         <div className="w-full rounded-4px bg-gray-2b2b2a overflow-hidden">
-            <div className="h-54px w-full font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 flex items-center">
-              <div style={{marginLeft: "65px"}} className="h-14px flex items-center">경기일시</div>
-              <div style={{marginLeft: "60px"}} className="h-14px flex items-center">종목</div>
-              <div style={{marginLeft: "156px"}} className="h-14px flex items-center">승(홈)</div>
-              <div style={{marginLeft: "163px"}} className="h-14px flex items-center">무</div>
-              <div style={{marginLeft: "156px"}} className="h-14px flex items-center pl-3px">패(원정)</div>
-              <div style={{marginLeft: "146px"}} className="h-14px flex items-center">스코어</div>
-              <div style={{marginLeft: "27px"}} className="h-14px flex items-center">결과</div>
+            <div className="h-54px w-full px-11px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 flex items-center">
+              <div style={{marginLeft: "0"}} className="w-164px h-14px flex justify-center items-center">경기일시</div>
+              <div style={{marginLeft: "0"}} className="w-27px h-14px flex justify-center items-center">종목</div>
+              <div style={{marginLeft: "30px"}} className="w-285px h-14px flex justify-center items-center">승(홈)</div>
+              <div style={{marginLeft: "4px"}} className="w-81px h-14px flex justify-center items-center">무</div>
+              <div style={{marginLeft: "4px",marginRight: "17px"}} className="w-285px h-14px flex justify-center items-center">패(원정)</div>
+              <div style={{marginLeft: "0"}} className="w-56px h-14px flex justify-center items-center">스코어</div>
+              <div style={{marginLeft: "0"}} className="w-63px h-14px flex justify-center items-center">결과</div>
             </div>
 
             <div className="px-9px pb-10px space-y-9px -mt-px">
