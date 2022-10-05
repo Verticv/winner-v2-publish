@@ -146,11 +146,11 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
         style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         className="rounded-4px shadow-table overflow-hidden p-px">
         <div className="w-full rounded-4px bg-gray-2b2b2a overflow-hidden">
-            <div style={{height:"54px"}} className="w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">
-                <div style={{marginLeft:"35px"}}>회차</div>
-                <div style={{marginLeft:"221px"}}>승(홈)</div>
-                <div style={{marginLeft:"233px"}}>VS</div>
-                <div style={{marginLeft:"225px"}}>패(원정)</div>
+            <div style={{height:"54px"}} className="px-11px w-full flex items-center text-14px font-spoqaMedium tracking-tight text-gray-ccc2b6">
+                <div style={{width:"75px",marginLeft:"0"}} className='flex justify-center'>회차</div>
+                <div style={{width:"424px",marginLeft:"0"}} className='flex justify-center'>승(홈)</div>
+                <div style={{width:"82px",marginLeft:"4px"}} className='flex justify-center'>VS</div>
+                <div style={{width:"424px",marginLeft:"4px"}} className='flex justify-center'>패(원정)</div>
             </div>
             <div className="px-9px space-y-10px pb-12px -mt-px">
                 <Table array={title === "스피드키노" ? ExampleArray4 : ExampleArray} />
