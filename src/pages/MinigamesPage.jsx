@@ -93,7 +93,7 @@ const MinigamesPage = ({isAuthenticated, setAuthenticated}) => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start limit:items-center limit:mt-92px mt-122px w-full h-full z-30">
+      <div className="flex flex-col items-start limit:items-center limit:mt-92px mt-122px w-full h-full">
         <div>
           <Footer />
         </div>

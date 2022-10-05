@@ -95,7 +95,7 @@ const EsportsPage = ({isAuthenticated, setAuthenticated}) => {
                         </Route>
                 </div>
 
-                <div className='z-30'>
+                <div>
                     <Footer />
                 </div>
 

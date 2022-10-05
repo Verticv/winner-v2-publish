@@ -66,7 +66,7 @@ const Freeboard = ({isAuthenticated, setAuthenticated}) => {
             <FreeBoardCompose />
           </Route>
         </div> 
-        <div className='z-30'>
+        <div>
           <Footer />
         </div> 
 

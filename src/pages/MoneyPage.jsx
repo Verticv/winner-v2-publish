@@ -94,7 +94,7 @@ const MoneyPage = ({isAuthenticated, setAuthenticated}) => {
                     </div>
                 </div>
 
-                <div className='z-30'>
+                <div>
                     <Footer />
                 </div>
 

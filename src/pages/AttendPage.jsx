@@ -50,7 +50,7 @@ const AttendPage = ({isAuthenticated, setAuthenticated}) => {
                     <AttendanceCalendar />                
                 </div>
 
-                <div className='z-30'>
+                <div>
                     <Footer />
                 </div>
 

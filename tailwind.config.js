@@ -482,7 +482,8 @@ module.exports = {
           '7e7564': '#7e7564',
           'f1e9e9': '#f1e9e9',
           '3d3934': '#3d3934',
-          '4b3b09': '#4b3b09'
+          '4b3b09': '#4b3b09',
+          e8b888:'#e8b888'
         },
         red: {
           notification: '#ed2f59',
