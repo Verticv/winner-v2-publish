@@ -54,8 +54,8 @@ const FreeBoardView = () => {
             <div className="pl-48px">
                 <div className="w-full rounded-4px bg-gray-252525 flex items-start px-20px  pt-17px pb-14px justify-between text-gray-c8c8c8 mt-px">
                     <div className="flex text-14px font-spoqa tracking-tight ">
-                    {tag && ( <p className="text-blue-2980b9 mr-10px font-spoqaMedium flex flex-shrink-0">@{tag}</p>)}
-                    <p className="text-gray-c8c8c8">{text}</p>
+                        {tag && (<p className={`text-blue-2980b9 flex items-center mr-10px font-spoqaMedium}`}>@{tag.length > 8 ? tag.substring(0, 8) : tag} {tag.length > 8 && (<span className='-mt-5px'>...</span>)}</p>)}
+                        <p className="text-gray-c8c8c8">{text}</p>
                     </div>
                     <p className="text-gray-c8c8c8  tracking-tight font-spoqa text-14px flex flex-shrink-0">2021.06.28 15:36</p>
                 </div>
@@ -71,14 +71,14 @@ const FreeBoardView = () => {
             <div  className="w-full bg-gray-323232 rounded-4px overflow-hidden">
                   <div className="bg-gray-2e2e2e border-b border-gray-252525 flex items-start px-19px py-15px space-x-10px">
                       <div 
-                          style={{backgroundColor:"#0469a3"}} 
-                          className="rounded-full flex items-center justify-center w-45px h-24px font-spoqaMedium text-12px tracking-tight text-white pt-px flex-shrink-0"
+                          style={{backgroundColor:"#0469a3",maxWidth: '92px'}} 
+                          className="rounded-full flex items-center justify-center px-12px h-24px font-spoqaMedium text-12px tracking-tight text-white pt-px flex-shrink-0 truncate"
                       >
                           공지
                       </div>
                       <div 
-                          style={{backgroundColor:"#c08029"}} 
-                          className="rounded-full flex items-center justify-center w-53px h-24px font-spoqaMedium text-12px tracking-tight text-white pt-px flex-shrink-0" 
+                          style={{backgroundColor:"#c08029",maxWidth: '92px'}} 
+                          className="rounded-full flex items-center justify-center px-12px h-24px font-spoqaMedium text-12px tracking-tight text-white pt-px flex-shrink-0 truncate" 
                       >
                           이벤트
                       </div>
@@ -87,9 +87,9 @@ const FreeBoardView = () => {
 
                   <div className="bg-gray-2e2e2e h-56px border-b border-gray-252525 flex items-center px-19px space-x-10px">
                       <img className="mb-px h-15px" src={WinnerSmall} alt="" />
-                      <div className="w-px h-10px bg-gray-929292 ml-8px mt-px" />
+                      <div className="w-px h-10px ml-8px mt-px" style={{background:'#4c4c4c'}}/>
                       <div className="font-spoqaMedium text-14px tracking-tight text-gray-929292 mt-px">댓글</div>
-                      <div className="w-17px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d flex-shrink-0">2</div>
+                      <div className="px-5px h-17px text-white text-12px font-roboto flex items-center justify-center rounded-4px bg-red-e9441d flex-shrink-0 -mt-px">2</div>
                   </div>
 
                   <div className="py-60px pt-60px pb-53px bg-gray-323232">

@@ -53,7 +53,7 @@ const FreeBoardView2 = () => {
             <div className="pl-48px">
                 <div className="w-full rounded-4px bg-gray-252525 flex items-start px-20px  pt-17px pb-14px justify-between text-gray-c8c8c8 mt-px">
                     <div className="flex text-14px font-spoqa tracking-tight">
-                    {tag && ( <p className="text-blue-2980b9 mr-10px font-spoqaMedium">@{tag}</p>)}
+                    {tag && ( <p className="text-blue-2980b9 mr-10px font-spoqaMedium">@{tag.length > 8 ? tag.substring(0, 8) : tag} {tag.length > 8 && (<span className='-mt-5px'>...</span>)}</p>)}
                     <p  className="text-gray-c8c8c8">{text}</p>
                     </div>
                     <p className="text-gray-c8c8c8 text-14px tracking-tight font-spoqa  flex-shrink-0">2021.06.28 15:36</p>

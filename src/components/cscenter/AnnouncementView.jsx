@@ -93,7 +93,7 @@ const AnnouncementView = () => {
             <div className="mt-20px mb-60px flex items-start justify-between">
                 <button className="flex items-center justify-center h-36px w-90px rounded-4px p-px shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
                     <div 
-                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
+                        style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
                         className="flex items-center justify-center h-34px w-88px bg-black rounded-4pxx cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">이전</span>
@@ -113,7 +113,8 @@ const AnnouncementView = () => {
                     </div>
                 </button>
 
-                <button className="flex items-center justify-center h-36px w-90px p-px rounded-4px  shadow-link hover:filter hover:brightness-125">
+                <button className="flex items-center justify-center h-36px w-90px p-px rounded-4px  shadow-link hover:filter hover:brightness-125"
+                style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
                     <div 
                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
                         className="flex items-center justify-center h-34px w-88px bg-black rounded-4px  cursor-pointer"

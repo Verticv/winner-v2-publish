@@ -57,9 +57,9 @@ const InboxTable = ({
                     >
                         {
                             item.type === "안내" 
-                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px -mt-px  pt-px flex-shrink-0">안내</div> 
+                            ? <div className="w-45px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px -mt-px  pt-px flex-shrink-0" style={{ maxWidth: '92px' }}>안내</div> 
                             : item.type === "이벤트" 
-                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px -mt-px pt-px flex-shrink-0">이벤트</div> 
+                            ? <div className="w-53px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px -mt-px pt-px flex-shrink-0" style={{ maxWidth: '92px' }}>이벤트</div> 
                             : ''
                         }
                         <p className="group-hover:text-gray-f1e9e9 truncate" style={{maxWidth: item.type === "안내"||item.type === "이벤트"?"487px":"550px"}}>{item.text}</p>
