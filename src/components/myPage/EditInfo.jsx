@@ -75,7 +75,7 @@ const EditInfo = () => {
                     <div className="w-full flex flex-col space-y-12px mt-38px">
                         <div className="flex space-x-10px w-full overflow-hidden rounded-4px">
                             <Title text="환전 비밀번호" />
-                            <div className={`w-full h-44px overflow-hidden`} style={{ background: '#191817' }}>
+                            <div className={`w-full h-44px overflow-hidden rounded-4px`} style={{ background: '#191817' }}>
                                 <input 
                                     style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}                      
                                     className="w-full font-spoqa text-16px outline-none text-gray-c8c8c8 pl-9px placeholder-gray-c8c8c8 h-42px rounded-4px overflow-hidden pt-px" 
