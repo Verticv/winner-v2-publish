@@ -25,7 +25,8 @@ const SportsBetHistoryPanel = ({
     setAttachedArray = null,
     attachedArray = null,
     noButtons = false,
-    width= ''
+    width = '',
+    isFullPage = false
 }) => {
 
     const handleOnChange = (position) => {
@@ -305,13 +306,13 @@ const SportsBetHistoryPanel = ({
       style={{ background: 'linear-gradient(to top,rgb(31,31,30) 0% ,rgb(31,31,30) 80% , rgb(52,52,52) 100%)' }}>
         <div className="w-full bg-gray-2b2b2a rounded-3px pb-10px">
             <div className="flex h-54px w-full font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6">
-                <div style={{width: isAttached === true ? "162px" : "120px", marginLeft: width === 'full'?"":"10px"}} className="h-full flex items-center justify-center">베팅구분</div>
-                <div style={{width: isAttached === true ? "315px" : "283px"}} className="h-full flex items-center justify-center">승(홈)</div>
+                <div style={{width: isAttached === true ? isFullPage? "160px":"162px" : "120px", marginLeft: width === 'full'?"":isFullPage?"0":"10px"}} className="h-full flex items-center justify-center">베팅구분</div>
+                <div style={{width: isAttached === true ? isFullPage? "312px":"315px" : "283px"}} className="h-full flex items-center justify-center">승(홈)</div>
                 <div style={{width: isAttached === true ? "139px" : "91px"}} className="h-full flex items-center justify-center">무</div>
                 <div style={{width: isAttached === true ? "317px" : "283px"}} className="h-full flex items-center justify-center">패(원정)</div>
-                <div style={{width: isAttached === true ? "85px" : "114px", paddingLeft:  isPopup ? '9px':!isAttached ? '7px':'5px' ,marginLeft:  isAttached === true ? "40px" : "0px"}} className="h-full flex items-center justify-center">스코어</div>
+                <div style={{width: isAttached === true ? isFullPage? "90px":"85px" : "114px", paddingLeft:  isPopup ? '9px':!isAttached ? '7px':isFullPage?'4px':'5px' ,marginLeft:  isAttached === true ? isFullPage ?"32px":"40px" : "0px"}} className="h-full flex items-center justify-center">스코어</div>
                 <div style={{width: isAttached === true ? "66px" : "53px"}} className="h-full flex items-center justify-center">선택</div>
-                <div style={{width: isAttached === true ? "58px" : "79px", marginRight:  isAttached === true ? "25px" : "4px"}} className="h-full flex items-center justify-center">결과</div>
+                <div style={{width: isAttached === true ? "58px" : "79px", marginRight:  isAttached === true ? isFullPage ?"20px":"25px" : "4px"}} className="h-full flex items-center justify-center">결과</div>
             </div>
 
             <div className="w-full px-8px space-y-10px">

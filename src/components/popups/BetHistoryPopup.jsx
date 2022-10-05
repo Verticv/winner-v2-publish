@@ -203,7 +203,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
                       )} */}
 
                       {(selectedTab !== 2  && selectedTab !== 4 && selectedTab !== 8) && (
-                          <div className="mt-10px w-full px-4px py-3px rounded-4px bg-gray-2b2b2a">
+                          <div className={`mt-10px w-full px-4px py-3px rounded-4px bg-gray-2b2b2a ${selectedTab==0||selectedTab==3||selectedTab==5?'pb-4px':''}`}>
                               <SubHorizontalMenu 
                                   itemsArray={
                                       selectedTab === 0

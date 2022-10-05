@@ -12,7 +12,7 @@ const FreeBoardCompose = () => {
     const AttachButton = (
         <button 
             style={{width: "115px", height: "35px", backgroundColor: "#826140",boxShadow: '0px 1px 1px 0px rgba(0, 0, 0, 0.6)'}}
-            className="flex items-center justify-center rounded-4px text-golden-highLight text-15px tracking-tight font-spoqaMedium pt-px"
+            className="flex items-center justify-center rounded-4px text-golden-highLight text-15px tracking-tight font-spoqaMedium pt-px hover:brightness-125 filter"
         >
             베팅내역첨부
         </button>
@@ -42,7 +42,7 @@ const FreeBoardCompose = () => {
 
               {attachedArray.map(id => 
                   <div className="py-20px border-b border-gray-252525 px-30px space-y-28px"> 
-                      <SportsBetHistory type={id} id={id} isAttached={true} attachedArray={attachedArray} setAttachedArray={setAttachedArray}/>
+                      <SportsBetHistory type={id} id={id} isAttached={true} attachedArray={attachedArray} setAttachedArray={setAttachedArray} isFullPage={true} />
                   </div>
               )}
               
