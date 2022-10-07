@@ -3,7 +3,7 @@ import CloseIcon from '../../images/popups/close_icon.png'
 import AlertIcon from '../../images/myPage/alert.png'
 import { useHistory } from 'react-router'
 
-const PointsApplyPopup = ({setPopupOpen}) => {
+const PointsApplyPopup = ({setPopupOpen, isQuickMenu = false}) => {
 
     const history = useHistory()
     var nf = new Intl.NumberFormat();
@@ -62,7 +62,7 @@ const PointsApplyPopup = ({setPopupOpen}) => {
                         </button>
                         <button 
                             className="flex items-center justify-center h-52px w-268px rounded-4px  hover:filter hover:brightness-125 shadow-link"
-                            onClick={() => history.push('/mypage/points/points-transaction-history',setPopupOpen(false))}
+                            onClick={() => isQuickMenu ? history.push('/mypage/points/points-apply',setPopupOpen(false)) : history.push('/mypage/points/points-transaction-history',setPopupOpen(false))}
                             style={{background:"linear-gradient(to bottom, #5f80a4, #223348)"}} >
                             <div 
                                 style={{background:"linear-gradient(to bottom, #39618e, #27405d)"}} 
