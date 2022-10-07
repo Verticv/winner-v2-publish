@@ -17,6 +17,7 @@ import { useHistory } from 'react-router-dom'
 import ArrowDown from '../../images/arrows/arrow_dn.png'
 
 import TopLogo from '../../images/top_logo.png'
+import PointsApplyPopup from 'components/popups/PointsApplyPopup'
 
 
 const Navbar = ({ isAuthenticated, setAuth }) => {
@@ -28,6 +29,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	const [country, setCountry] = useState("KR")
 	const [isCountryOpen, setCountryOpen] = useState()
 	const [isPopupOpen, setPopupOpen] = useState(true)
+	const [isPointPopupOpen, setPointPopupOpen] = useState(true)
 
 	function useWindowSize() {
 		// Initialize state with undefined width/height so server and client renders match
@@ -138,12 +140,20 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 				</p>
 			</button>
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
-			<button className='flex items-center h-12px flex-shrink-0' onClick={() => history.push("/mypage/points/points-apply")}>
-				<img src={Nav3} alt="" className=' object-none' />
-				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
-					12,500P
-				</p>
-			</button>
+
+			<PopupControls
+				buttonChild={<button className='flex items-center h-12px flex-shrink-0'>
+					<img src={Nav3} alt="" className=' object-none' />
+					<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+						12,500P
+					</p>
+				</button>}
+				isPopupOpen={isPointPopupOpen}
+				setPopupOpen={setPointPopupOpen}
+			>
+				<PointsApplyPopup setPopupOpen={setPointPopupOpen} />
+			</PopupControls>
+
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
 			<button className='flex items-center h-12px flex-shrink-0' onClick={() => history.push("/mypage/inbox")}>
 				<img src={Nav4} alt="" className=' object-none' />
