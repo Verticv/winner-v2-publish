@@ -45,7 +45,7 @@ const QuickMenu = ({ scrollPosition }) => {
               isPopupOpen={isPopupOpen} 
               setPopupOpen={setPopupOpen}
               >
-                <PointsApplyPopup setPopupOpen={setPopupOpen} />
+                <PointsApplyPopup setPopupOpen={setPopupOpen} isQuickMenu />
             </PopupControls> 
             {/* <button style={{ height: '84px' }} className="w-full flex flex-col items-center justify-between hover:brightness-125 filter cursor-pointer" onClick={() => history.push('/mypage/points/points-apply')}>
               <img src={Quick3} alt="" className='mt-15px' />
