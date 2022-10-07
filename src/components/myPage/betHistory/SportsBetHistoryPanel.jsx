@@ -160,7 +160,7 @@ const SportsBetHistoryPanel = ({
 
     const Cards0 = ({bet = "right"}) => (
         <div className="w-full rounded-4px overflow-hidden shadow-subNavbar border-2 border-gray-473b35">
-            <div className="flex items-center justify-between h-54px w-full pl-17px pr-19px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
+            <div className={`flex items-center justify-between h-54px w-full ${isFullPage ?'px-20px':' pl-17px pr-19px'}`} style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={USFlagIcon} alt="" />

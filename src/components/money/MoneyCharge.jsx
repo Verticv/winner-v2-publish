@@ -104,8 +104,8 @@ const MoneyCharge = () => {
                         <Title text="충전금액 입력" />
                         <div className="w-full h-44px overflow-hidden rounded-4px" style={{ background: '#191817' }}>
                               <input 
-                                style={{ background: '#191817',  boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', }}                      
-                                className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 h-43px"
+                                style={{ background: '#191817',  boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', height: "41px"}}                      
+                                className="w-full text-gray-828282 font-spoqaMedium text-16px outline-none pl-9px placeholder-gray-828282 pt-3px"
                                 placeholder="직접 입력시 숫자만 입력해 주세요."
                                 value={inputValue !==null ? nf.format(inputValue) : ""}
                                 onChange={e => setInputValue(e.target.value.replace(/,/g, ''))}
@@ -118,7 +118,7 @@ const MoneyCharge = () => {
                                 }}
                                 type = "tel"
                                 />
-                                 <div style={{backgroundColor: inputClicked  ? "#a67c52" : "#191817"}} className={`w-full h-px`} />
+                                 <div style={{backgroundColor: inputClicked  ? "#a67c52" : "#191817"}} className={`w-full h-3px`} />
                             {/* <div className={`${inputClicked ? "bg-blue-r1ca7ec h-2px" : " h-px bg-gray-bebebe"} w-full`}></div> */}
                         </div>
                     </div>
