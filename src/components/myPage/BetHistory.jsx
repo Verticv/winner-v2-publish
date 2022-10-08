@@ -61,37 +61,38 @@ const BetHistory = () => {
             
              <div className="relative w-full mt-20px">
                 <HorizontalMenu itemsArray={tabsArray} setSelectedSubTab={setSelectedSubTab}/>
-                {/* {(selectedTab !== 0 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 8 && selectedTab !== 9) && (
-                  <div style={{marginLeft: `${selectedTab * 103 + 46}px`}} className={`absolute bottom-0 w-20px -mb-12px overflow-hidden inline-block `}>
-                    <div style={{
-                      background:'#323231'
-                    }} className="h-15px w-15px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>
-                  </div>
-                )} */}
             </div>
             
             <Route exact path="/mypage/bet-history">
                 <>
                     <AllBetHistory />
-                    <Pagination page={page} setPage={setPage}/>   
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />   
+                    </div>
                 </>
             </Route>
             <Route path="/mypage/bet-history/live-casino">
                 <>
                     <LiveCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab} />
-                    <Pagination page={page} setPage={setPage}/>   
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />   
+                    </div>
                 </>
             </Route>
             <Route path="/mypage/bet-history/slot-game">
                 <>
                     <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} />
-                    <Pagination page={page} setPage={setPage}/>   
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />   
+                    </div>
                 </>
             </Route>
             <Route path="/mypage/bet-history/sports">
                 <>
                     <SportsBetHistory checkedState={checkedState} setCheckedState={setCheckedState} />
-                    <Pagination page={page} setPage={setPage}/>   
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />  
+                    </div>    
                 </>
             </Route>
             <Route path="/mypage/bet-history/e-sports">
@@ -102,31 +103,43 @@ const BetHistory = () => {
             <Route path="/mypage/bet-history/minigame">
                 <>
                     <MinigameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} />
-                    <Pagination page={page} setPage={setPage}/>   
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />   
+                    </div>
                 </>
             </Route>
             <Route path="/mypage/bet-history/ar-game">
                 <>
                     <ARGameBetHistory isState={selectedSubTab} setState={setSelectedSubTab} />
-                    <Pagination page={page} setPage={setPage}/>   
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />  
+                    </div>    
                 </>
             </Route>
             <Route path="/mypage/bet-history/fishing-game">
                 <>
                     <SlotBetHistory isState={selectedSubTab} setState={setSelectedSubTab} />
-                    <Pagination page={page} setPage={setPage}/>   
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />   
+                    </div>
                 </>
             </Route>
             <Route path="/mypage/bet-history/hotel-casino">
                 <>
-                  <HotelCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab}/>
-                  <Pagination page={page} setPage={setPage}/>
+                    <HotelCasinoBetHistory isState={selectedSubTab} setState={setSelectedSubTab} />
+                    <div className='mt-4px'>
+                        <Pagination page={page} setPage={setPage} />
+                    </div>
+                    
                 </>
             </Route> 
             <Route exact path="/mypage/bet-history/bet">
               <>
-                  <AllBetHistory />
-                  <Pagination page={page} setPage={setPage}/>   
+                <AllBetHistory />
+                <div className='mt-4px'>
+                  <Pagination page={page} setPage={setPage} />   
+                </div>
+                
               </>
             </Route>
 
