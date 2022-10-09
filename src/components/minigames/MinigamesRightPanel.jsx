@@ -118,7 +118,7 @@ const MinigamesRightPanel = ({
         <div style={{height: "62px"}} className="relative w-full rounded-sm flex">
             <img className="absolute object-none z-10" src={SelectionBg} alt="" />
             <div style={{width:"106px"}} className="ml-9px h-full z-20 flex items-center justify-center space-x-px pt-1px pr-8px">
-              <img className="" src={CheckIcon} alt="" />
+              <img className="mt-px" src={CheckIcon} alt="" />
               <p style={{color:"#ffdfbd"}} className="text-16px tracking-tight font-spoqaBold mt-px">게임선택</p>
             </div>
             <div style={{width:"90px"}} className="ml-18px flex h-full z-20 items-center justify-center pr-2px flex-col space-y-4px">

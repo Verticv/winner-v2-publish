@@ -22,7 +22,7 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
 
             <div className="flex">
                 <p className="text-14px text-white tracking-tight font-spoqaMedium h-14px flex items-center mt-7px ml-9px">티켓번호</p>
-                <p style={{color:"#fde1a4"}} className="text-14px text-white tracking-tight font-roboto h-11px flex items-center mt-8px ml-5px">189106964</p>
+                <p style={{color:"#fde1a4"}} className="text-14px text-white tracking-tight font-roboto h-11px flex items-center mt-9px ml-5px">189106964</p>
             </div>
 
             <img src={CancelIcon} alt="" className="absolute right-10px top-10px cursor-pointer" onClick={() => setShowConfirm(false)} />

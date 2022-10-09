@@ -208,7 +208,7 @@ const Contact = () => {
     )
 
     return (
-        <div className='-mt-px'>
+        <div>
 
             <MyPageTitle title="문의하기" />
 

@@ -31,12 +31,9 @@ const AnnouncementView = () => {
             > 
                 <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
                 {/* TITLE */}
-                <div className="py-15px w-full flex items-start px-19px space-x-10px border-b border-gray-252525">
+                <div className="pt-18px pb-15px w-full flex items-start px-19px space-x-10px border-b border-gray-252525">
                     <p className="text-14px font-spoqaMedium tracking-tight flex flex-shrink-0" style={{color:'#4a90f0'}}>스포츠북</p>
-                    {/* <h1 className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">
-                        {TitleText}
-                    </h1>
-                        {NewLabel} */}
+                    
                     <div  className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8 ">
                         <h1 className='align-top -mt-px'>{TitleText} <span className='inline-block align-top mt-px ml-10px'>{NewLabel}</span></h1> 
                     </div >
@@ -94,7 +91,7 @@ const AnnouncementView = () => {
                 <button className="flex items-center justify-center h-36px w-90px rounded-4px p-px shadow-link hover:filter hover:brightness-125" style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
                     <div 
                         style={{background: 'linear-gradient(to bottom,  #a67c52, #7f5f3f)'}}
-                        className="flex items-center justify-center h-34px w-88px bg-black rounded-4pxx cursor-pointer"
+                        className="flex items-center justify-center h-34px w-88px bg-black rounded-4px cursor-pointer"
                     >
                         <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight pt-px text-shadow-5">이전</span>
                     </div>

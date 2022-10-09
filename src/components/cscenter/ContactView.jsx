@@ -19,17 +19,17 @@ const ContactView = () => {
             <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-20px" style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
               > 
               <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
-                <div className="w-full border-b border-gray-252525 px-19px flex items-start space-x-10px pt-15px pb-14px">
+                <div className="w-full border-b border-gray-252525 px-19px flex items-start space-x-10px py-15px">
                     <div 
                         style={{maxWidth: "92px",backgroundColor: "#494745", color: "#ccc2b6"}} 
-                        className="px-12px h-25px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center flex-shrink-0"
+                        className="px-12px h-24px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center flex-shrink-0"
                     >
                         답변완료
                     </div>
 
                     <div 
                         style={{maxWidth: "92px",backgroundColor: "#40915f", color: "#fff"}} 
-                        className="px-12px h-25px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center flex-shrink-0"
+                        className="px-12px h-24px rounded-full font-spoqaMedium text-12px tracking-tight flex items-center justify-center flex-shrink-0"
                     >
                         스포츠
                     </div>
@@ -37,7 +37,7 @@ const ContactView = () => {
                     <p className=" mt-2px font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8">스포츠북 문의</p>
                 </div>
 
-                <div className="pt-19px pb-13px w-full border-b border-gray-252525 px-19px flex items-start text-14px font-spoqaMedium tracking-tight text-gray-929292">
+                <div className="py-16px w-full border-b border-gray-252525 px-19px flex items-start text-14px font-spoqaMedium tracking-tight text-gray-929292">
                     <img src={Rank1Icon} alt=""/>
                     <p className="ml-3px mt-2px">마이마이프로틴화이팅
                         <div className="inline-block">

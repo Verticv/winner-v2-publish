@@ -27,6 +27,8 @@ const HorizontalMenu4 = ({
                     height: "39px",
                     background: selectedTab === item.id 
                     ? "linear-gradient(to top, #a1885d, #dabe82)" 
+                    :isHover === item.id
+                    ?'#54544f'
                     :'linear-gradient(to top, #4a4a4a, #5f5f5f)',
                   }}
                   className="w-full  rounded-t-4px flex items-start justify-center pt-9px"

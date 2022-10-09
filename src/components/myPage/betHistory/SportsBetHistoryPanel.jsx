@@ -132,7 +132,7 @@ const SportsBetHistoryPanel = ({
             <div style={{width: isAttached && "90px"}} className="font-roboto w-99px text-gray-c8c8c8">{score}</div>
             <div style={{width: isAttached && "59px"}} className="w-61px text-gray-c8c8c8">{choice === "home" ? "홈팀 승" : "원정팀 승"}</div>
             <div 
-            style={{marginRight:isAttached && "5px"}}
+            style={{marginRight:isAttached && "5px",WebkitTextStroke:"0.2px"}}
             className={`${
                 result === "win" 
                 ? "text-red-e65454" 
@@ -140,7 +140,7 @@ const SportsBetHistoryPanel = ({
                 ? "text-gray-c8c8c8" 
                 : result === "cancel" 
                 ? "text-blue-4c98ff" 
-                : "text-gray-c8c8c8"} 
+                : "text-gray-c8c8c8"}
                 ${
                     isPopup ? "w-63px" : "w-70px"
                 }
@@ -167,7 +167,7 @@ const SportsBetHistoryPanel = ({
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">MLS</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt=""/>
+                    <img src={ClockIcon} alt="" className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight pt-px">
                         2021-06-29 15:45
                     </span>
@@ -198,7 +198,7 @@ const SportsBetHistoryPanel = ({
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">EPL</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt="" />
+                    <img src={ClockIcon} alt=""  className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
@@ -245,7 +245,7 @@ const SportsBetHistoryPanel = ({
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">EPL</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt=""/>
+                    <img src={ClockIcon} alt=""  className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
@@ -271,7 +271,7 @@ const SportsBetHistoryPanel = ({
         <div className="w-full rounded-4px overflow-hidden shadow-subNavbar border-2 border-gray-473b35">
             <div className="flex items-center justify-between h-54px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
                 <div className="flex items-center">
-                    <img src={FootballIcon} alt="" />
+                    <img src={FootballIcon} alt=""  className='-mt-2px'/>
                     <img className="ml-5px" src={SpainFlagIcon} alt="" />
                     <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">라리가</span>
                 </div>
@@ -359,13 +359,13 @@ const SportsBetHistoryPanel = ({
                             </div>
                         )}
                         {(isAttached === false && isPopup === false) && (
-                            <div  className="w-116px h-full flex items-center justify-center ">{ticketNumber}</div>
+                            <div style={{WebkitTextStroke:"0.2px"}} className="w-116px h-full flex items-center justify-center ">{ticketNumber}</div>
                         )}
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "151px" : "151px"}} className="h-full flex items-center justify-center ">{time}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "150px"}} className="h-full flex items-center justify-end  pr-5px">{amount}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "78px" : "178px"}} className="h-full flex items-center justify-center ">{ratio}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "165px"}} className="h-full flex items-center justify-end  pr-5px">{predictedPrice}</div>
-                        <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "200px"}} className="h-full flex items-center justify-end  pr-5px"><p className={`${winAmount.includes("+") && "text-red-e65454"}`}>{winAmount}</p>원</div>
+                        <div style={{WebkitTextStroke:"0.2px",width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "151px" : "151px"}} className="h-full flex items-center justify-center ">{time}</div>
+                        <div style={{WebkitTextStroke:"0.2px",width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "150px"}} className="h-full flex items-center justify-end  pr-5px">{amount}</div>
+                        <div style={{WebkitTextStroke:"0.2px",width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "78px" : "178px"}} className="h-full flex items-center justify-center ">{ratio}</div>
+                        <div style={{WebkitTextStroke:"0.2px",width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "165px"}} className="h-full flex items-center justify-end  pr-5px">{predictedPrice}</div>
+                        <div style={{WebkitTextStroke:"0.2px",width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "200px"}} className="h-full flex items-center justify-end  pr-5px"><p className={`${winAmount.includes("+") && "text-red-e65454"}`}>{winAmount}</p>원</div>
                     </div>
                 </table>
                 

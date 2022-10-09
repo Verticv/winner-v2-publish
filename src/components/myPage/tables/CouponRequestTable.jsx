@@ -107,8 +107,8 @@ const CouponRequestTable = () => {
                 <td className="w-350px truncate text-center px-20px"  style={{ maxWidth: '350px' }}>
                 {item.name}
                 </td>
-                <td className="w-119px text-right text-red-e9441d font-robotoRegular pr-20px">{item.amount}</td>
-                <td className="w-140px text-center"><div className='w-140px truncate px-10px text-center'>{item.username}</div></td>
+                <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e9441d font-robotoRegular pr-20px">{item.amount}</td>
+                <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center"><div className='w-140px truncate px-10px text-center'>{item.username}</div></td>
                 <td 
                     style={{
                         color: item.state === "사용가능" 
@@ -117,15 +117,15 @@ const CouponRequestTable = () => {
                         ? "#4c98ff"
                         : item.state === "회수쿠폰"
                         ? "#4aca68"
-                        : "#c8c8c8",
-                        
+                        : "#c8c8c8"
+                        , WebkitTextStroke:"0.2px"
                     }} 
                     className="w-141px text-center "
                 >
                     {item.state}
                 </td>
-                <td className="w-88px text-center font-robotoRegular">{item.date}</td>
-                <td className="w-124px text-center font-robotoRegular">{item.expireDate}</td>
+                <td style={{WebkitTextStroke:"0.2px"}} className="w-88px text-center font-robotoRegular">{item.date}</td>
+                <td style={{WebkitTextStroke:"0.2px"}} className="w-124px text-center font-robotoRegular">{item.expireDate}</td>
             </tr>
         ));
     }

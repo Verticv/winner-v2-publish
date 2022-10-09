@@ -33,7 +33,7 @@ const ContactTable = ({
                     >
                         <div 
                             style={{maxWidth: "92px",backgroundColor: item.isRead === true ? "#494745" : "#7e7564", color: item.isRead === true ? "#c8c8c8" : "#f1e7d5"}}
-                            className={`w-69px h-29px rounded-full font-spoqaMedium text-14px tracking-tight flex items-center justify-center pt-px cursor-pointer truncate`} 
+                            className={`px-12px h-29px rounded-full font-spoqaMedium text-14px tracking-tight flex items-center justify-center pt-px cursor-pointer truncate`} 
                         >
                             <p>{item.isRead === true ? "답변완료" : "답변대기"}</p>
                         </div>

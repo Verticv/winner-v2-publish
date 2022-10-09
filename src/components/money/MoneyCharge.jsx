@@ -31,7 +31,7 @@ const MoneyCharge = () => {
             <div style={{height: "187px"}} className="mt-20px w-full rounded-4px border border-red-594c49 bg-red-413937 px-19px pt-17px">
                 <div className="flex items-center h-26px space-x-9px">
                     <img src={AlertIcon} alt="" />
-                    <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight mt-px">확인 / 필독사항</span>
+                    <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight mt-px" style={{WebkitTextStroke:"0.2px"}}>확인 / 필독사항</span>
                 </div>
                 <div className="mt-16px flex flex-col space-y-15px text-gray-ccc2b6 tracking-tight font-spoqaMedium text-16px">
                     <span style={{color:"#ffdfbd"}} className="h-14px space-y-4px"><span className="mr-4px font-bold">✓</span>  입금 시 반드시 회원님의 성함으로 입금 바랍니다.</span>
@@ -95,7 +95,7 @@ const MoneyCharge = () => {
                         <div className="h-44px space-y-2px w-full flex items-center  text-gray-c8c8c8 rounded-4px"
                         style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
                             <div className=" w-full font-spoqaMedium text-16px  pl-9px mt-px">
-                                <span className="font-spoqaBold text-red-e9441d">487,240</span>
+                                <span className="font-spoqaBold text-red-e9441d text-16px">487,240</span>
                                 <span style={{color:'#bfbfbf'}}>원</span>
                             </div>
                         </div>
@@ -238,50 +238,50 @@ const MoneyCharge = () => {
                             <div className='flex space-x-5px'>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
-                                    className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter shadow-link" 
+                                    className="flex items-center justify-center h-42px rounded-4px  hover:brightness-125 filter shadow-link" 
                                     onClick={() => setRadioValue("slot_game")}
                                 >
-                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-2px  cursor-pointer">
+                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-4px  cursor-pointer">
                                         <input type="radio" className="ml-11px" name="gender" checked={radioValue === "slot_game"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff ml-30px text-shadow-5">슬롯게임</span>
                                     </div>
                                 </button>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
-                                    className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter shadow-link" 
+                                    className="flex items-center justify-center h-42px rounded-4px  hover:brightness-125 filter shadow-link" 
                                     onClick={() => setRadioValue("sports")}
                                 >
-                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-2px  cursor-pointer">
+                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-4px  cursor-pointer">
                                         <input type="radio" className="ml-11px" name="gender" checked={radioValue === "sports"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff ml-33px text-shadow-5">스포츠</span>
                                     </div>
                                 </button>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
-                                    className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter shadow-link" 
+                                    className="flex items-center justify-center h-42px rounded-4px  hover:brightness-125 filter shadow-link" 
                                     onClick={() => setRadioValue("v_game")}
                                 >
-                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-2px  cursor-pointer">
+                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-4px  cursor-pointer">
                                         <input type="radio" className="ml-11px" name="gender" checked={radioValue === "v_game"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff ml-16px text-shadow-5">키론가상게임</span>
                                     </div>
                                 </button>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
-                                    className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter shadow-link" 
+                                    className="flex items-center justify-center h-42px rounded-4px  hover:brightness-125 filter shadow-link" 
                                     onClick={() => setRadioValue("yes")}
                                 >
-                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-2px  cursor-pointer">
+                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center h-40px rounded-4px  cursor-pointer">
                                         <input type="radio" className="ml-11px" name="gender" checked={radioValue === "yes"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff ml-28px text-shadow-5">피싱게임</span>
                                     </div>
                                 </button>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #4b0923, #e88895)'}} 
-                                    className="flex items-center justify-center h-42px rounded-2px  hover:brightness-125 filter shadow-link"
+                                    className="flex items-center justify-center h-42px rounded-4px  hover:brightness-125 filter shadow-link"
                                     onClick={() => setRadioValue("no")}
                                 >
-                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #e06446, #96341d)'}} className="flex items-center h-40px rounded-2px cursor-pointer">
+                                    <div style={{width: "133px",background: 'linear-gradient(to bottom, #e06446, #96341d)'}} className="flex items-center h-40px rounded-4px cursor-pointer">
                                         <input type="radio" className="ml-11px" name="gender" checked={radioValue === "no"} />
                                         <span className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 ml-29px text-shadow-5">받지않기</span>
                                     </div>
@@ -303,8 +303,8 @@ const MoneyCharge = () => {
             </div>
           </div>
 
-            <button style={{width: "228px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} className="flex items-center justify-center h-52px rounded-2px  mt-20px hover:brightness-125 filter shadow-link">
-                <div style={{width: "226px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center justify-center h-50px rounded-2px cursor-pointer">
+            <button style={{width: "228px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} className="flex items-center justify-center h-52px rounded-4px  mt-20px hover:brightness-125 filter shadow-link">
+                <div style={{width: "226px",background: 'linear-gradient(to bottom, #528ccd, #396084)'}} className="flex items-center justify-center h-50px rounded-4px cursor-pointer">
                     <span className="font-spoqaMedium tracking-tight text-16px text-blue-d6f3ff text-shadow-5">신청하기</span>
                 </div>
             </button>

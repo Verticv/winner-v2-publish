@@ -414,7 +414,7 @@ const FreeBoardMain = () => {
                             <div className="h-17px pl-5px pr-5px rounded-4px flex items-center justify-center text-white font-roboto text-12px bg-red-e9441d mr-10px ml-px flex-shrink-0">{item.replies}</div>
                         )}
                         {item.isBetHistory === true && (
-                            <div style={{backgroundColor: "#41b06c"}} className="h-25px w-65px rounded-full flex items-center justify-center text-white font-spoqaMedium text-12px flex-shrink-0">베팅내역</div>
+                            <div style={{backgroundColor: "#41b06c",maxWidth: '92px'}} className="h-25px px-10px rounded-full flex items-center justify-center text-white font-spoqaMedium text-12px flex-shrink-0">베팅내역</div>
                         )}
                         {item.isRead === false && (
                             <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto flex-shrink-0">
