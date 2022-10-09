@@ -162,8 +162,8 @@ const EditInfo = () => {
                 </div>
               </div>
                 <div className="mt-20px w-full flex items-center justify-center mb-60px">
-                    <button className="flex items-center justify-center w-192px h-52px rounded-2px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:filter hover:brightness-125 shadow-link">
-                        <div className="flex items-center justify-center h-50px w-190px rounded-2px  bg-gradient-to-b from-red-e06446  to-red-96341d cursor-pointer">
+                    <button className="flex items-center justify-center w-192px h-52px rounded-4px bg-gradient-to-t from-red-4b0923 to-red-e88895  hover:filter hover:brightness-125 shadow-link">
+                        <div className="flex items-center justify-center h-50px w-190px rounded-4px  bg-gradient-to-b from-red-e06446  to-red-96341d cursor-pointer">
                             <span className="font-spoqaMedium tracking-tight text-16px text-red-ffd2d2 text-shadow-5">수정하기</span>
                         </div>
                     </button>
