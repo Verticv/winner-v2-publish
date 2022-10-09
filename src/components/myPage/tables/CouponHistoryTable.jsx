@@ -8,7 +8,7 @@ const CouponHistoryTable = () => {
             <table className="rounded-3px overflow-hidden">
                 <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
-                    <td className="w-292px text-center">쿠폰명</td>
+                    <td style={{maxWidth:'292px',}}  className="w-292px text-center pl-23px pr-15px">쿠폰명</td>
                     <td className="w-119px text-center">쿠폰금액</td>
                     <td className="w-140px text-center">받는회원아이디</td>
                     <td className="w-137px text-center">보낸일시</td>
@@ -19,7 +19,7 @@ const CouponHistoryTable = () => {
             </thead>
             <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td  style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center"><div className='w-292px truncate px-5px'>테스트쿠폰</div></td>
+                    <td  style={{maxWidth:'292px',WebkitTextStroke:"0.2px"}} className="w-292px text-center truncate pl-23px pr-15px">테스트쿠폰</td>
                     <td  style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td  style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center"><div className='w-140px truncate px-10px'>eric123</div></td>
                     <td  style={{WebkitTextStroke:"0.2px"}} className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
@@ -28,7 +28,7 @@ const CouponHistoryTable = () => {
                     <td  style={{WebkitTextStroke:"0.2px"}} className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center"><div className='w-292px truncate px-5px'>테스트쿠폰</div></td>
+                    <td style={{maxWidth:'292px',WebkitTextStroke:"0.2px"}} className="w-292px text-center truncate pl-23px pr-15px">테스트쿠폰</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center"><div className='w-140px truncate px-10px'>eric123</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>
@@ -37,7 +37,7 @@ const CouponHistoryTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-124px text-center font-robotoRegular">2021-07-29</td>
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-292px text-center"><div className='w-292px truncate px-5px'>테스트쿠폰</div></td>
+                    <td style={{maxWidth:'292px',WebkitTextStroke:"0.2px"}} className="w-292px text-center truncate pl-23px pr-15px">테스트쿠폰</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e9441d font-robotoRegular pr-10px">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-140px text-center"><div className='w-140px truncate px-10px'>eric123</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-137px text-center font-robotoRegular">2021-06-29 15:45:41</td>

@@ -213,7 +213,7 @@ const FreeBoardView = () => {
                     </div>
 
                     <ReplyCell rank={5} />
-                    <ReplyCell rank={2} username="신풍사우나" isEdit={true} text="오전에 발행되나요?" tag="소유"/>
+                    <ReplyCell rank={2} username="신풍사우나" isEdit={true} text="오전에 발행되나요?" tag="소유소유소유소유소유소유소유소유"/>
               </div>
             </div>
 

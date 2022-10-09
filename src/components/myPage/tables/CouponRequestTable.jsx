@@ -104,7 +104,7 @@ const CouponRequestTable = () => {
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}
             >
-                <td className="w-350px truncate text-center px-20px"  style={{ maxWidth: '350px' }}>
+                <td className="w-350px truncate text-center pl-20px pr-15px"  style={{ WebkitTextStroke:"0.2px",maxWidth: '350px' }}>
                 {item.name}
                 </td>
                 <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-right text-red-e9441d font-robotoRegular pr-20px">{item.amount}</td>
@@ -137,7 +137,7 @@ const CouponRequestTable = () => {
             <table className="table-fixed rounded-3px overflow-hidden">
               <thead className="font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 h-56px  border-b border-dark-252525 bg-dark-2e2e2e ">
                 <tr>
-                  <td style={{width: "350px"}} className="w-292px text-center">쿠폰명</td>
+                  <td style={{width: "350px"}} className="w-292px text-center pl-20px pr-15px">쿠폰명</td>
                   <td style={{width: "163px"}} className="w-119px text-center">쿠폰금액</td>
                   <td style={{width: "135px"}} className="w-140px text-center">보낸회원아이디</td>
                   <td style={{width: "118px"}} className="w-141px text-center">처리상태</td>

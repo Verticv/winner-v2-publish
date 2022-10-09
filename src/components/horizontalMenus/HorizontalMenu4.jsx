@@ -31,7 +31,7 @@ const HorizontalMenu4 = ({
                     ?'#54544f'
                     :'linear-gradient(to top, #4a4a4a, #5f5f5f)',
                   }}
-                  className="w-full  rounded-t-4px flex items-start justify-center pt-9px"
+                  className="w-full  rounded-t-4px flex items-start justify-center pt-9px hover:filter hover:brightness-90"
                   >
                     <div className="flex items-center">
                         <div 
