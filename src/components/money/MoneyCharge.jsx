@@ -126,10 +126,10 @@ const MoneyCharge = () => {
                 <div style={{marginLeft: "268px"}} className={`mt-23px flex space-x-5px w-full justify-start pr-115px`}>
                     <button 
                       style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
-                        className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link"
+                        className="flex items-center justify-center h-42px w-75px rounded-4px  hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue + 10000)}
                     >
-                      <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                      <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                       style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">1만원</span>
                         </div>
@@ -137,10 +137,10 @@ const MoneyCharge = () => {
 
                     <button 
                       style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
-                        className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link"
+                        className="flex items-center justify-center h-42px w-75px rounded-4px  hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue + 30000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-2px  cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px  cursor-pointer"
                         style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">3만원</span>
                         </div>
@@ -148,10 +148,10 @@ const MoneyCharge = () => {
 
                     <button 
                       style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
-                        className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link"
+                        className="flex items-center justify-center h-42px w-75px rounded-4px  hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue + 50000)}
                     >
-                <div className="flex items-center justify-center h-40px w-73px bg-black rounded-2px  cursor-pointer"
+                <div className="flex items-center justify-center h-40px w-73px bg-black rounded-4px  cursor-pointer"
                 style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">5만원</span>
                         </div>
@@ -159,10 +159,10 @@ const MoneyCharge = () => {
 
               <button 
                 style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
-                        className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link"
+                        className="flex items-center justify-center h-42px w-75px rounded-4px  hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue + 100000)}
                     >
-                <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                 style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">10만원</span>
                         </div>
@@ -170,39 +170,39 @@ const MoneyCharge = () => {
 
               <button 
                 style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
-                        className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link"
+                        className="flex items-center justify-center h-42px w-75px rounded-4px  hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue + 300000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px cursor-pointer" style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer" style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">30만원</span>
                         </div>
                     </button>
 
               <button 
                 style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
-                        className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link"
+                        className="flex items-center justify-center h-42px w-75px rounded-4px  hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue + 500000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px rounded-2px cursor-pointer" style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
+                        <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer" style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">50만원</span>
                         </div>
                     </button>
 
               <button 
                 style={{background:'linear-gradient(to top, #3f3d37, #a69685)'}}
-                        className="flex items-center justify-center h-42px w-75px rounded-2px hover:brightness-125 filter shadow-link"
+                        className="flex items-center justify-center h-42px w-75px rounded-4px hover:brightness-125 filter shadow-link"
                         onClick={() => setInputValue(inputValue + 1000000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px rounded-2px cursor-pointer" style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
+                        <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer" style={{background:'linear-gradient(to bottom, #786d62, #4b4742)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">100만원</span>
                         </div>
                     </button>
 
                     <button 
-                        className="flex items-center justify-center h-42px w-75px rounded-2px  hover:brightness-125 filter shadow-link" style={{background:'linear-gradient(to top, #4b3b09, #e8b888)'}}
+                        className="flex items-center justify-center h-42px w-75px rounded-4px  hover:brightness-125 filter shadow-link" style={{background:'linear-gradient(to top, #4b3b09, #e8b888)'}}
                         onClick={() => setInputValue(0)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer" style={{background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}>
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer" style={{background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">정정</span>
                         </div>
                     </button>
