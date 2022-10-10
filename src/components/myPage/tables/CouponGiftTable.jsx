@@ -31,7 +31,7 @@ const CouponGiftTable = () => {
             </thead>
             <tbody className="w-full text-585858 text-14px tracking-tight font-spoqa">
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -40,7 +40,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -49,7 +49,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -58,7 +58,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -67,7 +67,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -76,7 +76,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -85,7 +85,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -94,7 +94,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -103,7 +103,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-323232">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>
@@ -112,7 +112,7 @@ const CouponGiftTable = () => {
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-119px text-center font-robotoRegular pr-9px">2021-07-29</td>
                 </tr> 
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px bg-dark-2e2e2e">
-                    <td style={{WebkitTextStroke:"0.2px"}} className="w-79px text-center pt-7px">{RadioButton}</td>
+                    <td  className="w-79px text-center pt-7px">{RadioButton}</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-340px text-center"><div className='w-340px truncate px-5px'>테스트쿠폰</div></td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-143px text-right text-red-e9441d pr-13px font-robotoRegular">10,000</td>
                     <td style={{WebkitTextStroke:"0.2px"}} className="w-135px text-center"><div className='w-135px truncate px-5px'>eric123</div></td>

@@ -49,18 +49,18 @@ const BetCombinationRightPanelCart = ({addedCard ,setAddedCard}) => {
                     className="relative w-full pt-10px pb-11px"
                 >
                     <p 
-                        style={{width:"263px", color: item.value === "right" ? "#e65454" : "#ffffff"}} 
+                        style={{width:"263px", color: item.value === "right" ? "#e65454" : "#ffffff",lineHeight: "1.2"}} 
                         className="text-14px font-spoqaBold tracking-tight text-white  flex items-center ml-9px leading-none mt-px break-all"
                     >
-                        {item.value === "right" ? "SV Kuchl" : "FK Haugesund"}
+                        {item.value === "right" ? "SV Kuchl" : "FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund"}
                     </p>
                     <p 
-                        style={{width:"263px", color: item.value === "right" ? "#ffffff" : "#e65454"}} 
+                        style={{width:"263px", color: item.value === "right" ? "#ffffff" : "#e65454",lineHeight: "1.2"}} 
                         className="text-14px font-spoqaBold tracking-tight  flex items-center mt-8px ml-8px leading-none break-all"
                     >
-                        {item.value === "right" ? "FC Blau Weiss Linz" : "스트룀스고세 IF"}
+                        {item.value === "right" ? "FC Blau Weiss Linz" : "스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF"}
                     </p>
-                    <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8  flex items-center mt-14px ml-8px leading-none break-all" style={{width: "224px"}}>축구 - 승무패 (게임)</p>
+                    <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8  flex items-center mt-14px ml-8px leading-none break-all" style={{width: "224px",lineHeight: "1.2"}}>축구 - 승무패 (게임) 축구 - 승무패 (게임) 축구 - 승무패 (게임) 축구 - 승무패 (게임)축구 - 승무패 (게임)</p>
                     <img src={CancelIconGray} alt="" name={item.id} className="absolute top-10px right-8px cursor-pointer hover:opacity-75" onClick={handleRemoveItem} />
                     <div className="flex absolute bottom-10px right-10px text-13px tracking-tight font-spoqaMedium h-13px items-center text-gray-c8c8c8">
                         <p>{item.value === "right" ? "승 @" : "패 @"}</p> 

@@ -111,88 +111,88 @@ const PointsApply = () => {
 
                 <div className={`mt-20px flex space-x-5px w-full justify-end pr-117px`}>
                     <button 
-                      className="flex items-center justify-center h-42px w-75px p-px  rounded-2px shadow-link hover:filter hover:brightness-125"
+                      className="flex items-center justify-center h-42px w-75px p-px  rounded-4px shadow-link hover:filter hover:brightness-125"
                       style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
                         onClick={() => setInputValue(inputValue + 1000)}
                     >
-                    <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                    <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                     style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">1천P</span>
                         </div>
                     </button>
 
                     <button 
-                        className="flex items-center justify-center h-42px w-75px p-px rounded-2px shadow-link hover:filter hover:brightness-125"
+                        className="flex items-center justify-center h-42px w-75px p-px rounded-4px shadow-link hover:filter hover:brightness-125"
                         style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
                         onClick={() => setInputValue(inputValue + 5000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                           style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">5천P</span>
                         </div>
                     </button>
 
                     <button 
-                      className="flex items-center justify-center h-42px w-75px p-px rounded-2px shadow-link hover:filter hover:brightness-125"
+                      className="flex items-center justify-center h-42px w-75px p-px rounded-4px shadow-link hover:filter hover:brightness-125"
                       style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
                         onClick={() => setInputValue(inputValue + 10000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                           style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">1만P</span>
                         </div>
                     </button>
 
                     <button 
-                        className="flex items-center justify-center h-42px w-75px p-px rounded-2px bg-blue-r2068b2 shadow-link hover:filter hover:brightness-125"
+                        className="flex items-center justify-center h-42px w-75px p-px rounded-4px bg-blue-r2068b2 shadow-link hover:filter hover:brightness-125"
                         style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
                         onClick={() => setInputValue(inputValue + 50000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                           style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">5만P</span>
                         </div>
                     </button>
 
                     <button 
-                      className="flex items-center justify-center h-42px w-75px p-px rounded-2px bg-blue-r286fce shadow-link hover:filter hover:brightness-125"
+                      className="flex items-center justify-center h-42px w-75px p-px rounded-4px bg-blue-r286fce shadow-link hover:filter hover:brightness-125"
                       style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
                         onClick={() => setInputValue(inputValue + 100000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                           style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">10만P</span>
                         </div>
                     </button>
 
                     <button 
-                        className="flex items-center justify-center h-42px w-75px p-px rounded-2px bg-blue-r286fce shadow-link hover:filter hover:brightness-125"
+                        className="flex items-center justify-center h-42px w-75px p-px rounded-4px bg-blue-r286fce shadow-link hover:filter hover:brightness-125"
                         style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
                         onClick={() => setInputValue(inputValue + 500000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                           style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">50만P</span>
                         </div>
                     </button>
 
                     <button 
-                        className="flex items-center justify-center h-42px w-75px p-px rounded-2px bg-blue-r177cce shadow-link hover:filter hover:brightness-125"
+                        className="flex items-center justify-center h-42px w-75px p-px rounded-4px bg-blue-r177cce shadow-link hover:filter hover:brightness-125"
                         style={{ background: 'linear-gradient(to top, #3f3d37, #a69685)'}}
                         onClick={() => setInputValue(inputValue + 1000000)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px  cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px  cursor-pointer"
                           style={{ background: 'linear-gradient(0deg, rgba(76,72,65,1) 0%, rgba(77,72,68,1) 5%, rgba(119,109,98,1) 97%)' }}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">100만P</span>
                         </div>
                     </button>
 
                     <button 
-                      className="flex items-center justify-center h-42px w-75px p-px rounded-2px  shadow-link hover:filter hover:brightness-125"
+                      className="flex items-center justify-center h-42px w-75px p-px rounded-4px  shadow-link hover:filter hover:brightness-125"
                       style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}
                         onClick={() => setInputValue(null)}
                     >
-                        <div className="flex items-center justify-center h-40px w-73px  rounded-2px cursor-pointer"
+                        <div className="flex items-center justify-center h-40px w-73px  rounded-4px cursor-pointer"
                           style={{background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5">정정</span>
                         </div>
