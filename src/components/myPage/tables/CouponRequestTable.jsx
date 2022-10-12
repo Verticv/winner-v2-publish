@@ -104,8 +104,8 @@ const CouponRequestTable = () => {
                   : "bg-dark-2e2e2e"
                 } font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 last:border-b-0`}
             >
-                <td className="w-350px truncate text-center pl-20px pr-15px"  style={{maxWidth: '350px' }}>
-                {item.name}
+                <td className="w-350px text-center" style={{maxWidth: '350px' }}>
+                    <div className='w-350px text-center truncate  pl-20px pr-15px' style={{maxWidth: '350px' }}>{item.name}</div>
                 </td>
                 <td  className="w-119px text-right text-red-e9441d font-robotoRegular pr-20px">{item.amount}</td>
                 <td  className="w-140px text-center"><div className='w-140px truncate px-10px text-center'>{item.username}</div></td>
@@ -120,7 +120,7 @@ const CouponRequestTable = () => {
                         : "#c8c8c8"
                         , WebkitTextStroke:"0.2px"
                     }} 
-                    className="w-141px text-center "
+                    className="w-141px text-center"
                 >
                     {item.state}
                 </td>
