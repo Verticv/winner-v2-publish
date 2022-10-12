@@ -393,9 +393,9 @@ const FreeBoardMain = () => {
                         className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group ml-px tracking-tight`}>
                         {
                             item.type === "안내" 
-                            ? <div style={{maxWidth: '92px'}} className="px-12px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px flex-shrink-0">안내</div> 
+                            ? <div style={{maxWidth: '92px'}} className="px-10px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px flex-shrink-0">안내</div> 
                             : item.type === "이벤트" 
-                            ? <div style={{maxWidth: '92px'}} className="px-12px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-10px flex-shrink-0">이벤트</div> 
+                            ? <div style={{maxWidth: '92px'}} className="px-10px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-10px flex-shrink-0">이벤트</div> 
                             : <div></div>
                         }
                         <p

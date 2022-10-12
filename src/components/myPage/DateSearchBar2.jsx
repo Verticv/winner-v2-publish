@@ -85,9 +85,9 @@ const DateSearchBar2 = () => {
                         <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-14px mr-10px" />
                     </div>
                     <div className="pt-px">{InboxSearch}</div>
-                    <div className="flex items-center justify-center h-42px w-75px rounded-2px shadow-link hover:filter hover:brightness-125"
+                    <div className="flex items-center justify-center h-42px w-75px rounded-4px shadow-link hover:filter hover:brightness-125"
                       style={{ background: 'linear-gradient(to top, #4b3b09, #e8b888)'}}>
-                      <div className="flex items-center justify-center h-40px w-73px rounded-2px cursor-pointer"
+                      <div className="flex items-center justify-center h-40px w-73px rounded-4px cursor-pointer"
                       style={{background: 'linear-gradient(0deg, rgba(128,96,62,1) 0%, rgba(129,96,64,1) 5%, rgba(165,124,82,1) 97%)'}}>
                             <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5 pt-px">검색</span>
                         </div>

@@ -33,24 +33,24 @@ const BetCombinationRightPanelHistory = () => {
                 </p>
                 <p 
                     className="text-14px font-spoqaBold tracking-tight text-gray-r454545 flex items-center mt-8px leading-none break-all"
-                    style={{color: side === "left" ? "#ffffff" : "#e65454"}}
+                    style={{color: side === "left" ? "#ffffff" : "#e65454",lineHeight: "1.2"}}
                 >
                     {team1}
                 </p>
                 <p 
                     className="text-14px font-spoqaBold tracking-tight  flex items-center mt-8px leading-none break-all"
-                    style={{color: side === "left" ? "#e65454" : "#ffffff"}}
+                    style={{color: side === "left" ? "#e65454" : "#ffffff",lineHeight: "1.2"}}
                 >
                     {team2}
                 </p>
-                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 flex items-center mt-14px leading-none break-all"  style={{width: "224px"}}>{type}</p>
+                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 flex items-center mt-14px leading-none break-all"  style={{width: "220px",lineHeight: "1.2"}}>{type}</p>
                 <div className="flex absolute bottom-10px right-11px text-13px tracking-tight font-spoqaMedium items-center text-gray-c8c8c8">
                     <p>{winStatus === "win" ? "승 @" : "패 @"}</p> 
                     <p 
                         className="ml-2px"
                         style={{color: winStatus === "win" ? "#e65454" : "#4c98ff"}}
                     >
-                        {winStatus === "win" ? "2.26" : "3.47"}
+                        {winStatus === "win" ? "2.26" : "00.00"}
                     </p>
                 </div>
                 <div className="flex absolute top-14px right-10px text-13px tracking-tight font-spoqaMedium h-13px items-center text-blue-4c98ff">
@@ -90,7 +90,7 @@ const BetCombinationRightPanelHistory = () => {
             <div className="bg-gray-262626 border-b border-2px border-gray-1e1e1e pb-12px px-3px flex flex-col">
 
                 <div className="flex flex-col space-y-4px">
-                    <HistoryCard team1="FK Haugesund" team2="스트룀스고세 IF" side="left" winStatus="lose" />
+                    <HistoryCard team1="FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund" team2="스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF" side="left" winStatus="lose" />
                     <HistoryCard title="오스트리아 - 컵" team1="SV Kuchl" team2="FC Blau Weiss Linz" side="right" winStatus="win" />
                     <ResultsCard />
                 </div>

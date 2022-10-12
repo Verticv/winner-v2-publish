@@ -13,7 +13,7 @@ const MyPageTitle = ({
     return (
         <div className="flex h-21px w-full justify-between">
             <div className="flex h-21px w-full">
-                <img className="z-10 object-none  mt-2px" src={TitleIcon} alt="" />
+                <img className="z-10 object-none mt-4px" src={TitleIcon} alt="" />
                 <label className="font-spoqaMedium text-22px ml-7px -mt-4px" style={{color:'#89806f'}}>{title}</label>
                 {couponCount && (
                     <>

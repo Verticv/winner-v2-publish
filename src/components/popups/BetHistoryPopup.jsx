@@ -195,12 +195,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
                   
                   <div className="pl-32px pr-36px relative">
                       <HorizontalMenu8 itemsArray={tabsArray} selectedTab={selectedTab} setSelectedTab={setSelectedTab} setSelectedSubTab={setSelectedSubTab} />
-                      
-                      {/* {(selectedTab !== 2 && selectedTab !== 3 && selectedTab !== 4 && selectedTab !== 7 && selectedTab !== 8) && (
-                          <div style={{marginLeft: `${selectedTab * 130 + 56}px`}} className={`absolute top-80px w-20px -mb-10px overflow-hidden inline-block `}>
-                              <div className="h-10px w-10px bg-gradient-to-br from-gray-d2dfea via-gray-eff3f6 to-gray-eff3f6 rotate-45 transform origin-bottom-left"></div>
-                          </div>
-                      )} */}
+                
 
                       {(selectedTab !== 2  && selectedTab !== 4 && selectedTab !== 8) && (
                           <div className={`mt-10px w-full px-4px py-3px rounded-4px bg-gray-2b2b2a ${selectedTab===0||selectedTab===3||selectedTab===5?'pb-4px':''}`}>
@@ -232,11 +227,15 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
                       <div 
                           style={{
                               height: 
-                              (selectedTab === 2  || selectedTab === 1 || selectedTab === 7)
+                              (selectedTab === 2)
                               ? "665px" 
-                              : (selectedTab === 0 || selectedTab === 4 || selectedTab === 5 || selectedTab === 8 || selectedTab === 3)
-                              ? "565px" 
-                              : "485px"
+                              : (selectedTab === 4 || selectedTab === 8)
+                              ? "666px" 
+                              : (selectedTab === 6)
+                              ? "484px" 
+                              : (selectedTab === 0  || selectedTab === 5 || selectedTab === 3)
+                              ? "568px" 
+                              : "400px"
                           }} 
                           className="overflow-y-auto mt-30px py-5px px-6px space-y-28px -pt-10px"
                       >
