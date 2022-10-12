@@ -207,7 +207,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
             />
           </Route>
 
-          <div className="h-125px">
+          <div className="h-125px w-default">
             <img className="z-10" src={MyPageBanner} alt="" />
           </div>
 
