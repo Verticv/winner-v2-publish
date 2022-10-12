@@ -5,20 +5,31 @@ import FreeBoardMain from 'components/freeBoard/FreeBoardMain'
 import FreeBoardView from 'components/freeBoard/FreeBoardView'
 import DirectoryComponent from 'components/myPage/DirectoryComponent'
 import Navbar from 'components/mainPage/Navbar'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route } from 'react-router'
 import FreeBoardBanner from '../images/freeBoard/free_board_banner_v2.png'
 import FreeBoardView2 from 'components/freeBoard/FreeBoardView2'
 
 const Freeboard = ({isAuthenticated, setAuthenticated}) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+	const handleScroll = () => {
+		const position = window.pageYOffset;
+		setScrollPosition(position);
+	};
 
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
   return (
     <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
       <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
         <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
       </div>
       <div style={{ width: '1496px', height: 'calc(100vh - 497px)',top: '430px' }} className={`right-208px fixed z-20 flex justify-end`}>
-        <QuickMenu />
+        <QuickMenu scrollPosition={scrollPosition}/>
       </div>
       <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
         <Route exact path="/freeboard">

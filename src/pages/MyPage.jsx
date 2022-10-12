@@ -1,6 +1,6 @@
 import Navbar from 'components/mainPage/Navbar'
 import QuickMenu from 'components/QuickMenu'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import MyPageBanner from '../images/myPage/mypage_banner_v2.png'
 import LeftMenu from 'components/myPage/LeftMenu'
 import Footer from 'components/mainPage/Footer'
@@ -80,7 +80,19 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
     const location = useLocation();
     const [selectedTab, setSelectedTab] = useState(location.pathname)
     const [selectedSubTab, setSelectedSubTab] = useState(location.pathname)
-    console.log('selectedTab',selectedTab,selectedSubTab)
+    console.log('selectedTab', selectedTab, selectedSubTab)
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
     return (
       <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
        
@@ -89,7 +101,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
           <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
         </div>
         <div style={{width: '1496px', height:'calc(100vh - 394px)'}} className={`bottom-0 fixed z-20 flex justify-end`}>
-          <QuickMenu />
+          <QuickMenu scrollPosition={scrollPosition} />
         </div>
         <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
          

@@ -38,14 +38,25 @@ const MinigamesPage = ({isAuthenticated, setAuthenticated}) => {
   useEffect(() => {
     setSelectedTab(0)
   }, [location]);
+  const [scrollPosition, setScrollPosition] = useState(0);
+	const handleScroll = () => {
+		const position = window.pageYOffset;
+		setScrollPosition(position);
+	};
 
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
   return (
     <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
       <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
         <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
       </div>
       <div style={{ width: '1496px', height: 'calc(100vh - 497px)',top: '306px' }}  className={`fixed z-20 flex justify-end`}>
-        <QuickMenu />
+        <QuickMenu scrollPosition={scrollPosition} />
       </div>
       <div className="w-full flex flex-col items-center  mt-117px">
         <div className="w-default z-30">
