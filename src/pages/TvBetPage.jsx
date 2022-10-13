@@ -5,8 +5,8 @@ import QuickMenu from 'components/QuickMenu'
 import React, { useState, useEffect } from 'react'
 import { Route } from 'react-router';
 import HorizontalMenu9 from 'components/horizontalMenus/HorizontalMenu9';
-import EsportsStructure from 'components/esports/EsportsStructure';
-import EsportsSingle from 'components/esports/EsportsSingle';
+import TvBetStructure from 'components/tvBet/TvBetStructure';
+import TvBetHowTo from 'components/tvBet/TvBetHowTo';
 
 const TvBetPage = ({isAuthenticated, setAuthenticated}) => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -70,10 +70,10 @@ const TvBetPage = ({isAuthenticated, setAuthenticated}) => {
                 
                 <div className="flex mt-20px mb-60px w-default z-30">
                         <Route path="/tvbet/structure">
-                            <EsportsStructure />
+                            <TvBetStructure />
                         </Route>
                         <Route path="/tvbet/how-to">
-                            <EsportsSingle />
+                            <TvBetHowTo />
                         </Route>
                         <Route path="*">
                         </Route>
