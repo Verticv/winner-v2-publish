@@ -94,7 +94,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
       };
     }, []);
     return (
-      <div className="relative flex flex-col justify-center items-center limit:overflow-x-hidden bg-gray-1e1e1e">
+      <div className="relative flex flex-col justify-center items-center limit1920:overflow-x-hidden bg-gray-1e1e1e">
        
        
         <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
