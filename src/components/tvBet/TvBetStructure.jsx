@@ -132,7 +132,7 @@ const TvBetStructure = () => {
                     <Item number="2." title="배당버튼" text="카드 아래에 표시되는 각 배당 버튼을" text2="누르면 베팅이 가능합니다." />
                     <Item number="3." title="다양한 베팅종류 제공" text="다양한 베팅 종류가 표시되며" text2={"배당 선택 시 베팅이 가능합니다."} />
                     <LongItem no4th no5th title='베팅슬립' number='4.' text='선택한 베팅정보 확인 및 삭제 가능' text2='베팅금액 입력 가능' text3='[베팅하기] 버튼을 누르면 베팅완료' />
-                    <Item number="5." title="설정" text="영상 내에 표시되는 배당정보설정, 은향설정," text2="전체/기본화면설정, 영상화질설정," text3="영성위치설정, 영상 새창띄우기 등 제공합니다."/>
+                    <Item number="5." title="설정" text="영상 내에 표시되는 배당정보설정, 음향설정," text2="전체/기본화면설정, 영상화질설정," text3="영상위치설정, 영상 새창띄우기 등 제공합니다."/>
                 </div>
 
               </div>
