@@ -25,7 +25,7 @@ const Other = () => {
         <img src={isHover ? imgHover : img} alt="" />
 
         <img src={isHover ? OtherBgHl : OtherBg} className="z-10 absolute bottom-56px" alt="" />
-        <p style={{ color: isHover ? '#ffdfbd' : '#ad9e8c' }} className='absolute z-20 bottom-65px tracking-tighter font-spoqaMedium text-14px h-14px flex items-center cursor-pointer'>게임시작</p>
+        <p style={{ color: isHover ? '#ffdfbd' : '#ad9e8c' }} className='absolute z-20 bottom-66px tracking-tighter font-spoqaMedium text-14px h-14px flex items-center cursor-pointer'>게임시작</p>
         <p style={{ color: '#ffdfbd', marginBottom: '94px', textShadow: "0 0 7px #00000080" }} className='absolute z-20 bottom-0 font-spoqaMedium text-16px h-16px flex items-center cursor-pointer'>{text}</p>
       </button>
     )
