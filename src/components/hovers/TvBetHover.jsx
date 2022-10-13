@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Expand from 'react-expand-animated'
+import { useHistory } from 'react-router-dom'
 import img1 from '../../images/navbarHover/9_1.png'
 import img1hl from '../../images/navbarHover/9_1_hl.png'
 import img2 from '../../images/navbarHover/9_2.png'
@@ -10,10 +11,11 @@ import img3hl from '../../images/navbarHover/9_3_hl.png'
 const TvBetHover = ({ selection }) => {
 	const [isHover, setHover] = useState(null)
 
+	const history = useHistory()
 	const gamesArray = [
 		{ id: 0, background: img1, highlight: img1hl, imgText: "티비벳", color: "group-hover:bg-blue-r3384ca", btnText: "게임시작", class: "bg-opacity-25" },
-		{ id: 1, background: img2, highlight: img2hl, imgText: "화면구성설명", color: "group-hover:bg-blue-r3384ca", btnText: "설명보기", class: "bg-opacity-25" },
-		{ id: 2, background: img3, highlight: img3hl, imgText: "베팅방법", color: "group-hover:bg-blue-r3384ca", btnText: "설명보기", class: "bg-opacity-25" }
+		{ id: 1, background: img2, highlight: img2hl, imgText: "화면구성설명", color: "group-hover:bg-blue-r3384ca", btnText: "설명보기", class: "bg-opacity-25", path: '/tvbet/structure' },
+		{ id: 2, background: img3, highlight: img3hl, imgText: "베팅방법", color: "group-hover:bg-blue-r3384ca", btnText: "설명보기", class: "bg-opacity-25", path: '/tvbet/how-to' }
 	];
 
 	function GamesList({ items }) {
@@ -23,6 +25,7 @@ const TvBetHover = ({ selection }) => {
 				className={`group relative cursor-pointer flex flex-col items-center justify-end flex-shrink-0 h-262px`}
 				// style={{ width: '235px' }}
 				onMouseEnter={() => setHover(item.id)}
+				onClick={() => history.push(item.path)}
 			>
 				<p style={{ color: '#ffdfbd', marginBottom: '70px' }} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex`}>{item.imgText}</p>
 				<div style={{ marginBottom: '31px' }} className={`absolute z-20`}>

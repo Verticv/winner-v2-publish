@@ -6,10 +6,12 @@ import img2hl from '../../images/navbarHover/4_2_hl.png'
 import img3 from '../../images/navbarHover/4_3.png'
 import img4 from '../../images/navbarHover/4_4.png'
 import Expand from 'react-expand-animated'
+import { useHistory } from 'react-router-dom'
 
 const HotelCasinoHover = ({ selection }) => {
 
   const [isHover, setHover] = useState(null)
+  const history = useHistory()
 
   const gamesArray = [
     {
@@ -27,7 +29,7 @@ const HotelCasinoHover = ({ selection }) => {
       imgText: "이용가이드",
       btnText: "설명보기",
       class: "bg-opacity-25",
-      path: "/bet-combination"
+      path: "/hotel-casino/structure"
     },
     {
       id: 2,
@@ -36,7 +38,6 @@ const HotelCasinoHover = ({ selection }) => {
       imgText: "호텔카지노",
       btnText: "준비중",
       class: "bg-opacity-25",
-      path: "/bet-combination"
     },
     {
       id: 3,
@@ -45,7 +46,6 @@ const HotelCasinoHover = ({ selection }) => {
       imgText: "호텔카지노",
       btnText: "준비중",
       class: "bg-opacity-25",
-      path: "/bet-combination"
     }
   ];
 
@@ -56,6 +56,7 @@ const HotelCasinoHover = ({ selection }) => {
 				className={`group relative cursor-pointer flex flex-col items-center justify-end flex-shrink-0 h-262px`}
         // style={{ width: '235px' }}
         onMouseEnter={() => setHover(item.id)}
+        onClick={() => history.push(item.path)}
       >
         <p style={{ color: '#ffdfbd', marginBottom: '70px' }} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex`}>{item.imgText}</p>
         <div style={{ marginBottom: '31px' }} className={`absolute z-20`}>
