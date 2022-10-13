@@ -66,7 +66,7 @@ const TvBetHowTo = () => {
       <div className="w-full bg-gray-323232 rounded-4px overflow-hidden p-30px space-y-30px">
         <div className="flex space-x-20px items-start">
           <img className="object-none" src={Image3} alt="" />
-          <div style={{ backgroundColor: "#2b2b2a", height: "304px" }} className="w-full h-full rounded-xl p-20px">
+          <div style={{ backgroundColor: "#2b2b2a", height: "484px" }} className="w-full h-full rounded-xl p-20px">
             <div className="space-y-23px">
               <LongItem no3rd no4th no5th title='게임 및 배당선택' number='1.' text='① 게임종류를 선택합니다.' text2='원하는 ② ③ 배당을 선택합니다.' />
 
@@ -94,7 +94,7 @@ const TvBetHowTo = () => {
 
         <div className="flex space-x-20px items-start">
           <img className="object-none" src={Image4} alt="" />
-          <div style={{ backgroundColor: "#2b2b2a", height: "154px" }} className="w-full h-full rounded-xl p-20px">
+          <div style={{ backgroundColor: "#2b2b2a", height: "502px" }} className="w-full h-full rounded-xl p-20px">
             <div className="space-y-23px">
               <LongItem no4th no5th title='금액입력 및 베팅완료' number='2.' text='① 베팅금액을 입력합니다.' text2='② [베팅하기] 버튼을 누르면' text22={"베팅이 완료됩니다."} text3='③ [베팅기록] 메뉴에서 베팅내역을' text33="확인할 수 있습니다." />
             </div>
