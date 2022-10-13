@@ -46,7 +46,7 @@ const MainPage = ({ isAuthenticated, setAuthenticated }) => {
 				<QuickMenu scrollPosition={scrollPosition} />
 			</div>
 
-			<div className="flex justify-start limit:justify-center items-center w-screen">
+			<div className="flex justify-start limit:justify-center items-center w-screen mt-80px limit:mt-0">
 				<Carousel />
 			</div>
 
