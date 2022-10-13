@@ -124,12 +124,13 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		</button>
 	)
 
+	const username = "마이프로틴화이팅님"
 	const LoggedInComponent = () => (
 		<div className='space-x-5px flex'>
 			<button className='flex items-center h-12px flex-shrink-0' onClick={() => history.push("/mypage/bet-history")}>
 				<img src={Nav13} alt="" className='mr-3px object-none' />
 				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
-					Lv3 마이프로틴화이팅님
+					Lv3 {username.length > 12 ? `${username.slice(0,12)}...` : username}
 				</p>
 			</button>
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
