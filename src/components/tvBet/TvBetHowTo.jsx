@@ -87,7 +87,6 @@ const TvBetHowTo = () => {
               <div>
                 <div style={{ width: "97px", height: "25px", backgroundColor: "#f45400" }} className="text-white flex items-center justify-center font-spoqaBold text-18px tracking-tight pt-px">알아두세요!</div>
                 <div className="flex items-center">
-                  <img src={Dot} className="object-contain mr-4px h-4px mt-6px" alt="" />
                   <span style={{ color: "#8c8c8c" }} className="flex h-16px items-center text-14px tracking-tight font-spoqaMedium mt-7px">※ ④ [이벤트정보] 화면에서 현재 '라이브'</span>
                 </div>
                 <span style={{ color: "#8c8c8c" }} className="flex h-16px items-center text-14px tracking-tight font-spoqaMedium mt-7px">중인 게임과 '예정된' 게임이벤트를 확인할 수 있습니다.</span>
@@ -98,7 +97,6 @@ const TvBetHowTo = () => {
               <div>
                 <div style={{ width: "97px", height: "25px", backgroundColor: "#f45400" }} className="text-white flex items-center justify-center font-spoqaBold text-18px tracking-tight pt-px">알아두세요!</div>
                 <div className="flex items-center">
-                  <img src={Dot} className="object-contain mr-4px h-4px mt-6px" alt="" />
                   <span style={{ color: "#8c8c8c" }} className="flex h-16px items-center text-14px tracking-tight font-spoqaMedium mt-7px">※ ⑤ [플레이방법] 메뉴에서 각 게임별 이용방법과</span>
                 </div>
                 <span style={{ color: "#8c8c8c" }} className="flex h-16px items-center text-14px tracking-tight font-spoqaMedium mt-7px">규정 등 확인 가능합니다.</span>
