@@ -13,6 +13,8 @@ import BetCombinationPage from "pages/BetCombinationPage";
 import MinigamesPage from "pages/MinigamesPage";
 import EsportsPage from "pages/EsportsPage";
 import LiveCasinoPage from "pages/LiveCasinoPage";
+import HotelCasino from "pages/HotelCasinoPage";
+import TvBetPage from "pages/TvBetPage";
 
 
 function App() {
@@ -60,6 +62,12 @@ function App() {
                 </Route>
                 <Route path="/esports">
                     <EsportsPage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated}/>
+                </Route>
+                <Route path="/hotel-casino">
+                    <HotelCasino isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated}/>
+                </Route>
+                <Route path="/tvbet">
+                    <TvBetPage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated}/>
                 </Route>
                 <Route path="*">
                     <MainPage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated} />
