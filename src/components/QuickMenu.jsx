@@ -143,7 +143,6 @@ const QuickMenu = ({ scrollPosition }) => {
             </button>
           </div>
         </div>
-        {scrollPosition > 0 && (
           <div
             style={{
               height: "56px",
@@ -152,7 +151,7 @@ const QuickMenu = ({ scrollPosition }) => {
               borderWidth: "2px",
               boxShadow: "0 4px 5px #00000050",
             }}
-            className="w-full mt-10px bg-black rounded-full flex flex-col items-center cursor-pointer hover:brightness-125 filter"
+            className={`w-full mt-10px bg-black rounded-full flex flex-col items-center cursor-pointer hover:brightness-125 filter ${scrollPosition > 0 ? 'opacity-100' : 'opacity-0'} transition duration-200`}
             onClick={() =>
               window.scrollTo({
                 top: 0,
@@ -168,7 +167,6 @@ const QuickMenu = ({ scrollPosition }) => {
               TOP
             </p>
           </div>
-        )}
       </div>
     </div>
   );
