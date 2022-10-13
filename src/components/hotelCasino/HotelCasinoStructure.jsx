@@ -105,7 +105,6 @@ const HotelCasinoStructure = () => {
               <div>
                 <div style={{ width: "97px", height: "25px", backgroundColor: "#f45400" }} className="text-white flex items-center justify-center font-spoqaBold text-18px tracking-tight pt-px">알아두세요!</div>
                 <div className="flex items-center">
-                  <img src={Dot} className="object-contain mr-4px h-4px mt-6px" alt="" />
                   <span style={{ color: "#8c8c8c" }} className="flex h-16px items-center text-14px tracking-tight font-spoqaMedium mt-7px">※ 스피드게임 : 45초 베팅시간 제공</span>
                 </div>
               </div>
