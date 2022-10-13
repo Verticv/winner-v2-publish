@@ -9,6 +9,8 @@ module.exports = {
         'default': '1260px',
         1300: '1300px',
         1920: '1912px',
+        'minus80' : '-50px',
+        'minus105' : '-105px',
         '2px': '2px',
         '3px': '3px',
         '4px': '4px',

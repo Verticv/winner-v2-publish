@@ -61,8 +61,8 @@ const Carousel = () => {
 		<button
 			type="button"
 			onClick={isLeft ? previousImage : nextImage}
-			style={{ marginBottom: '-105px' }}
-			className={`${arrowStyle} ${isLeft ? 'left-20px' : 'right-20px'} hover:brightness-125 filter`}
+			// style={{ marginBottom: '-105px' }}
+			className={`${arrowStyle} ${isLeft ? 'left-20px' : 'right-20px'} limit:mb-minus105 mb-minus80 hover:brightness-125 filter`}
 		>
 			{isLeft ? leftArrow : rightArrow}
 		</button>
