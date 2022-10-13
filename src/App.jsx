@@ -20,7 +20,7 @@ function App() {
     const [isAuthenticated, setAuthenticated] = useState(false)
 
     return (
-        <>
+        <div style={{backgroundColor: '#000'}}>
             <Switch>
                 {/*   
                 Example to pass props to a route.
@@ -65,7 +65,7 @@ function App() {
                     <MainPage isAuthenticated={isAuthenticated} setAuthenticated={setAuthenticated} />
                 </Route>
             </Switch>
-        </>
+        </div>
     );
 }
 
