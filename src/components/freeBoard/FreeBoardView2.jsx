@@ -123,7 +123,7 @@ const FreeBoardView2 = () => {
                 <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
 
                     <textarea 
-                        style={{width: "1099px", resize: "none"}}
+                        style={{width: "1095px", resize: "none"}}
                         className="outline-none w-full px-19px py-17px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 text-gray-c8c8c8 bg-gray-252525 rounded-4px"
                         placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                     />
@@ -215,7 +215,7 @@ const FreeBoardView2 = () => {
                 <div style={{height:"115px"}} className="px-20px py-11px">
                   <div style={{ height: "93px" }}  className="rounded-4px bg-gray-252525 relative flex w-full">
                       <textarea 
-                          style={{width: "1099px", resize: "none"}}
+                          style={{width: "1095px", resize: "none"}}
                           className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 text-gray-c8c8c8 rounded-4px"
                           placeholder="두개의 이벤트 모두 참여하였습니다."
                       />
@@ -256,7 +256,7 @@ const FreeBoardView2 = () => {
               <div style={{height:"115px"}} className="px-20px py-11px">
                   <div style={{height:"93px"}} className="relative flex w-full rounded-4px bg-gray-252525">
                       <textarea 
-                          style={{width: "1099px", resize: "none"}}
+                          style={{width: "1095px", resize: "none"}}
                           className="outline-none w-full px-19px py-18px text-14px font-spoqa tracking-tight placeholder-gray-c8c8c8 bg-gray-252525 text-gray-c8c8c8 rounded-4px"
                           placeholder="욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다."
                       />

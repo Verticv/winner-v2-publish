@@ -31,12 +31,12 @@ const PointsApply = () => {
             <div className="mt-20px w-full h-157px rounded-4px border border-red-594c49 bg-red-413937 px-19px pt-17px">
                 <div className="flex items-center h-26px space-x-10px">
                     <img src={AlertIcon} alt="" />
-                    <span className="text-red-e65454 font-spoqaMedium text-20px">확인<span className='px-2px'>/</span>필독사항</span>
+                    <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight mt-px" style={{WebkitTextStroke:"0.2px"}}>확인 / 필독사항</span>
                 </div>
                 <div className="mt-15px flex flex-col space-y-14px text-gray-ccc2b6 tracking-tight font-spoqaMedium text-16px">
-                    <span className="h-15px"><span className="mr-4px">✓</span>  포인트 전환 시 보유머니로 충전됩니다.</span>
-                    <span className="h-15px"><span className="mr-4px">✓</span>  최소 10,000P 이상 신청 가능합니다.</span>
-                    <span className="h-15px"><span className="mr-4px">✓</span>  자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</span>
+                    <span className="h-15px"><span className="font-bold mr-4px">✓</span>  포인트 전환 시 보유머니로 충전됩니다.</span>
+                    <span className="h-15px"><span className="font-bold mr-4px">✓</span>  최소 10,000P 이상 신청 가능합니다.</span>
+                    <span className="h-15px"><span className="font-bold mr-4px">✓</span>  자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</span>
                 </div>
             </div>
 

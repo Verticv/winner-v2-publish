@@ -27,8 +27,9 @@ const MoneyExchange = () => {
             <div className="mt-20px w-full h-157px rounded-4px border border-red-594c49 bg-red-413937 px-19px pt-17px">
                 <div className="flex items-center h-26px space-x-9px">
                     <img src={AlertIcon} alt="" />
-                    <span className="text-red-e65454 font-spoqaMedium text-20px mt-px" style={{WebkitTextStroke:"0.2px"}}>확인 / 필독사항</span>
+                    <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight mt-px" style={{WebkitTextStroke:"0.2px"}}>확인 / 필독사항</span>
                 </div>
+                
                 <div className="mt-16px flex flex-col space-y-15px text-gray-ccc2b6 tracking-tight font-spoqaMedium text-16px">
                     <span className="h-14px space-y-4px"><span className="font-bold mr-4px mt-px">✓</span>  환전 신청 시 현재 보유머니에서 차감되며, 회원님의 계좌번호로 입금됩니다.</span>
                     <span className="h-14px space-y-4px"><span className="font-bold mr-4px mt-px">✓</span>  입금이 지연될 수 있으니 은행 점검 시간을 확인하신 후 점검 시간을 피해 신청해 주시기 바랍니다.</span>
