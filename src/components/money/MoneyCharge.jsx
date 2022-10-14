@@ -223,19 +223,19 @@ const MoneyCharge = () => {
                     <div className='flex space-x-4px items-start mt-33px' style={{marginLeft:'211px'}}>
                         <img src={InfoIcon} alt='info' className='w-15px h-15px'/>
                         <div className='font-spoqa text-14px text-gray-828282 flex flex-col -mt-3px space-y-4px'>
-                            <span className='h-15px'>첫 충전 보너스 머니를 받으실 경우 아래 버튼을 <span style={{color:'#4c98ff'}}>선택</span>해 주세요.</span>
-                            <span className='h-15px'>보너스를 받지 않을경우 <span style={{color:'#e65454'}}>받지않기</span>버튼을 선택하세요.</span>
+                            <span className='h-15px'>첫 충전 보너스 머니를 받으실 경우 아래 버튼을 <span className='spoqaMedium' style={{color:'#4c98ff'}}>선택 </span>해 주세요.</span>
+                            <span className='h-15px'>보너스를 받지 않을경우 <span className='spoqaMedium' style={{color:'#e65454'}}>받지않기 </span>버튼을 선택하세요.</span>
                         </div>
                     </div>
-                    <div className="flex space-x-10px mt-16px h-42px items-end">
+                    <div className="flex space-x-10px mt-14px h-44px items-center">
                         
-                        <div style={{marginTop:'48px'}}>
+                        <div >
                             <Title text="보너스 혜택" />
                         </div>
                         
-                        <div className="flex space-x-5px w-full h-full flex-col space-y-15px">
+                        <div className="flex space-x-5px w-full flex-col justify-center">
                             
-                            <div className='flex space-x-5px'>
+                            <div className='flex space-x-5px items-center'>
                                 <button 
                                     style={{width: "135px",background: 'linear-gradient(to top, #3d4a8d, #88d9e8)'}} 
                                     className="flex items-center justify-center h-42px rounded-4px  hover:brightness-125 filter shadow-link" 
