@@ -103,10 +103,9 @@ const GameDetails = () => {
             </div>   
 
             <div className="w-full h-54px bg-gray-323231 border-b border-gray-252525 flex items-center tracking-tight pt-px">
-                <div className="w-164px flex items-center justify-center font-roboto text-14px text-gray-c8c8c8 tracking-tight mt-3px">2021-06-29 15:45</div>
-                <div className="w-27px flex items-center justify-center font-spoqaMedium text-14px text-gray-c8c8c8 pt-px">축구</div>
-                
-                <div style={{marginLeft: "30px"}}>
+                <div style={{marginLeft: "25px",width: "114px"}}  className="flex items-center justify-center font-roboto text-14px text-gray-c8c8c8 tracking-tight mt-3px">2021-06-29 15:45</div>
+                <div className="w-80px flex items-center justify-center font-spoqaMedium text-14px text-gray-c8c8c8 pt-px">축구</div>
+                <div style={{marginLeft: "0px"}}>
                     <Options bet="left" team1="LA레이커스" team2="피닉스" stat1="2.95" stat2="VS" stat3="1.39" />
                 </div>
                 
@@ -115,10 +114,10 @@ const GameDetails = () => {
             </div>
 
             <div className="w-full h-55px bg-gray-323231 flex items-center tracking-tight pt-px">
-                <div className="w-164px flex items-center justify-center font-roboto text-14px text-gray-c8c8c8 mt-3px">2021-06-29 15:45</div>
-                <div className="w-27px flex items-center justify-center font-spoqaMedium text-14px text-gray-c8c8c8 pt-px">축구</div>
+                <div style={{marginLeft: "25px",width: "114px"}}  className="flex items-center justify-center font-roboto text-14px text-gray-c8c8c8 tracking-tight mt-3px">2021-06-29 15:45</div>
+                <div className="w-80px flex items-center justify-center font-spoqaMedium text-14px text-gray-c8c8c8 pt-px">축구</div>
                 
-                <div style={{marginLeft: "30px"}}>
+                <div style={{marginLeft: "0px"}}>
                     <Options bet="right" team1="세크라멘토" team2="오클라호마" stat1="2.95" stat2="VS" stat3="2.25" />
                 </div>
                 
