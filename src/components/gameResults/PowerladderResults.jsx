@@ -124,11 +124,11 @@ const PowerladderResults = ({title="파워사다리", icon}) => {
             <div style={{background:"linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)"}} className="h-54px flex items-center justify-between pr-20px">    
                 <div className="flex items-center -mt-px">
                     <img src={icon} alt="" className="ml-16px object-none" />
-                    <span className="text-golden-highLight font-spoqaMedium text-20px ml-3px pt-3px">{title}</span>
+                    <span className="text-golden-highLight font-spoqaMedium text-20px ml-3px pt-3px truncate" style={{maxWidth: "790px"}}>{title}</span>
                 </div>
                 
 
-                <div className="flex items-center">
+                <div className="flex items-center flex-shrink-0">
                     <img src={ClockIcon} alt="" className='-mt-2px' />
                     <span 
                         className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight"

@@ -31,7 +31,7 @@ const PowerballResults = () => {
         <div className="flex flex-col rounded-4px shadow-plain11 border-2 border-gray-473b35 overflow-hidden">
             <div style={{background:"linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)"}} className="h-54px flex items-center">    
                 <img src={PowerballIcon} alt="" className="ml-16px" />
-                <span className="text-golden-highLight font-spoqaMedium text-20px ml-4px pt-2px">파워볼</span>
+                <span className="text-golden-highLight font-spoqaMedium text-20px ml-4px pt-2px truncate" style={{maxWidth: "950px"}}>파워볼</span>
             </div>
             <Cells items={ExampleArray} count={count} />
         </div>
