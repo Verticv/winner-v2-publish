@@ -11,7 +11,7 @@ const PointsApply = () => {
 
     const Title = ({text}) => (
         <div className="space-y-14px w-140px flex-shrink-0 bg-gray-272726 h-44px pl-10px flex items-center rounded-4px">
-            <div className=" text-gray-ccc2b6 font-spoqaMedium text-16px mt-3px">{text}</div>
+            <div className=" text-gray-ccc2b6 font-spoqaMedium text-16px mt-3px tracking-tight">{text}</div>
             {/* <div className="h-px w-full bg-gray-bebebe"></div> */}
         </div>
     )
@@ -70,7 +70,7 @@ const PointsApply = () => {
                       <div className="h-44px w-full">
                         <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
                           <div className='h-full w-full flex items-center'>
-                            <span className="font-spoqaBold text-blue-2980b9 mt-3px">0</span>
+                            <span className="font-spoqaBold text-gray-c8c8c8 mt-3px">0</span>
                             <span className='mt-3px'>P</span>
                           </div>
                         </div>
@@ -81,7 +81,7 @@ const PointsApply = () => {
                       <div className="h-44px  w-full">
                         <div className="h-full font-spoqaMedium text-16px text-gray-c8c8c8 pl-9px rounded-4px" style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
                           <div className='h-full w-full flex items-center'>
-                            <span className="font-spoqaBold text-blue-2980b9 mt-3px">0</span>
+                            <span className="font-spoqaBold text-gray-c8c8c8 mt-3px">0</span>
                             <span className='mt-3px'>P</span>
                           </div>
                         </div>
