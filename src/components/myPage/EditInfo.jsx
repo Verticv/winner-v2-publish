@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import MyPageTitle from './MyPageTitle'
 
-const EditInfo = () => {
+const EditInfo = ({name='Louie3Louie3Louie3Louie3Louie3Louie3Louie3'}) => {
 
     const [selectedInput, setSelectedInput] = useState()
 
     const Title = ({text}) => (
         <div className="w-140px space-y-2 flex-shrink-0 bg-gray-272726 h-44px pl-10px flex items-center rounded-4px">
-            <label className="text-gray-ccc2b6 font-spoqaMedium text-16px mt-2px">{text}</label>
+            <label className="text-gray-ccc2b6 font-spoqaMedium text-16px mt-2px tracking-tight">{text}</label>
             {/* <div className="border-b w-full border-gray-bebebe"></div> */}
         </div>
     )
@@ -19,7 +19,10 @@ const EditInfo = () => {
             <div className="mt-15px">
                 <div className="flex flex-col items-center justify-center font-spoqaMedium text-20px space-y-5px text-gray-c8c8c8">
                     <div className="flex items-center h-19px">
-                        <span className="text-golden-aa9264 font-spoqaBold mr-4px">Louie3</span>
+                        <span className="text-golden-aa9264 font-spoqaBold mr-4px" >
+                            {name.length > 20 ? name.substring(0, 20) : name} {name.length > 20 && (<span className='-mt-5px inline-block'>...</span>)}
+                        </span>
+                        
                         <span>님의 회원정보를 수정합니다.</span>
                     </div>
                     <div className="flex items-center h-19px">아이디와 비밀번호 보안에 신경써주십시오.</div>
@@ -33,7 +36,7 @@ const EditInfo = () => {
                             <Title text="아이디" />
                             <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                               style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                <label className=" font-spoqa text-16px pl-10px mt-px">louie3</label>
+                                <label className=" font-spoqa text-16px pl-10px pr-5px mt-px w-540px truncate">louie3</label>
                                 {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                             </div>
                         </div>
@@ -91,7 +94,7 @@ const EditInfo = () => {
                     {/* BREAK */}
                     <div className="w-full flex flex-col space-y-10px mt-14px">
                         <div className="flex space-x-10px w-full">
-                            <Title text="환전 비밀번호" />
+                            <Title text="환전 비밀번호 확인" />
                             <div className={`w-full h-44px overflow-hidden rounded-4px`} style={{ background: '#191817' }}>
                                 <input 
                                     style={{ background: '#191817', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}                      
