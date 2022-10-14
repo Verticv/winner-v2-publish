@@ -164,7 +164,7 @@ const SportsBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={USFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>MLS</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth : width === 'full'||isFullPage?'910px':'760px'}}>MLS</span>
                 </div>
                 <div className="flex items-center">
                     <img src={ClockIcon} alt="" className='-mt-2px'/>
@@ -195,7 +195,7 @@ const SportsBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={UKFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>EPL</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth : width === 'full' || isFullPage ?'910px':'760px'}}>EPL</span>
                 </div>
                 <div className="flex items-center">
                     <img src={ClockIcon} alt="" className='-mt-2px'/>
@@ -242,7 +242,7 @@ const SportsBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={UKFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>EPL</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth : width === 'full' || isFullPage ?'910px':'760px'}}>EPL</span>
                 </div>
                 <div className="flex items-center">
                     <img src={ClockIcon} alt=""  className='-mt-2px'/>
@@ -273,7 +273,7 @@ const SportsBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={FootballIcon} alt=""/>
                     <img className="ml-5px" src={SpainFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>라리가</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth : width === 'full' || isFullPage?'910px':'760px'}}>라리가</span>
                 </div>
                 <div className="flex items-center">
                     <img src={ClockIcon} alt="" className='-mt-2px'/>
