@@ -374,7 +374,7 @@ const BetCombinationPanel = ({
                         }} 
                         className="flex items-center justify-center  cursor-pointer"
                     >
-                        <span style={{textShadow: "1px 1px 1px #00000070"}} className="font-spoqaMedium tracking-tight text-14px text-golden-highLight" >
+                        <span style={{textShadow: "1px 1px 1px #00000070"}} className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5" >
                             확인
                         </span>
                     </div>
@@ -397,7 +397,7 @@ const BetCombinationPanel = ({
                         }} 
                         className="flex items-center justify-center cursor-pointer"
                     >
-                        <span style={{textShadow: "1px 1px 1px #00000070"}} className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2" >
+                        <span style={{textShadow: "1px 1px 1px #00000070"}} className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5" >
                             초기화
                         </span>
                     </div>
@@ -710,7 +710,7 @@ const BetCombinationPanel = ({
                                     }} 
                                     className="flex items-center justify-center h-37px w-73px rounded-4px  cursor-pointer"
                                 >
-                                    <span style={{textShadow: "1px 1px 1px #00000070"}} className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5" >
+                                    <span className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5" >
                                         {isOpen[items.id] === true ? "접기" : "+더보기"}
                                     </span>
                                 </div>
