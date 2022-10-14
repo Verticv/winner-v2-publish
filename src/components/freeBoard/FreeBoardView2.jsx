@@ -52,11 +52,11 @@ const FreeBoardView2 = () => {
             </div> 
             <div className="pl-48px">
                 <div className="w-full rounded-4px bg-gray-252525 flex items-start px-20px  pt-17px pb-14px justify-between text-gray-c8c8c8 mt-px">
-                    <div className="flex text-14px font-spoqa tracking-tight">
-                    {tag && ( <p className="text-blue-2980b9 mr-10px font-spoqaMedium">@{tag.length > 8 ? tag.substring(0, 8) : tag} {tag.length > 8 && (<span className='-mt-5px'>...</span>)}</p>)}
-                    <p  className="text-gray-c8c8c8">{text}</p>
+                    <div className="text-14px font-spoqa tracking-tight">
+                    {tag && ( <span className="text-blue-2980b9 mr-10px font-spoqaMedium">@{tag.length > 8 ? tag.substring(0, 8) : tag} {tag.length > 8 && (<span className='-mt-5px'>...</span>)}</span>)}
+                    <span className="text-gray-c8c8c8">{text}</span>
                     </div>
-                    <p className="text-gray-c8c8c8 text-14px tracking-tight font-spoqa  flex-shrink-0">2021.06.28 15:36</p>
+                    <p className="text-gray-c8c8c8 text-14px tracking-tight font-spoqa flex-shrink-0 ml-7px">2021.06.28 15:36</p>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@ const FreeBoardView2 = () => {
                         </div>
                         
                         <div  className="rounded-4px bg-gray-252525  w-full  flex items-start px-19px pt-17px pb-14px justify-between text-gray-c8c8c8 mb-10px mt-px">
-                        <p className="text-15px font-spoqa tracking-tight mr-10px">두개의 이벤트 모두 참여하였습니다</p>
+                        <p className="text-15px font-spoqa tracking-tight mr-7px">두개의 이벤트 모두 참여하였습니다</p>
                             <p className="text-14px tracking-tight font-spoqa flex flex-shrink-0 mt-px">2021.06.28 15:36</p>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ const FreeBoardView2 = () => {
                     </div>
                     
                     <div className="rounded-4px bg-gray-252525 w-full  flex items-start px-19px pt-17px pb-14px justify-between text-gray-c8c8c8 mb-10px mt-px">
-                     <p className="text-15px font-spoqa tracking-tight pr-10px">두개의 이벤트 모두 참여하였습니다
+                     <p className="text-15px font-spoqa tracking-tight pr-7px">두개의 이벤트 모두 참여하였습니다
                      </p>
                         <p className="text-14px tracking-tight font-spoqa flex-shrink-0">2021.06.28 15:36</p>
                     </div>
@@ -248,7 +248,7 @@ const FreeBoardView2 = () => {
                   </div>
                   
                   <div className="rounded-4px bg-gray-252525  w-full  flex items-start px-19px pt-17px pb-14px justify-between text-gray-c8c8c8 mb-10px mt-px">
-                      <p className="text-15px font-spoqa tracking-tight pr-10px">두개의 이벤트 모두 참여하였습니다
+                      <p className="text-15px font-spoqa tracking-tight pr-7px">두개의 이벤트 모두 참여하였습니다
                       </p>
                       <p className="text-14px tracking-tight font-spoqa flex-shrink-0 mt-px">2021.06.28 15:36</p>
                   </div>
