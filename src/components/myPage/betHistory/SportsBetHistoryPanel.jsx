@@ -81,7 +81,7 @@ const SportsBetHistoryPanel = ({
                 : "bg-dark-252525 text-gray-c8c8c8"} 
                 flex items-center justify-between h-34px rounded-3px cursor-pointer px-10px pt-px`
               }>
-                <span className={`${isAttached? 'w-290px': 'w-223px'} truncate text-left font-spoqaMedium tracking-tight text-14px text-shadow overflow-ellipsis`}>{team1}</span>
+                <span className={`${isAttached? 'w-290px': hasUp ?'w-210px':'w-223px'} truncate text-left font-spoqaMedium tracking-tight text-14px text-shadow overflow-ellipsis`}>{team1}</span>
                 <div className="flex items-center space-x-5px">
                     {hasUp && <img className="object-none" src={UpIcon} alt="" /> }
                     <span className="font-roboto tracking-tight text-14px text-shadow">{stat1}</span>
@@ -123,7 +123,7 @@ const SportsBetHistoryPanel = ({
                       <span className="font-roboto tracking-tight text-14px">{stat3}</span>
                         {hasDown && <img className="object-none" src={DownIcon} alt="" /> }
                     </div>
-                    <span className={`${isAttached? 'w-290px': 'w-223px'} truncate font-spoqaMedium tracking-tight text-14px text-right text-shadow overflow-ellipsis`}>{team2}</span>
+                    <span className={`${isAttached? 'w-290px': hasDown ?'w-210px':'w-223px'} truncate font-spoqaMedium tracking-tight text-14px text-right text-shadow overflow-ellipsis`}>{team2}</span>
                 </div>
             </button>
         </div>
@@ -164,11 +164,11 @@ const SportsBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={USFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">MLS</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>MLS</span>
                 </div>
                 <div className="flex items-center">
                     <img src={ClockIcon} alt="" className='-mt-2px'/>
-                    <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight pt-px">
+                    <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
                 </div>
@@ -195,10 +195,10 @@ const SportsBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={UKFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">EPL</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>EPL</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt=""  className='-mt-2px'/>
+                    <img src={ClockIcon} alt="" className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
@@ -242,7 +242,7 @@ const SportsBetHistoryPanel = ({
                 <div className="flex items-center">
                     <img src={FootballIcon} alt="" />
                     <img className="ml-5px" src={UKFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">EPL</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>EPL</span>
                 </div>
                 <div className="flex items-center">
                     <img src={ClockIcon} alt=""  className='-mt-2px'/>
@@ -271,12 +271,12 @@ const SportsBetHistoryPanel = ({
         <div className="w-full rounded-4px overflow-hidden shadow-subNavbar border-2 border-gray-473b35">
             <div className="flex items-center justify-between h-54px w-full  px-20px" style={{background:'linear-gradient( to right, rgb(108,85,62) 0%, rgb(71,59,53) 100%)'}}>
                 <div className="flex items-center">
-                    <img src={FootballIcon} alt=""  className='-mt-2px'/>
+                    <img src={FootballIcon} alt=""/>
                     <img className="ml-5px" src={SpainFlagIcon} alt="" />
-                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px">라리가</span>
+                    <span className="ml-4px font-spoqaMedium text-20px tracking-tight text-golden-highLight pt-3px truncate" style={{maxWidth:'760px'}}>라리가</span>
                 </div>
                 <div className="flex items-center">
-                    <img src={ClockIcon} alt=""/>
+                    <img src={ClockIcon} alt="" className='-mt-2px'/>
                     <span className="ml-5px font-spoqa text-16px tracking-tight text-golden-highLight">
                         2021-06-29 15:45
                     </span>
