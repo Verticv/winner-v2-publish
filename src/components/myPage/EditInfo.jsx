@@ -19,7 +19,7 @@ const EditInfo = ({name='Louie3Louie3Louie3Louie3Louie3Louie3Louie3'}) => {
             <div className="mt-15px">
                 <div className="flex flex-col items-center justify-center font-spoqaMedium text-20px space-y-5px text-gray-c8c8c8">
                     <div className="flex items-center h-19px">
-                        <span className="text-golden-aa9264 font-spoqaBold mr-4px" >
+                        <span className="text-golden-aa9264 font-spoqaBold mr-4px truncate" >
                             {name.length > 20 ? name.substring(0, 20) : name} {name.length > 20 && (<span className='-mt-5px inline-block'>...</span>)}
                         </span>
                         

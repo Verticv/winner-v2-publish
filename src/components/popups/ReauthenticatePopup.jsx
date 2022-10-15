@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import CloseIcon from '../../images/popups/close_icon.png'
-import LoginIcon from '../../images/popups/login_icon.png'
+import EditIcon from '../../images/popups/edit_info_icon.png'
 import Username from '../../images/popups/username.png'
 import Password from '../../images/popups/password.png'
 
-const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
+const ReauthenticatePopup = ({setPopupOpen, setSelectedTab,name='Louie3'}) => {
     
     const history = useHistory();
     const [selectedInput, setSelectedInput] = useState()
@@ -17,7 +17,7 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
             </button>
             <div style={{marginTop:'-64px'}} className="absolute w-630px -mt-79px flex justify-center">
                 <div className="flex items-center justify-center h-158px w-158px">
-                    <img src={LoginIcon} alt="login_icon"/>
+                    <img src={EditIcon} alt="edit_info_icon"/>
                 </div>
             </div>
             {/* BREAK */}
@@ -25,7 +25,9 @@ const ReauthenticatePopup = ({setPopupOpen, setSelectedTab}) => {
 
                 <div className="flex flex-col items-center justify-center font-spoqaMedium text-20px space-y-5px">
                     <div className="flex items-center h-19px">
-                        <span className="text-golden-aa9264 font-spoqaBold">louie3</span>
+                        <span className="text-golden-aa9264 font-spoqaBold">
+                            {name.length > 20 ? name.substring(0, 20) : name} {name.length > 20 && (<span className='-mt-5px inline-block'>...</span>)}
+                        </span>
                         <span className='text-gray-c8c8c8'>님의 회원정보를 수정합니다.</span>
                     </div>
 

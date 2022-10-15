@@ -661,7 +661,8 @@ const DistributorPage = ({
 
           <div className="relative flex flex-col limit1600:mt-104px mt-104px items-start limit1920:items-center">
             <div className="relative w-default h-125px mt-26px">
-              <img className="z-10" src={DistributorBanner} alt="" />
+                <img className="z-10" src={DistributorBanner} alt="" />
+                <div className='font-spoqaMedium z-20 absolute top-0 text-28px w-full h-full flex items-center justify-center' style={{ color: '#ffdfbd'}}><span className='leading-none mt-2px'>총판페이지</span></div>
             </div>
           </div>
 

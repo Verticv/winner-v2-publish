@@ -8,6 +8,7 @@ import QuickMenu from 'components/QuickMenu'
 import React, { useState, useEffect } from 'react'
 import { Route, useLocation } from 'react-router'
 import MoneyChargeBanner from '../images/money/money_charge.png'
+import MoneyExchangeBanner from '../images/money/money_exchange.png'
 import Icon1 from '../images/money/leftMenu/icon_1.png'
 import Icon2 from '../images/money/leftMenu/icon_2.png'
 
@@ -64,11 +65,17 @@ const MoneyPage = ({isAuthenticated, setAuthenticated}) => {
                 <Route path="/money/charge">
                     <div className="relative w-default h-125px">
                         <img className="z-10" src={MoneyChargeBanner} alt="" />
+                        <div className='font-spoqaMedium z-20 absolute top-0 text-28px w-full h-full flex items-center justify-center' style={{ color: '#ffdfbd' }}>
+                            <span className='leading-none mt-2px'>보유머니 충전</span>
+                        </div>
                     </div>
                 </Route>
                 <Route path="/money/exchange">
                     <div className="relative w-default h-125px">
-                        <img className="z-10" src={MoneyChargeBanner} alt="" />
+                        <img className="z-10" src={MoneyExchangeBanner} alt="" />
+                        <div className='font-spoqaMedium z-20 absolute top-0 text-28px w-full h-full flex items-center justify-center' style={{ color: '#ffdfbd' }}>
+                            <span className='leading-none mt-2px'>보유머니 환전</span>
+                        </div>
                     </div>
                 </Route>
                 
