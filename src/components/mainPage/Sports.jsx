@@ -132,7 +132,7 @@ const Sports = () => {
 
         <div className="pt-px w-full h-full">
           <div style={{backgroundColor:'#242424', background:'linear-gradient(to bottom, #252525, #1f1e1e)'}} className="w-full h-full rounded-tr-4px flex flex-col items-center">
-            <p style={{color:'#645e58'}} className="tracking-tighter text-14px font-spoqaMedium flex h-14px items-center mt-10px">{text2}</p>
+            <p style={{color:'#645e58', maxWidth:'220px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}} className="tracking-tighter text-14px font-spoqaMedium flex h-14px items-center mt-10px">{text2}</p>
 
             <div style={{height:'74px', width:'220px'}} className="w-full mt-10px flex justify-between">
               <div style={{width:'58px'}} className="h-full flex flex-col items-center flex-shrink-0">
@@ -183,7 +183,7 @@ const Sports = () => {
         <img src={isHover ? imgHover : img} alt="" className='object-none' />
         <button style={{width:'106px', height:'30px', borderRadius:'2px', background:'linear-gradient(to bottom, #e8b888, #4e3d0b)'}} className='absolute bottom-25px right-18px p-px filter hover:brightness-125'>
           <div style={{borderRadius:'2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)'}} className='w-full h-full flex items-center justify-center'>
-            <p style={{color:'#ffdfbd', textShadow: "0 0 3px #00000090"}} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
+            <p style={{color:'#ffdfbd', textShadow: '0px 0px 6px #000000'}} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
           </div>
         </button>
         <p style={{color:'#ffdfbd', marginBottom:'129px'}} className='z-20 absolute bottom-0 right-18px text-16px tracking-tighter font-spoqa h-16px flex items-center'>{text}</p>
@@ -194,7 +194,7 @@ const Sports = () => {
   return (
     <div style={{width:'1260px'}}>
       <div className="flex space-x-3px items-center relative -ml-3px">
-        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer filter hover:brightness-125" alt="" onClick={() => index > 0 && setIndex(index-1)}/>
+        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer filter hover:brightness-200" alt="" onClick={() => index > 0 && setIndex(index-1)}/>
         {DATA.splice(index, 4).map(item => (
           <Card
             icon1 = {item.icon1}
@@ -207,7 +207,7 @@ const Sports = () => {
             time = {item.time}
           />
         ))}
-        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer filter hover:brightness-125" alt="" onClick={() =>  index < DATA.length && setIndex(index+1)}/>
+        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer filter hover:brightness-200" alt="" onClick={() =>  index < DATA.length && setIndex(index+1)}/>
       </div>
 
       <div className='mt-11px space-x-19px flex'>
