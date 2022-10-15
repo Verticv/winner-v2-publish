@@ -1054,7 +1054,7 @@ const DistributorPage = ({
                         </div>
                     </div>
     
-                    <div className="flex mt-60px justify-center w-full">
+                    <div className="flex mt-60px justify-center w-full mb-60px">
                         <Pagination page={page} setPage={setPage}/>   
                     </div>
 

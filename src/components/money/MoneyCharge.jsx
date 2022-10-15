@@ -313,7 +313,7 @@ const MoneyCharge = () => {
                 <MoneyChargeTable />
             </div>
 
-            <div className="mt-20px">
+            <div className="mt-20px mb-60px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
             <div className="-mt-20px w-full flex  items-center justify-center  mb-30px">

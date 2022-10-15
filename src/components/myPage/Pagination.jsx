@@ -27,7 +27,7 @@ const Pagination = ({page, setPage}) => {
     const [selectedPage, setSelectedPage] = useState(1)
 
     return (
-        <div className="relative flex h-32px mb-60px items-center justify-center space-x-6px">
+        <div className="relative flex h-32px items-center justify-center space-x-6px">
             <button 
                 className="flex items-center justify-center w-32px h-32px rounded-4px  hover:filter hover:brightness-125"
                 onClick={() => setSelectedPage(1)}

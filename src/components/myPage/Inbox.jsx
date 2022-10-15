@@ -208,7 +208,7 @@ const Inbox = () => {
                 </button>
             </div>
 
-            <div className="flex w-full justify-center mt-4px">
+            <div className="flex w-full justify-center mt-4px mb-60px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
 

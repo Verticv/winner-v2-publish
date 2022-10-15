@@ -118,7 +118,7 @@ const Announcement = () => {
             <div className="mt-20px" />
             <AnnouncementTable />
 
-            <div className="flex w-full justify-center mt-60px">
+            <div className="flex w-full justify-center mt-60px mb-60px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
 

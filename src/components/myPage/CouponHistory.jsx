@@ -69,7 +69,7 @@ const CouponHistory = () => {
                 )} */}
             </div>
             
-            <div className="mt-60px">
+            <div className="mt-60px mb-60px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
 

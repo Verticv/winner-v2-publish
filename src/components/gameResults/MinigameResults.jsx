@@ -49,7 +49,7 @@ const MinigameResults = ({pageTitle = "미니게임"}) => {
                 <PowerladderResults title="키노사다리" icon={Sub4} />
             </Route>
 
-            <div className="flex w-full justify-center mt-60px">
+            <div className="flex w-full justify-center mt-60px mb-60px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
 

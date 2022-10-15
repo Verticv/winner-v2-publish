@@ -199,7 +199,7 @@ const MoneyExchange = () => {
                 <MoneyExchangeTable />
             </div>
 
-            <div className="mt-20px">
+            <div className="mt-20px mb-60px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
 

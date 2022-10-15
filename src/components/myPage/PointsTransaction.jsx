@@ -64,9 +64,9 @@ const PointsTransaction = () => {
                 <PointsTransactionTable />
             </div>
 
-            <div className="mt-60px"></div>
-            <Pagination page={page} setPage={setPage}/>   
-
+            <div className="mt-60px mb-60px">
+                <Pagination page={page} setPage={setPage}/>   
+            </div>
         </div>
     )
 }
