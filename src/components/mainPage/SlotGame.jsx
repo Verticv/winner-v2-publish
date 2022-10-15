@@ -17,13 +17,14 @@ const SlotGame = () => {
           <p style={{ fontSize: '10px', color: '#fff' }} className="font-spoqaMedium pt-px">{isNew ? "NEW" : "HOT"}</p>
         </div>
       </div>
-      <p style={{ color: '#929292', width: '150px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap', alignContent: 'end', verticalAlign: 'middle' }} className='z-20 mb-16px text-14px font-spoqa w-full'>
+      <p style={{ color: '#929292', width: '150px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap', alignContent: 'end', verticalAlign: 'middle' }} className='z-20 mb-16px text-14px font-spoqa w-full'>
         {text.length > 19 ? `${text.slice(0, 19)}...` : text}
       </p>
       <img src={Type1Bg} alt="bg" className='absolute' />
     </button>
   )
 
+	const username = "마이프로틴화이팅예시길이추가닉네임"
   const CardType2 = ({ icon, game }) => (
     <button style={{ width: '303px' }} className="h-full flex items-center pl-10px flex-shrink-0 filter hover:brightness-125">
       <div style={{ width: '62px', height: '62px', borderRadius: '3px', borderWidth: '1px', borderColor: '#413d36' }} className="bg-gray-500">
@@ -31,8 +32,11 @@ const SlotGame = () => {
       </div>
 
       <div style={{ color: '#5f5f5f' }} className="ml-8px text-14px font-spoqa tracking-tighter pt-2px" >
-        <div className='flex space-x-2px h-14px items-center'><p style={{ color: '#929292' }} className="text-14px font-spoqaMedium">마이프로틴화이팅</p><p className="text-14px font-spoqa">님이</p></div>
-        <p className='h-14px mt-4px flex items-center'>{game.length > 19 ? `${game.slice(0, 19)}...` : game}에서 우승</p>
+        <div className='flex space-x-2px h-14px items-center'>
+          <p style={{maxWidth:'160px', color: '#929292', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden' }} className="text-14px font-spoqaMedium">{username.length > 12 ? `${username.slice(0,12)}...` : username}</p>
+          <p className="text-14px font-spoqa">님이</p>
+        </div>
+        <p style={{maxWidth:'130px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}} className='h-14px mt-4px flex items-center'>{game.length > 19 ? `${game.slice(0, 19)}...` : game}에서 우승</p>
 
         <p style={{ color: '#aa9264' }} className='h-18px font-spoqaMedium text-18px mt-10px flex items-center'>₩123,456,789</p>
       </div>

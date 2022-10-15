@@ -14,13 +14,13 @@ const HotelCasino = () => {
         {disabled ? (
           <button style={{ width: '106px', height: '30px', borderRadius: '2px', background: 'linear-gradient(to bottom, #ada299, #5a554f)' }} className='absolute bottom-19px p-px'>
             <div style={{ borderRadius: '2px', background: 'linear-gradient(to bottom, #8a8179, #6b655e)' }} className='w-full h-full flex items-center justify-center'>
-              <p style={{ color: '#cccccc', textShadow: "0 0 3px #00000090" }} className="text-14px font-spoqaMedium tracking-tight">준비중</p>
+              <p style={{ color: '#cccccc', textShadow: '0px 0px 6px #000000' }} className="text-14px font-spoqaMedium tracking-tight">준비중</p>
             </div>
           </button>
         ) : (
           <button style={{ width: '106px', height: '30px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className='absolute bottom-19px p-px filter hover:brightness-125'>
             <div style={{ borderRadius: '2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)' }} className='w-full h-full flex items-center justify-center'>
-              <p style={{ color: '#ffdfbd', textShadow: "0 0 3px #00000090" }} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
+              <p style={{ color: '#ffdfbd', textShadow: '0px 0px 6px #000000' }} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
             </div>
           </button>
         )}
