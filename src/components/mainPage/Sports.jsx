@@ -23,7 +23,7 @@ const Sports = () => {
       icon2: Team1,
       icon3: Team2,
       text1: '축구',
-      text2: 'UEFA Champions League',
+      text2: 'UEFA Champions League longer text',
       text3: '리버풀',
       text4: '비야레알',
       time: '05/25 15:45'
@@ -34,7 +34,7 @@ const Sports = () => {
       icon3: Team2,
       text1: '미식축구',
       text2: 'Premier League',
-      text3: '멘체스터유나이티드',
+      text3: '맨체스터유나이티드',
       text4: '토트넘',
       time: '05/25 15:45'
     },
@@ -132,7 +132,7 @@ const Sports = () => {
 
         <div className="pt-px w-full h-full">
           <div style={{backgroundColor:'#242424', background:'linear-gradient(to bottom, #252525, #1f1e1e)'}} className="w-full h-full rounded-tr-4px flex flex-col items-center">
-            <p style={{color:'#645e58', maxWidth:'220px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}} className="tracking-tighter text-14px font-spoqaMedium flex h-14px items-center mt-10px">{text2}</p>
+            <p style={{color:'#645e58', maxWidth:'220px', textOverflow: 'unset', whiteSpace: 'nowrap'}} className="tracking-tighter text-14px font-spoqaMedium flex h-14px items-center mt-10px">{text2.length > 31 ? `${text2.slice(0,31)}...` : text2}</p>
 
             <div style={{height:'74px', width:'220px'}} className="w-full mt-10px flex justify-between">
               <div style={{width:'58px'}} className="h-full flex flex-col items-center flex-shrink-0">
@@ -194,7 +194,7 @@ const Sports = () => {
   return (
     <div style={{width:'1260px'}}>
       <div className="flex space-x-3px items-center relative -ml-3px">
-        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer filter hover:brightness-200" alt="" onClick={() => index > 0 && setIndex(index-1)}/>
+        <img src={ArrowLeft} className="absolute left-0 -ml-16px cursor-pointer filter hover:brightness-400" alt="" onClick={() => index > 0 && setIndex(index-1)}/>
         {DATA.splice(index, 4).map(item => (
           <Card
             icon1 = {item.icon1}
@@ -207,7 +207,7 @@ const Sports = () => {
             time = {item.time}
           />
         ))}
-        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer filter hover:brightness-200" alt="" onClick={() =>  index < DATA.length && setIndex(index+1)}/>
+        <img src={ArrowRight} style={{marginRight:'-23px'}} className="absolute right-0  cursor-pointer filter hover:brightness-400" alt="" onClick={() =>  index < DATA.length && setIndex(index+1)}/>
       </div>
 
       <div className='mt-11px space-x-19px flex'>

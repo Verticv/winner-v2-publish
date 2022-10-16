@@ -297,6 +297,11 @@ module.exports = {
         'limit1600': '1600px',
         'limit734': '734px',
       },
+      brightness: {
+        300: '3.00',
+        400: '4.00',
+        500: '5.00',
+      },
       colors: {
         blue: {
           banner: '#195ea9',
