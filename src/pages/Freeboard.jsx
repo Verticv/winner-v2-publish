@@ -28,7 +28,7 @@ const Freeboard = ({isAuthenticated, setAuthenticated}) => {
       <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
         <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
       </div>
-      <div style={{ width: '1496px', height: 'calc(100vh - 497px)',top: '430px' }} className={`right-208px fixed z-20 flex justify-end`}>
+      <div style={{ width: '1496px',top: scrollPosition>200?'235px':'430px' }} className={`right-208px fixed z-20 flex justify-end`}>
         <QuickMenu scrollPosition={scrollPosition}/>
       </div>
       <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">

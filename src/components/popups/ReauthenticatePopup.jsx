@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import CloseIcon from '../../images/popups/close_icon.png'
-import LoginIcon from '../../images/popups/login_icon.png'
+import LoginIcon from '../../images/popups/edit_info_icon.png'
 import Username from '../../images/popups/username.png'
 import Password from '../../images/popups/password.png'
 
