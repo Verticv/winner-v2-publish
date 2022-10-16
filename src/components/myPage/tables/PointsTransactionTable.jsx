@@ -21,7 +21,7 @@ const PointsTransactionTable = () => {
                     <td className="w-235px text-center">보유머니전환</td>
                     <td className="w-215px text-right pr-40px font-robotoRegular">100,000,000</td>
                     <td className="w-242px text-center font-robotoRegular">2021-06-29 15:48:47</td>
-                    <td className="w-212px text-center text-blue-4c98ff">완료</td>
+                    <td className="w-212px text-center text-blue-4c98ff" style={{WebkitTextStroke:"0.2px"}}>완료</td>
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-196px text-center font-robotoRegular">2021-06-29 15:45:41</td>
@@ -35,7 +35,7 @@ const PointsTransactionTable = () => {
                     <td className="w-235px text-center">보유머니전환</td>
                     <td className="w-215px text-right pr-40px font-robotoRegular">50,000</td>
                     <td className="w-242px text-center font-robotoRegular">2021-06-29 15:48:47</td>
-                    <td className="w-212px text-center text-blue-4c98ff">완료</td>
+                    <td className="w-212px text-center text-blue-4c98ff" style={{WebkitTextStroke:"0.2px"}}>완료</td>
                 </tr>
             </tbody>
         </table> 

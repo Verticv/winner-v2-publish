@@ -32,7 +32,7 @@ const DistributorPage = ({
     setAuthenticated
 }) => {
 
-    const username = "Louie3"
+    const username = "Louie3Louie3Louie3Louie3"
     const RecommendedUserArray = [
         {
             id: 0,
@@ -296,7 +296,7 @@ const DistributorPage = ({
 
                     </div>
 
-                    <div style={{width:"fit-content",paddingRight:innerTable?"40px":0}} className="flex h-56px border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424">
+                    <div style={{width:"fit-content",paddingRight:innerTable?"43px":0}} className="flex h-56px border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424">
                         <div className="w-85px h-full flex items-center justify-center bg-gray-1a1b1c border-l border-gray-242424">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>구분</div>
                         </div>
@@ -333,9 +333,8 @@ const DistributorPage = ({
                         <div className="w-85px h-full flex items-center justify-center">보타카지노</div>
                         <div className="w-85px h-full flex items-center justify-center">e-스포츠</div>
                         <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px mr-2px"><span>키론</span><span>가상게임</span></div>
-                        <div className="w-85px h-full flex items-center justify-center pr-3px">관리</div>
                     </div>
-                    <div style={{width:"fit-content",paddingRight:innerTable?"40px":0}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
+                    <div style={{width:"fit-content",paddingRight:innerTable?"43px":0}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
                         <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>베팅금</div>
                         </div>
@@ -371,9 +370,8 @@ const DistributorPage = ({
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">7.14M</div>
-                        <div className="w-85px h-full flex items-center justify-end pr-9px">0</div>
                     </div>
-                    <div style={{width:"fit-content",paddingRight:innerTable?"40px":0}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
+                    <div style={{width:"fit-content",paddingRight:innerTable?"43px":0}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
                         <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>승패</div>
                         </div>
@@ -409,9 +407,8 @@ const DistributorPage = ({
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
-                        <div className="w-85px h-full flex items-center justify-end pr-9px">0</div>
                     </div>
-                    <div style={{width: "fit-content",paddingRight:innerTable?"40px":0}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
+                    <div style={{width: "fit-content",paddingRight:innerTable?"43px":0}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
                         <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>정산금액</div>
                         </div>
@@ -447,7 +444,6 @@ const DistributorPage = ({
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
-                        <div className="w-85px h-full flex items-center justify-end pr-9px">0</div>
                     </div>
                 </div>
             </div>
@@ -715,7 +711,7 @@ const DistributorPage = ({
         ));
     }
 
-    const UsersOnline = ({name="tntwk"}) => (
+    const UsersOnline = ({name="tntwktntwktntwktntwktntwk"}) => (
         <div  
             className="h-48px rounded-full flex items-center justify-center"
         >

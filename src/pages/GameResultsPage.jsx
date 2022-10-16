@@ -121,6 +121,9 @@ const GameResultsPage = ({isAuthenticated, setAuthenticated}) => {
 
                 <div className="relative w-default h-125px">
                     <img className="z-10" src={GameResultsBanner} alt="" />
+                    <div className='font-spoqaMedium z-20 absolute top-0 text-28px w-full h-full flex items-center justify-center' style={{ color: '#ffdfbd' }}>
+                        <span className='leading-none mt-2px'>경기결과</span>
+                    </div>
                 </div>
                 
                 <div className="flex mt-20px w-default z-30">

@@ -27,7 +27,7 @@ const PointsAccumulateTable = () => {
                     <td className="w-141px text-right pr-14px font-robotoRegular">5,000</td>
                     <td className="w-116px text-center font-robotoRegular">1.00%</td>
                     <td className="w-102px text-center font-robotoRegular">100%</td>
-                    <td className="w-133px text-center font-robotoRegular text-blue-4c98ff pr-15px">50P</td>
+                    <td className="w-133px text-center font-robotoRegular text-blue-4c98ff pr-15px" style={{WebkitTextStroke:"0.2px"}}>50P</td>
                 </tr>
                 <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px  border-b border-dark-252525 bg-dark-2e2e2e">
                     <td className="w-152px text-center font-robotoRegular">2021-06-30</td>
@@ -47,7 +47,7 @@ const PointsAccumulateTable = () => {
                     <td className="w-141px text-right pr-14px font-robotoRegular">5,000</td>
                     <td className="w-116px text-center font-robotoRegular">1.00%</td>
                     <td className="w-102px text-center font-robotoRegular">100%</td>
-                    <td className="w-133px text-center font-robotoRegular text-blue-4c98ff pr-15px">50P</td>
+                    <td className="w-133px text-center font-robotoRegular text-blue-4c98ff pr-15px" style={{WebkitTextStroke:"0.2px"}}>50P</td>
                 </tr>
             </tbody>
         </table> 

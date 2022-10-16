@@ -39,8 +39,8 @@ const LiveCasinoBetHistoryTable = ({array, checkedState, setCheckedState, isPopu
                  <div style={{width: "140px"}} className="text-center truncate px-10px">{item.type}</div>
                 <div style={{width: "118px"}} className="text-center truncate">{item.name}</div>
                 <div style={{width: "135px"}} className="font-robotoRegular text-right">{item.amount}</div>
-                <div style={{width: "135px", color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
-                <div style={{width: "51px", color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
+                <div style={{width: "135px",  WebkitTextStroke:"0.2px",color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
+                <div style={{width: "51px",  WebkitTextStroke:"0.2px",color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
                 <div style={{width: "110px"}} className="text-center">
                     <PopupControls buttonChild={detailButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
                         <LiveCasinoHistoryDetailPopup setPopupOpen={setPopupOpen} />

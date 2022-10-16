@@ -374,7 +374,7 @@ const BetCombinationPanel = ({
                         }} 
                         className="flex items-center justify-center  cursor-pointer"
                     >
-                        <span style={{textShadow: "1px 1px 1px #00000070"}} className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5" >
+                        <span  className="font-spoqaMedium tracking-tight text-14px text-golden-highLight text-shadow-5" >
                             확인
                         </span>
                     </div>
@@ -397,7 +397,7 @@ const BetCombinationPanel = ({
                         }} 
                         className="flex items-center justify-center cursor-pointer"
                     >
-                        <span style={{textShadow: "1px 1px 1px #00000070"}} className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5" >
+                        <span  className="font-spoqaMedium tracking-tight text-14px text-red-ffd2d2 text-shadow-5" >
                             초기화
                         </span>
                     </div>

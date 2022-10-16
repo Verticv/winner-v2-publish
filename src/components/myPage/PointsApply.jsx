@@ -29,7 +29,7 @@ const PointsApply = () => {
             <MyPageTitle title="포인트전환신청" />
 
             <div className="mt-20px w-full h-157px rounded-4px border border-red-594c49 bg-red-413937 px-19px pt-17px">
-                <div className="flex items-center h-26px space-x-10px">
+                <div className="flex items-center h-26px space-x-9px">
                     <img src={AlertIcon} alt="" />
                     <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight mt-px" style={{WebkitTextStroke:"0.2px"}}>확인 / 필독사항</span>
                 </div>

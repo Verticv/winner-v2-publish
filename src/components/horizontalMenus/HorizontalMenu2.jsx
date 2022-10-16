@@ -45,13 +45,13 @@ const HorizontalMenu2 = ({
                         }}
                         className={` w-full rounded-4px flex items-center justify-center space-x-4px`}
                     >
-                        <img className={`${item.id === 0 ? "mb-3px" : "mb-2px" } object-none`} src={isState === item.id ? item.iconHighlight : item.icon} alt="" />
+                        <img className={`${item.id === 0 ? "mb-px" : "" } object-none`} src={isState === item.id ? item.iconHighlight : item.icon} alt="" />
                         <div 
                             className={`${
                                 isState === item.id
                                 ? "text-black"
                                 : "text-golden-ccc2b6" }
-                                text-16px font-spoqaMedium tracking-tight h-16px flex items-center -mt-px`}
+                                text-16px font-spoqaMedium tracking-tight h-16px flex items-center mt-px`}
                         >
                             {item.text}
                         </div>
