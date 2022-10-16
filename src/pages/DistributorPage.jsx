@@ -32,6 +32,7 @@ const DistributorPage = ({
     setAuthenticated
 }) => {
 
+    const username = "Louie3"
     const RecommendedUserArray = [
         {
             id: 0,
@@ -164,60 +165,84 @@ const DistributorPage = ({
         <>
             <div className="w-full flex">
                 <div className="w-40px mt-10px flex justify-center items-start">
-                    {/* <img src={ReplyArrow} className="object-none" alt="" /> */}
                 </div>
-                <div className="h-112px w-full flex flex-col">
-                    <div className="flex h-56px w-full border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424">
-                        <div className="w-full h-full flex items-center justify-center bg-gray-1a1b1c">
+                <div className="h-112px w-full flex flex-col overflow-x-auto">
+                    <div style={{width: "fit-content"}} className="flex w-fit h-56px border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424 flex-nowrap">
+                        <div className="w-85px h-full flex items-center justify-center bg-gray-1a1b1c">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>구분</div>
                         </div>
-                        <div className="w-full h-full flex items-center justify-center">스포츠</div>
-                        <div className="w-full h-full flex items-center justify-center">미니게임</div>
-                        <div className="w-full h-full flex items-center justify-center">에볼루션</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>아시아</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>프레그메틱</span><span>카지노</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>드림</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>섹시</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex items-center justify-center">빅게이밍</div>
-                        <div className="w-full h-full flex items-center justify-center">넷엔트</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>프레그메틱</span><span>플레이</span></div>
-                        <div className="w-full h-full flex items-center justify-center">퀵스핀</div>
-                        <div className="w-full h-full flex items-center justify-center">스페이드</div>
-                        <div className="w-full h-full flex items-center justify-center">하바네로</div>
-                        <div className="w-full h-full flex items-center justify-center">월드매치</div>
-                        <div className="w-full h-full flex items-center justify-center">메버릭</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>플레이</span><span>앤고</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
-                        <div className="w-full h-full flex items-center justify-center">e-스포츠</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px mr-2px"><span>키론</span><span>가상게임</span></div>
-                        <div className="w-full h-full flex items-center justify-center pr-3px">관리</div>
+                        <div className="w-81px h-full flex items-center justify-center">스포츠</div>
+                        <div className="w-81px h-full flex items-center justify-center">미니게임</div>
+                        <div className="w-81px h-full flex items-center justify-center">에볼루션</div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>프레그메틱</span><span>플레이</span></div>
+                        <div className="w-81px h-full flex items-center justify-center">로얄지</div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>아시아</span><span>게이밍</span></div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>드림</span><span>게이밍</span></div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>섹시</span><span>게이밍</span></div>
+                        <div className="w-81px h-full flex items-center justify-center">빅게이밍</div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>마이크로</span><span>게이밍</span></div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>YGG</span><span>드라실</span></div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>드라군</span><span>소프트</span></div>
+
+                        <div className="w-81px h-full flex items-center justify-center">분고</div>
+                        <div className="w-81px h-full flex items-center justify-center">플레이슨</div>
+                        <div className="w-81px h-full flex items-center justify-center">넷엔트</div>
+                        <div className="w-81px h-full flex items-center justify-center">퀵스핀</div>
+                        <div className="w-81px h-full flex items-center justify-center">스페이드</div>
+                        <div className="w-81px h-full flex items-center justify-center">하바네로</div>
+                        <div className="w-81px h-full flex items-center justify-center">월드매치</div>
+                        <div className="w-81px h-full flex items-center justify-center">매버릭</div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>플레인</span><span>엔고</span></div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
+                        <div className="w-81px h-full flex items-center justify-center">플레이텍</div>
+                        <div className="w-81px h-full flex items-center justify-center">스카이윈드</div>
+                        <div className="w-81px h-full flex items-center justify-center">CQ9</div>
+                        <div className="w-81px h-full flex items-center justify-center">올웨이스핀</div>
+                        <div className="w-81px h-full flex items-center justify-center">와즈단</div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>PG</span><span>소프트</span></div>
+                        <div className="w-81px h-full flex items-center justify-center">보타카지노</div>
+                        <div className="w-81px h-full flex items-center justify-center">e-스포츠</div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px mr-2px"><span>키론</span><span>가상게임</span></div>
+                        <div className="w-81px h-full flex items-center justify-center pr-3px">관리</div>
                     </div>
-                    <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
-                        <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>변경</div>
+                    <div style={{width: "fit-content"}} className="flex w-fit h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
+                        <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
+                            <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>변경</div>
                         </div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center mr-2px">0.00%</div>
-                        <div className="w-full h-full flex items-center justify-center mr-4px">
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
+                        <div className="w-81px h-full flex items-center justify-center mr-4px">
                         <button 
                             style={{width: "65px",background:'linear-gradient(to top, #4b3b09, #e8b888)'}}
                             className={` flex items-center justify-center h-36px w-87px rounded-4px filter hover:brightness-125 shadow-link`}
@@ -244,8 +269,8 @@ const DistributorPage = ({
                 <div className="w-39px mt-10px flex justify-center items-start">
                     {/* <img src={ReplyArrow} className="object-none" alt="" /> */}
                 </div>
-                <div className="w-full flex flex-col  border-gray-242424  bg-white  border-b">
-                    <div className="flex h-56px w-full  items-center bg-gray-323232">
+                <div className="w-full flex flex-col  border-gray-242424  bg-white  border-b overflow-x-auto bg-gray-323232">
+                    <div className="flex h-56px  items-center bg-gray-323232">
 
                         <div className="ml-8px pr-3px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-16px tracking-tight">
                             <img className="mr-10px" src={SmallDiamond} alt="" />
@@ -270,105 +295,159 @@ const DistributorPage = ({
                         </div>
 
                     </div>
-                    <div className="flex h-56px w-full border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424">
-                        <div className="w-full h-full flex items-center justify-center bg-gray-1a1b1c border-l border-gray-242424">
+
+                    <div style={{width: "fit-content"}} className="flex h-56px border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-16px tracking-tight bg-gray-242424">
+                        <div className="w-85px h-full flex items-center justify-center bg-gray-1a1b1c border-l border-gray-242424">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>구분</div>
                         </div>
-                        <div className="w-full h-full flex items-center justify-center">스포츠</div>
-                        <div className="w-full h-full flex items-center justify-center">미니게임</div>
-                        <div className="w-full h-full flex items-center justify-center">에볼루션</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>아시아</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>프레그메틱</span><span>카지노</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>드림</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>섹시</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex items-center justify-center">빅게이밍</div>
-                        <div className="w-full h-full flex items-center justify-center">넷엔트</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>프레그메틱</span><span>플레이</span></div>
-                        <div className="w-full h-full flex items-center justify-center">퀵스핀</div>
-                        <div className="w-full h-full flex items-center justify-center">스페이드</div>
-                        <div className="w-full h-full flex items-center justify-center">하바네로</div>
-                        <div className="w-full h-full flex items-center justify-center">월드매치</div>
-                        <div className="w-full h-full flex items-center justify-center">메버릭</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>플레이</span><span>앤고</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
-                        <div className="w-full h-full flex items-center justify-center">e-스포츠</div>
-                        <div className="w-full h-full flex flex-col items-center justify-center -space-y-4px mr-10px"><span>키론</span><span>가상게임</span></div>
+                        <div className="w-85px h-full flex items-center justify-center">스포츠</div>
+                        <div className="w-85px h-full flex items-center justify-center">미니게임</div>
+                        <div className="w-85px h-full flex items-center justify-center">에볼루션</div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>프레그메틱</span><span>플레이</span></div>
+                        <div className="w-85px h-full flex items-center justify-center">로얄지</div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>아시아</span><span>게이밍</span></div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>드림</span><span>게이밍</span></div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>섹시</span><span>게이밍</span></div>
+                        <div className="w-85px h-full flex items-center justify-center">빅게이밍</div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>마이크로</span><span>게이밍</span></div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>YGG</span><span>드라실</span></div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>드라군</span><span>소프트</span></div>
+
+                        <div className="w-85px h-full flex items-center justify-center">분고</div>
+                        <div className="w-85px h-full flex items-center justify-center">플레이슨</div>
+                        <div className="w-85px h-full flex items-center justify-center">넷엔트</div>
+                        <div className="w-85px h-full flex items-center justify-center">퀵스핀</div>
+                        <div className="w-85px h-full flex items-center justify-center">스페이드</div>
+                        <div className="w-85px h-full flex items-center justify-center">하바네로</div>
+                        <div className="w-85px h-full flex items-center justify-center">월드매치</div>
+                        <div className="w-85px h-full flex items-center justify-center">매버릭</div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>플레인</span><span>엔고</span></div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
+                        <div className="w-85px h-full flex items-center justify-center">플레이텍</div>
+                        <div className="w-85px h-full flex items-center justify-center">스카이윈드</div>
+                        <div className="w-85px h-full flex items-center justify-center">CQ9</div>
+                        <div className="w-85px h-full flex items-center justify-center">올웨이스핀</div>
+                        <div className="w-85px h-full flex items-center justify-center">와즈단</div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>PG</span><span>소프트</span></div>
+                        <div className="w-85px h-full flex items-center justify-center">보타카지노</div>
+                        <div className="w-85px h-full flex items-center justify-center">e-스포츠</div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px mr-2px"><span>키론</span><span>가상게임</span></div>
+                        <div className="w-85px h-full flex items-center justify-center pr-3px">관리</div>
                     </div>
-                    <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
+                    <div style={{width: "fit-content"}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
+                        <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>베팅금</div>
                         </div>
-                        <div className="w-full h-full flex items-center justify-end">1.09M</div>
-                        <div className="w-full h-full flex items-center justify-end">33K</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">7.14M</div>
-                        <div className="w-full h-full flex items-center justify-end pr-9px">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">1.09M</div>
+                        <div className="w-85px h-full flex items-center justify-end">33K</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">7.14M</div>
+                        <div className="w-85px h-full flex items-center justify-end pr-9px">0</div>
                     </div>
-                    <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
+                    <div style={{width: "fit-content"}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
+                        <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d border-l border-gray-242424">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>승패</div>
                         </div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end pr-9px">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end pr-9px">0</div>
                     </div>
-                    <div className="flex h-56px w-full items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
-                        <div className="w-full h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
+                    <div style={{width: "fit-content"}} className="flex h-56px items-center text-16px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232">
+                        <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>정산금액</div>
                         </div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end">0</div>
-                        <div className="w-full h-full flex items-center justify-end pr-9px">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
+                        <div className="w-85px h-full flex items-center justify-end pr-9px">0</div>
                     </div>
                 </div>
             </div>
@@ -399,11 +478,17 @@ const DistributorPage = ({
                     className={`${item.id % 2 === 1 ? "bg-gray-242424" : "bg-gray-323231"} 
                      ${item.isLast ? "border-b" : ""} w-full h-69px flex items-center justify-start font-roboto text-16px text-gray-c8c8c8 tracking-tight border-l border-r border-gray-252525`}>
                 <div className={`${item.name?'w-90px pr-5px':'w-138px'}  h-full flex items-center justify-center`}>{item.number}</div>
-                <div className="w-full h-full flex items-center justify-center"  style={{width:item.name?'136px':'113px'}}>{item.username}</div>
+                    <div className="h-full flex items-center justify-center" style={{maxWidth: item.name ? '136px' : '120px' }}>
+                        <div style={{ width: item.name ? '136px' : '120px'}} className='text-center truncate'>{item.username}</div>
+                    </div>
                 {item.name && (
-                    <div className="w-96px h-full flex items-center justify-center font-spoqaMedium">{item.name}</div>
+                    <div className="w-96px h-full flex items-center justify-center font-spoqaMedium">
+                        <div className='text-center w-96px truncate'>{item.name}</div>
+                    </div>
                 )}
-                 <div className="w-144px h-full flex items-center justify-center font-spoqaMedium" style={{width:item.name?'130px':'139px',paddingLeft:item.name?'7px':'0'}}>{item.nickname}</div>
+                    <div className="w-144px h-full flex items-center justify-center font-spoqaMedium truncate" style={{ maxWidth: item.name ? '130px' : '132px', paddingLeft: item.name ? '7px' : '0' }}>
+                        <div style={{ width: item.name ? '130px' : '132px' }} className='text-center truncate'>{item.nickname}</div>
+                    </div>
                     <div className={`${item.name ? 'justify-center' : 'justify-end pr-32px'} relative w-88px h-full flex items-center`}  style={{width:item.name?'108px':'113px',paddingLeft:item.name?'1px':'0'}}>
                     {item.user_count === 0 
                     ? <div className="">{item.added_amount}</div>
@@ -631,12 +716,8 @@ const DistributorPage = ({
     }
 
     const UsersOnline = ({name="tntwk"}) => (
-        <div 
-            style={{
-              // background: "linear-gradient(to bottom, #786d62, #4b4742)",
-            
-            }} 
-            className="h-48px rounded-fullflex items-center justify-center"
+        <div  
+            className="h-48px rounded-full flex items-center justify-center"
         >
             <div 
                 style={{
@@ -646,8 +727,10 @@ const DistributorPage = ({
                 }} 
                 className="pl-9px pr-15px w-full rounded-full flex items-center space-x-5px"
             >
-                    <img src={DefaultUser} alt="" />
-                    <span className="text-gray-ccc2b6 text-20px tracking-tight font-spoqaMedium pt-2px">{name}</span>
+                <img src={DefaultUser} alt="" />
+                <span className="text-gray-ccc2b6 text-20px tracking-tight font-spoqaMedium pt-2px">
+                    {name.length > 12 ? `${name.slice(0, 12)}...` : name}
+                </span>
             </div>
         </div>
     )
@@ -666,11 +749,11 @@ const DistributorPage = ({
             </div>
           </div>
 
-
             <div className="relative flex flex-col items-center limit496:items-center mt-12px">
               <div className="space-x-4px h-50px w-496px flex items-center justify-center text-24px tracking-tight text-gray-c8c8c8 bg-gray-272726 rounded-25px">
                 <span className="font-spoqaBold text-golden-aa9264">
-                    Louie3
+                    
+                    {username.length > 12 ? `${username.slice(0, 12)}...` : username}
                 </span>
                 <span className="font-spoqaMedium">
                     님의 총판 정보입니다.
@@ -704,55 +787,88 @@ const DistributorPage = ({
                         </div>
 
                         <div style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
-                          className="mt-20px h-111px w-full shadow-navbar rounded-4px flex items-center p-px">
+                          className="mt-20px h-120px w-full shadow-navbar rounded-4px flex items-center p-px overflow-x-auto">
                             <table className="w-full overflow-hidden rounded-3px bg-gray-2e2e2e">
                                 <thead className="h-54px w-full border-b border-gray-252525 bg-gray-2e2e2e font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">
                                     <tr className="flex items-center h-54px w-full">
-                                        <td className="w-77px text-center">스포츠</td>
-                                        <td className="w-108px text-center">미니게임</td>
-                                        <td className="w-80px text-center">에볼루션</td>
-                                        <td className="w-100px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
-                                        <td className="w-90px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>카지노</span></td>
-                                        <td className="w-90px text-center flex flex-col pt-2px -space-y-4px"><span>드림</span><span>게이밍</span></td>
-                                        <td className="w-94px text-center flex flex-col pt-2px -space-y-4px"><span>섹시</span><span>게이밍</span></td>
-                                        <td className="w-91px text-center">빅게이밍</td>
-                                        <td className="w-93px text-center">넷엔트</td>
-                                        <td className="w-94px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>플레이</span></td>
-                                        <td className="w-87px text-center">퀵스핀</td>
-                                        <td className="w-95px text-center">스페이드</td>
-                                        <td className="w-88px text-center">하바네로</td>
-                                        <td className="w-97px text-center">월드매치</td>
-                                        <td className="w-90px text-center">메버릭</td>
-                                        <td className="w-93px text-center flex flex-col pt-2px -space-y-4px"><span>플레이</span><span>앤고</span></td>
-                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
-                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
-                                        <td className="w-91px text-center">e-스포츠</td>
-                                        <td className="w-91px text-center flex flex-col pt-2px -space-y-4px"><span>키론</span><span>가상게임</span></td>  
+                                        <td className="w-72px text-center">스포츠</td>
+                                        <td className="w-72px text-center">미니게임</td>
+                                        <td className="w-72px text-center">에볼루션</td>
+                                        <td className="w-80px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>플레이</span></td>
+                                        <td className="w-72px text-center">로얄지</td>
+                                        <td className="w-73px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
+                                        <td className="w-73px text-center flex flex-col pt-2px -space-y-4px"><span>드림</span><span>게이밍</span></td>
+                                        <td className="w-73px text-center flex flex-col pt-2px -space-y-4px"><span>섹시</span><span>게이밍</span></td>
+                                        <td className="w-72px text-center">빅게이밍</td>
+                                        <td className="w-73px text-center flex flex-col pt-2px -space-y-4px"><span>마이크로</span><span>게이밍</span></td>
+                                        <td className="w-73px text-center flex flex-col pt-2px -space-y-4px"><span>YGG</span><span>드라실</span></td>
+                                        <td className="w-73px text-center flex flex-col pt-2px -space-y-4px"><span>드라군</span><span>소프트</span></td>
+                                        <td className="w-72px text-center">분고</td>
+                                        <td className="w-72px text-center">플레이슨</td>
+                                        <td className="w-72px text-center">넷엔트</td>
+                                        <td className="w-72px text-center">퀵스핀</td>
+
+                                        <td className="w-72px text-center">스페이드</td>
+                                        <td className="w-72px text-center">하바네로</td>
+                                        <td className="w-72px text-center">월드매치</td>
+                                        <td className="w-72px text-center">매버릭</td>
+
+                                        <td className="w-70px text-center flex flex-col pt-2px -space-y-4px"><span>플레인</span><span>엔고</span></td>
+                                        <td className="w-70px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
+                                        <td className="w-70px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
+                                        <td className="w-78px text-center">플레이텍</td>
+                                        <td className="w-78px text-center">스카이윈드</td>
+
+                                        <td className="w-72px text-center">CQ9</td>
+                                        <td className="w-77px text-center">올웨이스핀</td>
+                                        <td className="w-72px text-center">와즈단</td>
+                                        <td className="w-85px text-center flex flex-col pt-2px -space-y-4px"><span>PG</span><span>소프트</span></td>
+
+                                        <td className="w-85px text-center">보타카지노</td>
+                                        <td className="w-72px text-center">e-스포츠 </td>
+                                        <td className="w-100px text-center flex flex-col pt-2px -space-y-4px"><span>키론</span><span>가상게임</span></td>
+                                        <td className="w-72px text-center">합계</td>
                                     </tr>
                                 </thead>
                                 <tbody className="w-full text-gray-r585858 text-14px tracking-tight font-spoqaMedium border-r border-l border-gray-2e2e2e">
                                     <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
-                                        <td className="w-77px text-center">1.00%</td>
-                                        <td className="w-104px text-center">1.00%</td>
-                                        <td className="w-82px text-center">0.00%</td>
-                                        <td className="w-100px text-center">0.70%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-96px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-93px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-96px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
-                                        <td className="w-91px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.70%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-80px text-center">0.70%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-73px text-center">0.00%</td>
+                                        <td className="w-73px text-center">0.00%</td>
+                                        <td className="w-73px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-73px text-center">0.00%</td>
+                                        <td className="w-73px text-center">0.00%</td>
+                                        <td className="w-73px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
 
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+
+                                        <td className="w-70px text-center">0.00%</td>
+                                        <td className="w-70px text-center">0.00%</td>
+                                        <td className="w-70px text-center">0.00%</td>
+                                        <td className="w-78px text-center">0.00%</td>
+                                        <td className="w-78px text-center">0.00%</td>
+
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-77px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-85px text-center">0.00%</td>
+
+                                        <td className="w-85px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-100px text-center">0.00%</td>
+                                        <td className="w-72px text-center">0.00%</td>
                                     </tr>
                                 </tbody>
                             </table>   
@@ -802,8 +918,8 @@ const DistributorPage = ({
 
                         <div
                           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
-                          className="mt-20px w-full rounded-4px shadow-navbar flex items-center p-px overflow-hidden">
-                            <div className="bg-gray-2e2e2e p-px rounded-4px overflow-hidden" >
+                          className="mt-20px w-full rounded-4px shadow-navbar flex items-center p-px">
+                            <div className="bg-gray-2e2e2e p-px rounded-4px overflow-x-auto" >
                               <table >
                                   <thead className="h-54px w-full bg-gray-242424 font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight border-b border-gray-252525">
                                       <tr className="flex items-center h-54px">
@@ -811,7 +927,41 @@ const DistributorPage = ({
                                           <td className="w-83px text-center">스포츠</td>
                                           <td className="w-81px text-center ml-4px">미니게임</td>
                                           <td className="w-85px text-center">에볼루션</td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>플레이</span></td>
+                                        <td className="w-83px text-center">로얄지</td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>드림</span><span>게이밍</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>섹시</span><span>게이밍</span></td>
+                                        <td className="w-83px text-center">빅게이밍</td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>마이크로</span><span>게이밍</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>YGG</span><span>드라실</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>드라군</span><span>소프트</span></td>
+                                        <td className="w-83px text-center">분고</td>
+                                        <td className="w-83px text-center">플레이슨</td>
+                                        <td className="w-83px text-center">넷엔트</td>
+                                        <td className="w-83px text-center">퀵스핀</td>
+
+                                        <td className="w-83px text-center">스페이드</td>
+                                        <td className="w-83px text-center">하바네로</td>
+                                        <td className="w-83px text-center">월드매치</td>
+                                        <td className="w-83px text-center">매버릭</td>
+
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>플레인</span><span>엔고</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
+                                        <td className="w-83px text-center">플레이텍</td>
+                                        <td className="w-83px text-center">스카이윈드</td>
+
+                                        <td className="w-83px text-center">CQ9</td>
+                                        <td className="w-83px text-center">올웨이스핀</td>
+                                        <td className="w-83px text-center">와즈단</td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>PG</span><span>소프트</span></td>
+
+                                        <td className="w-83px text-center">보타카지노</td>
+                                        <td className="w-83px text-center">e-스포츠 </td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>키론</span><span>가상게임</span></td>
+                                        <td style={{backgroundColor:"#202020"}} className="w-70px text-center h-full flex items-center justify-center">합계</td> 
+                                          {/* <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
                                           <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>카지노</span></td>
                                           <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>드림</span><span>게이밍</span></td>
                                           <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>섹시</span><span>게이밍</span></td>
@@ -828,15 +978,15 @@ const DistributorPage = ({
                                           <td className="w-87px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
                                           <td className="w-77px text-center">e-스포츠</td>
                                           <td className="w-96px text-center flex flex-col pt-2px -space-y-4px pl-6px"><span>키론</span><span>가상게임</span></td>
-                                          <td style={{backgroundColor:"#202020"}} className="w-70px text-center h-full flex items-center justify-center">합계</td> 
+                                          <td style={{backgroundColor:"#202020"}} className="w-70px text-center h-full flex items-center justify-center">합계</td>  */}
                                       </tr>
                                   </thead>
                                    <tbody className="w-full text-585858 text-14px tracking-tight font-spoqaMedium">
                                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full border-b border-gray-252525">
-                                          <td className="w-84px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
+                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
                                           <td className="w-83px text-right pr-5px">1.09M</td>
-                                          <td className="w-81px text-right pr-4px">33K</td>
-                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-4px">33K</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
@@ -847,20 +997,50 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-85px text-right pr-5px">0</td>
-                                          <td className="w-81px text-right pr-2px">0</td>
-                                          <td className="w-88px text-right pr-7px">0</td>
-                                          <td className="w-79px text-right pr-2px">0</td>
-                                          <td className="w-87px text-right pr-6px">0</td>
-                                          <td className="w-77px text-right">3.06M</td>
-                                          <td className="w-100px text-right pr-10px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-7px">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-6px">0</td>
+                                          <td className="w-83px text-right">3.06M</td>
+                                            <td className="w-83px text-right pr-10px">0</td>
+                                            <td className="w-83px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-85px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
                                           <td style={{backgroundColor:"#2f2f2f"}} className="w-70px text-right pr-10px h-full flex items-center justify-end">7.14M</td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full border-b border-gray-252525">
-                                          <td className="w-84px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">승패</td>
+                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">승패</td>
                                           <td className="w-83px text-right pr-5px">1.09M</td>
-                                          <td className="w-81px text-right pr-4px">33K</td>
-                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-4px">33K</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-7px">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-6px">0</td>
+                                          <td className="w-83px text-right">3.06M</td>
+                                          <td className="w-83px text-right pr-10px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
@@ -871,20 +1051,33 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-85px text-right pr-5px">0</td>
-                                          <td className="w-81px text-right pr-2px">0</td>
-                                          <td className="w-88px text-right pr-7px">0</td>
-                                          <td className="w-79px text-right pr-2px">0</td>
-                                          <td className="w-87px text-right pr-6px">0</td>
-                                          <td className="w-77px text-right">3.06M</td>
-                                          <td className="w-100px text-right pr-10px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
+                                          
                                           <td style={{backgroundColor:"#2a2a2a"}} className="w-70px text-right pr-10px h-full flex items-center justify-end">0</td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
-                                          <td className="w-84px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">정산금액</td>
+                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">정산금액</td>
                                           <td className="w-83px text-right pr-5px">1.09M</td>
-                                          <td className="w-81px text-right pr-4px">33K</td>
-                                          <td className="w-85px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-4px">33K</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-7px">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-6px">0</td>
+                                          <td className="w-83px text-right">3.06M</td>
+                                          <td className="w-83px text-right pr-10px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
@@ -895,13 +1088,7 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-85px text-right pr-5px">0</td>
-                                          <td className="w-81px text-right pr-2px">0</td>
-                                          <td className="w-88px text-right pr-7px">0</td>
-                                          <td className="w-79px text-right pr-2px">0</td>
-                                          <td className="w-87px text-right pr-6px">0</td>
-                                          <td className="w-77px text-right">3.06M</td>
-                                          <td className="w-100px text-right pr-10px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
                                           <td style={{backgroundColor:"#2f2f2f"}} className="w-70px  text-right pr-10px h-full flex items-center justify-end">0</td>
                                       </tr>
                                   </tbody> 
