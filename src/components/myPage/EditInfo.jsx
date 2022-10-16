@@ -36,7 +36,7 @@ const EditInfo = ({name='Louie3Louie3Louie3Louie3Louie3Louie3Louie3'}) => {
                             <Title text="아이디" />
                             <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px overflow-hidden"
                               style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                <label className=" font-spoqa text-16px pl-10px pr-5px mt-px w-540px truncate">louie3</label>
+                                <label className=" font-spoqa text-16px pl-10px pr-5px mt-px w-540px">louie3</label>
                                 {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                             </div>
                         </div>
