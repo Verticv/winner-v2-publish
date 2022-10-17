@@ -141,7 +141,7 @@ const Sports = () => {
                     <img src={icon2} alt="" />
                   </div>
                 </div>
-                <p style={{color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-14px w-83px text-center">
+                <p style={{maxWidth:'180px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden', color:'#8e8780'}} className="font-spoqa tracking-tighter text-14px h-16px w-83px text-center">
                   {text3.length > 6 ? `${text3.slice(0,6)}...` : text3}
                 </p>
               </div>

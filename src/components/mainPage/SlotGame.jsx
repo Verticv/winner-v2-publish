@@ -36,7 +36,7 @@ const SlotGame = () => {
           <p style={{maxWidth:'160px', color: '#929292', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden' }} className="text-14px font-spoqaMedium">{username.length > 12 ? `${username.slice(0,12)}...` : username}</p>
           <p className="text-14px font-spoqa">님이</p>
         </div>
-        <p style={{maxWidth:'130px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}} className='h-14px mt-4px flex items-center'>{game.length > 19 ? `${game.slice(0, 19)}...` : game}에서 우승</p>
+        <p style={{maxWidth:'180px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}} className='h-14px mt-4px flex items-center'>{game.length > 19 ? `${game.slice(0, 19)}...` : game}에서 우승</p>
 
         <p style={{ color: '#aa9264' }} className='h-18px font-spoqaMedium text-18px mt-10px flex items-center'>₩123,456,789</p>
       </div>
