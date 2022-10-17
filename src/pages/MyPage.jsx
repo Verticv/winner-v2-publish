@@ -98,7 +98,7 @@ const MyPage = ({isAuthenticated, setAuthenticated}) => {
         <div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center bg-black">
           <Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
         </div>
-        <div style={{width: '1496px'}} className={`${scrollPosition > 200 ? "top-235px":"bottom-0"} fixed z-20 flex justify-end`}>
+        <div style={{width: '1496px'}} className={`${scrollPosition > 100 ? "top-235px":"top-428px"} fixed z-20 flex justify-end`}>
           <QuickMenu scrollPosition={scrollPosition} />
         </div>
         <div className="flex flex-col items-start limit:items-center mt-104px w-full h-full">
