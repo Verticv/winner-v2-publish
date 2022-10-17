@@ -80,6 +80,16 @@ const SlotGame = () => {
             <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
             <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
             <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot1} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot1} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
+            <CardType2 icon={Slot4} game="Titan Thunder Wrath example" />
           </div>
 
 
