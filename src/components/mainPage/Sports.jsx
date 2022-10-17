@@ -126,7 +126,7 @@ const Sports = () => {
             <div style={{width:'42px', height:'42px', marginTop:'54px', backgroundColor:'#1f1f1f'}} className="rounded-full flex items-center justify-center">
               <img src={icon1} alt="" className='object-none' />
             </div>
-            <p style={{color:'#8e8780'}} className={`font-spoqa tracking-tighter text-14px`}>{text1.length > 10 ? `${text1.slice(0,10)}...` : text1}</p>
+            <p style={{color:'#8e8780', maxWidth:'60px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}} className={`font-spoqa tracking-tighter text-14px`}>{text1.length > 10 ? `${text1.slice(0,10)}...` : text1}</p>
           </div>
         </div>
 
