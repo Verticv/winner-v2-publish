@@ -1,6 +1,7 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { useOnClickOutside } from "../../helpers/functions";
 import ReactPortal from"../ReactPortal";
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export default function PopupControls({
     children,
@@ -10,6 +11,8 @@ export default function PopupControls({
     isPopupOpen,
     setPopupOpen
 }) {
+
+    
     const [open, setOpen] = useState(false);
     const ref = useRef();
     const handler = useCallback(() => {
@@ -35,9 +38,22 @@ export default function PopupControls({
         e.preventDefault();
         if(e.target === e.currentTarget) {
            // handle
-           setOpen(false)
+            setOpen(false)
+            
         }
-     }
+    }
+    
+    
+    
+    useEffect(() => {
+        const targetElement = document.querySelector('body');
+        open ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement)
+    return () => {
+        enableBodyScroll(targetElement)
+    };
+    }, [isPopupOpen, onClose, open]);
+
+    
     return (
         <div>
             <div

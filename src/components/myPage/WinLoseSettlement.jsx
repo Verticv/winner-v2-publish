@@ -25,7 +25,7 @@ const WinLoseSettlement = () => {
     };
 
     return (
-        <div className="w-full">
+        <div className="flex flex-col items-center w-full">
             <MyPageTitle title="윈루즈정산" />
             <DateSearchBar isLeagueSearch={false} has3MonthSearch={true} />
 

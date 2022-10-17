@@ -118,7 +118,6 @@ const CouponRequestTable = () => {
                         : item.state === "회수쿠폰"
                         ? "#4aca68"
                         : "#c8c8c8"
-                        , WebkitTextStroke:"0.2px"
                     }} 
                     className="w-141px text-center"
                 >

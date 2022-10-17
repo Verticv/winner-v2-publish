@@ -43,21 +43,21 @@ const ExchangeHistoryTable = ({
                 <td className="w-242px h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>
                 <td className="w-268px h-56px text-right pr-70px font-robotoRegular">12,000</td>
                 <td className="w-242px h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                <td className="w-157px h-56px text-center text-blue-4c98ff pl-12px" style={{ WebkitTextStroke:"0.2px"}}>완료</td>
+                <td className="w-157px h-56px text-center text-blue-4c98ff pl-12px font-robotoRegular">완료</td>
               </tr>
               <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px border-b border-dark-252525 bg-dark-2e2e2e">
                 <td className="w-132px font-robotoRegular h-56px text-center pl-2px pt-7px"><RadioButton id={1}/></td>
                 <td className="w-242px h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>
                 <td className="w-268px h-56px text-right pr-70px font-robotoRegular">100,000</td>
                 <td className="w-242px h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                <td className="w-157px h-56px text-center pl-12px">취소</td>
+                <td className="w-157px h-56px text-center pl-12px font-robotoRegular">취소</td>
               </tr>
               <tr className="font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full bg-dark-323232">
                 <td className="w-132px font-robotoRegular h-56px text-center pl-2px pt-7px"><RadioButton id={2}/></td>
                 <td className="w-242px h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>
                 <td className="w-268px h-56px text-right pr-70px font-robotoRegular">50,000</td>
                 <td className="w-242px h-56px text-center font-robotoRegular">2021-06-29 15:45:41</td>
-                <td className="w-157px h-56px text-center text-blue-4c98ff pl-12px" style={{ WebkitTextStroke:"0.2px"}}>완료</td>
+                <td className="w-157px h-56px text-center text-blue-4c98ff pl-12px font-robotoRegular">완료</td>
               </tr>
             </tbody>
         </table>

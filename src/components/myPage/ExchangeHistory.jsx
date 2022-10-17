@@ -24,7 +24,7 @@ const ExchangeHistory = () => {
     };
 
     return (
-        <div>
+        <div className="flex flex-col w-full items-center">
             <MyPageTitle title="환전내역" />
             <DateSearchBar has3MonthSearch={true} />
 

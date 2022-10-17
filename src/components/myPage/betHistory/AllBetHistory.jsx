@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import DateSearchBar from '../DateSearchBar'
 import AllHistoryTable from '../tables/AllHistoryTable'
 
+
 const AllBetHistory = ({ isPopup = false}) => {
 
     const tableArray = [
@@ -40,7 +41,9 @@ const AllBetHistory = ({ isPopup = false}) => {
     const [checkedState, setCheckedState] = useState(new Array(3).fill(false))
     const [isAllSelected, setAllSelected] = useState(false)
     const [isPopupOpen, setPopupOpen] = useState(true)
+    
 
+    
     function allSelectButtonPressed() {
         if (isAllSelected) {
             setCheckedState(Array(3).fill(false))
@@ -51,7 +54,7 @@ const AllBetHistory = ({ isPopup = false}) => {
     }
 
     return (
-        <div className="w-full">
+        <div className="w-full flex flex-col items-center">
             <DateSearchBar isLeagueSearch={false} isPopup={isPopup}/>
             <div className="w-full h-full mt-20px">
                 <AllHistoryTable 

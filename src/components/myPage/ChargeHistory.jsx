@@ -24,7 +24,8 @@ const ChargeHistory = () => {
     };
 
     return (
-        <div className="w-full">
+        
+        <div className="w-full flex flex-col items-center">
             <MyPageTitle title="충전내역" />
             <DateSearchBar has3MonthSearch={true}/>
             <div className="mt-20px">
@@ -67,6 +68,9 @@ const ChargeHistory = () => {
             <div className="flex w-full justify-center mt-4px mb-50px">
                 <Pagination page={page} setPage={setPage}/>   
             </div>
+            
+
+
             
         </div>
     )
