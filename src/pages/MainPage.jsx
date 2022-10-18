@@ -14,6 +14,34 @@ import SubtitleRight from '../images/subtitle_right.png'
 
 const MainPage = ({ isAuthenticated, setAuthenticated }) => {
 
+	function useWindowSize() {
+		// Initialize state with undefined width/height so server and client renders match
+		// Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+		const [windowSize, setWindowSize] = useState({
+			width: undefined,
+			height: undefined,
+		});
+		useEffect(() => {
+			// Handler to call on window resize
+			function handleResize() {
+				// Set window width/height to state
+				setWindowSize({
+					width: window.innerWidth,
+					height: window.innerHeight,
+				});
+			}
+			// Add event listener
+			window.addEventListener("resize", handleResize);
+			// Call handler right away so state gets updated with initial window size
+			handleResize();
+			// Remove event listener on cleanup
+			return () => window.removeEventListener("resize", handleResize);
+		}, []); // Empty array ensures that effect is only run on mount
+		return windowSize;
+	}
+
+	const size = useWindowSize();
+
 	const SubComp = ({ text }) => (
 		<div className='flex justify-center h-22px items-center space-x-29px flex-shrink-0'>
 			<img src={SubtitleLeft} className="object-none flex-shrink-0 mt-3px" alt="" />
@@ -36,7 +64,7 @@ const MainPage = ({ isAuthenticated, setAuthenticated }) => {
 	}, []);
 
 	return (
-		<div style={{ backgroundColor: '#1e1e1e' }} className="w-full relative flex flex-col justify-center items-center limit1920:overflow-x-hidden">
+		<div style={{ backgroundColor: '#1e1e1e' }} className="w-full relative flex flex-col justify-center items-start limit:items-center limit1920:overflow-x-hidden">
 
 			<div className="fixed w-full top-0 z-50 flex flex-col items-start limit1920:items-center">
 				<Navbar isAuthenticated={isAuthenticated} setAuth={setAuthenticated} />
@@ -46,7 +74,7 @@ const MainPage = ({ isAuthenticated, setAuthenticated }) => {
 				<QuickMenu scrollPosition={scrollPosition} />
 			</div>
 
-			<div className="flex justify-start limit:justify-center items-center w-screen mt-80px limit:mt-0">
+			<div style={{marginLeft: size.width < 1261 ? '-324px' : '0px'}} className="flex items-center justify-start limit:justify-center w-screen">
 				<Carousel />
 			</div>
 
