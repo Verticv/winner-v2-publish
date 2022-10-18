@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { useOnClickOutside } from "../../helpers/functions";
 import ReactPortal from"../ReactPortal";
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+// import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export default function PopupControls({
     children,
@@ -43,15 +43,15 @@ export default function PopupControls({
         }
     }
     
+    // CLIENT REQUEST = When the scrollbar disappears, the screen behind moves. So I commented this function for the time being
     
-    
-    useEffect(() => {
-        const targetElement = document.querySelector('body');
-        open ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement)
-    return () => {
-        enableBodyScroll(targetElement)
-    };
-    }, [isPopupOpen, onClose, open]);
+    // useEffect(() => {
+    //     const targetElement = document.querySelector('body');
+    //     open ? disableBodyScroll(targetElement) : enableBodyScroll(targetElement)
+    // return () => {
+    //     enableBodyScroll(targetElement)
+    // };
+    // }, [isPopupOpen, onClose, open]);
 
     
     return (
