@@ -52,6 +52,7 @@ import Sub18 from '../../images/myPage/betHistory/slotGame/sub18_v2.png'
 import Sub19 from '../../images/myPage/betHistory/slotGame/sub19_v2.png'
 import Sub20 from '../../images/myPage/betHistory/slotGame/sub20_v2.png'
 import Sub21 from '../../images/myPage/betHistory/slotGame/sub21_v2.png'
+import Sub21_1 from '../../images/myPage/betHistory/slotGame/sub22_v2.png'
 
 import Sub22 from '../../images/myPage/betHistory/minigame/sub1.png'
 import Sub23 from '../../images/myPage/betHistory/minigame/sub2.png'
@@ -142,6 +143,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
         { text: "올웨이스핀", icon: Sub19, id: 19 },
         { text: "와즈단", icon: Sub20, id: 20 },
         { text: "PG소프트", icon: Sub21, id: 21 },
+        { text: "로얄슬롯게이밍", icon: Sub21_1, id: 22 },
     ];
 
     const subTabsArray3 = [
