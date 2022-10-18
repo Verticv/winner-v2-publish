@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Koreaflag from '../../images/korea_flag.png'
 import UKflag from '../../images/uk_flag.png'
 import LogoutIcon from '../../images/logout.png'
@@ -30,33 +30,6 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	const [isCountryOpen, setCountryOpen] = useState()
 	const [isPopupOpen, setPopupOpen] = useState(true)
 	const [isPointPopupOpen, setPointPopupOpen] = useState(true)
-
-	function useWindowSize() {
-		// Initialize state with undefined width/height so server and client renders match
-		// Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-		const [windowSize, setWindowSize] = useState({
-			width: undefined,
-			height: undefined,
-		});
-		useEffect(() => {
-			// Handler to call on window resize
-			function handleResize() {
-				// Set window width/height to state
-				setWindowSize({
-					width: window.innerWidth,
-					height: window.innerHeight,
-				});
-			}
-			// Add event listener
-			window.addEventListener("resize", handleResize);
-			// Call handler right away so state gets updated with initial window size
-			handleResize();
-			// Remove event listener on cleanup
-			return () => window.removeEventListener("resize", handleResize);
-		}, []); // Empty array ensures that effect is only run on mount
-		return windowSize;
-	}
-	const size = useWindowSize();
 
 	const tabClass = "flex-shrink-0 text-yellow-ad9e8c hover:text-white relative flex flex-col items-center justify-center h-45px px-13px cursor-pointer"
 	const selectedTabClass = "flex-shrink-0 relative flex flex-col items-center justify-center px-13px cursor-pointer h-45px text-white cursor-pointer"
@@ -174,71 +147,71 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		</div>
 	)
 
-	if (size.width < 1261) return (
-		<div style={{ borderBottomWidth: '1px', borderBottomColor: '#414141', maxWidth: '1260px' }} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit1600:items-center limit1920:items-center'>
-			<div style={{ maxWidth: '1260px' }} className="z-50 w-full">
+	// if (size.width < 1261) return (
+	// 	<div style={{ borderBottomWidth: '1px', borderBottomColor: '#414141', maxWidth: '1260px' }} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit1600:items-center limit1920:items-center'>
+	// 		<div style={{ maxWidth: '1260px' }} className="z-50 w-full">
 
-				<div style={{ height: '140px' }} className="">
-					<div style={{ height: '59px', paddingTop: '16px' }} className="block justify-center relative">
-						<img style={{ margin: 'auto' }} className="cursor-pointer object-none" src={TopLogo} alt="logo" onClick={() => history.push('/')} />
-					</div>
-					<div className='w-full flex justify-end mt-8px'>
-						{isAuthenticated ? (
-							<div className='flex items-center'>
-								<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px -mr-px' />
-								<div className="mr-24px mt-4px">
-									<LoggedInComponent />
-								</div>
-								<a href='/distributor-page' target="_blank">
-									<button
-										// onClick={() => history.push("/distributor-page")}
-										style={{ width: '104px', height: '28px', borderRadius: '2px', background: "linear-gradient(to bottom, #a67c52, #826140)", textShadow: '0px 0px 6px #000000', color: '#ffdfbd' }}
-										className="flex items-center justify-center text-white text-14px font-spoqaMedium filter hover:brightness-125 mr-5px"
-									>
-										총판페이지
-									</button>
-								</a>
-								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
-									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
-								</DropDownControls>
-								<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px -ml-2px' />
-								<button onClick={() => setAuth(false)}>
-									<img src={LogoutIcon} alt="" className='object-none ml-11px mr-4px cursor-pointer' />
-								</button>
-							</div>
-						) : (
-							<div className='flex items-center'>
-								<div className="flex space-x-10px flex-shrink-0">
-									<PopupControls buttonChild={LoginButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
-										<LoginPopup setAuth={setAuth} setPopupOpen={setPopupOpen} />
-									</PopupControls>
-									<PopupControls buttonChild={SignupButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
-										<SignupPopup setAuth={setAuth} setPopupOpen={setPopupOpen} />
-									</PopupControls>
-								</div>
-								<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
-									<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
-								</DropDownControls>
-							</div>
-						)}
-					</div>
-					<div style={{ height: '44px' }} className="relative flex justify-between flex-row flex-shrink-0">
-						<div className="flex items-center flex-shrink-0 -ml-13px">
-							<TabsList items={tabsArray} />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className='bg-black bg-opacity-85 w-screen -mt-px'>
-				<NavbarHover selection={hoveredTab} setHoveredTab={setHoveredTab} setSelectedTab={setSelectedTab} />
-			</div>
+	// 			<div style={{ height: '140px' }} className="">
+	// 				<div style={{ height: '59px', paddingTop: '16px' }} className="block justify-center relative">
+	// 					<img style={{ margin: 'auto' }} className="cursor-pointer object-none" src={TopLogo} alt="logo" onClick={() => history.push('/')} />
+	// 				</div>
+	// 				<div className='w-full flex justify-end mt-8px'>
+	// 					{isAuthenticated ? (
+	// 						<div className='flex items-center'>
+	// 							<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px -mr-px' />
+	// 							<div className="mr-24px mt-4px">
+	// 								<LoggedInComponent />
+	// 							</div>
+	// 							<a href='/distributor-page' target="_blank">
+	// 								<button
+	// 									// onClick={() => history.push("/distributor-page")}
+	// 									style={{ width: '104px', height: '28px', borderRadius: '2px', background: "linear-gradient(to bottom, #a67c52, #826140)", textShadow: '0px 0px 6px #000000', color: '#ffdfbd' }}
+	// 									className="flex items-center justify-center text-white text-14px font-spoqaMedium filter hover:brightness-125 mr-5px"
+	// 								>
+	// 									총판페이지
+	// 								</button>
+	// 							</a>
+	// 							<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
+	// 								<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
+	// 							</DropDownControls>
+	// 							<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px -ml-2px' />
+	// 							<button onClick={() => setAuth(false)}>
+	// 								<img src={LogoutIcon} alt="" className='object-none ml-11px mr-4px cursor-pointer' />
+	// 							</button>
+	// 						</div>
+	// 					) : (
+	// 						<div className='flex items-center'>
+	// 							<div className="flex space-x-10px flex-shrink-0">
+	// 								<PopupControls buttonChild={LoginButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
+	// 									<LoginPopup setAuth={setAuth} setPopupOpen={setPopupOpen} />
+	// 								</PopupControls>
+	// 								<PopupControls buttonChild={SignupButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
+	// 									<SignupPopup setAuth={setAuth} setPopupOpen={setPopupOpen} />
+	// 								</PopupControls>
+	// 							</div>
+	// 							<DropDownControls buttonChild={CountryButton} onClick={() => setCountryOpen(!isCountryOpen)} onClose={() => setCountryOpen(false)} >
+	// 								<div className="z-40"><CountryDropDown setCountry={setCountry} country={country} /></div>
+	// 							</DropDownControls>
+	// 						</div>
+	// 					)}
+	// 				</div>
+	// 				<div style={{ height: '44px' }} className="relative flex justify-between flex-row flex-shrink-0">
+	// 					<div className="flex items-center flex-shrink-0 -ml-13px">
+	// 						<TabsList items={tabsArray} />
+	// 					</div>
+	// 				</div>
+	// 			</div>
+	// 		</div>
+	// 		<div className='bg-black bg-opacity-85 w-screen -mt-px'>
+	// 			<NavbarHover selection={hoveredTab} setHoveredTab={setHoveredTab} setSelectedTab={setSelectedTab} />
+	// 		</div>
 
-		</div>
-	)
+	// 	</div>
+	// )
 
-	else return (
-		<div style={{ borderBottomWidth: '1px', borderBottomColor: '#414141' }} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit1600:items-center limit1920:items-center'>
-			<div style={{ maxWidth: '1260px' }} className="z-50 w-full">
+	return (
+		<div style={{ borderBottomWidth: '1px', borderBottomColor: '#414141' }} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit:items-center limit1920:items-center'>
+			<div style={{ width: '1260px' }} className="z-50 w-full">
 
 				<div style={{ height: '103px' }} className="">
 					<div style={{ height: '59px', paddingTop: '16px' }} className="block justify-center relative">

@@ -61,8 +61,8 @@ const Carousel = () => {
 		<button
 			type="button"
 			onClick={isLeft ? previousImage : nextImage}
-			// style={{ marginBottom: '-105px' }}
-			className={`${arrowStyle} ${isLeft ? 'left-20px' : 'right-20px'} limit:mb-minus105 mb-minus80 hover:brightness-125 filter`}
+			style={{ left: isLeft && '333px', right: !isLeft && "333px" }}
+			className={`${arrowStyle} mb-minus105 hover:opacity-75 filter opacity-50`}
 		>
 			{isLeft ? leftArrow : rightArrow}
 		</button>
@@ -109,8 +109,8 @@ const Carousel = () => {
 
 	return (
 
-		<div className="flex w-default limit1920:w-1920 limit:w-full flex-shrink-0">
-			<div className="relative w-full limit1920:h-491px h-full flex items-center justify-center">
+		<div className="flex w-1920 flex-shrink-0  h-491px">
+			<div className="relative w-1920 h-491px flex items-center justify-center">
 				{sliderControl(true)}
 				{imagesDisplay}
 				{sliderControl()}
