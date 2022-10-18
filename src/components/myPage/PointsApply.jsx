@@ -33,7 +33,7 @@ const PointsApply = () => {
                     <img src={AlertIcon} alt="" />
                     <span className="text-red-e65454 font-spoqaMedium text-20px tracking-tight mt-px" style={{WebkitTextStroke:"0.2px"}}>확인 / 필독사항</span>
                 </div>
-                <div className="mt-15px flex flex-col space-y-14px text-gray-ccc2b6 tracking-tight font-spoqaMedium text-16px">
+                <div className="mt-16px flex flex-col space-y-14px text-gray-ccc2b6 tracking-tight font-spoqaMedium text-16px">
                     <span className="h-15px"><span className="font-bold mr-4px">✓</span>  포인트 전환 시 보유머니로 충전됩니다.</span>
                     <span className="h-15px"><span className="font-bold mr-4px">✓</span>  최소 10,000P 이상 신청 가능합니다.</span>
                     <span className="h-15px"><span className="font-bold mr-4px">✓</span>  자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</span>
@@ -43,7 +43,7 @@ const PointsApply = () => {
         <div className="mt-20px w-full h-573px shadow-table p-px rounded-4px"
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
           <div className='bg-gray-323232 p-9px rounded-4px flex flex-col  w-full h-full'>
-                <div className="w-full rounded-4px h-130px bg-gray-252525 border border-gray-404040">
+                <div style={{height: '128px'}} className="w-full rounded-4px bg-gray-252525 border border-gray-404040">
                     <div className="ml-114px mt-37px flex flex-col font-spoqaMedium tracking-tight">
                         <span className="text-20px h-19px text-gray-ccc2b6">전환 포인트 입력</span>
                         <span className="text-16px text-gray-c8c8c8 mt-15px">

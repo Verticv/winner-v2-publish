@@ -14,7 +14,7 @@ const MoneyCharge = () => {
     const [page, setPage] = useState(0)
     const [inputValue, setInputValue] = useState(null)
     const [inputClicked, setInputClicked] = useState(false)
-    const [radioValue, setRadioValue] = useState("yes")
+    const [radioValue, setRadioValue] = useState("slot_game")
     var nf = new Intl.NumberFormat();
 
     const Title = ({text}) => (

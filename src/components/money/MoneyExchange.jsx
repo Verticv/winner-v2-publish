@@ -37,7 +37,7 @@ const MoneyExchange = () => {
                 </div>
             </div>
 
-            <div style={{height: "474px",background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }} className="rounded-4px shadow-table overflow-hidden p-px mt-21px w-full">
+            <div style={{height: "474px",background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }} className="rounded-4px shadow-table overflow-hidden p-px mt-20px w-full">
               <div className='h-full w-full rounded-3px overflow-hidden bg-gray-323232 p-9px'>
                 <div style={{height: "128px"}} className="w-full rounded-4px border border-gray-404040 bg-gray-252525">
                     <div className="text-20px font-spoqaMedium tracking-tight text-golden-highLight h-19px flex items-center mt-30px ml-55px">환전금액 입력</div>
