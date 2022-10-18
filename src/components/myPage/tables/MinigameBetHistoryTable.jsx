@@ -42,8 +42,8 @@ const MinigameBetHistoryTable = ({array, checkedState, setCheckedState, isPopupO
                 <div style={{width: "84px"}} className="text-center">{item.history}</div>
                 <div style={{width: "108px"}} className="font-robotoRegular text-right">{item.amount}</div>
                 <div style={{width: "79px"}} className="text-center">{item.percentage}</div>
-                <div style={{width: "123px",  WebkitTextStroke:"0.2px",color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
-                <div style={{width: "80px",  WebkitTextStroke:"0.2px",color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
+                <div style={{width: "123px",  WebkitTextStroke:item.status === "승"&&"0.2px",color: item.profit.includes("+") ? "#e65454" : "#c8c8c8"}} className="font-robotoRegular text-right">{item.profit}</div>
+                <div style={{width: "80px",  WebkitTextStroke:item.status === "승"&&"0.2px",color: item.status === "승" ? "#e65454" : "#c8c8c8"}} className="text-center">{item.status}</div>
                 <div style={{width: "90px"}} className="text-center pr-18px">
                     <PopupControls buttonChild={detailButton} isPopupOpen={isPopupOpen} setPopupOpen={setPopupOpen}>
                         <LiveCasinoHistoryDetailPopup setPopupOpen={setPopupOpen} />
