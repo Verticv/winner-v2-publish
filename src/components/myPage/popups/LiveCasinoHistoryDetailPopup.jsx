@@ -4,6 +4,8 @@ import Sample1 from '../../../images/myPage/betHistory/sample1_v2.png'
 import Sample2 from '../../../images/myPage/betHistory/sample2_v2.png'
 
 const LiveCasinoHistoryDetailPopup = ({setPopupOpen}) => {
+
+    const username = "WINlouie3asdjakljsdasd"
   return (
       <div 
         style={{ height: "793px",width: "690px", borderRadius: "10px", background:"linear-gradient(to top, #1f1f1e 80%, #343434 100%)",boxShadow: '3.5px 6.062px 7px 0px rgba(0, 0, 0, 0.75)'}}
@@ -24,7 +26,7 @@ const LiveCasinoHistoryDetailPopup = ({setPopupOpen}) => {
                 <div style={{borderRadius: "21px"}}
                   className="text-20px  flex h-42px pr-53px pl-54px items-center mt-18px mb-17px bg-gray-272726 font-spoqaMedium" >
                     <p >플레이어 이름:</p>
-                    <p className=" text-gray-c8c8c8 ml-5px">WINlouie3</p>
+                    <p style={{maxWidth:'150px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}} className=" text-gray-c8c8c8 ml-5px">{username.length > 12 ? `${username.slice(0,12)}...` : username}</p>
                 </div>
 
                 {/* <div style={{width:"459px", backgroundColor:"#868686"}} className="h-px mb-22px"></div> */}
