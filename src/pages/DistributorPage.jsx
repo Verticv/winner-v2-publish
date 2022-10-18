@@ -201,6 +201,7 @@ const DistributorPage = ({
                         <div className="w-81px h-full flex items-center justify-center">올웨이스핀</div>
                         <div className="w-81px h-full flex items-center justify-center">와즈단</div>
                         <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>PG</span><span>소프트</span></div>
+                        <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>로얄슬롯</span><span>게이밍</span></div>
                         <div className="w-81px h-full flex items-center justify-center">보타카지노</div>
                         <div className="w-81px h-full flex items-center justify-center">e-스포츠</div>
                         <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px mr-2px"><span>키론</span><span>가상게임</span></div>
@@ -210,6 +211,7 @@ const DistributorPage = ({
                         <div className="w-85px h-full flex items-center justify-center font-spoqaMedium text-gray-ccc2b6 bg-gray-181a1d">
                             <div className="h-full flex items-center justify-center" style={{ width: '85px' }}>변경</div>
                         </div>
+                        <div className="w-81px h-full flex items-center justify-center">0.00%</div>
                         <div className="w-81px h-full flex items-center justify-center">0.00%</div>
                         <div className="w-81px h-full flex items-center justify-center">0.00%</div>
                         <div className="w-81px h-full flex items-center justify-center">0.00%</div>
@@ -330,6 +332,7 @@ const DistributorPage = ({
                         <div className="w-85px h-full flex items-center justify-center">올웨이스핀</div>
                         <div className="w-85px h-full flex items-center justify-center">와즈단</div>
                         <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>PG</span><span>소프트</span></div>
+                        <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>로얄슬롯</span><span>게이밍</span></div>
                         <div className="w-85px h-full flex items-center justify-center">보타카지노</div>
                         <div className="w-85px h-full flex items-center justify-center">e-스포츠</div>
                         <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px mr-2px"><span>키론</span><span>가상게임</span></div>
@@ -340,6 +343,7 @@ const DistributorPage = ({
                         </div>
                         <div className="w-85px h-full flex items-center justify-end">1.09M</div>
                         <div className="w-85px h-full flex items-center justify-end">33K</div>
+                        <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
                         <div className="w-85px h-full flex items-center justify-end">0</div>
@@ -819,6 +823,7 @@ const DistributorPage = ({
                                         <td className="w-77px text-center">올웨이스핀</td>
                                         <td className="w-72px text-center">와즈단</td>
                                         <td className="w-85px text-center flex flex-col pt-2px -space-y-4px"><span>PG</span><span>소프트</span></td>
+                                        <td className="w-85px text-center flex flex-col pt-2px -space-y-4px"><span>로얄슬롯</span><span>게이밍</span></td>
 
                                         <td className="w-85px text-center">보타카지노</td>
                                         <td className="w-72px text-center">e-스포츠 </td>
@@ -859,6 +864,7 @@ const DistributorPage = ({
                                         <td className="w-72px text-center">0.00%</td>
                                         <td className="w-77px text-center">0.00%</td>
                                         <td className="w-72px text-center">0.00%</td>
+                                        <td className="w-85px text-center">0.00%</td>
                                         <td className="w-85px text-center">0.00%</td>
 
                                         <td className="w-85px text-center">0.00%</td>
@@ -952,6 +958,7 @@ const DistributorPage = ({
                                         <td className="w-83px text-center">올웨이스핀</td>
                                         <td className="w-83px text-center">와즈단</td>
                                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>PG</span><span>소프트</span></td>
+                                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>로얄슬롯</span><span>게이밍</span></td>
 
                                         <td className="w-83px text-center">보타카지노</td>
                                         <td className="w-83px text-center">e-스포츠 </td>
@@ -1008,6 +1015,7 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-85px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
