@@ -728,7 +728,7 @@ const DistributorPage = ({
                 className="pl-9px pr-15px w-full rounded-full flex items-center space-x-5px"
             >
                 <img src={DefaultUser} alt="" />
-                <span className="text-gray-ccc2b6 text-20px tracking-tight font-spoqaMedium pt-2px">
+                <span style={{maxWidth: '140px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow: 'hidden'}} className="text-gray-ccc2b6 text-20px tracking-tight font-spoqaMedium pt-2px">
                     {name.length > 12 ? `${name.slice(0, 12)}...` : name}
                 </span>
             </div>
@@ -751,7 +751,7 @@ const DistributorPage = ({
 
             <div className="relative flex flex-col items-center limit496:items-center mt-12px">
               <div className="space-x-4px h-50px w-496px flex items-center justify-center text-24px tracking-tight text-gray-c8c8c8 bg-gray-272726 rounded-25px">
-                <span className="font-spoqaBold text-golden-aa9264">
+                <span style={{maxWidth: '160px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow: 'hidden'}} className="font-spoqaBold text-golden-aa9264">
                     
                     {username.length > 12 ? `${username.slice(0, 12)}...` : username}
                 </span>
