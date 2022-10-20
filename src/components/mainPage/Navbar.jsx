@@ -31,8 +31,8 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	const [isPopupOpen, setPopupOpen] = useState(true)
 	const [isPointPopupOpen, setPointPopupOpen] = useState(true)
 
-	const tabClass = "flex-shrink-0 text-yellow-ad9e8c hover:text-white relative flex flex-col items-center justify-center h-45px px-13px cursor-pointer"
-	const selectedTabClass = "flex-shrink-0 relative flex flex-col items-center justify-center px-13px cursor-pointer h-45px text-white cursor-pointer"
+	const tabClass = "flex-shrink-0 text-yellow-ad9e8c hover:text-white relative flex flex-col items-center justify-center h-45px px-11px cursor-pointer"
+	const selectedTabClass = "flex-shrink-0 relative flex flex-col items-center justify-center px-11px cursor-pointer h-45px text-white cursor-pointer"
 	const lineClass = "absolute bottom-0 h-2px w-full bg-clear"
 	const selectedLineClass = "absolute bottom-0 h-2px w-full bg-white"
 
@@ -104,7 +104,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 				<img src={Nav13} alt="" className='mr-3px object-none' />
 				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-13px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					<p style={{marginRight:'2px'}}>Lv3</p>
-					<p style={{maxWidth:'135px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}}>{username.length > 12 ? `${username.slice(0,12)}...` : username}</p>
+					<p style={{maxWidth:'144px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}}>{username.length > 12 ? `${username.slice(0,12)}...` : username}</p>
 					<p>님</p>
 				</p>
 			</button>
