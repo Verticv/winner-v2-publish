@@ -20,7 +20,7 @@ const LiveCasino = () => {
 
   const history = useHistory()
 
-  const Card = ({ bg, bgHover, comingSoon = false }) => {
+  const Card = ({ bg, bgHover, comingSoon = false, title }) => {
     const [isHover, setHover] = useState(false)
 
     if (comingSoon) return (
@@ -38,7 +38,13 @@ const LiveCasino = () => {
     return (
       <div onClick={() => history.push("/live-casino")} className='relative flex cursor-pointer' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <img src={isHover ? bgHover : bg} className="object-none" alt="" />
-        <button  style={{ width: '106px', height: '30px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className='absolute bottom-15px right-35px p-px filter hover:brightness-125'>
+
+        <button style={{ width: '106px', height: '30px' }} className='absolute bottom-63px right-35px p-px'>
+          <div className='w-full h-full flex items-center justify-center'>
+            <p style={{ color: '#ffdfbd' }} className="text-14px font-spoqaMedium tracking-tight">{title}</p>
+          </div>
+        </button>
+        <button style={{ width: '106px', height: '30px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className='absolute bottom-15px right-35px p-px filter hover:brightness-125'>
           <div style={{ borderRadius: '2px', background: isHover ? 'linear-gradient(to bottom, #f38d27, #b55b01)' : 'linear-gradient(to bottom, #a67c52, #805f3f)' }} className='w-full h-full flex items-center justify-center'>
             <p style={{ color: '#ffdfbd', textShadow: "0 0 6px #000000" }} className="text-14px font-spoqaMedium tracking-tight">게임시작</p>
           </div>
@@ -50,16 +56,16 @@ const LiveCasino = () => {
   return (
     <div style={{ height: '413px', width: '1260px' }} className="flex flex-col items-center w-full">
       <div style={{ height: '203px' }} className='flex w-full space-x-8px items-end'>
-        <Card bg={Meun1} bgHover={Meun1Hl} />
-        <Card bg={Meun2} bgHover={Meun2Hl} />
-        <Card bg={Meun3} bgHover={Meun3Hl} />
-        <Card bg={Meun4} bgHover={Meun4Hl} />
+        <Card bg={Meun1} bgHover={Meun1Hl} title="에볼루션" />
+        <Card bg={Meun2} bgHover={Meun2Hl} title="프레그메틱플레이" />
+        <Card bg={Meun3} bgHover={Meun3Hl} title="로얄지" />
+        <Card bg={Meun4} bgHover={Meun4Hl} title="아시아게이밍" />
       </div>
 
       <div style={{ height: '199px' }} className='flex w-full space-x-8px items-end mt-11px'>
-        <Card bg={Meun5} bgHover={Meun5Hl} />
-        <Card bg={Meun6} bgHover={Meun6Hl} />
-        <Card bg={Meun7} bgHover={Meun7Hl} />
+        <Card bg={Meun5} bgHover={Meun5Hl} title="드림게이밍" />
+        <Card bg={Meun6} bgHover={Meun6Hl} title="섹시게이밍" />
+        <Card bg={Meun7} bgHover={Meun7Hl} title="빅게이밍" />
         <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
       </div>
     </div>

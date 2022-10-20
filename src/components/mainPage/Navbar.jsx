@@ -45,7 +45,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		{ text: "미니게임", id: 5 },
 		{ text: "키론가상게임", id: 6 },
 		{ text: "피싱게임", id: 7 },
-		{ text: "티비벳", id: 8 },
+		// { text: "티비벳", id: 8 },
 	];
 
 	// Hook
@@ -65,7 +65,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 					setSelectedTab(item.id)
 				}}
 			>
-				<span style={{ marginBottom: '3px' }} className="cursor-pointer font-spoqaMedium text-14px tracking-tighter">{item.text}</span>
+				<span style={{ marginBottom: '0px' }} className="cursor-pointer font-spoqaMedium text-15px tracking-tighter">{item.text}</span>
 				<div style={{ backgroundColor: selectedTab === item.id ? "#fcd6a8" : "" }} className={selectedTab === item.id ? selectedLineClass : lineClass}></div>
 			</button>
 		));
@@ -102,7 +102,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		<div className='space-x-5px flex'>
 			<button className='flex items-center h-12px flex-shrink-0' onClick={() => history.push("/mypage/bet-history")}>
 				<img src={Nav13} alt="" className='mr-3px object-none' />
-				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-13px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					<p style={{marginRight:'2px'}}>Lv3</p>
 					<p style={{maxWidth:'135px', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden'}}>{username.length > 12 ? `${username.slice(0,12)}...` : username}</p>
 					<p>님</p>
@@ -111,7 +111,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
 			<button className='flex items-center h-12px flex-shrink-0' onClick={() => history.push("/money/charge")}>
 				<img src={Nav2} alt="" className=' object-none' />
-				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-13px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					10,000,000원
 				</p>
 			</button>
@@ -120,7 +120,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 			<PopupControls
 				buttonChild={<button className='flex items-center h-12px flex-shrink-0'>
 					<img src={Nav3} alt="" className=' object-none' />
-					<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+					<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-13px h-12px flex items-center tracking-tighter font-spoqaMedium">
 						12,500P
 					</p>
 				</button>}
@@ -133,14 +133,14 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
 			<button className='flex items-center h-12px flex-shrink-0' onClick={() => history.push("/mypage/inbox")}>
 				<img src={Nav4} alt="" className=' object-none' />
-				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-13px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쪽지 2
 				</p>
 			</button>
 			<div style={{ backgroundColor: '#36322c' }} className='w-px h-12px' />
 			<button className='flex items-center h-12px flex-shrink-0' onClick={() => history.push("/mypage/coupon/coupon-usage")}>
 				<img src={Nav5} alt="" className=' object-none' />
-				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-12px h-12px flex items-center tracking-tighter font-spoqaMedium">
+				<p style={{ color: '#ad9e8c', WebkitTextStroke: "0.2px" }} className="text-13px h-12px flex items-center tracking-tighter font-spoqaMedium">
 					쿠폰 3
 				</p>
 			</button>

@@ -83,7 +83,7 @@ const Carousel = () => {
 	const imagesDisplay = (
 		<>
 			{images.map((img, i) => (
-				<img onClick={() => currentImage === i && history.push('/live-casino')} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} key={i} src={images[i]} className={`${currentImage === i ? "opacity-100 cursor-pointer" : "opacity-0"} ${i === 1 && "absolute top-0"} w-full object-contain transition duration-300`} alt={"banner_images"} />
+				<img onClick={() => currentImage === i ? history.push('/live-casino') : history.push('/bet-combination')} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} key={i} src={images[i]} className={`${currentImage === i ? "opacity-100" : "opacity-0"} ${i === 1 && "absolute top-0"} w-full object-contain transition duration-300 cursor-pointer`} alt={"banner_images"} />
 			))}
 		</>
 	)

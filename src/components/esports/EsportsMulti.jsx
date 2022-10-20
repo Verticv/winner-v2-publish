@@ -70,13 +70,13 @@ const EsportsMulti = () => {
 
                 <div style={{width:"97px", height:"25px", backgroundColor:"#f45400"}} className="text-white flex items-center justify-center font-spoqaBold text-18px tracking-tight pt-px mt-60px">알아두세요!</div>
                     <div className="flex items-center">
-                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-5px">※ 각 팀의 좌/우 가장자리에있는 ①<p className="ml-2px text-blue-2980b9">[+]</p><p style={{color:"#e65454"}}>[+]</p></span>
+                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-5px">※ 각 팀의 좌/우 가장자리에 있는 ①<p className="ml-2px text-blue-2980b9">[+]</p><p style={{color:"#e65454"}}>[+]</p></span>
                     </div>
                     <div className="flex items-center">
                         <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">버튼을 누르면 선택한 경기(배당)가 </span>
                     </div>
                     <div className="flex items-center">
-                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">②팔레이 리스트에 추가됩니다.</span>
+                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">②팔레이리스트에 추가됩니다.</span>
                     </div>
                     <div className="flex items-center">
                         <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">※팔레이베팅은 최소 2개 이상 각각 </span>
@@ -85,7 +85,7 @@ const EsportsMulti = () => {
                         <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">다른 경기를 조합하여 베팅할 수 있습니다.</span>
                     </div>
                     <div className="flex items-center">
-                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">(같은 게임 팔레이 베팅 불가) </span>
+                        <span style={{color:"#8c8c8c"}} className="flex h-16px items-center text-16px tracking-tight font-spoqaMedium mt-4px">(같은 게임 팔레이베팅 불가) </span>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@ const EsportsMulti = () => {
             <div className="flex space-x-20px items-start">
                 <img className="object-none" src={Image10} alt="" />
                 <div style={{backgroundColor:"#2b2b2a", height:"368px"}} className="w-full h-full rounded-xl p-20px">
-                    <Item number="3." title="베팅금액입력" text="가. ① 베팅금액을 입력합니다." text2="나. ② [확인] 버튼을 누르면 베팅이" text3="완료됩니다." />
+                    <Item number="3." title="베팅금액입력" text="가. ① 베팅금액을 입력합니다." text2="나. ② [베팅] 버튼을 누르면 베팅이" text3="완료됩니다." />
                     <div style={{width:"97px", height:"25px", backgroundColor:"#f45400"}} className="text-white flex items-center justify-center font-spoqaBold text-18px tracking-tight pt-px mt-60px">알아두세요!</div>
                     <div className="flex items-center">
                         <img src={Dot} className="object-contain mr-4px h-4px mt-6px" alt="" />

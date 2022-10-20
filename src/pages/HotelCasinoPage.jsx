@@ -21,7 +21,7 @@ const HotelCasino = ({isAuthenticated, setAuthenticated}) => {
 		};
 	}, []);
     const MenuArray = [
-        { text: "이용가이드", id: 0, path: "/hotel-casino/structure" },
+        { text: "보타 이용가이드", id: 0, path: "/hotel-casino/structure" },
     ];
 
     const [, setSelectedTab] = useState(0)
@@ -41,7 +41,7 @@ const HotelCasino = ({isAuthenticated, setAuthenticated}) => {
                 <Route path="/hotel-casino/structure">
                     <DirectoryComponent 
                         branch1="호텔카지노"
-                        branch2="이용가이드" 
+                        branch2="보타 이용가이드" 
                         mainPath="/hotel-casino/structure"
                         setSelectedTab={setSelectedTab}
                     />
