@@ -70,12 +70,12 @@ const ContactCompose = () => {
             }}>
                 피싱게임
             </button>
-            <button className={dropDownCellClass} onClick={() => {
+            {/* <button className={dropDownCellClass} onClick={() => {
                 setSelectedCarrier("티비벳")
                 setDropdownOpen(false)
             }}>
                 티비벳
-            </button>
+            </button> */}
             <button className={dropDownCellClass} onClick={() => {
                 setSelectedCarrier("충전/환전")
                 setDropdownOpen(false)

@@ -123,7 +123,7 @@ const HotelCasinoStructure = () => {
 
             <div className="pt-20px space-y-23px">
               <Item title="라이브 딜러영상" text="실제 호텔카지노의 라이브영상 제공" />
-              <Item number="2." title="테이블정보" text="카지노 업체, 게임회차, 베팅한도, 보유머니 등" text2="다양한 게임정보가 표시됩니다." />
+              <Item number="2." title="테이블정보" text="카지노업체, 게임회차, 베팅한도, 보유머니 등" text2="다양한 게임정보가 표시됩니다." />
               <Item number="3." title="스코어보드" text="6매, 본매, 중국점(1군~3군) 등" text2={"다양한 종류 제공"} />
               <Item number="4." title="슈통계" text="현재 슈를 토대로 한 다음 통계 표시" />
               <Item number="5." title="로드탐구표" text="다음 라운드에서 뱅커 또는 플레이어가" text2="이길 경우 세 개의 중국점에 추가되는" text3="아이콘 표시" />
@@ -147,7 +147,7 @@ const HotelCasinoStructure = () => {
               <Item title="베팅구역" text="" color1="플레이어, 뱅커, 타이, 플레이어페어, 뱅커페어" exceptionText={"등"} text2={"각 베팅구역을 누르면 베팅이 가능합니다."} />
               <Item number="2." title="베팅시간" text="베팅 가능한 시간을 표시합니다." text2="" color3="※ 45초 베팅시간 제공" />
               <Item number="3." title="베팅칩" text="베팅 시 칩을 선택할 수 있습니다." />
-              <LongItem no4th no5th no3rd title='버튼' number='4.' text='베팅하기 : ① 베팅구역에 베팅한 후' text11={"해당버튼을 누르면 베팅이 완료됩니다."} text2='베팅취소 : 베팅을 취소할 수 있습니다.' />
+              <LongItem no4th no5th no3rd title='버튼' number='4.' text='베팅하기 : ① 베팅구역에 베팅한 후' text11={"해당 버튼을 누르면 베팅이 완료됩니다."} text2='베팅취소 : 베팅을 취소할 수 있습니다.' />
               <Item number="5." title="칩설정" text="테이블에 표시되는" text2="③ 칩을 설정할 수 있습니다." />
               <Item number="6." title="음향설정" text="게임 음향 ON/OFF 설정 가능" />
               <Item number="7." title="사이드 패널버튼" text="버튼을 누르면 측면 패널이 오픈되며" text2={"베팅금액, 이긴금액, 보유머니 등"} text3="다양한 정보가 표시됩니다." />

@@ -8,7 +8,7 @@ import Icon6 from '../../images/myPage/betHistory/ico_6_v2.png'
 import Icon7 from '../../images/myPage/betHistory/ico_7_v2.png'
 import Icon8 from '../../images/myPage/betHistory/ico_8_v2.png'
 import Icon9 from '../../images/myPage/betHistory/ico_9_v2.png'
-import Icon10 from '../../images/myPage/betHistory/ico_10_v2.png'
+// import Icon10 from '../../images/myPage/betHistory/ico_10_v2.png'
 import IconHighlight2 from '../../images/myPage/betHistory/Icon2_On.png'
 import IconHighlight3 from '../../images/myPage/betHistory/Icon3_On.png'
 import IconHighlight4 from '../../images/myPage/betHistory/Icon4_On.png'
@@ -17,7 +17,7 @@ import IconHighlight6 from '../../images/myPage/betHistory/Icon6_On.png'
 import IconHighlight7 from '../../images/myPage/betHistory/Icon7_On.png'
 import IconHighlight8 from '../../images/myPage/betHistory/Icon8_On.png'
 import IconHighlight9 from '../../images/myPage/betHistory/Icon9_On.png'
-import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
+// import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
 import SportsBetHistory from 'components/myPage/betHistory/SportsBetHistory'
 import HorizontalMenu8 from 'components/horizontalMenus/HorizontalMenu8'
 import SubHorizontalMenu from 'components/myPage/betHistory/SubHorizontalMenu'
@@ -107,7 +107,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
     { text: "미니게임", icon: Icon7, iconHighlight: IconHighlight7, id: 5, path: "/mypage/bet-history/minigame" },
     { text: "키론가상게임", icon: Icon8, iconHighlight: IconHighlight8, id: 6,  path: "/mypage/bet-history/ar-game" },
     { text: "피싱게임", icon: Icon9, iconHighlight: IconHighlight9, id: 7, path: "/mypage/bet-history/fishing-game" },
-    { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 8, path: "/mypage/bet-history/bet" },
+    // { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 8, path: "/mypage/bet-history/bet" },
 ];
     const subTabsArray1 = [
       { text: "전체", icon: AllIcon, id: 0 },

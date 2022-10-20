@@ -23,7 +23,7 @@ const LoginPopup = ({ setAuth, setPopupOpen }) => {
 				<img src={LoginIcon} alt="login_icon" />
 			</div>
 			<div className='w-full flex justify-center'>
-				<label style={{ color: '#ad9e8c', marginTop: '80px' }} className='font-spoqaBold text-24px h-27px'>로그인</label>
+				<label style={{ color: '#ad9e8c', marginTop: '92px' }} className='font-spoqaBold text-24px h-14px'>로그인</label>
 			</div>
 
 			<div style={{ width: '390px', height: '64px', backgroundColor: '#191817', borderRadius: '4px', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 1)' }} className="relative overflow-hidden flex items-center flex-shrink-0 mt-48px py-4px">
