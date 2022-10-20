@@ -31,7 +31,7 @@ const SlotGame = () => {
         <img src={icon} alt="" className='object-cover' />
       </div>
 
-      <div style={{ color: '#5f5f5f' }} className="ml-8px text-14px font-spoqa tracking-tighter pt-2px" >
+      <div style={{ color: '#6f6f6f' }} className="ml-8px text-14px font-spoqa tracking-tighter pt-2px" >
         <div className='flex space-x-2px h-14px items-center'>
           <p style={{maxWidth:'160px', color: '#929292', textOverflow: 'unset', whiteSpace: 'nowrap', overflow:'hidden' }} className="text-14px font-spoqaMedium">{username.length > 12 ? `${username.slice(0,12)}...` : username}</p>
           <p className="text-14px font-spoqa">님이</p>
@@ -41,7 +41,7 @@ const SlotGame = () => {
           <p className="text-14px font-spoqa">에서 우승</p>
         </p>
 
-        <p style={{ color: '#aa9264' }} className='h-18px font-spoqaMedium text-18px mt-10px flex items-center'>₩123,456,789</p>
+        <p style={{ color: '#bda26f' }} className='h-18px font-spoqaMedium text-18px mt-10px flex items-center'>₩123,456,789</p>
       </div>
     </button>
   )
