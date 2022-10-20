@@ -28,9 +28,9 @@ const EditInfo = ({name='Louie3Louie3Louie3Louie3Louie3Louie3Louie3'}) => {
                     <div className="flex items-center h-19px">아이디와 비밀번호 보안에 신경써주십시오.</div>
                 </div>
 
-                <div className="h-752px w-full rounded-4px shadow-table mt-30px p-px"
+                <div className="h-752px w-full rounded-4px shadow-table mt-30px p-px overflow-hidden"
                   style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}>
-                  <div className='h-full w-full bg-dark-323232 pt-40px px-175px'> 
+                  <div className='h-full w-full bg-dark-323232 pt-40px px-175px rounded-4px'> 
                     <div className="w-full flex flex-col space-y-8px">
                         <div className="flex space-x-10px w-full">
                             <Title text="아이디" />
