@@ -5,7 +5,7 @@ import TitleIcon from '../../images/title-icon.png'
 const MyPageTitle = ({
     title, 
     couponCount = null,
-    couponText ="사용 가능한 쿠폰:",
+    couponText ="사용 가능한 쿠폰: ",
     pointsFor = null,
     inboxCount = null,
     isTransaction = false,
@@ -40,7 +40,7 @@ const MyPageTitle = ({
                     <div className="ml-18px h-21px flex items-center space-x-18px mt-2px">
                         <div style={{backgroundColor:"#4c4c4c"}} className="h-12px w-px mb-px" />
                         <div className="font-spoqaMedium tracking-tight text-gray-c8c8c8">
-                            <span className="">전체 받은 쪽지:</span>
+                            <span className="">전체 받은 쪽지: </span>
                             <span className="font-spoqaBold text-red-e65454 ml-3px">{inboxCount}</span>
                             <span className="">건</span>
                         </div>

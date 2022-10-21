@@ -828,7 +828,7 @@ const DistributorPage = ({
                                         <td className="w-85px text-center">보타카지노</td>
                                         <td className="w-72px text-center">e-스포츠 </td>
                                         <td className="w-100px text-center flex flex-col pt-2px -space-y-4px"><span>키론</span><span>가상게임</span></td>
-                                        <td className="w-72px text-center">합계</td>
+                                        {/* <td className="w-72px text-center">합계</td> */}
                                     </tr>
                                 </thead>
                                 <tbody className="w-full text-gray-r585858 text-14px tracking-tight font-spoqaMedium border-r border-l border-gray-2e2e2e">
@@ -870,7 +870,7 @@ const DistributorPage = ({
                                         <td className="w-85px text-center">0.00%</td>
                                         <td className="w-72px text-center">0.00%</td>
                                         <td className="w-100px text-center">0.00%</td>
-                                        <td className="w-72px text-center">0.00%</td>
+                                        {/* <td className="w-72px text-center">0.00%</td> */}
                                     </tr>
                                 </tbody>
                             </table>   
@@ -1023,7 +1023,7 @@ const DistributorPage = ({
                                           <td style={{backgroundColor:"#2f2f2f"}} className="w-70px text-right pr-10px h-full flex items-center justify-end">7.14M</td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full border-b border-gray-252525">
-                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">승패</td>
+                                      <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
                                           <td className="w-83px text-right pr-5px">1.09M</td>
                                           <td className="w-83px text-right pr-4px">33K</td>
                                           <td className="w-83px text-right pr-5px">0</td>
@@ -1033,7 +1033,7 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
-                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-85px text-right pr-4px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
@@ -1043,8 +1043,8 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-2px">0</td>
                                           <td className="w-83px text-right pr-6px">0</td>
                                           <td className="w-83px text-right">3.06M</td>
-                                          <td className="w-83px text-right pr-10px">0</td>
-                                          <td className="w-83px text-right pr-5px">0</td>
+                                            <td className="w-83px text-right pr-10px">0</td>
+                                            <td className="w-83px text-right pr-5px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
@@ -1052,35 +1052,18 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
                                           <td className="w-85px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-5px">0</td>
                                           
-                                          <td style={{backgroundColor:"#2a2a2a"}} className="w-70px text-right pr-10px h-full flex items-center justify-end">0</td>
+                                          <td style={{backgroundColor:"#2a2a2a"}} className="w-70px text-right pr-10px h-full flex items-center justify-end"></td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
-                                          <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">정산금액</td>
+                                      <td className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
                                           <td className="w-83px text-right pr-5px">1.09M</td>
                                           <td className="w-83px text-right pr-4px">33K</td>
-                                          <td className="w-83px text-right pr-5px">0</td>
-                                          <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right pr-4px">0</td>
-                                          <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right pr-4px">0</td>
-                                          <td className="w-83px text-right pr-4px">0</td>
-                                          <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right pr-3px">0</td>
-                                          <td className="w-83px text-right pr-5px">0</td>
-                                          <td className="w-83px text-right pr-2px">0</td>
-                                          <td className="w-83px text-right pr-7px">0</td>
-                                          <td className="w-83px text-right pr-2px">0</td>
-                                          <td className="w-83px text-right pr-6px">0</td>
-                                          <td className="w-83px text-right">3.06M</td>
-                                          <td className="w-83px text-right pr-10px">0</td>
                                           <td className="w-83px text-right pr-5px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-4px">0</td>
@@ -1093,7 +1076,26 @@ const DistributorPage = ({
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-3px">0</td>
                                           <td className="w-83px text-right pr-5px">0</td>
-                                          <td style={{backgroundColor:"#2f2f2f"}} className="w-70px  text-right pr-10px h-full flex items-center justify-end">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-7px">0</td>
+                                          <td className="w-83px text-right pr-2px">0</td>
+                                          <td className="w-83px text-right pr-6px">0</td>
+                                          <td className="w-83px text-right">3.06M</td>
+                                            <td className="w-83px text-right pr-10px">0</td>
+                                            <td className="w-83px text-right pr-5px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-4px">0</td>
+                                          <td className="w-85px text-right pr-4px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-3px">0</td>
+                                          <td className="w-83px text-right pr-5px">0</td>
+                                          <td style={{backgroundColor:"#2f2f2f"}} className="w-70px  text-right pr-10px h-full flex items-center justify-end"></td>
                                       </tr>
                                   </tbody> 
                               </table>  
