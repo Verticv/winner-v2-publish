@@ -68,7 +68,8 @@ const FreeBoardView2 = () => {
           style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
         >
           <div className="w-full bg-gray-323232 rounded-4px overflow-hidden">
-            <div className="bg-gray-2e2e2e1 h-55px border-b border-gray-252525 flex items-center px-18px space-x-10px">
+            <div className="bg-gray-2e2e2e border-b border-gray-252525 flex items-start px-19px py-15px space-x-10px">
+            {/* <div className="bg-gray-2e2e2e1 h-55px border-b border-gray-252525 flex items-center px-18px space-x-10px"> */}
               <div className="text-15px font-spoqaMedium tracking-tight text-gray-c8c8c8">이벤트 신청합니다.</div>
               </div>
 

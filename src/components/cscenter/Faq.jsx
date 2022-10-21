@@ -83,11 +83,12 @@ const Faq = () => {
                 <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden  flex items-start px-19px justify-between pt-11px pb-10px">
                   <img className="object-none relative top-4px" src={QIcon} alt="" />
                   <div className="w-full h-full px-18px flex items-start space-x-7px self-start"> 
+
                       <div 
                           style={{backgroundColor: "#494745", width: "89px"}} 
                           className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight mt-2px pt-2px flex-shrink-0"
                       > 
-                          {type}
+                        <p style={{ width: '75px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap'}}>{type.length > 6 ? `${type.slice(0, 6)}...` : type}</p>
                       </div>
                       <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8  mt-7px text-left">{text}</p>
                   </div>
