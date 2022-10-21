@@ -133,7 +133,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
         { text: "스페이드", icon: Sub9, id: 9 },
         { text: "하바네로", icon: Sub10, id: 10 },
         { text: "월드매치", icon: Sub11, id: 11 },
-        { text: "메버릭", icon: Sub12, id: 12 },
+        { text: "엘리시움", icon: Sub12, id: 12 },
         { text: "플레이앤고", icon: Sub13, id: 13 },
         { text: "YL게이밍", icon: Sub14, id: 14 },
         { text: "레드타이거", icon: Sub15, id: 15 },

@@ -9,8 +9,8 @@ import HIcon2 from '../../../images/myPage/betHistory/h_icon2.png'
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
     { text: "보타카지노", icon: HIcon1, id: 1 },
-    { text: "호텔카지노", icon: HIcon2, id: 3, custom: "mt-8px" },
-    { text: "호텔카지노", icon: HIcon2, id: 4 },
+    { text: "준비중", icon: HIcon2, id: 3, custom: "mt-8px" },
+    { text: "준비중", icon: HIcon2, id: 4 },
 ];
 
 const tableArray = [
