@@ -9,7 +9,7 @@ import Icon6 from '../../images/myPage/betHistory/ico_6_v2.png'
 import Icon7 from '../../images/myPage/betHistory/ico_7_v2.png'
 import Icon8 from '../../images/cscenter/ico_8.png'
 import Icon9 from '../../images/cscenter/ico_9.png'
-import Icon10 from '../../images/cscenter/ico_10.png'
+// import Icon10 from '../../images/cscenter/ico_10.png'
 import Icon11 from '../../images/cscenter/ico_11.png'
 import Icon12 from '../../images/cscenter/ico_12.png'
 import Icon13 from '../../images/cscenter/ico_13.png'
@@ -22,7 +22,7 @@ import IconHighlight6 from '../../images/myPage/betHistory/Icon6_On.png'
 import IconHighlight7 from '../../images/myPage/betHistory/Icon7_On.png'
 import IconHighlight8 from '../../images/myPage/betHistory/Icon8_On.png'
 import IconHighlight9 from '../../images/myPage/betHistory/Icon9_On.png'
-import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
+// import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
 import IconHighlight11 from '../../images/cscenter/Icon11_On.png'
 import IconHighlight12 from '../../images/cscenter/Icon12_On.png'
 import IconHighlight13 from '../../images/cscenter/Icon13_On.png'
@@ -42,7 +42,7 @@ const Faq = () => {
         { text: "미니게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/cscenter/faq/all/minigame" },
         { text: "키론가상게임", icon: Icon8, iconHighlight: IconHighlight8, id: 7, path: "/cscenter/faq/all/ar-game" },
         { text: "피싱게임", icon: Icon9, iconHighlight: IconHighlight9, id: 8, path: "/cscenter/faq/all/phishing-game" },
-        { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/faq/all/bet" },
+        // { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/faq/all/bet" },
         { text: "충전/환전", icon: Icon11, iconHighlight: IconHighlight11, id: 10, path: "/cscenter/faq/all/transaction" },
         { text: "베팅관련", icon: Icon12, iconHighlight: IconHighlight12, id: 11, path: "/cscenter/faq/all/about-betting" },
         { text: "기타", icon: Icon13, iconHighlight: IconHighlight13, id: 12, path: "/cscenter/faq/all/other" },
@@ -83,11 +83,12 @@ const Faq = () => {
                 <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden  flex items-start px-19px justify-between pt-11px pb-10px">
                   <img className="object-none relative top-4px" src={QIcon} alt="" />
                   <div className="w-full h-full px-18px flex items-start space-x-7px self-start"> 
+
                       <div 
                           style={{backgroundColor: "#494745", width: "89px"}} 
                           className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight mt-2px pt-2px flex-shrink-0"
                       > 
-                          {type}
+                        <p style={{ width: '75px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap'}}>{type.length > 6 ? `${type.slice(0, 6)}...` : type}</p>
                       </div>
                       <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8  mt-7px text-left">{text}</p>
                   </div>

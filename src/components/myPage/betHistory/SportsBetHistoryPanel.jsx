@@ -332,9 +332,9 @@ const SportsBetHistoryPanel = ({
             
             <div className="flex w-full px-8px mt-10px space-x-10px">
                 <table>
-                    <div className="flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8">
+                    <div className="flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 overflow-hidden">
                         {(isAttached === false) && (
-                            <div className="w-45px h-full flex items-center justify-center">선택</div>
+                            <div style={{backgroundColor: 'rgb(55,55,55)'}} className="w-45px h-full flex items-center justify-center">선택</div>
                         )}
                         {(isAttached === false && isPopup === false) && (
                             <div className="w-116px h-full flex items-center justify-center border-l border-gray-2b2b2a">베팅번호</div>

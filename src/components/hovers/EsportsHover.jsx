@@ -16,7 +16,7 @@ const EsportsHover = ({ selection }) => {
 	const history = useHistory()
 
 	const gamesArray = [
-		{ id: 0, background: LolBanner, highlight: LolBannerHighlight, imgText: "게임시작", color: "group-hover:bg-purple-a898ee", btnText: "게임시작", class: "bg-opacity-25" },
+		{ id: 0, background: LolBanner, highlight: LolBannerHighlight, imgText: "e-스포츠", color: "group-hover:bg-purple-a898ee", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 1, background: SuddenAttackBanner, highlight: SuddenAttackBannerHighlight, imgText: "화면구성설명", color: "group-hover:bg-red-db4a4a", btnText: "설명보기", class: "bg-opacity-25", path: "/esports/structure" },
 		{ id: 2, background: OverwatchBanner, highlight: OverwatchBannerHighlight, imgText: "단폴더베팅방법", color: "group-hover:bg-blue-r3384ca", btnText: "설명보기", class: "bg-opacity-25", path: "/esports/single" },
 		{ id: 3, background: PubgBanner, highlight: PubgBannerHighlight, imgText: "다폴더베팅방법", color: "group-hover:bg-teal-r4eb2ba", btnText: "설명보기", class: "bg-opacity-25", path: "/esports/multi" }
