@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { registerLocale } from  "react-datepicker";
-import ko from 'date-fns/locale/ko';
-import CalendarIcon from '../../images/myPage/betHistory/calendar_v2.png'
 import DropDownControls from 'components/dropdowns/DropDownControls';
 import ArrowDownGray from '../../images/arrows/arrow_down_gray.png'
-import './DatePicker.css'
-registerLocale('ko', ko)
+
+import CustomDatePicker from 'components/CustomDatePicker'
+
+
+
 
 const DateSearchBar = ({
     isLeagueSearch = false, 
@@ -31,8 +29,8 @@ const DateSearchBar = ({
     ]
 
 
-    const [startDate, setStartDate] = useState(new Date())
-    const [endDate, setEndDate] = useState(new Date())
+    // const [startDate, setStartDate] = useState(new Date())
+    // const [endDate, setEndDate] = useState(new Date())
     const [isDropdownOpen, setDropdownOpen] = useState(true)
     const [selectedCarrier, setSelectedCarrier] = useState("리그선택")
 
@@ -102,28 +100,14 @@ const DateSearchBar = ({
         )}
 
         <div className="flex space-x-10px items-center w-304px h-full">
-            <div className="relative">
-            <DatePicker 
-                    className="flex-shrink-0 outline-none w-138px h-42px rounded-2px bg-dark-1a1a1a border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px"
-                    locale="ko" 
-                    selected={startDate} 
-                    onChange={(date) => setStartDate(date)}
-                    dateFormat="yyyy-MM-dd"
-                    dateFormatCalendar="yyyy년 MM월"
-                />
-                <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-12px mr-10px" />
+              <div className="relative">
+              <CustomDatePicker classes={`flex-shrink-0 outline-none w-138px h-42px rounded-2px bg-dark-1a1a1a border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px`} />
+           
             </div>
             <span className="font-spoqaMedium text-14px text-gray-8e8780 mt-px">~</span>
-            <div className="relative">
-                <DatePicker 
-                    className="flex-shrink-0 outline-none bg-dark-1a1a1a w-138px h-42px rounded-2px border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6" 
-                    locale="ko"
-                    selected={endDate} 
-                    onChange={(date) => setEndDate(date)}
-                    dateFormat="yyyy-MM-dd"
-                    dateFormatCalendar="yyyy년 MM월"
-                />
-                <img src={CalendarIcon} alt="" className="absolute top-0 right-0 mt-12px mr-10px" />
+              <div className="relative">
+              <CustomDatePicker classes={`flex-shrink-0 outline-none bg-dark-1a1a1a w-138px h-42px rounded-2px border border-gray-404040 px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6`} />
+             
             </div>
         </div>
         <div className="flex h-full space-x-5px items-center">

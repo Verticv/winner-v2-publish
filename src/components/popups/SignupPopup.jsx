@@ -7,15 +7,18 @@ import LoginPopup from './LoginPopup'
 import CloseIcon from '../../images/popups/close_icon.png'
 import DropDownControls from '../dropdowns/DropDownControls'
 import DownArrowIcon from '../../images/down_arrow_icon.png'
+import CustomDatePicker from 'components/CustomDatePicker'
 
 const SignupPopup = ({setAuth, setPopupOpen}) => {
-
+	
 	const [selectedInput, setSelectedInput] = useState(null)
 	const [isSignedUp, setSignedUp] = useState(false)
 	const [toLogin, setToLogin] = useState()
 	const [selectedCarrier, setSelectedCarrier] = useState("통신사선택")
 	const [selectedBank, setSelectedBank] = useState("은행선택")
 	const [isDropdownOpen, setDropdownOpen] = useState(true)
+
+
 
 	const dropDownCellClass = "flex w-170px h-40px py-4px items-center hover:bg-white hover:bg-opacity-10 px-10px"
 
@@ -39,7 +42,6 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 			</div>
 		</div>
 	)
-
 	const bankButton = (
 
 		<div style={{height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="flex w-170px group cursor-pointer">
@@ -55,6 +57,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 			</div>
 		</div>
 	)
+
 
 	const carrierDropdown = (
 		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}} className="flex flex-col items-center justify-center w-170px py-5px rounded shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px mt-9px">
@@ -78,7 +81,8 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 			</button>
 		</div>
 	)
-
+	
+	
 	const bankDropdown = (
 		<div style={{backgroundColor:'#272726', color:'#c8c8c8'}}  className="flex flex-col w-170px h-170px py-5px rounded-lg shadow-plain5 text-gray-r393e41 font-spoqaMedium text-16px overflow-y-scroll overflow-x-hidden mt-9px">
 			<button className={dropDownCellClass} onClick={() => {
@@ -255,13 +259,13 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	if (toLogin) return (
 		<LoginPopup setAuth={setAuth} setPopupOpen={setPopupOpen}/>
 	)
-
+	
 	else if (isSignedUp) return (
 		<SignedUpPopup setToLogin={setToLogin} />
 	)
 	
 	else return (
-		<div style={{height:'856px', width:'850px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
+		<div style={{height:'919px', width:'850px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
 			<button className="w-29 h-29 absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:brightness-125 filter" onClick={()=> setPopupOpen(false)}>
 				<img src={CloseIcon} alt="close_icon" />
 			</button>
@@ -369,6 +373,23 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 						</div>
 					</div>
 				</div>
+
+				{/* BREAK 1*/}
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+					<div className="flex space-x-10px w-full">
+						<Title text="생년월일" />
+						<div style={{ width: '540px', height: '44px', backgroundColor: '#191817', borderRadius: '5px' }} className="w-full  flex-shrink-0">
+							<div className="relative w-full h-42px custom-date-picker" onClick={()=>setSelectedInput(7)}>
+
+								<CustomDatePicker classes={`flex-shrink-0 outline-none w-full h-42px rounded-2px bg-dark-1a1a1a px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px`} />
+							</div>
+							
+							{/* <div style={{backgroundColor: selectedInput === 7 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} /> */}
+						</div>
+					</div>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-5px">수기로 작성시 아이디 생성이 불가합니다. (달력으로 선택해주세요.)</span>
+				</div>
+
 				{/* BREAK */}
 				<div style={{width:'690px'}} className="w-full flex flex-col mt-22px">
 					<div className="flex space-x-10px w-full">
