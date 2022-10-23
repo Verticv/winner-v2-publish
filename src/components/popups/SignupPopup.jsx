@@ -23,13 +23,13 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	const dropDownCellClass = "flex w-170px h-40px py-4px items-center hover:bg-white hover:bg-opacity-10 px-10px"
 
 	const Title = ({text}) => (
-		<div style={{height:'44px', backgroundColor:'#272726', borderRadius:'5px'}} className="w-140px space-y-2 flex-shrink-0 flex items-center">
+		<div style={{height:'42px', backgroundColor:'#272726', borderRadius:'5px'}} className="w-140px space-y-2 flex-shrink-0 flex items-center">
 			<label style={{color:'#ccc2b6'}} className="text-gray-r393e41 font-spoqaMedium text-16px ml-10px mt-3px">{text}</label>
 		</div>
 	)
 
 	const carrierButton = (
-		<div style={{height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="flex w-170px group cursor-pointer">
+		<div style={{height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="flex w-170px group cursor-pointer">
 			<input className="w-0 text-16px"/>
 			<div
 				onFocus={() => setSelectedInput(4)}
@@ -44,7 +44,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 	const bankButton = (
 
-		<div style={{height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="flex w-170px group cursor-pointer">
+		<div style={{height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="flex w-170px group cursor-pointer">
 			<input className="w-0 text-16px"/>
 			<div
 				onFocus={() => setSelectedInput(4)}
@@ -265,7 +265,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 	)
 	
 	else return (
-		<div style={{height:'919px', width:'850px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
+		<div style={{height:'860px', width:'850px', borderWidth:'1px', borderColor:'#1f1f1e', backgroundColor:'#323231', borderRadius:'10px'}} className="relative mt-60px shadow-popup flex flex-col items-center">
 			<button className="w-29 h-29 absolute top-0 right-0 mt-22px mr-22px cursor-pointer z-20 hover:brightness-125 filter" onClick={()=> setPopupOpen(false)}>
 				<img src={CloseIcon} alt="close_icon" />
 			</button>
@@ -275,15 +275,15 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 
 			<label style={{color:"#ad9e8c"}} className="text-24px h-24px font-spoqaMedium mt-77px">회원가입</label>
 			<span style={{color:'#c8c8c8'}} className="text-16px h-16px font-spoqaMedium mt-7px">회원가입 시 모든 항목을 정확하게 기재하시기 바랍니다.</span>
-			<span style={{color:'#c8c8c8'}} className="text-16px h-16px font-spoqaMedium mt-8px">회원데이터는 안전한 서버에서 안전하게 보관됩니다. </span>
+			<span style={{color:'#c8c8c8'}} className="text-16px h-16px font-spoqaMedium mt-3px">회원데이터는 안전한 서버에서 안전하게 보관됩니다. </span>
 
 			{/* BREAK */}
-			<div style={{}} className="w-full mt-20px flex flex-col items-center">
+			<div style={{}} className="w-full mt-15px flex flex-col items-center">
 				{/* BREAK */}
 				<div style={{width:'690px'}} className="w-full flex flex-col">
 					<div className="flex space-x-10px w-full">
 						<Title text="아이디" />
-						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px" 
@@ -293,13 +293,13 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 0 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-5px">영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
 					<div className="flex space-x-10px w-full">
 						<Title text="비밀번호" />
-						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px" 
@@ -310,13 +310,13 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 1 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-5px">영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로 입력해주세요. (특수문자 사용불가)</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로 입력해주세요. (특수문자 사용불가)</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
 					<div className="flex space-x-10px w-full">
 						<Title text="환전 비밀번호" />
-						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px" 
@@ -327,13 +327,13 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 2 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-5px">영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로 입력해주세요. (특수문자 사용불가)</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로 입력해주세요. (특수문자 사용불가)</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
 					<div className="flex space-x-10px w-full">
 						<Title text="닉네임" />
-						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px" 
@@ -343,10 +343,10 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 3 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-5px">한글, 영문, 숫자를 포함한 4~16자로 입력해주세요.</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">한글, 영문, 숫자를 포함한 4~16자로 입력해주세요.</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
 					<div className="flex space-x-10px w-full">
 						<Title text="휴대폰번호" />
 						<div className="w-170px flex-shrink-0 space-y-9px">
@@ -355,7 +355,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							</DropDownControls>
 						</div>
 
-						<div style={{width:'360px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'360px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'360px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282 pt-3px" 
@@ -375,10 +375,10 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 				</div>
 
 				{/* BREAK 1*/}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
 					<div className="flex space-x-10px w-full">
 						<Title text="생년월일" />
-						<div style={{ width: '540px', height: '44px', backgroundColor: '#191817', borderRadius: '5px' }} className="w-full  flex-shrink-0">
+						<div style={{ width: '540px', height: '42px', backgroundColor: '#191817', borderRadius: '5px' }} className="w-full  flex-shrink-0">
 							<div className="relative w-full h-42px custom-date-picker" onClick={()=>setSelectedInput(7)}>
 
 								<CustomDatePicker classes={`flex-shrink-0 outline-none w-full h-42px rounded-2px bg-dark-1a1a1a px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px`} />
@@ -387,14 +387,14 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							{/* <div style={{backgroundColor: selectedInput === 7 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} /> */}
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-5px">수기로 작성시 아이디 생성이 불가합니다. (달력으로 선택해주세요.)</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">수기로 작성시 아이디 생성이 불가합니다. (달력으로 선택해주세요.)</span>
 				</div>
 
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-22px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
 					<div className="flex space-x-10px w-full">
 						<Title text="추천인 아이디" />
-						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282 pt-3px" 
@@ -422,7 +422,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							</DropDownControls>
 						</div>
 
-						<div style={{width:'360px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'360px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'360px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282 pt-3px" 
@@ -443,7 +443,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 				{/* BREAK */}
 				<div style={{width:'690px'}} className="w-full flex justify-end mt-12px">
 					<div style={{width:'540px'}} className="flex">
-						<div style={{width:'540px', height:'44px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
+						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
 							<input 
 								style={{width:'540px', height:'42px', backgroundColor:'#191817', color:'#c8c8c8', boxShadow:'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)', borderRadius:'5px'}}
 								className="w-full font-spoqaMedium text-16px outline-none px-10px placeholder-gray-r828282 pt-3px" 
@@ -463,7 +463,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 				</div>
 			</div>
 			{/* BREAK */}
-			<div className="w-full flex flex-col items-center mt-20px">
+			<div className="w-full flex flex-col items-center mt-15px">
 				<button 
 					style={{height:'58px', width:'390px', borderRadius:'2px', boxShadow:"0 2px 6px #00000090", textShadow: "0 0 6px #000000", color:'#ffdfbd', background:'linear-gradient(to bottom, #a67c52, #7f5f3f)'}}
 					className="flex items-center justify-center text-20px tracking-tighter font-spoqaMedium shadow-lg pt-px hover:brightness-125 filter"
@@ -472,7 +472,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 					회원가입
 				</button>
 
-				<div style={{width:'270px'}} className="flex justify-between items-center mt-20px">
+				<div style={{width:'270px'}} className="flex justify-between items-center mt-15px">
 					<div className="flex items-center space-x-10px">
 						<img className="object-none" src={KakaoLogo} alt="kakao-icon" />
 						<span style={{color:'#828282'}} className="font-spoqaMedium text-16px">test1234</span>

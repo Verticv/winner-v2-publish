@@ -191,7 +191,7 @@ const DistributorPage = ({
                         <div className="w-81px h-full flex items-center justify-center">스페이드</div>
                         <div className="w-81px h-full flex items-center justify-center">하바네로</div>
                         <div className="w-81px h-full flex items-center justify-center">월드매치</div>
-                        <div className="w-81px h-full flex items-center justify-center">매버릭</div>
+                        <div className="w-81px h-full flex items-center justify-center">엘리시움</div>
                         <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>플레인</span><span>엔고</span></div>
                         <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
                         <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
@@ -322,7 +322,7 @@ const DistributorPage = ({
                         <div className="w-85px h-full flex items-center justify-center">스페이드</div>
                         <div className="w-85px h-full flex items-center justify-center">하바네로</div>
                         <div className="w-85px h-full flex items-center justify-center">월드매치</div>
-                        <div className="w-85px h-full flex items-center justify-center">매버릭</div>
+                        <div className="w-85px h-full flex items-center justify-center">엘리시움</div>
                         <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>플레인</span><span>엔고</span></div>
                         <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>YL</span><span>게이밍</span></div>
                         <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px"><span>레드</span><span>타이거</span></div>
@@ -813,7 +813,7 @@ const DistributorPage = ({
                                         <td className="w-72px text-center">스페이드</td>
                                         <td className="w-72px text-center">하바네로</td>
                                         <td className="w-72px text-center">월드매치</td>
-                                        <td className="w-72px text-center">매버릭</td>
+                                        <td className="w-72px text-center">엘리시움</td>
 
                                         <td className="w-70px text-center flex flex-col pt-2px -space-y-4px"><span>플레인</span><span>엔고</span></td>
                                         <td className="w-70px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
@@ -948,7 +948,7 @@ const DistributorPage = ({
                                         <td className="w-83px text-center">스페이드</td>
                                         <td className="w-83px text-center">하바네로</td>
                                         <td className="w-83px text-center">월드매치</td>
-                                        <td className="w-83px text-center">매버릭</td>
+                                        <td className="w-83px text-center">엘리시움</td>
 
                                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>플레인</span><span>엔고</span></td>
                                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
@@ -1025,7 +1025,7 @@ const DistributorPage = ({
                                           <td style={{backgroundColor: 'rgb(44,44,44)'}} className="w-70px text-right pr-10px h-full flex items-center justify-end">7.14M</td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-2e2e2e font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full border-b border-gray-252525">
-                                      <td style={{backgroundColor: 'rgb(44,44,44)'}} className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
+                                      <td style={{backgroundColor: 'rgb(44,44,44)'}} className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">승패</td>
                                           <td className="w-83px text-right pr-5px">1.09M</td>
                                           <td className="w-83px text-right pr-4px">33K</td>
                                           <td className="w-83px text-right pr-5px">0</td>
@@ -1063,7 +1063,7 @@ const DistributorPage = ({
                                           <td style={{backgroundColor: 'rgb(44,44,44)'}} className="w-70px text-right pr-10px h-full flex items-center justify-end"></td>
                                       </tr>
                                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
-                                      <td style={{backgroundColor: 'rgb(44,44,44)'}} className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">베팅금</td>
+                                      <td style={{backgroundColor: 'rgb(44,44,44)'}} className="w-83px bg-gray-16181a h-full flex items-center justify-center font-spoqaMedium text-16px text-gray-ccc2b6 tracking-tight">정산금액</td>
                                           <td className="w-83px text-right pr-5px">1.09M</td>
                                           <td className="w-83px text-right pr-4px">33K</td>
                                           <td className="w-83px text-right pr-5px">0</td>
@@ -1107,7 +1107,7 @@ const DistributorPage = ({
 
                         <div className="mt-55px h-42px w-full flex items-center space-x-9px text-24px tracking-tight text-gray-ccc2b6 font-spoqaMedium">
                             <img src={MemberIcon} alt="" />
-                            <div>접속중인 회원수: <span className="font-spoqaBold text-gray-c8c8c8 tracking-tight ">2 명</span></div>
+                            <div>접속중인 회원수 : <span className="font-spoqaBold text-gray-c8c8c8 tracking-tight ">2 명</span></div>
 
                             <div 
                                 style={{
@@ -1150,7 +1150,7 @@ const DistributorPage = ({
                             <div style={{width:'374px'}} className="h-48px rounded-full border-2 border-gray-635f5b bg-gray-2e2e2e flex items-center justify-center font-spoqaMedium text-20px tracking-tight">
                                 <img className="mr-16px" src={Diamond} alt="" />
                                 <div className="flex items-center space-x-4px pt-2px">
-                                    <span className="text-white">보유금 총합계:</span>
+                                    <span className="text-white">보유금 총합계 :</span>
                                     <span className="text-yellow-ffd200">75,000</span>
                                 </div>
                             </div>

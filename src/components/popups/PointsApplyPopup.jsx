@@ -32,7 +32,7 @@ const PointsApplyPopup = ({setPopupOpen, isQuickMenu = false}) => {
                         </div>
                     </div>
                     <div className="flex items-center text-16px font-spoqaMedium text-gray-929292 tracking-tight mt-36px">
-                        <span>사용 가능한 포인트:</span>
+                        <span>사용 가능한 포인트 : </span>
                         <span className="text-blue-2980b9 ml-2px font-spoqaBold">278</span>
                         <span className="text-gray-ccc2b6">P</span>
                     </div>

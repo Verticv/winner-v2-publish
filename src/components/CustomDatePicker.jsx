@@ -31,7 +31,7 @@ const CustomDatePicker = ({classes}) => {
   const [selectedYear, setSelectedYear] = useState(getYear(new Date()))
   const [selectedMonth, setSelectedMonth] = useState(months[getMonth(new Date())])
   const [startDate, setStartDate] = useState(new Date());
-  const years = range(1990, getYear(new Date()) + 1, 1);
+  const years = range(1922, getYear(new Date()) + 1, 1);
 
   const [isDropdownOpen, setDropdownOpen] = useState(true)
 
