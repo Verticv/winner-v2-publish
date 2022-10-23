@@ -33,7 +33,7 @@ const WinLoseSettlement = () => {
                 <div className="w-255px h-48px rounded-full border-2 border-gray-635f5b bg-dark-2e2e2e flex items-center justify-center font-spoqaMedium text-16px">
                     <img className="-ml-2px" src={Diamond} alt="" />
                     <div className="flex items-center space-x-4px pt-2px ml-14px">
-                      <span className="text-white tracking-tight">진행중인 금액:</span>
+                      <span className="text-white tracking-tight">진행중인 금액 :</span>
                       <span className="text-yellow-ffd200">78,308</span>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const WinLoseSettlement = () => {
                 <div className="w-255px h-48px rounded-full border-2 border-gray-635f5b bg-dark-2e2e2e flex items-center justify-center font-spoqaMedium text-16px">
                     <img className="-ml-2px" src={Diamond} alt="" />
                     <div className="flex items-center space-x-4px pt-2px ml-14px">
-                        <span className="text-white tracking-tight">정산 총 금액:</span>
+                        <span className="text-white tracking-tight">정산 총 금액 :</span>
                         <span className="text-yellow-ffd200">24,393,246</span>
                     </div>
                 </div>

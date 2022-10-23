@@ -114,7 +114,7 @@ const EditInfo = ({name='Louie3Louie3Louie3Louie3Louie3Louie3Louie3'}) => {
                                 <Title text="레벨" />
                                 <div className="h-44px w-540px space-y-2 flex items-center flex-shrink-0 text-gray-c8c8c8 rounded-4px"
                                   style={{ background: '#191817', boxShadow: 'inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5)' }}>
-                                    <label className="font-spoqa text-16px pl-10px mt-px">레벨 LV.1 (점수: 0) / 다음레벨 LV.2 (점수: 20)</label>
+                                    <label className="font-spoqa text-16px pl-10px mt-px">레벨 LV.1 (점수 : 0) / 다음레벨 LV.2 (점수 : 20)</label>
                                     {/* <div className="border-b w-full border-gray-bebebe"></div> */}
                                 </div>
                             </div>

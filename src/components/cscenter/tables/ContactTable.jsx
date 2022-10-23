@@ -35,7 +35,7 @@ const ContactTable = ({
                             style={{maxWidth: "92px",backgroundColor: item.isRead === true ? "#494745" : "#7e7564", color: item.isRead === true ? "#c8c8c8" : "#f1e7d5"}}
                             className={`px-8px h-29px rounded-full font-spoqaMedium text-14px tracking-tight flex items-center justify-center pt-px cursor-pointer`} 
                         >
-                            <p>{item.isRead === true ? "답변완료" : "답변대기"}</p>
+                            <p style={{ maxWidth: '75px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap'}}>{item.isRead === true ? "답변완료" : "답변대기"}</p>
                         </div>
                     </div>
 

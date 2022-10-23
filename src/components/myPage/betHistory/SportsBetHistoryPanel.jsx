@@ -332,7 +332,7 @@ const SportsBetHistoryPanel = ({
             
             <div className="flex w-full px-8px mt-10px space-x-10px">
                 <table>
-                    <div className="flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 overflow-hidden">
+                    <div style={{backgroundColor: 'rgb(55,55,55)'}} className="flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 overflow-hidden">
                         {(isAttached === false) && (
                             <div style={{backgroundColor: 'rgb(55,55,55)'}} className="w-45px h-full flex items-center justify-center">선택</div>
                         )}

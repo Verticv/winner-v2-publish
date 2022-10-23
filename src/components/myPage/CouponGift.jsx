@@ -21,7 +21,7 @@ const CouponGift = () => {
     return (
         <div className="flex flex-col w-full items-center">
             <div className="w-full flex justify-between">
-                <MyPageTitle title="쿠폰선물"  couponCount={32} couponText="선물 가능한 쿠폰: "/>
+                <MyPageTitle title="쿠폰선물"  couponCount={32} couponText="선물 가능한 쿠폰 : "/>
                 <div className="font-spoqaMedium text-16px tracking-tight w-full text-right text-gray-c8c8c8 space-x-2px h-16px">
                     <span className="font-spoqaBold text-blue-2980b9 mt-px">쿠폰선물하기</span>
                     <span className='mt-px'>버튼을 클릭하여 쿠폰받을 회원을 선택하세요.</span>
