@@ -381,7 +381,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 						<div style={{ width: '540px', height: '42px', backgroundColor: '#191817', borderRadius: '5px' }} className="w-full  flex-shrink-0">
 							<div className="relative w-full h-42px custom-date-picker" onClick={()=>setSelectedInput(7)}>
 
-								<CustomDatePicker classes={`flex-shrink-0 outline-none w-full h-42px rounded-2px bg-dark-1a1a1a px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px`} />
+								<CustomDatePicker classes={`flex-shrink-0 outline-none w-full h-42px rounded-4px bg-dark-1a1a1a px-10px font-spoqaMedium text-14px tracking-tight text-gray-ccc2b6 focus:ml-10px`} />
 							</div>
 							
 							{/* <div style={{backgroundColor: selectedInput === 7 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} /> */}

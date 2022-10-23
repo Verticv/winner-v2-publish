@@ -106,7 +106,7 @@
   z-index: 1;
 }
 .react-datepicker-popper[data-placement^=bottom] {
-  padding-top: 7px;
+  padding-top: 0px;
 }
 .react-datepicker-popper[data-placement=bottom-end] .react-datepicker__triangle, .react-datepicker-popper[data-placement=top-end] .react-datepicker__triangle {
   left: auto;
