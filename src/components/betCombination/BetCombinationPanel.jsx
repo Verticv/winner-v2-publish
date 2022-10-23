@@ -525,7 +525,8 @@ const BetCombinationPanel = ({
         stat1Color = "none",
         stat2Color = "none",
         isSubArray = false,
-        items_id= null
+        items_id= null,
+        special = false
     }) => {
         const [isHover3, setHover3] = useState("")
 
@@ -541,7 +542,7 @@ const BetCombinationPanel = ({
                     onClick={() => {
                         handleOnClick(isSubArray?`${items_id}-${id}left`:`${id}left`)
                         setAddedCard(prevArray => 
-                        [...prevArray, {id: _uniqueId('prefix-'), value: "left"}])}}
+                        [...prevArray, {id: _uniqueId('prefix-'), value: "left", special: team1}])}}
                     onMouseEnter={() => setHover3(`${id}left`)}
                     onMouseLeave={() => setHover3(null)}
 
