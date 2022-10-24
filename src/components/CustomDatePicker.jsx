@@ -36,8 +36,7 @@ const CustomDatePicker = ({classes}) => {
   const [isDropdownOpen, setDropdownOpen] = useState(true)
 
   const dropDownCellClass = "flex w-170px h-40px py-4px items-center hover:bg-white hover:bg-opacity-10 px-10px"
-
-
+  
 	
   const yearButton = (
 		<div className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none border px-px font-spoqa text-13px font-bold tracking-tight   border-gray-2e2e2e text-gray-ccc2b6 bg-gray-2e2e2e" >
@@ -54,7 +53,12 @@ const CustomDatePicker = ({classes}) => {
 
   return (
     <div>
-      <DatePicker 
+      <DatePicker
+        onCalendarOpen={() => {
+          setSelectedYear(getYear(new Date()))
+          setSelectedMonth(months[getMonth(new Date())])
+          setStartDate(new Date())
+        }}
         renderCustomHeader={({
           date,
           changeYear,
@@ -107,7 +111,7 @@ const CustomDatePicker = ({classes}) => {
                 </div>
               </DropDownControls>
             <button type="button"  className="react-datepicker__navigation react-datepicker__navigation--previous" aria-label="Previous Month"
-                onClick={ decreaseMonth}
+                onClick={decreaseMonth}
               disabled={prevMonthButtonDisabled}>
               <span  className="react-datepicker__navigation-icon react-datepicker__navigation-icon--previous">Previous Month</span>
             </button> 

@@ -90,7 +90,12 @@ const BetCombinationRightPanelHistory = () => {
             <div className="bg-gray-262626 border-b border-2px border-gray-1e1e1e pb-12px px-3px flex flex-col">
 
                 <div className="flex flex-col space-y-4px">
-                    <HistoryCard team1="FK Haugesund" team2="스트룀스고세 IF" side="left" winStatus="lose" />
+                    <HistoryCard 
+                        team1="FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund FK Haugesund " 
+                        team2="스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF 스트룀스고세 IF " 
+                        side="left" 
+                        winStatus="lose" 
+                    />
                     <HistoryCard title="오스트리아 - 컵" team1="SV Kuchl" team2="FC Blau Weiss Linz" side="right" winStatus="win" />
                     <ResultsCard />
                 </div>
