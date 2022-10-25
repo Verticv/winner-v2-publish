@@ -47,7 +47,7 @@ const PointsApply = () => {
                     <div className="ml-114px mt-37px flex flex-col font-spoqaMedium tracking-tight">
                         <span className="text-20px h-19px text-gray-ccc2b6">전환 포인트 입력</span>
                         <span className="text-16px text-gray-c8c8c8 mt-15px">
-                            현재 포인트가 보유 머니로 전환되며, 최소 
+                            현재 포인트가 보유머니로 전환되며, 최소 
                             <span className="text-blue-2980b9 ml-2px font-spoqaBold">10,000</span>P
                              부터 신청 가능합니다.</span>
                     </div>

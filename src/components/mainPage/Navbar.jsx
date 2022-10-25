@@ -214,7 +214,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 			<div style={{ width: '1260px' }} className="z-50 w-full">
 
 				<div style={{ height: '103px' }} className="">
-					<div style={{ height: '59px', paddingTop: '16px' }} className="block justify-center relative">
+					<div onMouseEnter={() => setHoveredTab(null)} style={{ height: '59px', paddingTop: '16px' }} className="block justify-center relative ">
 						<img style={{ margin: 'auto' }} className="cursor-pointer object-none" src={TopLogo} alt="logo" onClick={() => history.push('/')} />
 
 						{isAuthenticated ? (

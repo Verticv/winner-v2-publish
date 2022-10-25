@@ -85,10 +85,10 @@ const Faq = () => {
                   <div className="w-full h-full px-18px flex items-start space-x-7px self-start"> 
 
                       <div 
-                          style={{backgroundColor: "#494745", width: "89px"}} 
-                          className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight mt-2px pt-2px flex-shrink-0"
+                          style={{backgroundColor: "#494745", minWidth: "100px"}} 
+                          className="h-29px rounded-full flex items-center justify-center text-gray-ccc2b6 text-14px font-spoqaMedium tracking-tight mt-2px pt-2px px-12px flex-shrink-0"
                       > 
-                        <p style={{ width: '75px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap'}}>{type.length > 6 ? `${type.slice(0, 6)}...` : type}</p>
+                        <p style={{ }}>{type}</p>
                       </div>
                       <p className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8  mt-7px text-left">{text}</p>
                   </div>

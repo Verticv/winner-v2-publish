@@ -47,7 +47,7 @@ const InboxTable = ({
                     </div>
 
                     <div
-                        style={{width:'569px'}}
+                        style={{width:'569px', color: item.isRead === true ? '#a0a0a0' : '#c8c8c8' }}
                         className={`${
                             item.isRead === true 
                             ? "text-gray-929292 font-spoqaMedium" 
@@ -70,7 +70,7 @@ const InboxTable = ({
                         )}
                     </div>
 
-                   <div className={`${item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"} flex font-spoqa justify-center text-center`} style={{width:'160px'}}>{item.time}</div>
+                   <div className={`${item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"} flex font-spoqa justify-center text-center`} style={{width:'160px', color: item.isRead === true ? '#a0a0a0' : '#c8c8c8' }}>{item.time}</div>
 
                     <button className="w-72px flex items-center justify-center">
                         <div style={{boxShadow: '0px 1px 1px 0px rgba(0, 0, 0, 0.6)' }}
