@@ -415,7 +415,7 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 				{/* BREAK */}
 				<div style={{width:'690px'}} className="w-full flex flex-col mt-12px">
 					<div className="flex space-x-10px w-full">
-						<Title text="계좌번호" />
+						<Title text="환전계좌설정" />
 						<div className="w-170px flex-shrink-0 space-y-9px">
 							<DropDownControls buttonChild={bankButton} isDropdownOpen={isDropdownOpen} setDropdownOpen={setDropdownOpen} >
 								{bankDropdown}

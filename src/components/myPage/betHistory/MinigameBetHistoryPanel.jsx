@@ -211,9 +211,9 @@ const MinigameBetHistoryPanel = ({
                 <Card team1={team1} team2={team2} choice={choice} result={result} />
             </div>
             
-            <div className="flex w-full px-8px mt-10px space-x-10px">
+            <div className={`flex w-full px-8px ${isPopup ? 'mt-11px' : 'mt-10px'} space-x-10px`}>
                 <table>
-                    <div className="flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8">
+                    <div style={{backgroundColor: 'rgb(55,55,55)'}} className="flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8">
                         {(isAttached === false) && (
                             <div className="w-45px h-full flex items-center justify-center">선택</div>
                         )}

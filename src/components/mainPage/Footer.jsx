@@ -97,9 +97,9 @@ const Footer = ({ fullWidth = false }) => {
 					<img src={Plus18} className="object-none mr-20px" alt="" />
 					<div style={{ backgroundColor: '#383838' }} className='h-25px w-px flex-shrink-0'></div>
 					<img src={Kakao} className="object-none ml-20px mr-5px" alt="" />
-					<p className='text-12px font-spoqa text-gray-r828282'>test1234</p>
+					<p className='text-14px font-spoqa text-gray-r828282'>test1234</p>
 					<img src={Telegram} className="object-none ml-8px mr-5px" alt="" />
-					<p className='text-12px font-spoqa text-gray-r828282'>test1234</p>
+					<p className='text-14px font-spoqa text-gray-r828282'>test1234</p>
 				</div>
 
 				<p className='text-14px font-spoqa text-gray-r828282'>Copyright © WINNER. All rights reserved.</p>

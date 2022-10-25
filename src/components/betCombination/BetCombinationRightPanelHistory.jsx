@@ -32,18 +32,18 @@ const BetCombinationRightPanelHistory = () => {
                     {time}
                 </p>
                 <p 
-                    className="text-14px font-spoqaBold tracking-tight text-gray-r454545 flex items-center mt-8px leading-none break-all"
+                    className="text-14px font-spoqaBold tracking-tight text-gray-r454545 flex items-center mt-7px leading-none break-all"
                     style={{color: side === "left" ? "#ffffff" : "#e65454",lineHeight: "1.2"}}
                 >
                     {team1}
                 </p>
                 <p 
-                    className="text-14px font-spoqaBold tracking-tight  flex items-center mt-8px leading-none break-all"
+                    className="text-14px font-spoqaBold tracking-tight  flex items-center mt-7px leading-none break-all"
                     style={{color: side === "left" ? "#e65454" : "#ffffff",lineHeight: "1.2"}}
                 >
                     {team2}
                 </p>
-                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 flex items-center mt-14px leading-none break-all"  style={{width: "220px",lineHeight: "1.2"}}>{type}</p>
+                <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 flex items-center mt-13px leading-none break-all"  style={{width: "220px",lineHeight: "1.2"}}>{type}</p>
                 <div className="flex absolute bottom-10px right-11px text-13px tracking-tight font-spoqaMedium items-center text-gray-c8c8c8">
                     <p>{winStatus === "win" ? "승 @" : "패 @"}</p> 
                     <p 
