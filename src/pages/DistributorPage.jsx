@@ -21,7 +21,7 @@ import SummaryIcon8 from "../images/myPage/distributor/summary/img8_v2.png";
 import DateSearchBar from "components/myPage/DateSearchBar";
 import Diamond from "../images/myPage/diamond.png";
 import SmallDiamond from "../images/myPage/small_diamond.png";
-import GrayArrow from "../images/arrows/arrow_d.png";
+import GrayArrow from "../images/arrows/gray_arrow_distributor.png";
 import WhiteArrow from "../images/arrows/white_arrow.png";
 import ReplyArrow from "../images/arrows/reply_arrow_v2.png";
 import BlueTriangle from "../images/golden_triangle.png";
