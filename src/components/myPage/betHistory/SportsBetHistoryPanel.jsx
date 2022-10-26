@@ -330,9 +330,9 @@ const SportsBetHistoryPanel = ({
                 }
                 </div>
             
-            <div className={`flex w-full px-8px ${isPopup ? 'mt-12px' : 'mt-10px'} space-x-10px`}>
+            <div className={`flex w-full px-8px ${isPopup ? 'mt-11px' : 'mt-10px'} space-x-10px`}>
                 <table>
-                    <div style={{backgroundColor: 'rgb(55,55,55)'}} className="flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 overflow-hidden">
+                    <div style={{backgroundColor: 'rgb(55,55,55)'}} className={`${isPopup && "pt-px"} flex w-auto h-36px rounded-4px bg-dark-252525 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 overflow-hidden`}>
                         {(isAttached === false) && (
                             <div style={{backgroundColor: 'rgb(55,55,55)'}} className="w-45px h-full flex items-center justify-center">선택</div>
                         )}
@@ -346,7 +346,7 @@ const SportsBetHistoryPanel = ({
                         <div style={{width: noButtons === true ? "236px" : isAttached === true ? "212px" : isPopup === false ? "131px" : "178px"}} className="h-full flex items-center justify-center border-l border-gray-2b2b2a">당첨금</div>
                         
                     </div>
-                    <div className="flex w-auto h-36px font-spoqa text-14px tracking-tight text-gray-c8c8c8">
+                    <div className={`flex w-auto h-36px font-spoqa text-14px tracking-tight text-gray-c8c8c8 ${isPopup && "pt-2px"}`}>
                         {(isAttached === false) && checkedState && (
                             <div className="w-45px h-full flex items-center justify-center">
                                 <input 

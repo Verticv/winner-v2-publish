@@ -41,10 +41,10 @@ const CouponGiftPopupTable = () => {
                                 <RadioButton id={0} />
                             </td>
                             <td className="w-198px text-center flex justify-center">
-                                <p style={{ width: '118px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap' }}>{username.length > 16 ? `${username.slice(0, 16)}...` : username}</p>
+                                <p style={{ width: '118px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap' }}>{"louie32examplelouie32example".length > 16 ? `${"louie32examplelouie32example".slice(0, 16)}...` : "louie32examplelouie32example"}</p>
                             </td>
                             <td className="w-199px text-center flex justify-center">
-                                <p style={{ width: '151px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap' }}>{nickname.length > 12 ? `${nickname.slice(0, 12)}...` : nickname}</p>
+                                <p style={{ width: '151px', textOverflow: 'unset', overflow: 'hidden', whiteSpace: 'nowrap' }}>{"위너테스트2위너테스트2위너테스트".length > 12 ? `${"위너테스트2위너테스트2위너테스트".slice(0, 12)}...` : "위너테스트2위너테스트2위너테스트"}</p>
                             </td>
                         </div>
                         <div className="bg-gray-2b2b2a font-spoqa text-14px tracking-tight text-gray-c8c8c8 h-56px w-full border-b border-gray-252525 flex items-center">
