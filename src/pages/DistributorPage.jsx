@@ -1090,12 +1090,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     >
                       <p>아이디</p>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[0] === true
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
@@ -1115,12 +1115,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <div className="flex items-center h-16px">유저수</div>
                       </div>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[1] === false
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
@@ -1139,12 +1139,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         </div>
                       </div>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[2] === false
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
@@ -1173,12 +1173,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     >
                       <p>출금액</p>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[3] === false
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
@@ -1195,12 +1195,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     >
                       <p>베팅액</p>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[4] === false
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
@@ -1211,12 +1211,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     >
                       <p>윈루즈</p>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[5] === false
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
@@ -1233,12 +1233,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     >
                       <p>포인트</p>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[6] === false
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
@@ -1252,12 +1252,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <div className="flex items-center h-16px">금액</div>
                       </div>
                       <img
-                        src={WhiteArrow}
+                        src={GrayArrow}
                         className={`${
                           subArrowClicked[7] === false
                             ? "transform rotate-180"
                             : ""
-                        }`}
+                        } w-13px`}
                         alt=""
                       />
                     </button>
