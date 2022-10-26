@@ -13,7 +13,7 @@ const CouponGift = () => {
     const GiftButton = (
         <div className="flex items-center justify-center h-36px w-114px rounded-4px bg-gradient-to-t from-blue-3d4a8d to-blue-88d9e8 p-px hover:filter hover:brightness-125 shadow-link">
             <div className="flex items-center justify-center h-34px w-112px rounded-4px bg-gradient-to-b from-blue-528ccd to-blue-396084 cursor-pointer">
-                <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-2px text-shadow-5">쿠폰선물하기</span>
+                <span className="font-spoqaMedium tracking-tight text-14px text-blue-d6f3ff pt-px text-shadow-5">쿠폰선물하기</span>
             </div>
         </div>
     )
