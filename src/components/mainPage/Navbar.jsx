@@ -210,7 +210,8 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	// )
 
 	return (
-		<div style={{ borderBottomWidth: '1px', borderBottomColor: '#414141' }} className='w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit:items-center limit1920:items-center'>
+		<div style={{ borderBottomWidth: '1px', borderBottomColor: '#414141' }} className='relative w-full z-50 bg-black bg-opacity-85 flex flex-col items-start limit:items-center limit1920:items-center'>
+			<div onMouseMove={() => setHoveredTab(null)} className='w-full h-full absolute'></div>
 			<div style={{ width: '1260px' }} className="z-50 w-full">
 
 				<div style={{ height: '103px' }} className="">
@@ -250,6 +251,8 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 						<div className="flex items-center flex-shrink-0 -ml-13px">
 							<TabsList items={tabsArray} />
 						</div>
+
+						<div onMouseMove={() => setHoveredTab(null)} className='w-full h-full'></div>
 
 						<div className="flex justify-end">
 							{isAuthenticated ? (

@@ -107,7 +107,7 @@ const BetCombinationPage = ({isAuthenticated, setAuthenticated}) => {
               </div>
             </div>
               
-            <div style={{width: "309px", left:"0px", position:"-webkit-sticky", top: "150px", height: isPanelFixed ? "100%" : ""}} className={`${isPanelFixed && "sticky bottom-0 flex"} mb-60px pt-px `}>
+            <div style={{width: "309px", left:"0px", position:"-webkit-sticky", top: "150px", height: isPanelFixed ? "100%" : ""}} className={`${isPanelFixed && "sticky bottom-0 flex"} mb-60px`}>
                 <BetCombinationRightPanel 
                     addedCard={addedCard} 
                     setAddedCard={setAddedCard} 
