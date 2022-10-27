@@ -44,7 +44,7 @@ const BetCombinationRightPanelHistory = () => {
                     {team2}
                 </p>
                 <p className="text-13px font-spoqaMedium tracking-tight text-gray-c8c8c8 flex items-center mt-10px leading-none break-all"  style={{width: "220px",lineHeight: "1.2"}}>{type}</p>
-                <div className="flex absolute bottom-10px right-11px text-13px tracking-tight font-spoqaMedium items-center text-gray-c8c8c8">
+                <div className="flex absolute bottom-8px right-11px text-13px tracking-tight font-spoqaMedium items-center text-gray-c8c8c8">
                     <p>{winStatus === "win" ? "승 @" : "패 @"}</p> 
                     <p 
                         className="ml-2px"
