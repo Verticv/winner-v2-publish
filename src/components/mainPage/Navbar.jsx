@@ -254,7 +254,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 
 						<div onMouseMove={() => setHoveredTab(null)} className='w-full h-full'></div>
 
-						<div className="flex justify-end">
+						<div className="flex justify-end flex-shrink-0">
 							{isAuthenticated ? (
 								<div className="mt-16px mr-5px">
 									<LoggedInComponent />
