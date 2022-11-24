@@ -296,7 +296,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               보타카지노
             </div>
             <div className="w-81px h-full flex items-center justify-center">
-              두원카지노
+              두윈카지노
             </div>
             <div className="w-81px h-full flex items-center justify-center">
               e-스포츠
@@ -619,7 +619,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               보타카지노
             </div>
             <div className="w-85px h-full flex items-center justify-center">
-              두원카지노
+              두윈카지노
             </div>
             <div className="w-85px h-full flex items-center justify-center">
               e-스포츠
@@ -1519,7 +1519,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     </td>
 
                     <td className="w-85px text-center">보타카지노</td>
-                    <td className="w-85px text-center">두원카지노</td>
+                    <td className="w-85px text-center">두윈카지노</td>
                     <td className="w-72px text-center">e-스포츠 </td>
                     <td className="w-100px text-center flex flex-col pt-2px -space-y-4px">
                       <span>키론</span>
@@ -1708,7 +1708,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         </td>
 
                         <td className="w-83px text-center">보타카지노</td>
-                        <td className="w-83px text-center">두원카지노</td>
+                        <td className="w-83px text-center">두윈카지노</td>
                         <td className="w-83px text-center">e-스포츠 </td>
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
                           <span>키론</span>

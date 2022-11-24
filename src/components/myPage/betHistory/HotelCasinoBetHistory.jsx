@@ -10,7 +10,7 @@ import HIcon3 from '../../../images/myPage/betHistory/h_icon3.png'
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
     { text: "보타카지노", icon: HIcon1, id: 1 },
-    { text: "두원카지노", icon: HIcon3, id: 3, custom: "mt-4px" },
+    { text: "두윈카지노", icon: HIcon3, id: 3, custom: "mt-4px" },
     { text: "준비중", icon: HIcon2, id: 4 },
 ];
 

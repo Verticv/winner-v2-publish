@@ -38,7 +38,7 @@ const HotelCasinoHover = ({ selection }) => {
       id: 2,
       background: img3,
       highlight: img3hl,
-      imgText: "두원카지노",
+      imgText: "두윈카지노",
       btnText: "게임시작",
       class: "bg-opacity-25",
     },
