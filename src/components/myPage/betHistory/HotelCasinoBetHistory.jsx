@@ -5,11 +5,12 @@ import LiveCasinoBetHistoryTable from '../tables/LiveCasinoBetHistoryTable'
 import AllIcon from '../../../images/myPage/betHistory/all_v2.png'
 import HIcon1 from '../../../images/myPage/betHistory/h_icon1.png'
 import HIcon2 from '../../../images/myPage/betHistory/h_icon2.png'
+import HIcon3 from '../../../images/myPage/betHistory/h_icon3.png'
 
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
     { text: "보타카지노", icon: HIcon1, id: 1 },
-    { text: "준비중", icon: HIcon2, id: 3, custom: "mt-8px" },
+    { text: "두원카지노", icon: HIcon3, id: 3, custom: "mt-4px" },
     { text: "준비중", icon: HIcon2, id: 4 },
 ];
 

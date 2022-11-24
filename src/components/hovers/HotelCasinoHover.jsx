@@ -4,7 +4,10 @@ import img1hl from '../../images/navbarHover/4_1_hl.png'
 import img2 from '../../images/navbarHover/4_2.png'
 import img2hl from '../../images/navbarHover/4_2_hl.png'
 import img3 from '../../images/navbarHover/4_3.png'
+import img3hl from '../../images/navbarHover/4_3_hl.png'
 import img4 from '../../images/navbarHover/4_4.png'
+import img5 from '../../images/navbarHover/4_5.png'
+import img5hl from '../../images/navbarHover/4_5_hl.png'
 import Expand from 'react-expand-animated'
 import { useHistory } from 'react-router-dom'
 
@@ -34,13 +37,21 @@ const HotelCasinoHover = ({ selection }) => {
     {
       id: 2,
       background: img3,
-      highlight: img3,
-      imgText: "호텔카지노",
-      btnText: "준비중",
+      highlight: img3hl,
+      imgText: "두원카지노",
+      btnText: "게임시작",
       class: "bg-opacity-25",
     },
     {
       id: 3,
+      background: img5,
+      highlight: img5hl,
+      imgText: "이용가이드",
+      btnText: "설명보기",
+      class: "bg-opacity-25",
+    },
+    {
+      id: 4,
       background: img4,
       highlight: img4,
       imgText: "호텔카지노",
@@ -88,7 +99,7 @@ const HotelCasinoHover = ({ selection }) => {
       className="absolute w-full h-262px border-b border-t border-brown-r796657"
     >
       <div onMouseLeave={() => setHover(null)} style={{ minHeight: '262px' }} className="h-full w-full flex justify-center bg-black bg-opacity-85">
-        <div style={{ width: '740px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 limit:grid-cols-4">
+        <div style={{ width: '940px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 limit:grid-cols-5">
           <GamesList items={gamesArray} />
         </div>
       </div>

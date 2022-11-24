@@ -217,6 +217,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               빅게이밍
             </div>
             <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px">
+              <span>오리엔탈</span>
+              <span>게임</span>
+            </div>
+            <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px">
               <span>마이크로</span>
               <span>게이밍</span>
             </div>
@@ -292,6 +296,9 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               보타카지노
             </div>
             <div className="w-81px h-full flex items-center justify-center">
+              두원카지노
+            </div>
+            <div className="w-81px h-full flex items-center justify-center">
               e-스포츠
             </div>
             <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px mr-2px">
@@ -319,6 +326,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               >
                 변경
               </div>
+            </div>
+            <div className="w-81px h-full flex items-center justify-center">
+              0.00%
+            </div>
+            <div className="w-81px h-full flex items-center justify-center">
+              0.00%
             </div>
             <div className="w-81px h-full flex items-center justify-center">
               0.00%
@@ -527,6 +540,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               빅게이밍
             </div>
             <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px">
+              <span>오리엔탈</span>
+              <span>게임</span>
+            </div>
+            <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px">
               <span>마이크로</span>
               <span>게이밍</span>
             </div>
@@ -602,6 +619,9 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               보타카지노
             </div>
             <div className="w-85px h-full flex items-center justify-center">
+              두원카지노
+            </div>
+            <div className="w-85px h-full flex items-center justify-center">
               e-스포츠
             </div>
             <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px mr-2px">
@@ -633,6 +653,8 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">
               33K
             </div>
+            <div className="w-85px h-full flex items-center justify-end">0</div>
+            <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
@@ -717,6 +739,8 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
+            <div className="w-85px h-full flex items-center justify-end">0</div>
+            <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end"></div>
           </div>
           <div
@@ -737,6 +761,8 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                 정산금액
               </div>
             </div>
+            <div className="w-85px h-full flex items-center justify-end">0</div>
+            <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
@@ -1440,6 +1466,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     </td>
                     <td className="w-72px text-center">빅게이밍</td>
                     <td className="w-73px text-center flex flex-col pt-2px -space-y-4px">
+                      <span>오리엔탈</span>
+                      <span>게임</span>
+                    </td>
+                    <td className="w-73px text-center flex flex-col pt-2px -space-y-4px">
                       <span>마이크로</span>
                       <span>게이밍</span>
                     </td>
@@ -1489,6 +1519,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     </td>
 
                     <td className="w-85px text-center">보타카지노</td>
+                    <td className="w-85px text-center">두원카지노</td>
                     <td className="w-72px text-center">e-스포츠 </td>
                     <td className="w-100px text-center flex flex-col pt-2px -space-y-4px">
                       <span>키론</span>
@@ -1515,6 +1546,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     <td className="w-72px text-center">0.00%</td>
                     <td className="w-72px text-center">0.00%</td>
                     <td className="w-72px text-center">0.00%</td>
+                    <td className="w-72px text-center">0.00%</td>
 
                     <td className="w-72px text-center">0.00%</td>
                     <td className="w-72px text-center">0.00%</td>
@@ -1530,6 +1562,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     <td className="w-72px text-center">0.00%</td>
                     <td className="w-77px text-center">0.00%</td>
                     <td className="w-72px text-center">0.00%</td>
+                    <td className="w-85px text-center">0.00%</td>
                     <td className="w-85px text-center">0.00%</td>
                     <td className="w-85px text-center">0.00%</td>
 
@@ -1622,6 +1655,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         </td>
                         <td className="w-83px text-center">빅게이밍</td>
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
+                          <span>오리엔탈</span>
+                          <span>게임</span>
+                        </td>
+                        <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
                           <span>마이크로</span>
                           <span>게이밍</span>
                         </td>
@@ -1671,6 +1708,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         </td>
 
                         <td className="w-83px text-center">보타카지노</td>
+                        <td className="w-83px text-center">두원카지노</td>
                         <td className="w-83px text-center">e-스포츠 </td>
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
                           <span>키론</span>
@@ -1733,10 +1771,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td className="w-83px text-right pr-5px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-4px">0</td>
+                        <td className="w-83px text-right pr-4px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-4px">0</td>
+                        <td className="w-85px text-right pr-4px">0</td>
                         <td className="w-85px text-right pr-4px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
@@ -1783,8 +1823,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
+                        <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-4px">0</td>
                         <td className="w-85px text-right pr-4px">0</td>
+                        <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
@@ -1831,6 +1873,8 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-4px">0</td>
                         <td className="w-85px text-right pr-4px">0</td>
+                        <td className="w-83px text-right pr-3px">0</td>
+                        <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>
                         <td className="w-83px text-right pr-3px">0</td>

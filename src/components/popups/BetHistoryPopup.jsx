@@ -30,6 +30,7 @@ import DgIcon from '../../images/myPage/betHistory/dg_v2.png'
 import SexyIcon from '../../images/myPage/betHistory/sexy_v2.png'
 import BigIcon from '../../images/myPage/betHistory/big_v2.png'
 import RoyalIcon from '../../images/myPage/betHistory/royal_v2.png'
+import OrientalIcon from '../../images/myPage/betHistory/oriental_v2.png'
 
 import Sub1 from '../../images/myPage/betHistory/slotGame/sub1.png'
 import Sub2 from '../../images/myPage/betHistory/slotGame/sub2_v2.png'
@@ -61,6 +62,7 @@ import Sub25 from '../../images/myPage/betHistory/minigame/sub4.png'
 
 import HIcon1 from '../../images/myPage/betHistory/h_icon1.png'
 import HIcon2 from '../../images/myPage/betHistory/h_icon2.png'
+import HIcon3 from '../../images/myPage/betHistory/h_icon3.png'
 
 // import Sub22 from '../../images/myPage/betHistory/ARGame/sub3.png'
 // import Sub23 from '../../images/myPage/betHistory/ARGame/sub4.png'
@@ -118,6 +120,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
       { text: "드림게이밍", icon: DgIcon, id: 6 },
       { text: "섹시게이밍", icon: SexyIcon, id: 7 },
       { text: "빅게이밍", icon: BigIcon, id: 8 },
+      { text: "오리엔탈게임", icon: OrientalIcon, id: 9 },
     ];
 
     const subTabsArray2 = [
@@ -171,7 +174,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
     const subTabsArray5 = [
         { text: "전체", icon: AllIcon, id: 0 },
         { text: "보타카지노", icon: HIcon1, id: 1 },
-        { text: "준비중", icon: HIcon2, id: 3 },
+        { text: "두원카지노", icon: HIcon3, id: 3 },
         { text: "준비중", icon: HIcon2, id: 4 },
     ]
     const [selectedTab, setSelectedTab] = useState(0)

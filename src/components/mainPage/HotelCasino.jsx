@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Sports1 from '../../images/hotel_1.png'
-import Sports2 from '../../images/hotel_2.png'
 import Sports3 from '../../images/hotel_3.png'
+import Sports4 from '../../images/hotel_4.png'
 import Sports1Hl from '../../images/hotel_1_hl.png'
+import Sports4Hl from '../../images/hotel_4_hl.png'
 const HotelCasino = () => {
 
   const Card1 = ({ img, imgHover, text, disabled }) => {
@@ -34,7 +35,8 @@ const HotelCasino = () => {
     <div style={{ width: '1260px' }}>
       <div className='space-x-19px flex'>
         <Card1 img={Sports1} text="보타카지노" imgHover={Sports1Hl} />
-        <Card1 img={Sports2} text="호텔카지노" imgHover={Sports2} disabled />
+        {/* <Card1 img={Sports2} text="두원카지노" imgHover={Sports2} disabled /> */}
+        <Card1 img={Sports4} text="두원카지노" imgHover={Sports4Hl} />
         <Card1 img={Sports3} text="호텔카지노" imgHover={Sports3} disabled />
       </div>
     </div>

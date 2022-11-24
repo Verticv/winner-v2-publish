@@ -7,6 +7,7 @@ import Img1_4 from '../../images/navbarHover/1_4.png'
 import Img1_5 from '../../images/navbarHover/1_5.png'
 import Img1_6 from '../../images/navbarHover/1_6.png'
 import Img1_7 from '../../images/navbarHover/1_7.png'
+import Img1_8 from '../../images/navbarHover/1_8.png'
 
 import Img1_1_hl from '../../images/navbarHover/1_1_hl.png'
 import Img1_2_hl from '../../images/navbarHover/1_2_hl.png'
@@ -15,6 +16,7 @@ import Img1_4_hl from '../../images/navbarHover/1_4_hl.png'
 import Img1_5_hl from '../../images/navbarHover/1_5_hl.png'
 import Img1_6_hl from '../../images/navbarHover/1_6_hl.png'
 import Img1_7_hl from '../../images/navbarHover/1_7_hl.png'
+import Img1_8_hl from '../../images/navbarHover/1_8_hl.png'
 
 import Expand from 'react-expand-animated'
 import { useHistory } from 'react-router'
@@ -31,7 +33,8 @@ const LiveCasinoHover = ({ selection }) => {
 		{ id: 3, background: Img1_4, highlight: Img1_4_hl, imgText: "아시아게이밍", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 4, background: Img1_5, highlight: Img1_5_hl, imgText: "드림게이밍", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 5, background: Img1_6, highlight: Img1_6_hl, imgText: "섹시게이밍", btnText: "게임시작", class: "bg-opacity-25" },
-		{ id: 6, background: Img1_7, highlight: Img1_7_hl, imgText: "빅게이밍", btnText: "게임시작", class: "bg-opacity-25" }
+		{ id: 6, background: Img1_7, highlight: Img1_7_hl, imgText: "빅게이밍", btnText: "게임시작", class: "bg-opacity-25" },
+		{ id: 7, background: Img1_8, highlight: Img1_8_hl, imgText: "오리엔탈게임", btnText: "게임시작", class: "bg-opacity-25" }
 	];
 
 	function GamesList({ items }) {
@@ -64,7 +67,7 @@ const LiveCasinoHover = ({ selection }) => {
 			className="absolute w-full h-262px border-b border-t border-brown-r796657"
 		>
 			<div onMouseLeave={() => setHover(null)} style={{ minHeight: '262px' }} className="h-full w-full flex justify-center bg-black bg-opacity-85">
-				<div style={{ width: '1260px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 limit:grid-cols-7">
+				<div style={{ width: '1460px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 limit:grid-cols-8">
 					<GamesList items={gamesArray} />
 				</div>
 			</div>

@@ -6,7 +6,7 @@ import Meun4 from '../../images/liveCasino/menu4.png'
 import Meun5 from '../../images/liveCasino/menu5.png'
 import Meun6 from '../../images/liveCasino/menu6.png'
 import Meun7 from '../../images/liveCasino/menu7.png'
-import Meun8 from '../../images/liveCasino/menu8.png'
+import Meun9 from '../../images/liveCasino/menu9.png'
 import Meun1Hl from '../../images/liveCasino/menu1_hl.png'
 import Meun2Hl from '../../images/liveCasino/menu2_hl.png'
 import Meun3Hl from '../../images/liveCasino/menu3_hl.png'
@@ -14,6 +14,8 @@ import Meun4Hl from '../../images/liveCasino/menu4_hl.png'
 import Meun5Hl from '../../images/liveCasino/menu5_hl.png'
 import Meun6Hl from '../../images/liveCasino/menu6_hl.png'
 import Meun7Hl from '../../images/liveCasino/menu7_hl.png'
+import Meun9Hl from '../../images/liveCasino/menu9_hl.png'
+
 import { useHistory } from 'react-router-dom'
 
 const LiveCasino = () => {
@@ -66,7 +68,8 @@ const LiveCasino = () => {
         <Card bg={Meun5} bgHover={Meun5Hl} title="드림게이밍" />
         <Card bg={Meun6} bgHover={Meun6Hl} title="섹시게이밍" />
         <Card bg={Meun7} bgHover={Meun7Hl} title="빅게이밍" />
-        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
+        <Card bg={Meun9} bgHover={Meun9Hl} title="빅게이밍" />
+        {/* <Card bg={Meun8} bgHover={Meun8} comingSoon={true} /> */}
       </div>
     </div>
   )

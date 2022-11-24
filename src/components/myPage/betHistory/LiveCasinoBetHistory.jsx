@@ -10,6 +10,7 @@ import DgIcon from '../../../images/myPage/betHistory/dg_v2.png'
 import SexyIcon from '../../../images/myPage/betHistory/sexy_v2.png'
 import BigIcon from '../../../images/myPage/betHistory/big_v2.png'
 import RoyalIcon from '../../../images/myPage/betHistory/royal_v2.png'
+import OrientalIcon from '../../../images/myPage/betHistory/oriental_v2.png'
 
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
@@ -20,6 +21,7 @@ const subTabsArray = [
     { text: "드림게이밍", icon: DgIcon, id: 6 },
     { text: "섹시게이밍", icon: SexyIcon, id: 7 },
     { text: "빅게이밍", icon: BigIcon, id: 8 },
+    { text: "오리엔탈게임", icon: OrientalIcon, id: 9 },
 ];
 
 const tableArray = [
