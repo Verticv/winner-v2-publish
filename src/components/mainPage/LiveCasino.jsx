@@ -68,7 +68,7 @@ const LiveCasino = () => {
         <Card bg={Meun5} bgHover={Meun5Hl} title="드림게이밍" />
         <Card bg={Meun6} bgHover={Meun6Hl} title="섹시게이밍" />
         <Card bg={Meun7} bgHover={Meun7Hl} title="빅게이밍" />
-        <Card bg={Meun9} bgHover={Meun9Hl} title="빅게이밍" />
+        <Card bg={Meun9} bgHover={Meun9Hl} title="오리엔탈게임" />
         {/* <Card bg={Meun8} bgHover={Meun8} comingSoon={true} /> */}
       </div>
     </div>
