@@ -1,5 +1,5 @@
 #banner {
-    animation: banneranimation 30s infinite;
+    animation: banneranimation 15s infinite;
     animation-timing-function: linear;
     position: relative;
 }

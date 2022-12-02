@@ -568,7 +568,7 @@ const BetCombinationPanel = ({
                                 <img src={UpIcon} alt="" />
                             )}
                         </div>
-                        <span style={{color: stat1Color === "red" && isButtonOn.indexOf(isSubArray?`${items_id}-${id}left`:`${id}left`)===-1 && `${id}left` !== isHover3 ? "#e65454" : ""}} className="w-34px font-roboto tracking-tight text-14px pt-2px">{stat1}</span>
+                        <span style={{color: stat1Color === "red" && isButtonOn.indexOf(isSubArray?`${items_id}-${id}left`:`${id}left`)===-1 && `${id}left` !== isHover3 ? "#e65454" : ""}} className="w-36px mr-4px font-roboto tracking-tight text-14px pt-2px text-right">{stat1}</span>
                     </div>
                 </button>
 
@@ -629,7 +629,7 @@ const BetCombinationPanel = ({
                         }}  
                         className="flex items-center justify-start rounded-lg  bg-gradient-to-b cursor-pointer px-6px pt-px"
                     >
-                        <span className="w-34px font-roboto tracking-tight text-14px  pt-2px flex-shrink-0">{stat3}</span>
+                        <span className="w-36px ml-4px text-left font-roboto tracking-tight text-14px  pt-2px flex-shrink-0">{stat3}</span>
                         <div style={{width:"33px"}} className={`${hasDown ? "justify-start pl-5px" : "justify-center"} flex items-center flex-shrink-0`}>
                             {logo2 && (
                                 <img src={logo2} alt="" />
