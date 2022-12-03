@@ -276,7 +276,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               스카이윈드
             </div>
             <div className="w-81px h-full flex items-center justify-center">
-              CQ9
+              씨큐나인
             </div>
             <div className="w-81px h-full flex items-center justify-center">
               올웨이스핀
@@ -447,7 +447,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                   }}
                   className={` flex items-center justify-center h-34px w-85px rounded-4px  cursor-pointer space-x-10px`}
                 >
-                  <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                  <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                     수정
                   </span>
                 </div>
@@ -599,7 +599,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               스카이윈드
             </div>
             <div className="w-85px h-full flex items-center justify-center">
-              CQ9
+              씨큐나인
             </div>
             <div className="w-85px h-full flex items-center justify-center">
               올웨이스핀
@@ -907,7 +907,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                                 
                                 flex items-center justify-center h-34px w-85px rounded-4px cursor-pointer space-x-10px`}
                 >
-                  <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                  <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                     {isUserCountOpen[item.id] === true ? "접기" : "보기"}{" "}
                     {item.user_count}
                   </span>
@@ -964,7 +964,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                 }}
                 className={` flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
               >
-                <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                   {isUserCountOpen[item.id + 1] === true ? "접기" : "보기"}
                 </span>
                 <img
@@ -1045,7 +1045,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                 className={`
                            flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
               >
-                <span className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
                   {isUserCountOpen[item.id + 2] === true ? "접기" : "보기"}
                 </span>
                 <img
@@ -1506,7 +1506,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     <td className="w-78px text-center">플레이텍</td>
                     <td className="w-78px text-center">스카이윈드</td>
 
-                    <td className="w-72px text-center">CQ9</td>
+                    <td className="w-72px text-center">씨큐나인</td>
                     <td className="w-77px text-center">올웨이스핀</td>
                     <td className="w-72px text-center">와즈단</td>
                     <td className="w-85px text-center flex flex-col pt-2px -space-y-4px">
@@ -1695,7 +1695,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td className="w-83px text-center">플레이텍</td>
                         <td className="w-83px text-center">스카이윈드</td>
 
-                        <td className="w-83px text-center">CQ9</td>
+                        <td className="w-83px text-center">씨큐나인</td>
                         <td className="w-83px text-center">올웨이스핀</td>
                         <td className="w-83px text-center">와즈단</td>
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">

@@ -22,7 +22,7 @@ const FreeBoardMain = () => {
             isRead: false,
             date: "2021.06.29",
             time: "07:35",
-            type: "안내",
+            type: "공지",
             isClicked: true,
             path: '/freeboard/view/0'
         },
@@ -32,7 +32,7 @@ const FreeBoardMain = () => {
             isRead: false,
             date: "2021.06.29",
             time: "07:35",
-            type: "안내",
+            type: "공지",
             path: '/freeboard/view/1'
         },
         { 
@@ -41,7 +41,7 @@ const FreeBoardMain = () => {
             isRead: false,
             date: "2021.06.29",
             time: "07:35",
-            type: "안내",
+            type: "공지",
             path: '/freeboard/view/2'
         },
         { 
@@ -367,7 +367,7 @@ const FreeBoardMain = () => {
                 <div 
                     style={{
                         backgroundColor: 
-                        item.type === "안내" 
+                        item.type === "공지" 
                         ? "#303843" 
                         : item.type === "이벤트" 
                         ? "#473c37" 
@@ -380,7 +380,7 @@ const FreeBoardMain = () => {
                     className="flex items-center font-spoqaMedium text-14px  text-gray-c8c8c8 h-56px border-b border-gray-252525" >     
                     
                     <div style={{width: "126px"}} className="font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 flex items-center justify-center">
-                        {item.type === "안내" 
+                        {item.type === "공지" 
                         ? <img src={BlueSpeaker} alt="" />
                         : item.type === "이벤트" 
                         ? <img src={YellowSpeaker} alt="" />
@@ -392,15 +392,15 @@ const FreeBoardMain = () => {
                         style={{width: "796px"}}
                         className={`w-612px flex items-center font-spoqaMedium text-gray-c8c8c8 group ml-px tracking-tight`}>
                         {
-                            item.type === "안내" 
-                            ? <div style={{maxWidth: '92px'}} className="px-10px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px flex-shrink-0">안내</div> 
+                            item.type === "공지" 
+                            ? <div style={{maxWidth: '92px'}} className="px-10px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px mr-14px flex-shrink-0">공지</div> 
                             : item.type === "이벤트" 
                             ? <div style={{maxWidth: '92px'}} className="px-10px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px mr-10px flex-shrink-0">이벤트</div> 
                             : <div></div>
                         }
                         <p
                             className={`${
-                                item.type === "안내" 
+                                item.type === "공지" 
                                 ? "text-blue-6cbbe9 group-hover:text-blue-87eaff mr-11px" 
                                 : item.type === "이벤트" 
                                 ? "text-yellow-d2b28f group-hover:text-yellow-ffdeb3 mr-9px" 

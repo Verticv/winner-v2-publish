@@ -142,7 +142,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
         { text: "레드타이거", icon: Sub15, id: 15 },
         { text: "플레이텍", icon: Sub16, id: 16 },
         { text: "스카이윈드", icon: Sub17, id: 17 },
-        { text: "CQ9", icon: Sub18, id: 18 },
+        { text: "씨큐나인", icon: Sub18, id: 18 },
         { text: "올웨이스핀", icon: Sub19, id: 19 },
         { text: "와즈단", icon: Sub20, id: 20 },
         { text: "PG소프트", icon: Sub21, id: 21 },
