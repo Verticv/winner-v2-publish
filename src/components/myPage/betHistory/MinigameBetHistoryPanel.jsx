@@ -176,13 +176,13 @@ const MinigameBetHistoryPanel = ({
 
       <div className="flex ml-10px font-spoqaMedium tracking-tight text-14px text-center">
         <div
-          style={{ width: "120px" }}
+          style={{ width: isPopup ? "120px" : "130px" }}
           className="text-gray-c8c8c8"
         >
           {choice === "even" ? "짝" : "우"}
         </div>
         <div
-          style={{ width: "116px" }}
+          style={{ width: isPopup ? "116px" : "108px" }}
           className={`${
             result === "win"
               ? "text-red-e65454"
@@ -292,25 +292,25 @@ const MinigameBetHistoryPanel = ({
             회차
           </div>
           <div
-            style={{ width: isAttached === true ? "320px" : "290px" }}
+            style={{ width: isAttached === true ? "315px" : isPopup ? "285px" : "285px" }}
             className="h-full flex items-center justify-center"
           >
             승(홈)
           </div>
           <div
-            style={{ width: isAttached === true ? "140px" : "90px" }}
+            style={{ width: isAttached === true ? "139px" : isPopup ? "90px" : "89px" }}
             className="h-full flex items-center justify-center"
           >
             VS
           </div>
           <div
-            style={{ width: isAttached === true ? "314px" : "282px" }}
+            style={{ width: isAttached === true ? "317px" : isPopup ? "282px" : "285px" }}
             className="h-full flex items-center justify-center"
           >
             패(원정)
           </div>
           <div
-            style={{ width: isAttached === true ? "68px" : "152px" }}
+            style={{ width: isAttached === true ? "66px" : isPopup ? "152px" : "150px" }}
             className="h-full flex items-center justify-center"
           >
             선택

@@ -42,7 +42,7 @@ const LiveCasinoHover = ({ selection }) => {
 			<div
 				key={item.id}
 				className={`group relative cursor-pointer flex flex-col items-center justify-end flex-shrink-0 h-262px`}
-				// style={{width:'235px'}}
+				style={{marginTop: item.id > 6 && "-30px"}}
 				onClick={() => history.push('/live-casino')}
 				onMouseEnter={() => setHover(item.id)}
 			>
@@ -67,7 +67,7 @@ const LiveCasinoHover = ({ selection }) => {
 			className="absolute w-full h-262px border-b border-t border-brown-r796657"
 		>
 			<div onMouseLeave={() => setHover(null)} style={{ minHeight: '262px' }} className="h-full w-full flex justify-center bg-black bg-opacity-85">
-				<div style={{ width: '1260px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 limit:grid-cols-7">
+				<div style={{ width: '1260px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 limit:grid-cols-7 -gap-y-4">
 					<GamesList items={gamesArray} />
 				</div>
 			</div>
