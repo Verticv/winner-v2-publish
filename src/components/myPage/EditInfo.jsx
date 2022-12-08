@@ -56,7 +56,7 @@ const EditInfo = ({name='Louie3Louie3Louie3Louie3Louie3Louie3Louie3'}) => {
                                 <div style={{backgroundColor: selectedInput === 0 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
                             </div>
                         </div>
-                        <div className="h-13px flex items-center text-14px font-spoqaMedium text-gray-828282 ml-150px tracking-minus05">영문과 숫자 그리고 특수문자(ex. !@#$%^&)를 반드시 포함하여 6~16자로 입력해야 합니다.</div>
+                        <div className="h-13px flex items-center text-14px font-spoqaMedium text-gray-828282 ml-150px tracking-minus05">영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로 입력해주세요. (특수문자 사용불가)</div>
                     </div>
                     {/* BREAK */}
                     <div className="w-full flex flex-col space-y-10px mt-14px">
@@ -89,7 +89,7 @@ const EditInfo = ({name='Louie3Louie3Louie3Louie3Louie3Louie3Louie3'}) => {
                                 <div style={{backgroundColor: selectedInput === 2 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
                             </div>
                         </div>
-                        <div className="h-13px flex items-center text-14px font-spoqa text-gray-828282 ml-150px tracking-minus05">영문과 숫자 6~8자로 입력해야 합니다. (특수문자 포함시 변경불가)</div>
+                        <div className="h-13px flex items-center text-14px font-spoqa text-gray-828282 ml-150px tracking-minus05">영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로 입력해주세요. (특수문자 사용불가)</div>
                     </div>
                     {/* BREAK */}
                     <div className="w-full flex flex-col space-y-10px mt-14px">

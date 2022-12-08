@@ -60,13 +60,13 @@ const ContactTable = ({ array }) => {
               item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"
             } font-spoqaMedium w-120px  flex justify-center cursor-pointer h-full items-center `}
             onClick={() => history.push(item.path)}
-            style={{ color: item.isRead === true ? "#a0a0a0" : "#c8c8c8" }}
+            style={{ color: item.isRead === true ? "#a0a0a0" : "#eeeeee" }}
           >
             {item.category}
           </div>
 
           <div
-            style={{ width: "420px", color: item.isRead === true ? "#a0a0a0" : "#c8c8c8" }}
+            style={{ width: "420px", color: item.isRead === true ? "#a0a0a0" : "#eeeeee" }}
             className={`${
               item.isRead === true
                 ? "text-gray-929292"
@@ -97,7 +97,7 @@ const ContactTable = ({ array }) => {
             className={`${
               item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"
             } w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center pr-5px`}
-            style={{color: item.isRead === true ? "#a0a0a0" : "#c8c8c8"}}
+            style={{color: item.isRead === true ? "#a0a0a0" : "#eeeeee"}}
             onClick={() => history.push(item.path)}
           >
             {item.time}

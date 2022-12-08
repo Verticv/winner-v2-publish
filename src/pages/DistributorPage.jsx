@@ -493,7 +493,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
           <div
             style={{
               width: "fit-content",
-              paddingRight: innerTable ? "43px" : 0,
+              paddingRight: innerTable ? "0px" : 0,
             }}
             className="flex h-56px border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-14px tracking-tight bg-gray-242424"
           >
@@ -624,15 +624,21 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-center">
               e-스포츠
             </div>
-            <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px mr-2px">
+            <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px mr-8px">
               <span>키론</span>
               <span>가상게임</span>
+            </div>
+            <div
+              style={{ backgroundColor: "rgb(29,30,31)" }}
+              className="w-85px text-center h-full flex items-center justify-center"
+            >
+              합계
             </div>
           </div>
           <div
             style={{
               width: "fit-content",
-              paddingRight: innerTable ? "43px" : 0,
+              paddingRight: innerTable ? "0px" : 0,
             }}
             className="flex h-56px items-center text-14px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232"
           >
@@ -685,14 +691,15 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
-            <div className="w-85px h-full flex items-center justify-end">
+            <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
+            <div className="w-85px h-full flex items-center justify-end pr-8px">
               7.14M
             </div>
           </div>
           <div
             style={{
               width: "fit-content",
-              paddingRight: innerTable ? "43px" : 0,
+              paddingRight: innerTable ? "0px" : 0,
             }}
             className="flex h-56px items-center text-14px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232"
           >
@@ -741,12 +748,13 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
+            <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
             <div className="w-85px h-full flex items-center justify-end"></div>
           </div>
           <div
             style={{
               width: "fit-content",
-              paddingRight: innerTable ? "43px" : 0,
+              paddingRight: innerTable ? "0px" : 0,
             }}
             className="flex h-56px items-center text-14px tracking-tight font-roboto text-gray-c8c8c8 border-b border-gray-242424 bg-gray-323232"
           >
@@ -795,6 +803,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
+            <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
             <div className="w-85px h-full flex items-center justify-end"></div>
           </div>
         </div>

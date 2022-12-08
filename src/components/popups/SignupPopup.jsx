@@ -293,10 +293,10 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 0 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-6px">영문, 숫자만 입력가능하며 최소 4자이상 입력하세요.</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-7px">
 					<div className="flex space-x-10px w-full">
 						<Title text="비밀번호" />
 						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
@@ -310,10 +310,10 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 1 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로 입력해주세요. (특수문자 사용불가)</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-6px">영문 및 숫자를 1자 이상 반드시 포함하여 6~16자 내외로 입력해주세요. (특수문자 사용불가)</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-7px">
 					<div className="flex space-x-10px w-full">
 						<Title text="환전 비밀번호" />
 						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
@@ -327,10 +327,10 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 2 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로 입력해주세요. (특수문자 사용불가)</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-6px">영문 및 숫자를 1자 이상 반드시 포함하여 4~8자 내외로 입력해주세요. (특수문자 사용불가)</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-7px">
 					<div className="flex space-x-10px w-full">
 						<Title text="닉네임" />
 						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
@@ -343,10 +343,10 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							<div style={{backgroundColor: selectedInput === 3 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} />
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">한글, 영문, 숫자를 포함한 4~16자로 입력해주세요.</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-6px">한글, 영문, 숫자를 포함한 4~16자로 입력해주세요.</span>
 				</div>
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-10px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-7px">
 					<div className="flex space-x-10px w-full">
 						<Title text="휴대폰번호" />
 						<div className="w-170px flex-shrink-0 space-y-9px">
@@ -387,11 +387,11 @@ const SignupPopup = ({setAuth, setPopupOpen}) => {
 							{/* <div style={{backgroundColor: selectedInput === 7 ? "#a67c52" : "#191817"}} className={`w-full h-2px`} /> */}
 						</div>
 					</div>
-					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-3px">수기로 작성시 아이디 생성이 불가합니다. (달력으로 선택해주세요.)</span>
+					<span style={{color:'#828282'}} className="text-14px font-spoqa ml-150px h-14px flex items-center mt-6px">수기로 작성시 아이디 생성이 불가합니다. (달력으로 선택해주세요.)</span>
 				</div>
 
 				{/* BREAK */}
-				<div style={{width:'690px'}} className="w-full flex flex-col mt-14px">
+				<div style={{width:'690px'}} className="w-full flex flex-col mt-11px">
 					<div className="flex space-x-10px w-full">
 						<Title text="추천인 아이디" />
 						<div style={{width:'540px', height:'42px', backgroundColor:'#191817', borderRadius:'5px'}} className="w-full overflow-hidden flex-shrink-0">
