@@ -14,7 +14,7 @@ const Inbox = () => {
             text: "서버 점검 안내", 
             isRead: false,
             time: "2021.06.29 07:35",
-            type: "안내",
+            type: "공지",
             isClicked: true,
             path: '/mypage/inbox/1'
         },
@@ -39,7 +39,7 @@ const Inbox = () => {
             text: "미니게임 파워볼 동행복권 시스템 정기 점검", 
             isRead: true,
             time: "2021.06.29 07:35",
-            type: "안내",
+            type: "공지",
             path: '/mypage/inbox/4'
         },
         { 
@@ -63,7 +63,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: false,
             time: "2021.06.29 07:35",
-            type: "안내",
+            type: "공지",
             path: '/mypage/inbox/7'
         },
         { 
@@ -71,7 +71,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: true,
             time: "2021.06.29 07:35",
-            type: "안내",
+            type: "공지",
             path: '/mypage/inbox/8'
         },
         { 
@@ -79,7 +79,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: true,
             time: "2021.06.29 07:35",
-            type: "안내",
+            type: "공지",
             path: '/mypage/inbox/9'
         },
         { 
@@ -87,7 +87,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: false,
             time: "2021.06.29 07:35",
-            type: "안내",
+            type: "공지",
             path: '/mypage/inbox/10'
         },
         

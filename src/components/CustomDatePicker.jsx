@@ -39,13 +39,13 @@ const CustomDatePicker = ({classes}) => {
   
 	
   const yearButton = (
-		<div className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none border px-px font-spoqa text-13px font-bold tracking-tight   border-gray-2e2e2e text-gray-ccc2b6 bg-gray-2e2e2e" >
+		<div style={{backgroundColor:'#3b3b3b', borderColor:'transparent'}} className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none border px-px font-spoqa text-13px font-bold tracking-tight   border-gray-2e2e2e text-gray-ccc2b6 bg-gray-2e2e2e" >
 		<p className='-mt-px'>{selectedYear}년</p>
 	</div>
   )
   
 	const monthButton = (
-		<div className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none border px-px font-spoqa text-13px font-bold tracking-tight   border-gray-2e2e2e text-gray-ccc2b6 bg-gray-2e2e2e" >
+		<div style={{backgroundColor:'#3b3b3b', borderColor:'transparent'}} className="flex items-center justify-between  placeholder-gray-r8c8c8c outline-none border px-px font-spoqa text-13px font-bold tracking-tight   border-gray-2e2e2e text-gray-ccc2b6 bg-gray-2e2e2e" >
 		<p className='-mt-px'>{selectedMonth}월</p>
 	</div>
 	)

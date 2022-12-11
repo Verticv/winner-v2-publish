@@ -93,7 +93,7 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                         branch1="고객센터"
                         branch2="문의하기" 
                         branch3="뷰" 
-                        mainPath="/cscenter/contact"
+                        mainPath="/cscenter/contact/all"
                         setSelectedTab={setSelectedTab}
                     />
                 </Route>
@@ -102,7 +102,7 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                         branch1="고객센터"
                         branch2="문의하기" 
                         branch3="작성하기" 
-                        mainPath="/cscenter/contact"
+                        mainPath="/cscenter/contact/all"
                         setSelectedTab={setSelectedTab}
                     />
                 </Route>
@@ -119,7 +119,7 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                         branch1="고객센터"
                         branch2="공지사항" 
                         branch3="뷰"
-                        mainPath="/cscenter/announcement"
+                        mainPath="/cscenter/announcement/all"
                         setSelectedTab={setSelectedTab}
                     />
                 </Route>
@@ -127,7 +127,7 @@ const CSCenterPage = ({isAuthenticated, setAuthenticated}) => {
                     <DirectoryComponent 
                         branch1="고객센터"
                         branch2="자주묻는질문" 
-                        mainPath="/cscenter/faq"
+                        mainPath="/cscenter/faq/all"
                         setSelectedTab={setSelectedTab}
                     />
                 </Route>

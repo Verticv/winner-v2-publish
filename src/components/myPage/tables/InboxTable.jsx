@@ -56,13 +56,13 @@ const InboxTable = ({
                         onClick={() => history.push(item.path)}
                     >
                         {
-                            item.type === "안내" 
-                            ? <div className="px-12px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px -mt-px  pt-px flex-shrink-0 " style={{ maxWidth: '92px' }}>안내</div> 
+                            item.type === "공지" 
+                            ? <div className="px-12px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px -mt-px  pt-px flex-shrink-0 " style={{ maxWidth: '92px' }}>공지</div> 
                             : item.type === "이벤트" 
                             ? <div className="px-12px h-25px rounded-full bg-yellow-c08029 flex items-center justify-center text-white text-12px -mt-px pt-px flex-shrink-0" style={{ maxWidth: '92px' }}>이벤트</div> 
                             : ''
                         }
-                        <p className="group-hover:text-gray-f1e9e9 truncate" style={{maxWidth: item.type === "안내"||item.type === "이벤트"?"487px":"550px"}}>{item.text}</p>
+                        <p className="group-hover:text-gray-f1e9e9 truncate" style={{maxWidth: item.type === "공지"||item.type === "이벤트"?"487px":"550px"}}>{item.text}</p>
                         {item.isRead === false && (
                           <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px -mt-px flex-shrink-0">
                               N

@@ -258,7 +258,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               엘리시움
             </div>
             <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px">
-              <span>플레인</span>
+              <span>플레이</span>
               <span>엔고</span>
             </div>
             <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px">
@@ -581,7 +581,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               엘리시움
             </div>
             <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px">
-              <span>플레인</span>
+              <span>플레이</span>
               <span>엔고</span>
             </div>
             <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px">
@@ -749,7 +749,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div className="w-85px h-full flex items-center justify-end"></div>
+            <div className="w-85px h-full flex items-center justify-end pr-8px">0</div>
           </div>
           <div
             style={{
@@ -804,7 +804,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div className="w-85px h-full flex items-center justify-end"></div>
+            <div className="w-85px h-full flex items-center justify-end pr-8px">0</div>
           </div>
         </div>
       </div>
@@ -1501,7 +1501,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                     <td className="w-72px text-center">엘리시움</td>
 
                     <td className="w-70px text-center flex flex-col pt-2px -space-y-4px">
-                      <span>플레인</span>
+                      <span>플레이</span>
                       <span>엔고</span>
                     </td>
                     <td className="w-70px text-center flex flex-col pt-2px -space-y-4px">
@@ -1690,7 +1690,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td className="w-83px text-center">엘리시움</td>
 
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
-                          <span>플레인</span>
+                          <span>플레이</span>
                           <span>엔고</span>
                         </td>
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
@@ -1845,7 +1845,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td
                           style={{ backgroundColor: "rgb(44,44,44)" }}
                           className="w-70px text-right pr-10px h-full flex items-center justify-end"
-                        ></td>
+                        >0</td>
                       </tr>
                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
                         <td
@@ -1892,7 +1892,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td
                           style={{ backgroundColor: "rgb(44,44,44)" }}
                           className="w-70px  text-right pr-10px h-full flex items-center justify-end"
-                        ></td>
+                        >0</td>
                       </tr>
                     </tbody>
                   </table>
