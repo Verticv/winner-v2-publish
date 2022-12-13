@@ -1,5 +1,4 @@
 import Footer from "components/mainPage/Footer";
-// import Footer2 from 'components/mainPage/Footer2'
 import Pagination from "components/myPage/Pagination";
 import Navbar from "components/mainPage/Navbar";
 
@@ -692,7 +691,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div className="w-85px h-full flex items-center justify-end pr-8px">
+            <div style={{ backgroundColor: "rgb(44,44,44)" }} className="w-85px h-full flex items-center justify-end pr-8px">
               7.14M
             </div>
           </div>
@@ -749,7 +748,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div className="w-85px h-full flex items-center justify-end pr-8px">0</div>
+            <div style={{ backgroundColor: "rgb(44,44,44)" }} className="w-85px h-full flex items-center justify-end pr-8px">0</div>
           </div>
           <div
             style={{
@@ -804,7 +803,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div className="w-85px h-full flex items-center justify-end pr-8px">0</div>
+            <div style={{ backgroundColor: "rgb(44,44,44)" }} className="w-85px h-full flex items-center justify-end pr-8px">0</div>
           </div>
         </div>
       </div>
