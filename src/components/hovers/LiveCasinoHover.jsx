@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Img1_1 from '../../images/navbarHover/1_1.png'
 import Img1_2 from '../../images/navbarHover/1_2.png'
@@ -8,6 +8,7 @@ import Img1_5 from '../../images/navbarHover/1_5.png'
 import Img1_6 from '../../images/navbarHover/1_6.png'
 import Img1_7 from '../../images/navbarHover/1_7.png'
 import Img1_8 from '../../images/navbarHover/1_8.png'
+import Img1_9 from '../../images/navbarHover/1_9.png'
 
 import Img1_1_hl from '../../images/navbarHover/1_1_hl.png'
 import Img1_2_hl from '../../images/navbarHover/1_2_hl.png'
@@ -17,14 +18,25 @@ import Img1_5_hl from '../../images/navbarHover/1_5_hl.png'
 import Img1_6_hl from '../../images/navbarHover/1_6_hl.png'
 import Img1_7_hl from '../../images/navbarHover/1_7_hl.png'
 import Img1_8_hl from '../../images/navbarHover/1_8_hl.png'
+import Img1_9_hl from '../../images/navbarHover/1_9_hl.png'
 
 import Expand from 'react-expand-animated'
 import { useHistory } from 'react-router'
+
 
 const LiveCasinoHover = ({ selection }) => {
 
 	const history = useHistory()
 	const [isHover, setHover] = useState(null)
+	const [width, setWidth]   = useState(window.innerWidth);
+	const updateDimensions = () => {
+			setWidth(window.innerWidth);
+	}
+	
+	useEffect(() => {
+			window.addEventListener("resize", updateDimensions);
+			return () => window.removeEventListener("resize", updateDimensions);
+	}, []);
 
 	const gamesArray = [
 		{ id: 0, background: Img1_1, highlight: Img1_1_hl, imgText: "에볼루션", btnText: "게임시작", class: "bg-opacity-25" },
@@ -34,7 +46,8 @@ const LiveCasinoHover = ({ selection }) => {
 		{ id: 4, background: Img1_5, highlight: Img1_5_hl, imgText: "드림게이밍", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 5, background: Img1_6, highlight: Img1_6_hl, imgText: "섹시게이밍", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 6, background: Img1_7, highlight: Img1_7_hl, imgText: "빅게이밍", btnText: "게임시작", class: "bg-opacity-25" },
-		{ id: 7, background: Img1_8, highlight: Img1_8_hl, imgText: "오리엔탈게임", btnText: "게임시작", class: "bg-opacity-25" }
+		{ id: 7, background: Img1_8, highlight: Img1_8_hl, imgText: "오리엔탈게임", btnText: "게임시작", class: "bg-opacity-25" },
+		{ id: 8, background: Img1_9, highlight: Img1_9_hl, imgText: "이주기", btnText: "게임시작", class: "bg-opacity-25" }
 	];
 
 	function GamesList({ items }) {
@@ -42,7 +55,7 @@ const LiveCasinoHover = ({ selection }) => {
 			<div
 				key={item.id}
 				className={`group relative cursor-pointer flex flex-col items-center justify-end flex-shrink-0 h-262px`}
-				style={{marginTop: item.id > 6 && "-30px"}}
+				style={{marginTop: width > 1260 &&  item.id > 6 && "-30px"}}
 				onClick={() => history.push('/live-casino')}
 				onMouseEnter={() => setHover(item.id)}
 			>

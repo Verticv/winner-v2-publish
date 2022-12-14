@@ -11,6 +11,7 @@ import SexyIcon from '../../../images/myPage/betHistory/sexy_v2.png'
 import BigIcon from '../../../images/myPage/betHistory/big_v2.png'
 import RoyalIcon from '../../../images/myPage/betHistory/royal_v2.png'
 import OrientalIcon from '../../../images/myPage/betHistory/oriental_v2.png'
+import IzugiIcon from '../../../images/myPage/betHistory/izugi.png'
 
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
@@ -22,6 +23,7 @@ const subTabsArray = [
     { text: "섹시게이밍", icon: SexyIcon, id: 7 },
     { text: "빅게이밍", icon: BigIcon, id: 8 },
     { text: "오리엔탈게임", icon: OrientalIcon, id: 9 },
+    { text: "이주기", icon: IzugiIcon, id: 10 },
 ];
 
 const tableArray = [
@@ -76,7 +78,7 @@ const LiveCasinoBetHistory = ({isState, setState, showSub = true, isPopup = fals
         <div className="w-full">
             {showSub === true && (
               <>
-                <div className="mt-10px h-88px w-full px-4px py-3px rounded-4px bg-gray-323231">
+                <div style={{height:'172px'}} className="mt-10px h-88px w-full px-4px py-3px rounded-4px bg-gray-323231">
                   <SubHorizontalMenu itemsArray={subTabsArray} isState={isState} setState={setState} />
                 </div>
                   {/* <DateSearchBar isLeagueSearch={false} /> */}

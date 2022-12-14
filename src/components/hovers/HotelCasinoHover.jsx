@@ -99,7 +99,7 @@ const HotelCasinoHover = ({ selection }) => {
       className="absolute w-full h-262px border-b border-t border-brown-r796657"
     >
       <div onMouseLeave={() => setHover(null)} style={{ minHeight: '262px' }} className="h-full w-full flex justify-center bg-black bg-opacity-85">
-        <div style={{ width: '940px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 limit:grid-cols-5">
+        <div style={{ width: '900px' }} className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 limit:grid-cols-5">
           <GamesList items={gamesArray} />
         </div>
       </div>

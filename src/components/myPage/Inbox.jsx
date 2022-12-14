@@ -8,13 +8,14 @@ import InboxTable from './tables/InboxTable'
 import ArrowDownGray from '../../images/arrows/arrow_down_gray.png'
 const Inbox = () => {
 
+    // === type [일반, 공지, 이벤트] === //
     const inboxArray = [
         { 
             id: 0,
             text: "서버 점검 안내", 
             isRead: false,
             time: "2021.06.29 07:35",
-            type: "공지",
+            type: "일반",
             isClicked: true,
             path: '/mypage/inbox/1'
         },
@@ -39,7 +40,7 @@ const Inbox = () => {
             text: "미니게임 파워볼 동행복권 시스템 정기 점검", 
             isRead: true,
             time: "2021.06.29 07:35",
-            type: "공지",
+            type: "일반",
             path: '/mypage/inbox/4'
         },
         { 
@@ -47,7 +48,7 @@ const Inbox = () => {
             text: "스포츠 & 미니게임 충전 보너스 (21.04.24 변경)", 
             isRead: true,
             time: "2021.06.29 07:35",
-            type: "이벤트",
+            type: "일반",
             path: '/mypage/inbox/5'
         },
         { 
@@ -63,7 +64,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: false,
             time: "2021.06.29 07:35",
-            type: "공지",
+            type: "일반",
             path: '/mypage/inbox/7'
         },
         { 
@@ -71,7 +72,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: true,
             time: "2021.06.29 07:35",
-            type: "공지",
+            type: "일반",
             path: '/mypage/inbox/8'
         },
         { 
@@ -79,7 +80,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: true,
             time: "2021.06.29 07:35",
-            type: "공지",
+            type: "일반",
             path: '/mypage/inbox/9'
         },
         { 
@@ -87,7 +88,7 @@ const Inbox = () => {
             text: "입금계좌변경안내", 
             isRead: false,
             time: "2021.06.29 07:35",
-            type: "공지",
+            type: "일반",
             path: '/mypage/inbox/10'
         },
         

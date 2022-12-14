@@ -446,7 +446,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                   }}
                   className={` flex items-center justify-center h-34px w-85px rounded-4px  cursor-pointer space-x-10px`}
                 >
-                  <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                  <span
+                    style={{ color: "#ffe8bd" }}
+                    className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5"
+                  >
                     수정
                   </span>
                 </div>
@@ -458,13 +461,11 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
     </>
   );
 
-  const DetailCell = ({ innerTable = false }) => (
+  const DetailCell = ({ innerTable = false, innerTable2 }) => (
     <>
       <div className="w-full flex">
-        <div className="w-39px mt-10px flex justify-center items-start">
-          {/* <img src={ReplyArrow} className="object-none" alt="" /> */}
-        </div>
-        <div className="w-full flex flex-col  border-gray-242424  bg-white  border-b overflow-x-auto bg-gray-323232">
+        <div className="w-39px mt-10px flex justify-center items-start"></div>
+        <div className="w-full flex flex-col border-gray-242424 border-b overflow-x-auto bg-gray-323232">
           <div className="flex h-56px  items-center bg-gray-323232">
             <div className="ml-8px pr-3px w-235px h-38px rounded-full bg-gray-2e2e2e border-2 border-gray-635f5b flex items-center justify-center font-spoqaMedium text-14px tracking-tight">
               <img className="mr-10px" src={SmallDiamond} alt="" />
@@ -492,7 +493,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
           <div
             style={{
               width: "fit-content",
-              paddingRight: innerTable ? "0px" : 0,
+              paddingRight: innerTable2 ? "40px" : 0,
             }}
             className="flex h-56px border-b border-gray-242424 items-center text-gray-ccc2b6 font-spoqaMedium text-14px tracking-tight bg-gray-242424"
           >
@@ -690,8 +691,13 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
-            <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div style={{ backgroundColor: "rgb(44,44,44)" }} className="w-85px h-full flex items-center justify-end pr-8px">
+            <div className="w-85px h-full flex items-center justify-end mr-8px">
+              0
+            </div>
+            <div
+              style={{ backgroundColor: "rgb(44,44,44)" }}
+              className="w-85px h-full flex items-center justify-end pr-8px"
+            >
               7.14M
             </div>
           </div>
@@ -747,8 +753,15 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
-            <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div style={{ backgroundColor: "rgb(44,44,44)" }} className="w-85px h-full flex items-center justify-end pr-8px">0</div>
+            <div className="w-85px h-full flex items-center justify-end mr-8px">
+              0
+            </div>
+            <div
+              style={{ backgroundColor: "rgb(44,44,44)" }}
+              className="w-85px h-full flex items-center justify-end pr-8px"
+            >
+              0
+            </div>
           </div>
           <div
             style={{
@@ -802,8 +815,15 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
             <div className="w-85px h-full flex items-center justify-end">0</div>
-            <div className="w-85px h-full flex items-center justify-end mr-8px">0</div>
-            <div style={{ backgroundColor: "rgb(44,44,44)" }} className="w-85px h-full flex items-center justify-end pr-8px">0</div>
+            <div className="w-85px h-full flex items-center justify-end mr-8px">
+              0
+            </div>
+            <div
+              style={{ backgroundColor: "rgb(44,44,44)" }}
+              className="w-85px h-full flex items-center justify-end pr-8px"
+            >
+              0
+            </div>
           </div>
         </div>
       </div>
@@ -911,11 +931,12 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                       ? "linear-gradient(to bottom, #f38d27, #b45a00)"
                       : "linear-gradient(to bottom, #a67c52, #7f5f3f)",
                   }}
-                  className={`
-                                
-                                flex items-center justify-center h-34px w-85px rounded-4px cursor-pointer space-x-10px`}
+                  className={`flex items-center justify-center h-34px w-85px rounded-4px cursor-pointer space-x-10px`}
                 >
-                  <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                  <span
+                    style={{ color: "#ffe8bd" }}
+                    className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5"
+                  >
                     {isUserCountOpen[item.id] === true ? "접기" : "보기"}{" "}
                     {item.user_count}
                   </span>
@@ -972,7 +993,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                 }}
                 className={` flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
               >
-                <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                <span
+                  style={{ color: "#ffe8bd" }}
+                  className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5"
+                >
                   {isUserCountOpen[item.id + 1] === true ? "접기" : "보기"}
                 </span>
                 <img
@@ -1053,7 +1077,10 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                 className={`
                            flex items-center justify-center h-34px w-83px rounded-4px cursor-pointer space-x-10px`}
               >
-                <span style={{color:'#ffe8bd'}} className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5">
+                <span
+                  style={{ color: "#ffe8bd" }}
+                  className="font-spoqaMedium tracking-tight text-14px text-white text-shadow-5"
+                >
                   {isUserCountOpen[item.id + 2] === true ? "접기" : "보기"}
                 </span>
                 <img
@@ -1090,14 +1117,13 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                 isUserCountOpen[item.id + 1] === true ||
                 isUserCountOpen[item.id + 2] === true) &&
               "2px solid #a67c52",
-            // borderBottom: (isUserCountOpen[item.id] === true || isUserCountOpen[item.id+1] === true || isUserCountOpen[item.id+2] === true) && "2px solid #dddddd",
           }}
-          className={` flex flex-col relative w-full`}
+          className={`flex flex-col relative w-full`}
         >
           {(isUserCountOpen[item.id] === true ||
             isUserCountOpen[item.id + 1] === true ||
             isUserCountOpen[item.id + 2] === true) && (
-            <div className="absolute w-39px mt-10px flex justify-center items-start ml-2px ">
+            <div className="absolute w-39px mt-10px flex justify-center items-start ml-2px">
               <img src={ReplyArrow} className="object-none" alt="" />
             </div>
           )}
@@ -1315,20 +1341,19 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
               )}
             </>
           )}
-          {isUserCountOpen[item.id + 2] === true && (
-            <>
-              {(isUserCountOpen[item.id] === true &&
-                item.hasSubArray === true) ||
-              isUserCountOpen[item.id + 1] === true ? (
-                <>
-                  <div className="h-10px" />
-                  <DetailCell innerTable={true} />
-                </>
-              ) : (
-                <DetailCell innerTable={true} />
-              )}
-            </>
-          )}
+
+          {isUserCountOpen[item.id + 2] === true &&
+            ((isUserCountOpen[item.id] === true && item.hasSubArray === true) ||
+            isUserCountOpen[item.id + 1] === true ? (
+              <>
+                <div className="h-10px" />
+                <DetailCell innerTable={true} innerTable2={items===RecommendedUserArray2} />
+              </>
+            ) : (
+              <>
+                <DetailCell innerTable={true} innerTable2={items===RecommendedUserArray2} />
+              </>
+            ))}
         </div>
       </>
     ));
@@ -1440,7 +1465,7 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="mt-56px h-29px w-full flex items-center space-x-6px text-24px tracking-tight text-gray-ccc2b6 font-spoqaMedium">
               <img src={PieIcon} alt="" />
               <span className="mt-5px">롤링요율</span>
-            </div> 
+            </div>
 
             <div
               style={{
@@ -1728,24 +1753,6 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         >
                           합계
                         </td>
-                        {/* <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>아시아</span><span>게이밍</span></td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>카지노</span></td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>드림</span><span>게이밍</span></td>
-                                          <td className="w-83px text-center flex flex-col pt-2px -space-y-4px"><span>섹시</span><span>게이밍</span></td>
-                                          <td className="w-83px text-center">빅게이밍</td>
-                                          <td className="w-83px text-center">넷엔트</td>
-                                          <td className="w-85px text-center flex flex-col pt-2px -space-y-4px"><span>프레그메틱</span><span>플레이</span></td>
-                                          <td className="w-83px text-center">퀵스핀</td>
-                                          <td className="w-83px text-center">스페이드</td>
-                                          <td className="w-83px text-center">하바네로</td>
-                                          <td className="w-85px text-center">월드매치</td>
-                                          <td className="w-81px text-center">엘리시움</td>
-                                          <td className="w-88px text-center flex flex-col pt-2px -space-y-4px"><span>플레이</span><span>앤고</span></td>
-                                          <td className="w-79px text-center flex flex-col pt-2px -space-y-4px"><span>YL</span><span>게이밍</span></td>
-                                          <td className="w-87px text-center flex flex-col pt-2px -space-y-4px"><span>레드</span><span>타이거</span></td>
-                                          <td className="w-77px text-center">e-스포츠</td>
-                                          <td className="w-96px text-center flex flex-col pt-2px -space-y-4px pl-6px"><span>키론</span><span>가상게임</span></td>
-                                          <td style={{backgroundColor:"#202020"}} className="w-70px text-center h-full flex items-center justify-center">합계</td>  */}
                       </tr>
                     </thead>
                     <tbody className="w-full text-585858 text-14px tracking-tight font-spoqaMedium">
@@ -1844,7 +1851,9 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td
                           style={{ backgroundColor: "rgb(44,44,44)" }}
                           className="w-70px text-right pr-10px h-full flex items-center justify-end"
-                        >0</td>
+                        >
+                          0
+                        </td>
                       </tr>
                       <tr className="flex items-center bg-gray-323232 font-spoqaMedium text-14px tracking-tight text-gray-c8c8c8 h-54px w-full">
                         <td
@@ -1891,7 +1900,9 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         <td
                           style={{ backgroundColor: "rgb(44,44,44)" }}
                           className="w-70px  text-right pr-10px h-full flex items-center justify-end"
-                        >0</td>
+                        >
+                          0
+                        </td>
                       </tr>
                     </tbody>
                   </table>

@@ -24,12 +24,11 @@ const InboxView = () => {
         <div>
             <MyPageTitle title="쪽지관리"/>
 
-            <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-20px" style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}
-            > 
+            <div className="shadow-table w-full overflow-hidden rounded-4px p-px mt-20px" style={{ background: "linear-gradient(to top, #1f1f1e 80%, #343434 100%)" }}> 
                 <div  className="w-full bg-gray-2e2e2e rounded-4px overflow-hidden">
                 {/* TITLE */}
                     <div className="py-15px w-full  flex items-start px-19px space-x-10px border-b border-gray-252525" >
-                        <div className="px-12px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px font-spoqaMedium flex-shrink-0 mt-px" style={{ maxWidth: '92px' }}>안내</div>
+                        {/* <div className="px-12px h-25px rounded-full bg-blue-0469a3 flex items-center justify-center text-white text-12px font-spoqaMedium flex-shrink-0 mt-px" style={{ maxWidth: '92px' }}>안내</div> */}
                         <div  className="font-spoqaMedium text-15px tracking-tight text-gray-c8c8c8 ">
                             <h1 className='align-top mt-3px'>{TitleText} <span className='inline-block align-top ml-10px'>{NewLabel}</span></h1> 
                         </div >
