@@ -45,7 +45,7 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 		{ text: "미니게임", id: 5 },
 		{ text: "키론가상게임", id: 6 },
 		{ text: "피싱게임", id: 7 },
-		// { text: "티비벳", id: 8 },
+		{ text: "티비벳", id: 8 },
 	];
 
 	// Hook

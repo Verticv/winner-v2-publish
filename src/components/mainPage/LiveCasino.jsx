@@ -133,8 +133,8 @@ const LiveCasino = () => {
         style={{ height: "203px" }}
         className="flex w-full space-x-8px items-end"
       >
-        <Card bg={Meun1} bgHover={Meun1Hl} title="에볼루션" />
         <Card bg={Meun2} bgHover={Meun2Hl} title="프레그메틱플레이" />
+        <Card bg={Meun1} bgHover={Meun1Hl} title="에볼루션" />
         <Card bg={Meun3} bgHover={Meun3Hl} title="로얄지" />
         <Card bg={Meun4} bgHover={Meun4Hl} title="아시아게이밍" />
       </div>
@@ -157,7 +157,6 @@ const LiveCasino = () => {
         <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
         <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
         <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
-
       </div>
     </div>
   );

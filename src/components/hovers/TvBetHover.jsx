@@ -48,7 +48,7 @@ const TvBetHover = ({ selection }) => {
 			className="absolute w-full h-262px border-b border-t border-brown-r796657"
 		>
 			<div onMouseLeave={() => setHover(null)} style={{ minHeight: '262px' }} className="h-full w-full flex justify-center bg-black bg-opacity-85">
-				<div style={{ width: '550px' }} className="grid grid-cols-3">
+				<div style={{ width: '540px' }} className="grid grid-cols-3">
 					<GamesList items={gamesArray} />
 				</div>
 			</div>

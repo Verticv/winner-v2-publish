@@ -8,7 +8,7 @@ import Icon6 from '../../images/myPage/betHistory/ico_6_v2.png'
 import Icon7 from '../../images/myPage/betHistory/ico_7_v2.png'
 import Icon8 from '../../images/myPage/betHistory/ico_8_v2.png'
 import Icon9 from '../../images/myPage/betHistory/ico_9_v2.png'
-// import Icon10 from '../../images/myPage/betHistory/ico_10_v2.png'
+import Icon10 from '../../images/myPage/betHistory/ico_10_v2.png'
 import IconHighlight2 from '../../images/myPage/betHistory/Icon2_On.png'
 import IconHighlight3 from '../../images/myPage/betHistory/Icon3_On.png'
 import IconHighlight4 from '../../images/myPage/betHistory/Icon4_On.png'
@@ -17,7 +17,7 @@ import IconHighlight6 from '../../images/myPage/betHistory/Icon6_On.png'
 import IconHighlight7 from '../../images/myPage/betHistory/Icon7_On.png'
 import IconHighlight8 from '../../images/myPage/betHistory/Icon8_On.png'
 import IconHighlight9 from '../../images/myPage/betHistory/Icon9_On.png'
-// import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
+import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
 import SportsBetHistory from 'components/myPage/betHistory/SportsBetHistory'
 import HorizontalMenu8 from 'components/horizontalMenus/HorizontalMenu8'
 import SubHorizontalMenu from 'components/myPage/betHistory/SubHorizontalMenu'
@@ -31,6 +31,7 @@ import SexyIcon from '../../images/myPage/betHistory/sexy_v2.png'
 import BigIcon from '../../images/myPage/betHistory/big_v2.png'
 import RoyalIcon from '../../images/myPage/betHistory/royal_v2.png'
 import OrientalIcon from '../../images/myPage/betHistory/oriental_v2.png'
+import IzugiIcon from '../../images/myPage/betHistory/izugi.png'
 
 import Sub1 from '../../images/myPage/betHistory/slotGame/sub1.png'
 import Sub2 from '../../images/myPage/betHistory/slotGame/sub2_v2.png'
@@ -88,18 +89,9 @@ import ESportsBetHistory from 'components/myPage/betHistory/ESportsBetHistory'
 import Pagination from 'components/myPage/Pagination'
 import AllBetHistory from 'components/myPage/betHistory/AllBetHistory'
 import HotelCasinoBetHistory from 'components/myPage/betHistory/HotelCasinoBetHistory'
+
 const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
 
-    // const tabsArray = [
-    //     { text: "라이브카지노", icon: Icon2, id: 0 },
-    //     { text: "슬롯게임", icon: Icon3, id: 1 },
-    //     { text: "스포츠", icon: Icon4, id: 2 },
-    //     { text: "e-스포츠", icon: Icon5, id: 3 },
-    //     { text: "미니게임", icon: Icon6, id: 4 },
-    //     { text: "키론가상게임", icon: Icon7, id: 5 },
-    //     { text: "피싱게임", icon: Icon8, id: 6 },
-    //     { text: "로터리게임", icon: Icon9, id: 7 }
-    // ];
     const tabsArray = [
     { text: "라이브카지노", icon: Icon2, iconHighlight: IconHighlight2, id: 0, path: "/mypage/bet-history/live-casino" },
     { text: "슬롯게임", icon: Icon3, iconHighlight: IconHighlight3, id: 1, path: "/mypage/bet-history/slot-game" },
@@ -109,18 +101,19 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
     { text: "미니게임", icon: Icon7, iconHighlight: IconHighlight7, id: 5, path: "/mypage/bet-history/minigame" },
     { text: "키론가상게임", icon: Icon8, iconHighlight: IconHighlight8, id: 6,  path: "/mypage/bet-history/ar-game" },
     { text: "피싱게임", icon: Icon9, iconHighlight: IconHighlight9, id: 7, path: "/mypage/bet-history/fishing-game" },
-    // { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 8, path: "/mypage/bet-history/bet" },
+    { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 8, path: "/mypage/bet-history/tv-bet" },
 ];
     const subTabsArray1 = [
       { text: "전체", icon: AllIcon, id: 0 },
-      { text: "에볼루션", icon: EvoIcon, id: 1 },
       { text: "프레그메틱플레이", icon: PragIcon, id: 3, custom: "mt-8px" },
+      { text: "에볼루션", icon: EvoIcon, id: 1 },
       { text: "로얄지", icon: RoyalIcon, id: 4 },
       { text: "아시아게이밍", icon: AsiaIcon, id: 5 },
       { text: "드림게이밍", icon: DgIcon, id: 6 },
       { text: "섹시게이밍", icon: SexyIcon, id: 7 },
       { text: "빅게이밍", icon: BigIcon, id: 8 },
       { text: "오리엔탈게임", icon: OrientalIcon, id: 9 },
+      { text: "이주기", icon: IzugiIcon, id: 10 },
     ];
 
     const subTabsArray2 = [

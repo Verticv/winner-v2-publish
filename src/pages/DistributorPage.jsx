@@ -190,12 +190,13 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-81px h-full flex items-center justify-center">
               미니게임
             </div>
-            <div className="w-81px h-full flex items-center justify-center">
-              에볼루션
-            </div>
+
             <div className="w-81px h-full flex flex-col items-center justify-center -space-y-4px">
               <span>프레그메틱</span>
               <span>플레이</span>
+            </div>
+            <div className="w-81px h-full flex items-center justify-center">
+              에볼루션
             </div>
             <div className="w-81px h-full flex items-center justify-center">
               로얄지
@@ -520,12 +521,13 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             <div className="w-85px h-full flex items-center justify-center">
               미니게임
             </div>
-            <div className="w-85px h-full flex items-center justify-center">
-              에볼루션
-            </div>
+
             <div className="w-85px h-full flex flex-col items-center justify-center -space-y-4px">
               <span>프레그메틱</span>
               <span>플레이</span>
+            </div>
+            <div className="w-85px h-full flex items-center justify-center">
+              에볼루션
             </div>
             <div className="w-85px h-full flex items-center justify-center">
               로얄지
@@ -1359,11 +1361,17 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
             isUserCountOpen[item.id + 1] === true ? (
               <>
                 <div className="h-10px" />
-                <DetailCell innerTable={true} innerTable2={items===RecommendedUserArray2} />
+                <DetailCell
+                  innerTable={true}
+                  innerTable2={items === RecommendedUserArray2}
+                />
               </>
             ) : (
               <>
-                <DetailCell innerTable={true} innerTable2={items===RecommendedUserArray2} />
+                <DetailCell
+                  innerTable={true}
+                  innerTable2={items === RecommendedUserArray2}
+                />
               </>
             ))}
         </div>
@@ -1491,11 +1499,11 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                   <tr className="flex items-center h-54px w-full">
                     <td className="w-72px text-center">스포츠</td>
                     <td className="w-72px text-center">미니게임</td>
-                    <td className="w-72px text-center">에볼루션</td>
                     <td className="w-80px text-center flex flex-col pt-2px -space-y-4px">
                       <span>프레그메틱</span>
                       <span>플레이</span>
                     </td>
+                    <td className="w-72px text-center">에볼루션</td>
                     <td className="w-72px text-center">로얄지</td>
                     <td className="w-73px text-center flex flex-col pt-2px -space-y-4px">
                       <span>아시아</span>
@@ -1682,11 +1690,11 @@ const DistributorPage = ({ isAuthenticated, setAuthenticated }) => {
                         </td>
                         <td className="w-83px text-center">스포츠</td>
                         <td className="w-81px text-center ml-4px">미니게임</td>
-                        <td className="w-85px text-center">에볼루션</td>
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
                           <span>프레그메틱</span>
                           <span>플레이</span>
                         </td>
+                        <td className="w-85px text-center">에볼루션</td>
                         <td className="w-83px text-center">로얄지</td>
                         <td className="w-83px text-center flex flex-col pt-2px -space-y-4px">
                           <span>아시아</span>

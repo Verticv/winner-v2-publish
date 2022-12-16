@@ -15,8 +15,8 @@ import IzugiIcon from '../../../images/myPage/betHistory/izugi.png'
 
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
-    { text: "에볼루션", icon: EvoIcon, id: 1 },
     { text: "프레그메틱플레이", icon: PragIcon, id: 3, custom: "mt-8px" },
+    { text: "에볼루션", icon: EvoIcon, id: 1 },
     { text: "로얄지", icon: RoyalIcon, id: 4 },
     { text: "아시아게이밍", icon: AsiaIcon, id: 5 },
     { text: "드림게이밍", icon: DgIcon, id: 6 },

@@ -15,7 +15,7 @@ import Icon6 from '../../images/myPage/betHistory/ico_6_v2.png'
 import Icon7 from '../../images/myPage/betHistory/ico_7_v2.png'
 import Icon8 from '../../images/cscenter/ico_8.png'
 import Icon9 from '../../images/cscenter/ico_9.png'
-// import Icon10 from '../../images/cscenter/ico_10.png'
+import Icon10 from '../../images/cscenter/ico_10.png'
 import Icon11 from '../../images/cscenter/ico_11.png'
 import Icon12 from '../../images/cscenter/ico_12.png'
 import Icon13 from '../../images/cscenter/ico_13.png'
@@ -28,7 +28,7 @@ import IconHighlight6 from '../../images/myPage/betHistory/Icon6_On.png'
 import IconHighlight7 from '../../images/myPage/betHistory/Icon7_On.png'
 import IconHighlight8 from '../../images/myPage/betHistory/Icon8_On.png'
 import IconHighlight9 from '../../images/myPage/betHistory/Icon9_On.png'
-// import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
+import IconHighlight10 from '../../images/myPage/betHistory/Icon10_On.png'
 import IconHighlight11 from '../../images/cscenter/Icon11_On.png'
 import IconHighlight12 from '../../images/cscenter/Icon12_On.png'
 import IconHighlight13 from '../../images/cscenter/Icon13_On.png'
@@ -44,7 +44,7 @@ const Announcement = () => {
         { text: "미니게임", icon: Icon7, iconHighlight: IconHighlight7, id: 6, path: "/cscenter/announcement/all/minigame" },
         { text: "키론가상게임", icon: Icon8, iconHighlight: IconHighlight8, id: 7, path: "/cscenter/announcement/all/ar-game" },
         { text: "피싱게임", icon: Icon9, iconHighlight: IconHighlight9, id: 8, path: "/cscenter/announcement/all/phishing-game" },
-        // { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/announcement/all/bet" },
+        { text: "티비벳", icon: Icon10, iconHighlight: IconHighlight10, id: 9, path: "/cscenter/announcement/all/bet" },
         { text: "충전/환전", icon: Icon11, iconHighlight: IconHighlight11, id: 10, path: "/cscenter/announcement/all/transaction" },
         { text: "베팅관련", icon: Icon12, iconHighlight: IconHighlight12, id: 11, path: "/cscenter/announcement/all/about-betting" },
         { text: "기타", icon: Icon13, iconHighlight: IconHighlight13, id: 12, path: "/cscenter/announcement/all/other" },

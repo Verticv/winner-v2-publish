@@ -39,8 +39,8 @@ const LiveCasinoHover = ({ selection }) => {
 	}, []);
 
 	const gamesArray = [
-		{ id: 0, background: Img1_1, highlight: Img1_1_hl, imgText: "에볼루션", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 1, background: Img1_2, highlight: Img1_2_hl, imgText: "프레그메틱플레이", btnText: "게임시작", class: "bg-opacity-25" },
+		{ id: 0, background: Img1_1, highlight: Img1_1_hl, imgText: "에볼루션", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 2, background: Img1_3, highlight: Img1_3_hl, imgText: "로얄지", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 3, background: Img1_4, highlight: Img1_4_hl, imgText: "아시아게이밍", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 4, background: Img1_5, highlight: Img1_5_hl, imgText: "드림게이밍", btnText: "게임시작", class: "bg-opacity-25" },

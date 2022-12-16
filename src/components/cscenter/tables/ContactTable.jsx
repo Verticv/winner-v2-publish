@@ -66,7 +66,10 @@ const ContactTable = ({ array }) => {
           </div>
 
           <div
-            style={{ width: "420px", color: item.isRead === true ? "#a0a0a0" : "#eeeeee" }}
+            style={{
+              width: "420px",
+              color: item.isRead === true ? "#a0a0a0" : "#eeeeee",
+            }}
             className={`${
               item.isRead === true
                 ? "text-gray-929292"
@@ -83,12 +86,8 @@ const ContactTable = ({ array }) => {
               {item.text}
             </p>
             {item.isRead === false && (
-              <div
-                className={`w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto pt-px flex-shrink-0 -mt-2px ${
-                  item.id === 6 && "pr-px"
-                }`}
-              >
-                N
+              <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto flex-shrink-0">
+                <p className="flex items-center h-12px -ml-px">N</p>
               </div>
             )}
           </div>
@@ -97,7 +96,7 @@ const ContactTable = ({ array }) => {
             className={`${
               item.isRead === true ? "text-gray-929292" : "text-gray-c8c8c8"
             } w-138px flex font-spoqa justify-center text-center cursor-pointer h-full items-center pr-5px`}
-            style={{color: item.isRead === true ? "#a0a0a0" : "#eeeeee"}}
+            style={{ color: item.isRead === true ? "#a0a0a0" : "#eeeeee" }}
             onClick={() => history.push(item.path)}
           >
             {item.time}
