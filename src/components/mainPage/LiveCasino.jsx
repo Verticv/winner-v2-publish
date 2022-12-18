@@ -19,12 +19,14 @@ import Meun7Hl from "../../images/liveCasino/menu7_hl.png";
 import Meun9Hl from "../../images/liveCasino/menu9_hl.png";
 import Meun10Hl from "../../images/liveCasino/menu10_hl.png";
 
+import Best from "../../images/best.png";
+
 import { useHistory } from "react-router-dom";
 
 const LiveCasino = () => {
   const history = useHistory();
 
-  const Card = ({ bg, bgHover, comingSoon = false, title }) => {
+  const Card = ({ bg, bgHover, comingSoon = false, title, best }) => {
     const [isHover, setHover] = useState(false);
 
     if (comingSoon)
@@ -79,6 +81,20 @@ const LiveCasino = () => {
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
+        {best && (
+          <img
+            src={Best}
+            alt=""
+            style={{
+              width: "80px",
+              height: "80px",
+              position: "absolute",
+              top: isHover ? "-21px" : "-16px",
+              left: 0,
+              zIndex: 40,
+            }}
+          />
+        )}
         <img src={isHover ? bgHover : bg} className="object-none" alt="" />
 
         <button
@@ -133,30 +149,35 @@ const LiveCasino = () => {
         style={{ height: "203px" }}
         className="flex w-full space-x-8px items-end"
       >
-        <Card bg={Meun2} bgHover={Meun2Hl} title="프레그메틱플레이" />
-        <Card bg={Meun1} bgHover={Meun1Hl} title="에볼루션" />
-        <Card bg={Meun3} bgHover={Meun3Hl} title="로얄지" />
-        <Card bg={Meun4} bgHover={Meun4Hl} title="아시아게이밍" />
+        <Card
+          bg={Meun2}
+          bgHover={Meun2Hl}
+          title="프레그메틱플레이"
+          best={true}
+        />
+        <Card bg={Meun1} bgHover={Meun1Hl} title="에볼루션" best={false} />
+        <Card bg={Meun3} bgHover={Meun3Hl} title="로얄지" best={false} />
+        <Card bg={Meun4} bgHover={Meun4Hl} title="아시아게이밍" best={false} />
       </div>
 
       <div
         style={{ height: "199px" }}
         className="flex w-full space-x-8px items-end mt-11px"
       >
-        <Card bg={Meun5} bgHover={Meun5Hl} title="드림게이밍" />
-        <Card bg={Meun6} bgHover={Meun6Hl} title="섹시게이밍" />
-        <Card bg={Meun7} bgHover={Meun7Hl} title="빅게이밍" />
-        <Card bg={Meun9} bgHover={Meun9Hl} title="오리엔탈게임" />
+        <Card bg={Meun5} bgHover={Meun5Hl} title="드림게이밍" best={false} />
+        <Card bg={Meun6} bgHover={Meun6Hl} title="섹시게이밍" best={false} />
+        <Card bg={Meun7} bgHover={Meun7Hl} title="빅게이밍" best={false} />
+        <Card bg={Meun9} bgHover={Meun9Hl} title="오리엔탈게임" best={false} />
         {/* <Card bg={Meun8} bgHover={Meun8} comingSoon={true} /> */}
       </div>
       <div
         style={{ height: "199px" }}
         className="flex w-full space-x-8px items-end mt-11px"
       >
-        <Card bg={Meun10} bgHover={Meun10Hl} title="이주기" />
-        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
-        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
-        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} />
+        <Card bg={Meun10} bgHover={Meun10Hl} title="이주기" best={false} />
+        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} best={false} />
+        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} best={false} />
+        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} best={false} />
       </div>
     </div>
   );

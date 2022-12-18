@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Best from '../../images/best.png'
 
 import Img1_1 from '../../images/navbarHover/1_1.png'
 import Img1_2 from '../../images/navbarHover/1_2.png'
@@ -39,7 +40,7 @@ const LiveCasinoHover = ({ selection }) => {
 	}, []);
 
 	const gamesArray = [
-		{ id: 1, background: Img1_2, highlight: Img1_2_hl, imgText: "프레그메틱플레이", btnText: "게임시작", class: "bg-opacity-25" },
+		{ id: 1, background: Img1_2, highlight: Img1_2_hl, imgText: "프레그메틱플레이", btnText: "게임시작", class: "bg-opacity-25", best:true },
 		{ id: 0, background: Img1_1, highlight: Img1_1_hl, imgText: "에볼루션", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 2, background: Img1_3, highlight: Img1_3_hl, imgText: "로얄지", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 3, background: Img1_4, highlight: Img1_4_hl, imgText: "아시아게이밍", btnText: "게임시작", class: "bg-opacity-25" },
@@ -59,6 +60,9 @@ const LiveCasinoHover = ({ selection }) => {
 				onClick={() => history.push('/live-casino')}
 				onMouseEnter={() => setHover(item.id)}
 			>
+				{item.best && (
+					<img src={Best} alt="" style={{width:'80px', height:'80px',position:'absolute', top:'15px', left:0, zIndex:40}} />
+				)}
 				<p style={{ color: '#ffdfbd', marginBottom: '70px' }} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex flex-shrink-0`}>{item.imgText}</p>
 				<div style={{ marginBottom: '31px' }} className={`absolute z-20`}>
 					<button style={{ width: '89px', height: '26px', borderRadius: '2px', background: 'linear-gradient(to bottom, #e8b888, #4e3d0b)' }} className={`p-px filter hover:brightness-125`}>
