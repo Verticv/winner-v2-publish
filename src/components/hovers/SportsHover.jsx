@@ -35,7 +35,7 @@ const SportsHover = ({ selection }) => {
       id: 2,
       background: MessiBanner,
       highlight: MessiBannerHighlight,
-      imgText: "스페셜",
+      imgText: "스페셜베팅",
       btnText: "게임시작",
       class: "bg-opacity-25",
       path: "/bet-combination"
