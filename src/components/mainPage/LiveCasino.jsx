@@ -86,11 +86,11 @@ const LiveCasino = () => {
             src={Best}
             alt=""
             style={{
-              width: "80px",
-              height: "80px",
+              width: "81px",
+              height: "81px",
               position: "absolute",
               bottom: "140px",
-              left: 0,
+              left: "-8px",
               zIndex: 40,
             }}
           />

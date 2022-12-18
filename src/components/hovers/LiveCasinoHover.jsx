@@ -61,7 +61,7 @@ const LiveCasinoHover = ({ selection }) => {
 				onMouseEnter={() => setHover(item.id)}
 			>
 				{item.best && (
-					<img src={Best} alt="" style={{width:'80px', height:'80px',position:'absolute', top:'15px', left:0, zIndex:40}} />
+					<img src={Best} alt="" style={{width:'81px', height:'81px',position:'absolute', top:'15px', left:0, zIndex:40}} />
 				)}
 				<p style={{ color: '#ffdfbd', marginBottom: '70px' }} className={`absolute bottom-0 z-20 text-13px tracking-tighter font-spoqa h-13px items-center flex flex-shrink-0`}>{item.imgText}</p>
 				<div style={{ marginBottom: '31px' }} className={`absolute z-20`}>
