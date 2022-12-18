@@ -89,7 +89,7 @@ const LiveCasino = () => {
               width: "80px",
               height: "80px",
               position: "absolute",
-              top: isHover ? "-21px" : "-16px",
+              bottom: "140px",
               left: 0,
               zIndex: 40,
             }}
