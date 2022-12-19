@@ -31,8 +31,8 @@ const Navbar = ({ isAuthenticated, setAuth }) => {
 	const [isPopupOpen, setPopupOpen] = useState(true)
 	const [isPointPopupOpen, setPointPopupOpen] = useState(true)
 
-	const tabClass = "flex-shrink-0 text-yellow-ad9e8c hover:text-white relative flex flex-col items-center justify-center h-45px px-11px cursor-pointer"
-	const selectedTabClass = "flex-shrink-0 relative flex flex-col items-center justify-center px-11px cursor-pointer h-45px text-white cursor-pointer"
+	const tabClass = "flex-shrink-0 text-yellow-ad9e8c hover:text-white relative flex flex-col items-center justify-center h-45px px-9px cursor-pointer"
+	const selectedTabClass = "flex-shrink-0 relative flex flex-col items-center justify-center px-9px cursor-pointer h-45px text-white cursor-pointer"
 	const lineClass = "absolute bottom-0 h-2px w-full bg-clear"
 	const selectedLineClass = "absolute bottom-0 h-2px w-full bg-white"
 
