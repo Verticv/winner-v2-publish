@@ -86,7 +86,7 @@ const InboxTable = ({ array, checkedState, setCheckedState }) => {
             </p>
             {item.isRead === false && (
               <div className="w-17px h-17px bg-red-e9441d rounded-4px text-12px text-white flex items-center justify-center font-roboto flex-shrink-0">
-                <p className="flex items-center h-12px -ml-px">N</p>
+                <p className="flex items-center h-11px w-11px justify-center text-center flex-shrink-0 -ml-px">N</p>
               </div>
             )}
           </div>
