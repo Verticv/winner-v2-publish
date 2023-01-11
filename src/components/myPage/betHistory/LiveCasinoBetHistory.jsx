@@ -12,6 +12,7 @@ import BigIcon from '../../../images/myPage/betHistory/big_v2.png'
 import RoyalIcon from '../../../images/myPage/betHistory/royal_v2.png'
 import OrientalIcon from '../../../images/myPage/betHistory/oriental_v2.png'
 import IzugiIcon from '../../../images/myPage/betHistory/izugi.png'
+import Sub1 from '../../../images/myPage/betHistory/slotGame/sub1.png'
 
 const subTabsArray = [
     { text: "전체", icon: AllIcon, id: 0 },
@@ -24,6 +25,7 @@ const subTabsArray = [
     { text: "빅게이밍", icon: BigIcon, id: 8 },
     { text: "오리엔탈게임", icon: OrientalIcon, id: 9 },
     { text: "이주기", icon: IzugiIcon, id: 10 },
+    { text: "마이크로게이밍", icon: Sub1, id: 11 },
 ];
 
 const tableArray = [

@@ -10,6 +10,7 @@ import Img1_6 from '../../images/navbarHover/1_6.png'
 import Img1_7 from '../../images/navbarHover/1_7.png'
 import Img1_8 from '../../images/navbarHover/1_8.png'
 import Img1_9 from '../../images/navbarHover/1_9.png'
+import Img1_10 from '../../images/navbarHover/1_10.png'
 
 import Img1_1_hl from '../../images/navbarHover/1_1_hl.png'
 import Img1_2_hl from '../../images/navbarHover/1_2_hl.png'
@@ -20,6 +21,7 @@ import Img1_6_hl from '../../images/navbarHover/1_6_hl.png'
 import Img1_7_hl from '../../images/navbarHover/1_7_hl.png'
 import Img1_8_hl from '../../images/navbarHover/1_8_hl.png'
 import Img1_9_hl from '../../images/navbarHover/1_9_hl.png'
+import Img1_10_hl from '../../images/navbarHover/1_10_hl.png'
 
 import Expand from 'react-expand-animated'
 import { useHistory } from 'react-router'
@@ -48,7 +50,8 @@ const LiveCasinoHover = ({ selection }) => {
 		{ id: 5, background: Img1_6, highlight: Img1_6_hl, imgText: "섹시게이밍", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 6, background: Img1_7, highlight: Img1_7_hl, imgText: "빅게이밍", btnText: "게임시작", class: "bg-opacity-25" },
 		{ id: 7, background: Img1_8, highlight: Img1_8_hl, imgText: "오리엔탈게임", btnText: "게임시작", class: "bg-opacity-25" },
-		{ id: 8, background: Img1_9, highlight: Img1_9_hl, imgText: "이주기", btnText: "게임시작", class: "bg-opacity-25" }
+		{ id: 8, background: Img1_9, highlight: Img1_9_hl, imgText: "이주기", btnText: "게임시작", class: "bg-opacity-25" },
+		{ id: 9, background: Img1_10, highlight: Img1_10_hl, imgText: "마이크로게이밍", btnText: "게임시작", class: "bg-opacity-25" }
 	];
 
 	function GamesList({ items }) {

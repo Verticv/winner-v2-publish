@@ -9,6 +9,7 @@ import Meun7 from "../../images/liveCasino/menu7.png";
 import Meun8 from "../../images/liveCasino/menu8.png";
 import Meun9 from "../../images/liveCasino/menu9.png";
 import Meun10 from "../../images/liveCasino/menu10.png";
+import Meun11 from "../../images/liveCasino/menu11.png";
 import Meun1Hl from "../../images/liveCasino/menu1_hl.png";
 import Meun2Hl from "../../images/liveCasino/menu2_hl.png";
 import Meun3Hl from "../../images/liveCasino/menu3_hl.png";
@@ -18,6 +19,7 @@ import Meun6Hl from "../../images/liveCasino/menu6_hl.png";
 import Meun7Hl from "../../images/liveCasino/menu7_hl.png";
 import Meun9Hl from "../../images/liveCasino/menu9_hl.png";
 import Meun10Hl from "../../images/liveCasino/menu10_hl.png";
+import Meun11Hl from "../../images/liveCasino/menu11_hl.png";
 
 import Best from "../../images/best.png";
 
@@ -175,7 +177,7 @@ const LiveCasino = () => {
         className="flex w-full space-x-8px items-end mt-11px"
       >
         <Card bg={Meun10} bgHover={Meun10Hl} title="이주기" best={false} />
-        <Card bg={Meun8} bgHover={Meun8} comingSoon={true} best={false} />
+        <Card bg={Meun11} bgHover={Meun11Hl} title="마이크로게이밍" best={false} />
         <Card bg={Meun8} bgHover={Meun8} comingSoon={true} best={false} />
         <Card bg={Meun8} bgHover={Meun8} comingSoon={true} best={false} />
       </div>

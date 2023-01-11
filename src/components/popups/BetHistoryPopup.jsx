@@ -114,6 +114,7 @@ const BetHistoryPopup = ({setPopupOpen, setAttachedArray, attachedArray}) => {
       { text: "빅게이밍", icon: BigIcon, id: 8 },
       { text: "오리엔탈게임", icon: OrientalIcon, id: 9 },
       { text: "이주기", icon: IzugiIcon, id: 10 },
+      { text: "마이크로게이밍", icon: Sub1, id: 11 },
     ];
 
     const subTabsArray2 = [
